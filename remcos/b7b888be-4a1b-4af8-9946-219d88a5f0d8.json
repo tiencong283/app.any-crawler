@@ -1,0 +1,91 @@
+{
+ "Name": "selfmadeinjector 11 4 2020.exe",
+ "Md5": "85702e6a67a345554760041e16f6553a",
+ "UUID": "b7b888be-4a1b-4af8-9946-219d88a5f0d8",
+ "Processes": [
+  {
+   "OID": "5e9226776a58db7e9c826b94",
+   "ProcessID": 3300,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\selfmadeinjector 11 4 2020.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\selfmadeinjector 11 4 2020.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586636407507
+  },
+  {
+   "OID": "5e9226786a58db7e9c8271e9",
+   "ProcessID": 2676,
+   "ParentPID": 3300,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586636407882
+  },
+  {
+   "OID": "5e9226786a58db7e9c8271eb",
+   "ProcessID": 2512,
+   "ParentPID": 2676,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586636407961
+  },
+  {
+   "OID": "5e9226796a58db7e9c827a7d",
+   "ProcessID": 3376,
+   "ParentPID": 2676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\csgo injector\\csgoinjector.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\csgo injector\\csgoinjector.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586636409023
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e9226796a58db7e9c827a7d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9226796a58db7e9c827a7d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9226796a58db7e9c827a7d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e9226786a58db7e9c8271e9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9226776a58db7e9c826b94",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e9226776a58db7e9c826b94",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e9226776a58db7e9c826b94",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9226776a58db7e9c826b94",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

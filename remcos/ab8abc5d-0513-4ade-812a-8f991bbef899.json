@@ -1,0 +1,109 @@
+{
+ "Name": "문서.exe",
+ "Md5": "498cdce9322243dbf283771f0dc116f7",
+ "UUID": "ab8abc5d-0513-4ade-812a-8f991bbef899",
+ "Processes": [
+  {
+   "OID": "5e8c2c09ee6e2759a343630b",
+   "ProcessID": 3072,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\문서.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\문서.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586244616885
+  },
+  {
+   "OID": "5e8c2c35ee6e2759a343673f",
+   "ProcessID": 1156,
+   "ParentPID": 3072,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\wGXDwL\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmpE794.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586244661510
+  },
+  {
+   "OID": "5e8c2c35ee6e2759a3436741",
+   "ProcessID": 2896,
+   "ParentPID": 3072,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\문서.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586244661620
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8c2c35ee6e2759a3436741",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c2c35ee6e2759a3436741",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c2c35ee6e2759a3436741",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c2c35ee6e2759a3436741",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c2c35ee6e2759a3436741",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c2c09ee6e2759a343630b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c2c09ee6e2759a3435b1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c2c35ee6e2759a343673f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c2c09ee6e2759a343630b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c2c09ee6e2759a343630b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c2c09ee6e2759a343630b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c2c09ee6e2759a343630b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1082",
+    "T1497"
+   ]
+  }
+ ]
+}

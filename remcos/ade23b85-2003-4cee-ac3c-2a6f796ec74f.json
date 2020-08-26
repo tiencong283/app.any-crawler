@@ -1,0 +1,169 @@
+{
+ "Name": "2885e726-eb22-42f9-a64f-809df882919d",
+ "Md5": "697028d82476e43f3f5ed390d2760aff",
+ "UUID": "ade23b85-2003-4cee-ac3c-2a6f796ec74f",
+ "Processes": [
+  {
+   "OID": "5f04980df2808a6dbf68c0e9",
+   "ProcessID": 1176,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\2885e726-eb22-42f9-a64f-809df882919d.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\2885e726-eb22-42f9-a64f-809df882919d.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594136589027
+  },
+  {
+   "OID": "5f04980ef2808a6dbf68c54f",
+   "ProcessID": 2428,
+   "ParentPID": 1176,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c REG ADD HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /f /v  /t REG_SZ /d C:\\Windows\\system32\\pcalua.exe\" -a C:\\Users\\admin\\Documents\\asass\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594136590293
+  },
+  {
+   "OID": "5f04980ef2808a6dbf68c551",
+   "ProcessID": 2880,
+   "ParentPID": 2428,
+   "CommandLine": "REG  ADD HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /f /v  /t REG_SZ /d C:\\Windows\\system32\\pcalua.exe\" -a C:\\Users\\admin\\Documents\\asass\"",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594136590449
+  },
+  {
+   "OID": "5f049828f2808a6dbf68cc96",
+   "ProcessID": 1420,
+   "ParentPID": 1176,
+   "CommandLine": "\"C:\\Windows\\system32\\rundll32.exe\" C:\\Windows\\system32\\shell32.dll,OpenAs_RunDLL C:\\Users\\admin\\Documents\\asass",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594136615668
+  },
+  {
+   "OID": "5f049867f2808a6dbf68d7e9",
+   "ProcessID": 1768,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\2885e726-eb22-42f9-a64f-809df882919d.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\2885e726-eb22-42f9-a64f-809df882919d.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1594136679246
+  },
+  {
+   "OID": "5f049867f2808a6dbf68d7ec",
+   "ProcessID": 2080,
+   "ParentPID": 1768,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c REG ADD HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /f /v  /t REG_SZ /d C:\\Windows\\system32\\pcalua.exe\" -a C:\\Users\\admin\\Documents\\asass\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594136679636
+  },
+  {
+   "OID": "5f049867f2808a6dbf68d7ee",
+   "ProcessID": 3156,
+   "ParentPID": 2080,
+   "CommandLine": "REG  ADD HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /f /v  /t REG_SZ /d C:\\Windows\\system32\\pcalua.exe\" -a C:\\Users\\admin\\Documents\\asass\"",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594136679699
+  },
+  {
+   "OID": "5f049878f2808a6dbf68debc",
+   "ProcessID": 764,
+   "ParentPID": 1768,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AddInProcess32.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AddInProcess32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594136696636
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f04980df2808a6dbf68b9ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f049878f2808a6dbf68debc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f049878f2808a6dbf68debc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5f049878f2808a6dbf68debc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f049878f2808a6dbf68debc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f049867f2808a6dbf68d7ec",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f049867f2808a6dbf68d7e9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f049867f2808a6dbf68d7e9",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f04980df2808a6dbf68b9a3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f04980df2808a6dbf68c0e9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  },
+  {
+   "ProcessOID": "5f04980df2808a6dbf68c0e9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5f04980ef2808a6dbf68c54f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f04980df2808a6dbf68c0e9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f04980df2808a6dbf68c0e9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

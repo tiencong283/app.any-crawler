@@ -1,0 +1,161 @@
+{
+ "Name": "T2.exe",
+ "Md5": "8143737a791c00470e36754d89767d33",
+ "UUID": "c7ac8c32-b1e9-47cf-a5c9-9152d5590161",
+ "Processes": [
+  {
+   "OID": "5f45f2dca677f67d71898373",
+   "ProcessID": 2892,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\T2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\T2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1598419676048
+  },
+  {
+   "OID": "5f45f2dca677f67d71898374",
+   "ProcessID": 1736,
+   "ParentPID": 2892,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598419676376
+  },
+  {
+   "OID": "5f45f2dda677f67d71898523",
+   "ProcessID": 2696,
+   "ParentPID": 2892,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598419676814
+  },
+  {
+   "OID": "5f45f2dda677f67d71898524",
+   "ProcessID": 324,
+   "ParentPID": 2696,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\T2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\T2.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598419676923
+  },
+  {
+   "OID": "5f45f2dda677f67d71898b1d",
+   "ProcessID": 3156,
+   "ParentPID": 324,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598419677298
+  },
+  {
+   "OID": "5f45f2dda677f67d71898b1f",
+   "ProcessID": 2176,
+   "ParentPID": 3156,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598419677376
+  },
+  {
+   "OID": "5f45f2dea677f67d71899453",
+   "ProcessID": 2876,
+   "ParentPID": 3156,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598419678439
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f45f2dea677f67d71899453",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f45f2dea677f67d71899453",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f45f2dea677f67d71899453",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f45f2dea677f67d71899453",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f45f2dda677f67d71898b1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f45f2dda677f67d71898524",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f45f2dda677f67d71898524",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f45f2dda677f67d71898524",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f45f2dda677f67d71898524",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f45f2dda677f67d71898524",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f45f2dda677f67d71898524",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5f45f2dda677f67d71898524",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5f45f2dca677f67d71898373",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5f45f2dca677f67d71898373",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5f45f2dca677f67d71898373",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

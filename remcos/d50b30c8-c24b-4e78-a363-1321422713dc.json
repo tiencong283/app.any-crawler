@@ -1,0 +1,77 @@
+{
+ "Name": "CVE6535 _TVOP-MIO 10(C) 2020,PDF.EXE",
+ "Md5": "ae8fb1767b8b0d639c8e3bc57b7ddb8d",
+ "UUID": "d50b30c8-c24b-4e78-a363-1321422713dc",
+ "Processes": [
+  {
+   "OID": "5e8605b46dbbcd34bfb89e69",
+   "ProcessID": 2648,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\CVE6535 _TVOP-MIO 10(C) 2020,PDF.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\CVE6535 _TVOP-MIO 10(C) 2020,PDF.EXE",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585841587728
+  },
+  {
+   "OID": "5e8605be6dbbcd34bfb8a673",
+   "ProcessID": 3952,
+   "ParentPID": 2648,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\gXbalbEuAsOp\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmpF8B0.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585841598353
+  },
+  {
+   "OID": "5e8605be6dbbcd34bfb8a675",
+   "ProcessID": 2248,
+   "ParentPID": 2648,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585841598510
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8605be6dbbcd34bfb8a675",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8605b46dbbcd34bfb89e69",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5e8605b36dbbcd34bfb89820",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8605be6dbbcd34bfb8a673",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8605b46dbbcd34bfb89e69",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8605b46dbbcd34bfb89e69",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8605b46dbbcd34bfb89e69",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

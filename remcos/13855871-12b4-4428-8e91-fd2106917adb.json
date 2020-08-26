@@ -1,0 +1,105 @@
+{
+ "Name": "svchost.exe",
+ "Md5": "23a41ee2ae6e31a6802adf7de0db44af",
+ "UUID": "13855871-12b4-4428-8e91-fd2106917adb",
+ "Processes": [
+  {
+   "OID": "5dde22f1ec77361b0ce40b69",
+   "ProcessID": 2392,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574839025395
+  },
+  {
+   "OID": "5dde22ffec77361b0ce41531",
+   "ProcessID": 3032,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1574839039004
+  },
+  {
+   "OID": "5dde230cec77361b0ce419c2",
+   "ProcessID": 2800,
+   "ParentPID": 2392,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574839051958
+  },
+  {
+   "OID": "5dde230cec77361b0ce419c3",
+   "ProcessID": 3280,
+   "ParentPID": 2800,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574839052176
+  },
+  {
+   "OID": "5dde230dec77361b0ce41ddc",
+   "ProcessID": 1812,
+   "ParentPID": 2800,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574839053161
+  },
+  {
+   "OID": "5dde230dec77361b0ce41ddd",
+   "ProcessID": 2668,
+   "ParentPID": 1812,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\" ",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574839053270
+  },
+  {
+   "OID": "5dde231bec77361b0ce427db",
+   "ProcessID": 1596,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1574839067020
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dde231bec77361b0ce427db",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dde230cec77361b0ce419c2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5dde230cec77361b0ce419c2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5dde230cec77361b0ce419c2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dde22ffec77361b0ce41531",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  }
+ ]
+}

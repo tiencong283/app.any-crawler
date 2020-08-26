@@ -1,0 +1,60 @@
+{
+ "Name": "remcos_agent.exe",
+ "Md5": "9e6725c71a18b4853a8d62080371a563",
+ "UUID": "f823ff80-6b8a-4d91-be47-923786c9db9a",
+ "Processes": [
+  {
+   "OID": "5e354ff351b27015b62768e8",
+   "ProcessID": 3580,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\remcos_agent.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\remcos_agent.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580552179185
+  },
+  {
+   "OID": "5e354ff851b27015b6276df7",
+   "ProcessID": 3680,
+   "ParentPID": 3580,
+   "CommandLine": "\"C:\\Windows\\System32\\dxdiag.exe\" /t C:\\Users\\admin\\AppData\\Local\\Temp\\sysinfo.txt",
+   "Image": "C:\\Windows\\System32\\dxdiag.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580552184201
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e354ff351b27015b627617e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e354ff351b27015b627617e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e354ff351b27015b627617e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e354ff351b27015b62768e8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e354ff351b27015b62768e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  }
+ ]
+}

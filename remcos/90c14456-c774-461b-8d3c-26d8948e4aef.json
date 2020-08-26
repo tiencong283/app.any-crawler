@@ -1,0 +1,216 @@
+{
+ "Name": "iuooip.exe",
+ "Md5": "15962ebdea41c874d97cc31d74c280d9",
+ "UUID": "90c14456-c774-461b-8d3c-26d8948e4aef",
+ "Processes": [
+  {
+   "OID": "5f0539c19b4b6d7db2b07e05",
+   "ProcessID": 3208,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\iuooip.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\iuooip.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594177985595
+  },
+  {
+   "OID": "5f0539c89b4b6d7db2b087e1",
+   "ProcessID": 3016,
+   "ParentPID": 3208,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\\\plugtemp\\Service.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\plugtemp\\Service.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177991392
+  },
+  {
+   "OID": "5f0539c89b4b6d7db2b087e2",
+   "ProcessID": 2372,
+   "ParentPID": 3016,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177991814
+  },
+  {
+   "OID": "5f0539c89b4b6d7db2b08a42",
+   "ProcessID": 2956,
+   "ParentPID": 2372,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177991876
+  },
+  {
+   "OID": "5f0539c99b4b6d7db2b08f1d",
+   "ProcessID": 3420,
+   "ParentPID": 2372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177992939
+  },
+  {
+   "OID": "5f0539ca9b4b6d7db2b09281",
+   "ProcessID": 2756,
+   "ParentPID": 3208,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe\" /noconfig @\"C:\\Users\\admin\\AppData\\Local\\Temp\\msoxwgsd.cmdline\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177993423
+  },
+  {
+   "OID": "5f0539ca9b4b6d7db2b09283",
+   "ProcessID": 1876,
+   "ParentPID": 2756,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 \"/OUT:C:\\Users\\admin\\AppData\\Local\\Temp\\RESE85F.tmp\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\vbcE85E.tmp\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\cvtres.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177993595
+  },
+  {
+   "OID": "5f0539ca9b4b6d7db2b09284",
+   "ProcessID": 3276,
+   "ParentPID": 3208,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\iuooip1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\iuooip1.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177993845
+  },
+  {
+   "OID": "5f0539cb9b4b6d7db2b09cfd",
+   "ProcessID": 956,
+   "ParentPID": 3208,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C ping 1.1.1.1 -n 1 -w 3000 \u003e Nul \u0026 Del \"C:\\Users\\admin\\AppData\\Local\\Temp\\iuooip.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177995220
+  },
+  {
+   "OID": "5f0539cb9b4b6d7db2b09cff",
+   "ProcessID": 3332,
+   "ParentPID": 956,
+   "CommandLine": "ping  1.1.1.1 -n 1 -w 3000  ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177995330
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f0539cb9b4b6d7db2b09cfd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539c19b4b6d7db2b07e05",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5f0539c19b4b6d7db2b07e05",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f0539ca9b4b6d7db2b09284",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539ca9b4b6d7db2b09284",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f0539ca9b4b6d7db2b09284",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539ca9b4b6d7db2b09284",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539ca9b4b6d7db2b09281",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539ca9b4b6d7db2b09281",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539ca9b4b6d7db2b09281",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539c19b4b6d7db2b07e05",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5f0539c19b4b6d7db2b07e05",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539c99b4b6d7db2b08f1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539c89b4b6d7db2b087e1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539c89b4b6d7db2b087e2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539c89b4b6d7db2b087e1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f0539c89b4b6d7db2b087e1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539c89b4b6d7db2b087e1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f0539c89b4b6d7db2b087e1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539c89b4b6d7db2b087e1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0539c19b4b6d7db2b07e05",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

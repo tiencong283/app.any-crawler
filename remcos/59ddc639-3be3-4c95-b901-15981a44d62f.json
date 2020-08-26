@@ -1,0 +1,218 @@
+{
+ "Name": "33ae7b2faf570568608d2ff3ef2c1826.exe",
+ "Md5": "33ae7b2faf570568608d2ff3ef2c1826",
+ "UUID": "59ddc639-3be3-4c95-b901-15981a44d62f",
+ "Processes": [
+  {
+   "OID": "5f32b49ebda802575c342c1b",
+   "ProcessID": 2584,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\33ae7b2faf570568608d2ff3ef2c1826.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\33ae7b2faf570568608d2ff3ef2c1826.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597158557840
+  },
+  {
+   "OID": "5f32b49fbda802575c3435a7",
+   "ProcessID": 2212,
+   "ParentPID": 2584,
+   "CommandLine": "C:\\Windows\\system32\\rundll32.exe RuffeMeathead,Narva",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597158559058
+  },
+  {
+   "OID": "5f32b49fbda802575c3435a8",
+   "ProcessID": 2856,
+   "ParentPID": 2212,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597158559215
+  },
+  {
+   "OID": "5f32b4bebda802575c3443bd",
+   "ProcessID": 2668,
+   "ParentPID": 2856,
+   "CommandLine": "C:\\Windows\\system32\\cmd.exe /c \"COPY /Y /B \"C:\\Users\\admin\\AppData\\Local\\Temp\\33ae7b2faf570568608d2ff3ef2c1826.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\Adobe\\Flash Player\\AssetCache\\J7D4H966\\printui.exe\"\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597158589980
+  },
+  {
+   "OID": "5f32b4cbbda802575c344bb9",
+   "ProcessID": 3584,
+   "ParentPID": 596,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3E5FC7F9-9A51-4367-9063-A120244FBEC7}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1597158603168
+  },
+  {
+   "OID": "5f32b4cbbda802575c344ec7",
+   "ProcessID": 2360,
+   "ParentPID": 3584,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\" /c \"reg.exe add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Paths\" /v \"C:\\Users\\admin\\AppData\\Roaming\\Adobe\\Flash Player\\AssetCache\\J7D4H966\" /t REG_DWORD /d 0\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597158603293
+  },
+  {
+   "OID": "5f32b4cbbda802575c344ec9",
+   "ProcessID": 3372,
+   "ParentPID": 2360,
+   "CommandLine": "reg.exe  add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Paths\" /v \"C:\\Users\\admin\\AppData\\Roaming\\Adobe\\Flash Player\\AssetCache\\J7D4H966\" /t REG_DWORD /d 0",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597158603371
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f32b49fbda802575c3435a8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32b49fbda802575c3435a8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b49fbda802575c3435a8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32b4cbbda802575c344ec7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b4cbbda802575c344bb9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b4cbbda802575c344bb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b4cbbda802575c344bb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32b49ebda802575c342c06",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32b49ebda802575c342c06",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32b49ebda802575c342bff",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32b49fbda802575c3435a8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32b49fbda802575c3435a8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b4bebda802575c3443bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32b4bebda802575c3443bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32b49fbda802575c3435a8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b49fbda802575c3435a8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b49ebda802575c342c06",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b49ebda802575c342bfe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b49ebda802575c342c06",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32b49fbda802575c3435a7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b49fbda802575c3435a7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32b49fbda802575c3435a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b49ebda802575c342c1b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  },
+  {
+   "ProcessOID": "5f32b49ebda802575c342c1b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

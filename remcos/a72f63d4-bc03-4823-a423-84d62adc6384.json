@@ -1,0 +1,89 @@
+{
+ "Name": "UPS_PACK - Copy.bin",
+ "Md5": "321fbea92768f30bed5ab72f5766759b",
+ "UUID": "a72f63d4-bc03-4823-a423-84d62adc6384",
+ "Processes": [
+  {
+   "OID": "5ef7c8789518f438fef07b86",
+   "ProcessID": 1328,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\UPS_PACK - Copy.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\UPS_PACK - Copy.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593297015896
+  },
+  {
+   "OID": "5ef7c8799518f438fef083dd",
+   "ProcessID": 2120,
+   "ParentPID": 1328,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\NApxCe\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmpD2BB.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593297016990
+  },
+  {
+   "OID": "5ef7c8799518f438fef085f0",
+   "ProcessID": 3796,
+   "ParentPID": 1328,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\UPS_PACK - Copy.bin.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593297017146
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ef7c8799518f438fef085f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef7c8799518f438fef085f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5ef7c8799518f438fef085f0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef7c8789518f438fef07b86",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ef7c8789518f438fef07b75",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef7c8799518f438fef083dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ef7c8789518f438fef07b86",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ef7c8789518f438fef07b86",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef7c8789518f438fef07b86",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

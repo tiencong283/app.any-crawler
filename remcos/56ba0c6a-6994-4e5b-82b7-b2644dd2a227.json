@@ -1,0 +1,123 @@
+{
+ "Name": "0163-2019-korea-office.exe",
+ "Md5": "7bb329b2ddee6249165fd79cc9ad6acf",
+ "UUID": "56ba0c6a-6994-4e5b-82b7-b2644dd2a227",
+ "Processes": [
+  {
+   "OID": "5de9a8d7a20a742f67f0675c",
+   "ProcessID": 2860,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\0163-2019-korea-office.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\0163-2019-korea-office.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1575594198457
+  },
+  {
+   "OID": "5de9a8e8a20a742f67f0696b",
+   "ProcessID": 236,
+   "ParentPID": 2860,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\0163-2019-korea-office.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\0163-2019-korea-office.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575594216332
+  },
+  {
+   "OID": "5de9a8e9a20a742f67f06977",
+   "ProcessID": 2628,
+   "ParentPID": 236,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575594216645
+  },
+  {
+   "OID": "5de9a8e9a20a742f67f06979",
+   "ProcessID": 272,
+   "ParentPID": 2628,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575594216707
+  },
+  {
+   "OID": "5de9a8eaa20a742f67f07085",
+   "ProcessID": 2204,
+   "ParentPID": 2628,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575594217817
+  },
+  {
+   "OID": "5de9a908a20a742f67f07277",
+   "ProcessID": 1748,
+   "ParentPID": 2204,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575594248067
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5de9a908a20a742f67f07277",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de9a908a20a742f67f07277",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5de9a8eaa20a742f67f07085",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5de9a8e9a20a742f67f06977",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de9a8e8a20a742f67f0696b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5de9a8e8a20a742f67f0696b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5de9a8e8a20a742f67f0696b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de9a8e8a20a742f67f0696b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de9a8e8a20a742f67f0696b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de9a8d7a20a742f67f0675c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

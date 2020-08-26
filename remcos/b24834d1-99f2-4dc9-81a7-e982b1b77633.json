@@ -1,0 +1,80 @@
+{
+ "Name": "fresis.exe",
+ "Md5": "cbfafbff9749901afabc0f8d163a4442",
+ "UUID": "b24834d1-99f2-4dc9-81a7-e982b1b77633",
+ "Processes": [
+  {
+   "OID": "5e624295c972db061c835f1b",
+   "ProcessID": 3472,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\fresis.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fresis.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583497877561
+  },
+  {
+   "OID": "5e6242a2c972db061c837117",
+   "ProcessID": 3556,
+   "ParentPID": 3472,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\fresis.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fresis.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583497890064
+  },
+  {
+   "OID": "5e6242a2c972db061c83711e",
+   "ProcessID": 4012,
+   "ParentPID": 3556,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583497890260
+  },
+  {
+   "OID": "5e6242a3c972db061c8374ea",
+   "ProcessID": 3272,
+   "ParentPID": 3556,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583497890807
+  },
+  {
+   "OID": "5e6242a3c972db061c8374eb",
+   "ProcessID": 1928,
+   "ParentPID": 3272,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\fresis.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fresis.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583497890900
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e6242a2c972db061c837117",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5e6242a2c972db061c837117",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5e6242a2c972db061c837117",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e624295c972db061c835f1b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

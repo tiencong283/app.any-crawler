@@ -1,0 +1,77 @@
+{
+ "Name": "6e074d94e7f7050aa12711501899601b3b9e5a42c003bd20067eb3c3939332ce",
+ "Md5": "e942d7298921fcef394b8f89e32404c2",
+ "UUID": "0b75fb8d-6314-4756-b81d-d71fb1f36277",
+ "Processes": [
+  {
+   "OID": "5efaa66d7c9cc806445627bb",
+   "ProcessID": 2828,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\6e074d94e7f7050aa12711501899601b3b9e5a42c003bd20067eb3c3939332ce.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\6e074d94e7f7050aa12711501899601b3b9e5a42c003bd20067eb3c3939332ce.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593484909058
+  },
+  {
+   "OID": "5efaa6797c9cc8064456326e",
+   "ProcessID": 3824,
+   "ParentPID": 2828,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\bsPPCa\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp1163.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593484920636
+  },
+  {
+   "OID": "5efaa6797c9cc80644563270",
+   "ProcessID": 2716,
+   "ParentPID": 2828,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593484920902
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5efaa6797c9cc80644563270",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efaa66d7c9cc806445627bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5efaa66d7c9cc806445627aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efaa6797c9cc8064456326e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5efaa66d7c9cc806445627bb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5efaa66d7c9cc806445627bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efaa66d7c9cc806445627bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "Name": "Complaint.exe",
+ "Md5": "682d29cbde85ca5bd6a599863447abba",
+ "UUID": "5cf4b70b-0b04-4132-a132-5902da2956dc",
+ "Processes": [
+  {
+   "OID": "5e14f0e2b57bc50d31f3d674",
+   "ProcessID": 2488,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\Complaint.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\Complaint.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578430689561
+  },
+  {
+   "OID": "5e14f0f0b57bc50d31f3e528",
+   "ProcessID": 3852,
+   "ParentPID": 2488,
+   "CommandLine": "\"C:\\Windows\\system32\\svchost.exe\"",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578430704296
+  },
+  {
+   "OID": "5e14f0f0b57bc50d31f3e529",
+   "ProcessID": 2096,
+   "ParentPID": 3852,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578430704436
+  },
+  {
+   "OID": "5e14f0f1b57bc50d31f3e7dd",
+   "ProcessID": 3268,
+   "ParentPID": 3852,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578430705327
+  },
+  {
+   "OID": "5e14f0f1b57bc50d31f3e7de",
+   "ProcessID": 784,
+   "ParentPID": 3268,
+   "CommandLine": "\"C:\\Windows\\system32\\svchost.exe\" ",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578430705421
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e14f0f1b57bc50d31f3e7dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e14f0f0b57bc50d31f3e528",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5e14f0f0b57bc50d31f3e528",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5e14f0f0b57bc50d31f3e528",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e14f0e2b57bc50d31f3d674",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e14f0e2b57bc50d31f3d674",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e14f0e2b57bc50d31f3d674",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e14f0e2b57bc50d31f3d674",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

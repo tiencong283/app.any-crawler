@@ -1,0 +1,44 @@
+{
+ "Name": "Backdoor.exe",
+ "Md5": "69d6b3020062843f8cd3738be3272839",
+ "UUID": "52884e01-ebc6-4083-bfe8-7bc7f0cb467d",
+ "Processes": [
+  {
+   "OID": "5e805a0be1c4a140fbdaae7a",
+   "ProcessID": 3692,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585469963059
+  },
+  {
+   "OID": "5e805a0ee1c4a140fbdab178",
+   "ProcessID": 3240,
+   "ParentPID": 3692,
+   "CommandLine": "shutdown /l",
+   "Image": "C:\\Windows\\system32\\shutdown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585469963794
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e805a0be1c4a140fbdaae7a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e805a0be1c4a140fbdaae7a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e805a0be1c4a140fbdaae7a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

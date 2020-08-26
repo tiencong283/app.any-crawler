@@ -1,0 +1,183 @@
+{
+ "Name": "문서.exe",
+ "Md5": "498cdce9322243dbf283771f0dc116f7",
+ "UUID": "1c369d70-b8e4-482c-9082-ca07f1d36905",
+ "Processes": [
+  {
+   "OID": "5e8c85648fdb073b83f945ab",
+   "ProcessID": 2940,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\문서.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\문서.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586267491509
+  },
+  {
+   "OID": "5e8c85728fdb073b83f95854",
+   "ProcessID": 1708,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\문서.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\문서.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1586267505409
+  },
+  {
+   "OID": "5e8c85918fdb073b83f95e87",
+   "ProcessID": 2288,
+   "ParentPID": 2940,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\wGXDwL\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp9B1A.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586267536534
+  },
+  {
+   "OID": "5e8c85918fdb073b83f95e89",
+   "ProcessID": 3408,
+   "ParentPID": 2940,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\Desktop\\문서.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586267536691
+  },
+  {
+   "OID": "5e8c862e8fdb073b83f9784d",
+   "ProcessID": 792,
+   "ParentPID": 592,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{7007ACD1-3202-11D1-AAD2-00805FC1270E}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1586267693873
+  },
+  {
+   "OID": "5e8c86498fdb073b83f994be",
+   "ProcessID": 3788,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\" ",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1586267716529
+  },
+  {
+   "OID": "5e8c86538fdb073b83f99978",
+   "ProcessID": 3944,
+   "ParentPID": 3788,
+   "CommandLine": "nslookup",
+   "Image": "C:\\Windows\\system32\\nslookup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586267731092
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8c85638fdb073b83f93e2a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c85638fdb073b83f93e2a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c86498fdb073b83f994be",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c85638fdb073b83f93e2a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c862e8fdb073b83f9784d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c85638fdb073b83f93e2a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c85918fdb073b83f95e89",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c85918fdb073b83f95e89",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c85918fdb073b83f95e89",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c85918fdb073b83f95e89",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c85648fdb073b83f945ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c85638fdb073b83f93e20",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c85918fdb073b83f95e87",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c85648fdb073b83f945ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c85648fdb073b83f945ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c85648fdb073b83f945ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c85648fdb073b83f945ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1082",
+    "T1497"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c85728fdb073b83f95854",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  }
+ ]
+}

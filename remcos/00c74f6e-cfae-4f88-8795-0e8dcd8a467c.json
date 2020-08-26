@@ -1,0 +1,77 @@
+{
+ "Name": "a.exe",
+ "Md5": "d3ac35adee9b80aefa92966bfe188758",
+ "UUID": "00c74f6e-cfae-4f88-8795-0e8dcd8a467c",
+ "Processes": [
+  {
+   "OID": "5f3bdf90e3b44a3058ced49a",
+   "ProcessID": 2884,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\a.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\a.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597759376116
+  },
+  {
+   "OID": "5f3bdfb0e3b44a3058cede1f",
+   "ProcessID": 1948,
+   "ParentPID": 2884,
+   "CommandLine": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597759408212
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f3bdfb0e3b44a3058cede1f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3bdf90e3b44a3058ced49a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3bdf90e3b44a3058ced49a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f3bdf90e3b44a3058ced49a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3bdf90e3b44a3058ced49a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f3bdf90e3b44a3058ced49a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f3bdf90e3b44a3058cecc30",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f3bdf90e3b44a3058ced49a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

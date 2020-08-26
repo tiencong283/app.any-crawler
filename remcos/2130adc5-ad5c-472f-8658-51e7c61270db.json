@@ -1,0 +1,140 @@
+{
+ "Name": "XBook.exe",
+ "Md5": "90de1602c5900c2a81bcbbad0eb754e7",
+ "UUID": "2130adc5-ad5c-472f-8658-51e7c61270db",
+ "Processes": [
+  {
+   "OID": "5e817bb87bba06128820c5d1",
+   "ProcessID": 3992,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\XBook.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\XBook.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585544119660
+  },
+  {
+   "OID": "5e817bd27bba0612882101e8",
+   "ProcessID": 2640,
+   "ParentPID": 3992,
+   "CommandLine": "cmd /c \"\"C:\\Users\\Public\\Natso.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585544146316
+  },
+  {
+   "OID": "5e817bd27bba0612882101ea",
+   "ProcessID": 2572,
+   "ParentPID": 2640,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585544146410
+  },
+  {
+   "OID": "5e817bd37bba061288210220",
+   "ProcessID": 3768,
+   "ParentPID": 2640,
+   "CommandLine": "reg  add hkcu\\Environment /v windir /d \"cmd /c start /min  C:\\Users\\Public\\Yako.bat reg  delete hkcu\\Environment /v windir /f \u0026\u0026 REM \"",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585544146488
+  },
+  {
+   "OID": "5e817bd37bba061288210221",
+   "ProcessID": 1792,
+   "ParentPID": 2640,
+   "CommandLine": "schtasks  /Run /TN \\Microsoft\\Windows\\DiskCleanup\\SilentCleanup /I",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585544146535
+  },
+  {
+   "OID": "5e817bd37bba061288210222",
+   "ProcessID": 3032,
+   "ParentPID": 2640,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585544146613
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e817bb87bba06128820c5d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e817bb87bba06128820c5d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e817bb87bba06128820c5d1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e817bb87bba06128820c5d1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e817bd37bba061288210221",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e817bd27bba0612882101e8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e817bd27bba0612882101e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e817bb87bba06128820c5d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e817bb87bba06128820c5d1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e817bb87bba06128820c5d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e817bb87bba06128820c5d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e817bb87bba06128820c5d1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  }
+ ]
+}

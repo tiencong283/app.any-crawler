@@ -1,0 +1,167 @@
+{
+ "Name": "rc.exe",
+ "Md5": "5b9223444bdec3b16e40c2ca0037d702",
+ "UUID": "a51d65a4-33a7-4773-a113-01cf0080fa6a",
+ "Processes": [
+  {
+   "OID": "5f079a86f5128a51778bd064",
+   "ProcessID": 2260,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\rc.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\rc.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594333829577
+  },
+  {
+   "OID": "5f079aa0f5128a51778c0c27",
+   "ProcessID": 2752,
+   "ParentPID": 2260,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594333855571
+  },
+  {
+   "OID": "5f079aa0f5128a51778c0c28",
+   "ProcessID": 1792,
+   "ParentPID": 2752,
+   "CommandLine": "cmd /c C:\\Users\\Public\\Natso.bat",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594333855652
+  },
+  {
+   "OID": "5f079aa0f5128a51778c0c29",
+   "ProcessID": 680,
+   "ParentPID": 2260,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594333855662
+  },
+  {
+   "OID": "5f079aa0f5128a51778c0c2b",
+   "ProcessID": 1916,
+   "ParentPID": 1792,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594333855778
+  },
+  {
+   "OID": "5f079aa0f5128a51778c0c2c",
+   "ProcessID": 2216,
+   "ParentPID": 1792,
+   "CommandLine": "reg  add hkcu\\Environment /v windir /d \"cmd /c start /min  C:\\Users\\Public\\x.bat reg  delete hkcu\\Environment /v windir /f \u0026\u0026 REM \"",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594333855810
+  },
+  {
+   "OID": "5f079aa0f5128a51778c0c2d",
+   "ProcessID": 2548,
+   "ParentPID": 1792,
+   "CommandLine": "schtasks  /Run /TN \\Microsoft\\Windows\\DiskCleanup\\SilentCleanup /I",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594333855857
+  },
+  {
+   "OID": "5f079aa0f5128a51778c0c2e",
+   "ProcessID": 2928,
+   "ParentPID": 1792,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594333855935
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f079aa0f5128a51778c0c2d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f079aa0f5128a51778c0c28",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f079aa0f5128a51778c0c28",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f079aa0f5128a51778c0c29",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f079aa0f5128a51778c0c27",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f079a86f5128a51778bd064",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f079a86f5128a51778bd064",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f079a86f5128a51778bd064",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f079a86f5128a51778bd064",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f079a86f5128a51778bd064",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f079a86f5128a51778bd064",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f079a86f5128a51778bc902",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f079a86f5128a51778bd064",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

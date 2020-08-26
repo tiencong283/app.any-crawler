@@ -1,0 +1,44 @@
+{
+ "Name": "Ucrqfkz.exe",
+ "Md5": "0d4883e56e5c64868879b1f063e19ed7",
+ "UUID": "a420458f-231b-44da-b57e-27945e66b092",
+ "Processes": [
+  {
+   "OID": "5e04d4d23dc0a2173de1628d",
+   "ProcessID": 2840,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Ucrqfkz.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Ucrqfkz.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1577374930056
+  },
+  {
+   "OID": "5e04d4d23dc0a2173de1628e",
+   "ProcessID": 716,
+   "ParentPID": 2840,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577374930228
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e04d4d23dc0a2173de1628e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e04d4d23dc0a2173de1628e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e04d4d23dc0a2173de1628e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

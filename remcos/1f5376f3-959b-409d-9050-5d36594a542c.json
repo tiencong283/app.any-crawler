@@ -1,0 +1,89 @@
+{
+ "Name": "문서.exe",
+ "Md5": "498cdce9322243dbf283771f0dc116f7",
+ "UUID": "1f5376f3-959b-409d-9050-5d36594a542c",
+ "Processes": [
+  {
+   "OID": "5e8e2e5e4f46654bbb3856b0",
+   "ProcessID": 3472,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\문서.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\문서.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586376286519
+  },
+  {
+   "OID": "5e8e2e8b4f46654bbb385b48",
+   "ProcessID": 2972,
+   "ParentPID": 3472,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\wGXDwL\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp8DBC.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586376331222
+  },
+  {
+   "OID": "5e8e2e8b4f46654bbb385b4a",
+   "ProcessID": 2192,
+   "ParentPID": 3472,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\문서.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586376331362
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8e2e8b4f46654bbb385b4a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e8e2e8b4f46654bbb385b4a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8e2e8b4f46654bbb385b4a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8e2e5e4f46654bbb3856b0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e8e2e5e4f46654bbb384d88",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8e2e8b4f46654bbb385b48",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8e2e5e4f46654bbb3856b0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8e2e5e4f46654bbb3856b0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8e2e5e4f46654bbb3856b0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

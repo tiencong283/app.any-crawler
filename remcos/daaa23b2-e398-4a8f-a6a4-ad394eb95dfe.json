@@ -1,0 +1,64 @@
+{
+ "Name": "zap.exe",
+ "Md5": "f00527c181a1307c50fd30ed0f949ed3",
+ "UUID": "daaa23b2-e398-4a8f-a6a4-ad394eb95dfe",
+ "Processes": [
+  {
+   "OID": "5ecf1021981204689f4904a0",
+   "ProcessID": 1336,
+   "ParentPID": 312,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\zap.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\zap.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1590628385447
+  },
+  {
+   "OID": "5ecf1034981204689f498a2b",
+   "ProcessID": 2992,
+   "ParentPID": 1336,
+   "CommandLine": "\"C:\\Windows\\system32\\nslookup.exe\"",
+   "Image": "C:\\Windows\\system32\\nslookup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590628388556
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ecf1034981204689f498a2b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecf1021981204689f49048c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ecf1021981204689f490484",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5ecf1021981204689f49048c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecf1021981204689f4904a0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ecf1021981204689f4904a0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

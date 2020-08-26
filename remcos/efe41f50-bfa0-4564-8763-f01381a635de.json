@@ -1,0 +1,102 @@
+{
+ "Name": "ProdigalCracker.exe",
+ "Md5": "df7057bac26306c0dc3079529ebff61a",
+ "UUID": "efe41f50-bfa0-4564-8763-f01381a635de",
+ "Processes": [
+  {
+   "OID": "5f235b31bb1b4e1510a63e7e",
+   "ProcessID": 372,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ProdigalCracker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ProdigalCracker.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596152624876
+  },
+  {
+   "OID": "5f235b32bb1b4e1510a645dc",
+   "ProcessID": 1656,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracker.sfx.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracker.sfx.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596152626047
+  },
+  {
+   "OID": "5f235b33bb1b4e1510a64b27",
+   "ProcessID": 3852,
+   "ParentPID": 1656,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX1\\ProdigalCracker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX1\\ProdigalCracker.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596152626641
+  },
+  {
+   "OID": "5f235b33bb1b4e1510a64b28",
+   "ProcessID": 2336,
+   "ParentPID": 3852,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596152626751
+  },
+  {
+   "OID": "5f235b34bb1b4e1510a6549c",
+   "ProcessID": 2332,
+   "ParentPID": 3852,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596152627626
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f235b33bb1b4e1510a64b27",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f235b33bb1b4e1510a64b27",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5f235b33bb1b4e1510a64b27",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5f235b33bb1b4e1510a64b27",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f235b32bb1b4e1510a645dc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f235b31bb1b4e1510a63e6a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f235b31bb1b4e1510a63e7e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f235b31bb1b4e1510a63e7e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

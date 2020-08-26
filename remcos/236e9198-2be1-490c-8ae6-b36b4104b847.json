@@ -1,0 +1,51 @@
+{
+ "Name": "Chegeware_v6.exe",
+ "Md5": "cfc773dbb43ae0e7198a53e5108957ca",
+ "UUID": "236e9198-2be1-490c-8ae6-b36b4104b847",
+ "Processes": [
+  {
+   "OID": "5e878eaf9217d06bc4a45417",
+   "ProcessID": 3164,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Chegeware_v6.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Chegeware_v6.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585942191057
+  },
+  {
+   "OID": "5e878ee29217d06bc4a46081",
+   "ProcessID": 540,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1585942242573
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e878ee29217d06bc4a46081",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e878eaf9217d06bc4a45417",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e878eaf9217d06bc4a45417",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e878eaf9217d06bc4a45417",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

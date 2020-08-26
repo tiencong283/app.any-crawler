@@ -1,0 +1,123 @@
+{
+ "Name": "Apple Cracker.exe",
+ "Md5": "8efa2ec7b0c92d2ff52b2ea5bfaed4ed",
+ "UUID": "cd4c8309-3c58-41a6-8f97-3312830df4ad",
+ "Processes": [
+  {
+   "OID": "5f3ef50f3012626200ed2a26",
+   "ProcessID": 864,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Apple Cracker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Apple Cracker.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597961487045
+  },
+  {
+   "OID": "5f3ef50f3012626200ed30d3",
+   "ProcessID": 1756,
+   "ParentPID": 864,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597961487388
+  },
+  {
+   "OID": "5f3ef5103012626200ed354b",
+   "ProcessID": 3636,
+   "ParentPID": 864,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597961487873
+  },
+  {
+   "OID": "5f3ef5103012626200ed354c",
+   "ProcessID": 920,
+   "ParentPID": 3636,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Apple Cracker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Apple Cracker.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597961487967
+  },
+  {
+   "OID": "5f3ef5103012626200ed354d",
+   "ProcessID": 3708,
+   "ParentPID": 920,
+   "CommandLine": "/k %windir%\\System32\\reg.exe ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597961488045
+  },
+  {
+   "OID": "5f3ef5103012626200ed354f",
+   "ProcessID": 2204,
+   "ParentPID": 3708,
+   "CommandLine": "C:\\Windows\\System32\\reg.exe  ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597961488107
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f3ef5103012626200ed354f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f3ef5103012626200ed354d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f3ef5103012626200ed354c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3ef5103012626200ed354c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5f3ef5103012626200ed354c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5f3ef5103012626200ed354c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f3ef50f3012626200ed2a26",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5f3ef50f3012626200ed2a26",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5f3ef50f3012626200ed2a26",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

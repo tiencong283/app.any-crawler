@@ -1,0 +1,86 @@
+{
+ "Name": "download.exe",
+ "Md5": "8d3a9147a69c399f0fa3ee7897d72d89",
+ "UUID": "c1b0d322-2349-4b8e-bddf-eb054fd9b55b",
+ "Processes": [
+  {
+   "OID": "5f048723c9ba231a87e1cd37",
+   "ProcessID": 1004,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\download.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\download.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594132259582
+  },
+  {
+   "OID": "5f048725c9ba231a87e1d57e",
+   "ProcessID": 3464,
+   "ParentPID": 1004,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594132260847
+  },
+  {
+   "OID": "5f048726c9ba231a87e1d814",
+   "ProcessID": 2272,
+   "ParentPID": 1004,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\download.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\download.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594132261800
+  },
+  {
+   "OID": "5f048727c9ba231a87e1e065",
+   "ProcessID": 2260,
+   "ParentPID": 2272,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594132262910
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f048725c9ba231a87e1d57e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5f048725c9ba231a87e1d57e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f048723c9ba231a87e1cd37",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f048725c9ba231a87e1d57e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f048723c9ba231a87e1cd37",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f048723c9ba231a87e1cd37",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f048723c9ba231a87e1cd37",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

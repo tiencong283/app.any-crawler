@@ -1,0 +1,62 @@
+{
+ "Name": "jan22.bin",
+ "Md5": "67d2129bbaa9e52fa9387cd9f0ec64bc",
+ "UUID": "bd5eee55-d86c-4f92-8ea1-8661fbd8aa10",
+ "Processes": [
+  {
+   "OID": "5e599af96259c1190ce13822",
+   "ProcessID": 3368,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\jan22.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\jan22.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1582930680746
+  },
+  {
+   "OID": "5e599af96259c1190ce13b83",
+   "ProcessID": 2152,
+   "ParentPID": 3368,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\JAN22I~2.EXE",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\JAN22I~2.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582930681355
+  },
+  {
+   "OID": "5e599b016259c1190ce13e29",
+   "ProcessID": 2012,
+   "ParentPID": 2152,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\JAN22I~2.EXE",
+   "Image": "C:\\Program Files\\internet explorer\\ieinstal.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582930688855
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e599b016259c1190ce13e29",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e599af86259c1190ce130bc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e599b016259c1190ce13e29",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e599b016259c1190ce13e29",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  }
+ ]
+}

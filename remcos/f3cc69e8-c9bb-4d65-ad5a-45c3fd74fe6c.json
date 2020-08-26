@@ -1,0 +1,147 @@
+{
+ "Name": "cobro.exe",
+ "Md5": "93a7873c55a816fc7f31618376674206",
+ "UUID": "f3cc69e8-c9bb-4d65-ad5a-45c3fd74fe6c",
+ "Processes": [
+  {
+   "OID": "5f033bdcd3201d7cc0137272",
+   "ProcessID": 1044,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cobro.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cobro.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594047452181
+  },
+  {
+   "OID": "5f033bded3201d7cc01375ed",
+   "ProcessID": 1524,
+   "ParentPID": 1044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cobro.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cobro.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594047453806
+  },
+  {
+   "OID": "5f033bded3201d7cc0137685",
+   "ProcessID": 2984,
+   "ParentPID": 1524,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594047454228
+  },
+  {
+   "OID": "5f033bdfd3201d7cc0137c91",
+   "ProcessID": 2560,
+   "ParentPID": 2984,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\System32\\PXServiceNet.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594047455462
+  },
+  {
+   "OID": "5f033bdfd3201d7cc0137c93",
+   "ProcessID": 3520,
+   "ParentPID": 2560,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\System32\\PXServiceNet.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\System32\\PXServiceNet.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594047455525
+  },
+  {
+   "OID": "5f033be1d3201d7cc013824b",
+   "ProcessID": 2156,
+   "ParentPID": 3520,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\System32\\PXServiceNet.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\System32\\PXServiceNet.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594047456712
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f033bdcd3201d7cc0136b95",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f033bdcd3201d7cc0136b8c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f033be1d3201d7cc013824b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f033be1d3201d7cc013824b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5f033be1d3201d7cc013824b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f033be1d3201d7cc013824b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f033be1d3201d7cc013824b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f033bdfd3201d7cc0137c93",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f033bded3201d7cc0137685",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f033bded3201d7cc01375ed",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5f033bded3201d7cc01375ed",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f033bded3201d7cc01375ed",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f033bded3201d7cc01375ed",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f033bdcd3201d7cc0137272",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

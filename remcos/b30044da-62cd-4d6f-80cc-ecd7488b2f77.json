@@ -1,0 +1,86 @@
+{
+ "Name": "ikarus12.exe",
+ "Md5": "45a6aedf1a5af41eabab73b5d40e468e",
+ "UUID": "b30044da-62cd-4d6f-80cc-ecd7488b2f77",
+ "Processes": [
+  {
+   "OID": "5ec5b5234314aa2898c9858f",
+   "ProcessID": 3056,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ikarus12.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ikarus12.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1590015266919
+  },
+  {
+   "OID": "5ec5b5234314aa2898c9859c",
+   "ProcessID": 2844,
+   "ParentPID": 3056,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590015267434
+  },
+  {
+   "OID": "5ec5b5234314aa2898c9859e",
+   "ProcessID": 3692,
+   "ParentPID": 2844,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590015267497
+  },
+  {
+   "OID": "5ec5b5244314aa2898c98e72",
+   "ProcessID": 3892,
+   "ParentPID": 2844,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remmy\\remmy.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remmy\\remmy.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590015268575
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ec5b5244314aa2898c98e72",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec5b5244314aa2898c98e72",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ec5b5234314aa2898c9859c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec5b5234314aa2898c9858f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ec5b5234314aa2898c9858f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec5b5234314aa2898c9858f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ec5b5234314aa2898c9858f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

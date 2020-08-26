@@ -1,0 +1,44 @@
+{
+ "Name": "Backdoor.exe",
+ "Md5": "42f53c5d250b6381ad8936bebf00b442",
+ "UUID": "64c13d3c-4f3c-448b-b295-81bc3297c641",
+ "Processes": [
+  {
+   "OID": "5eb1d04ff94e07026af1ac03",
+   "ProcessID": 3680,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588711502723
+  },
+  {
+   "OID": "5eb1d070f94e07026af1b1b1",
+   "ProcessID": 3216,
+   "ParentPID": 3680,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\script.js\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588711535723
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eb1d04ff94e07026af1ac03",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5eb1d04ff94e07026af1ac03",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb1d04ff94e07026af1ac03",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

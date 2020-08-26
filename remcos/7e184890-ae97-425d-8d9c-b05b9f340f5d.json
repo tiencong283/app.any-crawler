@@ -1,0 +1,58 @@
+{
+ "Name": "AppleCracked.exe",
+ "Md5": "c37076dd7e4129446fde1631a9a5c84e",
+ "UUID": "7e184890-ae97-425d-8d9c-b05b9f340f5d",
+ "Processes": [
+  {
+   "OID": "5f30c3014b55cc108462c0fa",
+   "ProcessID": 2784,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AppleCracked.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AppleCracked.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597031169587
+  },
+  {
+   "OID": "5f30c3024b55cc108462c0ff",
+   "ProcessID": 1388,
+   "ParentPID": 2784,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597031169899
+  },
+  {
+   "OID": "5f30c31c4b55cc108462c707",
+   "ProcessID": 3092,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597031196134
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f30c31c4b55cc108462c707",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f30c3014b55cc108462c0fa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30c3014b55cc108462c0fa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30c3014b55cc108462c0fa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

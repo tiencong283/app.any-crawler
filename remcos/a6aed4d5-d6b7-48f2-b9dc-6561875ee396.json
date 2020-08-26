@@ -1,0 +1,84 @@
+{
+ "Name": "주문 문의 MAR27-016742, pdf.exe",
+ "Md5": "c1b82e1b7880f6692c8f5f2ee03260a9",
+ "UUID": "a6aed4d5-d6b7-48f2-b9dc-6561875ee396",
+ "Processes": [
+  {
+   "OID": "5e8290241a19464b824264e9",
+   "ProcessID": 3740,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\주문 문의 MAR27-016742, pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\주문 문의 MAR27-016742, pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585614883564
+  },
+  {
+   "OID": "5e82902e1a19464b82426a5f",
+   "ProcessID": 2808,
+   "ParentPID": 3740,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\hDBHtWU\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmpA2C0.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585614894330
+  },
+  {
+   "OID": "5e82902e1a19464b82426a61",
+   "ProcessID": 3196,
+   "ParentPID": 3740,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585614894502
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e82902e1a19464b82426a61",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e82902e1a19464b82426a61",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8290241a19464b824264e9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5e8290231a19464b82425d80",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e82902e1a19464b82426a5f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8290241a19464b824264e9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8290241a19464b824264e9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8290241a19464b824264e9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

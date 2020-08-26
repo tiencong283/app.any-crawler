@@ -1,0 +1,154 @@
+{
+ "Name": "P.O.016810-0220.exe",
+ "Md5": "859f81e76268223eb8b81e05e5016466",
+ "UUID": "ae16de5a-0d40-404e-a05e-34fae204e506",
+ "Processes": [
+  {
+   "OID": "5e419ad2d2bc4a2a0ac7d766",
+   "ProcessID": 3976,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\P.O.016810-0220.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\P.O.016810-0220.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581357778575
+  },
+  {
+   "OID": "5e419ad3d2bc4a2a0ac7d776",
+   "ProcessID": 2108,
+   "ParentPID": 3976,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\mix\\Avderxg.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\mix\\Avderxg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581357778981
+  },
+  {
+   "OID": "5e419ad8d2bc4a2a0ac7e1d0",
+   "ProcessID": 3240,
+   "ParentPID": 2108,
+   "CommandLine": "cmd /c \"\"C:\\Users\\Public\\Natso.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581357783965
+  },
+  {
+   "OID": "5e419ad8d2bc4a2a0ac7e1d2",
+   "ProcessID": 3488,
+   "ParentPID": 3240,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581357784028
+  },
+  {
+   "OID": "5e419ad8d2bc4a2a0ac7e1d3",
+   "ProcessID": 3632,
+   "ParentPID": 3240,
+   "CommandLine": "reg  add hkcu\\Environment /v windir /d \"cmd /c start /min  C:\\Users\\Public\\Yako.bat reg  delete hkcu\\Environment /v windir /f \u0026\u0026 REM \"",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581357784075
+  },
+  {
+   "OID": "5e419ad8d2bc4a2a0ac7e1d4",
+   "ProcessID": 2616,
+   "ParentPID": 3240,
+   "CommandLine": "schtasks  /Run /TN \\Microsoft\\Windows\\DiskCleanup\\SilentCleanup /I",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581357784122
+  },
+  {
+   "OID": "5e419ad8d2bc4a2a0ac7e1d5",
+   "ProcessID": 3772,
+   "ParentPID": 3240,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581357784184
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e419ad3d2bc4a2a0ac7d776",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e419ad3d2bc4a2a0ac7d776",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e419ad3d2bc4a2a0ac7d776",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e419ad3d2bc4a2a0ac7d776",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e419ad3d2bc4a2a0ac7d776",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e419ad8d2bc4a2a0ac7e1d4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e419ad8d2bc4a2a0ac7e1d0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e419ad8d2bc4a2a0ac7e1d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e419ad3d2bc4a2a0ac7d776",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e419ad3d2bc4a2a0ac7d776",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e419ad2d2bc4a2a0ac7d766",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e419ad2d2bc4a2a0ac7d766",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e419ad2d2bc4a2a0ac7ce34",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

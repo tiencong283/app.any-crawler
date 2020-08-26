@@ -1,0 +1,87 @@
+{
+ "Name": "POEA ADVISORY 04 series.exe",
+ "Md5": "9d94cdb230dc5f9a3b82528f35479c20",
+ "UUID": "77f4fcf4-962a-4552-a70d-6a73b79bb901",
+ "Processes": [
+  {
+   "OID": "5e62aced907280362f1dcc69",
+   "ProcessID": 3332,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\POEA ADVISORY 04 series.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\POEA ADVISORY 04 series.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583525101552
+  },
+  {
+   "OID": "5e62acee907280362f1dd35d",
+   "ProcessID": 2544,
+   "ParentPID": 3332,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\logszuj.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\logszuj.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583525102083
+  },
+  {
+   "OID": "5e62ad03907280362f1ddcf7",
+   "ProcessID": 1784,
+   "ParentPID": 2544,
+   "CommandLine": "C:\\Windows\\System32\\runonce.exe",
+   "Image": "C:\\Windows\\System32\\runonce.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583525122427
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e62ad03907280362f1ddcf7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e62ad03907280362f1ddcf7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62ad03907280362f1ddcf7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62acee907280362f1dd35d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62acee907280362f1dd35d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e62acee907280362f1dd35d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62aced907280362f1dcc69",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62aced907280362f1dcc69",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62aced907280362f1dcc54",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "Name": "Desk.exe",
+ "Md5": "8dd7e1dbe3e91b3af1a1e674f5c4b20e",
+ "UUID": "bd3fecad-e6ce-4b01-addc-b8e60ff6bf43",
+ "Processes": [
+  {
+   "OID": "5ddf7dbb2fccba56911c2b29",
+   "ProcessID": 1936,
+   "ParentPID": 1860,
+   "CommandLine": "C:\\Windows\\Explorer.EXE",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5ddf7dbb2fccba56911c2b32",
+   "ProcessID": 2476,
+   "ParentPID": 1936,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Desk.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Desk.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574927802223
+  },
+  {
+   "OID": "5ddf7dcc2fccba56911e11ff",
+   "ProcessID": 2284,
+   "ParentPID": 2476,
+   "CommandLine": "\"C:\\Windows\\system32\\notepad.exe\"",
+   "Image": "C:\\Windows\\SysWOW64\\notepad.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574927818989
+  },
+  {
+   "OID": "5ddf7de52fccba56911e49ce",
+   "ProcessID": 2444,
+   "ParentPID": 2284,
+   "CommandLine": "C:\\Windows\\system32\\cmd.exe /c \"COPY /Y /B \"C:\\Users\\admin\\Desktop\\Desk.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\Adobe\\Flash Player\\AssetCache\\ksetup.exe\"\"",
+   "Image": "C:\\Windows\\SysWOW64\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574927845301
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ddf7dcc2fccba56911e11ff",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddf7dcc2fccba56911e11ff",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddf7de52fccba56911e49ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddf7de52fccba56911e49ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddf7dcc2fccba56911e11ff",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b1f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b17",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b1f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b24",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b29",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b29",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b32",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b29",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b32",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b32",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ddf7dbb2fccba56911c2b33",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  }
+ ]
+}

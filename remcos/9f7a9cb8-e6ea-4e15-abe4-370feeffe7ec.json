@@ -1,0 +1,66 @@
+{
+ "Name": "Backdoor.exe",
+ "Md5": "81eb11dd4ea3bce73e9760d606478dce",
+ "UUID": "9f7a9cb8-e6ea-4e15-abe4-370feeffe7ec",
+ "Processes": [
+  {
+   "OID": "5f2474abf26ab26cc2fdbe03",
+   "ProcessID": 1096,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596224682320
+  },
+  {
+   "OID": "5f2474abf26ab26cc2fdbe04",
+   "ProcessID": 1532,
+   "ParentPID": 1096,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3582-490\\Backdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3582-490\\Backdoor.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596224682633
+  },
+  {
+   "OID": "5f2474abf26ab26cc2fdbe05",
+   "ProcessID": 2464,
+   "ParentPID": 1532,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596224682695
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2474abf26ab26cc2fdbe05",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2474abf26ab26cc2fdbe04",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2474abf26ab26cc2fdbe05",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2474abf26ab26cc2fdbe04",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2474abf26ab26cc2fdbe04",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2474abf26ab26cc2fdbe03",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

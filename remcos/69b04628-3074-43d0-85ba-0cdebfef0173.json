@@ -1,0 +1,84 @@
+{
+ "Name": "PO No 167938.exe",
+ "Md5": "5ca4a9800766c636e4181c53c4c13c8d",
+ "UUID": "69b04628-3074-43d0-85ba-0cdebfef0173",
+ "Processes": [
+  {
+   "OID": "5e9d5d35e646fb05a9b809e4",
+   "ProcessID": 2076,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PO No 167938.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PO No 167938.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587371317562
+  },
+  {
+   "OID": "5e9d5d36e646fb05a9b8139a",
+   "ProcessID": 3480,
+   "ParentPID": 2076,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\DUHwFivrp\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmpE816.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587371318171
+  },
+  {
+   "OID": "5e9d5d36e646fb05a9b8139c",
+   "ProcessID": 2128,
+   "ParentPID": 2076,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PO No 167938.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PO No 167938.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587371318312
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e9d5d36e646fb05a9b8139c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e9d5d36e646fb05a9b8139c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9d5d35e646fb05a9b809e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e9d5d35e646fb05a9b809d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9d5d36e646fb05a9b8139a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e9d5d35e646fb05a9b809e4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e9d5d35e646fb05a9b809e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9d5d35e646fb05a9b809e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "Name": "Backdoor.exe",
+ "Md5": "24f8c2adb790320f48151a17c3b1b09d",
+ "UUID": "9d16625f-7552-49f5-a3b1-dca5055ce799",
+ "Processes": [
+  {
+   "OID": "5eaff4abb952f21035ce8105",
+   "ProcessID": 1064,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588589739002
+  },
+  {
+   "OID": "5eaff4abb952f21035ce8106",
+   "ProcessID": 3228,
+   "ParentPID": 1064,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588589739471
+  },
+  {
+   "OID": "5eaff4acb952f21035ce84d3",
+   "ProcessID": 3768,
+   "ParentPID": 3228,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588589739611
+  },
+  {
+   "OID": "5eaff4adb952f21035ce89cf",
+   "ProcessID": 1712,
+   "ParentPID": 3228,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\tewxx\\tewclient.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\tewxx\\tewclient.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588589740689
+  },
+  {
+   "OID": "5eaff4bbb952f21035ce8eda",
+   "ProcessID": 3964,
+   "ParentPID": 1712,
+   "CommandLine": "cmd.exe",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588589755361
+  },
+  {
+   "OID": "5eaff4d6b952f21035ce8fa0",
+   "ProcessID": 3796,
+   "ParentPID": 1712,
+   "CommandLine": "shutdown",
+   "Image": "C:\\Windows\\system32\\shutdown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588589782689
+  },
+  {
+   "OID": "5eaff4d7b952f21035ce8fa1",
+   "ProcessID": 2208,
+   "ParentPID": 1712,
+   "CommandLine": "shutdown",
+   "Image": "C:\\Windows\\system32\\shutdown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588589782971
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eaff4adb952f21035ce89cf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaff4adb952f21035ce89cf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5eaff4adb952f21035ce89cf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaff4adb952f21035ce89cf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaff4abb952f21035ce8106",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaff4abb952f21035ce8105",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5eaff4abb952f21035ce8105",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaff4abb952f21035ce8105",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

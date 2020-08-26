@@ -1,0 +1,80 @@
+{
+ "Name": "turcas.exe",
+ "Md5": "cbfafbff9749901afabc0f8d163a4442",
+ "UUID": "49b2ef8b-40e3-42ac-a6f4-5ddd79a82d97",
+ "Processes": [
+  {
+   "OID": "5e888ad804f6a53734bd08ec",
+   "ProcessID": 1468,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\turcas.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\turcas.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586006743679
+  },
+  {
+   "OID": "5e888af304f6a53734bd14c5",
+   "ProcessID": 2288,
+   "ParentPID": 1468,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\turcas.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\turcas.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586006770942
+  },
+  {
+   "OID": "5e888af304f6a53734bd14c6",
+   "ProcessID": 2976,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586006771058
+  },
+  {
+   "OID": "5e888af304f6a53734bd14cd",
+   "ProcessID": 340,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586006771401
+  },
+  {
+   "OID": "5e888af304f6a53734bd14ce",
+   "ProcessID": 3556,
+   "ParentPID": 340,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\turcas.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\turcas.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586006771495
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e888af304f6a53734bd14c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5e888af304f6a53734bd14c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5e888af304f6a53734bd14c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e888ad804f6a53734bd08ec",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

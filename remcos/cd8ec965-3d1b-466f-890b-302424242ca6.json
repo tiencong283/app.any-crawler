@@ -1,0 +1,181 @@
+{
+ "Name": "Backdoor.exe",
+ "Md5": "495b8fbca0a4e1a958f6e8953380d1b4",
+ "UUID": "cd8ec965-3d1b-466f-890b-302424242ca6",
+ "Processes": [
+  {
+   "OID": "5eaffde0d932512013d6b500",
+   "ProcessID": 2660,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588592095851
+  },
+  {
+   "OID": "5eaffde0d932512013d6b5a6",
+   "ProcessID": 3636,
+   "ParentPID": 2660,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588592096148
+  },
+  {
+   "OID": "5eaffde1d932512013d6ba7f",
+   "ProcessID": 3728,
+   "ParentPID": 2660,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588592096648
+  },
+  {
+   "OID": "5eaffde1d932512013d6ba80",
+   "ProcessID": 2616,
+   "ParentPID": 3728,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588592096820
+  },
+  {
+   "OID": "5eaffde1d932512013d6c0dc",
+   "ProcessID": 312,
+   "ParentPID": 2616,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588592097382
+  },
+  {
+   "OID": "5eaffde1d932512013d6c0de",
+   "ProcessID": 3692,
+   "ParentPID": 312,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588592097476
+  },
+  {
+   "OID": "5eaffde2d932512013d6c694",
+   "ProcessID": 3288,
+   "ParentPID": 312,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\ValorantConf\\ValorantWH.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\ValorantConf\\ValorantWH.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588592098538
+  },
+  {
+   "OID": "5eaffdf7d932512013d6cb78",
+   "ProcessID": 2716,
+   "ParentPID": 3288,
+   "CommandLine": "shutdown -i",
+   "Image": "C:\\Windows\\system32\\shutdown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588592119476
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eaffde2d932512013d6c694",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaffde2d932512013d6c694",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaffde2d932512013d6c694",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060",
+    "T1004"
+   ]
+  },
+  {
+   "ProcessOID": "5eaffde2d932512013d6c694",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eaffde1d932512013d6c0dc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaffde1d932512013d6ba80",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5eaffde1d932512013d6ba80",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaffde1d932512013d6ba80",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060",
+    "T1004"
+   ]
+  },
+  {
+   "ProcessOID": "5eaffde1d932512013d6ba80",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eaffde1d932512013d6ba80",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaffde1d932512013d6ba80",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5eaffde1d932512013d6ba80",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5eaffde1d932512013d6ba80",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaffde0d932512013d6b500",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5eaffde0d932512013d6b500",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5eaffde0d932512013d6b500",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

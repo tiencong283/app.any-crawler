@@ -1,0 +1,77 @@
+{
+ "Name": "08e74fa141e406b2f3401c1c1e1fffa1",
+ "Md5": "08e74fa141e406b2f3401c1c1e1fffa1",
+ "UUID": "9094ab8d-7816-48b7-9dab-50e4807c9d6c",
+ "Processes": [
+  {
+   "OID": "5ece6f06506f5f289265d9a6",
+   "ProcessID": 2924,
+   "ParentPID": 1784,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\08e74fa141e406b2f3401c1c1e1fffa1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\08e74fa141e406b2f3401c1c1e1fffa1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1590587141891
+  },
+  {
+   "OID": "5ece6f11506f5f289265dea2",
+   "ProcessID": 2264,
+   "ParentPID": 2924,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\wWzZpEwbEGWTa\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmpF27C.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590587153063
+  },
+  {
+   "OID": "5ece6f11506f5f289265dea4",
+   "ProcessID": 3156,
+   "ParentPID": 2924,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590587153251
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ece6f11506f5f289265dea4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ece6f06506f5f289265d9a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ece6f06506f5f289265d246",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ece6f11506f5f289265dea2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ece6f06506f5f289265d9a6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ece6f06506f5f289265d9a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ece6f06506f5f289265d9a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

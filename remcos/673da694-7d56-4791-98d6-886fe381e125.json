@@ -1,0 +1,61 @@
+{
+ "Name": "PO-2020.18.8.exe",
+ "Md5": "1284311fc4e71b37629427b936a0e70a",
+ "UUID": "673da694-7d56-4791-98d6-886fe381e125",
+ "Processes": [
+  {
+   "OID": "5f3cbc41c037235ca97d9575",
+   "ProcessID": 2392,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PO-2020.18.8.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PO-2020.18.8.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597815873373
+  },
+  {
+   "OID": "5f3cbc48c037235ca97d9ce6",
+   "ProcessID": 2832,
+   "ParentPID": 2392,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597815880248
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f3cbc48c037235ca97d9ce6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5f3cbc48c037235ca97d9ce6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3cbc48c037235ca97d9ce6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3cbc41c037235ca97d9575",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f3cbc41c037235ca97d9575",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3cbc41c037235ca97d9575",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

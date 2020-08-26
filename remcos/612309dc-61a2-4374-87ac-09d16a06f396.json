@@ -1,0 +1,157 @@
+{
+ "Name": "rc.exe",
+ "Md5": "fed8ce981b9c556dbf06409f932434e6",
+ "UUID": "612309dc-61a2-4374-87ac-09d16a06f396",
+ "Processes": [
+  {
+   "OID": "5f30863824918f5a2ae4a01b",
+   "ProcessID": 2872,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\rc.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\rc.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597015607941
+  },
+  {
+   "OID": "5f30865c24918f5a2ae4a546",
+   "ProcessID": 2916,
+   "ParentPID": 2872,
+   "CommandLine": "\"C:\\Windows\\System32\\Notepad.exe\"",
+   "Image": "C:\\Windows\\System32\\Notepad.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597015644097
+  },
+  {
+   "OID": "5f30865f24918f5a2ae4a5cc",
+   "ProcessID": 1392,
+   "ParentPID": 2916,
+   "CommandLine": "cmd /c C:\\Users\\Public\\Natso.bat",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597015646457
+  },
+  {
+   "OID": "5f30865f24918f5a2ae4a5ce",
+   "ProcessID": 2072,
+   "ParentPID": 1392,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597015646551
+  },
+  {
+   "OID": "5f30865f24918f5a2ae4a5cf",
+   "ProcessID": 3120,
+   "ParentPID": 2872,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597015646566
+  },
+  {
+   "OID": "5f30865f24918f5a2ae4a5d0",
+   "ProcessID": 2192,
+   "ParentPID": 1392,
+   "CommandLine": "reg  add hkcu\\Environment /v windir /d \"cmd /c start /min  C:\\Users\\Public\\x.bat reg  delete hkcu\\Environment /v windir /f \u0026\u0026 REM \"",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597015646613
+  },
+  {
+   "OID": "5f30865f24918f5a2ae4a5d1",
+   "ProcessID": 3588,
+   "ParentPID": 1392,
+   "CommandLine": "schtasks  /Run /TN \\Microsoft\\Windows\\DiskCleanup\\SilentCleanup /I",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597015646691
+  },
+  {
+   "OID": "5f30865f24918f5a2ae4a5d2",
+   "ProcessID": 1900,
+   "ParentPID": 1392,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597015646879
+  },
+  {
+   "OID": "5f30866e24918f5a2ae4b092",
+   "ProcessID": 2364,
+   "ParentPID": 2916,
+   "CommandLine": "cmd /c C:\\Users\\Public\\Natso.bat",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597015661488
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f30865f24918f5a2ae4a5d1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f30865f24918f5a2ae4a5cf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30865f24918f5a2ae4a5cc",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f30865f24918f5a2ae4a5cc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f30863824918f5a2ae4a01b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30865c24918f5a2ae4a546",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f30863824918f5a2ae4a01b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f30863824918f5a2ae4a01b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f30863824918f5a2ae4a01b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f30863824918f5a2ae4a01b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

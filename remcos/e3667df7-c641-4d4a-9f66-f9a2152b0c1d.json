@@ -1,0 +1,95 @@
+{
+ "Name": "420913d7cb5a155df809eb62f5586104",
+ "Md5": "420913d7cb5a155df809eb62f5586104",
+ "UUID": "e3667df7-c641-4d4a-9f66-f9a2152b0c1d",
+ "Processes": [
+  {
+   "OID": "5e94aaa1e166e36d96822613",
+   "ProcessID": 2068,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\420913d7cb5a155df809eb62f5586104.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\420913d7cb5a155df809eb62f5586104.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586801313416
+  },
+  {
+   "OID": "5e94aaace166e36d96822991",
+   "ProcessID": 3300,
+   "ParentPID": 2068,
+   "CommandLine": "\"C:\\Windows\\system32\\notepad.exe\"",
+   "Image": "C:\\Windows\\system32\\notepad.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586801324525
+  },
+  {
+   "OID": "5e94aaade166e36d96822992",
+   "ProcessID": 2616,
+   "ParentPID": 3300,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\AppData\\QAZ223.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\AppData\\QAZ223.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586801324681
+  },
+  {
+   "OID": "5e94aab8e166e36d96823139",
+   "ProcessID": 1392,
+   "ParentPID": 2616,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\AppData\\QAZ223.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\AppData\\QAZ223.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586801335791
+  },
+  {
+   "OID": "5e94aab8e166e36d9682313a",
+   "ProcessID": 3404,
+   "ParentPID": 2616,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\AppData\\QAZ223.exe\" 2 1392 10959046",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\AppData\\QAZ223.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586801335822
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e94aab8e166e36d96823139",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e94aab8e166e36d96823139",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e94aab8e166e36d96823139",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e94aaade166e36d96822992",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e94aaace166e36d96822991",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e94aaace166e36d96822991",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e94aaace166e36d96822991",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

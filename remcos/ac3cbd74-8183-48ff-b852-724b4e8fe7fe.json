@@ -1,0 +1,80 @@
+{
+ "Name": "cots.exe",
+ "Md5": "cbfafbff9749901afabc0f8d163a4442",
+ "UUID": "ac3cbd74-8183-48ff-b852-724b4e8fe7fe",
+ "Processes": [
+  {
+   "OID": "5e9dc37c649c3d51a55e790a",
+   "ProcessID": 3912,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cots.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cots.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587397499592
+  },
+  {
+   "OID": "5e9dc38e649c3d51a55e858f",
+   "ProcessID": 3972,
+   "ParentPID": 3912,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\cots.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cots.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587397517749
+  },
+  {
+   "OID": "5e9dc38e649c3d51a55e8590",
+   "ProcessID": 3224,
+   "ParentPID": 3972,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587397517862
+  },
+  {
+   "OID": "5e9dc38e649c3d51a55e8774",
+   "ProcessID": 3456,
+   "ParentPID": 3972,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587397518206
+  },
+  {
+   "OID": "5e9dc38e649c3d51a55e8775",
+   "ProcessID": 852,
+   "ParentPID": 3456,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cots.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cots.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587397518315
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e9dc38e649c3d51a55e858f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5e9dc38e649c3d51a55e858f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5e9dc38e649c3d51a55e858f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9dc37c649c3d51a55e790a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

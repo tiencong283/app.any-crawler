@@ -1,0 +1,89 @@
+{
+ "Name": "富士通新採購訂-p-df.exe",
+ "Md5": "c2a73ad4f184c9e14853f576f87994c5",
+ "UUID": "83ab8a59-eef5-4d30-9d38-9d96aeacba89",
+ "Processes": [
+  {
+   "OID": "5ee9b525bafbaa695e2c4fb1",
+   "ProcessID": 1924,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\富士通新採購訂-p-df.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\富士通新採購訂-p-df.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592374564836
+  },
+  {
+   "OID": "5ee9b551bafbaa695e2c53ef",
+   "ProcessID": 2180,
+   "ParentPID": 1924,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\iUKHWapkHL\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp73AE.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592374608695
+  },
+  {
+   "OID": "5ee9b551bafbaa695e2c53f1",
+   "ProcessID": 3416,
+   "ParentPID": 1924,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592374608898
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee9b551bafbaa695e2c53f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee9b551bafbaa695e2c53f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9b551bafbaa695e2c53f1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee9b525bafbaa695e2c4fb1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9b525bafbaa695e2c4f9f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee9b551bafbaa695e2c53ef",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9b525bafbaa695e2c4fb1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9b525bafbaa695e2c4fb1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee9b525bafbaa695e2c4fb1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

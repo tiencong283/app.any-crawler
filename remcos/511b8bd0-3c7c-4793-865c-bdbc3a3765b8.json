@@ -1,0 +1,275 @@
+{
+ "Name": "21.exe",
+ "Md5": "842002e76f22e2803933a58d3677b95a",
+ "UUID": "511b8bd0-3c7c-4793-865c-bdbc3a3765b8",
+ "Processes": [
+  {
+   "OID": "5e873aba8fd2bf4c4328c20e",
+   "ProcessID": 3576,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\21.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\21.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585920697871
+  },
+  {
+   "OID": "5e873aba8fd2bf4c4328c20f",
+   "ProcessID": 2608,
+   "ParentPID": 3576,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585920697996
+  },
+  {
+   "OID": "5e873aba8fd2bf4c4328c213",
+   "ProcessID": 3804,
+   "ParentPID": 3576,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585920698309
+  },
+  {
+   "OID": "5e873abb8fd2bf4c4328c88a",
+   "ProcessID": 2560,
+   "ParentPID": 3804,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\21.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\21.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585920698418
+  },
+  {
+   "OID": "5e873abb8fd2bf4c4328c88b",
+   "ProcessID": 3320,
+   "ParentPID": 2560,
+   "CommandLine": "/k %windir%\\System32\\reg.exe ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585920698481
+  },
+  {
+   "OID": "5e873abb8fd2bf4c4328c88d",
+   "ProcessID": 2276,
+   "ParentPID": 3320,
+   "CommandLine": "C:\\Windows\\System32\\reg.exe  ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585920698543
+  },
+  {
+   "OID": "5e873abb8fd2bf4c4328c88e",
+   "ProcessID": 3028,
+   "ParentPID": 2560,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585920698684
+  },
+  {
+   "OID": "5e873abb8fd2bf4c4328c890",
+   "ProcessID": 2760,
+   "ParentPID": 3028,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585920698746
+  },
+  {
+   "OID": "5e873abb8fd2bf4c4328d56b",
+   "ProcessID": 3276,
+   "ParentPID": 3028,
+   "CommandLine": "\"C:\\Ark\\Ark.exe\" ",
+   "Image": "C:\\Ark\\Ark.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585920699856
+  },
+  {
+   "OID": "5e873abc8fd2bf4c4328d588",
+   "ProcessID": 3636,
+   "ParentPID": 3276,
+   "CommandLine": "/k %windir%\\System32\\reg.exe ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585920700012
+  },
+  {
+   "OID": "5e873abc8fd2bf4c4328d58a",
+   "ProcessID": 2052,
+   "ParentPID": 3276,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585920700027
+  },
+  {
+   "OID": "5e873abc8fd2bf4c4328d58b",
+   "ProcessID": 2940,
+   "ParentPID": 3636,
+   "CommandLine": "C:\\Windows\\System32\\reg.exe  ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585920700090
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e873abc8fd2bf4c4328d58b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abc8fd2bf4c4328d58a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e873abc8fd2bf4c4328d588",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328d56b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328d56b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1112"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328d56b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060",
+    "T1004"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328d56b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328d56b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328d56b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328c88e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328c88d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328c88b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328c88a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1112"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328c88a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328c88a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060",
+    "T1004"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328c88a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328c88a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328c88a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328c88a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5e873abb8fd2bf4c4328c88a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e873aba8fd2bf4c4328c210",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e873aba8fd2bf4c4328c20e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5e873aba8fd2bf4c4328c20e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5e873aba8fd2bf4c4328c20e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

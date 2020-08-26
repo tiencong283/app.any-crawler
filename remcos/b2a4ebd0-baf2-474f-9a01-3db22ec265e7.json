@@ -1,0 +1,74 @@
+{
+ "Name": "hhh.exe",
+ "Md5": "b3946b9af03b74332eb9f42732717f44",
+ "UUID": "b2a4ebd0-baf2-474f-9a01-3db22ec265e7",
+ "Processes": [
+  {
+   "OID": "5e35508b7c967e017de20d23",
+   "ProcessID": 1524,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\hhh.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\hhh.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580552331542
+  },
+  {
+   "OID": "5e35508c7c967e017de20d2d",
+   "ProcessID": 3332,
+   "ParentPID": 1524,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\ViaFolder\\ViaFile.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\ViaFolder\\ViaFile.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580552332011
+  },
+  {
+   "OID": "5e3550907c967e017de21874",
+   "ProcessID": 608,
+   "ParentPID": 3332,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe\" /logtoconsole=false /logfile= /u \"C:\\Users\\admin\\AppData\\Roaming\\ViaFolder\\ViaFile.EXE\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580552335433
+  },
+  {
+   "OID": "5e3550957c967e017de21e0c",
+   "ProcessID": 4056,
+   "ParentPID": 608,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\dw20.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\dw20.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580552340886
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e3550957c967e017de21e0c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3550907c967e017de21874",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e35508b7c967e017de20d23",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e35508b7c967e017de20d23",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e35508b7c967e017de20d23",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

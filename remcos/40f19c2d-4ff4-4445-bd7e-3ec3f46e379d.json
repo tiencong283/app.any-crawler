@@ -1,0 +1,117 @@
+{
+ "Name": "Nitro Pro Enterprise 13.9.1.155.exe",
+ "Md5": "161143bb1480da41238eca103794436c",
+ "UUID": "40f19c2d-4ff4-4445-bd7e-3ec3f46e379d",
+ "Processes": [
+  {
+   "OID": "5e64e6acb7d91c2ac69c1c58",
+   "ProcessID": 2532,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Nitro Pro Enterprise 13.9.1.155.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Nitro Pro Enterprise 13.9.1.155.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583670955540
+  },
+  {
+   "OID": "5e64e6efb7d91c2ac69c2524",
+   "ProcessID": 3284,
+   "ParentPID": 2532,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\slhost\\slhost.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\slhost\\slhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583671023321
+  },
+  {
+   "OID": "5e64e6f1b7d91c2ac69c2701",
+   "ProcessID": 1760,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\System32\\rundll32.exe\" werconcpl.dll, LaunchErcApp -queuereporting",
+   "Image": "C:\\Windows\\System32\\rundll32.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1583671024455
+  },
+  {
+   "OID": "5e64e6ffb7d91c2ac69c3a64",
+   "ProcessID": 1500,
+   "ParentPID": 3284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\slhost\\slhost.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\slhost\\slhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583671038633
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e64e6ffb7d91c2ac69c3a64",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e64e6ffb7d91c2ac69c3a64",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e64e6efb7d91c2ac69c2524",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e64e6efb7d91c2ac69c2524",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e64e6efb7d91c2ac69c2524",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e64e6abb7d91c2ac69c1315",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e64e6abb7d91c2ac69c1322",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  },
+  {
+   "ProcessOID": "5e64e6f1b7d91c2ac69c2701",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e64e6acb7d91c2ac69c1c58",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e64e6acb7d91c2ac69c1c58",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e64e6acb7d91c2ac69c1c58",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e64e6abb7d91c2ac69c1322",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "Name": "3c",
+ "Md5": "5d9e6089a7f7a7056161ae6ee2e7f5ff",
+ "UUID": "21f88ec5-eb21-4267-948d-4534f77f70cf",
+ "Processes": [
+  {
+   "OID": "5ec25baab6e5b80ce27f7413",
+   "ProcessID": 2480,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3c.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3c.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1589795753851
+  },
+  {
+   "OID": "5ec25bc9b6e5b80ce27f7762",
+   "ProcessID": 2896,
+   "ParentPID": 2480,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\3c.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3c.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589795785398
+  },
+  {
+   "OID": "5ec25bc9b6e5b80ce27f7763",
+   "ProcessID": 4008,
+   "ParentPID": 2896,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589795785538
+  },
+  {
+   "OID": "5ec25bcab6e5b80ce27f7815",
+   "ProcessID": 3252,
+   "ParentPID": 2896,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589795786023
+  },
+  {
+   "OID": "5ec25bcab6e5b80ce27f7816",
+   "ProcessID": 2320,
+   "ParentPID": 3252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3c.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3c.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589795786132
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ec25bc9b6e5b80ce27f7762",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5ec25bc9b6e5b80ce27f7762",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5ec25bc9b6e5b80ce27f7762",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec25baab6e5b80ce27f7413",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

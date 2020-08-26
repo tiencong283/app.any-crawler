@@ -1,0 +1,84 @@
+{
+ "Name": "Backdoor.exe",
+ "Md5": "b8cfae4c231453b7a2214687d42d29aa",
+ "UUID": "46d3c969-36ea-4ac3-885e-00675a82b834",
+ "Processes": [
+  {
+   "OID": "5e43a75aae07855388884bb7",
+   "ProcessID": 3868,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581492058156
+  },
+  {
+   "OID": "5e43a75aae078553888851c9",
+   "ProcessID": 3560,
+   "ParentPID": 3868,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581492058531
+  },
+  {
+   "OID": "5e43a75aae078553888851cb",
+   "ProcessID": 3236,
+   "ParentPID": 3560,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581492058609
+  },
+  {
+   "OID": "5e43a75bae07855388885a6b",
+   "ProcessID": 404,
+   "ParentPID": 3560,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581492059687
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e43a75bae07855388885a6b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e43a75bae07855388885a6b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43a75aae078553888851c9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43a75aae07855388884bb7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e43a75aae07855388884bb7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43a75aae07855388884bb7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43a75aae07855388884bb7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

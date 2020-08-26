@@ -1,0 +1,77 @@
+{
+ "Name": "C.M 20RFQ00106 - ID N°. 04129,pdf.exe",
+ "Md5": "9099612bccf723d3733d32e6bdd8dd21",
+ "UUID": "e9b97622-766a-4c24-8405-d17320e646e9",
+ "Processes": [
+  {
+   "OID": "5ee11a3d98d634671f7fd403",
+   "ProcessID": 2948,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\C.M 20RFQ00106 - ID N°. 04129,pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\C.M 20RFQ00106 - ID N°. 04129,pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591810620688
+  },
+  {
+   "OID": "5ee11a6998d634671f7fd777",
+   "ProcessID": 3640,
+   "ParentPID": 2948,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\ekQigayaI\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp90C5.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591810665422
+  },
+  {
+   "OID": "5ee11a6a98d634671f7fd80e",
+   "ProcessID": 2544,
+   "ParentPID": 2948,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591810665609
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee11a6a98d634671f7fd80e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee11a3d98d634671f7fd403",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ee11a3d98d634671f7fcd4a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee11a6998d634671f7fd777",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ee11a3d98d634671f7fd403",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ee11a3d98d634671f7fd403",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee11a3d98d634671f7fd403",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

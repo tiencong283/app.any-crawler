@@ -1,0 +1,124 @@
+{
+ "Name": "UPS Package Info.exe",
+ "Md5": "321fbea92768f30bed5ab72f5766759b",
+ "UUID": "f0b55670-2d7d-459e-b8bf-d7fd9b32bd43",
+ "Processes": [
+  {
+   "OID": "5e8713260f1a7c4e19eae68e",
+   "ProcessID": 3576,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\UPS Package Info.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\UPS Package Info.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585910565970
+  },
+  {
+   "OID": "5e8713260f1a7c4e19eae69c",
+   "ProcessID": 2660,
+   "ParentPID": 3576,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\NApxCe\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmpE150.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585910566454
+  },
+  {
+   "OID": "5e8713260f1a7c4e19eae69e",
+   "ProcessID": 2676,
+   "ParentPID": 3576,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\UPS Package Info.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585910566579
+  },
+  {
+   "OID": "5e8713850f1a7c4e19eb3624",
+   "ProcessID": 3340,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\system32\\notepad.exe\" ",
+   "Image": "C:\\Windows\\system32\\notepad.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1585910660798
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8713850f1a7c4e19eb3624",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eadd4b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eae69e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eae69e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eae69e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eae69e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eae69e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eae68e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eadd41",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eae69c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eae68e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eae68e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8713260f1a7c4e19eae68e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

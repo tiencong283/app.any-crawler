@@ -1,0 +1,175 @@
+{
+ "Name": "c626d1c6c0ea23fcf1114c9fce2300a668a498ecfb20a9977beb0def7f0adf6b.exe",
+ "Md5": "bd480943a64a5f2ebf14bca30d7b74d9",
+ "UUID": "2d80b7ff-62c7-4c94-9922-84e3dddda06f",
+ "Processes": [
+  {
+   "OID": "5efa54ce292c195b01f36c06",
+   "ProcessID": 2964,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\c626d1c6c0ea23fcf1114c9fce2300a668a498ecfb20a9977beb0def7f0adf6b.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\c626d1c6c0ea23fcf1114c9fce2300a668a498ecfb20a9977beb0def7f0adf6b.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593464014259
+  },
+  {
+   "OID": "5efa54d2292c195b01f37397",
+   "ProcessID": 3976,
+   "ParentPID": 2964,
+   "CommandLine": "\"C:\\Windows\\system32\\mstsc.exe\"",
+   "Image": "C:\\Windows\\system32\\mstsc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593464017899
+  },
+  {
+   "OID": "5efa54e4292c195b01f37cd7",
+   "ProcessID": 2640,
+   "ParentPID": 3976,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593464035915
+  },
+  {
+   "OID": "5efa5506292c195b01f38da8",
+   "ProcessID": 4084,
+   "ParentPID": 588,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3E5FC7F9-9A51-4367-9063-A120244FBEC7}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1593464070321
+  },
+  {
+   "OID": "5efa5507292c195b01f3910e",
+   "ProcessID": 752,
+   "ParentPID": 4084,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\" /c \"reg.exe add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Paths\" /v \"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\" /t REG_DWORD /d 0\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593464070509
+  },
+  {
+   "OID": "5efa5507292c195b01f39110",
+   "ProcessID": 2300,
+   "ParentPID": 752,
+   "CommandLine": "reg.exe  add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Paths\" /v \"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\" /t REG_DWORD /d 0",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593464070603
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5efa5507292c195b01f3910e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5efa54e4292c195b01f37cd7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efa5506292c195b01f38da8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5efa5506292c195b01f38da8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5efa5506292c195b01f38da8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efa54ce292c195b01f36bf5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efa54ce292c195b01f36bf5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efa54ce292c195b01f36bee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efa54e4292c195b01f37cd7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efa54e4292c195b01f37cd7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5efa54ce292c195b01f36bf5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5efa54ce292c195b01f36bf5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efa54d2292c195b01f37397",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efa54d2292c195b01f37397",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5efa54ce292c195b01f36bf5",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5efa54ce292c195b01f36bfc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5efa54d2292c195b01f37397",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5efa54ce292c195b01f36bed",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "Name": "GEE HORN mới PO KK7835,pdf.exe",
+ "Md5": "f8ad0a0a721d68fafa63589e076b83a0",
+ "UUID": "3aeff61a-9e9f-49c2-817b-716c14f003e9",
+ "Processes": [
+  {
+   "OID": "5ddb5b130e71a7278480092d",
+   "ProcessID": 2124,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\GEE HORN mới PO KK7835,pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\GEE HORN mới PO KK7835,pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574656787238
+  },
+  {
+   "OID": "5ddb5b140e71a727848009a6",
+   "ProcessID": 2684,
+   "ParentPID": 2124,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\Jndrs.js\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574656787832
+  },
+  {
+   "OID": "5ddb5b1a0e71a72784801119",
+   "ProcessID": 3000,
+   "ParentPID": 2684,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Twhwgl.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Twhwgl.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574656794223
+  },
+  {
+   "OID": "5ddb5b200e71a7278480160d",
+   "ProcessID": 1556,
+   "ParentPID": 3000,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574656799692
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ddb5b1a0e71a72784801119",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddb5b1a0e71a72784801119",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ddb5b200e71a7278480160d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ddb5b200e71a7278480160d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddb5b1a0e71a72784801119",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddb5b130e71a7278480092d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ddb5b130e71a7278480092d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

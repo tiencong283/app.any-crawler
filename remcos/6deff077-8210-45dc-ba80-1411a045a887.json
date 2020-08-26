@@ -1,0 +1,114 @@
+{
+ "Name": "Remcos247_AF2A.exe",
+ "Md5": "8fab2fe162c361913fa006fd020382b5",
+ "UUID": "6deff077-8210-45dc-ba80-1411a045a887",
+ "Processes": [
+  {
+   "OID": "5e4e45ab73bc20715b630600",
+   "ProcessID": 3620,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Remcos247_AF2A.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Remcos247_AF2A.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1582187946931
+  },
+  {
+   "OID": "5e4e45b573bc20715b63090d",
+   "ProcessID": 3064,
+   "ParentPID": 3620,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Remcos247_AF2A.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Remcos247_AF2A.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582187956900
+  },
+  {
+   "OID": "5e4e463873bc20715b63451e",
+   "ProcessID": 3852,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1582188087603
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e4e463873bc20715b63451e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e4e45b573bc20715b63090d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e4e45b573bc20715b63090d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4e45b573bc20715b63090d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e4e45b573bc20715b63090d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4e45b573bc20715b63090d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4e45b573bc20715b63090d",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e4e45b573bc20715b63090d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e4e45b573bc20715b63090d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e4e45ab73bc20715b62fe7e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e4e45b573bc20715b63090d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e4e45ab73bc20715b630600",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

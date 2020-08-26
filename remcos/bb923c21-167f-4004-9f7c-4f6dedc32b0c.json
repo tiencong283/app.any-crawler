@@ -1,0 +1,224 @@
+{
+ "Name": "0a31e69b468fac8ce6442ab2ade63db0c5b2cedadc59ff63450ff674498d94e9.exe",
+ "Md5": "da75d8c874bd143c1e856a101db1c399",
+ "UUID": "bb923c21-167f-4004-9f7c-4f6dedc32b0c",
+ "Processes": [
+  {
+   "OID": "5e7cb258c88526027705aa1c",
+   "ProcessID": 3768,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\0a31e69b468fac8ce6442ab2ade63db0c5b2cedadc59ff63450ff674498d94e9.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\0a31e69b468fac8ce6442ab2ade63db0c5b2cedadc59ff63450ff674498d94e9.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585230424228
+  },
+  {
+   "OID": "5e7cb258c88526027705aa1d",
+   "ProcessID": 3144,
+   "ParentPID": 3768,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585230424369
+  },
+  {
+   "OID": "5e7cb259c88526027705adc9",
+   "ProcessID": 2300,
+   "ParentPID": 3768,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585230424806
+  },
+  {
+   "OID": "5e7cb259c88526027705adca",
+   "ProcessID": 2780,
+   "ParentPID": 2300,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\0a31e69b468fac8ce6442ab2ade63db0c5b2cedadc59ff63450ff674498d94e9.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\0a31e69b468fac8ce6442ab2ade63db0c5b2cedadc59ff63450ff674498d94e9.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585230424963
+  },
+  {
+   "OID": "5e7cb259c88526027705adcb",
+   "ProcessID": 660,
+   "ParentPID": 2780,
+   "CommandLine": "/k %windir%\\System32\\reg.exe ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585230425041
+  },
+  {
+   "OID": "5e7cb259c88526027705b42f",
+   "ProcessID": 2608,
+   "ParentPID": 660,
+   "CommandLine": "C:\\Windows\\System32\\reg.exe  ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585230425103
+  },
+  {
+   "OID": "5e7cb259c88526027705b430",
+   "ProcessID": 3440,
+   "ParentPID": 2780,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585230425306
+  },
+  {
+   "OID": "5e7cb259c88526027705b432",
+   "ProcessID": 3036,
+   "ParentPID": 3440,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585230425384
+  },
+  {
+   "OID": "5e7cb25ac88526027705bd60",
+   "ProcessID": 3132,
+   "ParentPID": 3440,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585230426431
+  },
+  {
+   "OID": "5e7cb25ac88526027705bd61",
+   "ProcessID": 3924,
+   "ParentPID": 3132,
+   "CommandLine": "/k %windir%\\System32\\reg.exe ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585230426509
+  },
+  {
+   "OID": "5e7cb25ac88526027705bd64",
+   "ProcessID": 2684,
+   "ParentPID": 3924,
+   "CommandLine": "C:\\Windows\\System32\\reg.exe  ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585230426603
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e7cb25ac88526027705bd60",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7cb25ac88526027705bd64",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb25ac88526027705bd61",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb25ac88526027705bd60",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7cb25ac88526027705bd60",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb25ac88526027705bd60",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb259c88526027705b430",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7cb259c88526027705b42f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb259c88526027705adcb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb259c88526027705adca",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb259c88526027705adca",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7cb259c88526027705adca",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7cb259c88526027705adca",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb259c88526027705adca",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb259c88526027705adca",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb258c88526027705aa1c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb258c88526027705aa1c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5e7cb258c88526027705aa1c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

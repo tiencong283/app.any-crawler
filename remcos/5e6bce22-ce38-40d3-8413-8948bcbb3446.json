@@ -1,0 +1,82 @@
+{
+ "Name": "7fdd8635-1766-4b46-9d7a-04582e73fb2d",
+ "Md5": "c3f6787b6acfd2dd87499ed12ddc8d17",
+ "UUID": "5e6bce22-ce38-40d3-8413-8948bcbb3446",
+ "Processes": [
+  {
+   "OID": "5f2a75eb70c7305496bd41b7",
+   "ProcessID": 2356,
+   "ParentPID": 296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\7fdd8635-1766-4b46-9d7a-04582e73fb2d.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\7fdd8635-1766-4b46-9d7a-04582e73fb2d.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596618219036
+  },
+  {
+   "OID": "5f2a762970c7305496bd4889",
+   "ProcessID": 1656,
+   "ParentPID": 2356,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\YEXUbs\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp586C.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596618280880
+  },
+  {
+   "OID": "5f2a762970c7305496bd488b",
+   "ProcessID": 2880,
+   "ParentPID": 2356,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\7fdd8635-1766-4b46-9d7a-04582e73fb2d.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596618281036
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2a762970c7305496bd488b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2a75eb70c7305496bd41b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f2a75eb70c7305496bd3a0d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2a762970c7305496bd4889",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f2a75eb70c7305496bd41b7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f2a75eb70c7305496bd41b7",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2a75eb70c7305496bd41b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2a75eb70c7305496bd41b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

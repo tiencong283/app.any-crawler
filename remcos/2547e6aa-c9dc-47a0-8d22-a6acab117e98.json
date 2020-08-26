@@ -1,0 +1,87 @@
+{
+ "Name": "신규 구매 주문 34321112,pdf.exe",
+ "Md5": "e186d588ed2e70523e5b071e5b50fe4c",
+ "UUID": "2547e6aa-c9dc-47a0-8d22-a6acab117e98",
+ "Processes": [
+  {
+   "OID": "5e0159e03dc02a381d71a5f7",
+   "ProcessID": 592,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\신규 구매 주문 34321112,pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\신규 구매 주문 34321112,pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1577146848090
+  },
+  {
+   "OID": "5e0159e13dc02a381d71a6e8",
+   "ProcessID": 1876,
+   "ParentPID": 592,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\HJUWYCEUC.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\HJUWYCEUC.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577146848715
+  },
+  {
+   "OID": "5e0159fa3dc02a381d71b234",
+   "ProcessID": 1428,
+   "ParentPID": 1876,
+   "CommandLine": "\"C:\\Windows\\System32\\regsvr32.exe\"",
+   "Image": "C:\\Windows\\System32\\regsvr32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577146874387
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e0159e13dc02a381d71a6e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0159e13dc02a381d71a6e8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e0159fa3dc02a381d71b234",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e0159fa3dc02a381d71b234",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0159e13dc02a381d71a6e8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1117"
+   ]
+  },
+  {
+   "ProcessOID": "5e0159e03dc02a381d719f2c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0159e13dc02a381d71a6e8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0159e03dc02a381d71a5f7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0159e03dc02a381d71a5f7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "Name": "drop.exe",
+ "Md5": "46479e966974d28232640ecc8081fcc5",
+ "UUID": "2081c525-2125-4046-bd74-91b6ff2617a2",
+ "Processes": [
+  {
+   "OID": "5e58d15f501a1a715b86ff85",
+   "ProcessID": 3236,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\drop.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\drop.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1582879070889
+  },
+  {
+   "OID": "5e58d15f501a1a715b86ff8a",
+   "ProcessID": 2884,
+   "ParentPID": 3236,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\DROPTO~1.EXE",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\DROPTO~1.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582879071436
+  },
+  {
+   "OID": "5e58d160501a1a715b870573",
+   "ProcessID": 4032,
+   "ParentPID": 2884,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\DROPTO~1.EXE",
+   "Image": "C:\\Program Files\\internet explorer\\ieinstal.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582879072248
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e58d160501a1a715b870573",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e58d160501a1a715b870573",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e58d160501a1a715b870573",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e58d15f501a1a715b86f6a4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e58d160501a1a715b870573",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e58d160501a1a715b870573",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "Name": "Lwmksk.scr",
+ "Md5": "c31a9b87418278ca8a2928f9643254cc",
+ "UUID": "4ff314f4-193f-4d96-b021-3998d1b5185c",
+ "Processes": [
+  {
+   "OID": "5de59b9a8dabf3457653d29c",
+   "ProcessID": 2056,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Lwmksk.scr.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Lwmksk.scr.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1575328666070
+  },
+  {
+   "OID": "5de59ba58dabf3457653d4f1",
+   "ProcessID": 3796,
+   "ParentPID": 2056,
+   "CommandLine": "\"C:\\Windows\\System32\\sethc.exe\"",
+   "Image": "C:\\Windows\\System32\\sethc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575328676648
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5de59ba58dabf3457653d4f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de59ba58dabf3457653d4f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5de59ba58dabf3457653d4f1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de59b9a8dabf3457653d29c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de59b9a8dabf3457653d29c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  }
+ ]
+}

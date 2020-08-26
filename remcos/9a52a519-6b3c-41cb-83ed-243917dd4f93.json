@@ -1,0 +1,109 @@
+{
+ "Name": "891be701dccf0277625f671e0eefe93d",
+ "Md5": "891be701dccf0277625f671e0eefe93d",
+ "UUID": "9a52a519-6b3c-41cb-83ed-243917dd4f93",
+ "Processes": [
+  {
+   "OID": "5f216eb1f741402801898cb6",
+   "ProcessID": 1504,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\891be701dccf0277625f671e0eefe93d.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\891be701dccf0277625f671e0eefe93d.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596026544680
+  },
+  {
+   "OID": "5f216eb1f741402801898cb7",
+   "ProcessID": 1012,
+   "ParentPID": 1504,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\891be701dccf0277625f671e0eefe93d.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\891be701dccf0277625f671e0eefe93d.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596026544805
+  },
+  {
+   "OID": "5f216eb1f741402801898cb8",
+   "ProcessID": 2244,
+   "ParentPID": 1012,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596026545118
+  },
+  {
+   "OID": "5f216eb1f7414028018990ed",
+   "ProcessID": 2972,
+   "ParentPID": 2244,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596026545196
+  },
+  {
+   "OID": "5f216eb2f7414028018995c0",
+   "ProcessID": 4056,
+   "ParentPID": 2244,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\NewRaw\\NewRaw.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\NewRaw\\NewRaw.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596026546274
+  },
+  {
+   "OID": "5f216eb2f7414028018995c1",
+   "ProcessID": 944,
+   "ParentPID": 4056,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\NewRaw\\NewRaw.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\NewRaw\\NewRaw.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596026546336
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f216eb2f7414028018995c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f216eb2f7414028018995c1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f216eb2f7414028018995c1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f216eb1f741402801898cb8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f216eb1f741402801898cb7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f216eb1f741402801898cb7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f216eb1f741402801898cb7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f216eb1f741402801898cb7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "Name": "UPS Package Info.exe",
+ "Md5": "321fbea92768f30bed5ab72f5766759b",
+ "UUID": "29761701-2875-40a4-bc0e-b429fb1a0592",
+ "Processes": [
+  {
+   "OID": "5e8c3d919ea68374fd225060",
+   "ProcessID": 1348,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\UPS Package Info.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\UPS Package Info.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586249105100
+  },
+  {
+   "OID": "5e8c3d929ea68374fd225399",
+   "ProcessID": 3932,
+   "ParentPID": 1348,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\NApxCe\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp3BF3.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586249105631
+  },
+  {
+   "OID": "5e8c3d929ea68374fd22539b",
+   "ProcessID": 3040,
+   "ParentPID": 1348,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\UPS Package Info.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586249105787
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8c3d929ea68374fd22539b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c3d929ea68374fd22539b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c3d929ea68374fd22539b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c3d929ea68374fd22539b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c3d929ea68374fd22539b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c3d919ea68374fd225060",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c3d919ea68374fd224870",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c3d929ea68374fd225399",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c3d919ea68374fd225060",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e8c3d919ea68374fd225060",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8c3d919ea68374fd225060",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

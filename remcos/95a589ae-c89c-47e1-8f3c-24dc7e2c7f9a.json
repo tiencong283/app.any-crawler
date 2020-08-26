@@ -1,0 +1,216 @@
+{
+ "Name": "oki1.exe",
+ "Md5": "15962ebdea41c874d97cc31d74c280d9",
+ "UUID": "95a589ae-c89c-47e1-8f3c-24dc7e2c7f9a",
+ "Processes": [
+  {
+   "OID": "5f05398875eb227435b82c8b",
+   "ProcessID": 3352,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\oki1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\oki1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594177927791
+  },
+  {
+   "OID": "5f05398d75eb227435b83042",
+   "ProcessID": 2868,
+   "ParentPID": 3352,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\\\plugtemp\\Service.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\plugtemp\\Service.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177933448
+  },
+  {
+   "OID": "5f05398d75eb227435b83043",
+   "ProcessID": 2420,
+   "ParentPID": 2868,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177933713
+  },
+  {
+   "OID": "5f05398d75eb227435b83045",
+   "ProcessID": 2864,
+   "ParentPID": 2420,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177933776
+  },
+  {
+   "OID": "5f05398f75eb227435b8378c",
+   "ProcessID": 3508,
+   "ParentPID": 2420,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177934854
+  },
+  {
+   "OID": "5f05399075eb227435b83add",
+   "ProcessID": 2880,
+   "ParentPID": 3352,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe\" /noconfig @\"C:\\Users\\admin\\AppData\\Local\\Temp\\ockysku_.cmdline\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177935463
+  },
+  {
+   "OID": "5f05399075eb227435b83adf",
+   "ProcessID": 2372,
+   "ParentPID": 2880,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 \"/OUT:C:\\Users\\admin\\AppData\\Local\\Temp\\RESE6C9.tmp\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\vbcE6C8.tmp\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\cvtres.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177935635
+  },
+  {
+   "OID": "5f05399075eb227435b83e0f",
+   "ProcessID": 3232,
+   "ParentPID": 3352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\oki11.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\oki11.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177935916
+  },
+  {
+   "OID": "5f05399175eb227435b84567",
+   "ProcessID": 2492,
+   "ParentPID": 3352,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C ping 1.1.1.1 -n 1 -w 3000 \u003e Nul \u0026 Del \"C:\\Users\\admin\\AppData\\Local\\Temp\\oki1.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177936963
+  },
+  {
+   "OID": "5f05399175eb227435b84569",
+   "ProcessID": 3192,
+   "ParentPID": 2492,
+   "CommandLine": "ping  1.1.1.1 -n 1 -w 3000  ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594177937041
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f05399175eb227435b84567",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05398875eb227435b82c8b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5f05398875eb227435b82c8b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f05399075eb227435b83e0f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05399075eb227435b83e0f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05399075eb227435b83e0f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f05399075eb227435b83e0f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05399075eb227435b83add",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05399075eb227435b83add",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05398875eb227435b82c8b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05399075eb227435b83add",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05398875eb227435b82c8b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5f05398f75eb227435b8378c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05398d75eb227435b83042",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05398d75eb227435b83043",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05398d75eb227435b83042",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f05398d75eb227435b83042",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05398d75eb227435b83042",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f05398d75eb227435b83042",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05398d75eb227435b83042",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f05398875eb227435b82c8b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

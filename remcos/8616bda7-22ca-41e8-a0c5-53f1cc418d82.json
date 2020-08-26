@@ -1,0 +1,77 @@
+{
+ "Name": "ราคาใบเสนอราคา P.O 645687643,pdf.exe",
+ "Md5": "e942d7298921fcef394b8f89e32404c2",
+ "UUID": "8616bda7-22ca-41e8-a0c5-53f1cc418d82",
+ "Processes": [
+  {
+   "OID": "5ebcdcb6d4347e05ce628775",
+   "ProcessID": 2800,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ราคาใบเสนอราคา P.O 645687643,pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ราคาใบเสนอราคา P.O 645687643,pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1589435573617
+  },
+  {
+   "OID": "5ebcdcc0d4347e05ce628ce7",
+   "ProcessID": 2348,
+   "ParentPID": 2800,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\bsPPCa\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp9BD1.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589435584477
+  },
+  {
+   "OID": "5ebcdcc1d4347e05ce628d8f",
+   "ProcessID": 404,
+   "ParentPID": 2800,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589435584649
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ebcdcc1d4347e05ce628d8f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebcdcb6d4347e05ce628775",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ebcdcb5d4347e05ce627eec",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebcdcc0d4347e05ce628ce7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ebcdcb6d4347e05ce628775",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ebcdcb6d4347e05ce628775",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebcdcb6d4347e05ce628775",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

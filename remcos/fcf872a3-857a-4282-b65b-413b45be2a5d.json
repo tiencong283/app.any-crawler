@@ -1,0 +1,74 @@
+{
+ "Name": "ProdigalCracker.sfx.exe",
+ "Md5": "82882fa048ca027143bf2c16e58d4b4a",
+ "UUID": "fcf872a3-857a-4282-b65b-413b45be2a5d",
+ "Processes": [
+  {
+   "OID": "5f236028eb01e24fad255c9d",
+   "ProcessID": 848,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ProdigalCracker.sfx.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ProdigalCracker.sfx.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596153896117
+  },
+  {
+   "OID": "5f236029eb01e24fad2563a4",
+   "ProcessID": 1664,
+   "ParentPID": 848,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\ProdigalCracker.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596153896977
+  },
+  {
+   "OID": "5f236029eb01e24fad2563a5",
+   "ProcessID": 2512,
+   "ParentPID": 1664,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596153897164
+  },
+  {
+   "OID": "5f23602aeb01e24fad256c03",
+   "ProcessID": 1704,
+   "ParentPID": 1664,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596153898133
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f236029eb01e24fad2563a4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f236029eb01e24fad2563a4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5f236029eb01e24fad2563a4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5f236029eb01e24fad2563a4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f236028eb01e24fad255c9d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

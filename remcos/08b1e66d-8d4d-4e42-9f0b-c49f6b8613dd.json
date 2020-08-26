@@ -1,0 +1,176 @@
+{
+ "Name": "Dhl Attachment file.iso.exe",
+ "Md5": "316757cca9147708a18ecaaf3e25f07b",
+ "UUID": "08b1e66d-8d4d-4e42-9f0b-c49f6b8613dd",
+ "Processes": [
+  {
+   "OID": "5e04d53d0d0345201389b7b8",
+   "ProcessID": 2828,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Dhl Attachment file.iso.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Dhl Attachment file.iso.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1577375037515
+  },
+  {
+   "OID": "5e04d5460d0345201389c200",
+   "ProcessID": 2852,
+   "ParentPID": 2828,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\Jndos.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577375046219
+  },
+  {
+   "OID": "5e04d5480d0345201389c8f2",
+   "ProcessID": 1024,
+   "ParentPID": 2852,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Mwebgmv.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Mwebgmv.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577375047922
+  },
+  {
+   "OID": "5e04d5480d0345201389c8f3",
+   "ProcessID": 3088,
+   "ParentPID": 1024,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\Public\\Cleaner.js\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577375048234
+  },
+  {
+   "OID": "5e04d5480d0345201389c8f4",
+   "ProcessID": 3308,
+   "ParentPID": 1024,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577375048250
+  },
+  {
+   "OID": "5e04d5490d0345201389cd66",
+   "ProcessID": 3148,
+   "ParentPID": 3088,
+   "CommandLine": "cmd /c \"\"C:\\Users\\Public\\Cleaner.bat\" \"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577375048453
+  },
+  {
+   "OID": "5e04d5490d0345201389cd68",
+   "ProcessID": 896,
+   "ParentPID": 3148,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577375048562
+  },
+  {
+   "OID": "5e04d5490d0345201389cd69",
+   "ProcessID": 2440,
+   "ParentPID": 3148,
+   "CommandLine": "reg  add hkcu\\Environment /v windir /d \"cmd /c start C:\\Users\\Public\\Clean.js reg delete hkcu\\Environment /v windir /f \u0026\u0026 REM \"",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577375048609
+  },
+  {
+   "OID": "5e04d5490d0345201389cd6a",
+   "ProcessID": 2696,
+   "ParentPID": 3148,
+   "CommandLine": "schtasks  /Run /TN \\Microsoft\\Windows\\DiskCleanup\\SilentCleanup /I",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577375048640
+  },
+  {
+   "OID": "5e04d5490d0345201389cd6b",
+   "ProcessID": 3832,
+   "ParentPID": 3148,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577375048703
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e04d5480d0345201389c8f2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e04d5480d0345201389c8f2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e04d5490d0345201389cd6a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e04d5490d0345201389cd66",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e04d5490d0345201389cd66",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e04d5480d0345201389c8f3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e04d5480d0345201389c8f4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e04d5480d0345201389c8f2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5e04d5480d0345201389c8f2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e04d53d0d0345201389b7b8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5e04d53d0d0345201389b7b8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e04d53d0d0345201389b7b8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,256 @@
+{
+ "Name": "2fe6d9d30fc918fc481f6e42ea006e3b6224507c77f6ebb4d627031e76e0d34f",
+ "Md5": "5a9c1c11c0928c9bc03121ef12bc63cc",
+ "UUID": "7553403c-fb47-4a8d-b87a-86c4d26be3c9",
+ "Processes": [
+  {
+   "OID": "5e70d8cdad9475281db339f2",
+   "ProcessID": 3488,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\2fe6d9d30fc918fc481f6e42ea006e3b6224507c77f6ebb4d627031e76e0d34f.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2fe6d9d30fc918fc481f6e42ea006e3b6224507c77f6ebb4d627031e76e0d34f.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1584453837428
+  },
+  {
+   "OID": "5e70d8edad9475281db355e4",
+   "ProcessID": 2516,
+   "ParentPID": 3488,
+   "CommandLine": "c:\\programdata\\87e4c89e95\\dsnnt.exe",
+   "Image": "c:\\programdata\\87e4c89e95\\dsnnt.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584453869350
+  },
+  {
+   "OID": "5e70d90dad9475281db371d0",
+   "ProcessID": 3964,
+   "ParentPID": 2516,
+   "CommandLine": "REG ADD \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" /f /v Startup /t REG_SZ /d C:\\ProgramData\\87e4c89e95",
+   "Image": "C:\\Windows\\system32\\REG.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584453901350
+  },
+  {
+   "OID": "5e70d90ead9475281db37495",
+   "ProcessID": 3188,
+   "ParentPID": 2516,
+   "CommandLine": "REG ADD \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\" /f /v cred /t REG_SZ /d \"rundll32 C:\\Users\\admin\\AppData\\Local\\Temp\\cred.dll, Main\"",
+   "Image": "C:\\Windows\\system32\\REG.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584453901787
+  },
+  {
+   "OID": "5e70d90ead9475281db37496",
+   "ProcessID": 2524,
+   "ParentPID": 2516,
+   "CommandLine": "rundll32.exe C:\\Users\\admin\\AppData\\Local\\Temp\\cred.dll, Main",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584453901803
+  },
+  {
+   "OID": "5e70d90fad9475281db37983",
+   "ProcessID": 3144,
+   "ParentPID": 2516,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\kres.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kres.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584453902912
+  },
+  {
+   "OID": "5e70d931ad9475281db383e5",
+   "ProcessID": 3604,
+   "ParentPID": 3144,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\kres.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kres.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584453936474
+  },
+  {
+   "OID": "5e70d931ad9475281db383e6",
+   "ProcessID": 2392,
+   "ParentPID": 3604,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584453936658
+  },
+  {
+   "OID": "5e70d931ad9475281db385fd",
+   "ProcessID": 1944,
+   "ParentPID": 3604,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584453937111
+  },
+  {
+   "OID": "5e70d931ad9475281db385fe",
+   "ProcessID": 3384,
+   "ParentPID": 1944,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\kres.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kres.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584453937221
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e70d931ad9475281db385fe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d931ad9475281db383e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d931ad9475281db383e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d931ad9475281db383e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d931ad9475281db383e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d90fad9475281db37983",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d90fad9475281db37983",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d8edad9475281db355e4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d8edad9475281db355e4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1105"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d8edad9475281db355e4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d8edad9475281db355e4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d90ead9475281db37496",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d8edad9475281db355e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d90ead9475281db37496",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d90ead9475281db37496",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d90ead9475281db37495",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d8edad9475281db355e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d8edad9475281db355e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d90dad9475281db371d0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d8cdad9475281db330e6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d8edad9475281db355e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d8edad9475281db355e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d8cdad9475281db339f2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e70d8cdad9475281db339f2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d8cdad9475281db339f2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70d8cdad9475281db339f2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

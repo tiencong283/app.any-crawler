@@ -1,0 +1,92 @@
+{
+ "Name": "disp.exe",
+ "Md5": "fdef52ebcd16989da6b9fd0c6c954f7b",
+ "UUID": "0d956a39-c9b9-417b-9fb7-385a9b803ff9",
+ "Processes": [
+  {
+   "OID": "5eba81e1a0694467b3f3a7e7",
+   "ProcessID": 2844,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\disp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\disp.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1589281248647
+  },
+  {
+   "OID": "5eba81e5a0694467b3f3b16d",
+   "ProcessID": 2508,
+   "ParentPID": 2844,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\disp.exe\" ",
+   "Image": "C:\\Program Files\\internet explorer\\ieinstal.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589281253475
+  },
+  {
+   "OID": "5eba81f6a0694467b3f3b7d2",
+   "ProcessID": 3608,
+   "ParentPID": 2508,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589281270428
+  },
+  {
+   "OID": "5eba81f7a0694467b3f3b82e",
+   "ProcessID": 1848,
+   "ParentPID": 2508,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589281270850
+  },
+  {
+   "OID": "5eba81f7a0694467b3f3b82f",
+   "ProcessID": 1468,
+   "ParentPID": 1848,
+   "CommandLine": "\"C:\\Program Files\\internet explorer\\ieinstal.exe\" ",
+   "Image": "C:\\Program Files\\internet explorer\\ieinstal.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589281270990
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eba81e5a0694467b3f3b16d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5eba81e5a0694467b3f3b16d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5eba81e5a0694467b3f3b16d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eba81e5a0694467b3f3b16d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eba81e1a0694467b3f3a7d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5eba81e5a0694467b3f3b16d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

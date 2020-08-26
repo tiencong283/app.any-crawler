@@ -1,0 +1,120 @@
+{
+ "Name": "3gldenl.exe",
+ "Md5": "5d2e91802b322da1e89c3c315edaf08b",
+ "UUID": "c91a60e0-a1db-4c7b-9c1c-db18cdd10b8c",
+ "Processes": [
+  {
+   "OID": "5f1f1e5288335e1099c1b7bb",
+   "ProcessID": 2404,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3gldenl.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3gldenl.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595874897643
+  },
+  {
+   "OID": "5f1f1e6b88335e1099c1c087",
+   "ProcessID": 3340,
+   "ParentPID": 2404,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3gldenl.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3gldenl.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595874923377
+  },
+  {
+   "OID": "5f1f1e6c88335e1099c1c08e",
+   "ProcessID": 2192,
+   "ParentPID": 3340,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595874923690
+  },
+  {
+   "OID": "5f1f1e6d88335e1099c1c6f2",
+   "ProcessID": 752,
+   "ParentPID": 2192,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\Comcast\\xfinity.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595874924924
+  },
+  {
+   "OID": "5f1f1e6d88335e1099c1c6f4",
+   "ProcessID": 888,
+   "ParentPID": 752,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\Comcast\\xfinity.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Comcast\\xfinity.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595874924987
+  },
+  {
+   "OID": "5f1f1e8688335e1099c1cc43",
+   "ProcessID": 3432,
+   "ParentPID": 888,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Comcast\\xfinity.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Comcast\\xfinity.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595874950377
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f1f1e8688335e1099c1cc43",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1f1e8688335e1099c1cc43",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1f1e6d88335e1099c1c6f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f1f1e6c88335e1099c1c08e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f1f1e6b88335e1099c1c087",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5f1f1e6b88335e1099c1c087",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1f1e6b88335e1099c1c087",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1f1e6b88335e1099c1c087",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1f1e5288335e1099c1b7bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

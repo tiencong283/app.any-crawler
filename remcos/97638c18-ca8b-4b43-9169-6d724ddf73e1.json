@@ -1,0 +1,173 @@
+{
+ "Name": "kpotprepaidgift",
+ "Md5": "5d9e6089a7f7a7056161ae6ee2e7f5ff",
+ "UUID": "97638c18-ca8b-4b43-9169-6d724ddf73e1",
+ "Processes": [
+  {
+   "OID": "5eabfd9ebad2e52af513d606",
+   "ProcessID": 3516,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\kpotprepaidgift.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kpotprepaidgift.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588329885996
+  },
+  {
+   "OID": "5eabfda8bad2e52af513daae",
+   "ProcessID": 4000,
+   "ParentPID": 3516,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\kpotprepaidgift.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kpotprepaidgift.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588329896121
+  },
+  {
+   "OID": "5eabfda8bad2e52af513daaf",
+   "ProcessID": 3596,
+   "ParentPID": 4000,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588329896261
+  },
+  {
+   "OID": "5eabfda9bad2e52af513ddb8",
+   "ProcessID": 3984,
+   "ParentPID": 4000,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588329896683
+  },
+  {
+   "OID": "5eabfda9bad2e52af513ddb9",
+   "ProcessID": 3432,
+   "ParentPID": 3984,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\kpotprepaidgift.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kpotprepaidgift.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588329896777
+  },
+  {
+   "OID": "5eabfdb0bad2e52af513e5c0",
+   "ProcessID": 256,
+   "ParentPID": 3432,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\kpotprepaidgift.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kpotprepaidgift.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588329903902
+  },
+  {
+   "OID": "5eabfdb0bad2e52af513e5c1",
+   "ProcessID": 3920,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588329904121
+  },
+  {
+   "OID": "5eabfdb1bad2e52af513ec26",
+   "ProcessID": 1688,
+   "ParentPID": 3920,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\Chrome\\chrome.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588329905324
+  },
+  {
+   "OID": "5eabfdb2bad2e52af513ec3c",
+   "ProcessID": 2656,
+   "ParentPID": 1688,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\Chrome\\chrome.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Chrome\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588329905386
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eabfdb0bad2e52af513e5c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5eabfdb0bad2e52af513e5c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5eabfdb0bad2e52af513e5c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eabfdb0bad2e52af513e5c0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eabfdb0bad2e52af513e5c0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eabfdb0bad2e52af513e5c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5eabfdb0bad2e52af513e5c0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5eabfdb0bad2e52af513e5c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eabfda9bad2e52af513ddb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eabfda8bad2e52af513daae",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5eabfda8bad2e52af513daae",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5eabfda8bad2e52af513daae",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eabfd9ebad2e52af513d606",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

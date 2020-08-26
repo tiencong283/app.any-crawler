@@ -1,0 +1,79 @@
+{
+ "Name": "Επείγουσα έρευνα παραγγελιών TTX02718, PDF.exe",
+ "Md5": "3606bfb87c18ccf20bc40fec8ffca50e",
+ "UUID": "aa6a0d89-3da7-4c9c-8d0e-b059637bdda6",
+ "Processes": [
+  {
+   "OID": "5ddd7a41beb7ef3854503f6d",
+   "ProcessID": 2812,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Επείγουσα έρευνα παραγγελιών TTX02718, PDF.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Επείγουσα έρευνα παραγγελιών TTX02718, PDF.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574795840839
+  },
+  {
+   "OID": "5ddd7a42beb7ef3854504a9d",
+   "ProcessID": 332,
+   "ParentPID": 2812,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\Jndrs.js\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574795841964
+  },
+  {
+   "OID": "5ddd7a49beb7ef3854505269",
+   "ProcessID": 392,
+   "ParentPID": 332,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Vwmmac.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Vwmmac.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574795848557
+  },
+  {
+   "OID": "5ddd7a4ebeb7ef3854505752",
+   "ProcessID": 3812,
+   "ParentPID": 392,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574795853948
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ddd7a49beb7ef3854505269",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddd7a49beb7ef3854505269",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ddd7a4ebeb7ef3854505752",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddd7a49beb7ef3854505269",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddd7a41beb7ef3854503f6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ddd7a41beb7ef3854503f6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

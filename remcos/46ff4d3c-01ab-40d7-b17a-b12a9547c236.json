@@ -1,0 +1,66 @@
+{
+ "Name": "sample.bin",
+ "Md5": "8894200ba65c2a1b34c0f0841e633ade",
+ "UUID": "46ff4d3c-01ab-40d7-b17a-b12a9547c236",
+ "Processes": [
+  {
+   "OID": "5e1c5dc54684a134a88eed1a",
+   "ProcessID": 2748,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sample.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sample.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578917317487
+  },
+  {
+   "OID": "5e1c5dd64684a134a88ef5bc",
+   "ProcessID": 3996,
+   "ParentPID": 2748,
+   "CommandLine": "\"C:\\Windows\\system32\\svchost.exe\"",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578917334065
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e1c5dd64684a134a88ef5bc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5e1c5dd64684a134a88ef5bc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1c5dd64684a134a88ef5bc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1c5dc54684a134a88eed1a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1c5dc54684a134a88eed1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1c5dc54684a134a88eed1a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e1c5dc54684a134a88eed1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}
