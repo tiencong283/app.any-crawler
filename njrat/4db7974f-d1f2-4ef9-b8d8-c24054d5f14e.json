@@ -1,0 +1,84 @@
+{
+ "Name": "fataloader.exe",
+ "Md5": "fd6ba0b36786e5570f6424a0b883d868",
+ "UUID": "4db7974f-d1f2-4ef9-b8d8-c24054d5f14e",
+ "Processes": [
+  {
+   "OID": "5eed1a3b82ece8537d434e61",
+   "ProcessID": 2068,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\fataloader.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fataloader.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592597050679
+  },
+  {
+   "OID": "5eed1a4182ece8537d43513d",
+   "ProcessID": 3964,
+   "ParentPID": 2068,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\fataloader.exe\" \"fataloader.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592597057147
+  },
+  {
+   "OID": "5eed1a5182ece8537d435c9e",
+   "ProcessID": 2204,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Program Files\\Opera\\opera.exe\" ",
+   "Image": "C:\\Program Files\\Opera\\opera.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1592597073304
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eed1a5182ece8537d435c9e",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eed1a5182ece8537d435c9e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5eed1a3b82ece8537d434e61",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eed1a3b82ece8537d434e61",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eed1a3b82ece8537d434e61",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eed1a3b82ece8537d434e61",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eed1a3b82ece8537d434e61",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eed1a3b82ece8537d434e61",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

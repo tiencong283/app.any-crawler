@@ -1,0 +1,63 @@
+{
+ "Name": "svchost.exe",
+ "Md5": "57228f31fb465d0cbdf98bca5b325da2",
+ "UUID": "bbcfde2b-dd34-4006-89c4-4ece740617cd",
+ "Processes": [
+  {
+   "OID": "5f3e7d3470270f0f2221f58e",
+   "ProcessID": 2244,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597930803957
+  },
+  {
+   "OID": "5f3e7d3a70270f0f2221f8ef",
+   "ProcessID": 776,
+   "ParentPID": 2244,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe\" \"svchost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597930810238
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f3e7d3470270f0f2221f58e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f3e7d3470270f0f2221f58e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3e7d3470270f0f2221f58e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3e7d3470270f0f2221f58e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3e7d3470270f0f2221f58e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f3e7d3470270f0f2221f58e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

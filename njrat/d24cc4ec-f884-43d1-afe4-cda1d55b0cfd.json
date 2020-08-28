@@ -1,0 +1,249 @@
+{
+ "Name": "D3mInject.exe",
+ "Md5": "c2f50d8ea3d3bc63c456be155ca395db",
+ "UUID": "d24cc4ec-f884-43d1-afe4-cda1d55b0cfd",
+ "Processes": [
+  {
+   "OID": "5f37012fa09b0601b997ca18",
+   "ProcessID": 1004,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\D3mInject.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\D3mInject.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597440303363
+  },
+  {
+   "OID": "5f370130a09b0601b997cb8f",
+   "ProcessID": 2228,
+   "ParentPID": 1004,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Winnar.pw.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Winnar.pw.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597440303832
+  },
+  {
+   "OID": "5f370130a09b0601b997cb90",
+   "ProcessID": 3044,
+   "ParentPID": 1004,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\d3mInjector.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\d3mInjector.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597440303879
+  },
+  {
+   "OID": "5f370130a09b0601b997cb92",
+   "ProcessID": 2416,
+   "ParentPID": 1004,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NAVALNY.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NAVALNY.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597440303957
+  },
+  {
+   "OID": "5f370130a09b0601b997d2d9",
+   "ProcessID": 3316,
+   "ParentPID": 3044,
+   "CommandLine": "C:\\Windows\\system32\\cmd.exe /c pause",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597440304332
+  },
+  {
+   "OID": "5f370131a09b0601b997de31",
+   "ProcessID": 2724,
+   "ParentPID": 2416,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NAVALNY.exe\" -el -s2 \"-dC:\\PerfLogs\" \"-sp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NAVALNY.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597440305254
+  },
+  {
+   "OID": "5f370131a09b0601b997de32",
+   "ProcessID": 1756,
+   "ParentPID": 2724,
+   "CommandLine": "\"C:\\PerfLogs\\000.exe\" ",
+   "Image": "C:\\PerfLogs\\000.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597440305535
+  },
+  {
+   "OID": "5f370137a09b0601b997ef4a",
+   "ProcessID": 928,
+   "ParentPID": 2228,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\RealtekSoundService.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\RealtekSoundService.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597440310551
+  },
+  {
+   "OID": "5f37013da09b0601b997f55e",
+   "ProcessID": 1972,
+   "ParentPID": 928,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\RealtekSoundService.exe\" \"RealtekSoundService.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597440316676
+  },
+  {
+   "OID": "5f370186a09b0601b99806c9",
+   "ProcessID": 3036,
+   "ParentPID": 928,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp5FB5.tmp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\tmp5FB5.tmp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597440389769
+  },
+  {
+   "OID": "5f370186a09b0601b99807cf",
+   "ProcessID": 2280,
+   "ParentPID": 3036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Screamer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Screamer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597440390285
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f370186a09b0601b99807cf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370186a09b0601b99807cf",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f370186a09b0601b99806c9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370186a09b0601b99806c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370137a09b0601b997ef4a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370137a09b0601b997ef4a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f370137a09b0601b997ef4a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370137a09b0601b997ef4a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370137a09b0601b997ef4a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370137a09b0601b997ef4a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f370137a09b0601b997ef4a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f370137a09b0601b997ef4a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370130a09b0601b997cb8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f370130a09b0601b997cb8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370130a09b0601b997cb8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370131a09b0601b997de32",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370131a09b0601b997de31",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f37012fa09b0601b997c1ec",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f370131a09b0601b997de31",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370130a09b0601b997cb92",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f370130a09b0601b997cb90",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f370130a09b0601b997cb92",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370130a09b0601b997cb90",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f370130a09b0601b997cb8f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f37012fa09b0601b997ca18",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "Name": "zapsmo.exe",
+ "Md5": "9fbc4e5949af2dc83027dd0f9d99d6b3",
+ "UUID": "1588a3cd-73e0-4dee-917f-8a0dba2244e9",
+ "Processes": [
+  {
+   "OID": "5e4f99eaef84d04191773f79",
+   "ProcessID": 3768,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\zapsmo.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\zapsmo.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1582275050286
+  },
+  {
+   "OID": "5e4f99eaef84d04191773f7a",
+   "ProcessID": 2620,
+   "ParentPID": 3768,
+   "CommandLine": "--4f908290",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\zapsmo.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582275050395
+  },
+  {
+   "OID": "5e4f99f1ef84d0419177437b",
+   "ProcessID": 3080,
+   "ParentPID": 2620,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582275057192
+  },
+  {
+   "OID": "5e4f99f1ef84d0419177437c",
+   "ProcessID": 2552,
+   "ParentPID": 3080,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582275057301
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e4f99eaef84d04191773662",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e4f99f1ef84d0419177437c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e4f99eaef84d04191773f7a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e4f99eaef84d04191773f7a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4f99eaef84d04191773f7a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

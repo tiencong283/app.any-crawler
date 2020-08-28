@@ -1,0 +1,103 @@
+{
+ "Name": "setup_mod.exe",
+ "Md5": "963c0f3ec21017dc2a37932adbff4299",
+ "UUID": "b52a1aea-17b4-433b-9aeb-25f707b4dc80",
+ "Processes": [
+  {
+   "OID": "5e414d86c6d67815c7b0a2b2",
+   "ProcessID": 3580,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\setup_mod.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\setup_mod.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e414d86c6d67815c7b0aa2d",
+   "ProcessID": 3052,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\setup_mod.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\setup_mod.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581337990166
+  },
+  {
+   "OID": "5e414d86c6d67815c7b0aa2e",
+   "ProcessID": 3624,
+   "ParentPID": 3052,
+   "CommandLine": "--18c81cbe",
+   "Image": "C:\\Users\\admin\\Desktop\\setup_mod.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581337990260
+  },
+  {
+   "OID": "5e414d8dc6d67815c7b0b6c1",
+   "ProcessID": 1136,
+   "ParentPID": 472,
+   "CommandLine": "\"C:\\Windows\\system32\\pdeftvolume.exe\"",
+   "Image": "C:\\Windows\\system32\\pdeftvolume.exe",
+   "ProcessType": "Was launched as a service",
+   "CreationTimestamp": 1581337997354
+  },
+  {
+   "OID": "5e414d8dc6d67815c7b0b6c2",
+   "ProcessID": 2960,
+   "ParentPID": 1136,
+   "CommandLine": "--d44e55ad",
+   "Image": "C:\\Windows\\system32\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581337997400
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e414d8dc6d67815c7b0b6c2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e414d8dc6d67815c7b0b6c2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e414d8dc6d67815c7b0b6c2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e414d8dc6d67815c7b0b6c2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e414d8dc6d67815c7b0b6c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050"
+   ]
+  },
+  {
+   "ProcessOID": "5e414d86c6d67815c7b0aa2e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e414d86c6d67815c7b0a298",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5e414d86c6d67815c7b0a29e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

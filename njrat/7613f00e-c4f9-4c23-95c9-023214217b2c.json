@@ -1,0 +1,99 @@
+{
+ "Name": "tstt2.exe",
+ "Md5": "ed7d8774f251770c27800f2394e04fe7",
+ "UUID": "7613f00e-c4f9-4c23-95c9-023214217b2c",
+ "Processes": [
+  {
+   "OID": "5ef9f947e07d9c160788f8d6",
+   "ProcessID": 280,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\tstt2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\tstt2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593440583323
+  },
+  {
+   "OID": "5ef9f948e07d9c160788fcda",
+   "ProcessID": 1184,
+   "ParentPID": 280,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\InstallDir\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\InstallDir\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593440584104
+  },
+  {
+   "OID": "5ef9f948e07d9c160788fcdb",
+   "ProcessID": 2156,
+   "ParentPID": 1184,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\InstallDir\\svchost.exe\" \"svchost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593440584214
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ef9f948e07d9c160788fcda",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef9f948e07d9c160788fcda",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef9f948e07d9c160788fcda",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef9f948e07d9c160788fcda",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ef9f948e07d9c160788fcda",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef9f948e07d9c160788fcda",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ef9f948e07d9c160788fcda",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ef9f947e07d9c160788f8d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ef9f947e07d9c160788f8d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef9f947e07d9c160788f8d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef9f947e07d9c160788f8d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

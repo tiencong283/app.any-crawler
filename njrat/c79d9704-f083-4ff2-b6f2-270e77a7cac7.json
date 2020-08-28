@@ -1,0 +1,89 @@
+{
+ "Name": "HackAdmin.exe",
+ "Md5": "223dcdf885d7c123ef340987d7e6b1e0",
+ "UUID": "c79d9704-f083-4ff2-b6f2-270e77a7cac7",
+ "Processes": [
+  {
+   "OID": "5f10716a6cfccc09be45fef5",
+   "ProcessID": 2392,
+   "ParentPID": 1788,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\HackAdmin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\HackAdmin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594913129992
+  },
+  {
+   "OID": "5f1071716cfccc09be4601f8",
+   "ProcessID": 2248,
+   "ParentPID": 2392,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594913136570
+  },
+  {
+   "OID": "5f1071766cfccc09be460730",
+   "ProcessID": 336,
+   "ParentPID": 2248,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe\" \"Google.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594913142664
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f1071716cfccc09be4601f8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1071716cfccc09be4601f8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1071716cfccc09be4601f8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1071716cfccc09be4601f8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1071716cfccc09be4601f8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1071716cfccc09be4601f8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1071716cfccc09be4601f8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f10716a6cfccc09be45fef5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f10716a6cfccc09be45fef5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

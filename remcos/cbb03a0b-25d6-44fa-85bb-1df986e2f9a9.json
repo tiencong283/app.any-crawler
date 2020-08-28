@@ -1,0 +1,217 @@
+{
+ "Name": "OJ.exe",
+ "Md5": "e6d0d4a4c22c300cde657eff8126d587",
+ "UUID": "cbb03a0b-25d6-44fa-85bb-1df986e2f9a9",
+ "Processes": [
+  {
+   "OID": "5d3ec0c6923aae1295009fb0",
+   "ProcessID": 2628,
+   "ParentPID": 124,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\OJ.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\OJ.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564393669694
+  },
+  {
+   "OID": "5d3ec0d4923aae129500a76e",
+   "ProcessID": 2904,
+   "ParentPID": 2628,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\remcos_agent.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\remcos_agent.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564393684350
+  },
+  {
+   "OID": "5d3ec0d4923aae129500a76f",
+   "ProcessID": 2224,
+   "ParentPID": 2628,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\Document\\adobe.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564393684413
+  },
+  {
+   "OID": "5d3ec0d4923aae129500a770",
+   "ProcessID": 3744,
+   "ParentPID": 2628,
+   "CommandLine": "\"C:\\Users\\admin\\Document\\adobe.exe\" ",
+   "Image": "C:\\Users\\admin\\Document\\adobe.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564393684460
+  },
+  {
+   "OID": "5d3ec0d5923aae129500ac89",
+   "ProcessID": 3944,
+   "ParentPID": 2904,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564393684975
+  },
+  {
+   "OID": "5d3ec0d6923aae129500b730",
+   "ProcessID": 2908,
+   "ParentPID": 3944,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\text\\textt.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564393686444
+  },
+  {
+   "OID": "5d3ec0d6923aae129500b732",
+   "ProcessID": 2176,
+   "ParentPID": 2908,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\text\\textt.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\text\\textt.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564393686553
+  },
+  {
+   "OID": "5d3ec0d6923aae129500b733",
+   "ProcessID": 2220,
+   "ParentPID": 2176,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564393686678
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d3ec0e6923aae129500bf68",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0d6923aae129500b733",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3ec0d4923aae129500a76f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0d6923aae129500b732",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3ec0d6923aae129500b732",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060",
+    "T1004"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0d6923aae129500b732",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3ec0d6923aae129500b732",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0d6923aae129500b732",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3ec0d5923aae129500ac89",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0d4923aae129500a76e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0c5923aae1295009874",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3ec0d4923aae129500a76e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3ec0d4923aae129500a76e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0d4923aae129500a76e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3ec0d4923aae129500a76e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060",
+    "T1004"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0d4923aae129500a76e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0d4923aae129500a76e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3ec0c6923aae1295009fb0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0c6923aae1295009fb0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0c6923aae1295009fb0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3ec0c6923aae1295009fb0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d3ec0c6923aae1295009fb0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

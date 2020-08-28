@@ -1,0 +1,86 @@
+{
+ "Name": "Wsearch.exe",
+ "Md5": "35d9b01a61fd264e61219fd7c4676a5b",
+ "UUID": "df72f5a4-cd4d-447c-94a3-8fe3e4cd1664",
+ "Processes": [
+  {
+   "OID": "5ef1db2a6f060b6033aea18b",
+   "ProcessID": 3088,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Wsearch.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Wsearch.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5ef1db2a6f060b6033aea18f",
+   "ProcessID": 3660,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Wsearch.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Wsearch.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592908586067
+  },
+  {
+   "OID": "5ef1db376f060b6033aea59e",
+   "ProcessID": 4020,
+   "ParentPID": 3660,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Wsearch.exe\" \"Wsearch.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592908598817
+  },
+  {
+   "OID": "5ef1dbce6f060b6033aeb3fb",
+   "ProcessID": 2528,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1592908749911
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ef1dbce6f060b6033aeb3fb",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1db2a6f060b6033aea18f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1db2a6f060b6033aea18f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1db2a6f060b6033aea18f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1db2a6f060b6033aea18f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1db2a6f060b6033aea18f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1db2a6f060b6033aea18f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

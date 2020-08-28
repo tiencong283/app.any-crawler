@@ -1,0 +1,81 @@
+{
+ "Name": "xxx.exe",
+ "Md5": "daa46656a8fdbaa7d705a54c2522e7b5",
+ "UUID": "53897f64-ed1c-45a8-8ab9-8c89cae85082",
+ "Processes": [
+  {
+   "OID": "5f1718f14d9827094e23a515",
+   "ProcessID": 2088,
+   "ParentPID": 1788,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\xxx.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\xxx.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595349232851
+  },
+  {
+   "OID": "5f1718fd4d9827094e23a6ef",
+   "ProcessID": 2220,
+   "ParentPID": 2088,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\d3d10core\\AuxiliaryDisplayClassInstaller.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\d3d10core\\AuxiliaryDisplayClassInstaller.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595349245007
+  },
+  {
+   "OID": "5f17195e4d9827094e23aacc",
+   "ProcessID": 3916,
+   "ParentPID": 1788,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1595349342116
+  },
+  {
+   "OID": "5f17195f4d9827094e23aebe",
+   "ProcessID": 1180,
+   "ParentPID": 1788,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1595349342694
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f17195f4d9827094e23aebe",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f17195e4d9827094e23aacc",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f1718f14d9827094e239d4e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1718f14d9827094e23a515",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f1718f14d9827094e23a515",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1718f14d9827094e23a515",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

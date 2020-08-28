@@ -1,0 +1,161 @@
+{
+ "Name": "Server.exe",
+ "Md5": "372b288a41e9fcd10f3852637dd4648f",
+ "UUID": "1ac15fd5-5687-4cff-9e15-46321d7af4bc",
+ "Processes": [
+  {
+   "OID": "5f30ef718ef68f0dfe026cb9",
+   "ProcessID": 3020,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597042545415
+  },
+  {
+   "OID": "5f30ef758ef68f0dfe02746c",
+   "ProcessID": 2700,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Server.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597042548790
+  },
+  {
+   "OID": "5f30ef758ef68f0dfe0276a2",
+   "ProcessID": 2416,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Server.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597042549305
+  },
+  {
+   "OID": "5f30ef778ef68f0dfe0278e5",
+   "ProcessID": 3152,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Server.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597042550821
+  },
+  {
+   "OID": "5f30ef778ef68f0dfe027b36",
+   "ProcessID": 2776,
+   "ParentPID": 3020,
+   "CommandLine": "\"C:\\ProgramData\\server.exe\" ",
+   "Image": "C:\\ProgramData\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597042551711
+  },
+  {
+   "OID": "5f30ef7d8ef68f0dfe027fee",
+   "ProcessID": 3836,
+   "ParentPID": 3152,
+   "CommandLine": "\"C:\\ProgramData\\server.exe\" ",
+   "Image": "C:\\ProgramData\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597042556961
+  },
+  {
+   "OID": "5f30ef838ef68f0dfe0283e6",
+   "ProcessID": 3076,
+   "ParentPID": 3836,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\server.exe\" \"server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597042563165
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f30ef7d8ef68f0dfe027fee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30ef7d8ef68f0dfe027fee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30ef7d8ef68f0dfe027fee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30ef7d8ef68f0dfe027fee",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f30ef7d8ef68f0dfe027fee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30ef7d8ef68f0dfe027fee",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f30ef778ef68f0dfe0278e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f30ef778ef68f0dfe0278e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30ef778ef68f0dfe0278e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30ef718ef68f0dfe026cb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f30ef718ef68f0dfe026cb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30ef718ef68f0dfe026cb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30ef778ef68f0dfe0278e5",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f30ef758ef68f0dfe0276a2",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f30ef758ef68f0dfe02746c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "Name": "emotet.exe",
+ "Md5": "8955f5b904b7c6d4d7ff43bd8459a439",
+ "UUID": "5b685e39-2cf3-4e31-b08a-add721702537",
+ "Processes": [
+  {
+   "OID": "5e44446427d6630d42aa64f7",
+   "ProcessID": 3992,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581532259505
+  },
+  {
+   "OID": "5e44446427d6630d42aa6773",
+   "ProcessID": 2848,
+   "ParentPID": 3992,
+   "CommandLine": "--7dfb8940",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581532260239
+  },
+  {
+   "OID": "5e44446c27d6630d42aa6863",
+   "ProcessID": 1760,
+   "ParentPID": 2848,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\easywindow\\easywindow.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\easywindow\\easywindow.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581532268645
+  },
+  {
+   "OID": "5e44446d27d6630d42aa6b0f",
+   "ProcessID": 3720,
+   "ParentPID": 1760,
+   "CommandLine": "--fd47f3b8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\easywindow\\easywindow.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581532269380
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e44446d27d6630d42aa6b0f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e44446d27d6630d42aa6b0f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e44446d27d6630d42aa6b0f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e44446327d6630d42aa5baa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e44446d27d6630d42aa6b0f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e44446c27d6630d42aa6863",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e44446427d6630d42aa6773",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e44446427d6630d42aa6773",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e44446427d6630d42aa6773",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e44446427d6630d42aa6773",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e44446427d6630d42aa64f7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "Name": "remcos_agent_output32870F0.exe",
+ "Md5": "46ac01695e20bcdff31c056d9f5bf726",
+ "UUID": "91f5cc9c-2f84-468a-a7fb-f0b385ccc6fc",
+ "Processes": [
+  {
+   "OID": "5d1ca83bb80ad67c3763a938",
+   "ProcessID": 3044,
+   "ParentPID": 124,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\remcos_agent_output32870F0.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\remcos_agent_output32870F0.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1562159163452
+  },
+  {
+   "OID": "5d1ca851b80ad67c376412b9",
+   "ProcessID": 3428,
+   "ParentPID": 3044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\remcos_agent_output32870F0.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\remcos_agent_output32870F0.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562159185061
+  },
+  {
+   "OID": "5d1ca870b80ad67c37647bd9",
+   "ProcessID": 2944,
+   "ParentPID": 3428,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562159215717
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d1ca851b80ad67c376412b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1ca851b80ad67c376412b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1ca83bb80ad67c3763a938",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

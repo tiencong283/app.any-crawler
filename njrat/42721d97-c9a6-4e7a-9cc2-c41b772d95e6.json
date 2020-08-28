@@ -1,0 +1,129 @@
+{
+ "Name": "Client.exe",
+ "Md5": "ca2105bd751c8de348e82181e5386108",
+ "UUID": "42721d97-c9a6-4e7a-9cc2-c41b772d95e6",
+ "Processes": [
+  {
+   "OID": "5f298c87512492325453af35",
+   "ProcessID": 1500,
+   "ParentPID": 296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Client.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Client.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596558471003
+  },
+  {
+   "OID": "5f298ce5512492325453bd5d",
+   "ProcessID": 2524,
+   "ParentPID": 1500,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\tmpD397.tmp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\tmpD397.tmp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596558564753
+  },
+  {
+   "OID": "5f298ce6512492325453c437",
+   "ProcessID": 1744,
+   "ParentPID": 2524,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\tmpD397.tmp.exe --crashpad --no-rate-limit --database=C:\\Users\\admin\\AppData\\Local\\Temp\\crashpad_roblox --metrics-dir=C:\\Users\\admin\\AppData\\Local\\Temp\\crashpad_roblox --url=https://upload.crashes.rbxinfra.com/post --annotation=UploadAttachmentKiloByteLimit=100 --annotation=UploadPercentage=100 --annotation=format=minidump --annotation=token=a2440b0bfdada85f34d79b43839f2b49ea6bba474bd7d126e844bc119271a1c3 --initial-client-data=0x4f8,0x4fc,0x500,0x4f4,0x508,0x151b59c,0x151b5ac,0x151b5bc",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\tmpD397.tmp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596558565659
+  },
+  {
+   "OID": "5f298d3e512492325453f494",
+   "ProcessID": 3560,
+   "ParentPID": 296,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1596558654706
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f298d3e512492325453f494",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f298ce5512492325453bd5d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5f298ce5512492325453bd5d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f298ce5512492325453bd5d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f298ce6512492325453c437",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f298ce6512492325453c437",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f298ce5512492325453bd5d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f298ce5512492325453bd5d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f298ce5512492325453bd5d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f298c87512492325453af35",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f298c87512492325453af29",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f298c87512492325453af35",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5f298c87512492325453af35",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f298c87512492325453af35",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

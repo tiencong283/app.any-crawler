@@ -1,0 +1,68 @@
+{
+ "Name": "DeepChecker.exe",
+ "Md5": "146ae821b4cad4d14c64dca017ee48ae",
+ "UUID": "03b9eea3-a805-49df-b02f-84aa2c48b6b4",
+ "Processes": [
+  {
+   "OID": "5eecd13d78db763ee9b55055",
+   "ProcessID": 2652,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\DeepChecker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\DeepChecker.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592578365131
+  },
+  {
+   "OID": "5eecd14378db763ee9b552fd",
+   "ProcessID": 2236,
+   "ParentPID": 2652,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\DeepChecker.exe\" \"DeepChecker.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592578371366
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eecd13d78db763ee9b55055",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eecd13d78db763ee9b55055",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eecd13d78db763ee9b55055",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eecd13d78db763ee9b55055",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eecd13d78db763ee9b55055",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eecd13d78db763ee9b55055",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eecd13d78db763ee9b55055",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

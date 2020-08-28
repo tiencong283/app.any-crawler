@@ -1,0 +1,63 @@
+{
+ "Name": "Winner_Free.exe",
+ "Md5": "e6aa06c1a1bf21e7160b83bb61326d65",
+ "UUID": "ee6062e2-e3bd-443c-ab8c-a21299b1c283",
+ "Processes": [
+  {
+   "OID": "5f2eee872f32a664ac7a6392",
+   "ProcessID": 2768,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Winner_Free.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Winner_Free.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596911238754
+  },
+  {
+   "OID": "5f2eee8d2f32a664ac7a6696",
+   "ProcessID": 2540,
+   "ParentPID": 2768,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Winner_Free.exe\" \"Winner_Free.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596911245082
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2eee872f32a664ac7a6392",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eee872f32a664ac7a6392",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2eee872f32a664ac7a6392",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eee872f32a664ac7a6392",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eee872f32a664ac7a6392",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2eee872f32a664ac7a6392",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

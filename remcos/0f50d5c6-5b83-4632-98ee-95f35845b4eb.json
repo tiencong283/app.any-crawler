@@ -1,0 +1,98 @@
+{
+ "Name": "HTD-0606M.exe",
+ "Md5": "1cb5626b91ea8aa7dad514907431ac55",
+ "UUID": "0f50d5c6-5b83-4632-98ee-95f35845b4eb",
+ "Processes": [
+  {
+   "OID": "5cf87f094fb7c14699a9b9c3",
+   "ProcessID": 2636,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\HTD-0606M.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\HTD-0606M.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1559789320744
+  },
+  {
+   "OID": "5cf87f094fb7c14699a9bc19",
+   "ProcessID": 3896,
+   "ParentPID": 2636,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\TVoood.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\TVoood.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559789321588
+  },
+  {
+   "OID": "5cf87f0a4fb7c14699a9bc2f",
+   "ProcessID": 3660,
+   "ParentPID": 3896,
+   "CommandLine": "wsmprovhost.exe",
+   "Image": "C:\\Windows\\system32\\wsmprovhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559789321900
+  },
+  {
+   "OID": "5cf87f0b4fb7c14699a9bf4a",
+   "ProcessID": 3988,
+   "ParentPID": 3660,
+   "CommandLine": "\"C:\\Windows\\system32\\wsmprovhost.exe\"",
+   "Image": "C:\\Windows\\system32\\wsmprovhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559789323291
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cf87f0b4fb7c14699a9bf4a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf87f0b4fb7c14699a9bf4a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5cf87f0b4fb7c14699a9bf4a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5cf87f0b4fb7c14699a9bf4a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf87f0b4fb7c14699a9bf4a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf87f0a4fb7c14699a9bc2f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cf87f0a4fb7c14699a9bc2f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cf87f094fb7c14699a9bc19",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf87f094fb7c14699a9b9c3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

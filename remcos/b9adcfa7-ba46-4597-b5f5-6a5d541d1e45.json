@@ -1,0 +1,154 @@
+{
+ "Name": "3.exe",
+ "Md5": "bbdb9aa608613f6e66bb3b305bfc1b0f",
+ "UUID": "b9adcfa7-ba46-4597-b5f5-6a5d541d1e45",
+ "Processes": [
+  {
+   "OID": "5d169e15494d89227c0d854f",
+   "ProcessID": 1128,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1561763349294
+  },
+  {
+   "OID": "5d169e25494d89227c0d8f27",
+   "ProcessID": 3016,
+   "ParentPID": 1128,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\3.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561763364450
+  },
+  {
+   "OID": "5d169e25494d89227c0d8f29",
+   "ProcessID": 1332,
+   "ParentPID": 1128,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\3.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561763364747
+  },
+  {
+   "OID": "5d169e2f494d89227c0d9398",
+   "ProcessID": 556,
+   "ParentPID": 1128,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c copy \"C:\\Users\\admin\\AppData\\Local\\Temp\\3.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MSword.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561763375106
+  },
+  {
+   "OID": "5d169e48494d89227c0d98c7",
+   "ProcessID": 3796,
+   "ParentPID": 1128,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c, \"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MSword.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561763400200
+  },
+  {
+   "OID": "5d169e48494d89227c0d98c9",
+   "ProcessID": 3396,
+   "ParentPID": 3796,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MSword.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MSword.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561763400341
+  },
+  {
+   "OID": "5d169e57494d89227c0d9d75",
+   "ProcessID": 3436,
+   "ParentPID": 3396,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MSword.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561763415294
+  },
+  {
+   "OID": "5d169e57494d89227c0d9d77",
+   "ProcessID": 3068,
+   "ParentPID": 3396,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MSword.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561763415388
+  },
+  {
+   "OID": "5d169e7c494d89227c0da5c1",
+   "ProcessID": 1640,
+   "ParentPID": 3396,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MSword.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MSword.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561763452169
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d169e7c494d89227c0da5c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d169e7c494d89227c0da5c1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d169e7c494d89227c0da5c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d169e48494d89227c0d98c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d169e48494d89227c0d98c9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d169e48494d89227c0d98c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d169e2f494d89227c0d9398",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d169e2f494d89227c0d9398",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d169e2f494d89227c0d9398",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d169e15494d89227c0d854f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

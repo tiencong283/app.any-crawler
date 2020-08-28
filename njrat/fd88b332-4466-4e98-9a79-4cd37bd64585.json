@@ -1,0 +1,55 @@
+{
+ "Name": "pohuy_poidet_luboi_build_dlya_testa.exe",
+ "Md5": "0904754a10b7500309b146a1b41d1ef8",
+ "UUID": "fd88b332-4466-4e98-9a79-4cd37bd64585",
+ "Processes": [
+  {
+   "OID": "5f378f6e4ad5ab7e507c7a29",
+   "ProcessID": 2772,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\pohuy_poidet_luboi_build_dlya_testa.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\pohuy_poidet_luboi_build_dlya_testa.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597476718477
+  },
+  {
+   "OID": "5f378f754ad5ab7e507c7e09",
+   "ProcessID": 2288,
+   "ParentPID": 2772,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\pohuy_poidet_luboi_build_dlya_testa.exe\" \"pohuy_poidet_luboi_build_dlya_testa.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597476724868
+  },
+  {
+   "OID": "5f378f7c4ad5ab7e507c85b8",
+   "ProcessID": 1456,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597476732071
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f378f6e4ad5ab7e507c7a29",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f378f7c4ad5ab7e507c85b8",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f378f6e4ad5ab7e507c7a29",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

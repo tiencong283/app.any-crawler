@@ -1,0 +1,163 @@
+{
+ "Name": "NetflixV2.exe",
+ "Md5": "d514bcffa066f1855cdf74dacbaa7944",
+ "UUID": "01f96353-e15c-4ade-a936-e5685de2ed74",
+ "Processes": [
+  {
+   "OID": "5d3b675db800d15d26f6136f",
+   "ProcessID": 3852,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NetflixV2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NetflixV2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564174173219
+  },
+  {
+   "OID": "5d3b675eb800d15d26f61b0a",
+   "ProcessID": 2916,
+   "ParentPID": 3852,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NetflixV2.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NetflixV2.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564174173860
+  },
+  {
+   "OID": "5d3b675eb800d15d26f61b0b",
+   "ProcessID": 1332,
+   "ParentPID": 2916,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564174174219
+  },
+  {
+   "OID": "5d3b675fb800d15d26f61ed8",
+   "ProcessID": 2952,
+   "ParentPID": 1332,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564174174313
+  },
+  {
+   "OID": "5d3b675fb800d15d26f62372",
+   "ProcessID": 3832,
+   "ParentPID": 1332,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564174175391
+  },
+  {
+   "OID": "5d3b675fb800d15d26f62373",
+   "ProcessID": 3088,
+   "ParentPID": 3832,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564174175594
+  },
+  {
+   "OID": "5d3b675fb800d15d26f62374",
+   "ProcessID": 3864,
+   "ParentPID": 3088,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564174175688
+  },
+  {
+   "OID": "5d3b6760b800d15d26f626d6",
+   "ProcessID": 2520,
+   "ParentPID": 3864,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564174175876
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d3b675db800d15d26f61368",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b6781b800d15d26f62e52",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d3b6760b800d15d26f626d6",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b6760b800d15d26f626d6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b675fb800d15d26f62374",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d3b675fb800d15d26f62373",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b675fb800d15d26f62373",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b675fb800d15d26f62373",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3b675eb800d15d26f61b0b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b675eb800d15d26f61b0a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d3b675eb800d15d26f61b0a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b675eb800d15d26f61b0a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3b675eb800d15d26f61b0a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b675db800d15d26f6136f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

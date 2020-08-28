@@ -1,0 +1,69 @@
+{
+ "Name": "Client nice.exe",
+ "Md5": "d50a9ca38693164b1a185ababc7f3d43",
+ "UUID": "3d837565-1814-4a6f-a53b-15c132561e3b",
+ "Processes": [
+  {
+   "OID": "5f25a87e080c054efc766a02",
+   "ProcessID": 1800,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Client nice.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Client nice.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596303486332
+  },
+  {
+   "OID": "5f25a885080c054efc7679cb",
+   "ProcessID": 2512,
+   "ParentPID": 1800,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596303492817
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f25a885080c054efc7679cb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f25a883080c054efc766ecb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1082",
+    "T1497"
+   ]
+  },
+  {
+   "ProcessOID": "5f25a885080c054efc7679cb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f25a885080c054efc7679cb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f25a87e080c054efc766a02",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f25a87e080c054efc766a02",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f25a87e080c054efc766a02",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  }
+ ]
+}

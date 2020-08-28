@@ -1,0 +1,84 @@
+{
+ "Name": "Server.exe",
+ "Md5": "75a550e21ac73578ced9ab66673b0ad1",
+ "UUID": "13f70000-9683-405f-a668-c32112255474",
+ "Processes": [
+  {
+   "OID": "5f0755b6a7dd915f558a4803",
+   "ProcessID": 2300,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594316213729
+  },
+  {
+   "OID": "5f0755bca7dd915f558a509b",
+   "ProcessID": 2136,
+   "ParentPID": 2300,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\virus3391.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\virus3391.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594316220135
+  },
+  {
+   "OID": "5f0755c2a7dd915f558a5615",
+   "ProcessID": 1140,
+   "ParentPID": 2136,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\virus3391.exe\" \"virus3391.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594316226229
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f0755bca7dd915f558a509b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0755bca7dd915f558a509b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f0755bca7dd915f558a509b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0755bca7dd915f558a509b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0755bca7dd915f558a509b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f0755bca7dd915f558a509b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f0755b6a7dd915f558a4803",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f0755b6a7dd915f558a4803",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

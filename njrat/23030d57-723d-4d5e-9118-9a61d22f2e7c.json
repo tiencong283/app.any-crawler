@@ -1,0 +1,84 @@
+{
+ "Name": "NjRat 1.0(2020).exe",
+ "Md5": "df06e79ca8d79ceef391e4fbff5673cd",
+ "UUID": "23030d57-723d-4d5e-9118-9a61d22f2e7c",
+ "Processes": [
+  {
+   "OID": "5eee28b4b6d4454068b13fb1",
+   "ProcessID": 1340,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NjRat 1.0(2020).exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NjRat 1.0(2020).exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592666291947
+  },
+  {
+   "OID": "5eee28bbb6d4454068b1437d",
+   "ProcessID": 1624,
+   "ParentPID": 1340,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NvidiaHelper.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NvidiaHelper.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592666298993
+  },
+  {
+   "OID": "5eee28c1b6d4454068b149a4",
+   "ProcessID": 2032,
+   "ParentPID": 1624,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\NvidiaHelper.exe\" \"NvidiaHelper.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592666305181
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eee28bbb6d4454068b1437d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eee28bbb6d4454068b1437d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eee28bbb6d4454068b1437d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eee28bbb6d4454068b1437d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eee28bbb6d4454068b1437d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eee28bbb6d4454068b1437d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5eee28b4b6d4454068b13fb1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eee28b4b6d4454068b13fb1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

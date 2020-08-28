@@ -1,0 +1,279 @@
+{
+ "Name": "TrafficBots.exe",
+ "Md5": "d28a92ca4285e9b0cbc153b468428aae",
+ "UUID": "76b0ac94-b3c1-44c2-987a-98f53826cb27",
+ "Processes": [
+  {
+   "OID": "5efb0ae95b241968e6df5997",
+   "ProcessID": 2276,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\TrafficBots.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\TrafficBots.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593510633225
+  },
+  {
+   "OID": "5efb0aea5b241968e6df59a9",
+   "ProcessID": 692,
+   "ParentPID": 2276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\CHROME.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\CHROME.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593510633553
+  },
+  {
+   "OID": "5efb0aea5b241968e6df59aa",
+   "ProcessID": 2056,
+   "ParentPID": 2276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\GOOGLE.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\GOOGLE.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593510633600
+  },
+  {
+   "OID": "5efb0aea5b241968e6df59ab",
+   "ProcessID": 3148,
+   "ParentPID": 2276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\SYSTEM.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\SYSTEM.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593510633663
+  },
+  {
+   "OID": "5efb0aea5b241968e6df59ac",
+   "ProcessID": 2072,
+   "ParentPID": 2276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\TRAFFICBOT.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\TRAFFICBOT.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593510633819
+  },
+  {
+   "OID": "5efb0aea5b241968e6df6176",
+   "ProcessID": 3120,
+   "ParentPID": 2276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WIN.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WIN.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593510633928
+  },
+  {
+   "OID": "5efb0aeb5b241968e6df7134",
+   "ProcessID": 2804,
+   "ParentPID": 2276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WIN.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WIN.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593510635038
+  },
+  {
+   "OID": "5efb0aeb5b241968e6df7135",
+   "ProcessID": 1480,
+   "ParentPID": 2804,
+   "CommandLine": "\"powershell\" Get-MpPreference -verbose",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593510635131
+  },
+  {
+   "OID": "5efb0af45b241968e6df8793",
+   "ProcessID": 3048,
+   "ParentPID": 2056,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\google.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\google.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593510643335
+  },
+  {
+   "OID": "5efb0afa5b241968e6df9468",
+   "ProcessID": 3000,
+   "ParentPID": 3048,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\google.exe\" \"google.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593510649491
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5efb0af45b241968e6df8793",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0af45b241968e6df8793",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0af45b241968e6df8793",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0af45b241968e6df8793",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0af45b241968e6df8793",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0af45b241968e6df8793",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0af45b241968e6df8793",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1003"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1003"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aeb5b241968e6df7135",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aeb5b241968e6df7134",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0aeb5b241968e6df7134",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0aeb5b241968e6df7134",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df6176",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59a9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0ae95b241968e6df50cb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0aea5b241968e6df59ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5efb0ae95b241968e6df5997",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efb0ae95b241968e6df5997",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  }
+ ]
+}

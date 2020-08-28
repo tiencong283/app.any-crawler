@@ -1,0 +1,91 @@
+{
+ "Name": "test1.bin",
+ "Md5": "b81e2e69bd34b7cf21b8bee26d852eb3",
+ "UUID": "547bde59-72d0-482c-a461-06708aeb3afa",
+ "Processes": [
+  {
+   "OID": "5e288ed560bbb66594f437fc",
+   "ProcessID": 1604,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\test1.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\test1.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579716308912
+  },
+  {
+   "OID": "5e288ed560bbb66594f437fd",
+   "ProcessID": 2704,
+   "ParentPID": 1604,
+   "CommandLine": "--d08a2b5c",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\test1.bin.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579716309053
+  },
+  {
+   "OID": "5e288edc60bbb66594f43c16",
+   "ProcessID": 2092,
+   "ParentPID": 2704,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579716316053
+  },
+  {
+   "OID": "5e288edc60bbb66594f43c17",
+   "ProcessID": 3804,
+   "ParentPID": 2092,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579716316131
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e288edc60bbb66594f43c17",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e288edc60bbb66594f43c17",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e288edc60bbb66594f43c17",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e288ed560bbb66594f4320d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e288edc60bbb66594f43c17",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e288ed560bbb66594f437fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e288ed560bbb66594f437fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e288ed560bbb66594f437fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

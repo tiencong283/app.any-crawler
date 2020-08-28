@@ -1,0 +1,172 @@
+{
+ "Name": "executable.2340.exe",
+ "Md5": "396922cecb943ba54f53cab7d7298a2b",
+ "UUID": "6ad7aa61-4cdc-47cc-b6f7-572f12dd8d69",
+ "Processes": [
+  {
+   "OID": "5dfcc5f4ee87707298e1875a",
+   "ProcessID": 2536,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\executable.2340.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\executable.2340.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1576846836449
+  },
+  {
+   "OID": "5dfcc5f5ee87707298e18d4c",
+   "ProcessID": 3872,
+   "ParentPID": 2536,
+   "CommandLine": "--53125105",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\executable.2340.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576846836699
+  },
+  {
+   "OID": "5dfcc5fbee87707298e19485",
+   "ProcessID": 3092,
+   "ParentPID": 3872,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576846843449
+  },
+  {
+   "OID": "5dfcc5fbee87707298e19487",
+   "ProcessID": 2092,
+   "ParentPID": 3092,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576846843542
+  },
+  {
+   "OID": "5dfcc629ee87707298e1aa1c",
+   "ProcessID": 3936,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1576846889355
+  },
+  {
+   "OID": "5dfcc6aeee87707298e1c44a",
+   "ProcessID": 4044,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1576847021870
+  },
+  {
+   "OID": "5dfcc6b7ee87707298e1c9c0",
+   "ProcessID": 2748,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\rundll32.exe\" C:\\Windows\\system32\\shell32.dll,OpenAs_RunDLL C:\\Users\\admin\\AppData\\Local\\Temp\\serialfunc.DMP",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1576847031058
+  },
+  {
+   "OID": "5dfcc6c1ee87707298e1d4cf",
+   "ProcessID": 3252,
+   "ParentPID": 2748,
+   "CommandLine": "\"C:\\Windows\\system32\\NOTEPAD.EXE\" C:\\Users\\admin\\AppData\\Local\\Temp\\serialfunc.DMP",
+   "Image": "C:\\Windows\\system32\\NOTEPAD.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576847040855
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dfcc5f4ee87707298e1873f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfcc6b7ee87707298e1c9c0",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5dfcc5f4ee87707298e18753",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  },
+  {
+   "ProcessOID": "5dfcc6b7ee87707298e1c9c0",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dfcc6aeee87707298e1c44a",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dfcc5fbee87707298e19487",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dfcc5fbee87707298e19487",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfcc5fbee87707298e19487",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfcc629ee87707298e1aa1c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dfcc5f5ee87707298e18d4c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfcc5f5ee87707298e18d4c",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfcc5f5ee87707298e18d4c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfcc5f5ee87707298e18d4c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dfcc5f4ee87707298e18746",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfcc5f4ee87707298e1875a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

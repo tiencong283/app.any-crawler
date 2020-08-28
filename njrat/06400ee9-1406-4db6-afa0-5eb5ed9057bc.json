@@ -1,0 +1,109 @@
+{
+ "Name": "Discord free nitro.exe",
+ "Md5": "81251e7b05bdfadfe7d9d22e8be55ad8",
+ "UUID": "06400ee9-1406-4db6-afa0-5eb5ed9057bc",
+ "Processes": [
+  {
+   "OID": "5f40ff74edd1b63d46fa25d0",
+   "ProcessID": 2244,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Discord free nitro.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Discord free nitro.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1598095220318
+  },
+  {
+   "OID": "5f40ff7bedd1b63d46fa28b6",
+   "ProcessID": 1428,
+   "ParentPID": 2244,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Discord nitro genrator.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Discord nitro genrator.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598095226787
+  },
+  {
+   "OID": "5f40ff81edd1b63d46fa2e27",
+   "ProcessID": 1868,
+   "ParentPID": 1428,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Discord nitro genrator.exe\" \"Discord nitro genrator.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598095232990
+  },
+  {
+   "OID": "5f40ff93edd1b63d46fa3608",
+   "ProcessID": 3104,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Program Files\\WinRAR\\WinRAR.exe\" ",
+   "Image": "C:\\Program Files\\WinRAR\\WinRAR.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1598095251209
+  },
+  {
+   "OID": "5f40ff99edd1b63d46fa39be",
+   "ProcessID": 3972,
+   "ParentPID": 592,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1598095256818
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f40ff74edd1b63d46fa1db5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f40ff74edd1b63d46fa1db8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f40ff99edd1b63d46fa39be",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f40ff93edd1b63d46fa3608",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f40ff7bedd1b63d46fa28b6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f40ff7bedd1b63d46fa28b6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f40ff7bedd1b63d46fa28b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f40ff74edd1b63d46fa25d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f40ff74edd1b63d46fa25d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

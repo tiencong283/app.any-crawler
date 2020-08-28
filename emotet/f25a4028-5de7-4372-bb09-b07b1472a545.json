@@ -1,0 +1,77 @@
+{
+ "Name": "moreraw.exe",
+ "Md5": "65a4a1b30adb98cb83887fa8a7a36c31",
+ "UUID": "f25a4028-5de7-4372-bb09-b07b1472a545",
+ "Processes": [
+  {
+   "OID": "5ddc04824b187e337303b873",
+   "ProcessID": 1584,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\moreraw.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\moreraw.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574700162118
+  },
+  {
+   "OID": "5ddc04824b187e337303b874",
+   "ProcessID": 2468,
+   "ParentPID": 1584,
+   "CommandLine": "--9de988b7",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\moreraw.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574700162259
+  },
+  {
+   "OID": "5ddc04894b187e337303bc93",
+   "ProcessID": 2200,
+   "ParentPID": 2468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574700168852
+  },
+  {
+   "OID": "5ddc04894b187e337303bc94",
+   "ProcessID": 3864,
+   "ParentPID": 2200,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574700168946
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ddc04894b187e337303bc94",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddc04894b187e337303bc94",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddc04894b187e337303bc94",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddc04824b187e337303b874",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddc04824b187e337303b874",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddc04824b187e337303b874",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

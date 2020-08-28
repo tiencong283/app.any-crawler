@@ -1,0 +1,84 @@
+{
+ "Name": "123.exe",
+ "Md5": "1270c5ef2726602a83935c4ea7ea652f",
+ "UUID": "4bb7d52d-c665-4374-afbe-28eb7de2f89e",
+ "Processes": [
+  {
+   "OID": "5ef1689119217e54d3b1491d",
+   "ProcessID": 2696,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\123.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\123.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592879249492
+  },
+  {
+   "OID": "5ef1689819217e54d3b152aa",
+   "ProcessID": 2632,
+   "ParentPID": 2696,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices9090990.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices9090990.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592879256258
+  },
+  {
+   "OID": "5ef1689f19217e54d3b157cf",
+   "ProcessID": 2076,
+   "ParentPID": 2632,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices9090990.exe\" \"WindowsServices9090990.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592879262430
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ef1689819217e54d3b152aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1689819217e54d3b152aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1689819217e54d3b152aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1689819217e54d3b152aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1689819217e54d3b152aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1689819217e54d3b152aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1689119217e54d3b1491d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1689119217e54d3b1491d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

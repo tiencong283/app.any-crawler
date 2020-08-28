@@ -1,0 +1,232 @@
+{
+ "Name": "ec7d8865-799b-4e0f-afcc-c457be94816c",
+ "Md5": "08304c25b11735fbcc9f07a3a57be9b9",
+ "UUID": "c15b3416-a5eb-4633-b8b4-24a29ca8aa85",
+ "Processes": [
+  {
+   "OID": "5f3697a20e167a41622d4c96",
+   "ProcessID": 3028,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ec7d8865-799b-4e0f-afcc-c457be94816c.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ec7d8865-799b-4e0f-afcc-c457be94816c.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597413281874
+  },
+  {
+   "OID": "5f3697a40e167a41622d69a4",
+   "ProcessID": 4036,
+   "ParentPID": 3028,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dotNetFx35setup.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dotNetFx35setup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597413283764
+  },
+  {
+   "OID": "5f3697a50e167a41622d6eec",
+   "ProcessID": 2740,
+   "ParentPID": 3028,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dotNetFx35setup.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dotNetFx35setup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597413284389
+  },
+  {
+   "OID": "5f3697a50e167a41622d6eed",
+   "ProcessID": 2852,
+   "ParentPID": 3028,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\tk.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\tk.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597413284436
+  },
+  {
+   "OID": "5f3697a50e167a41622d6eee",
+   "ProcessID": 2556,
+   "ParentPID": 3028,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\installer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\installer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597413284514
+  },
+  {
+   "OID": "5f3697a60e167a41622d80ce",
+   "ProcessID": 632,
+   "ParentPID": 2852,
+   "CommandLine": "C:\\Windows\\system32\\cmd.exe /c pass.exe /stext 1.txt",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597413285592
+  },
+  {
+   "OID": "5f3697a60e167a41622d8c3d",
+   "ProcessID": 3184,
+   "ParentPID": 632,
+   "CommandLine": "pass.exe  /stext 1.txt",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\pass.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597413285749
+  },
+  {
+   "OID": "5f3697ab0e167a41622d9b82",
+   "ProcessID": 3464,
+   "ParentPID": 2556,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winhelp32.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winhelp32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597413291217
+  },
+  {
+   "OID": "5f3697b10e167a41622da5aa",
+   "ProcessID": 2576,
+   "ParentPID": 3464,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\winhelp32.exe\" \"winhelp32.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597413297327
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f3697ab0e167a41622d9b82",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697ab0e167a41622d9b82",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697ab0e167a41622d9b82",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f3697ab0e167a41622d9b82",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697ab0e167a41622d9b82",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697ab0e167a41622d9b82",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f3697ab0e167a41622d9b82",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f3697a60e167a41622d8c3d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081",
+    "T1114"
+   ]
+  },
+  {
+   "ProcessOID": "5f3697a60e167a41622d8c3d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081",
+    "T1114"
+   ]
+  },
+  {
+   "ProcessOID": "5f3697a60e167a41622d8c3d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5f3697ab0e167a41622d9b82",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697a50e167a41622d6eee",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f3697a50e167a41622d6eee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697a60e167a41622d8c3d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697a50e167a41622d6eed",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f3697a50e167a41622d6eed",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697a50e167a41622d6eed",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f3697a50e167a41622d6eec",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697a40e167a41622d69a4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697a50e167a41622d6eed",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697a50e167a41622d6eee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697a20e167a41622d4c80",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f3697a20e167a41622d4c96",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3697a20e167a41622d4c96",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

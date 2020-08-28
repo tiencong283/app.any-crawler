@@ -1,0 +1,76 @@
+{
+ "Name": "carrot.exe",
+ "Md5": "da3a30917a12909047e4b307ac07f159",
+ "UUID": "69f9e79c-f1aa-42c5-851f-e77d82cea09c",
+ "Processes": [
+  {
+   "OID": "5f2e4b48f1d34f2acdfe7d20",
+   "ProcessID": 2140,
+   "ParentPID": 356,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\carrot.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\carrot.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596869447494
+  },
+  {
+   "OID": "5f2e4b4ef1d34f2acdfe809b",
+   "ProcessID": 628,
+   "ParentPID": 2140,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\carrot.exe\" \"carrot.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596869453775
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2e4b64f1d34f2acdfe8eda",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2e4b48f1d34f2acdfe7d20",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2e4b48f1d34f2acdfe7d20",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2e4b48f1d34f2acdfe7d20",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2e4b48f1d34f2acdfe7d20",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2e4b48f1d34f2acdfe7d20",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2e4b48f1d34f2acdfe7d20",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f2e4b47f1d34f2acdfe74ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  }
+ ]
+}

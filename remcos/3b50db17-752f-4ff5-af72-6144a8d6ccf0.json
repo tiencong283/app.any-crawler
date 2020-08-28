@@ -1,0 +1,76 @@
+{
+ "Name": "soa.exe",
+ "Md5": "b13ba67dbc743560046d534e9c2b1ede",
+ "UUID": "3b50db17-752f-4ff5-af72-6144a8d6ccf0",
+ "Processes": [
+  {
+   "OID": "5c98b735a653f503b4825012",
+   "ProcessID": 252,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\soa.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\soa.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1553512245567
+  },
+  {
+   "OID": "5c98b749a653f503b4825930",
+   "ProcessID": 2756,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1553512265161
+  },
+  {
+   "OID": "5c98b78ea653f503b48260f8",
+   "ProcessID": 2740,
+   "ParentPID": 252,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\soa.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\soa.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553512333989
+  },
+  {
+   "OID": "5c98b804a653f503b482620f",
+   "ProcessID": 3740,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1553512451833
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c98b78ea653f503b48260f8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c98b78ea653f503b48260f8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c98b735a653f503b4825012",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c98b735a653f503b482500a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5c98b735a653f503b482500a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

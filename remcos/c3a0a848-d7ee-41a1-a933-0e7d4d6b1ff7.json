@@ -1,0 +1,82 @@
+{
+ "Name": "doc001019.exe",
+ "Md5": "cce738f851cf6ee1753cd295be4b7f1a",
+ "UUID": "c3a0a848-d7ee-41a1-a933-0e7d4d6b1ff7",
+ "Processes": [
+  {
+   "OID": "5d92fd0041a6f105207bf98c",
+   "ProcessID": 2924,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\doc001019.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\doc001019.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1569914111997
+  },
+  {
+   "OID": "5d92fd3841a6f105207bfd84",
+   "ProcessID": 2680,
+   "ParentPID": 2924,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\JrKKWeKaJ\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp1A7F.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1569914167966
+  },
+  {
+   "OID": "5d92fd3841a6f105207bfd86",
+   "ProcessID": 2272,
+   "ParentPID": 2924,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\doc001019.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\doc001019.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1569914168107
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d92fd3841a6f105207bfd86",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d92fd3841a6f105207bfd86",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d92fd0041a6f105207bf98c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d92fd0041a6f105207bf979",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d92fd3841a6f105207bfd84",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d92fd0041a6f105207bf98c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d92fd0041a6f105207bf98c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d92fd0041a6f105207bf98c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

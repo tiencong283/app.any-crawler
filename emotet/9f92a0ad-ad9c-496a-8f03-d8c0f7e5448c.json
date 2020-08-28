@@ -1,0 +1,77 @@
+{
+ "Name": "162.exe",
+ "Md5": "d3817e2983bb5d4e976fa4fd591b1f44",
+ "UUID": "9f92a0ad-ad9c-496a-8f03-d8c0f7e5448c",
+ "Processes": [
+  {
+   "OID": "5deff927fc54c222900e0173",
+   "ProcessID": 3332,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\162.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\162.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1576007975623
+  },
+  {
+   "OID": "5deff927fc54c222900e0174",
+   "ProcessID": 2176,
+   "ParentPID": 3332,
+   "CommandLine": "--b8281feb",
+   "Image": "C:\\Users\\admin\\Desktop\\162.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576007975779
+  },
+  {
+   "OID": "5deff92ffc54c222900e0ff9",
+   "ProcessID": 2964,
+   "ParentPID": 2176,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576007983373
+  },
+  {
+   "OID": "5deff92ffc54c222900e0ffa",
+   "ProcessID": 1412,
+   "ParentPID": 2964,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576007983482
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5deff92ffc54c222900e0ffa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5deff92ffc54c222900e0ffa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5deff92ffc54c222900e0ffa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5deff927fc54c222900e0174",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5deff927fc54c222900e0174",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5deff927fc54c222900e0174",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

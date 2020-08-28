@@ -1,0 +1,81 @@
+{
+ "Name": "jSmdQui83ne.exe",
+ "Md5": "467776d091ad81ff28ac14f7dff952bd",
+ "UUID": "c71f9505-c15f-4e16-941b-55900863c801",
+ "Processes": [
+  {
+   "OID": "5dd4ea60927c014511a47241",
+   "ProcessID": 1888,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\jSmdQui83ne.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\jSmdQui83ne.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574234720640
+  },
+  {
+   "OID": "5dd4ea61927c014511a473e0",
+   "ProcessID": 3116,
+   "ParentPID": 1888,
+   "CommandLine": "--1e706bb",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\jSmdQui83ne.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574234721593
+  },
+  {
+   "OID": "5dd4ea6a927c014511a47629",
+   "ProcessID": 2176,
+   "ParentPID": 3116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574234730390
+  },
+  {
+   "OID": "5dd4ea6b927c014511a478c3",
+   "ProcessID": 4036,
+   "ParentPID": 2176,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574234731186
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dd4ea6b927c014511a478c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd4ea6b927c014511a478c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd4ea6a927c014511a47629",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dd4ea61927c014511a473e0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd4ea61927c014511a473e0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dd4ea60927c014511a47241",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

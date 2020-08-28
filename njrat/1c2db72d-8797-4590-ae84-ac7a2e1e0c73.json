@@ -1,0 +1,70 @@
+{
+ "Name": "cd79a03310096d7a20499257d987e634513c3d7bcc1bfadefe3bacb75f0fa3b7",
+ "Md5": "7e2a894d75197502162f0b0106081972",
+ "UUID": "1c2db72d-8797-4590-ae84-ac7a2e1e0c73",
+ "Processes": [
+  {
+   "OID": "5f0ae4bb3d2e6239f9518f94",
+   "ProcessID": 1324,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cd79a03310096d7a20499257d987e634513c3d7bcc1bfadefe3bacb75f0fa3b7.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cd79a03310096d7a20499257d987e634513c3d7bcc1bfadefe3bacb75f0fa3b7.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594549434797
+  },
+  {
+   "OID": "5f0ae4c23d2e6239f95199e1",
+   "ProcessID": 2804,
+   "ParentPID": 1324,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\csrss.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\csrss.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594549442141
+  },
+  {
+   "OID": "5f0ae4c83d2e6239f951a16c",
+   "ProcessID": 3252,
+   "ParentPID": 2804,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\csrss.exe\" \"csrss.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594549448438
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f0ae4c23d2e6239f95199e1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0ae4bb3d2e6239f9518f86",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0ae4c23d2e6239f95199e1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f0ae4bb3d2e6239f9518f94",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f0ae4bb3d2e6239f9518f94",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0ae4bb3d2e6239f9518f94",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,177 @@
+{
+ "Name": "Hui228.exe",
+ "Md5": "d20dc8af5f3a624bcf3b6a385d017ed1",
+ "UUID": "40ee55d5-c955-4ed8-b2b0-8cb896ffba79",
+ "Processes": [
+  {
+   "OID": "5f358ae197971023730de244",
+   "ProcessID": 700,
+   "ParentPID": 356,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Hui228.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Hui228.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597344480778
+  },
+  {
+   "OID": "5f358ae797971023730de53e",
+   "ProcessID": 2420,
+   "ParentPID": 700,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Antimalwareservice.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Antimalwareservice.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597344487403
+  },
+  {
+   "OID": "5f358aee97971023730deb10",
+   "ProcessID": 2080,
+   "ParentPID": 2420,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\Antimalwareservice.exe\" \"Antimalwareservice.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597344493528
+  },
+  {
+   "OID": "5f358b4797971023730e1182",
+   "ProcessID": 2184,
+   "ParentPID": 356,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\perhapsdoing.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597344583262
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f358b4b97971023730e2c2d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f358ae197971023730dd9f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358b4797971023730e1182",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358b4797971023730e1182",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f358ae197971023730dd9ef",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f358ae197971023730dd9f2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358ae197971023730dd9f2",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358b4797971023730e1182",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f358ae197971023730dd9da",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5f358afe97971023730df9dc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358afe97971023730df9dc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358ae797971023730de53e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358ae797971023730de53e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358ae797971023730de53e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f358ae797971023730de53e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358ae797971023730de53e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358ae797971023730de53e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f358ae797971023730de53e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f358ae197971023730de244",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f358ae197971023730de244",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358ae197971023730de244",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f358ae197971023730dd9e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  }
+ ]
+}

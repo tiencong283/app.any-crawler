@@ -1,0 +1,107 @@
+{
+ "Name": "OTP.exe",
+ "Md5": "e2e66aae7dc650f5a2e3998970065dce",
+ "UUID": "c987083e-a350-4738-87ed-9b56729cb14d",
+ "Processes": [
+  {
+   "OID": "5f06fbe72f945d705a18c8e5",
+   "ProcessID": 2244,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\OTP.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\OTP.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594293223158
+  },
+  {
+   "OID": "5f06fbe92f945d705a18d05c",
+   "ProcessID": 2708,
+   "ParentPID": 2244,
+   "CommandLine": "/C \"C:\\Users\\admin\\AppData\\Roaming\\uniss.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594293225221
+  },
+  {
+   "OID": "5f06fbe92f945d705a18d06e",
+   "ProcessID": 3388,
+   "ParentPID": 2708,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\uniss.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\uniss.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594293225268
+  },
+  {
+   "OID": "5f06fbeb2f945d705a18d27e",
+   "ProcessID": 284,
+   "ParentPID": 3388,
+   "CommandLine": "\"-Command\" \"if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; \u0026 'C:\\Users\\admin\\AppData\\Local\\Temp\\\\dhslahsl.ps1'\"",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594293227299
+  },
+  {
+   "OID": "5f06fbeb2f945d705a18d27f",
+   "ProcessID": 1752,
+   "ParentPID": 3388,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594293227299
+  },
+  {
+   "OID": "5f06fbf22f945d705a18de4a",
+   "ProcessID": 2340,
+   "ParentPID": 1752,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594293233643
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f06fbeb2f945d705a18d27f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f06fbeb2f945d705a18d27e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f06fbeb2f945d705a18d27e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f06fbe92f945d705a18d06e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5f06fbe72f945d705a18c8e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f06fbe72f945d705a18c8e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f06fbe72f945d705a18c8e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

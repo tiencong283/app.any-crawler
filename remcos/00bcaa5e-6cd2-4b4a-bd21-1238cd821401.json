@@ -1,0 +1,75 @@
+{
+ "Name": "새로운 주문454327765pdf.iso.exe",
+ "Md5": "7a14c67edf0741c0eca95bc87956db5c",
+ "UUID": "00bcaa5e-6cd2-4b4a-bd21-1238cd821401",
+ "Processes": [
+  {
+   "OID": "5d6159f90c99fc25dfa9fdee",
+   "ProcessID": 3604,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\새로운 주문454327765pdf.iso.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\새로운 주문454327765pdf.iso.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1566661113000
+  },
+  {
+   "OID": "5d6159fa0c99fc25dfa9fe6c",
+   "ProcessID": 3692,
+   "ParentPID": 3604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\HOLDMEONE.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\HOLDMEONE.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566661113812
+  },
+  {
+   "OID": "5d615a140c99fc25dfaa06c7",
+   "ProcessID": 2536,
+   "ParentPID": 3692,
+   "CommandLine": "\"C:\\Windows\\System32\\regsvr32.exe\"",
+   "Image": "C:\\Windows\\System32\\regsvr32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566661139937
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d6159fa0c99fc25dfa9fe6c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6159fa0c99fc25dfa9fe6c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d615a140c99fc25dfaa06c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6159fa0c99fc25dfa9fe6c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1117"
+   ]
+  },
+  {
+   "ProcessOID": "5d6159f90c99fc25dfa9f535",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6159fa0c99fc25dfa9fe6c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6159f90c99fc25dfa9fdee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

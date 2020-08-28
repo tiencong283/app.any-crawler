@@ -1,0 +1,136 @@
+{
+ "Name": "winword_unsigned.exe",
+ "Md5": "528ae49cc70321cc3126e7329c1f4425",
+ "UUID": "3b924192-1aa5-47cc-9324-5647e54fe6ca",
+ "Processes": [
+  {
+   "OID": "5d6d8e31b153b8232631fd4b",
+   "ProcessID": 3644,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winword_unsigned.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winword_unsigned.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1567460913353
+  },
+  {
+   "OID": "5d6d8e4db153b82326323d06",
+   "ProcessID": 2388,
+   "ParentPID": 3644,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winword_unsigned.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winword_unsigned.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567460941148
+  },
+  {
+   "OID": "5d6d8e5eb153b82326325dd5",
+   "ProcessID": 3844,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Windows\\system32\\rundll32.exe\" C:\\Windows\\system32\\shell32.dll,OpenAs_RunDLL C:\\Users\\admin\\AppData\\Roaming\\Logs\\loggs.dat",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1567460958133
+  },
+  {
+   "OID": "5d6d8e64b153b823263266b5",
+   "ProcessID": 3920,
+   "ParentPID": 3844,
+   "CommandLine": "\"C:\\Windows\\system32\\NOTEPAD.EXE\" C:\\Users\\admin\\AppData\\Roaming\\Logs\\loggs.dat",
+   "Image": "C:\\Windows\\system32\\NOTEPAD.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567460963867
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d6d8e31b153b8232631fd43",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6d8e31b153b8232631fd43",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d6d8e31b153b8232631fd31",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6d8e5eb153b82326325dd5",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5d6d8e31b153b8232631fd43",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  },
+  {
+   "ProcessOID": "5d6d8e5eb153b82326325dd5",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d6d8e4db153b82326323d06",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d6d8e4db153b82326323d06",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d6d8e4db153b82326323d06",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6d8e4db153b82326323d06",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6d8e31b153b8232631fd4b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d6d8e31b153b8232631fd4b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6d8e31b153b8232631fd3e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6d8e31b153b8232631fd4b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d6d8e31b153b8232631fd4b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

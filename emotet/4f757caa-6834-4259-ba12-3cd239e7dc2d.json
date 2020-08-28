@@ -1,0 +1,77 @@
+{
+ "Name": "emotet_1_unpacked.exe",
+ "Md5": "080d6a574b16188e4ad6b1cc483557a1",
+ "UUID": "4f757caa-6834-4259-ba12-3cd239e7dc2d",
+ "Processes": [
+  {
+   "OID": "5e0f56fa1eb0485b99d63580",
+   "ProcessID": 2108,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\emotet_1_unpacked.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet_1_unpacked.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578063610442
+  },
+  {
+   "OID": "5e0f56fa1eb0485b99d63581",
+   "ProcessID": 2348,
+   "ParentPID": 2108,
+   "CommandLine": "--4bbe0606",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet_1_unpacked.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578063610473
+  },
+  {
+   "OID": "5e0f57001eb0485b99d6390b",
+   "ProcessID": 776,
+   "ParentPID": 2348,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578063616520
+  },
+  {
+   "OID": "5e0f57001eb0485b99d6390c",
+   "ProcessID": 2172,
+   "ParentPID": 776,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578063616551
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e0f57001eb0485b99d6390c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0f57001eb0485b99d6390c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0f57001eb0485b99d6390c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0f56fa1eb0485b99d63581",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0f56fa1eb0485b99d63581",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0f56fa1eb0485b99d63581",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

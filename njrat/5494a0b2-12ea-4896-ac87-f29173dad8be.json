@@ -1,0 +1,214 @@
+{
+ "Name": "111Server.exe",
+ "Md5": "271fb6387afefad2d459eca676290008",
+ "UUID": "5494a0b2-12ea-4896-ac87-f29173dad8be",
+ "Processes": [
+  {
+   "OID": "5eef847055d9494d2b7c0961",
+   "ProcessID": 1924,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\111Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\111Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592755312118
+  },
+  {
+   "OID": "5eef847755d9494d2b7c0cb2",
+   "ProcessID": 1288,
+   "ParentPID": 1924,
+   "CommandLine": "\"C:\\ProgramData\\rundll.exe\" ",
+   "Image": "C:\\ProgramData\\rundll.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592755318618
+  },
+  {
+   "OID": "5eef847d55d9494d2b7c1031",
+   "ProcessID": 1716,
+   "ParentPID": 1288,
+   "CommandLine": "schtasks /create /sc minute /mo 1 /tn Server /tr C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592755324806
+  },
+  {
+   "OID": "5eef84b455d9494d2b7c1d9c",
+   "ProcessID": 3452,
+   "ParentPID": 1988,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1592755380009
+  },
+  {
+   "OID": "5eef84f055d9494d2b7c20bf",
+   "ProcessID": 3924,
+   "ParentPID": 1988,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1592755440009
+  },
+  {
+   "OID": "5eef852c55d9494d2b7c249b",
+   "ProcessID": 1476,
+   "ParentPID": 1988,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1592755500009
+  },
+  {
+   "OID": "5eef855a55d9494d2b7c2fbd",
+   "ProcessID": 2844,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Windows\\system32\\mmc.exe\" \"C:\\Windows\\system32\\taskschd.msc\" /s",
+   "Image": "C:\\Windows\\system32\\mmc.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1592755545649
+  },
+  {
+   "OID": "5eef855b55d9494d2b7c339b",
+   "ProcessID": 1764,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Windows\\system32\\mmc.exe\" \"C:\\Windows\\system32\\taskschd.msc\" /s",
+   "Image": "C:\\Windows\\system32\\mmc.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1592755546993
+  },
+  {
+   "OID": "5eef856855d9494d2b7c3f9b",
+   "ProcessID": 1912,
+   "ParentPID": 1988,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1592755560009
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eef856855d9494d2b7c3f9b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5eef855b55d9494d2b7c339b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5eef855b55d9494d2b7c339b",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5eef855a55d9494d2b7c2fbd",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5eef847055d9494d2b7c0389",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eef852c55d9494d2b7c249b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5eef84f055d9494d2b7c20bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5eef84b455d9494d2b7c1d9c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5eef847755d9494d2b7c0cb2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eef847755d9494d2b7c0cb2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eef847055d9494d2b7c0393",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eef847d55d9494d2b7c1031",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5eef847755d9494d2b7c0cb2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5eef847755d9494d2b7c0cb2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eef847755d9494d2b7c0cb2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eef847755d9494d2b7c0cb2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eef847755d9494d2b7c0cb2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eef847055d9494d2b7c0961",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eef847055d9494d2b7c0961",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eef847055d9494d2b7c0961",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

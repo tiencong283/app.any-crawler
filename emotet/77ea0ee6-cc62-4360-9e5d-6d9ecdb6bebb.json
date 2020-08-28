@@ -1,0 +1,69 @@
+{
+ "Name": "18",
+ "Md5": "2285338914ff8acbba08026976ae86bb",
+ "UUID": "77ea0ee6-cc62-4360-9e5d-6d9ecdb6bebb",
+ "Processes": [
+  {
+   "OID": "5e27651ae6e73c1fb19d7780",
+   "ProcessID": 2524,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\18.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\18.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579640090807
+  },
+  {
+   "OID": "5e27651be6e73c1fb19d7d8a",
+   "ProcessID": 3856,
+   "ParentPID": 2524,
+   "CommandLine": "--b8fc16ab",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\18.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579640090885
+  },
+  {
+   "OID": "5e276521e6e73c1fb19d8023",
+   "ProcessID": 2400,
+   "ParentPID": 3856,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579640097276
+  },
+  {
+   "OID": "5e276521e6e73c1fb19d8024",
+   "ProcessID": 3864,
+   "ParentPID": 2400,
+   "CommandLine": "--a66f8ff2",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579640097339
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e27651be6e73c1fb19d7d8a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e27651be6e73c1fb19d7d8a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e27651be6e73c1fb19d7d8a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e27651ae6e73c1fb19d7780",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

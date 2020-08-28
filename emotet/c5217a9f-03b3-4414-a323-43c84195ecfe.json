@@ -1,0 +1,99 @@
+{
+ "Name": "JhAUO",
+ "Md5": "fcfefba9216e60e7c2383e65600c576b",
+ "UUID": "c5217a9f-03b3-4414-a323-43c84195ecfe",
+ "Processes": [
+  {
+   "OID": "5f3f70d9c2223d1505720ec1",
+   "ProcessID": 1320,
+   "ParentPID": 356,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\JhAUO.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\JhAUO.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597993177152
+  },
+  {
+   "OID": "5f3f70dac2223d1505720ec7",
+   "ProcessID": 1592,
+   "ParentPID": 1320,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\dinotify\\msoert2.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\dinotify\\msoert2.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597993177449
+  },
+  {
+   "OID": "5f3f70f8c2223d1505721af6",
+   "ProcessID": 2068,
+   "ParentPID": 356,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597993208183
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f3f70dac2223d1505720ec7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3f70dac2223d1505720ec7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f3f70f8c2223d1505721af6",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f3f70f6c2223d15057217fc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3f70dac2223d1505720ec7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3f70d9c2223d1505720eb0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f3f70dac2223d1505720ec7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f3f70d9c2223d1505720ea9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5f3f70d9c2223d1505720ec1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f3f70d9c2223d1505720ec1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

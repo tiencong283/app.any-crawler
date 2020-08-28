@@ -1,0 +1,79 @@
+{
+ "Name": "Sample_5e1d7c614bc82800107fabc9.exe",
+ "Md5": "6472ceed69df5813652814c39f702ba6",
+ "UUID": "9b80378e-5c08-47fd-9d34-8fa8e046a5d0",
+ "Processes": [
+  {
+   "OID": "5e2360313d13251f5830e9f2",
+   "ProcessID": 2060,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Sample_5e1d7c614bc82800107fabc9.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Sample_5e1d7c614bc82800107fabc9.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579376688787
+  },
+  {
+   "OID": "5e2360313d13251f5830ea14",
+   "ProcessID": 2660,
+   "ParentPID": 2060,
+   "CommandLine": "--8d2566ab",
+   "Image": "C:\\Users\\admin\\Desktop\\Sample_5e1d7c614bc82800107fabc9.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579376689084
+  },
+  {
+   "OID": "5e2360383d13251f5830f3e6",
+   "ProcessID": 792,
+   "ParentPID": 2660,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579376695990
+  },
+  {
+   "OID": "5e2360383d13251f5830f3e7",
+   "ProcessID": 2200,
+   "ParentPID": 792,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579376696068
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2360383d13251f5830f3e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2360383d13251f5830f3e7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2360313d13251f5830ea14",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e2360313d13251f5830ea14",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2360313d13251f5830ea14",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2360313d13251f5830e9f2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

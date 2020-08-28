@@ -1,0 +1,84 @@
+{
+ "Name": "05153cba6bb7aec83288b469ceb93aa6.exe",
+ "Md5": "6fb8584c0915a9807b36eba72f215e1b",
+ "UUID": "aaae23d1-0d67-4fb3-9381-03982ff28eeb",
+ "Processes": [
+  {
+   "OID": "5f41e34cb78c1c402d1ea977",
+   "ProcessID": 1228,
+   "ParentPID": 356,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\05153cba6bb7aec83288b469ceb93aa6.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\05153cba6bb7aec83288b469ceb93aa6.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1598153548390
+  },
+  {
+   "OID": "5f41e353b78c1c402d1eb3c5",
+   "ProcessID": 1936,
+   "ParentPID": 1228,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\msconfig.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\msconfig.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598153555218
+  },
+  {
+   "OID": "5f41e35ab78c1c402d1eb9bb",
+   "ProcessID": 2252,
+   "ParentPID": 1936,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\msconfig.exe\" \"msconfig.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598153561437
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f41e353b78c1c402d1eb3c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f41e353b78c1c402d1eb3c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f41e353b78c1c402d1eb3c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f41e353b78c1c402d1eb3c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f41e353b78c1c402d1eb3c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f41e353b78c1c402d1eb3c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f41e34cb78c1c402d1ea977",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f41e34cb78c1c402d1ea977",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

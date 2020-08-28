@@ -1,0 +1,86 @@
+{
+ "Name": "sensorcors.exe",
+ "Md5": "a776ea5d49cecb8ed97b92a779f2623b",
+ "UUID": "c3589673-ad4c-4c8e-bf7d-face43532863",
+ "Processes": [
+  {
+   "OID": "5dfb5a3b7d65e332bc69b6bd",
+   "ProcessID": 2620,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sensorcors.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sensorcors.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1576753723575
+  },
+  {
+   "OID": "5dfb5a3c7d65e332bc69be64",
+   "ProcessID": 4056,
+   "ParentPID": 2620,
+   "CommandLine": "--afcecf2b",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sensorcors.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576753724231
+  },
+  {
+   "OID": "5dfb5a447d65e332bc69bfa8",
+   "ProcessID": 1152,
+   "ParentPID": 4056,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576753732075
+  },
+  {
+   "OID": "5dfb5a447d65e332bc69c27f",
+   "ProcessID": 1528,
+   "ParentPID": 1152,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576753732653
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dfb5a447d65e332bc69c27f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfb5a447d65e332bc69c27f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfb5a447d65e332bc69bfa8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dfb5a3c7d65e332bc69be64",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfb5a3c7d65e332bc69be64",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dfb5a3c7d65e332bc69be64",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfb5a3b7d65e332bc69b6bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

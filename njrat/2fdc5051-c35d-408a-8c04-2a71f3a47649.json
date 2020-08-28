@@ -1,0 +1,144 @@
+{
+ "Name": "paypal-money-adder-2019.exe",
+ "Md5": "5b9d6c71a3b050bd6ca9e17e7791d842",
+ "UUID": "2fdc5051-c35d-408a-8c04-2a71f3a47649",
+ "Processes": [
+  {
+   "OID": "5f210c1a16259928db2f3db9",
+   "ProcessID": 2296,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\paypal-money-adder-2019.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\paypal-money-adder-2019.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596001305982
+  },
+  {
+   "OID": "5f210c1a16259928db2f4406",
+   "ProcessID": 4000,
+   "ParentPID": 2296,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\CDS.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\CDS.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596001306622
+  },
+  {
+   "OID": "5f210c1b16259928db2f4697",
+   "ProcessID": 2828,
+   "ParentPID": 4000,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\crypted.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\crypted.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596001307316
+  },
+  {
+   "OID": "5f210c1c16259928db2f4de8",
+   "ProcessID": 2408,
+   "ParentPID": 2828,
+   "CommandLine": "\"C:\\ProgramData\\Trojan.exe\" ",
+   "Image": "C:\\ProgramData\\Trojan.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596001307613
+  },
+  {
+   "OID": "5f210c1c16259928db2f5564",
+   "ProcessID": 1876,
+   "ParentPID": 2408,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\Trojan.exe\" \"Trojan.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596001307860
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f210c1c16259928db2f4de8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f210c1a16259928db2f4406",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f210c1a16259928db2f4406",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f210c1c16259928db2f4de8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f210c1b16259928db2f4697",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f210c1c16259928db2f4de8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f210c1c16259928db2f4de8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f210c1c16259928db2f4de8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f210c1c16259928db2f4de8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f210c1c16259928db2f4de8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f210c1c16259928db2f4de8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f210c1b16259928db2f4697",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f210c1b16259928db2f4697",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f210c1b16259928db2f4697",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f210c1a16259928db2f4406",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f210c1a16259928db2f3db9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

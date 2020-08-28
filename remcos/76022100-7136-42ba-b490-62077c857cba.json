@@ -1,0 +1,138 @@
+{
+ "Name": "order acknowledgement.exe",
+ "Md5": "5b65f37c9dd64709e05afa96cc1a7784",
+ "UUID": "76022100-7136-42ba-b490-62077c857cba",
+ "Processes": [
+  {
+   "OID": "5d515bc50e39fd727050269a",
+   "ProcessID": 2932,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\order acknowledgement.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\order acknowledgement.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1565612996893
+  },
+  {
+   "OID": "5d515bc60e39fd727050294c",
+   "ProcessID": 2060,
+   "ParentPID": 2932,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\order acknowledgement.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\order acknowledgement.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565612997971
+  },
+  {
+   "OID": "5d515bcd0e39fd7270502bc1",
+   "ProcessID": 3556,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\thoughbus.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1565613004612
+  },
+  {
+   "OID": "5d515bfd0e39fd727050eac5",
+   "ProcessID": 2272,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Windows\\system32\\notepad.exe\" ",
+   "Image": "C:\\Windows\\system32\\notepad.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1565613052596
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d515bfd0e39fd727050eac5",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d515bc60e39fd727050294c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d515bc60e39fd727050294c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d515bc60e39fd727050294c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d515bce0e39fd727050359e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d515bc50e39fd7270501f42",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d515bcd0e39fd7270502bc1",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d515bcd0e39fd7270502bc1",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d515bc50e39fd7270501f40",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d515bc50e39fd7270501f40",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d515bc50e39fd7270501f40",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d515bcd0e39fd7270502bc1",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d515bc60e39fd727050294c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5d515bc60e39fd727050294c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d515bc50e39fd727050269a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

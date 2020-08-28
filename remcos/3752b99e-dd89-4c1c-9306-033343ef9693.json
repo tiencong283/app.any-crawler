@@ -1,0 +1,263 @@
+{
+ "Name": "5fffaa4acd8b1c71d313962d4d16e5fa",
+ "Md5": "5fffaa4acd8b1c71d313962d4d16e5fa",
+ "UUID": "3752b99e-dd89-4c1c-9306-033343ef9693",
+ "Processes": [
+  {
+   "OID": "5d2d624b499555095d19f59a",
+   "ProcessID": 3736,
+   "ParentPID": 124,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\5fffaa4acd8b1c71d313962d4d16e5fa.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\5fffaa4acd8b1c71d313962d4d16e5fa.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1563255371200
+  },
+  {
+   "OID": "5d2d624c499555095d19fc50",
+   "ProcessID": 2428,
+   "ParentPID": 3736,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\5fffaa4acd8b1c71d313962d4d16e5fa.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\5fffaa4acd8b1c71d313962d4d16e5fa.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563255371779
+  },
+  {
+   "OID": "5d2d624c499555095d19fe9b",
+   "ProcessID": 3616,
+   "ParentPID": 3736,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn setx /tr \"C:\\Users\\admin\\AppData\\Roaming\\CapabilityAccessHandlers\\sfc.exe\" /sc  minute /mo 1 /F",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563255371950
+  },
+  {
+   "OID": "5d2d624c499555095d19fe9d",
+   "ProcessID": 940,
+   "ParentPID": 2428,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563255372185
+  },
+  {
+   "OID": "5d2d624e499555095d1a078f",
+   "ProcessID": 3900,
+   "ParentPID": 940,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563255373482
+  },
+  {
+   "OID": "5d2d624e499555095d1a0791",
+   "ProcessID": 2956,
+   "ParentPID": 3900,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563255373560
+  },
+  {
+   "OID": "5d2d624e499555095d1a0792",
+   "ProcessID": 3784,
+   "ParentPID": 2956,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563255373888
+  },
+  {
+   "OID": "5d2d624e499555095d1a0793",
+   "ProcessID": 2456,
+   "ParentPID": 3784,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563255373966
+  },
+  {
+   "OID": "5d2d624e499555095d1a0c6d",
+   "ProcessID": 3368,
+   "ParentPID": 2956,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn setx /tr \"C:\\Users\\admin\\AppData\\Roaming\\CapabilityAccessHandlers\\sfc.exe\" /sc  minute /mo 1 /F",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563255374060
+  },
+  {
+   "OID": "5d2d627c499555095d1a1a24",
+   "ProcessID": 1428,
+   "ParentPID": 1948,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\CapabilityAccessHandlers\\sfc.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\CapabilityAccessHandlers\\sfc.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1563255420013
+  },
+  {
+   "OID": "5d2d627c499555095d1a1a25",
+   "ProcessID": 752,
+   "ParentPID": 1428,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\CapabilityAccessHandlers\\sfc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\CapabilityAccessHandlers\\sfc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563255420279
+  },
+  {
+   "OID": "5d2d627d499555095d1a1c42",
+   "ProcessID": 3748,
+   "ParentPID": 1428,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn setx /tr \"C:\\Users\\admin\\AppData\\Roaming\\CapabilityAccessHandlers\\sfc.exe\" /sc  minute /mo 1 /F",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563255420419
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d2d627d499555095d1a1c42",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d627c499555095d1a1a24",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d627c499555095d1a1a24",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d6267499555095d1a16b0",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d624e499555095d1a0792",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2d624e499555095d1a0793",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2d624e499555095d1a0c6d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d624e499555095d1a0791",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2d624e499555095d1a0791",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d624e499555095d1a0792",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2d624e499555095d1a0792",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2d624e499555095d1a0792",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d624c499555095d19fe9d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d624c499555095d19fc50",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d624b499555095d19f589",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2d624c499555095d19fe9b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d624b499555095d19f59a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2d624b499555095d19f59a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d624c499555095d19fc50",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d2d624c499555095d19fc50",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2d624c499555095d19fc50",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2d624c499555095d19fc50",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2d624b499555095d19f59a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2d624b499555095d19f59a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

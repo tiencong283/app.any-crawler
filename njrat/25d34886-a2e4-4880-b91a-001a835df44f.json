@@ -1,0 +1,117 @@
+{
+ "Name": "Virus.exe",
+ "Md5": "f2ae14170f999c4dd41c9c470b0a2d71",
+ "UUID": "25d34886-a2e4-4880-b91a-001a835df44f",
+ "Processes": [
+  {
+   "OID": "5efc86b4d3a3482d32e5d0b9",
+   "ProcessID": 1876,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Virus.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Virus.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593607860119
+  },
+  {
+   "OID": "5efc86b4d3a3482d32e5d0ba",
+   "ProcessID": 2428,
+   "ParentPID": 1876,
+   "CommandLine": "/C \"C:\\Users\\admin\\AppData\\Roaming\\Fjbhkvljkbtakqi\\stnopbmw.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593607860213
+  },
+  {
+   "OID": "5efc86b4d3a3482d32e5d0bc",
+   "ProcessID": 2928,
+   "ParentPID": 2428,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\Fjbhkvljkbtakqi\\stnopbmw.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Fjbhkvljkbtakqi\\stnopbmw.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593607860260
+  },
+  {
+   "OID": "5efc86b4d3a3482d32e5d0bd",
+   "ProcessID": 3408,
+   "ParentPID": 2928,
+   "CommandLine": "\"-Command\" \"if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; \u0026 'C:\\Users\\admin\\AppData\\Local\\Temp\\\\dhslahsl.ps1'\"",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593607860322
+  },
+  {
+   "OID": "5efc86b4d3a3482d32e5d0be",
+   "ProcessID": 3744,
+   "ParentPID": 2928,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593607860322
+  },
+  {
+   "OID": "5efc86bbd3a3482d32e5e02e",
+   "ProcessID": 960,
+   "ParentPID": 3744,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593607866807
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5efc86b4d3a3482d32e5d0be",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efc86b4d3a3482d32e5d0be",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efc86b4d3a3482d32e5d0be",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5efc86b4d3a3482d32e5d0bd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5efc86b4d3a3482d32e5d0bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efc86b4d3a3482d32e5d0bc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5efc86b4d3a3482d32e5d0b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efc86b4d3a3482d32e5d0b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efc86b4d3a3482d32e5d0b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

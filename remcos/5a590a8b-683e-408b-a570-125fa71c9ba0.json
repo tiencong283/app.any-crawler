@@ -1,0 +1,67 @@
+{
+ "Name": "r.exe",
+ "Md5": "1a594a10129a5ffb7413ece03982c516",
+ "UUID": "5a590a8b-683e-408b-a570-125fa71c9ba0",
+ "Processes": [
+  {
+   "OID": "5c9c9fd2b1fad82b2fb1d14e",
+   "ProcessID": 2984,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\r.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\r.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1553768402779
+  },
+  {
+   "OID": "5c9c9ffbb1fad82b2fb1da43",
+   "ProcessID": 3352,
+   "ParentPID": 2984,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\r.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\r.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553768443014
+  },
+  {
+   "OID": "5c9ca02cb1fad82b2fb1dba7",
+   "ProcessID": 2432,
+   "ParentPID": 600,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1553768491608
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c9c9ffbb1fad82b2fb1da43",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c9c9fd2b1fad82b2fb1d146",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5c9c9fd2b1fad82b2fb1d146",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9c9ffbb1fad82b2fb1da43",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9c9fd2b1fad82b2fb1d14e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

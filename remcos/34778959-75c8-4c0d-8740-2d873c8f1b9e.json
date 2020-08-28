@@ -1,0 +1,144 @@
+{
+ "Name": "TT_Slip_pdf.exe",
+ "Md5": "80593642b5dddff6633fd761d1569505",
+ "UUID": "34778959-75c8-4c0d-8740-2d873c8f1b9e",
+ "Processes": [
+  {
+   "OID": "5d3e85c7d7a36616309a7101",
+   "ProcessID": 3624,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\TT_Slip_pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\TT_Slip_pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564378566519
+  },
+  {
+   "OID": "5d3e85d1d7a36616309a784e",
+   "ProcessID": 3920,
+   "ParentPID": 3624,
+   "CommandLine": "\u0001C:\\Users\\admin\\Desktop\\TT_Slip_pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\TT_Slip_pdf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564378577675
+  },
+  {
+   "OID": "5d3e85d8d7a36616309a7c99",
+   "ProcessID": 2848,
+   "ParentPID": 3920,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564378584144
+  },
+  {
+   "OID": "5d3e85d9d7a36616309a8194",
+   "ProcessID": 3648,
+   "ParentPID": 2848,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564378585457
+  },
+  {
+   "OID": "5d3e85d9d7a36616309a8196",
+   "ProcessID": 2296,
+   "ParentPID": 3648,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564378585535
+  },
+  {
+   "OID": "5d3e85ddd7a36616309a8981",
+   "ProcessID": 3316,
+   "ParentPID": 2296,
+   "CommandLine": "\u0001:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564378588941
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d3e85ddd7a36616309a8981",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d3e85ddd7a36616309a8981",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d3e85ddd7a36616309a8981",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3e85ddd7a36616309a8981",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3e85ddd7a36616309a8981",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3e85d9d7a36616309a8196",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d3e85d8d7a36616309a7c99",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d3e85d1d7a36616309a784e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d3e85d1d7a36616309a784e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3e85d1d7a36616309a784e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3e85d1d7a36616309a784e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3e85d1d7a36616309a784e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3e85c7d7a36616309a7101",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "Name": "TVOP-MIO ABSOGER SAS,pdf.exe",
+ "Md5": "c990903d6c2bc34cf3b78dc0e4059bcb",
+ "UUID": "7f35d969-295a-4412-a3ae-f29dc3d3d827",
+ "Processes": [
+  {
+   "OID": "5db8242fd0b8fa56b94f455d",
+   "ProcessID": 2748,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\TVOP-MIO ABSOGER SAS,pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\TVOP-MIO ABSOGER SAS,pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572348975308
+  },
+  {
+   "OID": "5db82431d0b8fa56b94f51c3",
+   "ProcessID": 4084,
+   "ParentPID": 2748,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\Jndos.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572348976995
+  },
+  {
+   "OID": "5db82433d0b8fa56b94f589d",
+   "ProcessID": 3904,
+   "ParentPID": 4084,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Fjujdn.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Fjujdn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572348978620
+  },
+  {
+   "OID": "5db8244cd0b8fa56b94f5de1",
+   "ProcessID": 2084,
+   "ParentPID": 3904,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572349004605
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db82433d0b8fa56b94f589d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db82433d0b8fa56b94f589d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db8244cd0b8fa56b94f5de1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db82433d0b8fa56b94f589d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db82433d0b8fa56b94f589d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8242fd0b8fa56b94f455d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5db8242fd0b8fa56b94f455d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8242fd0b8fa56b94f455d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

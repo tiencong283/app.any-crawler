@@ -1,0 +1,151 @@
+{
+ "Name": "flux.exe",
+ "Md5": "4fd24ae347a842e7a266131ccc5ec2ec",
+ "UUID": "521ad8aa-9976-4136-9d92-a824bac87aa7",
+ "Processes": [
+  {
+   "OID": "5f1150e2a891c94aa81425fd",
+   "ProcessID": 2824,
+   "ParentPID": 392,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\flux.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\flux.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594970338551
+  },
+  {
+   "OID": "5f1150e9a891c94aa81428ab",
+   "ProcessID": 2596,
+   "ParentPID": 2824,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\svhost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\svhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594970344989
+  },
+  {
+   "OID": "5f1150efa891c94aa8142e25",
+   "ProcessID": 1252,
+   "ParentPID": 2596,
+   "CommandLine": "schtasks /create /sc minute /mo 1 /tn Server /tr C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594970351301
+  },
+  {
+   "OID": "5f115113a891c94aa8143aea",
+   "ProcessID": 2736,
+   "ParentPID": 2596,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe\" -f \"C:\\Users\\admin\\AppData\\Local\\Temp\\3946651\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594970387223
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f1150e9a891c94aa81428ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5f115113a891c94aa8143aea",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f115113a891c94aa8143aea",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081",
+    "T1114"
+   ]
+  },
+  {
+   "ProcessOID": "5f1150e2a891c94aa8141e5b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f115113a891c94aa8143aea",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5f1150e9a891c94aa81428ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5f1150e9a891c94aa81428ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1150e9a891c94aa81428ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1150e2a891c94aa8141e54",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1150efa891c94aa8142e25",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f1150e9a891c94aa81428ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f1150e9a891c94aa81428ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1150e9a891c94aa81428ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1150e9a891c94aa81428ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1150e9a891c94aa81428ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1150e2a891c94aa81425fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f1150e2a891c94aa81425fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

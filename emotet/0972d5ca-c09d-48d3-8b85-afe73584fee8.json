@@ -1,0 +1,86 @@
+{
+ "Name": "xlswdj6",
+ "Md5": "d6f2c69880b80801ba2a14e9223c92dd",
+ "UUID": "0972d5ca-c09d-48d3-8b85-afe73584fee8",
+ "Processes": [
+  {
+   "OID": "5dec0b00b5a17d24a50a27b6",
+   "ProcessID": 2168,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\xlswdj6.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\xlswdj6.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1575750400440
+  },
+  {
+   "OID": "5dec0b01b5a17d24a50a2dbf",
+   "ProcessID": 3928,
+   "ParentPID": 2168,
+   "CommandLine": "--f0094dc",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\xlswdj6.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575750400768
+  },
+  {
+   "OID": "5dec0b07b5a17d24a50a313b",
+   "ProcessID": 3400,
+   "ParentPID": 3928,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575750407596
+  },
+  {
+   "OID": "5dec0b07b5a17d24a50a313c",
+   "ProcessID": 1504,
+   "ParentPID": 3400,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575750407783
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dec0b07b5a17d24a50a313c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dec0b07b5a17d24a50a313c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dec0b07b5a17d24a50a313c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dec0b07b5a17d24a50a313c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dec0b01b5a17d24a50a2dbf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dec0b01b5a17d24a50a2dbf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dec0b00b5a17d24a50a27b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

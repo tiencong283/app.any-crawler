@@ -1,0 +1,79 @@
+{
+ "Name": "groupcors.exe",
+ "Md5": "965032a20e24ea4d33850a253132256b",
+ "UUID": "b0581990-98ca-41da-bcda-0dd88a6720db",
+ "Processes": [
+  {
+   "OID": "5dfabdcf1b9f2d51679eac71",
+   "ProcessID": 1560,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\groupcors.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\groupcors.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1576713678919
+  },
+  {
+   "OID": "5dfabdcf1b9f2d51679eac72",
+   "ProcessID": 964,
+   "ParentPID": 1560,
+   "CommandLine": "--e055a3d0",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\groupcors.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576713679200
+  },
+  {
+   "OID": "5dfabdd71b9f2d51679eaff8",
+   "ProcessID": 2088,
+   "ParentPID": 964,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576713686731
+  },
+  {
+   "OID": "5dfabdd71b9f2d51679eaff9",
+   "ProcessID": 3608,
+   "ParentPID": 2088,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576713686888
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dfabdd71b9f2d51679eaff9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfabdd71b9f2d51679eaff9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfabdd71b9f2d51679eaff9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dfabdcf1b9f2d51679eac72",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dfabdcf1b9f2d51679eac72",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfabdcf1b9f2d51679eac72",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

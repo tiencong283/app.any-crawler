@@ -1,0 +1,75 @@
+{
+ "Name": "AISIN SEIKI 緊急 PI_290819pdf.iso.exe",
+ "Md5": "4746dd11ddc70e4fe5ff2ecc27403940",
+ "UUID": "e2340ee4-ba30-44ec-b748-1d625e65db63",
+ "Processes": [
+  {
+   "OID": "5d73b68c3bada75ed09492cd",
+   "ProcessID": 2896,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AISIN SEIKI 緊急 PI_290819pdf.iso.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AISIN SEIKI 緊急 PI_290819pdf.iso.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1567864460014
+  },
+  {
+   "OID": "5d73b68d3bada75ed0949b52",
+   "ProcessID": 2828,
+   "ParentPID": 2896,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\OKADABABA.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\OKADABABA.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567864460842
+  },
+  {
+   "OID": "5d73b6a73bada75ed094a228",
+   "ProcessID": 3696,
+   "ParentPID": 2828,
+   "CommandLine": "\"C:\\Windows\\System32\\regsvr32.exe\"",
+   "Image": "C:\\Windows\\System32\\regsvr32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567864486951
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d73b68d3bada75ed0949b52",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d73b68d3bada75ed0949b52",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d73b6a73bada75ed094a228",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d73b68d3bada75ed0949b52",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1117"
+   ]
+  },
+  {
+   "ProcessOID": "5d73b68c3bada75ed09492c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d73b68d3bada75ed0949b52",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d73b68c3bada75ed09492cd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

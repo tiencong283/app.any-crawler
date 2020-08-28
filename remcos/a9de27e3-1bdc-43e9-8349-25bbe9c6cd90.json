@@ -1,0 +1,131 @@
+{
+ "Name": "download.exe",
+ "Md5": "0faffad88944d9004632f264f88df6d0",
+ "UUID": "a9de27e3-1bdc-43e9-8349-25bbe9c6cd90",
+ "Processes": [
+  {
+   "OID": "5db644ab9efa630ff1e45fdb",
+   "ProcessID": 1296,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\download.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\download.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572226219291
+  },
+  {
+   "OID": "5db644ac9efa630ff1e4608c",
+   "ProcessID": 1888,
+   "ParentPID": 1296,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572226219729
+  },
+  {
+   "OID": "5db644ad9efa630ff1e46734",
+   "ProcessID": 3876,
+   "ParentPID": 1888,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572226221166
+  },
+  {
+   "OID": "5db644ad9efa630ff1e46736",
+   "ProcessID": 1880,
+   "ParentPID": 3876,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572226221244
+  },
+  {
+   "OID": "5db644ad9efa630ff1e46737",
+   "ProcessID": 2604,
+   "ParentPID": 1880,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572226221338
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db644ad9efa630ff1e46736",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5db644ad9efa630ff1e46736",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db644ad9efa630ff1e46736",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db644ad9efa630ff1e46736",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db644ad9efa630ff1e46736",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db644ad9efa630ff1e46736",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db644ac9efa630ff1e4608c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5db644ab9efa630ff1e45fdb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5db644ab9efa630ff1e45fdb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5db644ab9efa630ff1e45fdb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db644ab9efa630ff1e45fdb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db644ab9efa630ff1e45fdb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db644ab9efa630ff1e45fdb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

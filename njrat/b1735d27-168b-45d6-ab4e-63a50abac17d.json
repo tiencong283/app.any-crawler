@@ -1,0 +1,87 @@
+{
+ "Name": "driver_deobfuscated.exe",
+ "Md5": "c49795157a8024965a5307d5b69d5cae",
+ "UUID": "b1735d27-168b-45d6-ab4e-63a50abac17d",
+ "Processes": [
+  {
+   "OID": "5f2aef28872a916b26131dfc",
+   "ProcessID": 1484,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\driver_deobfuscated.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\driver_deobfuscated.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596649255897
+  },
+  {
+   "OID": "5f2aef2f872a916b2613277b",
+   "ProcessID": 2416,
+   "ParentPID": 1484,
+   "CommandLine": "\"C:\\ProgramData\\driver.exe\" ",
+   "Image": "C:\\ProgramData\\driver.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596649262507
+  },
+  {
+   "OID": "5f2aef35872a916b26132b85",
+   "ProcessID": 3740,
+   "ParentPID": 2416,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\driver.exe\" \"driver.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596649268991
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2aef2f872a916b2613277b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2aef2f872a916b2613277b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2aef2f872a916b2613277b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2aef2f872a916b2613277b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2aef2f872a916b2613277b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2aef2f872a916b2613277b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f2aef28872a916b26131dfc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f2aef28872a916b26131dfc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2aef28872a916b26131dfc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

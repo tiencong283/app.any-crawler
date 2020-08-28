@@ -1,0 +1,78 @@
+{
+ "Name": "ssl.exe",
+ "Md5": "f764a302d2a89ac6392d3e915d58a74e",
+ "UUID": "ab36cc7a-d6b0-44aa-baa0-5ee518d8c9d1",
+ "Processes": [
+  {
+   "OID": "5d2f95dcc8233106361de69c",
+   "ProcessID": 3780,
+   "ParentPID": 124,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ssl.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ssl.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1563399644279
+  },
+  {
+   "OID": "5d2f95ddc8233106361dea1e",
+   "ProcessID": 1492,
+   "ParentPID": 3780,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563399645029
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d2f95f9c8233106361df122",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d2f95ddc8233106361dea1e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2f95ddc8233106361dea1e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d2f95ddc8233106361dea1e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d2f95ddc8233106361dea1e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2f95ddc8233106361dea1e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2f95dcc8233106361de69c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d2f95dcc8233106361de69c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1082",
+    "T1497"
+   ]
+  }
+ ]
+}

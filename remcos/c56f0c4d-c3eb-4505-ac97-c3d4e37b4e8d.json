@@ -1,0 +1,96 @@
+{
+ "Name": "Terrana.exe",
+ "Md5": "170b3d195b7a7822176a31b2cacb52b2",
+ "UUID": "c56f0c4d-c3eb-4505-ac97-c3d4e37b4e8d",
+ "Processes": [
+  {
+   "OID": "5cac74be3249df6430e198f3",
+   "ProcessID": 1688,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Terrana.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Terrana.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554805950250
+  },
+  {
+   "OID": "5cac74f53249df6430e1aba9",
+   "ProcessID": 3364,
+   "ParentPID": 1688,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\Terrana.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Terrana.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554806004453
+  },
+  {
+   "OID": "5cac75323249df6430e1afa4",
+   "ProcessID": 3584,
+   "ParentPID": 3364,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554806065891
+  },
+  {
+   "OID": "5cac75333249df6430e1b3df",
+   "ProcessID": 2476,
+   "ParentPID": 3364,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554806067297
+  },
+  {
+   "OID": "5cac75333249df6430e1b3e0",
+   "ProcessID": 964,
+   "ParentPID": 2476,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Terrana.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Terrana.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554806067438
+  },
+  {
+   "OID": "5cac756e3249df6430e1cdd5",
+   "ProcessID": 304,
+   "ParentPID": 964,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\Terrana.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Terrana.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554806126016
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cac75333249df6430e1b3e0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cac74f53249df6430e1aba9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5cac74f53249df6430e1aba9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5cac74f53249df6430e1aba9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cac74be3249df6430e198f3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

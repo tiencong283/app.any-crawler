@@ -1,0 +1,350 @@
+{
+ "Name": "59Emotic1",
+ "Md5": "1987508ba2b8977babc5f3b83ee8b31e",
+ "UUID": "678b3eac-7c1e-4572-aba1-7168a91523d2",
+ "Processes": [
+  {
+   "OID": "5e3d25f15622ac59b18112c9",
+   "ProcessID": 876,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe -k netsvcs",
+   "Image": "C:\\Windows\\System32\\svchost.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e3d25f15622ac59b18112ca",
+   "ProcessID": 372,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe -k NetworkService",
+   "Image": "C:\\Windows\\System32\\svchost.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e3d25f15622ac59b18112d4",
+   "ProcessID": 1376,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\SearchIndexer.exe /Embedding",
+   "Image": "C:\\Windows\\System32\\SearchIndexer.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e3d25f15622ac59b1811a8d",
+   "ProcessID": 1948,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\59Emotic1.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\59Emotic1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581065712796
+  },
+  {
+   "OID": "5e3d25f55622ac59b181226c",
+   "ProcessID": 2972,
+   "ParentPID": 1948,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\api-ms-win-core-xstate-l2-1-0\\api-ms-win-core-xstate-l2-1-0.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\api-ms-win-core-xstate-l2-1-0\\api-ms-win-core-xstate-l2-1-0.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581065717405
+  },
+  {
+   "OID": "5e3d26005622ac59b1812a58",
+   "ProcessID": 2348,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\rundll32.exe /d srrstr.dll,ExecuteScheduledSPPCreation",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Was launched as a service",
+   "CreationTimestamp": 1581065728577
+  },
+  {
+   "OID": "5e3d26005622ac59b1812a59",
+   "ProcessID": 2436,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\lpremove.exe ",
+   "Image": "C:\\Windows\\system32\\lpremove.exe",
+   "ProcessType": "Was launched as a service",
+   "CreationTimestamp": 1581065728577
+  },
+  {
+   "OID": "5e3d26025622ac59b1812c57",
+   "ProcessID": 2064,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\vssvc.exe",
+   "Image": "C:\\Windows\\system32\\vssvc.exe",
+   "ProcessType": "Was launched as a service",
+   "CreationTimestamp": 1581065729749
+  },
+  {
+   "OID": "5e3d264d5622ac59b185a6b4",
+   "ProcessID": 1520,
+   "ParentPID": 2972,
+   "CommandLine": "\"C:\\ProgramData\\hAMREgtoXPgHOW.exe\"",
+   "Image": "C:\\ProgramData\\hAMREgtoXPgHOW.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581065805015
+  },
+  {
+   "OID": "5e3d264e5622ac59b185a871",
+   "ProcessID": 1132,
+   "ParentPID": 2972,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\api-ms-win-core-xstate-l2-1-0\\api-ms-win-core-xstate-l2-1-0.exe\" /scomma \"C:\\Users\\admin\\AppData\\Local\\Temp\\CDDA.tmp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\api-ms-win-core-xstate-l2-1-0\\api-ms-win-core-xstate-l2-1-0.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581065806312
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e3d26e45622ac59b186c38f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d26e35622ac59b186c2bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d26a45622ac59b1864e39",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d26a45622ac59b1864e39",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d264e5622ac59b185a871",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081",
+    "T1114"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d264d5622ac59b185a6b4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d264e5622ac59b185a871",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d25f55622ac59b181226c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d264d5622ac59b185a6b4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d25f55622ac59b181226c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d25f55622ac59b181226c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d25f55622ac59b181226c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d25f55622ac59b181226c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d25f55622ac59b181226c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d26445622ac59b1852ba5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d25f55622ac59b181226c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b18112d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b18112d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b18112d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b18112d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b18112d4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b18112d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d26025622ac59b1812c57",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d26005622ac59b1812a58",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d26025622ac59b1812c57",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d26005622ac59b1812a58",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b18112d4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d26005622ac59b1812a58",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b18112c9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b18112ca",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d26005622ac59b1812a58",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d26005622ac59b1812a58",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d26005622ac59b1812a59",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b18112c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d26005622ac59b1812a58",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b1811a8d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b1811a8d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b1811a8d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d25f15622ac59b1811ce9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "Name": "emotet_payload_55.exe",
+ "Md5": "14d7fdc9ff4a486b8522f6710243cbc0",
+ "UUID": "61519e40-eb08-4436-80c0-e41ba9c4927e",
+ "Processes": [
+  {
+   "OID": "5e0eeb97832d87334976e418",
+   "ProcessID": 2668,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\emotet_payload_55.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet_payload_55.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578036119226
+  },
+  {
+   "OID": "5e0eeb98832d87334976e617",
+   "ProcessID": 4040,
+   "ParentPID": 2668,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\emotet_payload_55.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet_payload_55.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578036119804
+  },
+  {
+   "OID": "5e0eeb98832d87334976e6d2",
+   "ProcessID": 2608,
+   "ParentPID": 4040,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\watchvsgd.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\watchvsgd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578036120304
+  },
+  {
+   "OID": "5e0eeb99832d87334976ea1c",
+   "ProcessID": 3800,
+   "ParentPID": 2608,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\watchvsgd.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\watchvsgd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578036120804
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e0eeb99832d87334976ea1c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0eeb99832d87334976ea1c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e0eeb99832d87334976ea1c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0eeb99832d87334976ea1c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0eeb99832d87334976ea1c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0eeb98832d87334976e6d2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0eeb98832d87334976e6d2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e0eeb98832d87334976e6d2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0eeb98832d87334976e617",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0eeb97832d87334976e418",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0eeb98832d87334976e617",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e0eeb98832d87334976e617",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0eeb97832d87334976e418",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

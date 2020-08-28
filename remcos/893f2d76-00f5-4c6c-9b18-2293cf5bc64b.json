@@ -1,0 +1,80 @@
+{
+ "Name": "winsys.exe",
+ "Md5": "c5891fccd6b0a4d14ffa8844c48062ed",
+ "UUID": "893f2d76-00f5-4c6c-9b18-2293cf5bc64b",
+ "Processes": [
+  {
+   "OID": "5cf9b9d5fc3aab1f3c013a8e",
+   "ProcessID": 3400,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winsys.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winsys.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1559869909223
+  },
+  {
+   "OID": "5cf9b9d6fc3aab1f3c0141a6",
+   "ProcessID": 2812,
+   "ParentPID": 3400,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\" /c copy \"C:\\Users\\admin\\AppData\\Local\\Temp\\winsys.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\dmclient\\dstokenclean.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559869909926
+  },
+  {
+   "OID": "5cf9b9d8fc3aab1f3c01462a",
+   "ProcessID": 3460,
+   "ParentPID": 3400,
+   "CommandLine": "\"C:\\Windows\\system32\\svchost.exe\"",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559869912114
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cf9b9d8fc3aab1f3c01462a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf9b9d8fc3aab1f3c01462a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf9b9d8fc3aab1f3c01462a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf9b9d5fc3aab1f3c013a8e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf9b9d6fc3aab1f3c0141a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf9b9d5fc3aab1f3c013a8e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cf9b9d5fc3aab1f3c013a8e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf9b9d5fc3aab1f3c013a8e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

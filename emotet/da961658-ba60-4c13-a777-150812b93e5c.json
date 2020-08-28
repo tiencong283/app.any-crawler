@@ -1,0 +1,74 @@
+{
+ "Name": "wininit.exe.bin",
+ "Md5": "f33aea1bc3412ebad56edc590cb0ea0a",
+ "UUID": "da961658-ba60-4c13-a777-150812b93e5c",
+ "Processes": [
+  {
+   "OID": "5e58024c8025e32381a10aee",
+   "ProcessID": 3604,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\wininit.exe.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\wininit.exe.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1582826060154
+  },
+  {
+   "OID": "5e58025a8025e32381a10e69",
+   "ProcessID": 780,
+   "ParentPID": 3604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\RMActivate_ssp\\RMActivate_ssp.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\RMActivate_ssp\\RMActivate_ssp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582826074388
+  },
+  {
+   "OID": "5e5802878025e32381a1141e",
+   "ProcessID": 2848,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1582826118560
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e5802878025e32381a1141e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e58024c8025e32381a1038f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e58025a8025e32381a10e69",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e58024c8025e32381a10aee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e58024c8025e32381a10aee",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e58024c8025e32381a10aee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

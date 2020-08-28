@@ -1,0 +1,65 @@
+{
+ "Name": "b8968346a570e2cdcd4e74071efdd104.sample",
+ "Md5": "b8968346a570e2cdcd4e74071efdd104",
+ "UUID": "5343c95c-c5a1-4c46-be94-554faa22cabf",
+ "Processes": [
+  {
+   "OID": "5ccac12a3b955132b10372bb",
+   "ProcessID": 2636,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\b8968346a570e2cdcd4e74071efdd104.sample.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\b8968346a570e2cdcd4e74071efdd104.sample.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1556791594281
+  },
+  {
+   "OID": "5ccac12b3b955132b1037c0d",
+   "ProcessID": 1172,
+   "ParentPID": 2636,
+   "CommandLine": "\"C:\\Windows\\System32\\cscript.exe\" //B //Nologo C:\\Users\\admin\\cleanmgr.vbs",
+   "Image": "C:\\Windows\\System32\\cscript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556791595281
+  },
+  {
+   "OID": "5ccac12c3b955132b10385f9",
+   "ProcessID": 3804,
+   "ParentPID": 2636,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556791595890
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ccac12c3b955132b10385f9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ccac12b3b955132b1037c0d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ccac12b3b955132b1037c0d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ccac12a3b955132b10372bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ccac12a3b955132b10372bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

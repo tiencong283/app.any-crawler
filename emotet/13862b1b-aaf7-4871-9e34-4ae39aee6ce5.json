@@ -1,0 +1,81 @@
+{
+ "Name": "7434ab2op7hf.exe",
+ "Md5": "f631d63e03499b46d28e6f2d3e6dc088",
+ "UUID": "13862b1b-aaf7-4871-9e34-4ae39aee6ce5",
+ "Processes": [
+  {
+   "OID": "5dfa1b4a1d2a183d3449f50e",
+   "ProcessID": 932,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\7434ab2op7hf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\7434ab2op7hf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1576672074020
+  },
+  {
+   "OID": "5dfa1b4a1d2a183d3449f652",
+   "ProcessID": 3952,
+   "ParentPID": 932,
+   "CommandLine": "--97565925",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\7434ab2op7hf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576672074614
+  },
+  {
+   "OID": "5dfa1b511d2a183d3449f81e",
+   "ProcessID": 2952,
+   "ParentPID": 3952,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576672081489
+  },
+  {
+   "OID": "5dfa1b521d2a183d3449f82b",
+   "ProcessID": 2860,
+   "ParentPID": 2952,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576672082020
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dfa1b521d2a183d3449f82b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfa1b511d2a183d3449f81e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dfa1b4a1d2a183d3449f652",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfa1b4a1d2a183d3449f652",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfa1b4a1d2a183d3449f652",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dfa1b4a1d2a183d3449f50e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "Name": "AvbQOP.exe",
+ "Md5": "cf0796c5a09f04720066d3563012fcb4",
+ "UUID": "409cd75b-4b56-4acb-bfaa-8fe32f391811",
+ "Processes": [
+  {
+   "OID": "5f44b0b7a3e7161aa80d3dae",
+   "ProcessID": 2748,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AvbQOP.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AvbQOP.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1598337207347
+  },
+  {
+   "OID": "5f44b0c9a3e7161aa80d4d1d",
+   "ProcessID": 3784,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1598337224628
+  },
+  {
+   "OID": "5f44b0d3a3e7161aa80d5272",
+   "ProcessID": 2508,
+   "ParentPID": 2748,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AddInProcess32.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AddInProcess32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598337235003
+  },
+  {
+   "OID": "5f44b0dba3e7161aa80d54a0",
+   "ProcessID": 2196,
+   "ParentPID": 2508,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\AddInProcess32.exe\" \"AddInProcess32.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598337243628
+  },
+  {
+   "OID": "5f44b0e5a3e7161aa80d6560",
+   "ProcessID": 1360,
+   "ParentPID": 2748,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AddInProcess32.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AddInProcess32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598337252519
+  },
+  {
+   "OID": "5f44b0e5a3e7161aa80d6561",
+   "ProcessID": 2356,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1598337252691
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f44b0b7a3e7161aa80d3584",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f44b0b7a3e7161aa80d3589",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f44b0e5a3e7161aa80d6561",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f44b0e5a3e7161aa80d6560",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f44b0d3a3e7161aa80d5272",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f44b0d3a3e7161aa80d5272",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f44b0d3a3e7161aa80d5272",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f44b0d3a3e7161aa80d5272",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f44b0d3a3e7161aa80d5272",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f44b0d3a3e7161aa80d5272",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f44b0d3a3e7161aa80d5272",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f44b0d3a3e7161aa80d5272",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f44b0b7a3e7161aa80d3dae",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f44b0c9a3e7161aa80d4d1d",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  }
+ ]
+}

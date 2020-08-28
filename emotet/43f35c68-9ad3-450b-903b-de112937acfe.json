@@ -1,0 +1,84 @@
+{
+ "Name": "malware.exe",
+ "Md5": "a9792ccbdf32534bed46cc66b0c1dfde",
+ "UUID": "43f35c68-9ad3-450b-903b-de112937acfe",
+ "Processes": [
+  {
+   "OID": "5e1d61dd61f0a3153d986cb5",
+   "ProcessID": 2040,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\malware.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\malware.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578983900832
+  },
+  {
+   "OID": "5e1d61dd61f0a3153d986cb6",
+   "ProcessID": 2768,
+   "ParentPID": 2040,
+   "CommandLine": "--639f9813",
+   "Image": "C:\\Users\\admin\\Desktop\\malware.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578983901051
+  },
+  {
+   "OID": "5e1d61e461f0a3153d987783",
+   "ProcessID": 1728,
+   "ParentPID": 2768,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578983907973
+  },
+  {
+   "OID": "5e1d61e461f0a3153d987784",
+   "ProcessID": 3408,
+   "ParentPID": 1728,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578983908035
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e1d61e461f0a3153d987784",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1d61e461f0a3153d987784",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e1d61e461f0a3153d987784",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1d61e461f0a3153d987784",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1d61dd61f0a3153d986cb6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e1d61dd61f0a3153d986cb6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1d61dd61f0a3153d986cb6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

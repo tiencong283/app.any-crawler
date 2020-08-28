@@ -1,0 +1,86 @@
+{
+ "Name": "2b67770871efe020255135972842270dcaa6510a4984522bc14f0f2ae5e5ce9a.exe",
+ "Md5": "058f2ba7633a2058de309ed41289bc20",
+ "UUID": "80b83bd1-327c-4169-a7b4-b30ac28b8808",
+ "Processes": [
+  {
+   "OID": "5e01d22c9bf94c754f0231cf",
+   "ProcessID": 2528,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\2b67770871efe020255135972842270dcaa6510a4984522bc14f0f2ae5e5ce9a.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2b67770871efe020255135972842270dcaa6510a4984522bc14f0f2ae5e5ce9a.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1577177644631
+  },
+  {
+   "OID": "5e01d22e9bf94c754f0233f0",
+   "ProcessID": 2280,
+   "ParentPID": 2528,
+   "CommandLine": "--bccd4d7a",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2b67770871efe020255135972842270dcaa6510a4984522bc14f0f2ae5e5ce9a.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577177646037
+  },
+  {
+   "OID": "5e01d2359bf94c754f0234c1",
+   "ProcessID": 1404,
+   "ParentPID": 2280,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\soundser\\soundser.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\soundser\\soundser.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577177652818
+  },
+  {
+   "OID": "5e01d2369bf94c754f023783",
+   "ProcessID": 2156,
+   "ParentPID": 1404,
+   "CommandLine": "--3ab57678",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\soundser\\soundser.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577177654584
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e01d2369bf94c754f023783",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e01d2359bf94c754f0234c1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e01d2359bf94c754f0234c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e01d22e9bf94c754f0233f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e01d22e9bf94c754f0233f0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e01d22e9bf94c754f0233f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e01d22c9bf94c754f0231cf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

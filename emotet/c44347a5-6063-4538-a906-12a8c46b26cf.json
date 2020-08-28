@@ -1,0 +1,106 @@
+{
+ "Name": "iws.exe",
+ "Md5": "87ab3c9d95d82555765c6dca0667975a",
+ "UUID": "c44347a5-6063-4538-a906-12a8c46b26cf",
+ "Processes": [
+  {
+   "OID": "5f22a50472b03c510d7507de",
+   "ProcessID": 2276,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\iws.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\iws.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596105987750
+  },
+  {
+   "OID": "5f22a50572b03c510d750b3c",
+   "ProcessID": 1864,
+   "ParentPID": 2276,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\iws.exe\"",
+   "Image": "C:\\Users\\admin\\Desktop\\iws.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596105988812
+  },
+  {
+   "OID": "5f22a50d72b03c510d7511ce",
+   "ProcessID": 1428,
+   "ParentPID": 1864,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\turnedavatar\\turnedavatar.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\turnedavatar\\turnedavatar.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596105996625
+  },
+  {
+   "OID": "5f22a50e72b03c510d75154e",
+   "ProcessID": 2804,
+   "ParentPID": 1428,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\turnedavatar\\turnedavatar.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\turnedavatar\\turnedavatar.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596105997641
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f22a50e72b03c510d75154e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f22a50e72b03c510d75154e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f22a50e72b03c510d75154e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f22a50472b03c510d75001d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f22a50d72b03c510d7511ce",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f22a50d72b03c510d7511ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f22a50572b03c510d750b3c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f22a50572b03c510d750b3c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f22a50472b03c510d7507de",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f22a50472b03c510d750a56",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  }
+ ]
+}

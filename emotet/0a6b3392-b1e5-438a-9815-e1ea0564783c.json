@@ -1,0 +1,79 @@
+{
+ "Name": "ntDSLsB",
+ "Md5": "edf386c482bbcc82c9712bd7fa720797",
+ "UUID": "0a6b3392-b1e5-438a-9815-e1ea0564783c",
+ "Processes": [
+  {
+   "OID": "5dd6832fdae3764664bc4d9c",
+   "ProcessID": 1328,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ntDSLsB.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ntDSLsB.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574339375031
+  },
+  {
+   "OID": "5dd68330dae3764664bc53f1",
+   "ProcessID": 3396,
+   "ParentPID": 1328,
+   "CommandLine": "--ca2541ea",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ntDSLsB.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574339375796
+  },
+  {
+   "OID": "5dd68338dae3764664bc5764",
+   "ProcessID": 2456,
+   "ParentPID": 3396,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574339383640
+  },
+  {
+   "OID": "5dd68338dae3764664bc5765",
+   "ProcessID": 2932,
+   "ParentPID": 2456,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574339383921
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dd68338dae3764664bc5765",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd68338dae3764664bc5765",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd68330dae3764664bc53f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dd68330dae3764664bc53f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd68330dae3764664bc53f1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd6832fdae3764664bc4d9c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

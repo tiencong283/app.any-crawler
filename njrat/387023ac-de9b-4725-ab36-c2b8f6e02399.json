@@ -1,0 +1,110 @@
+{
+ "Name": "Desktop Locker.exe",
+ "Md5": "7c8c03d8b847cbb9d058c72c4498e2c5",
+ "UUID": "387023ac-de9b-4725-ab36-c2b8f6e02399",
+ "Processes": [
+  {
+   "OID": "5f20b648b573883583bc52f1",
+   "ProcessID": 2284,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Desktop Locker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Desktop Locker.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595979335824
+  },
+  {
+   "OID": "5f20b649b573883583bc5429",
+   "ProcessID": 544,
+   "ParentPID": 2284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_Desktop Locker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_Desktop Locker.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595979336465
+  },
+  {
+   "OID": "5f20b64ab573883583bc5efb",
+   "ProcessID": 1028,
+   "ParentPID": 2284,
+   "CommandLine": "\"C:\\ProgramData\\Synaptics\\Synaptics.exe\" InjUpdate",
+   "Image": "C:\\ProgramData\\Synaptics\\Synaptics.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595979338027
+  },
+  {
+   "OID": "5f20b65bb573883583bc69dc",
+   "ProcessID": 2168,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1595979354855
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f20b65bb573883583bc69dc",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f20b64ab573883583bc5efb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f20b64ab573883583bc5efb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f20b649b573883583bc5429",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f20b648b573883583bc4b1e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f20b64ab573883583bc5efb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f20b64ab573883583bc5efb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f20b649b573883583bc5429",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f20b648b573883583bc52f1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f20b648b573883583bc52f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f20b648b573883583bc52f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

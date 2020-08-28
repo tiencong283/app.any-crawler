@@ -1,0 +1,189 @@
+{
+ "Name": "exec.exe",
+ "Md5": "403959549ac84e6c16f932e04056c927",
+ "UUID": "8a867422-7507-4ce0-8739-1ad01a06a3cf",
+ "Processes": [
+  {
+   "OID": "5d1e452b0e924d642507b435",
+   "ProcessID": 3196,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\exec.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\exec.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1562264875006
+  },
+  {
+   "OID": "5d1e452b0e924d642507b436",
+   "ProcessID": 2500,
+   "ParentPID": 3196,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\ProgramData\\rem.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562264875287
+  },
+  {
+   "OID": "5d1e452c0e924d642507b9a8",
+   "ProcessID": 3200,
+   "ParentPID": 2500,
+   "CommandLine": "\"C:\\ProgramData\\smhost.exe\" ",
+   "Image": "C:\\ProgramData\\smhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562264876365
+  },
+  {
+   "OID": "5d1e45390e924d642507d0db",
+   "ProcessID": 3492,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1562264888600
+  },
+  {
+   "OID": "5d1e453f0e924d642507e7e4",
+   "ProcessID": 3520,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\ProgramData\\rem.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1562264895358
+  },
+  {
+   "OID": "5d1e45420e924d642507f799",
+   "ProcessID": 2832,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Windows\\System32\\Notepad.exe\" C:\\ProgramData\\rem.vbs",
+   "Image": "C:\\Windows\\System32\\Notepad.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1562264898577
+  },
+  {
+   "OID": "5d1e45480e924d6425080b58",
+   "ProcessID": 2720,
+   "ParentPID": 3200,
+   "CommandLine": "\"C:\\ProgramData\\smhost.exe\"",
+   "Image": "C:\\ProgramData\\smhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562264903952
+  },
+  {
+   "OID": "5d1e454e0e924d64250822c7",
+   "ProcessID": 2144,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\ProgramData\\smhost.exe\" ",
+   "Image": "C:\\ProgramData\\smhost.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1562264910265
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d1e45480e924d6425080b58",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1e454e0e924d64250822c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1e454e0e924d64250822c7",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d1e45480e924d6425080b58",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1e45480e924d6425080b58",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1e452c0e924d642507b9a8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d1e45420e924d642507f799",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d1e452b0e924d642507acf0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1e452b0e924d642507acf0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d1e452b0e924d642507acf0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1e452b0e924d642507acf0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d1e453f0e924d642507e7e4",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d1e45390e924d642507d0db",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d1e452c0e924d642507b9a8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1e452b0e924d642507b435",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d1e452b0e924d642507b435",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1e452b0e924d642507b435",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1e452b0e924d642507b435",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  }
+ ]
+}

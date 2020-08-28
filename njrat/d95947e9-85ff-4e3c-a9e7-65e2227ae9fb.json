@@ -1,0 +1,67 @@
+{
+ "Name": "Server.exe",
+ "Md5": "2614466e6c654b5269a4c219447b6da1",
+ "UUID": "d95947e9-85ff-4e3c-a9e7-65e2227ae9fb",
+ "Processes": [
+  {
+   "OID": "5f130e3d83ed50420e132ac7",
+   "ProcessID": 2204,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595084348808
+  },
+  {
+   "OID": "5f130e4483ed50420e132d70",
+   "ProcessID": 2272,
+   "ParentPID": 2204,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\OTC.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\OTC.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595084355370
+  },
+  {
+   "OID": "5f130e4983ed50420e1332d1",
+   "ProcessID": 3996,
+   "ParentPID": 2272,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\OTC.exe\" \"OTC.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595084361558
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f130e4483ed50420e132d70",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f130e4483ed50420e132d70",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f130e4483ed50420e132d70",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f130e3d83ed50420e132ac7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f130e3d83ed50420e132ac7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

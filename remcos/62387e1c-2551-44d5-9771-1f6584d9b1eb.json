@@ -1,0 +1,127 @@
+{
+ "Name": "Payment reciept.exe",
+ "Md5": "a8a78f02764799543b95c25cda875513",
+ "UUID": "62387e1c-2551-44d5-9771-1f6584d9b1eb",
+ "Processes": [
+  {
+   "OID": "5dc3e62e5392705787bbacb9",
+   "ProcessID": 2448,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\Payment reciept.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\Payment reciept.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573119534059
+  },
+  {
+   "OID": "5dc3e6425392705787bbaf67",
+   "ProcessID": 2332,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1573119553996
+  },
+  {
+   "OID": "5dc3e6485392705787bbba77",
+   "ProcessID": 2500,
+   "ParentPID": 2448,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\Payment reciept.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\Payment reciept.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573119560499
+  },
+  {
+   "OID": "5dc3e6495392705787bbba8c",
+   "ProcessID": 1328,
+   "ParentPID": 2500,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573119560812
+  },
+  {
+   "OID": "5dc3e6495392705787bbba8e",
+   "ProcessID": 2968,
+   "ParentPID": 1328,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573119560874
+  },
+  {
+   "OID": "5dc3e6495392705787bbc110",
+   "ProcessID": 3960,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\Payment reciept.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\Payment reciept.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1573119561515
+  },
+  {
+   "OID": "5dc3e64a5392705787bbc1a4",
+   "ProcessID": 1852,
+   "ParentPID": 1328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573119561921
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc3e6495392705787bbc110",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dc3e6495392705787bbba8c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3e6485392705787bbba77",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5dc3e6485392705787bbba77",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dc3e6485392705787bbba77",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3e6485392705787bbba77",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3e6485392705787bbba77",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3e62e5392705787bbacb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dc3e6425392705787bbaf67",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  }
+ ]
+}

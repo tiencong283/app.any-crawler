@@ -1,0 +1,135 @@
+{
+ "Name": "roamthrd.exe",
+ "Md5": "30ed2a5111dbc3ef476ec29fee78194f",
+ "UUID": "7306605a-14a7-4791-bc34-d3542abe04d3",
+ "Processes": [
+  {
+   "OID": "5e2f2491245ecf749533c2c5",
+   "ProcessID": 3488,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\roamthrd.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\roamthrd.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580147857528
+  },
+  {
+   "OID": "5e2f2492245ecf749533c91c",
+   "ProcessID": 2752,
+   "ParentPID": 3488,
+   "CommandLine": "--76d39f13",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\roamthrd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580147857591
+  },
+  {
+   "OID": "5e2f2498245ecf749533cd4d",
+   "ProcessID": 2952,
+   "ParentPID": 2752,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580147864028
+  },
+  {
+   "OID": "5e2f2498245ecf749533cd4e",
+   "ProcessID": 2548,
+   "ParentPID": 2952,
+   "CommandLine": "--a66f8ff2",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580147864106
+  },
+  {
+   "OID": "5e2f24a3245ecf749533d1a7",
+   "ProcessID": 3432,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1580147875137
+  },
+  {
+   "OID": "5e2f24ac245ecf749533e2fe",
+   "ProcessID": 2400,
+   "ParentPID": 592,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{4D111E08-CBF7-4F12-A926-2C7920AF52FC}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1580147883933
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2f2498245ecf749533cd4e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e2f2498245ecf749533cd4e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f24ac245ecf749533e2fe",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f2498245ecf749533cd4e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f2498245ecf749533cd4e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f2491245ecf749533c2ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e2f2498245ecf749533cd4e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e2f24a3245ecf749533d1a7",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e2f2492245ecf749533c91c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f2492245ecf749533c91c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f2492245ecf749533c91c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e2f2491245ecf749533c2c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "Name": "NJRat.exe",
+ "Md5": "ab8a834a87864ee6f885b59d62b9632e",
+ "UUID": "3d3e26b1-16f1-42b3-9496-fb01068c3d22",
+ "Processes": [
+  {
+   "OID": "5f381bebd6d64d18eb0b7c40",
+   "ProcessID": 2808,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NJRat.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NJRat.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597512683204
+  },
+  {
+   "OID": "5f381bf2d6d64d18eb0b7f5e",
+   "ProcessID": 2864,
+   "ParentPID": 2808,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597512689704
+  },
+  {
+   "OID": "5f381bf8d6d64d18eb0b84f1",
+   "ProcessID": 2696,
+   "ParentPID": 2864,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe\" \"WindowsServices.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597512695814
+  },
+  {
+   "OID": "5f381c03d6d64d18eb0b95f8",
+   "ProcessID": 2500,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597512706876
+  },
+  {
+   "OID": "5f381c27d6d64d18eb0b9c22",
+   "ProcessID": 2408,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597512743345
+  },
+  {
+   "OID": "5f381c2ad6d64d18eb0b9fda",
+   "ProcessID": 2736,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597512746361
+  },
+  {
+   "OID": "5f381c4dd6d64d18eb0c84b0",
+   "ProcessID": 2164,
+   "ParentPID": 596,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3AD05575-8857-4850-9277-11B85BDB8E09}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1597512780771
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f381c4dd6d64d18eb0c84b0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f381c4dd6d64d18eb0c84b0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f381c4dd6d64d18eb0c84b0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f381bebd6d64d18eb0b7400",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f381c2ad6d64d18eb0b9fda",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f381c27d6d64d18eb0b9c22",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f381c03d6d64d18eb0b95f8",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f381bf2d6d64d18eb0b7f5e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f381bf2d6d64d18eb0b7f5e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f381bf2d6d64d18eb0b7f5e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f381bf2d6d64d18eb0b7f5e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f381bf2d6d64d18eb0b7f5e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f381bf2d6d64d18eb0b7f5e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f381bf2d6d64d18eb0b7f5e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f381bebd6d64d18eb0b7c40",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f381bebd6d64d18eb0b7c40",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

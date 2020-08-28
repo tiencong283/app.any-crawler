@@ -1,0 +1,173 @@
+{
+ "Name": "LimeRAT.exe",
+ "Md5": "39adfab37b90b4b74d77916c2038eea7",
+ "UUID": "b2704acf-6e7d-4d3c-ba94-0767a78e993a",
+ "Processes": [
+  {
+   "OID": "5f3b803426c81237809e3b6b",
+   "ProcessID": 2808,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\LimeRAT.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\LimeRAT.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597734964440
+  },
+  {
+   "OID": "5f3b805526c81237809f65bd",
+   "ProcessID": 1876,
+   "ParentPID": 2808,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" http://google.com/",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597734997049
+  },
+  {
+   "OID": "5f3b805526c81237809f6f32",
+   "ProcessID": 2200,
+   "ParentPID": 1876,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" SCODEF:1876 CREDAT:267521 /prefetch:2",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597734997440
+  },
+  {
+   "OID": "5f3b806c26c8123780a07ebe",
+   "ProcessID": 2948,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Program Files\\Opera\\opera.exe\" ",
+   "Image": "C:\\Program Files\\Opera\\opera.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597735020342
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f3b806c26c8123780a07ebe",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3b806c26c8123780a07ebe",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b805526c81237809f65bd",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b805526c81237809f65bd",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b805526c81237809f65bd",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b803426c81237809e3b54",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3b805526c81237809f6f32",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b805526c81237809f6f32",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b805526c81237809f6f32",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3b805526c81237809f6f32",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b805526c81237809f65bd",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b805526c81237809f65bd",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1112"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b803426c81237809e3b5b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b805526c81237809f65bd",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b803426c81237809e3b6b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3b803426c81237809e3b6b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3b803426c81237809e3b6b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3b803426c81237809e3b6b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b803426c81237809e3b6b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f3b803426c81237809e3b6b",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

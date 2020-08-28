@@ -1,0 +1,77 @@
+{
+ "Name": "Hp",
+ "Md5": "cf988f6f4019e0e969f4cc40827612e1",
+ "UUID": "51aff201-8d9a-4ea6-93d0-d8cd89c5450a",
+ "Processes": [
+  {
+   "OID": "5e1ca7ca671ba870699ef207",
+   "ProcessID": 1584,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Hp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Hp.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578936265954
+  },
+  {
+   "OID": "5e1ca7ca671ba870699ef208",
+   "ProcessID": 976,
+   "ParentPID": 1584,
+   "CommandLine": "--92ad9b8c",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Hp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578936266110
+  },
+  {
+   "OID": "5e1ca7d0671ba870699ef58a",
+   "ProcessID": 2436,
+   "ParentPID": 976,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578936271704
+  },
+  {
+   "OID": "5e1ca7d0671ba870699ef58b",
+   "ProcessID": 3276,
+   "ParentPID": 2436,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578936271829
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e1ca7d0671ba870699ef58b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1ca7d0671ba870699ef58b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1ca7d0671ba870699ef58b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1ca7ca671ba870699ef208",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e1ca7ca671ba870699ef208",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1ca7ca671ba870699ef208",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

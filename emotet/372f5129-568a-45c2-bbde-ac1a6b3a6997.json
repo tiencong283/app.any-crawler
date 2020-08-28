@@ -1,0 +1,79 @@
+{
+ "Name": "eSKnzZS",
+ "Md5": "bc30441f9b1b8bf5d51bb0c411030f08",
+ "UUID": "372f5129-568a-45c2-bbde-ac1a6b3a6997",
+ "Processes": [
+  {
+   "OID": "5df061b6d9ffdf76aa9e66d5",
+   "ProcessID": 1888,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\eSKnzZS.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\eSKnzZS.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1576034742306
+  },
+  {
+   "OID": "5df061b7d9ffdf76aa9e67f1",
+   "ProcessID": 2768,
+   "ParentPID": 1888,
+   "CommandLine": "--1f3c9a86",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\eSKnzZS.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576034742681
+  },
+  {
+   "OID": "5df061bfd9ffdf76aa9e6ba1",
+   "ProcessID": 3032,
+   "ParentPID": 2768,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576034750368
+  },
+  {
+   "OID": "5df061bfd9ffdf76aa9e6ba2",
+   "ProcessID": 4060,
+   "ParentPID": 3032,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576034750603
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5df061bfd9ffdf76aa9e6ba2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df061bfd9ffdf76aa9e6ba2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df061b7d9ffdf76aa9e67f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5df061b7d9ffdf76aa9e67f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df061b7d9ffdf76aa9e67f1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df061b6d9ffdf76aa9e66d5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

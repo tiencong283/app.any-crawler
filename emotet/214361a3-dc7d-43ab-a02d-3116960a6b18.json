@@ -1,0 +1,86 @@
+{
+ "Name": "4.exe",
+ "Md5": "a635d6a35c2fc054042b6868ef52a0c3",
+ "UUID": "214361a3-dc7d-43ab-a02d-3116960a6b18",
+ "Processes": [
+  {
+   "OID": "5e5f3be7864c97203777b4e8",
+   "ProcessID": 3540,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\4.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\4.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583299559583
+  },
+  {
+   "OID": "5e5f3bef864c97203777bf10",
+   "ProcessID": 2660,
+   "ParentPID": 3540,
+   "CommandLine": "nslookup gandcrab.bit a.dnspod.com",
+   "Image": "C:\\Windows\\system32\\nslookup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583299567692
+  },
+  {
+   "OID": "5e5f3c04864c97203777c3a6",
+   "ProcessID": 2876,
+   "ParentPID": 3540,
+   "CommandLine": "nslookup gandcrab.bit a.dnspod.com",
+   "Image": "C:\\Windows\\system32\\nslookup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583299587786
+  },
+  {
+   "OID": "5e5f3c18864c97203777c567",
+   "ProcessID": 1296,
+   "ParentPID": 3540,
+   "CommandLine": "nslookup gandcrab.bit a.dnspod.com",
+   "Image": "C:\\Windows\\system32\\nslookup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583299607848
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e5f3c18864c97203777c567",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5f3c04864c97203777c3a6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5f3bef864c97203777bf10",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5f3be7864c97203777b4e8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5f3be7864c97203777b4dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e5f3be7864c97203777b4e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e5f3be7864c97203777b4e8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  }
+ ]
+}

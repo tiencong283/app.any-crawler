@@ -1,0 +1,84 @@
+{
+ "Name": "버블파이터 HG 지옥 에디터 0.7vn.exe",
+ "Md5": "81620bd63d767014cf5d4cc451a2324e",
+ "UUID": "9e63b55c-0366-4135-aa73-785f42b3eca0",
+ "Processes": [
+  {
+   "OID": "5f353186b54ebb1db13d8c98",
+   "ProcessID": 2524,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\버블파이터 HG 지옥 에디터 0.7vn.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\버블파이터 HG 지옥 에디터 0.7vn.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597321606244
+  },
+  {
+   "OID": "5f35319ab54ebb1db13d9184",
+   "ProcessID": 2932,
+   "ParentPID": 2524,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597321626369
+  },
+  {
+   "OID": "5f3531aeb54ebb1db13d98dc",
+   "ProcessID": 2536,
+   "ParentPID": 2932,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe\" \"System32.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597321645806
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f35319ab54ebb1db13d9184",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f35319ab54ebb1db13d9184",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f35319ab54ebb1db13d9184",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f35319ab54ebb1db13d9184",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f35319ab54ebb1db13d9184",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f35319ab54ebb1db13d9184",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f353186b54ebb1db13d8c98",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f353186b54ebb1db13d8c98",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

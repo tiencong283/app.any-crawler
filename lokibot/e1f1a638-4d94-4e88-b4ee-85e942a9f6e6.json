@@ -1,0 +1,123 @@
+{
+ "Name": "svchost.exe",
+ "Md5": "833b90eec35a42574b53642b629e5f54",
+ "UUID": "e1f1a638-4d94-4e88-b4ee-85e942a9f6e6",
+ "Processes": [
+  {
+   "OID": "5ec2391a8c9c552c124f3161",
+   "ProcessID": 2056,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1589786906258
+  },
+  {
+   "OID": "5ec2391f8c9c552c124f86e5",
+   "ProcessID": 4064,
+   "ParentPID": 2056,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\bum.exee",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\bum.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 1589786908211
+  },
+  {
+   "OID": "5ec239378c9c552c12514542",
+   "ProcessID": 880,
+   "ParentPID": 4064,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589786910586
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ec239378c9c552c12514542",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec239378c9c552c12514542",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec239378c9c552c12514542",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec239378c9c552c12514542",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec239378c9c552c12514542",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec2391a8c9c552c124f3150",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ec239378c9c552c12514542",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ec239378c9c552c12514542",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec2391f8c9c552c124f86e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ec2391f8c9c552c124f86e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec2391f8c9c552c124f86e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ec2391f8c9c552c124f86e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec2391f8c9c552c124f86e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ec2391a8c9c552c124f3161",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec2391a8c9c552c124f3148",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

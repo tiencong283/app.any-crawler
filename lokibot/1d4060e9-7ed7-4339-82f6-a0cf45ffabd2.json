@@ -1,0 +1,122 @@
+{
+ "Name": "2020-06-15-Lokibot-EXE.bin",
+ "Md5": "89a540c5020696145c39f95831062d9a",
+ "UUID": "1d4060e9-7ed7-4339-82f6-a0cf45ffabd2",
+ "Processes": [
+  {
+   "OID": "5f289c5bb1257d34144c91d0",
+   "ProcessID": 2556,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\2020-06-15-Lokibot-EXE.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2020-06-15-Lokibot-EXE.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596496987189
+  },
+  {
+   "OID": "5f289c7db1257d34144c9ac1",
+   "ProcessID": 2220,
+   "ParentPID": 2556,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\InXkDgYILVBq\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp6B58.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596497021079
+  },
+  {
+   "OID": "5f289c7db1257d34144c9ac3",
+   "ProcessID": 1912,
+   "ParentPID": 2556,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2020-06-15-Lokibot-EXE.bin.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596497021236
+  },
+  {
+   "OID": "5f289cbbb1257d34144caac0",
+   "ProcessID": 3480,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1596497082689
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f289cbbb1257d34144caac0",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f289c7db1257d34144c9ac3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f289c7db1257d34144c9ac3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f289c7db1257d34144c9ac3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f289c5bb1257d34144c91c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f289c7db1257d34144c9ac3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5f289c7db1257d34144c9ac3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f289c5bb1257d34144c91d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f289c5bb1257d34144c91be",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f289c7db1257d34144c9ac1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f289c5bb1257d34144c91d0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f289c5bb1257d34144c91d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f289c5bb1257d34144c91d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

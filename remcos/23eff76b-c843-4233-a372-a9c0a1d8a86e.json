@@ -1,0 +1,56 @@
+{
+ "Name": "Jpeg 0day Builder.exe",
+ "Md5": "7c1f1625d0f96c2f03fb63231b069b3e",
+ "UUID": "23eff76b-c843-4233-a372-a9c0a1d8a86e",
+ "Processes": [
+  {
+   "OID": "5cac7d2027b79a116c5ffa9b",
+   "ProcessID": 2636,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Jpeg 0day Builder.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Jpeg 0day Builder.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554808095880
+  },
+  {
+   "OID": "5cac7d2027b79a116c5ffa9c",
+   "ProcessID": 2376,
+   "ParentPID": 2636,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\CHROME.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\CHROME.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554808096193
+  },
+  {
+   "OID": "5cac7d2027b79a116c5ffa9d",
+   "ProcessID": 1740,
+   "ParentPID": 2636,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\JPEG-3XPLOIT.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\JPEG-3XPLOIT.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554808096255
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cac7d2027b79a116c5ffa9d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cac7d2027b79a116c5ffa9c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cac7d2027b79a116c5ffa9c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cac7d2027b79a116c5ffa9b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

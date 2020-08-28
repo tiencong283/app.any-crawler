@@ -1,0 +1,91 @@
+{
+ "Name": "accountwscapi.exe",
+ "Md5": "e296d929929c4ed828f458a00af8881a",
+ "UUID": "f5c3e240-81eb-41e0-baf2-171759726313",
+ "Processes": [
+  {
+   "OID": "5e15e3b6c41dde46b32a0c2b",
+   "ProcessID": 2368,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\accountwscapi.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\accountwscapi.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578492854508
+  },
+  {
+   "OID": "5e15e3b7c41dde46b32a1340",
+   "ProcessID": 3060,
+   "ParentPID": 2368,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\accountwscapi.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\accountwscapi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578492855352
+  },
+  {
+   "OID": "5e15e3b8c41dde46b32a1345",
+   "ProcessID": 1560,
+   "ParentPID": 3060,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\watchvsgd.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\watchvsgd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578492855930
+  },
+  {
+   "OID": "5e15e3b8c41dde46b32a1490",
+   "ProcessID": 2484,
+   "ParentPID": 1560,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\watchvsgd.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\watchvsgd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578492856446
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e15e3b8c41dde46b32a1490",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e15e3b8c41dde46b32a1490",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e15e3b8c41dde46b32a1490",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e15e3b8c41dde46b32a1345",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e15e3b8c41dde46b32a1345",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e15e3b7c41dde46b32a1340",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e15e3b7c41dde46b32a1340",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e15e3b6c41dde46b32a0c2b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

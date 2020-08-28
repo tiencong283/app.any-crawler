@@ -1,0 +1,149 @@
+{
+ "Name": "VE NET 4.0.exe",
+ "Md5": "5eff0061a8f550e047fc5b6279f1d4bc",
+ "UUID": "1c6946be-c0bd-4ec3-b977-c4f539be83b1",
+ "Processes": [
+  {
+   "OID": "5eed9b2dc5df2c4a1eba2dae",
+   "ProcessID": 2952,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\VE NET 4.0.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\VE NET 4.0.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592630061152
+  },
+  {
+   "OID": "5eed9b34c5df2c4a1eba3107",
+   "ProcessID": 3124,
+   "ParentPID": 2952,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Bustabit.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Bustabit.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592630067980
+  },
+  {
+   "OID": "5eed9b3ac5df2c4a1eba362b",
+   "ProcessID": 2576,
+   "ParentPID": 3124,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Bustabit.exe\" \"Bustabit.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592630074152
+  },
+  {
+   "OID": "5eed9b5cc5df2c4a1eba3dd9",
+   "ProcessID": 1492,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" ",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1592630108527
+  },
+  {
+   "OID": "5eed9b5dc5df2c4a1eba3de2",
+   "ProcessID": 3936,
+   "ParentPID": 1492,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" SCODEF:1492 CREDAT:267521 /prefetch:2",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592630108918
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eed9b5dc5df2c4a1eba3de2",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eed9b5dc5df2c4a1eba3de2",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eed9b5dc5df2c4a1eba3de2",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5eed9b5dc5df2c4a1eba3de2",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5eed9b5cc5df2c4a1eba3dd9",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eed9b5cc5df2c4a1eba3dd9",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1112"
+   ]
+  },
+  {
+   "ProcessOID": "5eed9b2dc5df2c4a1eba26df",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5eed9b5cc5df2c4a1eba3dd9",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5eed9b2dc5df2c4a1eba26e2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eed9b5cc5df2c4a1eba3dd9",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5eed9b34c5df2c4a1eba3107",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eed9b34c5df2c4a1eba3107",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eed9b34c5df2c4a1eba3107",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5eed9b2dc5df2c4a1eba2dae",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eed9b2dc5df2c4a1eba2dae",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

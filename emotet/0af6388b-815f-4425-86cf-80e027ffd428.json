@@ -1,0 +1,63 @@
+{
+ "Name": "chtbrkr.exe",
+ "Md5": "c22c1fe518f655051096e3f93474ad92",
+ "UUID": "0af6388b-815f-4425-86cf-80e027ffd428",
+ "Processes": [
+  {
+   "OID": "5e3cfaa1ed080a4892416341",
+   "ProcessID": 1688,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\chtbrkr.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\chtbrkr.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581054625190
+  },
+  {
+   "OID": "5e3cfaa4ed080a4892416670",
+   "ProcessID": 944,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\tsmf\\tsmf.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\tsmf\\tsmf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581054628487
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e3cfaa4ed080a4892416670",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3cfaa1ed080a4892415a17",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3cfaa4ed080a4892416670",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3cfaa1ed080a4892416341",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3cfaa1ed080a4892416341",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e3cfaa1ed080a4892416341",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

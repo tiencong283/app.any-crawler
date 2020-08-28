@@ -1,0 +1,44 @@
+{
+ "Name": "mail.exe",
+ "Md5": "0bf3585ec51295e02469dad9bc0e6de2",
+ "UUID": "749d8a2e-7a32-4792-9f81-222c169b9f40",
+ "Processes": [
+  {
+   "OID": "5cc2ba5bf5ec014fe1321eea",
+   "ProcessID": 3064,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\mail.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\mail.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1556265563079
+  },
+  {
+   "OID": "5cc2ba75f5ec014fe13221da",
+   "ProcessID": 3304,
+   "ParentPID": 3064,
+   "CommandLine": "\"C:\\Windows\\System32\\sxstrace.exe\"",
+   "Image": "C:\\Windows\\System32\\sxstrace.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556265588985
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cc2ba75f5ec014fe13221da",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc2ba5bf5ec014fe1321eea",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cc2ba5bf5ec014fe1321eea",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "Name": "WindowsApp5-cleaned.exe",
+ "Md5": "f10adbb9a8e231e70acbdd30eef0da29",
+ "UUID": "25bd834f-4f72-4924-83e3-c261ba0be590",
+ "Processes": [
+  {
+   "OID": "5f1eba739518c46921c1084a",
+   "ProcessID": 1664,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsApp5-cleaned.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsApp5-cleaned.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595849331292
+  },
+  {
+   "OID": "5f1eba7a9518c46921c10ce7",
+   "ProcessID": 2276,
+   "ParentPID": 1664,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsApp5-cleaned.exe\" \"WindowsApp5-cleaned.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595849338511
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f1eba739518c46921c1084a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1eba739518c46921c1084a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1eba739518c46921c1084a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1eba739518c46921c1084a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1eba739518c46921c1084a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1eba739518c46921c1084a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

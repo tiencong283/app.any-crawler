@@ -1,0 +1,150 @@
+{
+ "Name": "MasterHack.exe",
+ "Md5": "54dac3ecc437bbd5da529c43a0592eef",
+ "UUID": "02ba0b28-dd0e-45f6-a2e4-242988f926ae",
+ "Processes": [
+  {
+   "OID": "5f104351a31b3d0558f02269",
+   "ProcessID": 904,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\MasterHack.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\MasterHack.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594901329398
+  },
+  {
+   "OID": "5f104353a31b3d0558f02742",
+   "ProcessID": 936,
+   "ParentPID": 904,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\Client.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\Client.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594901330663
+  },
+  {
+   "OID": "5f104359a31b3d0558f02f94",
+   "ProcessID": 2252,
+   "ParentPID": 936,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594901337085
+  },
+  {
+   "OID": "5f104359a31b3d0558f02f95",
+   "ProcessID": 2924,
+   "ParentPID": 904,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\Ophack.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\Ophack.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594901337148
+  },
+  {
+   "OID": "5f10435fa31b3d0558f03a4b",
+   "ProcessID": 3872,
+   "ParentPID": 2252,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe\" \"WindowsServices.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594901343335
+  },
+  {
+   "OID": "5f10437ba31b3d0558f04bc2",
+   "ProcessID": 2336,
+   "ParentPID": 2252,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmpA303.tmp.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594901370960
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f104359a31b3d0558f02f94",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5f104359a31b3d0558f02f94",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f104359a31b3d0558f02f94",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f104359a31b3d0558f02f94",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f104359a31b3d0558f02f94",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f104359a31b3d0558f02f94",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f104359a31b3d0558f02f94",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f104359a31b3d0558f02f94",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f104359a31b3d0558f02f95",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f104359a31b3d0558f02f95",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f104359a31b3d0558f02f94",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f104353a31b3d0558f02742",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f104353a31b3d0558f02742",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f104353a31b3d0558f02742",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f104351a31b3d0558f02269",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

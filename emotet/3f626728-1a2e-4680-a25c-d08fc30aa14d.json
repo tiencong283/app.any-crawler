@@ -1,0 +1,270 @@
+{
+ "Name": "DiBNCA",
+ "Md5": "3a000c42c8785e0234ffe7b632095f52",
+ "UUID": "3f626728-1a2e-4680-a25c-d08fc30aa14d",
+ "Processes": [
+  {
+   "OID": "5e2d757c36ad0330cf53f6ae",
+   "ProcessID": 876,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe -k netsvcs",
+   "Image": "C:\\Windows\\System32\\svchost.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e2d757c36ad0330cf53f6af",
+   "ProcessID": 372,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe -k NetworkService",
+   "Image": "C:\\Windows\\System32\\svchost.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e2d757c36ad0330cf53f6b9",
+   "ProcessID": 1376,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\SearchIndexer.exe /Embedding",
+   "Image": "C:\\Windows\\System32\\SearchIndexer.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e2d757d36ad0330cf53feea",
+   "ProcessID": 944,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\DiBNCA.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\DiBNCA.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580037500523
+  },
+  {
+   "OID": "5e2d757d36ad0330cf53feeb",
+   "ProcessID": 2400,
+   "ParentPID": 944,
+   "CommandLine": "--c67b0079",
+   "Image": "C:\\Users\\admin\\Desktop\\DiBNCA.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580037500804
+  },
+  {
+   "OID": "5e2d758436ad0330cf5407a4",
+   "ProcessID": 2856,
+   "ParentPID": 2400,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\btadriver\\btadriver.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\btadriver\\btadriver.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580037507726
+  },
+  {
+   "OID": "5e2d758436ad0330cf5407a5",
+   "ProcessID": 2932,
+   "ParentPID": 2856,
+   "CommandLine": "--3643f6ee",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\btadriver\\btadriver.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580037507804
+  },
+  {
+   "OID": "5e2d758e36ad0330cf540faf",
+   "ProcessID": 3016,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\rundll32.exe /d srrstr.dll,ExecuteScheduledSPPCreation",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Was launched as a service",
+   "CreationTimestamp": 1580037518101
+  },
+  {
+   "OID": "5e2d758e36ad0330cf540fb0",
+   "ProcessID": 2692,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\lpremove.exe ",
+   "Image": "C:\\Windows\\system32\\lpremove.exe",
+   "ProcessType": "Was launched as a service",
+   "CreationTimestamp": 1580037518101
+  },
+  {
+   "OID": "5e2d758f36ad0330cf541104",
+   "ProcessID": 2308,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\vssvc.exe",
+   "Image": "C:\\Windows\\system32\\vssvc.exe",
+   "ProcessType": "Was launched as a service",
+   "CreationTimestamp": 1580037519007
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2d757c36ad0330cf53f6bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2d757c36ad0330cf53f6bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2d757c36ad0330cf53f6bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2d757c36ad0330cf53f6bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d758436ad0330cf5407a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2d757c36ad0330cf53f6b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2d758436ad0330cf5407a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2d758436ad0330cf5407a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2d757c36ad0330cf53f6b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d758f36ad0330cf541104",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2d758e36ad0330cf540faf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d758f36ad0330cf541104",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d758f36ad0330cf541104",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d758e36ad0330cf540faf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d757c36ad0330cf53f6b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d757c36ad0330cf53f6ae",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d757c36ad0330cf53f6af",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d758e36ad0330cf540faf",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d758e36ad0330cf540faf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2d758e36ad0330cf540faf",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d758e36ad0330cf540fb0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d757c36ad0330cf53f6a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d758e36ad0330cf540faf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d757d36ad0330cf53feeb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2d757d36ad0330cf53feeb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2d757d36ad0330cf53feeb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e2d757d36ad0330cf540184",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  }
+ ]
+}

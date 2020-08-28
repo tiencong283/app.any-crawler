@@ -1,0 +1,73 @@
+{
+ "Name": "ORDER -325159-KYC.exe",
+ "Md5": "ac00d243ff389cf13f83496be84bbf90",
+ "UUID": "e20ff942-0b12-481a-ae4c-ddf6b0ef1e49",
+ "Processes": [
+  {
+   "OID": "5cd96f2b2061fd3e1cf3ed18",
+   "ProcessID": 3644,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ORDER -325159-KYC.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ORDER -325159-KYC.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1557753642642
+  },
+  {
+   "OID": "5cd96f2c2061fd3e1cf3f5f4",
+   "ProcessID": 4008,
+   "ParentPID": 3644,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557753644033
+  },
+  {
+   "OID": "5cd96f2c2061fd3e1cf3f5f5",
+   "ProcessID": 3160,
+   "ParentPID": 4008,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557753644314
+  },
+  {
+   "OID": "5cd96f2d2061fd3e1cf3f97c",
+   "ProcessID": 3904,
+   "ParentPID": 4008,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557753645361
+  },
+  {
+   "OID": "5cd96f2e2061fd3e1cf3fccc",
+   "ProcessID": 3708,
+   "ParentPID": 3904,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" ",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557753645533
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cd96f2c2061fd3e1cf3f5f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5cd96f2c2061fd3e1cf3f5f4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5cd96f2c2061fd3e1cf3f5f4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "Name": "ClayTeam.exe",
+ "Md5": "e6aa06c1a1bf21e7160b83bb61326d65",
+ "UUID": "74b9d501-f85d-416b-9f75-cf75f6e9ebf3",
+ "Processes": [
+  {
+   "OID": "5f2ef0e877ab09275ee4d338",
+   "ProcessID": 2856,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ClayTeam.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ClayTeam.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596911848300
+  },
+  {
+   "OID": "5f2ef0ef77ab09275ee4d609",
+   "ProcessID": 1768,
+   "ParentPID": 2856,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\ClayTeam.exe\" \"ClayTeam.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596911854504
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2ef0e877ab09275ee4d338",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2ef0e877ab09275ee4d338",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2ef0e877ab09275ee4d338",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2ef0e877ab09275ee4d338",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2ef0e877ab09275ee4d338",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2ef0e877ab09275ee4d338",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "Name": "NzGucd.exe",
+ "Md5": "0ea0e67f0365f36fceddb84f51574e6b",
+ "UUID": "91264732-46e3-4047-b8cb-c0b75818eaf6",
+ "Processes": [
+  {
+   "OID": "5e2b2c7336966a26fe818892",
+   "ProcessID": 1500,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NzGucd.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NzGucd.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579887731306
+  },
+  {
+   "OID": "5e2b2c7336966a26fe818893",
+   "ProcessID": 1696,
+   "ParentPID": 1500,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NzGucd.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NzGucd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579887731446
+  },
+  {
+   "OID": "5e2b2c7336966a26fe818894",
+   "ProcessID": 2916,
+   "ParentPID": 1696,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\mfidlisvc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\mfidlisvc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579887731603
+  },
+  {
+   "OID": "5e2b2c7436966a26fe818d00",
+   "ProcessID": 3672,
+   "ParentPID": 2916,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\mfidlisvc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\mfidlisvc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579887731681
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2b2c7336966a26fe817f7a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b2c7436966a26fe818d00",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b2c7436966a26fe818d00",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b2c7436966a26fe818d00",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b2c7336966a26fe818894",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b2c7336966a26fe818894",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b2c7336966a26fe818893",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

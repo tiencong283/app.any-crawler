@@ -1,0 +1,58 @@
+{
+ "Name": "E3-20200630_180339",
+ "Md5": "6dec6c8efb50e3274de24ad57be05a9a",
+ "UUID": "0519db89-ba5e-4719-ad43-249eec99ab9c",
+ "Processes": [
+  {
+   "OID": "5efc47118bf95140fd2b78aa",
+   "ProcessID": 2156,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\E3-20200630_180339.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\E3-20200630_180339.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593591568334
+  },
+  {
+   "OID": "5efc47138bf95140fd2b806b",
+   "ProcessID": 2580,
+   "ParentPID": 2156,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\wwanconn\\wwanconn.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wwanconn\\wwanconn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593591571490
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5efc47108bf95140fd2b714e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5efc47138bf95140fd2b806b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5efc47118bf95140fd2b78aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efc47118bf95140fd2b78aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efc47118bf95140fd2b78aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "Name": "AHK.exe",
+ "Md5": "e6c33161a31294f4787a946cdac9eecd",
+ "UUID": "fc6c6f0d-6b9e-4d28-ab01-7e0e1d7b0074",
+ "Processes": [
+  {
+   "OID": "5f27c4221787b6180064536c",
+   "ProcessID": 1348,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AHK.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AHK.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596441634304
+  },
+  {
+   "OID": "5f27c4291787b61800645617",
+   "ProcessID": 1192,
+   "ParentPID": 1348,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\AHK.exe\" \"AHK.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596441640476
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f27c4221787b6180064536c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f27c4221787b6180064536c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f27c4221787b6180064536c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f27c4221787b6180064536c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f27c4221787b6180064536c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f27c4221787b6180064536c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f27c4221787b6180064536c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

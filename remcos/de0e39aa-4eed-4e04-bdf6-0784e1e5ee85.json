@@ -1,0 +1,2356 @@
+{
+ "Name": "uwotm8.exe",
+ "Md5": "0fedc7e0e70303040ae29c0eb8f73c02",
+ "UUID": "de0e39aa-4eed-4e04-bdf6-0784e1e5ee85",
+ "Processes": [
+  {
+   "OID": "5ce41e372c5fed2922b54c57",
+   "ProcessID": 1068,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe -k NetworkService",
+   "Image": "C:\\Windows\\System32\\svchost.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5ce41e372c5fed2922b54c5d",
+   "ProcessID": 2044,
+   "ParentPID": 1972,
+   "CommandLine": "C:\\Windows\\Explorer.EXE",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5ce41e372c5fed2922b55399",
+   "ProcessID": 3364,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1558453814638
+  },
+  {
+   "OID": "5ce41e402c5fed2922b556ba",
+   "ProcessID": 2480,
+   "ParentPID": 3364,
+   "CommandLine": "\u0001C:\\Users\\admin\\Downloads\\uwotm8.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453823920
+  },
+  {
+   "OID": "5ce41e4a2c5fed2922b5577c",
+   "ProcessID": 1048,
+   "ParentPID": 2480,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453834170
+  },
+  {
+   "OID": "5ce41e4a2c5fed2922b55793",
+   "ProcessID": 2560,
+   "ParentPID": 2480,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453834185
+  },
+  {
+   "OID": "5ce41e4b2c5fed2922b560cd",
+   "ProcessID": 2164,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3AD05575-8857-4850-9277-11B85BDB8E09}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1558453835435
+  },
+  {
+   "OID": "5ce41e4b2c5fed2922b560ce",
+   "ProcessID": 3304,
+   "ParentPID": 1048,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453835654
+  },
+  {
+   "OID": "5ce41e4c2c5fed2922b568f0",
+   "ProcessID": 3884,
+   "ParentPID": 1048,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453836326
+  },
+  {
+   "OID": "5ce41e4c2c5fed2922b568f1",
+   "ProcessID": 1712,
+   "ParentPID": 3884,
+   "CommandLine": "\"C:\\Windows\\system32\\dism.exe\" /online /norestart /apply-unattend:\"C:\\Users\\admin\\AppData\\Local\\Temp\\ellocnak.xml\"",
+   "Image": "C:\\Windows\\system32\\dism.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453836388
+  },
+  {
+   "OID": "5ce41e4c2c5fed2922b568f3",
+   "ProcessID": 2844,
+   "ParentPID": 1712,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453836560
+  },
+  {
+   "OID": "5ce41e532c5fed2922b56f05",
+   "ProcessID": 2716,
+   "ParentPID": 2560,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453842576
+  },
+  {
+   "OID": "5ce41e572c5fed2922b56fba",
+   "ProcessID": 3148,
+   "ParentPID": 2844,
+   "CommandLine": "\u0001C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453847498
+  },
+  {
+   "OID": "5ce41e632c5fed2922b57073",
+   "ProcessID": 4068,
+   "ParentPID": 3148,
+   "CommandLine": "powershell Add-MpPreference -ExclusionPath C:\\",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453858451
+  },
+  {
+   "OID": "5ce41e632c5fed2922b57075",
+   "ProcessID": 2208,
+   "ParentPID": 2716,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453858482
+  },
+  {
+   "OID": "5ce41e642c5fed2922b57ff9",
+   "ProcessID": 2900,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3AD05575-8857-4850-9277-11B85BDB8E09}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1558453859701
+  },
+  {
+   "OID": "5ce41e642c5fed2922b57ffa",
+   "ProcessID": 536,
+   "ParentPID": 2208,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453859857
+  },
+  {
+   "OID": "5ce41e642c5fed2922b5868b",
+   "ProcessID": 3872,
+   "ParentPID": 2208,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453860216
+  },
+  {
+   "OID": "5ce41e642c5fed2922b5868c",
+   "ProcessID": 1904,
+   "ParentPID": 3872,
+   "CommandLine": "\"C:\\Windows\\system32\\dism.exe\" /online /norestart /apply-unattend:\"C:\\Users\\admin\\AppData\\Local\\Temp\\ellocnak.xml\"",
+   "Image": "C:\\Windows\\system32\\dism.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453860248
+  },
+  {
+   "OID": "5ce41e642c5fed2922b5868e",
+   "ProcessID": 3096,
+   "ParentPID": 1904,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453860326
+  },
+  {
+   "OID": "5ce41e6e2c5fed2922b59006",
+   "ProcessID": 1680,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558453870466
+  },
+  {
+   "OID": "5ce41e6e2c5fed2922b59007",
+   "ProcessID": 3796,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558453870482
+  },
+  {
+   "OID": "5ce41e752c5fed2922b59150",
+   "ProcessID": 3036,
+   "ParentPID": 3096,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453876701
+  },
+  {
+   "OID": "5ce41e792c5fed2922b591fc",
+   "ProcessID": 1472,
+   "ParentPID": 3796,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453880763
+  },
+  {
+   "OID": "5ce41e792c5fed2922b591fd",
+   "ProcessID": 2388,
+   "ParentPID": 1680,
+   "CommandLine": "\u0001C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453880763
+  },
+  {
+   "OID": "5ce41e852c5fed2922b5939c",
+   "ProcessID": 3012,
+   "ParentPID": 2388,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453892607
+  },
+  {
+   "OID": "5ce41e852c5fed2922b5939d",
+   "ProcessID": 3272,
+   "ParentPID": 3036,
+   "CommandLine": "powershell Add-MpPreference -ExclusionPath C:\\",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453892638
+  },
+  {
+   "OID": "5ce41e852c5fed2922b5939f",
+   "ProcessID": 1356,
+   "ParentPID": 1472,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453892685
+  },
+  {
+   "OID": "5ce41e852c5fed2922b593a0",
+   "ProcessID": 1496,
+   "ParentPID": 2388,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453892935
+  },
+  {
+   "OID": "5ce41e862c5fed2922b5aa94",
+   "ProcessID": 3700,
+   "ParentPID": 3036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\rosn..tGk.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\rosn..tGk.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453894326
+  },
+  {
+   "OID": "5ce41e862c5fed2922b5aa96",
+   "ProcessID": 3256,
+   "ParentPID": 3700,
+   "CommandLine": "netsh advfirewall firewall add rule name=\"3389\" dir=in action=allow protocol=TCP localport=3389",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453894404
+  },
+  {
+   "OID": "5ce41e872c5fed2922b5bb59",
+   "ProcessID": 3476,
+   "ParentPID": 2388,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\HHvtmqeih.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\HHvtmqeih.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453895591
+  },
+  {
+   "OID": "5ce41e882c5fed2922b5c1af",
+   "ProcessID": 3524,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3AD05575-8857-4850-9277-11B85BDB8E09}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1558453895998
+  },
+  {
+   "OID": "5ce41e882c5fed2922b5c1b0",
+   "ProcessID": 2736,
+   "ParentPID": 1472,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\lDAKxBykx.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\lDAKxBykx.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453896013
+  },
+  {
+   "OID": "5ce41e892c5fed2922b5d027",
+   "ProcessID": 3076,
+   "ParentPID": 1496,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453896685
+  },
+  {
+   "OID": "5ce41e892c5fed2922b5d640",
+   "ProcessID": 3852,
+   "ParentPID": 492,
+   "CommandLine": "C:\\Windows\\System32\\svchost.exe -k NetworkService",
+   "Image": "C:\\Windows\\System32\\svchost.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 1558453897201
+  },
+  {
+   "OID": "5ce41e892c5fed2922b5d641",
+   "ProcessID": 3576,
+   "ParentPID": 3476,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453897295
+  },
+  {
+   "OID": "5ce41e892c5fed2922b5d644",
+   "ProcessID": 3264,
+   "ParentPID": 3576,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453897591
+  },
+  {
+   "OID": "5ce41e8b2c5fed2922b5e8e8",
+   "ProcessID": 2804,
+   "ParentPID": 3576,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453898708
+  },
+  {
+   "OID": "5ce41e8d2c5fed2922b5eee5",
+   "ProcessID": 2160,
+   "ParentPID": 1496,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453901503
+  },
+  {
+   "OID": "5ce41e8d2c5fed2922b5eee6",
+   "ProcessID": 552,
+   "ParentPID": 2160,
+   "CommandLine": "\"C:\\Windows\\system32\\dism.exe\" /online /norestart /apply-unattend:\"C:\\Users\\admin\\AppData\\Local\\Temp\\ellocnak.xml\"",
+   "Image": "C:\\Windows\\system32\\dism.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453901535
+  },
+  {
+   "OID": "5ce41e8d2c5fed2922b5eee8",
+   "ProcessID": 2220,
+   "ParentPID": 552,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453901597
+  },
+  {
+   "OID": "5ce41e912c5fed2922b5f5b7",
+   "ProcessID": 4084,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558453904628
+  },
+  {
+   "OID": "5ce41e912c5fed2922b5f5b8",
+   "ProcessID": 1032,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558453904660
+  },
+  {
+   "OID": "5ce41e952c5fed2922b5f764",
+   "ProcessID": 3100,
+   "ParentPID": 1356,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453909113
+  },
+  {
+   "OID": "5ce41e962c5fed2922b5fbdc",
+   "ProcessID": 2092,
+   "ParentPID": 1356,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453910347
+  },
+  {
+   "OID": "5ce41e962c5fed2922b5fbdd",
+   "ProcessID": 3912,
+   "ParentPID": 2220,
+   "CommandLine": "\u0001C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453910425
+  },
+  {
+   "OID": "5ce41e962c5fed2922b5fbde",
+   "ProcessID": 2320,
+   "ParentPID": 2092,
+   "CommandLine": "\"C:\\Windows\\system32\\dism.exe\" /online /norestart /apply-unattend:\"C:\\Users\\admin\\AppData\\Local\\Temp\\ellocnak.xml\"",
+   "Image": "C:\\Windows\\system32\\dism.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453910503
+  },
+  {
+   "OID": "5ce41e972c5fed2922b5fdcd",
+   "ProcessID": 2152,
+   "ParentPID": 2320,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453910800
+  },
+  {
+   "OID": "5ce41e992c5fed2922b601ca",
+   "ProcessID": 3304,
+   "ParentPID": 1032,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453913441
+  },
+  {
+   "OID": "5ce41ea02c5fed2922b60301",
+   "ProcessID": 2952,
+   "ParentPID": 2152,
+   "CommandLine": "\u0001C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453919863
+  },
+  {
+   "OID": "5ce41ea32c5fed2922b603d7",
+   "ProcessID": 2580,
+   "ParentPID": 3304,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453922457
+  },
+  {
+   "OID": "5ce41ea42c5fed2922b60b82",
+   "ProcessID": 2584,
+   "ParentPID": 3012,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453923691
+  },
+  {
+   "OID": "5ce41ea42c5fed2922b60f78",
+   "ProcessID": 3388,
+   "ParentPID": 3304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\iIhelFopp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\iIhelFopp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453924207
+  },
+  {
+   "OID": "5ce41ea42c5fed2922b60f79",
+   "ProcessID": 3472,
+   "ParentPID": 2580,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453924300
+  },
+  {
+   "OID": "5ce41ea52c5fed2922b618da",
+   "ProcessID": 1520,
+   "ParentPID": 3012,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453925238
+  },
+  {
+   "OID": "5ce41ea52c5fed2922b618db",
+   "ProcessID": 284,
+   "ParentPID": 2580,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453925238
+  },
+  {
+   "OID": "5ce41ea52c5fed2922b618dc",
+   "ProcessID": 2408,
+   "ParentPID": 1520,
+   "CommandLine": "\"C:\\Windows\\system32\\dism.exe\" /online /norestart /apply-unattend:\"C:\\Users\\admin\\AppData\\Local\\Temp\\ellocnak.xml\"",
+   "Image": "C:\\Windows\\system32\\dism.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453925347
+  },
+  {
+   "OID": "5ce41ea52c5fed2922b618dd",
+   "ProcessID": 1084,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Windows\\system32\\dism.exe\" /online /norestart /apply-unattend:\"C:\\Users\\admin\\AppData\\Local\\Temp\\ellocnak.xml\"",
+   "Image": "C:\\Windows\\system32\\dism.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453925347
+  },
+  {
+   "OID": "5ce41ea62c5fed2922b61cad",
+   "ProcessID": 3680,
+   "ParentPID": 2408,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453925675
+  },
+  {
+   "OID": "5ce41ea62c5fed2922b61cae",
+   "ProcessID": 3344,
+   "ParentPID": 1084,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453925753
+  },
+  {
+   "OID": "5ce41ea92c5fed2922b6236a",
+   "ProcessID": 4020,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558453928691
+  },
+  {
+   "OID": "5ce41eae2c5fed2922b624e7",
+   "ProcessID": 2684,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558453934472
+  },
+  {
+   "OID": "5ce41eaf2c5fed2922b62583",
+   "ProcessID": 1340,
+   "ParentPID": 2804,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\hdxeltwuyyriohwlyyt\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453934972
+  },
+  {
+   "OID": "5ce41eaf2c5fed2922b62584",
+   "ProcessID": 2920,
+   "ParentPID": 2804,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\rfcpmmhomgjvqnspijgcyp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453934988
+  },
+  {
+   "OID": "5ce41eaf2c5fed2922b62585",
+   "ProcessID": 4004,
+   "ParentPID": 2804,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\czhhnespaobaatgtzutwbcqiof\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453935003
+  },
+  {
+   "OID": "5ce41eb62c5fed2922b64815",
+   "ProcessID": 3076,
+   "ParentPID": 4020,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453941863
+  },
+  {
+   "OID": "5ce41eb62c5fed2922b64816",
+   "ProcessID": 3044,
+   "ParentPID": 3344,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453941863
+  },
+  {
+   "OID": "5ce41eb62c5fed2922b64817",
+   "ProcessID": 1584,
+   "ParentPID": 2952,
+   "CommandLine": "powershell Add-MpPreference -ExclusionPath C:\\",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453942066
+  },
+  {
+   "OID": "5ce41eb72c5fed2922b650bb",
+   "ProcessID": 3672,
+   "ParentPID": 2952,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\rACa.BmuH.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\rACa.BmuH.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453943394
+  },
+  {
+   "OID": "5ce41eb72c5fed2922b650bc",
+   "ProcessID": 368,
+   "ParentPID": 3672,
+   "CommandLine": "netsh advfirewall firewall add rule name=\"3389\" dir=in action=allow protocol=TCP localport=3389",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453943472
+  },
+  {
+   "OID": "5ce41ec22c5fed2922b65f32",
+   "ProcessID": 3192,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558453954082
+  },
+  {
+   "OID": "5ce41ecc2c5fed2922b65fdd",
+   "ProcessID": 2132,
+   "ParentPID": 3192,
+   "CommandLine": "\u0001C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453964144
+  },
+  {
+   "OID": "5ce41ecc2c5fed2922b65fde",
+   "ProcessID": 2076,
+   "ParentPID": 2684,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453964144
+  },
+  {
+   "OID": "5ce41ecc2c5fed2922b65fe1",
+   "ProcessID": 3932,
+   "ParentPID": 3044,
+   "CommandLine": "powershell Add-MpPreference -ExclusionPath C:\\",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453964378
+  },
+  {
+   "OID": "5ce41ecc2c5fed2922b65fe3",
+   "ProcessID": 3472,
+   "ParentPID": 3076,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453964441
+  },
+  {
+   "OID": "5ce41ece2c5fed2922b66e4a",
+   "ProcessID": 3104,
+   "ParentPID": 2952,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\JKIIoDBHJ.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\JKIIoDBHJ.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453965878
+  },
+  {
+   "OID": "5ce41ecf2c5fed2922b67357",
+   "ProcessID": 1880,
+   "ParentPID": 3044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\o.EqaGBhm.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\o.EqaGBhm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453966441
+  },
+  {
+   "OID": "5ce41ecf2c5fed2922b67932",
+   "ProcessID": 3440,
+   "ParentPID": 3076,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Dnttq.wpe.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Dnttq.wpe.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453967019
+  },
+  {
+   "OID": "5ce41ecf2c5fed2922b67933",
+   "ProcessID": 2916,
+   "ParentPID": 2952,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\iArCkcHEh.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\iArCkcHEh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453967175
+  },
+  {
+   "OID": "5ce41ed02c5fed2922b680ac",
+   "ProcessID": 2492,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3AD05575-8857-4850-9277-11B85BDB8E09}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1558453968316
+  },
+  {
+   "OID": "5ce41ed12c5fed2922b683f5",
+   "ProcessID": 3496,
+   "ParentPID": 3472,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453968660
+  },
+  {
+   "OID": "5ce41ed22c5fed2922b68997",
+   "ProcessID": 1336,
+   "ParentPID": 3472,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453969425
+  },
+  {
+   "OID": "5ce41ed22c5fed2922b68998",
+   "ProcessID": 3712,
+   "ParentPID": 1336,
+   "CommandLine": "\"C:\\Windows\\system32\\dism.exe\" /online /norestart /apply-unattend:\"C:\\Users\\admin\\AppData\\Local\\Temp\\ellocnak.xml\"",
+   "Image": "C:\\Windows\\system32\\dism.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453969488
+  },
+  {
+   "OID": "5ce41ed22c5fed2922b6899a",
+   "ProcessID": 3444,
+   "ParentPID": 3712,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453969691
+  },
+  {
+   "OID": "5ce41ed32c5fed2922b68f0a",
+   "ProcessID": 3184,
+   "ParentPID": 2952,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Bwclzxkmg.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Bwclzxkmg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558453970519
+  },
+  {
+   "OID": "5ce41ed82c5fed2922b691db",
+   "ProcessID": 3380,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558453976378
+  },
+  {
+   "OID": "5ce41ed82c5fed2922b691dc",
+   "ProcessID": 3768,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558453976457
+  },
+  {
+   "OID": "5ce41efb2c5fed2922b6931f",
+   "ProcessID": 992,
+   "ParentPID": 3768,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454011175
+  },
+  {
+   "OID": "5ce41efb2c5fed2922b69320",
+   "ProcessID": 288,
+   "ParentPID": 3444,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454011191
+  },
+  {
+   "OID": "5ce41efb2c5fed2922b69321",
+   "ProcessID": 3844,
+   "ParentPID": 3380,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454011191
+  },
+  {
+   "OID": "5ce41efb2c5fed2922b69322",
+   "ProcessID": 3620,
+   "ParentPID": 2132,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454011347
+  },
+  {
+   "OID": "5ce41efd2c5fed2922b69ebb",
+   "ProcessID": 1420,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3AD05575-8857-4850-9277-11B85BDB8E09}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1558454013222
+  },
+  {
+   "OID": "5ce41efd2c5fed2922b6a129",
+   "ProcessID": 3660,
+   "ParentPID": 2132,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\ykzk.aGFl.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\ykzk.aGFl.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454013410
+  },
+  {
+   "OID": "5ce41efe2c5fed2922b6a473",
+   "ProcessID": 4000,
+   "ParentPID": 3620,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454013769
+  },
+  {
+   "OID": "5ce41efe2c5fed2922b6a79b",
+   "ProcessID": 2184,
+   "ParentPID": 3620,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454014722
+  },
+  {
+   "OID": "5ce41eff2c5fed2922b6aa72",
+   "ProcessID": 556,
+   "ParentPID": 2184,
+   "CommandLine": "\"C:\\Windows\\system32\\dism.exe\" /online /norestart /apply-unattend:\"C:\\Users\\admin\\AppData\\Local\\Temp\\ellocnak.xml\"",
+   "Image": "C:\\Windows\\system32\\dism.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454014847
+  },
+  {
+   "OID": "5ce41eff2c5fed2922b6aa74",
+   "ProcessID": 3572,
+   "ParentPID": 556,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454014972
+  },
+  {
+   "OID": "5ce41f072c5fed2922b6afe0",
+   "ProcessID": 3532,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558454023425
+  },
+  {
+   "OID": "5ce41f462c5fed2922b6b119",
+   "ProcessID": 2200,
+   "ParentPID": 3532,
+   "CommandLine": "\u0001C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454085488
+  },
+  {
+   "OID": "5ce41f462c5fed2922b6b11a",
+   "ProcessID": 328,
+   "ParentPID": 3572,
+   "CommandLine": "\u0001C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454085503
+  },
+  {
+   "OID": "5ce41f462c5fed2922b6b11b",
+   "ProcessID": 2524,
+   "ParentPID": 992,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454085753
+  },
+  {
+   "OID": "5ce41f462c5fed2922b6b11c",
+   "ProcessID": 560,
+   "ParentPID": 3844,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454085847
+  },
+  {
+   "OID": "5ce41f462c5fed2922b6b472",
+   "ProcessID": 2432,
+   "ParentPID": 288,
+   "CommandLine": "powershell Add-MpPreference -ExclusionPath C:\\",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454086019
+  },
+  {
+   "OID": "5ce41f462c5fed2922b6b474",
+   "ProcessID": 3876,
+   "ParentPID": 992,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454086378
+  },
+  {
+   "OID": "5ce41f4a2c5fed2922b6d200",
+   "ProcessID": 2904,
+   "ParentPID": 992,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\knewpchne.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\knewpchne.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454090332
+  },
+  {
+   "OID": "5ce41f4b2c5fed2922b6d731",
+   "ProcessID": 1408,
+   "ParentPID": 288,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\AtFAAeiko.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\AtFAAeiko.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454091003
+  },
+  {
+   "OID": "5ce41f4b2c5fed2922b6d732",
+   "ProcessID": 3172,
+   "ParentPID": 3844,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Ipeg.uHag.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Ipeg.uHag.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454091003
+  },
+  {
+   "OID": "5ce41f4b2c5fed2922b6db82",
+   "ProcessID": 1828,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3AD05575-8857-4850-9277-11B85BDB8E09}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1558454091503
+  },
+  {
+   "OID": "5ce41f4b2c5fed2922b6db83",
+   "ProcessID": 3168,
+   "ParentPID": 1408,
+   "CommandLine": "netsh advfirewall firewall add rule name=\"3389\" dir=in action=allow protocol=TCP localport=3389",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454091597
+  },
+  {
+   "OID": "5ce41f4d2c5fed2922b6e623",
+   "ProcessID": 3144,
+   "ParentPID": 560,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454092832
+  },
+  {
+   "OID": "5ce41f4d2c5fed2922b6ee68",
+   "ProcessID": 1476,
+   "ParentPID": 560,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454093628
+  },
+  {
+   "OID": "5ce41f4e2c5fed2922b6f4ff",
+   "ProcessID": 3564,
+   "ParentPID": 1476,
+   "CommandLine": "\"C:\\Windows\\system32\\dism.exe\" /online /norestart /apply-unattend:\"C:\\Users\\admin\\AppData\\Local\\Temp\\ellocnak.xml\"",
+   "Image": "C:\\Windows\\system32\\dism.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454093675
+  },
+  {
+   "OID": "5ce41f4e2c5fed2922b6f501",
+   "ProcessID": 2080,
+   "ParentPID": 3564,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454093769
+  },
+  {
+   "OID": "5ce41f512c5fed2922b6fb0e",
+   "ProcessID": 3536,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558454097785
+  },
+  {
+   "OID": "5ce41f522c5fed2922b6fb0f",
+   "ProcessID": 2236,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558454097894
+  },
+  {
+   "OID": "5ce41f522c5fed2922b6fb10",
+   "ProcessID": 2112,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\images.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\images.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558454098066
+  },
+  {
+   "OID": "5ce41f552c5fed2922b6fd4f",
+   "ProcessID": 1816,
+   "ParentPID": 2200,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454101035
+  },
+  {
+   "OID": "5ce41f552c5fed2922b6fd50",
+   "ProcessID": 2556,
+   "ParentPID": 328,
+   "CommandLine": "powershell Add-MpPreference -ExclusionPath C:\\",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454101378
+  },
+  {
+   "OID": "5ce41f562c5fed2922b6ff32",
+   "ProcessID": 3164,
+   "ParentPID": 2200,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454101863
+  },
+  {
+   "OID": "5ce41f592c5fed2922b70c98",
+   "ProcessID": 2252,
+   "ParentPID": 2200,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\cJBeJrnhe.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\cJBeJrnhe.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454105488
+  },
+  {
+   "OID": "5ce41f592c5fed2922b70c99",
+   "ProcessID": 856,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\vcigEmzbe.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\vcigEmzbe.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454105488
+  },
+  {
+   "OID": "5ce41f5a2c5fed2922b70f90",
+   "ProcessID": 3508,
+   "ParentPID": 856,
+   "CommandLine": "netsh advfirewall firewall add rule name=\"3389\" dir=in action=allow protocol=TCP localport=3389",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454105597
+  },
+  {
+   "OID": "5ce41f5b2c5fed2922b7220c",
+   "ProcessID": 2504,
+   "ParentPID": 1816,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454106753
+  },
+  {
+   "OID": "5ce41f5b2c5fed2922b72973",
+   "ProcessID": 1288,
+   "ParentPID": 1816,
+   "CommandLine": "\"C:\\Windows\\system32\\pkgmgr.exe\" /n:%temp%\\ellocnak.xml",
+   "Image": "C:\\Windows\\system32\\pkgmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454107378
+  },
+  {
+   "OID": "5ce41f5b2c5fed2922b72974",
+   "ProcessID": 480,
+   "ParentPID": 1288,
+   "CommandLine": "\"C:\\Windows\\system32\\dism.exe\" /online /norestart /apply-unattend:\"C:\\Users\\admin\\AppData\\Local\\Temp\\ellocnak.xml\"",
+   "Image": "C:\\Windows\\system32\\dism.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454107425
+  },
+  {
+   "OID": "5ce41f5b2c5fed2922b72976",
+   "ProcessID": 3668,
+   "ParentPID": 480,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558454107472
+  },
+  {
+   "OID": "5ce41f612c5fed2922b73430",
+   "ProcessID": 2768,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558454113160
+  },
+  {
+   "OID": "5ce41f612c5fed2922b73431",
+   "ProcessID": 4040,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\uwotm8.exe\"",
+   "Image": "C:\\Users\\admin\\Downloads\\uwotm8.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1558454113410
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ce41f5b2c5fed2922b72974",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41f552c5fed2922b6fd50",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f592c5fed2922b70c99",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41f592c5fed2922b70c99",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f592c5fed2922b70c98",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b11a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b11a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b119",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b119",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f562c5fed2922b6ff32",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b11a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b119",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b11a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41f552c5fed2922b6fd4f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b119",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b11a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b119",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b119",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41f4e2c5fed2922b6f4ff",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41f4b2c5fed2922b6db82",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f4b2c5fed2922b6d731",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41f4b2c5fed2922b6db82",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f4b2c5fed2922b6d732",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f4b2c5fed2922b6d731",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b6931f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f4a2c5fed2922b6d200",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b472",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69321",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69320",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69320",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69321",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69321",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b6931f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b6931f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69320",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b6931f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b474",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69321",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69320",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b6931f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b11c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41f462c5fed2922b6b11b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69320",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69321",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69321",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b6931f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b6931f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41eff2c5fed2922b6aa74",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41f072c5fed2922b6afe0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e372c5fed2922b54c59",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eff2c5fed2922b6aa72",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41efd2c5fed2922b69ebb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efd2c5fed2922b6a129",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41efd2c5fed2922b69ebb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ecc2c5fed2922b65fdd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ecc2c5fed2922b65fdd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ecc2c5fed2922b65fdd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ecc2c5fed2922b65fdd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41efb2c5fed2922b69322",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ecc2c5fed2922b65fdd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ecc2c5fed2922b65fdd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ed82c5fed2922b691db",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ed22c5fed2922b6899a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ed82c5fed2922b691dc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ed32c5fed2922b68f0a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ed22c5fed2922b68998",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ed02c5fed2922b680ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ed02c5fed2922b680ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ecf2c5fed2922b67933",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ecf2c5fed2922b67932",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ecf2c5fed2922b67357",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ece2c5fed2922b66e4a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64815",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64815",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64815",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64816",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64816",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ecc2c5fed2922b65fe1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64816",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64815",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64816",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ecc2c5fed2922b65fe3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64815",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64815",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64816",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41eae2c5fed2922b624e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ec22c5fed2922b65f32",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41eb72c5fed2922b650bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41eb72c5fed2922b650bb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ea02c5fed2922b60301",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ea02c5fed2922b60301",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ea02c5fed2922b60301",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eb62c5fed2922b64817",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41ea02c5fed2922b60301",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ea02c5fed2922b60301",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ea62c5fed2922b61cae",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ea92c5fed2922b6236a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41eaf2c5fed2922b62585",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41eaf2c5fed2922b62583",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41eaf2c5fed2922b62583",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41eaf2c5fed2922b62583",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eaf2c5fed2922b62584",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eaf2c5fed2922b62585",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41eaf2c5fed2922b62585",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eaf2c5fed2922b62584",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41eaf2c5fed2922b62583",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e8b2c5fed2922b5e8e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ea52c5fed2922b618dc",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ea52c5fed2922b618dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ea42c5fed2922b60f78",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e992c5fed2922b601ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e992c5fed2922b601ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e992c5fed2922b601ca",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e992c5fed2922b601ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41ea32c5fed2922b603d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e992c5fed2922b601ca",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e992c5fed2922b601ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e972c5fed2922b5fdcd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e912c5fed2922b5f5b8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e962c5fed2922b5fbde",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e8d2c5fed2922b5eee8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e8b2c5fed2922b5e8e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e8d2c5fed2922b5eee6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e752c5fed2922b59150",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e752c5fed2922b59150",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e892c5fed2922b5d640",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e8b2c5fed2922b5e8e8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e8b2c5fed2922b5e8e8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e8b2c5fed2922b5e8e8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e8b2c5fed2922b5e8e8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e892c5fed2922b5d641",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e372c5fed2922b54c57",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e872c5fed2922b5bb59",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e752c5fed2922b59150",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e372c5fed2922b54c4e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e752c5fed2922b59150",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e882c5fed2922b5c1af",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e872c5fed2922b5bb59",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e872c5fed2922b5bb59",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e872c5fed2922b5bb59",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e872c5fed2922b5bb59",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e882c5fed2922b5c1b0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e882c5fed2922b5c1af",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e872c5fed2922b5bb59",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e862c5fed2922b5aa94",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e752c5fed2922b59150",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e862c5fed2922b5aa94",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e852c5fed2922b5939d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e752c5fed2922b59150",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e752c5fed2922b59150",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e752c5fed2922b59150",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e852c5fed2922b593a0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e752c5fed2922b59150",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e852c5fed2922b5939f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e852c5fed2922b5939c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e752c5fed2922b59150",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e792c5fed2922b591fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e6e2c5fed2922b59006",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e6e2c5fed2922b59007",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e642c5fed2922b5868e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e642c5fed2922b5868c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e642c5fed2922b57ff9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e642c5fed2922b57ff9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e572c5fed2922b56fba",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e532c5fed2922b56f05",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e532c5fed2922b56f05",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e632c5fed2922b57073",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e572c5fed2922b56fba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e632c5fed2922b57075",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e372c5fed2922b54c5d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e532c5fed2922b56f05",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e532c5fed2922b56f05",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e532c5fed2922b56f05",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e572c5fed2922b56fba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e4c2c5fed2922b568f3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e4a2c5fed2922b55793",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e4c2c5fed2922b568f1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e4c2c5fed2922b568f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e4b2c5fed2922b560cd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e4b2c5fed2922b560cd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e4a2c5fed2922b5577c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e402c5fed2922b556ba",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e402c5fed2922b556ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e402c5fed2922b556ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e402c5fed2922b556ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e402c5fed2922b556ba",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce41e402c5fed2922b556ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce41e372c5fed2922b55399",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

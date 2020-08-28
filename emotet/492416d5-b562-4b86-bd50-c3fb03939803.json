@@ -1,0 +1,77 @@
+{
+ "Name": "EmotetWithWifiExploit.exe",
+ "Md5": "ff1f8520175ef792b404f722fc681776",
+ "UUID": "492416d5-b562-4b86-bd50-c3fb03939803",
+ "Processes": [
+  {
+   "OID": "5e59dd196fc02123effe6a8b",
+   "ProcessID": 1692,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\EmotetWithWifiExploit.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\EmotetWithWifiExploit.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1582947609288
+  },
+  {
+   "OID": "5e59dd1a6fc02123effe6cc5",
+   "ProcessID": 2604,
+   "ParentPID": 1692,
+   "CommandLine": "cmd.exe /C move /Y \"C:\\Users\\admin\\AppData\\Local\\Temp\\EmotetWithWifiExploit.exe\" \"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\watchvsgd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582947610272
+  },
+  {
+   "OID": "5e59dd1a6fc02123effe6cc7",
+   "ProcessID": 2872,
+   "ParentPID": 1692,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\watchvsgd.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\watchvsgd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582947610335
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e59dd1a6fc02123effe6cc7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e59dd1a6fc02123effe6cc7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e59dd1a6fc02123effe6cc7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e59dd196fc02123effe61ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e59dd196fc02123effe6a8b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e59dd1a6fc02123effe6cc5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e59dd196fc02123effe6a8b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

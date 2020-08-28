@@ -1,0 +1,202 @@
+{
+ "Name": "crss.exe",
+ "Md5": "426f3e86ebada9eb4301d195eba508f3",
+ "UUID": "519d6da3-ab32-421d-8973-4d2ac5f83ab1",
+ "Processes": [
+  {
+   "OID": "5c990e5bddc8460aaafc8552",
+   "ProcessID": 2536,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\crss.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\crss.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1553534554972
+  },
+  {
+   "OID": "5c990e60ddc8460aaafc8f91",
+   "ProcessID": 2708,
+   "ParentPID": 2536,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\crss.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\crss.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553534559754
+  },
+  {
+   "OID": "5c990e70ddc8460aaafc916b",
+   "ProcessID": 2592,
+   "ParentPID": 2536,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn WSReset /tr \"C:\\Users\\admin\\AppData\\Roaming\\AuthFWWizFwk\\svchost.exe\" /sc  minute /mo 1 /F",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553534575941
+  },
+  {
+   "OID": "5c990e74ddc8460aaafc947e",
+   "ProcessID": 2372,
+   "ParentPID": 3624,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\AuthFWWizFwk\\svchost.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\AuthFWWizFwk\\svchost.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1553534580254
+  },
+  {
+   "OID": "5c990e7bddc8460aaafc976c",
+   "ProcessID": 292,
+   "ParentPID": 2372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\AuthFWWizFwk\\svchost.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\AuthFWWizFwk\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553534586676
+  },
+  {
+   "OID": "5c990e8bddc8460aaafc98b1",
+   "ProcessID": 1172,
+   "ParentPID": 2372,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn WSReset /tr \"C:\\Users\\admin\\AppData\\Roaming\\AuthFWWizFwk\\svchost.exe\" /sc  minute /mo 1 /F",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553534602926
+  },
+  {
+   "OID": "5c990eb0ddc8460aaafc9c36",
+   "ProcessID": 2564,
+   "ParentPID": 3624,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\AuthFWWizFwk\\svchost.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\AuthFWWizFwk\\svchost.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1553534640004
+  },
+  {
+   "OID": "5c990eb4ddc8460aaafc9d5d",
+   "ProcessID": 2724,
+   "ParentPID": 2564,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\AuthFWWizFwk\\svchost.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\AuthFWWizFwk\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553534643972
+  },
+  {
+   "OID": "5c990ec4ddc8460aaafc9e75",
+   "ProcessID": 3932,
+   "ParentPID": 2564,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn WSReset /tr \"C:\\Users\\admin\\AppData\\Roaming\\AuthFWWizFwk\\svchost.exe\" /sc  minute /mo 1 /F",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553534660176
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c990ec4ddc8460aaafc9e75",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c990eb0ddc8460aaafc9c36",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c990eb0ddc8460aaafc9c36",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c990e8bddc8460aaafc98b1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c990e74ddc8460aaafc947e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c990e74ddc8460aaafc947e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c990e5bddc8460aaafc8543",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c990e70ddc8460aaafc916b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c990e5bddc8460aaafc8552",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c990e5bddc8460aaafc8552",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c990e5bddc8460aaafc8552",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c990e5bddc8460aaafc8552",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c990e60ddc8460aaafc8f91",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c990e60ddc8460aaafc8f91",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c990e60ddc8460aaafc8f91",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c990e60ddc8460aaafc8f91",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c990e5bddc8460aaafc8552",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c990e5bddc8460aaafc8542",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

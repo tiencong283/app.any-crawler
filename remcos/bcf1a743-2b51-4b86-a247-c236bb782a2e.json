@@ -1,0 +1,81 @@
+{
+ "Name": "rr2.dat",
+ "Md5": "e0b81ef173d795255568c87983719402",
+ "UUID": "bcf1a743-2b51-4b86-a247-c236bb782a2e",
+ "Processes": [
+  {
+   "OID": "5cd0a119414da80f6ac1fb33",
+   "ProcessID": 3868,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\rr2.dat.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\rr2.dat.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1557176600669
+  },
+  {
+   "OID": "5cd0a119414da80f6ac1fdde",
+   "ProcessID": 2516,
+   "ParentPID": 3868,
+   "CommandLine": "\"C:\\Windows\\System32\\cscript.exe\" //B //Nologo C:\\Users\\admin\\wiawow64.vbs",
+   "Image": "C:\\Windows\\System32\\cscript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557176601419
+  },
+  {
+   "OID": "5cd0a11a414da80f6ac1fff5",
+   "ProcessID": 2196,
+   "ParentPID": 3868,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557176601966
+  },
+  {
+   "OID": "5cd0a129414da80f6ac20e64",
+   "ProcessID": 3828,
+   "ParentPID": 2196,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\uninstall.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557176616919
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cd0a11a414da80f6ac1fff5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5cd0a11a414da80f6ac1fff5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd0a119414da80f6ac1fdde",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd0a119414da80f6ac1fdde",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd0a119414da80f6ac1fb33",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5cd0a119414da80f6ac1fb33",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "Name": "Server.exe",
+ "Md5": "e3d0d1c17ebe317669282b73a51235b0",
+ "UUID": "d0cb83f1-1016-4edd-85b0-e45d13c27313",
+ "Processes": [
+  {
+   "OID": "5f15de122b54f24d991ffd66",
+   "ProcessID": 2476,
+   "ParentPID": 1732,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595268625609
+  },
+  {
+   "OID": "5f15de182b54f24d9920009b",
+   "ProcessID": 2452,
+   "ParentPID": 2476,
+   "CommandLine": "\"C:\\Users\\admin\\Spoofer.exe\" ",
+   "Image": "C:\\Users\\admin\\Spoofer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595268632141
+  },
+  {
+   "OID": "5f15de1e2b54f24d99200661",
+   "ProcessID": 1860,
+   "ParentPID": 2452,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\Spoofer.exe\" \"Spoofer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595268638266
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f15de182b54f24d9920009b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15de182b54f24d9920009b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15de182b54f24d9920009b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f15de182b54f24d9920009b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15de182b54f24d9920009b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15de182b54f24d9920009b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f15de182b54f24d9920009b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f15de122b54f24d991ffd66",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f15de122b54f24d991ffd66",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

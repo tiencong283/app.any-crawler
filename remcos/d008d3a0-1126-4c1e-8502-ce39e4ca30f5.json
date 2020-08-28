@@ -1,0 +1,167 @@
+{
+ "Name": "a.exe",
+ "Md5": "e52ef57862dd1dd98fb035b700ab754a",
+ "UUID": "d008d3a0-1126-4c1e-8502-ce39e4ca30f5",
+ "Processes": [
+  {
+   "OID": "5d1f68972c306a3e60e6050a",
+   "ProcessID": 1076,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\a.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\a.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1562339479615
+  },
+  {
+   "OID": "5d1f68b32c306a3e60e60cc3",
+   "ProcessID": 312,
+   "ParentPID": 1076,
+   "CommandLine": "\u0001C:\\Users\\admin\\Desktop\\a.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\a.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562339507553
+  },
+  {
+   "OID": "5d1f68d92c306a3e60e60ee0",
+   "ProcessID": 3032,
+   "ParentPID": 312,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562339544803
+  },
+  {
+   "OID": "5d1f68da2c306a3e60e613c4",
+   "ProcessID": 3364,
+   "ParentPID": 3032,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\hpsupport\\hpsupport.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562339546084
+  },
+  {
+   "OID": "5d1f68da2c306a3e60e613c6",
+   "ProcessID": 1020,
+   "ParentPID": 3364,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\hpsupport\\hpsupport.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\hpsupport\\hpsupport.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562339546147
+  },
+  {
+   "OID": "5d1f68e22c306a3e60e64aa0",
+   "ProcessID": 3512,
+   "ParentPID": 1020,
+   "CommandLine": "\u0001:\\Users\\admin\\AppData\\Roaming\\hpsupport\\hpsupport.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\hpsupport\\hpsupport.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562339554522
+  },
+  {
+   "OID": "5d1f68e52c306a3e60e64cb3",
+   "ProcessID": 1524,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Windows\\system32\\notepad.exe\" ",
+   "Image": "C:\\Windows\\system32\\notepad.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1562339557178
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d1f68972c306a3e60e5fda7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f69032c306a3e60e65d59",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f68e22c306a3e60e64aa0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f68e22c306a3e60e64aa0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f68e22c306a3e60e64aa0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f68e22c306a3e60e64aa0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f68e22c306a3e60e64aa0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f68e52c306a3e60e64cb3",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f68da2c306a3e60e613c6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f68d92c306a3e60e60ee0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f68b32c306a3e60e60cc3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f68b32c306a3e60e60cc3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f68b32c306a3e60e60cc3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f68b32c306a3e60e60cc3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f68972c306a3e60e6050a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

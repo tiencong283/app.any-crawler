@@ -1,0 +1,77 @@
+{
+ "Name": "TMH Inc.の注文リスト72136658,pdf.exe",
+ "Md5": "5dbb808859b3183203deaf0db87a18c4",
+ "UUID": "f231d00b-ed9f-4366-b4c4-b4b2725c8987",
+ "Processes": [
+  {
+   "OID": "5cfdec259df3be4f1f7c2fc8",
+   "ProcessID": 1832,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\TMH Inc.の注文リスト72136658,pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\TMH Inc.の注文リスト72136658,pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560144933071
+  },
+  {
+   "OID": "5cfdec299df3be4f1f7c324f",
+   "ProcessID": 3132,
+   "ParentPID": 1832,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Cache.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Cache.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560144937539
+  },
+  {
+   "OID": "5cfdec2a9df3be4f1f7c325b",
+   "ProcessID": 3332,
+   "ParentPID": 3132,
+   "CommandLine": "ctfmon.exe",
+   "Image": "C:\\Windows\\system32\\ctfmon.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560144937930
+  },
+  {
+   "OID": "5cfdec2c9df3be4f1f7c34ee",
+   "ProcessID": 404,
+   "ParentPID": 3332,
+   "CommandLine": "logagent.exe",
+   "Image": "C:\\Windows\\system32\\logagent.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560144939758
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cfdec2c9df3be4f1f7c34ee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfdec2c9df3be4f1f7c34ee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfdec2a9df3be4f1f7c325b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cfdec2a9df3be4f1f7c325b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfdec299df3be4f1f7c324f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfdec259df3be4f1f7c2fc8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

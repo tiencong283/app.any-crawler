@@ -1,0 +1,72 @@
+{
+ "Name": "MM.exe",
+ "Md5": "e3b50e6407d22f7dfd215592df716a3f",
+ "UUID": "352606c7-6188-4f54-b7d6-f064bfc245fd",
+ "Processes": [
+  {
+   "OID": "5e4535fa5319e47b94b8c37e",
+   "ProcessID": 3808,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\MM.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\MM.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581594106331
+  },
+  {
+   "OID": "5e4535fa5319e47b94b8c37f",
+   "ProcessID": 3740,
+   "ParentPID": 3808,
+   "CommandLine": "C:\\Windows\\system32\\rundll32.exe C:\\Windows\\system32\\gameux.dll,GameUXShim {29dfdaf6-2655-4d7d-9dae-112ce811cf33};C:\\Users\\admin\\AppData\\Local\\Temp\\MM.exe;3808",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581594106456
+  },
+  {
+   "OID": "5e4536295319e47b94b8d3b7",
+   "ProcessID": 2448,
+   "ParentPID": 3808,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msiltcfg\\msiltcfg.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msiltcfg\\msiltcfg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581594153268
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e4535fa5319e47b94b8c37e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4535fa5319e47b94b8c37e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e4535fa5319e47b94b8c37e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4535fa5319e47b94b8c37f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e4535fa5319e47b94b8c37f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4535fa5319e47b94b8c37e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  }
+ ]
+}

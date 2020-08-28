@@ -1,0 +1,79 @@
+{
+ "Name": "Urgent order inquiry TTX43647,pdf.exe",
+ "Md5": "3505f79ae064d3d1b16e1adc4447ee0e",
+ "UUID": "7a39f983-e8cf-45ee-bca2-8a4a2adf470b",
+ "Processes": [
+  {
+   "OID": "5dd4fafc07281c42c8201f27",
+   "ProcessID": 2472,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Urgent order inquiry TTX43647,pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Urgent order inquiry TTX43647,pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574238971825
+  },
+  {
+   "OID": "5dd4fafd07281c42c82022f3",
+   "ProcessID": 2712,
+   "ParentPID": 2472,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\Jndrs.js\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574238972762
+  },
+  {
+   "OID": "5dd4fb0307281c42c82027fb",
+   "ProcessID": 3152,
+   "ParentPID": 2712,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Qqqilv.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Qqqilv.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574238979168
+  },
+  {
+   "OID": "5dd4fb1307281c42c8202ced",
+   "ProcessID": 3048,
+   "ParentPID": 3152,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574238995246
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dd4fb0307281c42c82027fb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd4fb0307281c42c82027fb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dd4fb1307281c42c8202ced",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd4fb0307281c42c82027fb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd4fafc07281c42c8201f27",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5dd4fafc07281c42c8201f27",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

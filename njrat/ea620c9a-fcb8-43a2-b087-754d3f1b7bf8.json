@@ -1,0 +1,82 @@
+{
+ "Name": "RCE-Cy.exe",
+ "Md5": "6271d9268c2f10cb23ad12560f6616fc",
+ "UUID": "ea620c9a-fcb8-43a2-b087-754d3f1b7bf8",
+ "Processes": [
+  {
+   "OID": "5eff1fabe8529e4619f0508d",
+   "ProcessID": 852,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RCE-Cy.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RCE-Cy.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593778091367
+  },
+  {
+   "OID": "5eff1fb1e8529e4619f05f80",
+   "ProcessID": 2436,
+   "ParentPID": 852,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Sys64\\System.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Sys64\\System.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593778097039
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eff1fb1e8529e4619f05f80",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eff1fb1e8529e4619f05f80",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eff1fb1e8529e4619f05f80",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5eff1fb1e8529e4619f05f80",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5eff1fb1e8529e4619f05f80",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5eff1fabe8529e4619f0508d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eff1fabe8529e4619f0508d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eff1fabe8529e4619f0508d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eff1fabe8529e4619f0508d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

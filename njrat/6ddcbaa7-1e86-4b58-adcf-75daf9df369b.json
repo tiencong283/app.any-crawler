@@ -1,0 +1,105 @@
+{
+ "Name": "Fortnite Account checker .exe",
+ "Md5": "3c008246651f9340d07c631b0699f705",
+ "UUID": "6ddcbaa7-1e86-4b58-adcf-75daf9df369b",
+ "Processes": [
+  {
+   "OID": "5efec443cc5f674c6f45e42f",
+   "ProcessID": 2592,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Fortnite Account checker .exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Fortnite Account checker .exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593754691235
+  },
+  {
+   "OID": "5efec444cc5f674c6f45ebe5",
+   "ProcessID": 3472,
+   "ParentPID": 2592,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593754692266
+  },
+  {
+   "OID": "5efec446cc5f674c6f45f336",
+   "ProcessID": 2540,
+   "ParentPID": 2592,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593754693375
+  },
+  {
+   "OID": "5efec446cc5f674c6f45f337",
+   "ProcessID": 3332,
+   "ParentPID": 2540,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Fortnite Account checker .exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Fortnite Account checker .exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593754693485
+  },
+  {
+   "OID": "5efec446cc5f674c6f45f9fa",
+   "ProcessID": 3160,
+   "ParentPID": 3332,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593754693938
+  },
+  {
+   "OID": "5efec44ccc5f674c6f45ff8f",
+   "ProcessID": 2944,
+   "ParentPID": 3160,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593754700266
+  },
+  {
+   "OID": "5efec457cc5f674c6f460705",
+   "ProcessID": 3536,
+   "ParentPID": 3332,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn Windows host service  /tr \"C:\\Users\\admin\\AppData\\Roaming\\Windows host service \\Windows host service.exe\" /sc  minute /mo 1 /F",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593754711797
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5efec446cc5f674c6f45f9fa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efec446cc5f674c6f45f337",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5efec446cc5f674c6f45f9fa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5efec443cc5f674c6f45e42f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5efec443cc5f674c6f45e42f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "Name": "WindowsFormsApp4.exe",
+ "Md5": "86a0c8eae2b2b4cf47b036f4d8b8cd79",
+ "UUID": "0adc0a9c-e933-41b0-bab4-1d974285a145",
+ "Processes": [
+  {
+   "OID": "5f253f946a95706cd2dfab17",
+   "ProcessID": 1092,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsFormsApp4.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsFormsApp4.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596276628536
+  },
+  {
+   "OID": "5f253f9b6a95706cd2dfb435",
+   "ProcessID": 1764,
+   "ParentPID": 1092,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\csrss.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\csrss.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596276635208
+  },
+  {
+   "OID": "5f253fa26a95706cd2dfba2f",
+   "ProcessID": 2552,
+   "ParentPID": 1764,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\csrss.exe\" \"csrss.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596276641474
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f253f9b6a95706cd2dfb435",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f253f9b6a95706cd2dfb435",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f253f9b6a95706cd2dfb435",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f253f9b6a95706cd2dfb435",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f253f9b6a95706cd2dfb435",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f253f9b6a95706cd2dfb435",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f253f9b6a95706cd2dfb435",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f253f946a95706cd2dfab17",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f253f946a95706cd2dfab17",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

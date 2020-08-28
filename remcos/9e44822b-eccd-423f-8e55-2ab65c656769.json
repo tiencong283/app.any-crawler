@@ -1,0 +1,185 @@
+{
+ "Name": "test.exe",
+ "Md5": "f7a9458c847e5c3ad15b17a4dc25ec85",
+ "UUID": "9e44822b-eccd-423f-8e55-2ab65c656769",
+ "Processes": [
+  {
+   "OID": "5cb817c23e4189200487c6e7",
+   "ProcessID": 3084,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\test.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\test.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1555568578215
+  },
+  {
+   "OID": "5cb817ca3e4189200487c9b5",
+   "ProcessID": 2368,
+   "ParentPID": 3084,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\test.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\test.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555568586668
+  },
+  {
+   "OID": "5cb817d43e4189200487ccee",
+   "ProcessID": 2452,
+   "ParentPID": 2368,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555568595606
+  },
+  {
+   "OID": "5cb817d53e4189200487d14f",
+   "ProcessID": 3880,
+   "ParentPID": 2452,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\taco\\cvlc.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555568596840
+  },
+  {
+   "OID": "5cb817d53e4189200487d151",
+   "ProcessID": 2504,
+   "ParentPID": 3880,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\taco\\cvlc.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\taco\\cvlc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555568596903
+  },
+  {
+   "OID": "5cb817dd3e4189200487d5c1",
+   "ProcessID": 3792,
+   "ParentPID": 2504,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\taco\\cvlc.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\taco\\cvlc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555568605465
+  },
+  {
+   "OID": "5cb817e83e4189200487d8bc",
+   "ProcessID": 3732,
+   "ParentPID": 3792,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\taco\\cvlc.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\ulfehbargdwxaljybuvfun\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\taco\\cvlc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555568615934
+  },
+  {
+   "OID": "5cb817e83e4189200487d8bd",
+   "ProcessID": 3844,
+   "ParentPID": 3792,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\taco\\cvlc.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\entwitlltloccrfcsfphxszlg\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\taco\\cvlc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555568615950
+  },
+  {
+   "OID": "5cb817e83e4189200487d8be",
+   "ProcessID": 3932,
+   "ParentPID": 3792,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\taco\\cvlc.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\hhypimwmhtggnftgcqcaifucpfupd\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\taco\\cvlc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555568615950
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cb817e83e4189200487d8be",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5cb817e83e4189200487d8bc",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5cb817e83e4189200487d8bc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb817e83e4189200487d8bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb817e83e4189200487d8be",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5cb817dd3e4189200487d5c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cb817dd3e4189200487d5c1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb817dd3e4189200487d5c1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cb817d53e4189200487d151",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cb817d43e4189200487ccee",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5cb817ca3e4189200487c9b5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5cb817ca3e4189200487c9b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cb817ca3e4189200487c9b5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb817ca3e4189200487c9b5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb817c23e4189200487c6e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

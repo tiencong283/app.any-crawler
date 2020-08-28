@@ -1,0 +1,155 @@
+{
+ "Name": "DE-5543954HT_PDF (2).exe",
+ "Md5": "07296a93580173bec8da4484debeec78",
+ "UUID": "f84bc83f-ad58-46a8-b91a-ad8028a64a79",
+ "Processes": [
+  {
+   "OID": "5c6e156a5fe179141923f062",
+   "ProcessID": 3640,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\DE-5543954HT_PDF (2).exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\DE-5543954HT_PDF (2).exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1550718313860
+  },
+  {
+   "OID": "5c6e15d45fe17914192409cb",
+   "ProcessID": 3744,
+   "ParentPID": 3640,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\DE-5543954HT_PDF (2).exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\DE-5543954HT_PDF (2).exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550718420000
+  },
+  {
+   "OID": "5c6e16065fe1791419241dcf",
+   "ProcessID": 3968,
+   "ParentPID": 3744,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550718469532
+  },
+  {
+   "OID": "5c6e16075fe1791419242374",
+   "ProcessID": 1176,
+   "ParentPID": 3968,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550718470813
+  },
+  {
+   "OID": "5c6e16075fe1791419242376",
+   "ProcessID": 3604,
+   "ParentPID": 1176,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550718470875
+  },
+  {
+   "OID": "5c6e16405fe1791419242a87",
+   "ProcessID": 4032,
+   "ParentPID": 3604,
+   "CommandLine": "\u0001:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550718528516
+  },
+  {
+   "OID": "5c6e166f5fe179141924415d",
+   "ProcessID": 2396,
+   "ParentPID": 4032,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550718575453
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c6e16405fe1791419242a87",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6e16405fe1791419242a87",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6e16405fe1791419242a87",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060",
+    "T1004"
+   ]
+  },
+  {
+   "ProcessOID": "5c6e16405fe1791419242a87",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c6e16075fe1791419242376",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c6e16065fe1791419241dcf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5c6e15d45fe17914192409cb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5c6e15d45fe17914192409cb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060",
+    "T1004"
+   ]
+  },
+  {
+   "ProcessOID": "5c6e15d45fe17914192409cb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c6e15d45fe17914192409cb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6e15d45fe17914192409cb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6e15d45fe17914192409cb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6e156a5fe179141923f062",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

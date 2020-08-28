@@ -1,0 +1,63 @@
+{
+ "Name": "sample1.virus",
+ "Md5": "8db38c7f70214ee08e166cde8b9163c6",
+ "UUID": "5b828f6a-64a9-4003-bc3f-c1354a225670",
+ "Processes": [
+  {
+   "OID": "5e54856c5ea30d5ad8f495e7",
+   "ProcessID": 3736,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sample1.virus.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sample1.virus.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1582597483775
+  },
+  {
+   "OID": "5e5485705ea30d5ad8f498d6",
+   "ProcessID": 628,
+   "ParentPID": 3736,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\VSSVC\\VSSVC.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\VSSVC\\VSSVC.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582597488385
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e5485705ea30d5ad8f498d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e54856c5ea30d5ad8f48e85",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e5485705ea30d5ad8f498d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e54856c5ea30d5ad8f495e7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e54856c5ea30d5ad8f495e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e54856c5ea30d5ad8f495e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "Name": "cscript.exe",
+ "Md5": "36c8461b8d34293c2e660cdd23366517",
+ "UUID": "e77bf071-4a6b-4109-b593-1be752333a33",
+ "Processes": [
+  {
+   "OID": "5cce0a8bd3afe94aaf1f9f9f",
+   "ProcessID": 1796,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cscript.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cscript.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1557006986599
+  },
+  {
+   "OID": "5cce0a8cd3afe94aaf1fa3a6",
+   "ProcessID": 2304,
+   "ParentPID": 1796,
+   "CommandLine": "\"C:\\Windows\\System32\\cscript.exe\" //B //Nologo C:\\Users\\admin\\RtDCpl64.vbs",
+   "Image": "C:\\Windows\\System32\\cscript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557006987927
+  },
+  {
+   "OID": "5cce0a8dd3afe94aaf1fa84e",
+   "ProcessID": 1728,
+   "ParentPID": 1796,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557006988896
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cce0a8dd3afe94aaf1fa84e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cce0a8cd3afe94aaf1fa3a6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cce0a8cd3afe94aaf1fa3a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cce0a8bd3afe94aaf1f9f9f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5cce0a8bd3afe94aaf1f9f9f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

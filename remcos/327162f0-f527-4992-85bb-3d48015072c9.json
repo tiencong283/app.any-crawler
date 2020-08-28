@@ -1,0 +1,85 @@
+{
+ "Name": "REHOO.exe",
+ "Md5": "100e62f12730a4a177134befc8c3087d",
+ "UUID": "327162f0-f527-4992-85bb-3d48015072c9",
+ "Processes": [
+  {
+   "OID": "5ce5f94532ea9e3364411629",
+   "ProcessID": 3088,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\REHOO.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\REHOO.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1558575428936
+  },
+  {
+   "OID": "5ce5f94632ea9e33644118ce",
+   "ProcessID": 2544,
+   "ParentPID": 3088,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\TVcard.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\TVcard.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558575429420
+  },
+  {
+   "OID": "5ce5f9f932ea9e3364411f41",
+   "ProcessID": 1320,
+   "ParentPID": 2544,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\TVcard.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\TVcard.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558575609827
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ce5f9f932ea9e3364411f41",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce5f9f932ea9e3364411f41",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce5f94632ea9e33644118ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce5f94632ea9e33644118ce",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ce5f9f932ea9e3364411f41",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce5f94632ea9e33644118ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce5f94532ea9e3364410e96",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce5f94632ea9e33644118ce",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce5f94532ea9e3364411629",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

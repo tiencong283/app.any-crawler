@@ -1,0 +1,147 @@
+{
+ "Name": "버블파이터 지옥 에디렛0.7v.exe",
+ "Md5": "f80d26d1e2a8dffa429172493689ec10",
+ "UUID": "93558544-308b-41c6-a147-41329662611a",
+ "Processes": [
+  {
+   "OID": "5f377e4774a25074fbf4ef12",
+   "ProcessID": 2056,
+   "ParentPID": 356,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\버블파이터 지옥 에디렛0.7v.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\버블파이터 지옥 에디렛0.7v.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597472327128
+  },
+  {
+   "OID": "5f377e4774a25074fbf4ef13",
+   "ProcessID": 500,
+   "ParentPID": 2056,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\CDS.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\CDS.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597472327534
+  },
+  {
+   "OID": "5f377e4974a25074fbf4f640",
+   "ProcessID": 2496,
+   "ParentPID": 500,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\crypted.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\crypted.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597472328305
+  },
+  {
+   "OID": "5f377e4f74a25074fbf4fecc",
+   "ProcessID": 3796,
+   "ParentPID": 2496,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597472334888
+  },
+  {
+   "OID": "5f377e5574a25074fbf50561",
+   "ProcessID": 1768,
+   "ParentPID": 3796,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe\" \"System32.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597472341165
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f377e6374a25074fbf51461",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f377e4f74a25074fbf4fecc",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f377e4f74a25074fbf4fecc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f377e4f74a25074fbf4fecc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f377e4f74a25074fbf4fecc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f377e4f74a25074fbf4fecc",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f377e4f74a25074fbf4fecc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f377e4f74a25074fbf4fecc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f377e4974a25074fbf4f640",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f377e4974a25074fbf4f640",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f377e4774a25074fbf4ef13",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f377e4774a25074fbf4ef13",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f377e4974a25074fbf4f640",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f377e4774a25074fbf4ef13",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f377e4774a25074fbf4ef12",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f377e4774a25074fbf4e68a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  }
+ ]
+}

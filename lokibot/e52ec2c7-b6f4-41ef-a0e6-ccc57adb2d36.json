@@ -1,0 +1,195 @@
+{
+ "Name": "2",
+ "Md5": "8908eac8785008e5b70fbb016edf37d9",
+ "UUID": "e52ec2c7-b6f4-41ef-a0e6-ccc57adb2d36",
+ "Processes": [
+  {
+   "OID": "5e85c294859d2d122034ac26",
+   "ProcessID": 1756,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585824404146
+  },
+  {
+   "OID": "5e85c29d859d2d122034b73e",
+   "ProcessID": 3400,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\servervarious.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1585824412427
+  },
+  {
+   "OID": "5e85c2a9859d2d122034dc15",
+   "ProcessID": 2868,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe\" ",
+   "Image": "C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1585824425756
+  },
+  {
+   "OID": "5e85c2aa859d2d122034dc1e",
+   "ProcessID": 4036,
+   "ParentPID": 2868,
+   "CommandLine": "\"C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe\" --type=renderer",
+   "Image": "C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585824425990
+  },
+  {
+   "OID": "5e85c2ac859d2d122034e657",
+   "ProcessID": 3568,
+   "ParentPID": 2868,
+   "CommandLine": "\"C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroCEF\\RdrCEF.exe\" --backgroundcolor=16448250",
+   "Image": "C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroCEF\\RdrCEF.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585824428834
+  },
+  {
+   "OID": "5e85c2ad859d2d122034e65d",
+   "ProcessID": 2892,
+   "ParentPID": 3568,
+   "CommandLine": "\"C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroCEF\\RdrCEF.exe\" --type=renderer --disable-3d-apis --disable-databases --disable-direct-npapi-requests --disable-file-system --disable-notifications --disable-shared-workers --disable-direct-write --lang=en-US --lang=en-US --log-severity=disable --product-version=\"ReaderServices/15.23.20053 Chrome/45.0.2454.85\" --device-scale-factor=1 --enable-delegated-renderer --num-raster-threads=2 --gpu-rasterization-msaa-sample-count=8 --content-image-texture-target=3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=\"3568.0.384162745\\693323410\" --allow-no-sandbox-job /prefetch:673131151",
+   "Image": "C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroCEF\\RdrCEF.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585824429302
+  },
+  {
+   "OID": "5e85c2b5859d2d122034f33c",
+   "ProcessID": 2276,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" ",
+   "Image": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1585824436981
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e85c2b5859d2d122034f33c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e85c2b5859d2d122034f33c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e85c294859d2d122034ac26",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e85c294859d2d122034ac26",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e85c294859d2d122034ac26",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e85c2ac859d2d122034e657",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e85c2ac859d2d122034e657",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e85c2a9859d2d122034dc15",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e85c2a9859d2d122034dc15",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e85c2a9859d2d122034dc15",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e85c29f859d2d122034c9d0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e85c294859d2d122034a322",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e85c29d859d2d122034b73e",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e85c29d859d2d122034b73e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e85c294859d2d122034a320",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e85c294859d2d122034a320",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e85c29d859d2d122034b73e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e85c294859d2d122034ac26",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e85c294859d2d122034a31d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e85c294859d2d122034ac26",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e85c294859d2d122034ac26",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

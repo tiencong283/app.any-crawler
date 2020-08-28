@@ -1,0 +1,75 @@
+{
+ "Name": "new_emotet_ad7bfca4e59a6f0c62796570ad9d6822fe32ee3f81d755e03c104e77d36cf2e1",
+ "Md5": "f4ca758e753a12d260254df7ee70ac07",
+ "UUID": "f6f3b7de-01de-4929-b4c6-94bf9266f4d5",
+ "Processes": [
+  {
+   "OID": "5e3d225f4fc54d1a3fa40efe",
+   "ProcessID": 3808,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\new_emotet_ad7bfca4e59a6f0c62796570ad9d6822fe32ee3f81d755e03c104e77d36cf2e1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\new_emotet_ad7bfca4e59a6f0c62796570ad9d6822fe32ee3f81d755e03c104e77d36cf2e1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581064798650
+  },
+  {
+   "OID": "5e3d22634fc54d1a3fa41217",
+   "ProcessID": 3976,
+   "ParentPID": 3808,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\netfxperf\\netfxperf.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\netfxperf\\netfxperf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581064803118
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e3d22634fc54d1a3fa41217",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d22634fc54d1a3fa41217",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d225e4fc54d1a3fa405e0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d22634fc54d1a3fa41217",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d225f4fc54d1a3fa40efe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d225f4fc54d1a3fa40efe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d225f4fc54d1a3fa40efe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d225f4fc54d1a3fa40efe",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

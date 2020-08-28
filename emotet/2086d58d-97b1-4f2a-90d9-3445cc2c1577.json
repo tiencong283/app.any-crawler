@@ -1,0 +1,91 @@
+{
+ "Name": "E3-20200720_121637",
+ "Md5": "badc6978ce1074206bb4d1bce89abe35",
+ "UUID": "2086d58d-97b1-4f2a-90d9-3445cc2c1577",
+ "Processes": [
+  {
+   "OID": "5f15c00a471ba557206fb5b6",
+   "ProcessID": 2836,
+   "ParentPID": 392,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\E3-20200720_121637.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\E3-20200720_121637.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595260937946
+  },
+  {
+   "OID": "5f15c00a471ba557206fb5ca",
+   "ProcessID": 2412,
+   "ParentPID": 2836,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\bitsprx5\\api-ms-win-crt-string-l1-1-0.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\bitsprx5\\api-ms-win-crt-string-l1-1-0.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595260938274
+  },
+  {
+   "OID": "5f15c07b471ba557206fc418",
+   "ProcessID": 2060,
+   "ParentPID": 392,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1595261050555
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f15c07b471ba557206fc418",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f15c00a471ba557206fb5ca",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f15c00a471ba557206fb5ca",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15c00a471ba557206fb5ca",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15c00a471ba557206fb5ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15c00a471ba557206fae2d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f15c00a471ba557206fb5ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f15c00a471ba557206fb5b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15c00a471ba557206fb5b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

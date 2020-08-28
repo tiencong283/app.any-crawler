@@ -1,0 +1,89 @@
+{
+ "Name": "LOx.exe",
+ "Md5": "8b1ddf9beae41fae31d00cc28aab3186",
+ "UUID": "cb4b9ecb-6c82-47c6-81b2-2388ba46d50e",
+ "Processes": [
+  {
+   "OID": "5f0da10c683f377334f61f83",
+   "ProcessID": 1852,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\LOx.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\LOx.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594728715640
+  },
+  {
+   "OID": "5f0da113683f377334f622ad",
+   "ProcessID": 572,
+   "ParentPID": 1852,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594728722187
+  },
+  {
+   "OID": "5f0da118683f377334f62831",
+   "ProcessID": 4056,
+   "ParentPID": 572,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe\" \"server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594728728297
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f0da113683f377334f622ad",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0da113683f377334f622ad",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0da113683f377334f622ad",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f0da113683f377334f622ad",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0da113683f377334f622ad",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0da113683f377334f622ad",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f0da113683f377334f622ad",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f0da10c683f377334f61f83",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f0da10c683f377334f61f83",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

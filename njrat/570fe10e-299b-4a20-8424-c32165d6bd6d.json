@@ -1,0 +1,89 @@
+{
+ "Name": "Gerador De Discord Nitro.exe",
+ "Md5": "c7b8b546f8511c4e8d50767e36489435",
+ "UUID": "570fe10e-299b-4a20-8424-c32165d6bd6d",
+ "Processes": [
+  {
+   "OID": "5ef395c39e1c6b52a0771c03",
+   "ProcessID": 1816,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Gerador De Discord Nitro.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Gerador De Discord Nitro.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593021891609
+  },
+  {
+   "OID": "5ef395cb9e1c6b52a0772564",
+   "ProcessID": 1936,
+   "ParentPID": 1816,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\System32.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\System32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593021898375
+  },
+  {
+   "OID": "5ef395d19e1c6b52a0772a6a",
+   "ProcessID": 3884,
+   "ParentPID": 1936,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\System32.exe\" \"System32.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593021904547
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ef395cb9e1c6b52a0772564",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef395cb9e1c6b52a0772564",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ef395cb9e1c6b52a0772564",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef395cb9e1c6b52a0772564",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef395cb9e1c6b52a0772564",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ef395cb9e1c6b52a0772564",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ef395c39e1c6b52a0771c03",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ef395c39e1c6b52a0771c03",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef395c39e1c6b52a0771c03",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

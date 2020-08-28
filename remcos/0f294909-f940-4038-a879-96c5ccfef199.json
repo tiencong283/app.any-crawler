@@ -1,0 +1,89 @@
+{
+ "Name": "Scan20801_pdf.exe",
+ "Md5": "5dc220f247bde98b9ed2b9ea231901dc",
+ "UUID": "0f294909-f940-4038-a879-96c5ccfef199",
+ "Processes": [
+  {
+   "OID": "5d4414d7a10a5f4c752879b6",
+   "ProcessID": 3128,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Scan20801_pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Scan20801_pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564742871145
+  },
+  {
+   "OID": "5d4414f0a10a5f4c75287c47",
+   "ProcessID": 3968,
+   "ParentPID": 3128,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\Nakedass.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Nakedass.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564742896285
+  },
+  {
+   "OID": "5d44150aa10a5f4c75287de6",
+   "ProcessID": 4040,
+   "ParentPID": 3968,
+   "CommandLine": "\"C:\\Windows\\System32\\regsvr32.exe\"",
+   "Image": "C:\\Windows\\System32\\regsvr32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564742922004
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d44150aa10a5f4c75287de6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d44150aa10a5f4c75287de6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d44150aa10a5f4c75287de6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4414f0a10a5f4c75287c47",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4414f0a10a5f4c75287c47",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d44150aa10a5f4c75287de6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4414f0a10a5f4c75287c47",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1117"
+   ]
+  },
+  {
+   "ProcessOID": "5d4414f0a10a5f4c75287c47",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4414d7a10a5f4c752879b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

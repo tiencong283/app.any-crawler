@@ -1,0 +1,169 @@
+{
+ "Name": "DPM-060719.exe",
+ "Md5": "b0440386f3d3d0ec0353964215d24f58",
+ "UUID": "fe659cb9-08c2-49e2-857c-5050b4a09733",
+ "Processes": [
+  {
+   "OID": "5cfb980fcf00836fdc08511e",
+   "ProcessID": 3104,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\DPM-060719.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\DPM-060719.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1559992334950
+  },
+  {
+   "OID": "5cfb9810cf00836fdc085440",
+   "ProcessID": 3992,
+   "ParentPID": 3104,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Audio-card.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Audio-card.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559992336403
+  },
+  {
+   "OID": "5cfb9811cf00836fdc085445",
+   "ProcessID": 2600,
+   "ParentPID": 3992,
+   "CommandLine": "Utilman.exe",
+   "Image": "C:\\Windows\\system32\\Utilman.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559992336794
+  },
+  {
+   "OID": "5cfb9813cf00836fdc0856ee",
+   "ProcessID": 3024,
+   "ParentPID": 2600,
+   "CommandLine": "\"C:\\Windows\\system32\\Utilman.exe\"",
+   "Image": "C:\\Windows\\system32\\Utilman.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559992339013
+  },
+  {
+   "OID": "5cfb9816cf00836fdc0858c5",
+   "ProcessID": 3928,
+   "ParentPID": 3024,
+   "CommandLine": "C:\\Windows\\system32\\Utilman.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\khdqlxitqncrzmu\"",
+   "Image": "C:\\Windows\\system32\\Utilman.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559992342372
+  },
+  {
+   "OID": "5cfb9816cf00836fdc0858c6",
+   "ProcessID": 4000,
+   "ParentPID": 3024,
+   "CommandLine": "C:\\Windows\\system32\\Utilman.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\vjqjlqtvevuwbsqoxc\"",
+   "Image": "C:\\Windows\\system32\\Utilman.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559992342388
+  },
+  {
+   "OID": "5cfb9816cf00836fdc0858c7",
+   "ProcessID": 1628,
+   "ParentPID": 3024,
+   "CommandLine": "C:\\Windows\\system32\\Utilman.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\xdvtmadosdmbmgfshnzfvy\"",
+   "Image": "C:\\Windows\\system32\\Utilman.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559992342419
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cfb9813cf00836fdc0856ee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfb9813cf00836fdc0856ee",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5cfb9813cf00836fdc0856ee",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5cfb9816cf00836fdc0858c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5cfb9816cf00836fdc0858c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081",
+    "T1114"
+   ]
+  },
+  {
+   "ProcessOID": "5cfb9816cf00836fdc0858c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfb9816cf00836fdc0858c6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfb9816cf00836fdc0858c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5cfb9813cf00836fdc0856ee",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cfb9813cf00836fdc0856ee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfb9813cf00836fdc0856ee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfb9811cf00836fdc085445",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cfb9811cf00836fdc085445",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cfb9811cf00836fdc085445",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfb9810cf00836fdc085440",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfb980fcf00836fdc08511e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

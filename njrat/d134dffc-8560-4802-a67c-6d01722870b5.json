@@ -1,0 +1,67 @@
+{
+ "Name": "rat.exe",
+ "Md5": "e5c698c1718aba22b0c3167a53efe2ff",
+ "UUID": "d134dffc-8560-4802-a67c-6d01722870b5",
+ "Processes": [
+  {
+   "OID": "5f0b85e720f0c849179baea3",
+   "ProcessID": 2616,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\rat.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\rat.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594590695367
+  },
+  {
+   "OID": "5f0b85ee20f0c849179bb734",
+   "ProcessID": 2496,
+   "ParentPID": 2616,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sakura swapper.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sakura swapper.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594590701930
+  },
+  {
+   "OID": "5f0b85f420f0c849179bbca3",
+   "ProcessID": 2188,
+   "ParentPID": 2496,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\sakura swapper.exe\" \"sakura swapper.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594590708133
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f0b85ee20f0c849179bb734",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0b85ee20f0c849179bb734",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f0b85ee20f0c849179bb734",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f0b85e720f0c849179baea3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f0b85e720f0c849179baea3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

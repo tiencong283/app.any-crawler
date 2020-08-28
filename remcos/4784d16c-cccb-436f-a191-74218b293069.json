@@ -1,0 +1,80 @@
+{
+ "Name": "data",
+ "Md5": "84715714503f4c1d8767e9ebaa156fac",
+ "UUID": "4784d16c-cccb-436f-a191-74218b293069",
+ "Processes": [
+  {
+   "OID": "5d78b0d5a1d9f90d697d5372",
+   "ProcessID": 3024,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\data.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\data.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1568190677500
+  },
+  {
+   "OID": "5d78b0e2a1d9f90d697d56ce",
+   "ProcessID": 3404,
+   "ParentPID": 612,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3AD05575-8857-4850-9277-11B85BDB8E09}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1568190690688
+  },
+  {
+   "OID": "5d78b0e3a1d9f90d697d56d1",
+   "ProcessID": 2692,
+   "ParentPID": 3024,
+   "CommandLine": "\"C:\\Windows\\System32\\WerFault.exe\"",
+   "Image": "C:\\Windows\\System32\\WerFault.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1568190690985
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d78b0d5a1d9f90d697d4c4d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d78b0e3a1d9f90d697d56d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d78b0e3a1d9f90d697d56d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5d78b0e3a1d9f90d697d56d1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d78b0e2a1d9f90d697d56ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d78b0e2a1d9f90d697d56ce",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d78b0e2a1d9f90d697d56ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d78b0e2a1d9f90d697d56ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

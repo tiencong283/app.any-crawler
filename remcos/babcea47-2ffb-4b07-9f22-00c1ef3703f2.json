@@ -1,0 +1,60 @@
+{
+ "Name": "8588ae6b0cd64a359929e5990249cfa64ccf1b7e3d8ce8db201b3482d5142b65",
+ "Md5": "089abbe35d8b4fa9abc8a84d7a49aff0",
+ "UUID": "babcea47-2ffb-4b07-9f22-00c1ef3703f2",
+ "Processes": [
+  {
+   "OID": "5d5fc0f06bdc2e1b555eec71",
+   "ProcessID": 3652,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\8588ae6b0cd64a359929e5990249cfa64ccf1b7e3d8ce8db201b3482d5142b65.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\8588ae6b0cd64a359929e5990249cfa64ccf1b7e3d8ce8db201b3482d5142b65.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1566556399628
+  },
+  {
+   "OID": "5d5fc0ff6bdc2e1b555eef28",
+   "ProcessID": 2440,
+   "ParentPID": 3652,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\8588ae6b0cd64a359929e5990249cfa64ccf1b7e3d8ce8db201b3482d5142b65.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566556415097
+  },
+  {
+   "OID": "5d5fc11d6bdc2e1b555ef2d6",
+   "ProcessID": 3144,
+   "ParentPID": 3652,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\8588ae6b0cd64a359929e5990249cfa64ccf1b7e3d8ce8db201b3482d5142b65.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\8588ae6b0cd64a359929e5990249cfa64ccf1b7e3d8ce8db201b3482d5142b65.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566556445191
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d5fc11d6bdc2e1b555ef2d6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d5fc0f06bdc2e1b555eec71",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d5fc0ef6bdc2e1b555ee37f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d5fc0f06bdc2e1b555eec71",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

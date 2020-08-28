@@ -1,0 +1,149 @@
+{
+ "Name": "Bank-SlipPayment-copy.exe",
+ "Md5": "0991178e640c27226e71a32b6fb5c53a",
+ "UUID": "03acf027-a3e0-4291-974c-d092ad63936e",
+ "Processes": [
+  {
+   "OID": "5caeee1178ef7c3cb8f2c614",
+   "ProcessID": 456,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Bank-SlipPayment-copy.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Bank-SlipPayment-copy.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554968080656
+  },
+  {
+   "OID": "5caeee1978ef7c3cb8f2d220",
+   "ProcessID": 2576,
+   "ParentPID": 456,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Bank-SlipPayment-copy.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Bank-SlipPayment-copy.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554968089625
+  },
+  {
+   "OID": "5caeee2378ef7c3cb8f2d7d2",
+   "ProcessID": 680,
+   "ParentPID": 2576,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554968098609
+  },
+  {
+   "OID": "5caeee2478ef7c3cb8f2dc8a",
+   "ProcessID": 612,
+   "ParentPID": 680,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554968099969
+  },
+  {
+   "OID": "5caeee2478ef7c3cb8f2dc8c",
+   "ProcessID": 1976,
+   "ParentPID": 612,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554968100078
+  },
+  {
+   "OID": "5caeee2c78ef7c3cb8f2e3c8",
+   "ProcessID": 3148,
+   "ParentPID": 1976,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554968108141
+  },
+  {
+   "OID": "5caeee3478ef7c3cb8f2e7f5",
+   "ProcessID": 2108,
+   "ParentPID": 3148,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554968116141
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5caeee3478ef7c3cb8f2e7f5",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5caeee3478ef7c3cb8f2e7f5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5caeee2c78ef7c3cb8f2e3c8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5caeee2c78ef7c3cb8f2e3c8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5caeee2c78ef7c3cb8f2e3c8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5caeee2478ef7c3cb8f2dc8c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5caeee2378ef7c3cb8f2d7d2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5caeee1978ef7c3cb8f2d220",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5caeee1978ef7c3cb8f2d220",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5caeee1978ef7c3cb8f2d220",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5caeee1978ef7c3cb8f2d220",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5caeee1978ef7c3cb8f2d220",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5caeee1178ef7c3cb8f2c614",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

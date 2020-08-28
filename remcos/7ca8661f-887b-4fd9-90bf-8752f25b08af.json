@@ -1,0 +1,85 @@
+{
+ "Name": "Backdoor.exe",
+ "Md5": "cba75a6a42371d6e2c48eaf24be7b470",
+ "UUID": "7ca8661f-887b-4fd9-90bf-8752f25b08af",
+ "Processes": [
+  {
+   "OID": "5d37569e6348c43b8080b2ef",
+   "ProcessID": 3600,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Backdoor.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1563907741414
+  },
+  {
+   "OID": "5d3756af6348c43b8080b8d2",
+   "ProcessID": 3108,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\isbnhome.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1563907758799
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d3756b06348c43b8080c2c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d37569d6348c43b8080aa1c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3756af6348c43b8080b8d2",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3756af6348c43b8080b8d2",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d37569d6348c43b8080aa1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d37569d6348c43b8080aa1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d37569d6348c43b8080aa1a",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3756af6348c43b8080b8d2",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d37569e6348c43b8080b2ef",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d37569e6348c43b8080b2ef",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

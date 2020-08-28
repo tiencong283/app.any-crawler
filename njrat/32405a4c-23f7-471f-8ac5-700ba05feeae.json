@@ -1,0 +1,63 @@
+{
+ "Name": "WindowsApp.exe",
+ "Md5": "af8fedbc1a00430b384445571e7278ec",
+ "UUID": "32405a4c-23f7-471f-8ac5-700ba05feeae",
+ "Processes": [
+  {
+   "OID": "5f083eb4c512d0087f0da1c5",
+   "ProcessID": 444,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsApp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsApp.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594375860396
+  },
+  {
+   "OID": "5f083ebbc512d0087f0da515",
+   "ProcessID": 2012,
+   "ParentPID": 444,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsApp.exe\" \"WindowsApp.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594375866959
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f083eb4c512d0087f0da1c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f083eb4c512d0087f0da1c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f083eb4c512d0087f0da1c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f083eb4c512d0087f0da1c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f083eb4c512d0087f0da1c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f083eb4c512d0087f0da1c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "Name": "dreadful injector 2.0.exe",
+ "Md5": "fd33c1a6572e8dda95ca0296e6dd25d0",
+ "UUID": "4a26d573-79b5-4f01-b7ab-e9640c34dfc9",
+ "Processes": [
+  {
+   "OID": "5f05003fc66bf85fdccc3b86",
+   "ProcessID": 3076,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dreadful injector 2.0.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dreadful injector 2.0.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594163263089
+  },
+  {
+   "OID": "5f050046c66bf85fdccc3e19",
+   "ProcessID": 3120,
+   "ParentPID": 3076,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594163269527
+  },
+  {
+   "OID": "5f05004bc66bf85fdccc43b2",
+   "ProcessID": 1916,
+   "ParentPID": 3120,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe\" \"server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594163275620
+  },
+  {
+   "OID": "5f050066c66bf85fdccc5099",
+   "ProcessID": 3604,
+   "ParentPID": 3120,
+   "CommandLine": "netsh firewall delete allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe\"",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594163301933
+  },
+  {
+   "OID": "5f050066c66bf85fdccc50a2",
+   "ProcessID": 3764,
+   "ParentPID": 3120,
+   "CommandLine": "cmd.exe /k ping 0 \u0026 del \"C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe\" \u0026 exit",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594163301964
+  },
+  {
+   "OID": "5f050066c66bf85fdccc50a5",
+   "ProcessID": 2856,
+   "ParentPID": 3764,
+   "CommandLine": "ping  0 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594163302089
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f050046c66bf85fdccc3e19",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5f050046c66bf85fdccc3e19",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f050046c66bf85fdccc3e19",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f050046c66bf85fdccc3e19",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f050046c66bf85fdccc3e19",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f050046c66bf85fdccc3e19",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f05003fc66bf85fdccc3b86",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f05003fc66bf85fdccc3b86",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "Name": "71ed434a1de69486a0dbda5927ec39a7",
+ "Md5": "71ed434a1de69486a0dbda5927ec39a7",
+ "UUID": "a6d696ea-54f8-4f86-9442-24a6928d2f3d",
+ "Processes": [
+  {
+   "OID": "5dc5910a60ffd8120c436ca9",
+   "ProcessID": 960,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\71ed434a1de69486a0dbda5927ec39a7.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\71ed434a1de69486a0dbda5927ec39a7.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573228810129
+  },
+  {
+   "OID": "5dc5910a60ffd8120c436caa",
+   "ProcessID": 2256,
+   "ParentPID": 960,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\71ed434a1de69486a0dbda5927ec39a7.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\71ed434a1de69486a0dbda5927ec39a7.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573228810379
+  },
+  {
+   "OID": "5dc5910b60ffd8120c436fc5",
+   "ProcessID": 1012,
+   "ParentPID": 2256,
+   "CommandLine": "\"C:\\Users\\admin\\Dveskolerne7\\Viceformnds2.exe\" ",
+   "Image": "C:\\Users\\admin\\Dveskolerne7\\Viceformnds2.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573228810863
+  },
+  {
+   "OID": "5dc5910b60ffd8120c436fc6",
+   "ProcessID": 2120,
+   "ParentPID": 1012,
+   "CommandLine": "\"C:\\Users\\admin\\Dveskolerne7\\Viceformnds2.exe\" ",
+   "Image": "C:\\Users\\admin\\Dveskolerne7\\Viceformnds2.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573228811160
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc5910b60ffd8120c436fc6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5dc5910b60ffd8120c436fc6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc5910b60ffd8120c436fc5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dc5910a60ffd8120c436caa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dc5910a60ffd8120c436caa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

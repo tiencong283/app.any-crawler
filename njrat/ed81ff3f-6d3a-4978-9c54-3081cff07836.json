@@ -1,0 +1,72 @@
+{
+ "Name": "portsex.exe",
+ "Md5": "f385d324bd6ac7752f28f1efbb03820b",
+ "UUID": "ed81ff3f-6d3a-4978-9c54-3081cff07836",
+ "Processes": [
+  {
+   "OID": "5f0b82b9717f387933c4dde3",
+   "ProcessID": 1804,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\portsex.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\portsex.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594589880793
+  },
+  {
+   "OID": "5f0b82bf717f387933c4e6c8",
+   "ProcessID": 1380,
+   "ParentPID": 1804,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\service porto.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\service porto.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594589887450
+  },
+  {
+   "OID": "5f0b82c5717f387933c4ec40",
+   "ProcessID": 4056,
+   "ParentPID": 1380,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\service porto.exe\" \"service porto.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594589893653
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f0b82bf717f387933c4e6c8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0b82bf717f387933c4e6c8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0b82bf717f387933c4e6c8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f0b82bf717f387933c4e6c8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f0b82b9717f387933c4dde3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f0b82b9717f387933c4dde3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

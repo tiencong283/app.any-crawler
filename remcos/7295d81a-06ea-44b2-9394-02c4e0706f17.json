@@ -1,0 +1,86 @@
+{
+ "Name": "Quotation_18.10,2018.exe",
+ "Md5": "da674973cada07b4dce80f8eea7acdfb",
+ "UUID": "7295d81a-06ea-44b2-9394-02c4e0706f17",
+ "Processes": [
+  {
+   "OID": "5d01e7c1354aa47d2e4741d0",
+   "ProcessID": 3088,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Quotation_18.10,2018.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Quotation_18.10,2018.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560405953308
+  },
+  {
+   "OID": "5d01e7c5354aa47d2e474acb",
+   "ProcessID": 2292,
+   "ParentPID": 3088,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Quotation_18.10,2018.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Quotation_18.10,2018.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560405956651
+  },
+  {
+   "OID": "5d01e7c8354aa47d2e474ccd",
+   "ProcessID": 2228,
+   "ParentPID": 2292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\manorsyngeimpirovmordetsguynes.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\manorsyngeimpirovmordetsguynes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560405960151
+  },
+  {
+   "OID": "5d01e7cb354aa47d2e4751a1",
+   "ProcessID": 3144,
+   "ParentPID": 2228,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\manorsyngeimpirovmordetsguynes.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\manorsyngeimpirovmordetsguynes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560405963198
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d01e7cb354aa47d2e4751a1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d01e7c8354aa47d2e474ccd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d01e7cb354aa47d2e4751a1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d01e7c8354aa47d2e474ccd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d01e7c8354aa47d2e474ccd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d01e7c5354aa47d2e474acb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d01e7c1354aa47d2e4741d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

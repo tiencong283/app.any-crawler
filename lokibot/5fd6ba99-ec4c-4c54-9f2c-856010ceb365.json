@@ -1,0 +1,85 @@
+{
+ "Name": "regasm.exe",
+ "Md5": "9c42da4113fc804b96a281539f44b3ab",
+ "UUID": "5fd6ba99-ec4c-4c54-9f2c-856010ceb365",
+ "Processes": [
+  {
+   "OID": "5e676f8d02dbef61fa3a9d91",
+   "ProcessID": 1916,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\regasm.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\regasm.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583837068898
+  },
+  {
+   "OID": "5e676f8d02dbef61fa3a9d92",
+   "ProcessID": 3736,
+   "ParentPID": 592,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Dropped from another process",
+   "CreationTimestamp": 1583837069164
+  },
+  {
+   "OID": "5e676f8e02dbef61fa3aa538",
+   "ProcessID": 3828,
+   "ParentPID": 1916,
+   "CommandLine": "\"C:\\Windows\\system32\\dllhost.exe\"",
+   "Image": "C:\\Windows\\system32\\dllhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583837070695
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e676f8e02dbef61fa3aa538",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e676f8d02dbef61fa3a9d92",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e676f8d02dbef61fa3a9455",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e676f8e02dbef61fa3aa538",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e676f8e02dbef61fa3aa538",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e676f8e02dbef61fa3aa538",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e676f8d02dbef61fa3a944c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e676f8e02dbef61fa3aa538",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e676f8e02dbef61fa3aa538",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

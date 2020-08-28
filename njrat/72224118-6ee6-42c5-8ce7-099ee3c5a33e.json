@@ -1,0 +1,165 @@
+{
+ "Name": "123.exe",
+ "Md5": "2307767fe1e00c6fd30850bdc2b4abd5",
+ "UUID": "72224118-6ee6-42c5-8ce7-099ee3c5a33e",
+ "Processes": [
+  {
+   "OID": "5f2eb4cd6f23d76cc7a2d830",
+   "ProcessID": 972,
+   "ParentPID": 356,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\123.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\123.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596896461038
+  },
+  {
+   "OID": "5f2eb4cd6f23d76cc7a2df1c",
+   "ProcessID": 1536,
+   "ParentPID": 972,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596896461600
+  },
+  {
+   "OID": "5f2eb4ce6f23d76cc7a2e1d6",
+   "ProcessID": 1936,
+   "ParentPID": 972,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\EZinjector.v2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\EZinjector.v2.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596896461678
+  },
+  {
+   "OID": "5f2eb4ce6f23d76cc7a2e1d8",
+   "ProcessID": 2064,
+   "ParentPID": 1936,
+   "CommandLine": "C:\\Windows\\system32\\cmd.exe /c pause",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596896461819
+  },
+  {
+   "OID": "5f2eb4d46f23d76cc7a2e9a9",
+   "ProcessID": 1144,
+   "ParentPID": 1536,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\smss.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\smss.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596896468131
+  },
+  {
+   "OID": "5f2eb4da6f23d76cc7a2f23d",
+   "ProcessID": 2224,
+   "ParentPID": 1144,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\smss.exe\" \"smss.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596896474256
+  },
+  {
+   "OID": "5f2eb4da6f23d76cc7a2f23f",
+   "ProcessID": 1336,
+   "ParentPID": 1144,
+   "CommandLine": "taskkill /F /IM Avast.exe",
+   "Image": "C:\\Windows\\system32\\taskkill.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596896474272
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2eb4d46f23d76cc7a2e9a9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2eb4d46f23d76cc7a2e9a9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eb4d46f23d76cc7a2e9a9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eb4d46f23d76cc7a2e9a9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eb4d46f23d76cc7a2e9a9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eb4d46f23d76cc7a2e9a9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2eb4d46f23d76cc7a2e9a9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f2eb4cd6f23d76cc7a2d819",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5f2eb4d46f23d76cc7a2e9a9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eb4cd6f23d76cc7a2df1c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f2eb4cd6f23d76cc7a2df1c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eb4cd6f23d76cc7a2df1c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eb4ce6f23d76cc7a2e1d6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eb4cd6f23d76cc7a2df1c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2eb4ce6f23d76cc7a2e1d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f2eb4cd6f23d76cc7a2d830",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "Name": "mecnrt.exe",
+ "Md5": "c1e2a9b8861c39212fe764671c3cdcc2",
+ "UUID": "60e7d9ed-fc39-43e8-900f-ad39a807647a",
+ "Processes": [
+  {
+   "OID": "5d7107ed0a0c310e356f503b",
+   "ProcessID": 3208,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\mecnrt.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\mecnrt.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1567688685075
+  },
+  {
+   "OID": "5d7107f60a0c310e356f5de1",
+   "ProcessID": 2652,
+   "ParentPID": 3208,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567688693466
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d7107ed0a0c310e356f490e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7107f60a0c310e356f5de1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7107f60a0c310e356f5de1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5d7107f60a0c310e356f5de1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7107ed0a0c310e356f503b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7107ed0a0c310e356f490a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d7107ed0a0c310e356f503b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7107ed0a0c310e356f490a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7107ed0a0c310e356f4903",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  }
+ ]
+}

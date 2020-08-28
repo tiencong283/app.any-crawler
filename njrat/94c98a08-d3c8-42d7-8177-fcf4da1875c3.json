@@ -1,0 +1,77 @@
+{
+ "Name": "Dragon_Booter.exe",
+ "Md5": "686211568a19c32f9e3786022d80f0a8",
+ "UUID": "94c98a08-d3c8-42d7-8177-fcf4da1875c3",
+ "Processes": [
+  {
+   "OID": "5eff8fdcc8bfdf52cbbaa416",
+   "ProcessID": 2432,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Dragon_Booter.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Dragon_Booter.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593806812267
+  },
+  {
+   "OID": "5eff8fe3c8bfdf52cbbaac74",
+   "ProcessID": 1324,
+   "ParentPID": 2432,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\XD.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\XD.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593806818813
+  },
+  {
+   "OID": "5eff8fe9c8bfdf52cbbab1e2",
+   "ProcessID": 3956,
+   "ParentPID": 1324,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\XD.exe\" \"XD.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593806824970
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eff8fdcc8bfdf52cbbaa411",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eff8fdcc8bfdf52cbbaa408",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eff8fe3c8bfdf52cbbaac74",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eff8fe3c8bfdf52cbbaac74",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eff8fe3c8bfdf52cbbaac74",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5eff8fdcc8bfdf52cbbaa416",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eff8fdcc8bfdf52cbbaa416",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

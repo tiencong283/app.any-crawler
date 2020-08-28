@@ -1,0 +1,56 @@
+{
+ "Name": "r.exe",
+ "Md5": "faf87978c534e481405dc2c5eb984aef",
+ "UUID": "56422d22-e50c-47e8-8b17-93eaa757708b",
+ "Processes": [
+  {
+   "OID": "5ca5d36f0fc7113159e4097b",
+   "ProcessID": 3848,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\r.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\r.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554371438733
+  },
+  {
+   "OID": "5ca5d3900fc7113159e41339",
+   "ProcessID": 1580,
+   "ParentPID": 3848,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554371471920
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ca5d36f0fc7113159e4097b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca5d36f0fc7113159e4097b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ca5d36f0fc7113159e4097b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca5d3900fc7113159e41339",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ca5d3900fc7113159e41339",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

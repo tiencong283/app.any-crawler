@@ -1,0 +1,89 @@
+{
+ "Name": "WindowsApp2.exe",
+ "Md5": "65a471be42078b2977fc3fcc75a05828",
+ "UUID": "5bba2c4f-3a70-491a-ab1c-c666b70cd133",
+ "Processes": [
+  {
+   "OID": "5f15d250673024183cb21e72",
+   "ProcessID": 1688,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsApp2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsApp2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595265615846
+  },
+  {
+   "OID": "5f15d257673024183cb229aa",
+   "ProcessID": 3648,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\Spoofer.exe\" ",
+   "Image": "C:\\Users\\admin\\Spoofer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595265622861
+  },
+  {
+   "OID": "5f15d25d673024183cb231e0",
+   "ProcessID": 2584,
+   "ParentPID": 3648,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\Spoofer.exe\" \"Spoofer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595265629377
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f15d257673024183cb229aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15d257673024183cb229aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f15d257673024183cb229aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15d257673024183cb229aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15d257673024183cb229aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15d257673024183cb229aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f15d257673024183cb229aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f15d250673024183cb21e72",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f15d250673024183cb21e72",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

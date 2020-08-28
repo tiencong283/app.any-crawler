@@ -1,0 +1,84 @@
+{
+ "Name": "Server_se.exe",
+ "Md5": "b2f494d05f23d5da99216b10ad9b9766",
+ "UUID": "46aefd74-4240-4e50-97dc-3194fe87e8d0",
+ "Processes": [
+  {
+   "OID": "5efefc1a8b804226acabc32c",
+   "ProcessID": 2252,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server_se.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server_se.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593768986335
+  },
+  {
+   "OID": "5efefc2f8b804226acabcc0f",
+   "ProcessID": 3376,
+   "ParentPID": 2252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593769006929
+  },
+  {
+   "OID": "5efefc428b804226acabd1df",
+   "ProcessID": 3840,
+   "ParentPID": 3376,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe\" \"server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593769026507
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5efefc2f8b804226acabcc0f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efefc2f8b804226acabcc0f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5efefc2f8b804226acabcc0f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efefc2f8b804226acabcc0f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efefc2f8b804226acabcc0f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5efefc2f8b804226acabcc0f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5efefc1a8b804226acabc32c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5efefc1a8b804226acabc32c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

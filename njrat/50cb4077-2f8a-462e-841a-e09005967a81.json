@@ -1,0 +1,159 @@
+{
+ "Name": "Driv_deobfuscated.exe",
+ "Md5": "80307814ba551ea80ee3f6bf0a72e525",
+ "UUID": "50cb4077-2f8a-462e-841a-e09005967a81",
+ "Processes": [
+  {
+   "OID": "5f2af14fb1e2a10161d6c980",
+   "ProcessID": 764,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Driv_deobfuscated.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Driv_deobfuscated.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596649806885
+  },
+  {
+   "OID": "5f2af155b1e2a10161d6d356",
+   "ProcessID": 2544,
+   "ParentPID": 764,
+   "CommandLine": "\"C:\\ProgramData\\drivers.exe\" ",
+   "Image": "C:\\ProgramData\\drivers.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596649813229
+  },
+  {
+   "OID": "5f2af15bb1e2a10161d6d77f",
+   "ProcessID": 3720,
+   "ParentPID": 2544,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\drivers.exe\" \"drivers.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596649819401
+  },
+  {
+   "OID": "5f2af182b1e2a10161d6e7f8",
+   "ProcessID": 2724,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" ",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1596649858557
+  },
+  {
+   "OID": "5f2af183b1e2a10161d6e876",
+   "ProcessID": 2604,
+   "ParentPID": 2724,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" SCODEF:2724 CREDAT:267521 /prefetch:2",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596649858838
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2af183b1e2a10161d6e876",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f2af183b1e2a10161d6e876",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f2af182b1e2a10161d6e7f8",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1112"
+   ]
+  },
+  {
+   "ProcessOID": "5f2af182b1e2a10161d6e7f8",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f2af14fb1e2a10161d6c975",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f2af182b1e2a10161d6e7f8",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f2af14fb1e2a10161d6c979",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2af182b1e2a10161d6e7f8",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f2af155b1e2a10161d6d356",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2af155b1e2a10161d6d356",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2af155b1e2a10161d6d356",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2af155b1e2a10161d6d356",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2af155b1e2a10161d6d356",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2af155b1e2a10161d6d356",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f2af14fb1e2a10161d6c980",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f2af14fb1e2a10161d6c980",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2af14fb1e2a10161d6c980",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

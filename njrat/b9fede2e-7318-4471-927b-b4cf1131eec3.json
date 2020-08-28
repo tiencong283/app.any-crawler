@@ -1,0 +1,163 @@
+{
+ "Name": "joined.exe",
+ "Md5": "13278c97108d7f8baea7260a6e34b985",
+ "UUID": "b9fede2e-7318-4471-927b-b4cf1131eec3",
+ "Processes": [
+  {
+   "OID": "5f2d5dfd9008c95f39a029c2",
+   "ProcessID": 3096,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\joined.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\joined.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596808700971
+  },
+  {
+   "OID": "5f2d5dfd9008c95f39a03058",
+   "ProcessID": 2508,
+   "ParentPID": 3096,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AC.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AC.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596808701314
+  },
+  {
+   "OID": "5f2d5dfe9008c95f39a03579",
+   "ProcessID": 1428,
+   "ParentPID": 2508,
+   "CommandLine": "\"C:\\Program Files\\Java\\jre1.8.0_92\\bin\\javaw.exe\" -jar \"C:\\Users\\admin\\AppData\\Local\\Temp\\Aristois-Free.jar\" ",
+   "Image": "C:\\Program Files\\Java\\jre1.8.0_92\\bin\\javaw.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596808701596
+  },
+  {
+   "OID": "5f2d5dfe9008c95f39a0357a",
+   "ProcessID": 2532,
+   "ParentPID": 2508,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Client_protected.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Client_protected.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596808701892
+  },
+  {
+   "OID": "5f2d5e059008c95f39a0451f",
+   "ProcessID": 3544,
+   "ParentPID": 2532,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596808708455
+  },
+  {
+   "OID": "5f2d5e0d9008c95f39a04b06",
+   "ProcessID": 1124,
+   "ParentPID": 3544,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe\" \"WindowsServices.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596808716705
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2d5e059008c95f39a0451f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5e059008c95f39a0451f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5e059008c95f39a0451f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5e059008c95f39a0451f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2d5e059008c95f39a0451f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2d5e059008c95f39a0451f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5e059008c95f39a0451f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f2d5e059008c95f39a0451f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5dfe9008c95f39a0357a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f2d5dfe9008c95f39a0357a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5dfe9008c95f39a0357a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5dfe9008c95f39a03579",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f2d5dfe9008c95f39a03579",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5dfd9008c95f39a03058",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5dfe9008c95f39a03579",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5dfd9008c95f39a03058",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5dfd9008c95f39a03058",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2d5dfd9008c95f39a029c2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

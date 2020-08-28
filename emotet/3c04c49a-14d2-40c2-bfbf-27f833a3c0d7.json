@@ -1,0 +1,91 @@
+{
+ "Name": "payload2.exe",
+ "Md5": "fe59224e161b885b29253a1f1c64eef4",
+ "UUID": "3c04c49a-14d2-40c2-bfbf-27f833a3c0d7",
+ "Processes": [
+  {
+   "OID": "5f1b967ce211e92da1560e3d",
+   "ProcessID": 552,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\payload2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\payload2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595643515588
+  },
+  {
+   "OID": "5f1b967ce211e92da1561493",
+   "ProcessID": 628,
+   "ParentPID": 552,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\rasapi32\\rundll32.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\rasapi32\\rundll32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595643516182
+  },
+  {
+   "OID": "5f1b96a8e211e92da1561e1f",
+   "ProcessID": 2508,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1595643560635
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f1b96a8e211e92da1561e1f",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f1b967ce211e92da1561493",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1b967ce211e92da1561493",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1b967ce211e92da1561493",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1b967ce211e92da1560e32",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f1b967ce211e92da1561493",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f1b967ce211e92da1560e3d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1b967ce211e92da1560e3d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1b967ce211e92da1560e3d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

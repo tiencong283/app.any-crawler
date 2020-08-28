@@ -1,0 +1,72 @@
+{
+ "Name": "sgmwem.exe",
+ "Md5": "12ed814fd195b7307a656385bd457afb",
+ "UUID": "0d58cf1e-5e76-40dc-9d3e-159a0376211e",
+ "Processes": [
+  {
+   "OID": "5deff3f8d0e4c62b372a2e5e",
+   "ProcessID": 2748,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sgmwem.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sgmwem.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1576006648305
+  },
+  {
+   "OID": "5deff3f8d0e4c62b372a2e5f",
+   "ProcessID": 3884,
+   "ParentPID": 2748,
+   "CommandLine": "--9f0683aa",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sgmwem.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576006648415
+  },
+  {
+   "OID": "5deff3ffd0e4c62b372a313c",
+   "ProcessID": 2744,
+   "ParentPID": 3884,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576006654930
+  },
+  {
+   "OID": "5deff3ffd0e4c62b372a313d",
+   "ProcessID": 792,
+   "ParentPID": 2744,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576006654993
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5deff3ffd0e4c62b372a313d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5deff3ffd0e4c62b372a313d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5deff3f8d0e4c62b372a2e5f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5deff3f8d0e4c62b372a2e5f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5deff3f8d0e4c62b372a2e5f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

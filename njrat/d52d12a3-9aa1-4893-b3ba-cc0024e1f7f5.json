@@ -1,0 +1,67 @@
+{
+ "Name": "Server.exe",
+ "Md5": "3484b8a24c1a225698844e62282f41ec",
+ "UUID": "d52d12a3-9aa1-4893-b3ba-cc0024e1f7f5",
+ "Processes": [
+  {
+   "OID": "5f2ce4a975802d6e5fdcae7c",
+   "ProcessID": 1472,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596777640931
+  },
+  {
+   "OID": "5f2ce4b075802d6e5fdcb152",
+   "ProcessID": 2604,
+   "ParentPID": 1472,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\test.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\test.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596777647384
+  },
+  {
+   "OID": "5f2ce4b675802d6e5fdcb6e8",
+   "ProcessID": 2544,
+   "ParentPID": 2604,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\test.exe\" \"test.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596777653493
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2ce4b075802d6e5fdcb152",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2ce4b075802d6e5fdcb152",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2ce4b075802d6e5fdcb152",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f2ce4a975802d6e5fdcae7c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f2ce4a975802d6e5fdcae7c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

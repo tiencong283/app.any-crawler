@@ -1,0 +1,125 @@
+{
+ "Name": "수달.exe",
+ "Md5": "afd68a0dab6c207304819fb9f3421fd0",
+ "UUID": "585efc62-a6e8-45ef-a60b-edfbc9fd4560",
+ "Processes": [
+  {
+   "OID": "5f0991aa78fe227145617be2",
+   "ProcessID": 1104,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\수달.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\수달.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594462634616
+  },
+  {
+   "OID": "5f0991ab78fe22714561822d",
+   "ProcessID": 1628,
+   "ParentPID": 1104,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\수달.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\수달.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594462635084
+  },
+  {
+   "OID": "5f0991ac78fe227145618904",
+   "ProcessID": 2116,
+   "ParentPID": 1104,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\수달.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\수달.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594462636194
+  },
+  {
+   "OID": "5f0991ac78fe227145618905",
+   "ProcessID": 2768,
+   "ParentPID": 1104,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\suddenattack.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\suddenattack.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594462636225
+  },
+  {
+   "OID": "5f0991b378fe227145619324",
+   "ProcessID": 3948,
+   "ParentPID": 2768,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\suddenattack.exe\" \"suddenattack.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594462643225
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f0991aa78fe227145617bdd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0991aa78fe227145617bd4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0991ac78fe227145618905",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0991ac78fe227145618905",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0991ac78fe227145618905",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f0991ac78fe227145618905",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f0991ac78fe227145618905",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0991ac78fe227145618905",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f0991ac78fe227145618905",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0991ac78fe227145618904",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0991ab78fe22714561822d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0991aa78fe227145617be2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f0991aa78fe227145617be2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "Name": "Payment.exe",
+ "Md5": "f247fcf95ce0edc8b27ed19311134887",
+ "UUID": "ac254c80-2b13-40b3-a4b4-07d7dfa6a26a",
+ "Processes": [
+  {
+   "OID": "5dcccf37eb463807c588bd39",
+   "ProcessID": 2168,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Payment.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Payment.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573703478698
+  },
+  {
+   "OID": "5dcccf37eb463807c588c33f",
+   "ProcessID": 3856,
+   "ParentPID": 2168,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Payment.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Payment.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573703478995
+  },
+  {
+   "OID": "5dcccf38eb463807c588c729",
+   "ProcessID": 1636,
+   "ParentPID": 3856,
+   "CommandLine": "\"C:\\Users\\admin\\Paiconeca5\\Dasyurus.exe\" ",
+   "Image": "C:\\Users\\admin\\Paiconeca5\\Dasyurus.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573703479479
+  },
+  {
+   "OID": "5dcccf38eb463807c588c72a",
+   "ProcessID": 884,
+   "ParentPID": 1636,
+   "CommandLine": "\"C:\\Users\\admin\\Paiconeca5\\Dasyurus.exe\" ",
+   "Image": "C:\\Users\\admin\\Paiconeca5\\Dasyurus.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573703479698
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcccf38eb463807c588c72a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcccf38eb463807c588c72a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5dcccf38eb463807c588c72a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcccf38eb463807c588c729",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dcccf37eb463807c588c33f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcccf37eb463807c588c33f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcccf37eb463807c588bd39",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

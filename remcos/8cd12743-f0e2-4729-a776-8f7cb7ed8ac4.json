@@ -1,0 +1,51 @@
+{
+ "Name": "sand.exe",
+ "Md5": "563af03df7e869cddbd920ec4fdeaa7a",
+ "UUID": "8cd12743-f0e2-4729-a776-8f7cb7ed8ac4",
+ "Processes": [
+  {
+   "OID": "5c725f77d5d7903737606f5a",
+   "ProcessID": 3492,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sand.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sand.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1550999415134
+  },
+  {
+   "OID": "5c725fadd5d7903737607c83",
+   "ProcessID": 2948,
+   "ParentPID": 3492,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\sand.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sand.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550999469025
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c725fadd5d7903737607c83",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c725fadd5d7903737607c83",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c725fadd5d7903737607c83",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c725f77d5d7903737606f5a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

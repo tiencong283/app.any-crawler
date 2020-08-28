@@ -1,0 +1,86 @@
+{
+ "Name": "MiniCalc.exe",
+ "Md5": "3f4a4ee17b174ec62a378dc60f1593d9",
+ "UUID": "d31d64bc-d956-4576-9b4f-408285313a91",
+ "Processes": [
+  {
+   "OID": "5c7e6870832a5501d948acb2",
+   "ProcessID": 3168,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\MiniCalc.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\MiniCalc.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1551788143795
+  },
+  {
+   "OID": "5c7e687a832a5501d948b420",
+   "ProcessID": 3424,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\MiniCalc.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\MiniCalc.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1551788153967
+  },
+  {
+   "OID": "5c7e68c5832a5501d94acfbb",
+   "ProcessID": 2464,
+   "ParentPID": 3168,
+   "CommandLine": "\"C:\\Windows\\System32\\secinit.exe\"",
+   "Image": "C:\\Windows\\System32\\secinit.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1551788228842
+  },
+  {
+   "OID": "5c7e68d3832a5501d94b38e0",
+   "ProcessID": 3048,
+   "ParentPID": 3424,
+   "CommandLine": "\"C:\\Windows\\System32\\secinit.exe\"",
+   "Image": "C:\\Windows\\System32\\secinit.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1551788242576
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c7e68c5832a5501d94acfbb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c7e68c5832a5501d94acfbb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c7e68c5832a5501d94acfbb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c7e687a832a5501d948b420",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c7e687a832a5501d948b420",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c7e6870832a5501d948acb2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c7e6870832a5501d948acb2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

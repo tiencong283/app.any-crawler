@@ -1,0 +1,75 @@
+{
+ "Name": "malware2.exe",
+ "Md5": "9eeac21d0257b35622af71c45c833964",
+ "UUID": "91498623-07b8-498d-86a0-61207e402b8b",
+ "Processes": [
+  {
+   "OID": "5ca28a901f46cd36901925aa",
+   "ProcessID": 2104,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\malware2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\malware2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554156176398
+  },
+  {
+   "OID": "5ca28aa61f46cd3690192e57",
+   "ProcessID": 2912,
+   "ParentPID": 600,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3AD05575-8857-4850-9277-11B85BDB8E09}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1554156198570
+  },
+  {
+   "OID": "5ca28aa71f46cd3690192e58",
+   "ProcessID": 2932,
+   "ParentPID": 2104,
+   "CommandLine": "\"C:\\Windows\\System32\\WerFault.exe\"",
+   "Image": "C:\\Windows\\System32\\WerFault.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554156198914
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ca28aa71f46cd3690192e58",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca28aa71f46cd3690192e58",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ca28aa71f46cd3690192e58",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca28aa71f46cd3690192e58",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca28aa61f46cd3690192e57",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca28aa61f46cd3690192e57",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ca28aa61f46cd3690192e57",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

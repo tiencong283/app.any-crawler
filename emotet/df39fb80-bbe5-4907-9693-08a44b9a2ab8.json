@@ -1,0 +1,77 @@
+{
+ "Name": "yar",
+ "Md5": "2ff5dee817adf2eec7a5b3f86ef4f18f",
+ "UUID": "df39fb80-bbe5-4907-9693-08a44b9a2ab8",
+ "Processes": [
+  {
+   "OID": "5de8fd79d2ac86241b6589be",
+   "ProcessID": 436,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\yar.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\yar.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1575550329237
+  },
+  {
+   "OID": "5de8fd79d2ac86241b6589bf",
+   "ProcessID": 2148,
+   "ParentPID": 436,
+   "CommandLine": "--686d7d2e",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\yar.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575550329580
+  },
+  {
+   "OID": "5de8fd81d2ac86241b658f1b",
+   "ProcessID": 3084,
+   "ParentPID": 2148,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575550336440
+  },
+  {
+   "OID": "5de8fd81d2ac86241b658f1c",
+   "ProcessID": 2880,
+   "ParentPID": 3084,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575550336518
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5de8fd81d2ac86241b658f1c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de8fd81d2ac86241b658f1c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de8fd81d2ac86241b658f1c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de8fd79d2ac86241b6589bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5de8fd79d2ac86241b6589bf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de8fd79d2ac86241b6589bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

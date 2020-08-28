@@ -1,0 +1,72 @@
+{
+ "Name": "Server.exe",
+ "Md5": "536c24a35f0cd8bf3d7a85d6dc75d60f",
+ "UUID": "94f766fb-5fae-4dba-b459-0facb7e4f2bd",
+ "Processes": [
+  {
+   "OID": "5f12a24fb44cbb3b38787570",
+   "ProcessID": 2508,
+   "ParentPID": 1732,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595056719288
+  },
+  {
+   "OID": "5f12a255b44cbb3b3878791e",
+   "ProcessID": 2564,
+   "ParentPID": 2508,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Epson Printer Assistant.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Epson Printer Assistant.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595056725788
+  },
+  {
+   "OID": "5f12a25cb44cbb3b38787f6a",
+   "ProcessID": 2040,
+   "ParentPID": 2564,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\Epson Printer Assistant.exe\" \"Epson Printer Assistant.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595056732038
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f12a255b44cbb3b3878791e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f12a255b44cbb3b3878791e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f12a255b44cbb3b3878791e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f12a24fb44cbb3b38787570",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f12a24fb44cbb3b38787570",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f12a24fb44cbb3b38787570",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

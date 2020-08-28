@@ -1,0 +1,77 @@
+{
+ "Name": "deploycompon.exe",
+ "Md5": "960270594f49f33a07570bc631109012",
+ "UUID": "bbc87ab3-f286-46d6-b80e-fdd91dee7b70",
+ "Processes": [
+  {
+   "OID": "5e1ed56e42a6ca63f0af58b0",
+   "ProcessID": 3960,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\deploycompon.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\deploycompon.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579079021561
+  },
+  {
+   "OID": "5e1ed56e42a6ca63f0af58b1",
+   "ProcessID": 2572,
+   "ParentPID": 3960,
+   "CommandLine": "--5b90c5f9",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\deploycompon.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579079021889
+  },
+  {
+   "OID": "5e1ed57642a6ca63f0af5cbf",
+   "ProcessID": 1876,
+   "ParentPID": 2572,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579079029358
+  },
+  {
+   "OID": "5e1ed57642a6ca63f0af5cc0",
+   "ProcessID": 3496,
+   "ParentPID": 1876,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579079029639
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e1ed57642a6ca63f0af5cc0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1ed57642a6ca63f0af5cc0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1ed57642a6ca63f0af5cc0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1ed56e42a6ca63f0af58b1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1ed56e42a6ca63f0af58b1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1ed56e42a6ca63f0af58b1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

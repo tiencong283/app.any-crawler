@@ -1,0 +1,51 @@
+{
+ "Name": "Lammer.exe",
+ "Md5": "199c4fdfd6973885a7ccc1a1191420a8",
+ "UUID": "7c63d86a-c3fe-4aa2-91e9-f1fdbfb081ad",
+ "Processes": [
+  {
+   "OID": "5f130d64bf673c1621e7dfed",
+   "ProcessID": 3128,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Lammer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Lammer.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595084132097
+  },
+  {
+   "OID": "5f130d6abf673c1621e7e293",
+   "ProcessID": 2396,
+   "ParentPID": 3128,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Lammer.exe\" \"Lammer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595084138269
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f130d64bf673c1621e7dfed",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f130d64bf673c1621e7dfed",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f130d64bf673c1621e7dfed",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f130d64bf673c1621e7dfed",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

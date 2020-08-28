@@ -1,0 +1,62 @@
+{
+ "Name": "emotet1.bin",
+ "Md5": "f2b7b3f7564cb8792ddd7639ecb747e2",
+ "UUID": "56013141-1b5c-4b03-adc5-b2c9bacf444c",
+ "Processes": [
+  {
+   "OID": "5e2e84d508c0894a5d42d272",
+   "ProcessID": 3604,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\emotet1.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet1.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580106965076
+  },
+  {
+   "OID": "5e2e84d508c0894a5d42d273",
+   "ProcessID": 348,
+   "ParentPID": 3604,
+   "CommandLine": "--8667a732",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet1.bin.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580106965154
+  },
+  {
+   "OID": "5e2e84dc08c0894a5d42d7b5",
+   "ProcessID": 4068,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580106972201
+  },
+  {
+   "OID": "5e2e84dc08c0894a5d42d7b6",
+   "ProcessID": 3000,
+   "ParentPID": 4068,
+   "CommandLine": "--a66f8ff2",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580106972264
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2e84d508c0894a5d42d273",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2e84d508c0894a5d42d273",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2e84d508c0894a5d42d273",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

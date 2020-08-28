@@ -1,0 +1,77 @@
+{
+ "Name": "cgv",
+ "Md5": "afe5bec8d74849a485b3c2f439b95832",
+ "UUID": "b5a92af4-6621-4283-80de-ce52566ad563",
+ "Processes": [
+  {
+   "OID": "5dee508473283f7ac5bcfd30",
+   "ProcessID": 2184,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cgv.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cgv.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1575899267694
+  },
+  {
+   "OID": "5dee508473283f7ac5bcfd31",
+   "ProcessID": 2872,
+   "ParentPID": 2184,
+   "CommandLine": "--9578c196",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cgv.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575899267850
+  },
+  {
+   "OID": "5dee508c73283f7ac5bd004e",
+   "ProcessID": 184,
+   "ParentPID": 2872,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575899275694
+  },
+  {
+   "OID": "5dee508c73283f7ac5bd004f",
+   "ProcessID": 1948,
+   "ParentPID": 184,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575899275819
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dee508c73283f7ac5bd004f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dee508c73283f7ac5bd004f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dee508c73283f7ac5bd004f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dee508473283f7ac5bcfd31",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dee508473283f7ac5bcfd31",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dee508473283f7ac5bcfd31",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

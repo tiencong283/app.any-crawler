@@ -1,0 +1,130 @@
+{
+ "Name": "IMGDOC00304.exe",
+ "Md5": "41ad881a7809598298a9a8e8de574842",
+ "UUID": "55b165e5-c624-46a7-b7a1-d195d3cdef7f",
+ "Processes": [
+  {
+   "OID": "5c91e9310773666c106691eb",
+   "ProcessID": 3032,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\IMGDOC00304.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\IMGDOC00304.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1553066288843
+  },
+  {
+   "OID": "5c91e9320773666c106698d3",
+   "ProcessID": 3208,
+   "ParentPID": 3032,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553066289749
+  },
+  {
+   "OID": "5c91e9320773666c10669be6",
+   "ProcessID": 3612,
+   "ParentPID": 3032,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553066290718
+  },
+  {
+   "OID": "5c91e9330773666c10669e90",
+   "ProcessID": 2712,
+   "ParentPID": 3612,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\IMGDOC00304.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\IMGDOC00304.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553066290874
+  },
+  {
+   "OID": "5c91e9560773666c1066a4c7",
+   "ProcessID": 3720,
+   "ParentPID": 2712,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\IMGDOC00304.exe\"",
+   "Image": "C:\\Users\\admin\\Desktop\\IMGDOC00304.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553066326093
+  },
+  {
+   "OID": "5c91e9660773666c1066a79d",
+   "ProcessID": 2808,
+   "ParentPID": 2712,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn netbtugc /tr \"C:\\Users\\admin\\AppData\\Roaming\\SndVol\\MdRes.exe\" /sc  minute /mo 1 /F",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553066342296
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c91e9310773666c10668af3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c91e9660773666c1066a79d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c91e9330773666c10669e90",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c91e9560773666c1066a4c7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c91e9560773666c1066a4c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c91e9560773666c1066a4c7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c91e9560773666c1066a4c7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c91e9560773666c1066a4c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c91e9330773666c10669e90",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c91e9310773666c106691eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5c91e9310773666c106691eb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  }
+ ]
+}

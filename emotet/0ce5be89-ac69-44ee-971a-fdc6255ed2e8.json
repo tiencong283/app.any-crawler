@@ -1,0 +1,86 @@
+{
+ "Name": "htr",
+ "Md5": "b9ca57d3b7715f1488bc26c1c436a30f",
+ "UUID": "0ce5be89-ac69-44ee-971a-fdc6255ed2e8",
+ "Processes": [
+  {
+   "OID": "5e26878dc95dfe75fdc85100",
+   "ProcessID": 640,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\htr.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\htr.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579583372864
+  },
+  {
+   "OID": "5e26878dc95dfe75fdc85105",
+   "ProcessID": 2124,
+   "ParentPID": 640,
+   "CommandLine": "--d4dede4a",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\htr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579583373083
+  },
+  {
+   "OID": "5e268794c95dfe75fdc856c2",
+   "ProcessID": 3708,
+   "ParentPID": 2124,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579583379770
+  },
+  {
+   "OID": "5e268794c95dfe75fdc856c3",
+   "ProcessID": 2092,
+   "ParentPID": 3708,
+   "CommandLine": "--a66f8ff2",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579583379942
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e268794c95dfe75fdc856c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e268794c95dfe75fdc856c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e268794c95dfe75fdc856c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e26878dc95dfe75fdc85105",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e26878dc95dfe75fdc85105",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e26878dc95dfe75fdc85105",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e26878dc95dfe75fdc85100",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

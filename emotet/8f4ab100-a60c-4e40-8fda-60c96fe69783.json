@@ -1,0 +1,67 @@
+{
+ "Name": "OudtuIG9y.exe",
+ "Md5": "1bf62f7611214fadbf672acbf52eb4e5",
+ "UUID": "8f4ab100-a60c-4e40-8fda-60c96fe69783",
+ "Processes": [
+  {
+   "OID": "5e256b2d7e16371678e9badf",
+   "ProcessID": 892,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\OudtuIG9y.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\OudtuIG9y.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579510572738
+  },
+  {
+   "OID": "5e256b2d7e16371678e9bae0",
+   "ProcessID": 3116,
+   "ParentPID": 892,
+   "CommandLine": "--81a604a1",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\OudtuIG9y.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579510572879
+  },
+  {
+   "OID": "5e256b357e16371678e9c08a",
+   "ProcessID": 3880,
+   "ParentPID": 3116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579510580832
+  },
+  {
+   "OID": "5e256b357e16371678e9c08b",
+   "ProcessID": 2184,
+   "ParentPID": 3880,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579510580926
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e256b357e16371678e9c08b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e256b2d7e16371678e9bae0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e256b2d7e16371678e9bae0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e256b2d7e16371678e9bae0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

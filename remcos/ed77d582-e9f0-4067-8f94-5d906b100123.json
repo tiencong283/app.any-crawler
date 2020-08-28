@@ -1,0 +1,79 @@
+{
+ "Name": "303b30ca9d902de72ce83e2b53a496ab2275e4ab58f1151bed1484f421ecc0fa",
+ "Md5": "bb13dbf32f51ac2e8c03b2b29ca56b40",
+ "UUID": "ed77d582-e9f0-4067-8f94-5d906b100123",
+ "Processes": [
+  {
+   "OID": "5cfe551a458aae7828b08da4",
+   "ProcessID": 3092,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\303b30ca9d902de72ce83e2b53a496ab2275e4ab58f1151bed1484f421ecc0fa.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\303b30ca9d902de72ce83e2b53a496ab2275e4ab58f1151bed1484f421ecc0fa.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560171802432
+  },
+  {
+   "OID": "5cfe5522458aae7828b095d4",
+   "ProcessID": 1712,
+   "ParentPID": 3092,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\TVoood.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\TVoood.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560171810213
+  },
+  {
+   "OID": "5cfe5523458aae7828b095e3",
+   "ProcessID": 3044,
+   "ParentPID": 1712,
+   "CommandLine": "wsmprovhost.exe",
+   "Image": "C:\\Windows\\system32\\wsmprovhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560171810697
+  },
+  {
+   "OID": "5cfe5524458aae7828b0990f",
+   "ProcessID": 3580,
+   "ParentPID": 3044,
+   "CommandLine": "wsmprovhost.exe",
+   "Image": "C:\\Windows\\system32\\wsmprovhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560171812088
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cfe5524458aae7828b0990f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfe5523458aae7828b095e3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfe5523458aae7828b095e3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cfe5523458aae7828b095e3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cfe5522458aae7828b095d4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfe551a458aae7828b08da4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

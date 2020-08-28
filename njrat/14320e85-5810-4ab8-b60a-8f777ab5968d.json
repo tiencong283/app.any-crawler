@@ -1,0 +1,44 @@
+{
+ "Name": "loader.exe",
+ "Md5": "8274bebf6fbb6d58a3acfb40229194b1",
+ "UUID": "14320e85-5810-4ab8-b60a-8f777ab5968d",
+ "Processes": [
+  {
+   "OID": "5eef9b41a51f560205eb64d1",
+   "ProcessID": 2824,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\loader.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\loader.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592761153274
+  },
+  {
+   "OID": "5eef9b48a51f560205eb677b",
+   "ProcessID": 2192,
+   "ParentPID": 2824,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\loader.exe\" \"loader.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592761159696
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eef9b41a51f560205eb64d1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eef9b41a51f560205eb64d1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eef9b41a51f560205eb64d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

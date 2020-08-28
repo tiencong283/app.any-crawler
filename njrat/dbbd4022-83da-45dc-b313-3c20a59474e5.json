@@ -1,0 +1,84 @@
+{
+ "Name": "Njrat.exe",
+ "Md5": "4712a33e77d60d17547d1b9a4aeac3af",
+ "UUID": "dbbd4022-83da-45dc-b313-3c20a59474e5",
+ "Processes": [
+  {
+   "OID": "5f462f3a8018ba7ee93e651e",
+   "ProcessID": 2816,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Njrat.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Njrat.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1598435130421
+  },
+  {
+   "OID": "5f462f418018ba7ee93e68c7",
+   "ProcessID": 3344,
+   "ParentPID": 2816,
+   "CommandLine": "\"C:\\Users\\admin\\AccountGen.exe\" ",
+   "Image": "C:\\Users\\admin\\AccountGen.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598435136905
+  },
+  {
+   "OID": "5f462f478018ba7ee93e6dfe",
+   "ProcessID": 2976,
+   "ParentPID": 3344,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AccountGen.exe\" \"AccountGen.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598435143077
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f462f418018ba7ee93e68c7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f462f418018ba7ee93e68c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f462f418018ba7ee93e68c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f462f418018ba7ee93e68c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f462f418018ba7ee93e68c7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f462f418018ba7ee93e68c7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f462f3a8018ba7ee93e651e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f462f3a8018ba7ee93e651e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

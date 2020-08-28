@@ -1,0 +1,89 @@
+{
+ "Name": "Discord_Nitro.by.wa1d.exe",
+ "Md5": "39657e64f9675ff9d21a48bb91a4d9d6",
+ "UUID": "4eb3d70a-785d-4ccc-a7ca-2d8982793e2c",
+ "Processes": [
+  {
+   "OID": "5f312dc588abbf731c7ec45e",
+   "ProcessID": 2240,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Discord_Nitro.by.wa1d.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Discord_Nitro.by.wa1d.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597058501377
+  },
+  {
+   "OID": "5f312dcc88abbf731c7ec746",
+   "ProcessID": 2932,
+   "ParentPID": 2240,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsSecurityModule.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsSecurityModule.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597058507924
+  },
+  {
+   "OID": "5f312dd288abbf731c7eccc4",
+   "ProcessID": 2508,
+   "ParentPID": 2932,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsSecurityModule.exe\" \"WindowsSecurityModule.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597058514033
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f312dcc88abbf731c7ec746",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f312dcc88abbf731c7ec746",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f312dcc88abbf731c7ec746",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f312dcc88abbf731c7ec746",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f312dcc88abbf731c7ec746",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f312dcc88abbf731c7ec746",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f312dcc88abbf731c7ec746",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f312dc588abbf731c7ec45e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f312dc588abbf731c7ec45e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

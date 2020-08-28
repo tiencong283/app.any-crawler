@@ -1,0 +1,88 @@
+{
+ "Name": "PO 1910644544.exe",
+ "Md5": "84f7070c5002f0fc931c2957329d81d5",
+ "UUID": "3ce9288c-4c4c-48e9-8c6b-91adea1df243",
+ "Processes": [
+  {
+   "OID": "5d714730a909ca0c46ef4aef",
+   "ProcessID": 2928,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PO 1910644544.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PO 1910644544.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1567704879840
+  },
+  {
+   "OID": "5d71473ba909ca0c46ef4d97",
+   "ProcessID": 3184,
+   "ParentPID": 2928,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\subfolder\\filename.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567704890902
+  },
+  {
+   "OID": "5d71473ba909ca0c46ef4d98",
+   "ProcessID": 3392,
+   "ParentPID": 2928,
+   "CommandLine": "\"C:\\Users\\admin\\subfolder\\filename.exe\" ",
+   "Image": "C:\\Users\\admin\\subfolder\\filename.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567704890918
+  },
+  {
+   "OID": "5d71474ca909ca0c46ef570c",
+   "ProcessID": 1364,
+   "ParentPID": 3392,
+   "CommandLine": "\"C:\\Users\\admin\\subfolder\\filename.exe\" ",
+   "Image": "C:\\Users\\admin\\subfolder\\filename.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567704908387
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d71474ca909ca0c46ef570c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d71473ba909ca0c46ef4d98",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d71472fa909ca0c46ef4451",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d71473ba909ca0c46ef4d97",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d714730a909ca0c46ef4aef",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d714730a909ca0c46ef4aef",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d714730a909ca0c46ef4aef",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

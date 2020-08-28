@@ -1,0 +1,44 @@
+{
+ "Name": "remcos_agent.exe",
+ "Md5": "491cc96b3475a9f6fc57955da6055aa7",
+ "UUID": "a804323d-5b40-460d-b6ff-c8208da9ffad",
+ "Processes": [
+  {
+   "OID": "5dd968e84a6ae1252cd582cd",
+   "ProcessID": 960,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\remcos_agent.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\remcos_agent.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574529255386
+  },
+  {
+   "OID": "5dd968f84a6ae1252cd5874b",
+   "ProcessID": 1892,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Program Files\\Opera\\opera.exe\" ",
+   "Image": "C:\\Program Files\\Opera\\opera.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1574529272620
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dd968f84a6ae1252cd5874b",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd968f84a6ae1252cd5874b",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dd968e84a6ae1252cd582cd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

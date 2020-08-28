@@ -1,0 +1,84 @@
+{
+ "Name": "anglesitka.exe",
+ "Md5": "4e88335a52a02b2e33cd806b958fd0c4",
+ "UUID": "92c86e8a-3296-4f27-b4ea-0b3d362a3ae6",
+ "Processes": [
+  {
+   "OID": "5dfca995df74dc67dd85bc9b",
+   "ProcessID": 2580,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\anglesitka.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\anglesitka.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1576839572454
+  },
+  {
+   "OID": "5dfca995df74dc67dd85bc9c",
+   "ProcessID": 716,
+   "ParentPID": 2580,
+   "CommandLine": "--2ec85bc5",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\anglesitka.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576839572720
+  },
+  {
+   "OID": "5dfca99cdf74dc67dd85c031",
+   "ProcessID": 3080,
+   "ParentPID": 716,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576839579611
+  },
+  {
+   "OID": "5dfca99cdf74dc67dd85c032",
+   "ProcessID": 1708,
+   "ParentPID": 3080,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576839579689
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dfca99cdf74dc67dd85c032",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dfca99cdf74dc67dd85c032",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfca99cdf74dc67dd85c032",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfca99cdf74dc67dd85c032",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfca995df74dc67dd85bc9c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfca995df74dc67dd85bc9c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dfca995df74dc67dd85bc9c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

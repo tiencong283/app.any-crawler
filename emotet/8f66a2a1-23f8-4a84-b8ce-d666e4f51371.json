@@ -1,0 +1,79 @@
+{
+ "Name": "printsboost.exe",
+ "Md5": "0ed80de0bb0b0a405971b959e514d4c7",
+ "UUID": "8f66a2a1-23f8-4a84-b8ce-d666e4f51371",
+ "Processes": [
+  {
+   "OID": "5ddbb6201b61e14416401d3d",
+   "ProcessID": 2740,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\printsboost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\printsboost.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574680096063
+  },
+  {
+   "OID": "5ddbb6201b61e14416401d3e",
+   "ProcessID": 3992,
+   "ParentPID": 2740,
+   "CommandLine": "--98238d81",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\printsboost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574680096173
+  },
+  {
+   "OID": "5ddbb6271b61e1441640207a",
+   "ProcessID": 3100,
+   "ParentPID": 3992,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574680102860
+  },
+  {
+   "OID": "5ddbb6271b61e1441640207b",
+   "ProcessID": 2548,
+   "ParentPID": 3100,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574680102969
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ddbb6271b61e1441640207b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddbb6271b61e1441640207b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddbb6271b61e1441640207b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ddbb6201b61e14416401d3e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddbb6201b61e14416401d3e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ddbb6201b61e14416401d3e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

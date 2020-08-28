@@ -1,0 +1,74 @@
+{
+ "Name": "cc7941aab2ffe44f66f43a158816412db291f29e5913341b33193ff8e79f27a1",
+ "Md5": "1f4c4a41f5c228debd8a0956b068d8fd",
+ "UUID": "07947d9e-092a-45a3-9ee8-bed68ef79623",
+ "Processes": [
+  {
+   "OID": "5d970449e2c65538b37b77e8",
+   "ProcessID": 2956,
+   "ParentPID": 236,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cc7941aab2ffe44f66f43a158816412db291f29e5913341b33193ff8e79f27a1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cc7941aab2ffe44f66f43a158816412db291f29e5913341b33193ff8e79f27a1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1570178121640
+  },
+  {
+   "OID": "5d970454e2c65538b37b800d",
+   "ProcessID": 2800,
+   "ParentPID": 2956,
+   "CommandLine": "\"cmd.exe\" /c, \"/C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\cc7941aab2ffe44f66f43a158816412db291f29e5913341b33193ff8e79f27a1.exe:Zone.Identifier\"\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570178132046
+  },
+  {
+   "OID": "5d97045ee2c65538b37b82c3",
+   "ProcessID": 2572,
+   "ParentPID": 2956,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570178142765
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d97045ee2c65538b37b82c3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d97045ee2c65538b37b82c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d97045ee2c65538b37b82c3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d97045ee2c65538b37b82c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d970449e2c65538b37b77e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d970449e2c65538b37b77e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

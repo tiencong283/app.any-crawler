@@ -1,0 +1,87 @@
+{
+ "Name": "신규 구매 주문 34321112,pdf.exe",
+ "Md5": "e186d588ed2e70523e5b071e5b50fe4c",
+ "UUID": "4967c99f-48a4-48e0-89a7-7d2c11a94e28",
+ "Processes": [
+  {
+   "OID": "5d9c351cad7725256cfbcd70",
+   "ProcessID": 3180,
+   "ParentPID": 296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\신규 구매 주문 34321112,pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\신규 구매 주문 34321112,pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1570518300330
+  },
+  {
+   "OID": "5d9c351dad7725256cfbd5ae",
+   "ProcessID": 3020,
+   "ParentPID": 3180,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\HJUWYCEUC.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\HJUWYCEUC.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570518300971
+  },
+  {
+   "OID": "5d9c3537ad7725256cfbdd88",
+   "ProcessID": 3720,
+   "ParentPID": 3020,
+   "CommandLine": "\"C:\\Windows\\System32\\regsvr32.exe\"",
+   "Image": "C:\\Windows\\System32\\regsvr32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570518326846
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d9c351dad7725256cfbd5ae",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d9c351dad7725256cfbd5ae",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d9c3537ad7725256cfbdd88",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5d9c3537ad7725256cfbdd88",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d9c351dad7725256cfbd5ae",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1117"
+   ]
+  },
+  {
+   "ProcessOID": "5d9c351cad7725256cfbcd6a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d9c351dad7725256cfbd5ae",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d9c351cad7725256cfbcd70",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d9c351cad7725256cfbcd70",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

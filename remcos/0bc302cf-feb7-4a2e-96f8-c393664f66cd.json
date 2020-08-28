@@ -1,0 +1,46 @@
+{
+ "Name": "order.exe",
+ "Md5": "1bd6c9f6cbaf8c557685cddd44a8f68d",
+ "UUID": "0bc302cf-feb7-4a2e-96f8-c393664f66cd",
+ "Processes": [
+  {
+   "OID": "5c724ea6e91f63297e545478",
+   "ProcessID": 2972,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\order.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\order.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1550995110273
+  },
+  {
+   "OID": "5c724ec1e91f63297e5461ac",
+   "ProcessID": 2812,
+   "ParentPID": 2972,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\order.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\order.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550995136742
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c724ec1e91f63297e5461ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c724ec1e91f63297e5461ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c724ea6e91f63297e545478",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

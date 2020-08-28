@@ -1,0 +1,205 @@
+{
+ "Name": "Server.exe",
+ "Md5": "af22abc4e18f5be4a8142badccc5ef5c",
+ "UUID": "e0513d9a-712d-4e65-a106-280536850790",
+ "Processes": [
+  {
+   "OID": "5f071daf2aa52f1cae4896bf",
+   "ProcessID": 1880,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594301870857
+  },
+  {
+   "OID": "5f071db62aa52f1cae4899f6",
+   "ProcessID": 2128,
+   "ParentPID": 1880,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594301877404
+  },
+  {
+   "OID": "5f071dbc2aa52f1cae489ff5",
+   "ProcessID": 956,
+   "ParentPID": 2128,
+   "CommandLine": "schtasks /create /sc minute /mo 1 /tn Server /tr C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594301883592
+  },
+  {
+   "OID": "5f071dc32aa52f1cae48a631",
+   "ProcessID": 928,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\friendsshould.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1594301891529
+  },
+  {
+   "OID": "5f071dd82aa52f1cae48d8dd",
+   "ProcessID": 2928,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Program Files\\FileZilla FTP Client\\filezilla.exe\" ",
+   "Image": "C:\\Program Files\\FileZilla FTP Client\\filezilla.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1594301912420
+  },
+  {
+   "OID": "5f071dd92aa52f1cae48dbc4",
+   "ProcessID": 1916,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Program Files\\FileZilla FTP Client\\filezilla.exe\" ",
+   "Image": "C:\\Program Files\\FileZilla FTP Client\\filezilla.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1594301912982
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f071dd92aa52f1cae48dbc4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071dd92aa52f1cae48dbc4",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f071dd82aa52f1cae48d8dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071dd82aa52f1cae48d8dd",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f071db62aa52f1cae4899f6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071db62aa52f1cae4899f6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071dc72aa52f1cae48be43",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f071dae2aa52f1cae488f4b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071dc32aa52f1cae48a631",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071dc32aa52f1cae48a631",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f071dae2aa52f1cae488f46",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f071dae2aa52f1cae488f49",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071dae2aa52f1cae488f49",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071dc32aa52f1cae48a631",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f071dae2aa52f1cae488f3f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071dbc2aa52f1cae489ff5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f071db62aa52f1cae4899f6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071db62aa52f1cae4899f6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5f071db62aa52f1cae4899f6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f071db62aa52f1cae4899f6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f071db62aa52f1cae4899f6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071daf2aa52f1cae4896bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f071daf2aa52f1cae4896bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f071daf2aa52f1cae4896bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

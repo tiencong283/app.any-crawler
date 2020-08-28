@@ -1,0 +1,112 @@
+{
+ "Name": "roim.exe_Signed.exe",
+ "Md5": "48292b96a77909e51347a9dabcd2bff7",
+ "UUID": "7ffd2fba-fa12-4c6a-9903-8d211b938bdd",
+ "Processes": [
+  {
+   "OID": "5f3dfa67f611fc1e5cbf0705",
+   "ProcessID": 840,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\roim.exe_Signed.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\roim.exe_Signed.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597897318720
+  },
+  {
+   "OID": "5f3dfa6df611fc1e5cbf0f1b",
+   "ProcessID": 2064,
+   "ParentPID": 840,
+   "CommandLine": "/C \"C:\\Users\\admin\\AppData\\Local\\Temp\\rsglfu.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597897325283
+  },
+  {
+   "OID": "5f3dfa6df611fc1e5cbf0f1d",
+   "ProcessID": 2752,
+   "ParentPID": 2064,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\rsglfu.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\rsglfu.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597897325439
+  },
+  {
+   "OID": "5f3dfa74f611fc1e5cbf1116",
+   "ProcessID": 4024,
+   "ParentPID": 2752,
+   "CommandLine": "\"-Command\" \"if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; \u0026 'C:\\Users\\admin\\AppData\\Local\\Temp\\\\dhslahsl.ps1'\"",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597897331611
+  },
+  {
+   "OID": "5f3dfa74f611fc1e5cbf1117",
+   "ProcessID": 576,
+   "ParentPID": 2752,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597897331642
+  },
+  {
+   "OID": "5f3dfa7af611fc1e5cbf1cf6",
+   "ProcessID": 1192,
+   "ParentPID": 576,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597897338111
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f3dfa74f611fc1e5cbf1117",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3dfa74f611fc1e5cbf1117",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3dfa74f611fc1e5cbf1117",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f3dfa74f611fc1e5cbf1116",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f3dfa74f611fc1e5cbf1116",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3dfa6df611fc1e5cbf0f1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5f3dfa67f611fc1e5cbf0705",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3dfa67f611fc1e5cbf0705",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

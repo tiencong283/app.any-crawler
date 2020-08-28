@@ -1,0 +1,82 @@
+{
+ "Name": "cheat_minecraft.exe",
+ "Md5": "41edb92d6f9cd538b5cb1e14a21db8fd",
+ "UUID": "59bda219-6146-49f1-beaf-0655fe936886",
+ "Processes": [
+  {
+   "OID": "5f11610bdccff0136e6cd4db",
+   "ProcessID": 1332,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cheat_minecraft.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cheat_minecraft.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1594974474494
+  },
+  {
+   "OID": "5f116111dccff0136e6cd818",
+   "ProcessID": 2396,
+   "ParentPID": 1332,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\vuris111987699.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\vuris111987699.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594974481166
+  },
+  {
+   "OID": "5f116117dccff0136e6cdd72",
+   "ProcessID": 1768,
+   "ParentPID": 2396,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\vuris111987699.exe\" \"vuris111987699.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1594974487337
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f116111dccff0136e6cd818",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f116111dccff0136e6cd818",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f116111dccff0136e6cd818",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f116111dccff0136e6cd818",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f116111dccff0136e6cd818",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f116111dccff0136e6cd818",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f11610bdccff0136e6cd4db",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f11610bdccff0136e6cd4db",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "Name": "201_ORDER.doc_mondi.exe",
+ "Md5": "7154b04875a4f2433c4c6d0a326e8abd",
+ "UUID": "3962f754-f1a4-4439-a658-0527c56d5512",
+ "Processes": [
+  {
+   "OID": "5c87cf0a43217319f67f4ab8",
+   "ProcessID": 3624,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\201_ORDER.doc_mondi.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\201_ORDER.doc_mondi.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1552404233694
+  },
+  {
+   "OID": "5c87cf3743217319f67f5142",
+   "ProcessID": 3392,
+   "ParentPID": 3624,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c copy \"C:\\Users\\admin\\AppData\\Local\\Temp\\201_ORDER.doc_mondi.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\app.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1552404278740
+  },
+  {
+   "OID": "5c87cf4f43217319f67f57f0",
+   "ProcessID": 2156,
+   "ParentPID": 3624,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c, \"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\app.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1552404302819
+  },
+  {
+   "OID": "5c87cf4f43217319f67f57f2",
+   "ProcessID": 2820,
+   "ParentPID": 2156,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\app.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\app.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1552404302881
+  },
+  {
+   "OID": "5c87cf9643217319f67f5e7c",
+   "ProcessID": 2708,
+   "ParentPID": 2820,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\app.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\app.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1552404374209
+  },
+  {
+   "OID": "5c87cfad43217319f67f5ea0",
+   "ProcessID": 1708,
+   "ParentPID": 2708,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1552404396772
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c87cf9643217319f67f5e7c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c87cf9643217319f67f5e7c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c87cf4f43217319f67f57f2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c87cf4f43217319f67f57f2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c87cf3743217319f67f5142",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c87cf3743217319f67f5142",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c87cf3743217319f67f5142",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c87cf0a43217319f67f4ab8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

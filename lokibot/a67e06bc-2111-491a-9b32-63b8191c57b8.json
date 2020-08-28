@@ -1,0 +1,89 @@
+{
+ "Name": "receipt_payment_pdf.exe",
+ "Md5": "2fb40213ff48d0584a36e976d5570de8",
+ "UUID": "a67e06bc-2111-491a-9b32-63b8191c57b8",
+ "Processes": [
+  {
+   "OID": "5eeb747160426c5b027561cb",
+   "ProcessID": 2764,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\receipt_payment_pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\receipt_payment_pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592489073615
+  },
+  {
+   "OID": "5eeb749360426c5b0275663d",
+   "ProcessID": 2392,
+   "ParentPID": 2764,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\receipt_payment_pdf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592489107209
+  },
+  {
+   "OID": "5eeb749a60426c5b0275702d",
+   "ProcessID": 2796,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1592489114537
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eeb749360426c5b0275663d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eeb749360426c5b0275663d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eeb749a60426c5b0275702d",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5eeb749360426c5b0275663d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eeb749360426c5b0275663d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eeb747160426c5b027558e6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5eeb749360426c5b0275663d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5eeb749360426c5b0275663d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eeb747160426c5b027561cb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

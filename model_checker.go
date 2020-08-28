@@ -117,19 +117,74 @@ func (procTree *ProcessTree) DepthFirstSearch() []*ProcessNode {
 	return flatTree
 }
 
-func (procTree *ProcessTree) CompareTo(another *ProcessTree) float64 {
-	flatTreeA := procTree.DepthFirstSearch()
-	flatTreeB := another.DepthFirstSearch()
-
-	if len(flatTreeA) != len(flatTreeB) { // only consider two equal tree
+func getTreeHeight(root *ProcessNode) int {
+	if root == nil {
 		return 0
 	}
-	// product/summation operator
+	ans := 0
+	for _, child := range root.Children {
+		tmpHeight := getTreeHeight(child)
+		if ans < tmpHeight {
+			ans = tmpHeight
+		}
+	}
+	return ans + 1
+}
+
+func (procTree *ProcessTree) GetTreeHeight() int {
+	return getTreeHeight(procTree.Root)
+}
+
+type WalkDfsFunc func(procNode *ProcessNode, parent *ProcessNode, level int) bool
+
+func (procTree *ProcessTree) WalkDfs(walkFunc WalkDfsFunc) {
+	procTree.Root.walkDfs(walkFunc, nil, 1)
+}
+
+func (procNode *ProcessNode) walkDfs(walkFunc WalkDfsFunc, parent *ProcessNode, level int) {
+	if walkFunc(procNode.makeCopy(), parent, level) {
+		for _, child := range procNode.Children {
+			child.walkDfs(walkFunc, procNode.makeCopy(), level+1)
+		}
+	}
+}
+
+func (procTree *ProcessTree) StripTreeAt(stripLevel int) {
+	procTree.WalkDfs(func(procNode *ProcessNode, parent *ProcessNode, level int) bool {
+		if level >= stripLevel {
+			procNode.Children = nil
+			return false
+		}
+		return true
+	})
+}
+
+func CalculateSimilarScore(flatTreeA, flatTreeB []*ProcessNode) float64 {
 	var ans float64
+	// product/summation operator
 	for i := 0; i < len(flatTreeA); i++ {
 		ans += flatTreeA[i].compareTo(flatTreeB[i])
 	}
 	return ans / float64(len(flatTreeA))
+}
+
+func (procTree *ProcessTree) CompareTo(another *ProcessTree) float64 {
+	flatTreeA := procTree.DepthFirstSearch()
+	flatTreeB := another.DepthFirstSearch()
+
+	if len(flatTreeA) > len(flatTreeB) {
+		return 0
+	}
+	if len(flatTreeA) == len(flatTreeB) { // two equal tree case
+		return CalculateSimilarScore(flatTreeA, flatTreeB)
+	}
+	var ans float64
+	for i := 0; i < len(flatTreeB)-len(flatTreeA)+1; i++ {
+		if tmpResult := CalculateSimilarScore(flatTreeA, flatTreeB[i:len(flatTreeA)+i]); tmpResult > ans {
+			ans = tmpResult
+		}
+	}
+	return ans
 }
 
 type ProcessNode struct {
@@ -144,6 +199,14 @@ func NewProcessNode(proc *Process) *ProcessNode {
 		Process:    proc,
 		Children:   make([]*ProcessNode, 0),
 		Techniques: make(map[string]bool),
+	}
+}
+
+// clone the node with the same properties except for the children
+func (procNode *ProcessNode) makeCopy() *ProcessNode {
+	return &ProcessNode{
+		Process:    procNode.Process,
+		Techniques: procNode.Techniques,
 	}
 }
 
@@ -171,15 +234,6 @@ func (procNode *ProcessNode) compareTo(another *ProcessNode) float64 {
 	return float64(numOfMatchedTechIds) / float64(len(procNode.Techniques))
 }
 
-var malwareTag string
-var isCrawler bool
-var isEvaluator bool
-
-func init() {
-	flag.BoolVar(&isCrawler, "c", false, "crawling tasks from app.any.run")
-	flag.BoolVar(&isEvaluator, "e", false, "grouping tasks by its similarity")
-}
-
 func checkWithProfile(profile *ProcessTree, profileData *ProcessData, procTrees map[*ProcessData]*ProcessTree,
 	deleted bool) ([]float64,
 	[]*ProcessData) {
@@ -191,7 +245,7 @@ func checkWithProfile(profile *ProcessTree, profileData *ProcessData, procTrees 
 			continue
 		}
 		result := profile.CompareTo(procTree)
-		if result > 0.5 {
+		if result >= 0.6 {
 			results = append(results, result)
 			similars = append(similars, procData)
 			if deleted {
@@ -211,6 +265,15 @@ func printResult(profileData *ProcessData, dataSize int, results []float64, simi
 		result := results[i]
 		log.Printf("P: %.2f, md5: %s, uuid: %s, name: %s\n", result, procData.Md5, procData.UUID, procData.Name)
 	}
+}
+
+var malwareTag string
+var isCrawler bool
+var isEvaluator bool
+
+func init() {
+	flag.BoolVar(&isCrawler, "c", false, "crawling tasks from app.any.run")
+	flag.BoolVar(&isEvaluator, "e", false, "grouping tasks by its similarity")
 }
 
 func main() {

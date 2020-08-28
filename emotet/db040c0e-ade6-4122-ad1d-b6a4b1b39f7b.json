@@ -1,0 +1,69 @@
+{
+ "Name": "d924pttigyto.exe",
+ "Md5": "80cca0ec5e7044cda34b0e47a5140619",
+ "UUID": "db040c0e-ade6-4122-ad1d-b6a4b1b39f7b",
+ "Processes": [
+  {
+   "OID": "5ddbaccc5fe9366667546e55",
+   "ProcessID": 2832,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\d924pttigyto.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\d924pttigyto.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574677708049
+  },
+  {
+   "OID": "5ddbaccc5fe9366667546e56",
+   "ProcessID": 1296,
+   "ParentPID": 2832,
+   "CommandLine": "--b72d5aa7",
+   "Image": "C:\\Users\\admin\\Desktop\\d924pttigyto.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574677708377
+  },
+  {
+   "OID": "5ddbacd45fe93666675476b7",
+   "ProcessID": 3384,
+   "ParentPID": 1296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574677716189
+  },
+  {
+   "OID": "5ddbacd45fe93666675476c2",
+   "ProcessID": 2732,
+   "ParentPID": 3384,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574677716283
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ddbacd45fe93666675476b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ddbaccc5fe9366667546e56",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ddbaccc5fe9366667546e56",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddbaccc5fe9366667546e56",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

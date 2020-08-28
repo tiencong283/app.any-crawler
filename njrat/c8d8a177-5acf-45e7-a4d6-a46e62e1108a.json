@@ -1,0 +1,84 @@
+{
+ "Name": "virus.exe",
+ "Md5": "c3b7a11b16e65e06b0f63218e7878000",
+ "UUID": "c8d8a177-5acf-45e7-a4d6-a46e62e1108a",
+ "Processes": [
+  {
+   "OID": "5f32884afe18033355fa93c0",
+   "ProcessID": 2508,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\virus.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\virus.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597147209555
+  },
+  {
+   "OID": "5f32884afe18033355fa9b05",
+   "ProcessID": 2472,
+   "ParentPID": 2508,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\security.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\security.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597147210211
+  },
+  {
+   "OID": "5f32884bfe18033355fa9fac",
+   "ProcessID": 4076,
+   "ParentPID": 2472,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\security.exe\" \"security.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597147210399
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f32884afe18033355fa9b05",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32884afe18033355fa9b05",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f32884afe18033355fa9b05",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32884afe18033355fa9b05",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32884afe18033355fa9b05",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f32884afe18033355fa9b05",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f32884afe18033355fa93c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f32884afe18033355fa93c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

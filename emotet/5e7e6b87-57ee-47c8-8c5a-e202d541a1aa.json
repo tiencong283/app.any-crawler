@@ -1,0 +1,110 @@
+{
+ "Name": "wasvault.exe",
+ "Md5": "42f7cb5a6bca77daa4efa0a5949c2f8d",
+ "UUID": "5e7e6b87-57ee-47c8-8c5a-e202d541a1aa",
+ "Processes": [
+  {
+   "OID": "5e4c67035290ad2b74006306",
+   "ProcessID": 3292,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\wasvault.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\wasvault.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1582065410901
+  },
+  {
+   "OID": "5e4c67045290ad2b74006bec",
+   "ProcessID": 1876,
+   "ParentPID": 3292,
+   "CommandLine": "--7f9d2a2d",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\wasvault.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582065411792
+  },
+  {
+   "OID": "5e4c670c5290ad2b74006cc6",
+   "ProcessID": 3412,
+   "ParentPID": 1876,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\sansidaho\\sansidaho.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\sansidaho\\sansidaho.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582065420636
+  },
+  {
+   "OID": "5e4c670d5290ad2b74006f93",
+   "ProcessID": 1248,
+   "ParentPID": 3412,
+   "CommandLine": "--a6fef274",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\sansidaho\\sansidaho.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582065421636
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e4c670d5290ad2b74006f93",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4c670d5290ad2b74006f93",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4c670d5290ad2b74006f93",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4c67035290ad2b740062fb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e4c670d5290ad2b74006f93",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e4c670c5290ad2b74006cc6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4c670c5290ad2b74006cc6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e4c67045290ad2b74006bec",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4c67045290ad2b74006bec",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4c67045290ad2b74006bec",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e4c67035290ad2b74006306",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

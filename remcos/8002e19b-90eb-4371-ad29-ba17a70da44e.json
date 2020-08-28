@@ -1,0 +1,179 @@
+{
+ "Name": "SCAN08.EXE",
+ "Md5": "076c20c57cfa1ebfe5c98559dbd8d7f9",
+ "UUID": "8002e19b-90eb-4371-ad29-ba17a70da44e",
+ "Processes": [
+  {
+   "OID": "5dc3db1b212fdc68ddc534a7",
+   "ProcessID": 2692,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\SCAN08.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\SCAN08.EXE",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573116698757
+  },
+  {
+   "OID": "5dc3db1c212fdc68ddc53e5a",
+   "ProcessID": 2748,
+   "ParentPID": 2692,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\Jndv2.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573116699507
+  },
+  {
+   "OID": "5dc3db21212fdc68ddc542b9",
+   "ProcessID": 3620,
+   "ParentPID": 2748,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Scan09\\Zdlpxy.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Scan09\\Zdlpxy.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573116704960
+  },
+  {
+   "OID": "5dc3db3b212fdc68ddc5476f",
+   "ProcessID": 3316,
+   "ParentPID": 3620,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Scan09\\Zdlpxy.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Scan09\\Zdlpxy.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573116730819
+  },
+  {
+   "OID": "5dc3db3b212fdc68ddc54789",
+   "ProcessID": 1796,
+   "ParentPID": 3316,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573116731038
+  },
+  {
+   "OID": "5dc3db3b212fdc68ddc5478a",
+   "ProcessID": 3028,
+   "ParentPID": 1796,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573116731163
+  },
+  {
+   "OID": "5dc3db3c212fdc68ddc54c9a",
+   "ProcessID": 2860,
+   "ParentPID": 1796,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573116732069
+  },
+  {
+   "OID": "5dc3db3c212fdc68ddc54c9b",
+   "ProcessID": 584,
+   "ParentPID": 2860,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\" ",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573116732179
+  },
+  {
+   "OID": "5dc3db3e212fdc68ddc552b2",
+   "ProcessID": 3884,
+   "ParentPID": 3316,
+   "CommandLine": "\"C:\\Windows\\System32\\notepad.exe\"",
+   "Image": "C:\\Windows\\System32\\notepad.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573116734054
+  },
+  {
+   "OID": "5dc3db3e212fdc68ddc552b3",
+   "ProcessID": 1556,
+   "ParentPID": 3884,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573116734132
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc3db3e212fdc68ddc552b2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5dc3db3e212fdc68ddc552b2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3db1b212fdc68ddc53492",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3db3b212fdc68ddc5476f",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3db3e212fdc68ddc552b2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3db3e212fdc68ddc552b2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3db3b212fdc68ddc54789",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5dc3db3b212fdc68ddc54789",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5dc3db3b212fdc68ddc54789",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3db3b212fdc68ddc5476f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3db21212fdc68ddc542b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dc3db21212fdc68ddc542b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3db1b212fdc68ddc534a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5dc3db1b212fdc68ddc534a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

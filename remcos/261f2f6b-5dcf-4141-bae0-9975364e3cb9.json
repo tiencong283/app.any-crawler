@@ -1,0 +1,158 @@
+{
+ "Name": "DiscordGen.exe",
+ "Md5": "d514bcffa066f1855cdf74dacbaa7944",
+ "UUID": "261f2f6b-5dcf-4141-bae0-9975364e3cb9",
+ "Processes": [
+  {
+   "OID": "5d3bb05a95d65169e7cae656",
+   "ProcessID": 4020,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\DiscordGen.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\DiscordGen.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564192857787
+  },
+  {
+   "OID": "5d3bb05a95d65169e7caecb8",
+   "ProcessID": 3836,
+   "ParentPID": 4020,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\DiscordGen.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\DiscordGen.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564192858350
+  },
+  {
+   "OID": "5d3bb05c95d65169e7caf2af",
+   "ProcessID": 3052,
+   "ParentPID": 3836,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564192859178
+  },
+  {
+   "OID": "5d3bb05c95d65169e7caf2b1",
+   "ProcessID": 3932,
+   "ParentPID": 3052,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564192859256
+  },
+  {
+   "OID": "5d3bb05c95d65169e7caf813",
+   "ProcessID": 2264,
+   "ParentPID": 3052,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564192860319
+  },
+  {
+   "OID": "5d3bb05d95d65169e7caf910",
+   "ProcessID": 4016,
+   "ParentPID": 2264,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564192860569
+  },
+  {
+   "OID": "5d3bb05d95d65169e7caf911",
+   "ProcessID": 1892,
+   "ParentPID": 4016,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564192860694
+  },
+  {
+   "OID": "5d3bb05d95d65169e7caf912",
+   "ProcessID": 2440,
+   "ParentPID": 1892,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564192860928
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d3bb05a95d65169e7cae64d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3bb05d95d65169e7caf912",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3bb05d95d65169e7caf910",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3bb05d95d65169e7caf910",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3bb05d95d65169e7caf910",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3bb05c95d65169e7caf813",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d3bb05c95d65169e7caf2af",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3bb05a95d65169e7caecb8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d3bb05a95d65169e7caecb8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3bb05a95d65169e7caecb8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3bb05a95d65169e7caecb8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3bb05a95d65169e7cae656",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d3bb05a95d65169e7cae641",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

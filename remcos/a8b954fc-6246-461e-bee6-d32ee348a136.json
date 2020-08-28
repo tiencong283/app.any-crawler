@@ -1,0 +1,80 @@
+{
+ "Name": "S L J 普切斯·德勒 HVRB-26987,pdf.exe",
+ "Md5": "ee1441cb6c17b14fd41d30ace4421aac",
+ "UUID": "a8b954fc-6246-461e-bee6-d32ee348a136",
+ "Processes": [
+  {
+   "OID": "5db2d9d44029ea05b2cd6043",
+   "ProcessID": 3100,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\S L J 普切斯·德勒 HVRB-26987,pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\S L J 普切斯·德勒 HVRB-26987,pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572002259312
+  },
+  {
+   "OID": "5db2d9d44029ea05b2cd6346",
+   "ProcessID": 2332,
+   "ParentPID": 3100,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Nrlrub.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Nrlrub.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572002259921
+  },
+  {
+   "OID": "5db2d9ee4029ea05b2cd698f",
+   "ProcessID": 496,
+   "ParentPID": 2332,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572002285984
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db2d9d44029ea05b2cd6346",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db2d9d44029ea05b2cd6346",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db2d9ee4029ea05b2cd698f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5db2d9ee4029ea05b2cd698f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db2d9d44029ea05b2cd6346",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db2d9d44029ea05b2cd6346",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db2d9d44029ea05b2cd6043",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db2d9d44029ea05b2cd6043",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

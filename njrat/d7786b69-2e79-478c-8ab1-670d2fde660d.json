@@ -1,0 +1,84 @@
+{
+ "Name": "Гонщик.exe",
+ "Md5": "bbcfcd12445d92350d67d891aa2a2bf2",
+ "UUID": "d7786b69-2e79-478c-8ab1-670d2fde660d",
+ "Processes": [
+  {
+   "OID": "5f19d315b325023aea80f07c",
+   "ProcessID": 3168,
+   "ParentPID": 288,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Гонщик.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Гонщик.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595527957652
+  },
+  {
+   "OID": "5f19d31cb325023aea80f37a",
+   "ProcessID": 3284,
+   "ParentPID": 3168,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\GTA.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\GTA.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595527964183
+  },
+  {
+   "OID": "5f19d322b325023aea80f956",
+   "ProcessID": 2928,
+   "ParentPID": 3284,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\GTA.exe\" \"GTA.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595527970371
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f19d31cb325023aea80f37a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19d31cb325023aea80f37a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19d31cb325023aea80f37a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f19d31cb325023aea80f37a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f19d31cb325023aea80f37a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19d31cb325023aea80f37a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f19d315b325023aea80f07c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f19d315b325023aea80f07c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

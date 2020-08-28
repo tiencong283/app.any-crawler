@@ -1,0 +1,91 @@
+{
+ "Name": "Email_attachment.exe",
+ "Md5": "8424346297830041f0f5f41a0074588f",
+ "UUID": "b866ebe5-a43a-416a-8e8f-741dfeaeee5d",
+ "Processes": [
+  {
+   "OID": "5f320023d6cbfe155ce2c495",
+   "ProcessID": 864,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Email_attachment.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Email_attachment.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597112354829
+  },
+  {
+   "OID": "5f32002ad6cbfe155ce2cdc2",
+   "ProcessID": 1456,
+   "ParentPID": 864,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\WUDFHost\\mcbuilder.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\WUDFHost\\mcbuilder.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597112362314
+  },
+  {
+   "OID": "5f32002ed6cbfe155ce2d1d3",
+   "ProcessID": 2892,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597112366704
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f32002ad6cbfe155ce2cdc2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f32002ad6cbfe155ce2cdc2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32002ad6cbfe155ce2cdc2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f32002ad6cbfe155ce2cdc2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f320023d6cbfe155ce2c486",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f32002ad6cbfe155ce2cdc2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f32002ed6cbfe155ce2d1d3",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f320023d6cbfe155ce2c495",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f320023d6cbfe155ce2c495",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

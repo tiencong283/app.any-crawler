@@ -1,0 +1,81 @@
+{
+ "Name": "21094673.exe",
+ "Md5": "88a47b27501c1979ac9a8ee41d5e0f2a",
+ "UUID": "49ef51e5-8e0e-4ad1-8e19-2ff8eb7c7482",
+ "Processes": [
+  {
+   "OID": "5de6d30a9b40c06f7c318d38",
+   "ProcessID": 2124,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\21094673.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\21094673.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1575408394190
+  },
+  {
+   "OID": "5de6d3109b40c06f7c318f59",
+   "ProcessID": 3180,
+   "ParentPID": 2124,
+   "CommandLine": "--cecfc62a",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\21094673.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575408399893
+  },
+  {
+   "OID": "5de6d31b9b40c06f7c3190cc",
+   "ProcessID": 3336,
+   "ParentPID": 3180,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575408410877
+  },
+  {
+   "OID": "5de6d3209b40c06f7c3193de",
+   "ProcessID": 3532,
+   "ParentPID": 3336,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575408416830
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5de6d3209b40c06f7c3193de",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de6d31b9b40c06f7c3190cc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5de6d3109b40c06f7c318f59",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de6d3109b40c06f7c318f59",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5de6d3109b40c06f7c318f59",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de6d30a9b40c06f7c318d38",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

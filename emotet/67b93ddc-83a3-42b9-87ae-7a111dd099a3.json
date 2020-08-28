@@ -1,0 +1,81 @@
+{
+ "Name": "aa75bc5ab7ea_nothingToSee.exe",
+ "Md5": "6011051c5748301230b8f9381a18bcd3",
+ "UUID": "67b93ddc-83a3-42b9-87ae-7a111dd099a3",
+ "Processes": [
+  {
+   "OID": "5e3e1e4d92b4ba5b2bc1c29a",
+   "ProcessID": 2728,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\aa75bc5ab7ea_nothingToSee.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\aa75bc5ab7ea_nothingToSee.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581129292742
+  },
+  {
+   "OID": "5e3e1e4e92b4ba5b2bc1c4b3",
+   "ProcessID": 2692,
+   "ParentPID": 2728,
+   "CommandLine": "--64d20a12",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\aa75bc5ab7ea_nothingToSee.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581129294086
+  },
+  {
+   "OID": "5e3e1e5792b4ba5b2bc1c58d",
+   "ProcessID": 1756,
+   "ParentPID": 2692,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\soundser\\soundser.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\soundser\\soundser.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581129302461
+  },
+  {
+   "OID": "5e3e1e5892b4ba5b2bc1c854",
+   "ProcessID": 1696,
+   "ParentPID": 1756,
+   "CommandLine": "--3ab57678",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\soundser\\soundser.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581129303946
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e3e1e5792b4ba5b2bc1c58d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3e1e5792b4ba5b2bc1c58d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e3e1e4e92b4ba5b2bc1c4b3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e3e1e4e92b4ba5b2bc1c4b3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3e1e4e92b4ba5b2bc1c4b3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3e1e4d92b4ba5b2bc1c29a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

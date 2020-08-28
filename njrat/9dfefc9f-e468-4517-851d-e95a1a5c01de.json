@@ -1,0 +1,72 @@
+{
+ "Name": "share_bot_fixed.exe",
+ "Md5": "db424b9a40212e155126f7b457ba5fc4",
+ "UUID": "9dfefc9f-e468-4517-851d-e95a1a5c01de",
+ "Processes": [
+  {
+   "OID": "5f31499ce68be0299798ab03",
+   "ProcessID": 1228,
+   "ParentPID": 356,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\share_bot_fixed.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\share_bot_fixed.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597065627802
+  },
+  {
+   "OID": "5f3149a4e68be0299798ae29",
+   "ProcessID": 2120,
+   "ParentPID": 1228,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\share_bot_fixed.exe\" \"share_bot_fixed.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597065636333
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f31499ce68be0299798a270",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5f3149b9e68be0299798b59a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f3149b9e68be0299798b59a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f31499ce68be0299798ab03",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f31499ce68be0299798ab03",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f31499ce68be0299798ab03",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f31499ce68be0299798a27e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  }
+ ]
+}

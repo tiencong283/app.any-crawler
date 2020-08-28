@@ -1,0 +1,166 @@
+{
+ "Name": "yourname.exe",
+ "Md5": "732395f7b8823e30822a1a041d8a395c",
+ "UUID": "55beaf5f-a50e-4eca-b52a-93b76f040b4a",
+ "Processes": [
+  {
+   "OID": "5f392ea7d63e34239e04aaed",
+   "ProcessID": 2444,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\yourname.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\yourname.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597583015097
+  },
+  {
+   "OID": "5f392ec4d63e34239e04b9d3",
+   "ProcessID": 2592,
+   "ParentPID": 596,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1597583044097
+  },
+  {
+   "OID": "5f392ec4d63e34239e04b9d4",
+   "ProcessID": 3512,
+   "ParentPID": 2444,
+   "CommandLine": "\"cmd.exe\" /c REG ADD HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /f /v WebMonitor /t REG_SZ /d C:\\Windows\\system32\\pcalua.exe\" -a C:\\Users\\admin\\Documents\\WebMonitor.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597583044222
+  },
+  {
+   "OID": "5f392ec4d63e34239e04b9d6",
+   "ProcessID": 480,
+   "ParentPID": 3512,
+   "CommandLine": "REG  ADD HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /f /v WebMonitor /t REG_SZ /d C:\\Windows\\system32\\pcalua.exe\" -a C:\\Users\\admin\\Documents\\WebMonitor.exe\"",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597583044269
+  },
+  {
+   "OID": "5f392ee7d63e34239e04c7c1",
+   "ProcessID": 2932,
+   "ParentPID": 2444,
+   "CommandLine": "\"C:\\Users\\admin\\Documents\\WebMonitor.exe\" ",
+   "Image": "C:\\Users\\admin\\Documents\\WebMonitor.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597583079332
+  },
+  {
+   "OID": "5f392f1ed63e34239e04cd37",
+   "ProcessID": 1800,
+   "ParentPID": 2932,
+   "CommandLine": "\"C:\\Users\\admin\\Documents\\WebMonitor.exe\"",
+   "Image": "C:\\Users\\admin\\Documents\\WebMonitor.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597583134254
+  },
+  {
+   "OID": "5f392f27d63e34239e04cf81",
+   "ProcessID": 2056,
+   "ParentPID": 1800,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\Documents\\WebMonitor.exe\" \"WebMonitor.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597583142988
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f392f1ed63e34239e04cd37",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f392f1ed63e34239e04cd37",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f392f1ed63e34239e04cd37",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f392ee7d63e34239e04c7c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f392ee7d63e34239e04c7c1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f392ea7d63e34239e04aaed",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f392ea7d63e34239e04aae1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f392ea7d63e34239e04aade",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f392ec4d63e34239e04b9d6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f392ec4d63e34239e04b9d4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f392ea7d63e34239e04aaed",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f392ec4d63e34239e04b9d3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f392ea7d63e34239e04aaed",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f392ea7d63e34239e04aaed",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f392ea7d63e34239e04aaed",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

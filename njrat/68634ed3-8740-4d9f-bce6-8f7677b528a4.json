@@ -1,0 +1,89 @@
+{
+ "Name": "1.exe",
+ "Md5": "c8d3124da2597ed5622840c8129bd6f6",
+ "UUID": "68634ed3-8740-4d9f-bce6-8f7677b528a4",
+ "Processes": [
+  {
+   "OID": "5f1e84eb6eb9c169d20beaad",
+   "ProcessID": 2404,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595835627120
+  },
+  {
+   "OID": "5f1e84ec6eb9c169d20bec3f",
+   "ProcessID": 1580,
+   "ParentPID": 2404,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Trojan.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Trojan.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595835627588
+  },
+  {
+   "OID": "5f1e84ec6eb9c169d20bec40",
+   "ProcessID": 2816,
+   "ParentPID": 1580,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\Trojan.exe\" \"Trojan.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595835627713
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f1e84ec6eb9c169d20bec3f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1e84ec6eb9c169d20bec3f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1e84ec6eb9c169d20bec3f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1e84ec6eb9c169d20bec3f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1e84ec6eb9c169d20bec3f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1e84ec6eb9c169d20bec3f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f1e84eb6eb9c169d20beaad",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f1e84eb6eb9c169d20beaad",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1e84eb6eb9c169d20beaad",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

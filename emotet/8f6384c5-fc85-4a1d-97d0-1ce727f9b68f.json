@@ -1,0 +1,76 @@
+{
+ "Name": "uPR.exe",
+ "Md5": "b5cb1dbd1c7a88f04282cf23684032d0",
+ "UUID": "8f6384c5-fc85-4a1d-97d0-1ce727f9b68f",
+ "Processes": [
+  {
+   "OID": "5e2b49d32db85163397bdd63",
+   "ProcessID": 1688,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\uPR.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\uPR.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579895250725
+  },
+  {
+   "OID": "5e2b49d32db85163397bdd64",
+   "ProcessID": 2428,
+   "ParentPID": 1688,
+   "CommandLine": "--19436ddb",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\uPR.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579895250850
+  },
+  {
+   "OID": "5e2b49d92db85163397be764",
+   "ProcessID": 2532,
+   "ParentPID": 2428,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579895257506
+  },
+  {
+   "OID": "5e2b49d92db85163397be765",
+   "ProcessID": 3100,
+   "ParentPID": 2532,
+   "CommandLine": "--a66f8ff2",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579895257584
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2b49d32db85163397bdd58",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b49d92db85163397be765",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b49d32db85163397bdd64",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b49d32db85163397bdd64",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b49d32db85163397bdd64",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,151 @@
+{
+ "Name": "NetflixV2.exe",
+ "Md5": "d514bcffa066f1855cdf74dacbaa7944",
+ "UUID": "fc785f97-ccd9-49e6-8df4-3568bf68945d",
+ "Processes": [
+  {
+   "OID": "5d3b7a01afec76094739bc4d",
+   "ProcessID": 3092,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NetflixV2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NetflixV2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564178945024
+  },
+  {
+   "OID": "5d3b7a01afec76094739c22a",
+   "ProcessID": 2376,
+   "ParentPID": 3092,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NetflixV2.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NetflixV2.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564178945493
+  },
+  {
+   "OID": "5d3b7a02afec76094739c4cb",
+   "ProcessID": 3464,
+   "ParentPID": 2376,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564178945774
+  },
+  {
+   "OID": "5d3b7a02afec76094739c4cd",
+   "ProcessID": 2272,
+   "ParentPID": 3464,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564178945852
+  },
+  {
+   "OID": "5d3b7a03afec76094739cbed",
+   "ProcessID": 2796,
+   "ParentPID": 3464,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564178946962
+  },
+  {
+   "OID": "5d3b7a03afec76094739cc5c",
+   "ProcessID": 4072,
+   "ParentPID": 2796,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WindowsDefender\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564178947227
+  },
+  {
+   "OID": "5d3b7a03afec76094739cc5d",
+   "ProcessID": 2760,
+   "ParentPID": 4072,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564178947305
+  },
+  {
+   "OID": "5d3b7a03afec76094739cc5e",
+   "ProcessID": 3956,
+   "ParentPID": 2760,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564178947462
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d3b7a03afec76094739cc5e",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b7a03afec76094739cc5e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b7a03afec76094739cc5c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b7a03afec76094739cc5c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b7a03afec76094739cc5c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3b7a03afec76094739cbed",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d3b7a02afec76094739c4cb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b7a01afec76094739c22a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d3b7a01afec76094739c22a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b7a01afec76094739c22a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3b7a01afec76094739c22a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3b7a01afec76094739bc4d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

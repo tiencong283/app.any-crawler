@@ -1,0 +1,202 @@
+{
+ "Name": "SOPORTE_DE_PAGO.exe",
+ "Md5": "20a0366c70a582358202aee02f498bae",
+ "UUID": "699da7ba-1cea-4734-9955-b70c5d056e78",
+ "Processes": [
+  {
+   "OID": "5db8a4cbc99a2041557264c4",
+   "ProcessID": 1800,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\SOPORTE_DE_PAGO.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\SOPORTE_DE_PAGO.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572381898599
+  },
+  {
+   "OID": "5db8a4f7c99a204155772d8f",
+   "ProcessID": 1016,
+   "ParentPID": 1800,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572381942458
+  },
+  {
+   "OID": "5db8a511c99a2041557760b9",
+   "ProcessID": 3988,
+   "ParentPID": 1016,
+   "CommandLine": "C:\\Windows\\system32\\cmd.exe /c \"COPY /Y /B \"C:\\Users\\admin\\AppData\\Local\\Temp\\SOPORTE_DE_PAGO.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\Adobe\\LogTransport2\\dllhost.exe\"\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572381968396
+  },
+  {
+   "OID": "5db8a517c99a204155777366",
+   "ProcessID": 1740,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3E5FC7F9-9A51-4367-9063-A120244FBEC7}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1572381974724
+  },
+  {
+   "OID": "5db8a517c99a204155777367",
+   "ProcessID": 328,
+   "ParentPID": 1740,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\" /c \"reg.exe add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Paths\" /v \"C:\\Users\\admin\\AppData\\Roaming\\Adobe\\LogTransport2\" /t REG_DWORD /d 0\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572381974833
+  },
+  {
+   "OID": "5db8a517c99a2041557776d3",
+   "ProcessID": 3244,
+   "ParentPID": 328,
+   "CommandLine": "reg.exe  add \"HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Paths\" /v \"C:\\Users\\admin\\AppData\\Roaming\\Adobe\\LogTransport2\" /t REG_DWORD /d 0",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572381974911
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db8a4f7c99a204155772d8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8a4f7c99a204155772d8f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8a4f7c99a204155772d8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5db8a4f7c99a204155772d8f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8a517c99a204155777367",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5db8a517c99a204155777366",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5db8a517c99a204155777366",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5db8a517c99a204155777366",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8a4cbc99a2041557264b1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8a4cbc99a2041557264b1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8a4f7c99a204155772d8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8a4f7c99a204155772d8f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5db8a511c99a2041557760b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8a511c99a2041557760b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8a4f7c99a204155772d8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5db8a4f7c99a204155772d8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db8a4cbc99a2041557264b1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db8a4cbc99a2041557264a9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5db8a4cbc99a2041557264b1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8a4cbc99a2041557264c4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5db8a4cbc99a2041557264c4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8a4cbc99a2041557264c4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5db8a4cbc99a2041557264c4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

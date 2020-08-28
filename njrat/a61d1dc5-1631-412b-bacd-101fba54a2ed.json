@@ -1,0 +1,155 @@
+{
+ "Name": "DOSYA İZLEYİCİ.exe",
+ "Md5": "70dd38fe7abbe4de53f3a66a7c5750bb",
+ "UUID": "a61d1dc5-1631-412b-bacd-101fba54a2ed",
+ "Processes": [
+  {
+   "OID": "5ef114097c928c455a305c4c",
+   "ProcessID": 960,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\DOSYA İZLEYİCİ.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\DOSYA İZLEYİCİ.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5ef114097c928c455a30672b",
+   "ProcessID": 3088,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\DOSYA İZLEYİCİ.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\DOSYA İZLEYİCİ.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592857609373
+  },
+  {
+   "OID": "5ef1140b7c928c455a306bee",
+   "ProcessID": 1872,
+   "ParentPID": 3088,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\905249.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\905249.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592857610951
+  },
+  {
+   "OID": "5ef1140b7c928c455a306f1d",
+   "ProcessID": 1848,
+   "ParentPID": 1872,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\explorer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\explorer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592857611482
+  },
+  {
+   "OID": "5ef1140b7c928c455a306f1e",
+   "ProcessID": 2908,
+   "ParentPID": 1848,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\explorer.exe\" \"explorer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592857611607
+  },
+  {
+   "OID": "5ef114197c928c455a308d4a",
+   "ProcessID": 2596,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1592857625217
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ef114197c928c455a308d4a",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306f1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306f1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306f1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306f1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306f1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306f1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1112"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306f1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306f1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306f1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306bee",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306bee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306bee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306bee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef1140b7c928c455a306bee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ef114097c928c455a30672b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "Name": "Spider_Crypter.exe",
+ "Md5": "75517b13885a1348846418c540b9d134",
+ "UUID": "a701cd43-a0b3-49d0-afcc-9b50b47168f0",
+ "Processes": [
+  {
+   "OID": "5f2c691c3d35923b0b8a868a",
+   "ProcessID": 2520,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Spider_Crypter.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Spider_Crypter.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596746012371
+  },
+  {
+   "OID": "5f2c691d3d35923b0b8a8d41",
+   "ProcessID": 1020,
+   "ParentPID": 2520,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\REALTEK HD AUDIO.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\REALTEK HD AUDIO.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596746012730
+  },
+  {
+   "OID": "5f2c691d3d35923b0b8a8d42",
+   "ProcessID": 1336,
+   "ParentPID": 2520,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\SPIDERNET_CRYPTER.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\SPIDERNET_CRYPTER.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596746012809
+  },
+  {
+   "OID": "5f2c691e3d35923b0b8a98fd",
+   "ProcessID": 2844,
+   "ParentPID": 1020,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Microsoft.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Microsoft.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596746013699
+  },
+  {
+   "OID": "5f2c691e3d35923b0b8a98fe",
+   "ProcessID": 2272,
+   "ParentPID": 2844,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Microsoft.exe\" \"Microsoft.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596746013887
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2c691d3d35923b0b8a8d42",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2c691e3d35923b0b8a98fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2c691e3d35923b0b8a98fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2c691e3d35923b0b8a98fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f2c691e3d35923b0b8a98fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2c691d3d35923b0b8a8d41",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f2c691d3d35923b0b8a8d41",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2c691d3d35923b0b8a8d41",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2c691c3d35923b0b8a868a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2c691c3d35923b0b8a868a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

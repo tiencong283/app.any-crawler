@@ -1,0 +1,115 @@
+{
+ "Name": "NoxCheats.exe",
+ "Md5": "8b71fdac437295a302a20482389bc18a",
+ "UUID": "d7272f76-128e-40e4-91bb-87a8191718fe",
+ "Processes": [
+  {
+   "OID": "5f359bb399869f57150d12b6",
+   "ProcessID": 2796,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NoxCheats.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NoxCheats.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597348787444
+  },
+  {
+   "OID": "5f359bba99869f57150d15a5",
+   "ProcessID": 1440,
+   "ParentPID": 2796,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\AdminCheat.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\AdminCheat.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597348794038
+  },
+  {
+   "OID": "5f359bc099869f57150d1b77",
+   "ProcessID": 2948,
+   "ParentPID": 1440,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\AdminCheat.exe\" \"AdminCheat.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597348800147
+  },
+  {
+   "OID": "5f359beb99869f57150d2d46",
+   "ProcessID": 1852,
+   "ParentPID": 1440,
+   "CommandLine": "\"cmd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597348842710
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f359bba99869f57150d15a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f359bba99869f57150d15a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f359bba99869f57150d15a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f359bba99869f57150d15a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f359bba99869f57150d15a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f359bba99869f57150d15a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f359bba99869f57150d15a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f359bba99869f57150d15a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f359bba99869f57150d15a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f359bb399869f57150d12b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f359bb399869f57150d12b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f359bb399869f57150d12b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

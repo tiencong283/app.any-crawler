@@ -1,0 +1,199 @@
+{
+ "Name": "OFFER 28-08-2019.exe",
+ "Md5": "a3b63342343d957919d08127ef860341",
+ "UUID": "48f3987a-1eef-4bca-a516-a3cba571e375",
+ "Processes": [
+  {
+   "OID": "5d7f5bb5e1d9e96d53732fa9",
+   "ProcessID": 2996,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\OFFER 28-08-2019.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\OFFER 28-08-2019.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1568627637449
+  },
+  {
+   "OID": "5d7f5bbbe1d9e96d53733e0a",
+   "ProcessID": 3564,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\OFFER 28-08-2019.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\OFFER 28-08-2019.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1568627643762
+  },
+  {
+   "OID": "5d7f5bc5e1d9e96d53733f80",
+   "ProcessID": 2772,
+   "ParentPID": 2996,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\Nexest.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Nexest.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1568627652762
+  },
+  {
+   "OID": "5d7f5bcbe1d9e96d537340b8",
+   "ProcessID": 3620,
+   "ParentPID": 3564,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\Nexest.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Nexest.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1568627659012
+  },
+  {
+   "OID": "5d7f5bdee1d9e96d53734236",
+   "ProcessID": 2236,
+   "ParentPID": 2772,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Nexest.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Nexest.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1568627678277
+  },
+  {
+   "OID": "5d7f5bdee1d9e96d53734247",
+   "ProcessID": 2376,
+   "ParentPID": 2236,
+   "CommandLine": "\"C:\\Windows\\System32\\regsvr32.exe\"",
+   "Image": "C:\\Windows\\System32\\regsvr32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1568627678434
+  },
+  {
+   "OID": "5d7f5be5e1d9e96d537346a6",
+   "ProcessID": 2400,
+   "ParentPID": 3620,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Nexest.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Nexest.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1568627684543
+  },
+  {
+   "OID": "5d7f5be5e1d9e96d537346a7",
+   "ProcessID": 2348,
+   "ParentPID": 2400,
+   "CommandLine": "\"C:\\Windows\\System32\\regsvr32.exe\"",
+   "Image": "C:\\Windows\\System32\\regsvr32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1568627684715
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d7f5be5e1d9e96d537346a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7f5bdee1d9e96d53734247",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d7f5bdee1d9e96d53734247",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d7f5bdee1d9e96d53734247",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7f5be5e1d9e96d537346a6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1117"
+   ]
+  },
+  {
+   "ProcessOID": "5d7f5bdee1d9e96d53734236",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d7f5bdee1d9e96d53734236",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7f5be5e1d9e96d537346a6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7f5bcbe1d9e96d537340b8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d7f5bdee1d9e96d53734247",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7f5bdee1d9e96d53734247",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5d7f5bdee1d9e96d53734247",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7f5bdee1d9e96d53734236",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1117"
+   ]
+  },
+  {
+   "ProcessOID": "5d7f5bdee1d9e96d53734236",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7f5bc5e1d9e96d53733f80",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d7f5bb5e1d9e96d53732f9c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7f5bcbe1d9e96d537340b8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7f5bc5e1d9e96d53733f80",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7f5bb5e1d9e96d53732fa9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7f5bbbe1d9e96d53733e0a",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  }
+ ]
+}

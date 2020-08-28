@@ -1,0 +1,111 @@
+{
+ "Name": "nvsphelper64.exe",
+ "Md5": "cc7a73934a7b27c7df4a1d4d00be5874",
+ "UUID": "01d8b4b3-bbe2-48b2-843e-8861f6e83856",
+ "Processes": [
+  {
+   "OID": "5cacc59760a62949b86def9e",
+   "ProcessID": 2164,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\nvsphelper64.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\nvsphelper64.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554826646714
+  },
+  {
+   "OID": "5cacc59760a62949b86df6f1",
+   "ProcessID": 1972,
+   "ParentPID": 2164,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\nvsphelper64.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\nvsphelper64.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554826647277
+  },
+  {
+   "OID": "5cacc5f060a62949b86e0167",
+   "ProcessID": 2872,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1554826735980
+  },
+  {
+   "OID": "5cacc60460a62949b86e222e",
+   "ProcessID": 2672,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Windows\\system32\\mmc.exe\" \"C:\\Windows\\system32\\taskschd.msc\" /s",
+   "Image": "C:\\Windows\\system32\\mmc.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1554826756199
+  },
+  {
+   "OID": "5cacc60560a62949b86e23ac",
+   "ProcessID": 1152,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Windows\\system32\\mmc.exe\" \"C:\\Windows\\system32\\taskschd.msc\" /s",
+   "Image": "C:\\Windows\\system32\\mmc.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1554826757089
+  },
+  {
+   "OID": "5cacc64560a62949b86e75f0",
+   "ProcessID": 1584,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Windows\\System32\\Notepad.exe\" C:\\Users\\admin\\ShadowPlayHelper\\GeForceExperience.vbs",
+   "Image": "C:\\Windows\\System32\\Notepad.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1554826820975
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cacc59760a62949b86def96",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5cacc59760a62949b86def96",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cacc60560a62949b86e23ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cacc59760a62949b86df6f1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cacc59760a62949b86def9e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cacc59760a62949b86def9e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cacc59760a62949b86def9e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cacc59760a62949b86def9e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

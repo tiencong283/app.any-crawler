@@ -1,0 +1,129 @@
+{
+ "Name": "emotet.exe",
+ "Md5": "0557c6211ae14c850c03c60490c9d6af",
+ "UUID": "6977c9a1-e762-4213-80e4-b06ccd01697d",
+ "Processes": [
+  {
+   "OID": "5e46e5a8604c2f37ea71c7c5",
+   "ProcessID": 3440,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581704616703
+  },
+  {
+   "OID": "5e46e5a9604c2f37ea71ce1b",
+   "ProcessID": 952,
+   "ParentPID": 3440,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581704616797
+  },
+  {
+   "OID": "5e46e5a9604c2f37ea71ce1c",
+   "ProcessID": 2428,
+   "ParentPID": 952,
+   "CommandLine": "--7dfb8940",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581704616875
+  },
+  {
+   "OID": "5e46e5a9604c2f37ea71ce1d",
+   "ProcessID": 3860,
+   "ParentPID": 2428,
+   "CommandLine": "--7dfb8940",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581704616969
+  },
+  {
+   "OID": "5e46e5b0604c2f37ea71d3df",
+   "ProcessID": 3272,
+   "ParentPID": 3860,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\easywindow\\easywindow.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\easywindow\\easywindow.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581704623625
+  },
+  {
+   "OID": "5e46e5b0604c2f37ea71d3e0",
+   "ProcessID": 3168,
+   "ParentPID": 3272,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\easywindow\\easywindow.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\easywindow\\easywindow.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581704623735
+  },
+  {
+   "OID": "5e46e5b0604c2f37ea71d3e1",
+   "ProcessID": 3804,
+   "ParentPID": 3168,
+   "CommandLine": "--fd47f3b8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\easywindow\\easywindow.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581704623813
+  },
+  {
+   "OID": "5e46e5b0604c2f37ea71d3e2",
+   "ProcessID": 2056,
+   "ParentPID": 3804,
+   "CommandLine": "--fd47f3b8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\easywindow\\easywindow.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581704623891
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e46e5b0604c2f37ea71d3e2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e46e5b0604c2f37ea71d3e2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e46e5a8604c2f37ea71c7ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e46e5b0604c2f37ea71d3e2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e46e5a9604c2f37ea71ce1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e46e5a9604c2f37ea71ce1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e46e5a9604c2f37ea71ce1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e46e5a8604c2f37ea71c7c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

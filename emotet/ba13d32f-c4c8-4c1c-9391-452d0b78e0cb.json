@@ -1,0 +1,86 @@
+{
+ "Name": "4hy8oria.exe",
+ "Md5": "d9550e89ad0d552fa4321922bfdb74c1",
+ "UUID": "ba13d32f-c4c8-4c1c-9391-452d0b78e0cb",
+ "Processes": [
+  {
+   "OID": "5dea77cf4ec9d57838fff310",
+   "ProcessID": 2148,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\4hy8oria.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\4hy8oria.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1575647183262
+  },
+  {
+   "OID": "5dea77cf4ec9d57838fff317",
+   "ProcessID": 4068,
+   "ParentPID": 2148,
+   "CommandLine": "--2c6a612",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\4hy8oria.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575647183574
+  },
+  {
+   "OID": "5dea77d64ec9d57838fff67e",
+   "ProcessID": 3284,
+   "ParentPID": 4068,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575647190199
+  },
+  {
+   "OID": "5dea77d64ec9d57838fff67f",
+   "ProcessID": 1552,
+   "ParentPID": 3284,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575647190308
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dea77d64ec9d57838fff67f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dea77d64ec9d57838fff67f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dea77d64ec9d57838fff67f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dea77d64ec9d57838fff67f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dea77cf4ec9d57838fff317",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dea77cf4ec9d57838fff317",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dea77cf4ec9d57838fff310",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

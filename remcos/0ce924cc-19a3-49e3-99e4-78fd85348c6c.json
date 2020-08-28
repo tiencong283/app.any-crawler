@@ -1,0 +1,96 @@
+{
+ "Name": "e5unp.exe",
+ "Md5": "23d26cde5a0597ebd2a7810b0e77def9",
+ "UUID": "0ce924cc-19a3-49e3-99e4-78fd85348c6c",
+ "Processes": [
+  {
+   "OID": "5dce4fbfe7b5e53ebbcede6b",
+   "ProcessID": 2772,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\e5unp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\e5unp.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573801918872
+  },
+  {
+   "OID": "5dce4fdce7b5e53ebbcee022",
+   "ProcessID": 1992,
+   "ParentPID": 2772,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\e5unp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\e5unp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573801947715
+  },
+  {
+   "OID": "5dce4fdce7b5e53ebbcee023",
+   "ProcessID": 1932,
+   "ParentPID": 2772,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\e5unp.exe\" 2 1992 3807531",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\e5unp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573801947731
+  },
+  {
+   "OID": "5dce4fdce7b5e53ebbcee024",
+   "ProcessID": 2776,
+   "ParentPID": 1992,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573801947903
+  },
+  {
+   "OID": "5dce4fdde7b5e53ebbcee451",
+   "ProcessID": 4040,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1573801948731
+  },
+  {
+   "OID": "5dce4fdde7b5e53ebbcee8fa",
+   "ProcessID": 2724,
+   "ParentPID": 1992,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573801949309
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dce4fdde7b5e53ebbcee451",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dce4fdce7b5e53ebbcee022",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5dce4fdce7b5e53ebbcee022",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5dce4fdce7b5e53ebbcee022",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dce4fbfe7b5e53ebbcede6b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "Name": "e439140a810490edbc5308ddb3f930fc70d3900a7c75b1a0f0856d9495091203",
+ "Md5": "fedec64fabf94c0ba47d5f9cb13c7063",
+ "UUID": "bc88b70c-4ea7-4372-bcd5-ab64d4171adc",
+ "Processes": [
+  {
+   "OID": "5cf0fbde66ab8b4dc1f92165",
+   "ProcessID": 2944,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\e439140a810490edbc5308ddb3f930fc70d3900a7c75b1a0f0856d9495091203.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\e439140a810490edbc5308ddb3f930fc70d3900a7c75b1a0f0856d9495091203.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1559296990388
+  },
+  {
+   "OID": "5cf0fbe966ab8b4dc1f9241d",
+   "ProcessID": 2580,
+   "ParentPID": 2944,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\e439140a810490edbc5308ddb3f930fc70d3900a7c75b1a0f0856d9495091203.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\e439140a810490edbc5308ddb3f930fc70d3900a7c75b1a0f0856d9495091203.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559297000857
+  },
+  {
+   "OID": "5cf0fc1b66ab8b4dc1f9253b",
+   "ProcessID": 3252,
+   "ParentPID": 2580,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559297050701
+  },
+  {
+   "OID": "5cf0fc1b66ab8b4dc1f9253d",
+   "ProcessID": 3972,
+   "ParentPID": 3252,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559297050779
+  },
+  {
+   "OID": "5cf0fc1c66ab8b4dc1f92bbe",
+   "ProcessID": 2444,
+   "ParentPID": 3252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\word.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\word.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559297051826
+  },
+  {
+   "OID": "5cf0fc5366ab8b4dc1f92e05",
+   "ProcessID": 2528,
+   "ParentPID": 2444,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\word.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\word.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559297106967
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cf0fbde66ab8b4dc1f91a03",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf0fc5366ab8b4dc1f92e05",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf0fc5366ab8b4dc1f92e05",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cf0fc1c66ab8b4dc1f92bbe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cf0fc1b66ab8b4dc1f9253b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf0fbe966ab8b4dc1f9241d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5cf0fbe966ab8b4dc1f9241d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf0fbe966ab8b4dc1f9241d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cf0fbe966ab8b4dc1f9241d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf0fbde66ab8b4dc1f92165",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

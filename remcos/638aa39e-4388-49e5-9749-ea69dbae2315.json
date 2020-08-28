@@ -1,0 +1,69 @@
+{
+ "Name": "LAW231.exe",
+ "Md5": "16653a4e4dc3b65bd685bf6aee642efd",
+ "UUID": "638aa39e-4388-49e5-9749-ea69dbae2315",
+ "Processes": [
+  {
+   "OID": "5d82870fd734224ae7d18325",
+   "ProcessID": 3704,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1568835342943
+  },
+  {
+   "OID": "5d828717d734224ae7d184d2",
+   "ProcessID": 2916,
+   "ParentPID": 3704,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1568835351037
+  },
+  {
+   "OID": "5d828717d734224ae7d184d3",
+   "ProcessID": 2984,
+   "ParentPID": 3704,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe\" 2 2916 1489062",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1568835351053
+  },
+  {
+   "OID": "5d828720d734224ae7d1871d",
+   "ProcessID": 2644,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1568835359834
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d82870fd734224ae7d17a48",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d828720d734224ae7d1871d",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d828717d734224ae7d184d2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d82870fd734224ae7d18325",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

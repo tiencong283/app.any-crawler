@@ -1,0 +1,62 @@
+{
+ "Name": "octovpnconfig.exe",
+ "Md5": "cd5863ffc8eb0732df41358062fb66e4",
+ "UUID": "0aba47e1-e7d0-484c-b7e6-4a480ce5644f",
+ "Processes": [
+  {
+   "OID": "5f197127f45b155c23c15de6",
+   "ProcessID": 856,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\octovpnconfig.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\octovpnconfig.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595502887227
+  },
+  {
+   "OID": "5f19712cf45b155c23c16080",
+   "ProcessID": 4052,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1595502891915
+  },
+  {
+   "OID": "5f19712df45b155c23c164ab",
+   "ProcessID": 3856,
+   "ParentPID": 856,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\octovpnconfig.exe\" \"octovpnconfig.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595502893399
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f197127f45b155c23c15de6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f197127f45b155c23c15de6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f197127f45b155c23c15de6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f19712cf45b155c23c16080",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  }
+ ]
+}

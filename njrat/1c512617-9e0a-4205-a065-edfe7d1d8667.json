@@ -1,0 +1,154 @@
+{
+ "Name": "Orcus.exe",
+ "Md5": "f3a1b0cd1040ab6dcad330d9be06aad0",
+ "UUID": "1c512617-9e0a-4205-a065-edfe7d1d8667",
+ "Processes": [
+  {
+   "OID": "5f196eb13f37b32e8d88b610",
+   "ProcessID": 1564,
+   "ParentPID": 392,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Orcus.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Orcus.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595502256892
+  },
+  {
+   "OID": "5f196eb43f37b32e8d88be27",
+   "ProcessID": 2560,
+   "ParentPID": 1564,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NjRat_0.7D_Green_Edition_by_im523.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NjRat_0.7D_Green_Edition_by_im523.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595502259970
+  },
+  {
+   "OID": "5f196eba3f37b32e8d88c397",
+   "ProcessID": 2380,
+   "ParentPID": 2560,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595502266298
+  },
+  {
+   "OID": "5f196ec03f37b32e8d88c91b",
+   "ProcessID": 3844,
+   "ParentPID": 2380,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe\" \"Google.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595502272407
+  },
+  {
+   "OID": "5f196eca3f37b32e8d88d961",
+   "ProcessID": 2292,
+   "ParentPID": 2380,
+   "CommandLine": "netsh firewall delete allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe\"",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595502282673
+  },
+  {
+   "OID": "5f196eca3f37b32e8d88d963",
+   "ProcessID": 980,
+   "ParentPID": 2380,
+   "CommandLine": "cmd.exe /k ping 0 \u0026 del \"C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe\" \u0026 exit",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595502282673
+  },
+  {
+   "OID": "5f196eca3f37b32e8d88d965",
+   "ProcessID": 3400,
+   "ParentPID": 980,
+   "CommandLine": "ping  0 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595502282798
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f196eba3f37b32e8d88c397",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5f196eba3f37b32e8d88c397",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f196eba3f37b32e8d88c397",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f196eba3f37b32e8d88c397",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f196eba3f37b32e8d88c397",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f196eba3f37b32e8d88c397",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f196eba3f37b32e8d88c397",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f196eba3f37b32e8d88c397",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f196eba3f37b32e8d88c397",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f196eba3f37b32e8d88c397",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f196eb43f37b32e8d88be27",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f196eb43f37b32e8d88be27",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f196eb43f37b32e8d88be27",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f196eb13f37b32e8d88b610",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

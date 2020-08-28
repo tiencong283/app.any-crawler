@@ -1,0 +1,197 @@
+{
+ "Name": "private cheat.exe",
+ "Md5": "62a68b1b32f12f546c65b23ce2a69338",
+ "UUID": "6ca94fbb-a978-43d3-860b-957c162e6e0b",
+ "Processes": [
+  {
+   "OID": "5f30f04a897bc36a4b67d602",
+   "ProcessID": 2720,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\private cheat.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\private cheat.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597042762437
+  },
+  {
+   "OID": "5f30f051897bc36a4b67ddc6",
+   "ProcessID": 3924,
+   "ParentPID": 2720,
+   "CommandLine": "\"C:\\ProgramData\\private cheat.exe\" ",
+   "Image": "C:\\ProgramData\\private cheat.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597042768796
+  },
+  {
+   "OID": "5f30f057897bc36a4b67e156",
+   "ProcessID": 1340,
+   "ParentPID": 3924,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\private cheat.exe\" \"private cheat.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597042774984
+  },
+  {
+   "OID": "5f30f074897bc36a4b67f2ab",
+   "ProcessID": 2468,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\private cheat.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\private cheat.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1597042803890
+  },
+  {
+   "OID": "5f30f0ad897bc36a4b67f719",
+   "ProcessID": 2840,
+   "ParentPID": 592,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1597042861312
+  },
+  {
+   "OID": "5f30f0b3897bc36a4b68038a",
+   "ProcessID": 3380,
+   "ParentPID": 3924,
+   "CommandLine": "\"C:\\ProgramData\\private cheat.exe\" ",
+   "Image": "C:\\ProgramData\\private cheat.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597042866593
+  },
+  {
+   "OID": "5f30f0b9897bc36a4b680715",
+   "ProcessID": 3748,
+   "ParentPID": 3380,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\private cheat.exe\" \"private cheat.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597042872734
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f30f0b3897bc36a4b68038a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30f0b3897bc36a4b68038a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f30f0b3897bc36a4b68038a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30f0b3897bc36a4b68038a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30f0b3897bc36a4b68038a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f30f0b3897bc36a4b68038a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f30f051897bc36a4b67ddc6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f30f04a897bc36a4b67cdf5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f30f04a897bc36a4b67cdf8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30f0ad897bc36a4b67f719",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30f074897bc36a4b67f2ab",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f30f051897bc36a4b67ddc6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30f051897bc36a4b67ddc6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30f051897bc36a4b67ddc6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f30f051897bc36a4b67ddc6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30f051897bc36a4b67ddc6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30f051897bc36a4b67ddc6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f30f051897bc36a4b67ddc6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f30f04a897bc36a4b67d602",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f30f04a897bc36a4b67d602",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f30f04a897bc36a4b67d602",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

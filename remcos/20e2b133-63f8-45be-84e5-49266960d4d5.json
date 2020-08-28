@@ -1,0 +1,172 @@
+{
+ "Name": "PO_31074.EXE",
+ "Md5": "259b7830c1864e9bc3d6665c7e3b7a05",
+ "UUID": "20e2b133-63f8-45be-84e5-49266960d4d5",
+ "Processes": [
+  {
+   "OID": "5cc0cdc75230e20d6b3665d0",
+   "ProcessID": 3896,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PO_31074.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PO_31074.EXE",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1556139463080
+  },
+  {
+   "OID": "5cc0cdef5230e20d6b36691e",
+   "ProcessID": 2200,
+   "ParentPID": 3896,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PO_31074.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PO_31074.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556139503173
+  },
+  {
+   "OID": "5cc0cdef5230e20d6b36691f",
+   "ProcessID": 1032,
+   "ParentPID": 2200,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556139503470
+  },
+  {
+   "OID": "5cc0cdf15230e20d6b367079",
+   "ProcessID": 1332,
+   "ParentPID": 1032,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556139504923
+  },
+  {
+   "OID": "5cc0cdf15230e20d6b36707b",
+   "ProcessID": 2704,
+   "ParentPID": 1332,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556139504986
+  },
+  {
+   "OID": "5cc0cdff5230e20d6b3677ab",
+   "ProcessID": 3984,
+   "ParentPID": 2704,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556139518908
+  },
+  {
+   "OID": "5cc0cdff5230e20d6b3677da",
+   "ProcessID": 3056,
+   "ParentPID": 3984,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556139518970
+  },
+  {
+   "OID": "5cc0cdff5230e20d6b3677db",
+   "ProcessID": 2156,
+   "ParentPID": 3056,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556139519048
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cc0cdff5230e20d6b3677da",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc0cdff5230e20d6b3677ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cc0cdff5230e20d6b3677ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc0cdf15230e20d6b36707b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cc0cdf15230e20d6b36707b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cc0cdf15230e20d6b36707b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc0cdef5230e20d6b36691f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5cc0cdef5230e20d6b36691e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5cc0cdef5230e20d6b36691e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc0cdef5230e20d6b36691e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cc0cdef5230e20d6b36691e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc0cdef5230e20d6b36691e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc0cdc75230e20d6b3665d0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cc0cdc75230e20d6b3665d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc0cdc75230e20d6b3665d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

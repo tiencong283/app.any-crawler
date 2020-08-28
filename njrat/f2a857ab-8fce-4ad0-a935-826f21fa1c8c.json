@@ -1,0 +1,113 @@
+{
+ "Name": "Orcus.exe",
+ "Md5": "f3a1b0cd1040ab6dcad330d9be06aad0",
+ "UUID": "f2a857ab-8fce-4ad0-a935-826f21fa1c8c",
+ "Processes": [
+  {
+   "OID": "5f1845145fc33e11078187ae",
+   "ProcessID": 764,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Orcus.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Orcus.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595426068755
+  },
+  {
+   "OID": "5f18451a5fc33e11078189dc",
+   "ProcessID": 2104,
+   "ParentPID": 764,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NjRat_0.7D_Green_Edition_by_im523.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NjRat_0.7D_Green_Edition_by_im523.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595426073567
+  },
+  {
+   "OID": "5f1845205fc33e1107818f4b",
+   "ProcessID": 1904,
+   "ParentPID": 2104,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595426080021
+  },
+  {
+   "OID": "5f1845265fc33e11078194ca",
+   "ProcessID": 3416,
+   "ParentPID": 1904,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe\" \"Google.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595426086146
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f1845205fc33e1107818f4b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1845205fc33e1107818f4b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1845205fc33e1107818f4b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1845205fc33e1107818f4b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1845205fc33e1107818f4b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1845205fc33e1107818f4b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1845205fc33e1107818f4b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f1845205fc33e1107818f4b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f18451a5fc33e11078189dc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f18451a5fc33e11078189dc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f18451a5fc33e11078189dc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1845145fc33e11078187ae",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

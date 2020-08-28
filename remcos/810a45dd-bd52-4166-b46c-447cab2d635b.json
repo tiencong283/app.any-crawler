@@ -1,0 +1,151 @@
+{
+ "Name": "mswiner.exe",
+ "Md5": "617b60d9fa0cf77b6c25398a2068e8b8",
+ "UUID": "810a45dd-bd52-4166-b46c-447cab2d635b",
+ "Processes": [
+  {
+   "OID": "5ce51e3bf947555cecc6d748",
+   "ProcessID": 2952,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\mswiner.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\mswiner.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1558519354967
+  },
+  {
+   "OID": "5ce51e3cf947555cecc6d974",
+   "ProcessID": 2288,
+   "ParentPID": 2952,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558519356123
+  },
+  {
+   "OID": "5ce51e3df947555cecc6db00",
+   "ProcessID": 3104,
+   "ParentPID": 2952,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558519356560
+  },
+  {
+   "OID": "5ce51e3df947555cecc6db01",
+   "ProcessID": 3812,
+   "ParentPID": 3104,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\mswiner.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\mswiner.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558519356685
+  },
+  {
+   "OID": "5ce51e3ef947555cecc6e335",
+   "ProcessID": 3284,
+   "ParentPID": 3812,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558519358123
+  },
+  {
+   "OID": "5ce51e3ef947555cecc6e337",
+   "ProcessID": 4000,
+   "ParentPID": 3284,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558519358201
+  },
+  {
+   "OID": "5ce51e3ff947555cecc6e979",
+   "ProcessID": 2628,
+   "ParentPID": 3284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\mswin\\mswiner.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\mswin\\mswiner.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558519359263
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ce51e3ff947555cecc6e979",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce51e3ff947555cecc6e979",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce51e3ff947555cecc6e979",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ce51e3ef947555cecc6e335",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce51e3df947555cecc6db01",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ce51e3df947555cecc6db01",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ce51e3df947555cecc6db01",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce51e3df947555cecc6db01",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5ce51e3df947555cecc6db01",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5ce51e3df947555cecc6db01",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce51e3bf947555cecc6d748",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5ce51e3bf947555cecc6d748",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5ce51e3bf947555cecc6d748",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "Name": "Purchasing inquiry_UQR,pdf.exe",
+ "Md5": "617e4ffa676cb3cd8cbd78cec39e4d03",
+ "UUID": "fdb2f8ba-cebe-4418-bcb7-502708ef76bb",
+ "Processes": [
+  {
+   "OID": "5dd3b96fe83c0641e1c54973",
+   "ProcessID": 2172,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Purchasing inquiry_UQR,pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Purchasing inquiry_UQR,pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574156654933
+  },
+  {
+   "OID": "5dd3b970e83c0641e1c5505b",
+   "ProcessID": 932,
+   "ParentPID": 2172,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\Jndrs.js\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574156655746
+  },
+  {
+   "OID": "5dd3b976e83c0641e1c55765",
+   "ProcessID": 2992,
+   "ParentPID": 932,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Hitysd.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Hitysd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574156662105
+  },
+  {
+   "OID": "5dd3b986e83c0641e1c55c9f",
+   "ProcessID": 2776,
+   "ParentPID": 2992,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574156678449
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dd3b976e83c0641e1c55765",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd3b976e83c0641e1c55765",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dd3b986e83c0641e1c55c9f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd3b986e83c0641e1c55c9f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5dd3b986e83c0641e1c55c9f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd3b976e83c0641e1c55765",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd3b96fe83c0641e1c54973",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5dd3b96fe83c0641e1c54973",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

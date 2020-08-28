@@ -1,0 +1,60 @@
+{
+ "Name": "c22wpiv8sxi.exe",
+ "Md5": "2b526efaeecf305c1f8828b38b7dfe48",
+ "UUID": "3c0f0a52-619a-4638-88d5-4964910bd4c5",
+ "Processes": [
+  {
+   "OID": "5e0611b05e8cba7507850020",
+   "ProcessID": 2456,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\c22wpiv8sxi.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\c22wpiv8sxi.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1577456047782
+  },
+  {
+   "OID": "5e0611c15e8cba750785022c",
+   "ProcessID": 960,
+   "ParentPID": 2456,
+   "CommandLine": "--2c814f79",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\c22wpiv8sxi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577456065657
+  },
+  {
+   "OID": "5e0611da5e8cba750785034a",
+   "ProcessID": 4092,
+   "ParentPID": 960,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577456090157
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e0611c15e8cba750785022c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e0611c15e8cba750785022c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0611c15e8cba750785022c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0611b05e8cba7507850020",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

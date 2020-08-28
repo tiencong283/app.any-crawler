@@ -1,0 +1,94 @@
+{
+ "Name": "AstroGame.exe",
+ "Md5": "292204fc4b0d83368f09e26801485feb",
+ "UUID": "8745ec62-daa8-4d54-9b84-35e4f4e0b790",
+ "Processes": [
+  {
+   "OID": "5f1df8c50f4b8f1aba482cb8",
+   "ProcessID": 2232,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AstroGame.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AstroGame.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595799748355
+  },
+  {
+   "OID": "5f1df8cb0f4b8f1aba482fb2",
+   "ProcessID": 2576,
+   "ParentPID": 2232,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WindowsSoundService.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WindowsSoundService.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595799755308
+  },
+  {
+   "OID": "5f1df8d10f4b8f1aba4835c3",
+   "ProcessID": 180,
+   "ParentPID": 2576,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\WindowsSoundService.exe\" \"WindowsSoundService.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595799761527
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f1df8cb0f4b8f1aba482fb2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1df8cb0f4b8f1aba482fb2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1df8cb0f4b8f1aba482fb2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1df8cb0f4b8f1aba482fb2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1df8cb0f4b8f1aba482fb2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1df8cb0f4b8f1aba482fb2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1df8cb0f4b8f1aba482fb2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f1df8c50f4b8f1aba482cb8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f1df8c50f4b8f1aba482cb8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1df8c50f4b8f1aba482cb8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

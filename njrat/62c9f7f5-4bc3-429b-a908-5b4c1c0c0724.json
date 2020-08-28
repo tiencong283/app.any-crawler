@@ -1,0 +1,93 @@
+{
+ "Name": "NiceCock.exe",
+ "Md5": "1870a3cc10400bc5fa623af623c0b9d3",
+ "UUID": "62c9f7f5-4bc3-429b-a908-5b4c1c0c0724",
+ "Processes": [
+  {
+   "OID": "5f15d555fdf4f51377ec5997",
+   "ProcessID": 2308,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NiceCock.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NiceCock.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595266389065
+  },
+  {
+   "OID": "5f15d556fdf4f51377ec5bee",
+   "ProcessID": 1532,
+   "ParentPID": 2308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Great.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Great.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595266389565
+  },
+  {
+   "OID": "5f15d563fdf4f51377ec647f",
+   "ProcessID": 688,
+   "ParentPID": 1532,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\Great.exe\" \"Great.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595266402518
+  },
+  {
+   "OID": "5f15d56bfdf4f51377ec8d24",
+   "ProcessID": 4084,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\verclsid.exe\" /S /C {0B2C9183-C9FA-4C53-AE21-C900B0C39965} /I {0C733A8A-2A1C-11CE-ADE5-00AA0044773D} /X 0x401",
+   "Image": "C:\\Windows\\system32\\verclsid.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1595266410206
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f15d56bfdf4f51377ec8d24",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f15d556fdf4f51377ec5bee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15d556fdf4f51377ec5bee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15d556fdf4f51377ec5bee",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f15d555fdf4f51377ec5997",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f15d555fdf4f51377ec5997",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f15d555fdf4f51377ec5997",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f15d555fdf4f51377ec5997",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "Name": "194.exe",
+ "Md5": "59df6700b5928dde5f49af8e4dc74619",
+ "UUID": "d9075eac-ad19-419f-b96d-365334188547",
+ "Processes": [
+  {
+   "OID": "5dee09696261ea201dd45b98",
+   "ProcessID": 2124,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\194.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\194.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1575881065391
+  },
+  {
+   "OID": "5dee09696261ea201dd45b99",
+   "ProcessID": 3988,
+   "ParentPID": 2124,
+   "CommandLine": "--422c34d0",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\194.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575881065531
+  },
+  {
+   "OID": "5dee096f6261ea201dd45e75",
+   "ProcessID": 884,
+   "ParentPID": 3988,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575881070891
+  },
+  {
+   "OID": "5dee096f6261ea201dd45e76",
+   "ProcessID": 3924,
+   "ParentPID": 884,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575881071000
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dee096f6261ea201dd45e76",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dee096f6261ea201dd45e76",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dee09696261ea201dd45b99",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dee09696261ea201dd45b99",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dee09696261ea201dd45b99",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

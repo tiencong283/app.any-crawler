@@ -1,0 +1,135 @@
+{
+ "Name": "21a3d0d65a12ca828b055c60d0fc42c0",
+ "Md5": "21a3d0d65a12ca828b055c60d0fc42c0",
+ "UUID": "5bcda36a-e886-45a8-96bb-06ab67bbac50",
+ "Processes": [
+  {
+   "OID": "5cc7f468d9197b4ea22a92c6",
+   "ProcessID": 1084,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\21a3d0d65a12ca828b055c60d0fc42c0.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\21a3d0d65a12ca828b055c60d0fc42c0.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1556608104072
+  },
+  {
+   "OID": "5cc7f4aed9197b4ea22a9697",
+   "ProcessID": 2280,
+   "ParentPID": 1084,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\21a3d0d65a12ca828b055c60d0fc42c0.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\21a3d0d65a12ca828b055c60d0fc42c0.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556608174337
+  },
+  {
+   "OID": "5cc7f4afd9197b4ea22a96c6",
+   "ProcessID": 296,
+   "ParentPID": 2280,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556608174837
+  },
+  {
+   "OID": "5cc7f4b0d9197b4ea22a9d44",
+   "ProcessID": 3080,
+   "ParentPID": 296,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\csrss.exe\\csrss.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556608176275
+  },
+  {
+   "OID": "5cc7f4b0d9197b4ea22a9d46",
+   "ProcessID": 2836,
+   "ParentPID": 3080,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\csrss.exe\\csrss.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\csrss.exe\\csrss.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556608176337
+  },
+  {
+   "OID": "5cc7f4f7d9197b4ea22aa13c",
+   "ProcessID": 3380,
+   "ParentPID": 2836,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\csrss.exe\\csrss.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\csrss.exe\\csrss.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556608247228
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cc7f4f7d9197b4ea22aa13c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc7f4f7d9197b4ea22aa13c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc7f4f7d9197b4ea22aa13c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc7f4f7d9197b4ea22aa13c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc7f4f7d9197b4ea22aa13c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cc7f4b0d9197b4ea22a9d46",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cc7f4afd9197b4ea22a96c6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5cc7f4aed9197b4ea22a9697",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5cc7f4aed9197b4ea22a9697",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cc7f4aed9197b4ea22a9697",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc7f4aed9197b4ea22a9697",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc7f468d9197b4ea22a92c6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

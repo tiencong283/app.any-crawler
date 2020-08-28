@@ -1,0 +1,86 @@
+{
+ "Name": "rBKp",
+ "Md5": "11636e48766e5b88b0249a87bf297cdf",
+ "UUID": "c70054a1-1f78-40ea-9a54-406868971e76",
+ "Processes": [
+  {
+   "OID": "5ddcd9b985f02f474d8251d8",
+   "ProcessID": 1772,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\rBKp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\rBKp.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574754744618
+  },
+  {
+   "OID": "5ddcd9b985f02f474d8251d9",
+   "ProcessID": 2468,
+   "ParentPID": 1772,
+   "CommandLine": "--e55fc399",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\rBKp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574754744805
+  },
+  {
+   "OID": "5ddcd9bf85f02f474d825b1c",
+   "ProcessID": 1784,
+   "ParentPID": 2468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574754751008
+  },
+  {
+   "OID": "5ddcd9bf85f02f474d825b28",
+   "ProcessID": 3404,
+   "ParentPID": 1784,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574754751165
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ddcd9bf85f02f474d825b28",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddcd9bf85f02f474d825b28",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddcd9bf85f02f474d825b28",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ddcd9bf85f02f474d825b1c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ddcd9b985f02f474d8251d9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ddcd9b985f02f474d8251d9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddcd9b985f02f474d8251d9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

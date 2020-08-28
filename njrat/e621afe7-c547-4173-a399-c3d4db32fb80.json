@@ -1,0 +1,166 @@
+{
+ "Name": "Patch.exe",
+ "Md5": "0df932fb8c835da36eee2928707e8075",
+ "UUID": "e621afe7-c547-4173-a399-c3d4db32fb80",
+ "Processes": [
+  {
+   "OID": "5f201a8484813c2fa7726025",
+   "ProcessID": 2332,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Patch.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Patch.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5f201a8484813c2fa7726a23",
+   "ProcessID": 2224,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Patch.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Patch.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595939459774
+  },
+  {
+   "OID": "5f201a8584813c2fa7726ff2",
+   "ProcessID": 2292,
+   "ParentPID": 2224,
+   "CommandLine": "\"C:\\Users\\admin\\Ashampoo\\Ashampoo.EXE\" ",
+   "Image": "C:\\Users\\admin\\Ashampoo\\Ashampoo.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595939460665
+  },
+  {
+   "OID": "5f201a8884813c2fa7727706",
+   "ProcessID": 4016,
+   "ParentPID": 2292,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe\" /logtoconsole=false /logfile= /u \"C:\\Users\\admin\\Ashampoo\\Ashampoo.EXE\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595939464149
+  },
+  {
+   "OID": "5f201a8984813c2fa7727c72",
+   "ProcessID": 2524,
+   "ParentPID": 4016,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\4483896.3vm2tppgViaRu.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\4483896.3vm2tppgViaRu.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595939464836
+  },
+  {
+   "OID": "5f201a8984813c2fa7727c73",
+   "ProcessID": 3440,
+   "ParentPID": 4016,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\13885555.wmke01peViaRu.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\13885555.wmke01peViaRu.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595939464899
+  },
+  {
+   "OID": "5f201a8984813c2fa7727c74",
+   "ProcessID": 2348,
+   "ParentPID": 2524,
+   "CommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\"",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595939465086
+  },
+  {
+   "OID": "5f201a8d84813c2fa7728bb0",
+   "ProcessID": 2208,
+   "ParentPID": 4016,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595939469524
+  },
+  {
+   "OID": "5f201a9484813c2fa7728f7b",
+   "ProcessID": 560,
+   "ParentPID": 2208,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595939475743
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f201a8d84813c2fa7728bb0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f201a8d84813c2fa7728bb0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f201a8d84813c2fa7728bb0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f201a8984813c2fa7727c73",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f201a8984813c2fa7727c73",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f201a8984813c2fa7727c74",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f201a8984813c2fa7727c72",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f201a8984813c2fa7727c72",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5f201a8984813c2fa7727c73",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f201a8884813c2fa7727706",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f201a8884813c2fa7727706",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f201a8484813c2fa7726a23",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f201a8484813c2fa7726a23",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

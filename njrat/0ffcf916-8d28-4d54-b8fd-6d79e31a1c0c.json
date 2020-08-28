@@ -1,0 +1,82 @@
+{
+ "Name": "RCE-C.exe",
+ "Md5": "ebf2f333e25e6d0cb31398dabfccbed5",
+ "UUID": "0ffcf916-8d28-4d54-b8fd-6d79e31a1c0c",
+ "Processes": [
+  {
+   "OID": "5efec591e91b506b07a5df5c",
+   "ProcessID": 1720,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RCE-C.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RCE-C.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1593755024338
+  },
+  {
+   "OID": "5efec596e91b506b07a5edd9",
+   "ProcessID": 2480,
+   "ParentPID": 1720,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Sys64\\System.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Sys64\\System.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1593755029666
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5efec596e91b506b07a5edd9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efec596e91b506b07a5edd9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efec596e91b506b07a5edd9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5efec596e91b506b07a5edd9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5efec596e91b506b07a5edd9",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5efec591e91b506b07a5df5c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5efec591e91b506b07a5df5c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5efec591e91b506b07a5df5c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5efec591e91b506b07a5df5c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

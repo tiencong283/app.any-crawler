@@ -1,0 +1,51 @@
+{
+ "Name": "Meltko TVOP-XZB 11.2019,pdf.exe",
+ "Md5": "775aad70c02ab2200a44194b577310fa",
+ "UUID": "73a2eec2-2634-4f2a-a618-08e2fe4856dd",
+ "Processes": [
+  {
+   "OID": "5dceec7a2a795b23c81ecf43",
+   "ProcessID": 1848,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Meltko TVOP-XZB 11.2019,pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Meltko TVOP-XZB 11.2019,pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573842042544
+  },
+  {
+   "OID": "5dceec8b2a795b23c81edc73",
+   "ProcessID": 4072,
+   "ParentPID": 1848,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573842059263
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dceec7a2a795b23c81ecf43",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dceec7a2a795b23c81ecf43",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dceec8b2a795b23c81edc73",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5dceec8b2a795b23c81edc73",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

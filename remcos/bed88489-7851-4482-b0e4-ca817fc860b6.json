@@ -1,0 +1,75 @@
+{
+ "Name": "f043bb2cb161119d80ae34457098b2025dbc762a166ac1111462abdf6b0bd5d5.exe",
+ "Md5": "f69a7055fda8fce4e67a8de3cc84f9e0",
+ "UUID": "bed88489-7851-4482-b0e4-ca817fc860b6",
+ "Processes": [
+  {
+   "OID": "5d842d6d591451772bc03c84",
+   "ProcessID": 3692,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\f043bb2cb161119d80ae34457098b2025dbc762a166ac1111462abdf6b0bd5d5.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\f043bb2cb161119d80ae34457098b2025dbc762a166ac1111462abdf6b0bd5d5.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1568943468648
+  },
+  {
+   "OID": "5d842d6d591451772bc042e6",
+   "ProcessID": 3560,
+   "ParentPID": 3692,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\JIMBOOMAN.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\JIMBOOMAN.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1568943469241
+  },
+  {
+   "OID": "5d842d87591451772bc052f0",
+   "ProcessID": 2284,
+   "ParentPID": 3560,
+   "CommandLine": "\"C:\\Windows\\System32\\regsvr32.exe\"",
+   "Image": "C:\\Windows\\System32\\regsvr32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1568943495538
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d842d6d591451772bc042e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d842d6d591451772bc042e6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d842d87591451772bc052f0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d842d6d591451772bc042e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1117"
+   ]
+  },
+  {
+   "ProcessOID": "5d842d6d591451772bc03c77",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d842d6d591451772bc042e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d842d6d591451772bc03c84",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "Name": "Fdsm2JAX",
+ "Md5": "b8d80a73833fc53a5e99bd9fe0725ecc",
+ "UUID": "88d4c1f2-f80a-4427-83cd-71c266580245",
+ "Processes": [
+  {
+   "OID": "5e1cd76495f0317188a9cc9a",
+   "ProcessID": 2240,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Fdsm2JAX.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Fdsm2JAX.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578948452345
+  },
+  {
+   "OID": "5e1cd76495f0317188a9cc9b",
+   "ProcessID": 1732,
+   "ParentPID": 2240,
+   "CommandLine": "--b47462ab",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Fdsm2JAX.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578948452533
+  },
+  {
+   "OID": "5e1cd76c95f0317188a9cfff",
+   "ProcessID": 496,
+   "ParentPID": 1732,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578948459611
+  },
+  {
+   "OID": "5e1cd76c95f0317188a9d000",
+   "ProcessID": 3456,
+   "ParentPID": 496,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578948459705
+  },
+  {
+   "OID": "5e1cd86095f0317188a9d6f5",
+   "ProcessID": 3724,
+   "ParentPID": 3456,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\" /scomma \"C:\\Users\\admin\\AppData\\Local\\Temp\\B6E8.tmp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578948704752
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e1cd86095f0317188a9d6f5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081",
+    "T1114"
+   ]
+  },
+  {
+   "ProcessOID": "5e1cd86095f0317188a9d6f5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e1cd76c95f0317188a9d000",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e1cd76c95f0317188a9d000",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e1cd76c95f0317188a9d000",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1cd76c95f0317188a9d000",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1cd76c95f0317188a9d000",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1cd76495f0317188a9cc9b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1cd76495f0317188a9cc9b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e1cd76495f0317188a9cc9b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

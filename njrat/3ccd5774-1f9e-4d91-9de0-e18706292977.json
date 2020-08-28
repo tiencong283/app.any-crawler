@@ -1,0 +1,84 @@
+{
+ "Name": "SPSoft AUTO.exe",
+ "Md5": "d682095714ef4f1567b18efa4635ee9a",
+ "UUID": "3ccd5774-1f9e-4d91-9de0-e18706292977",
+ "Processes": [
+  {
+   "OID": "5f29273a5ce4082d66730d4e",
+   "ProcessID": 376,
+   "ParentPID": 296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\SPSoft AUTO.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\SPSoft AUTO.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596532537789
+  },
+  {
+   "OID": "5f2927415ce4082d66731095",
+   "ProcessID": 2128,
+   "ParentPID": 376,
+   "CommandLine": "\"C:\\Users\\admin\\server.exe\" ",
+   "Image": "C:\\Users\\admin\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596532544617
+  },
+  {
+   "OID": "5f2927475ce4082d6673171e",
+   "ProcessID": 2144,
+   "ParentPID": 2128,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\server.exe\" \"server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596532550836
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2927415ce4082d66731095",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2927415ce4082d66731095",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2927415ce4082d66731095",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2927415ce4082d66731095",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2927415ce4082d66731095",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2927415ce4082d66731095",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f29273a5ce4082d66730d4e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f29273a5ce4082d66730d4e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

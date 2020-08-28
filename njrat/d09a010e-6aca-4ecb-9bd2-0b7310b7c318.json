@@ -1,0 +1,87 @@
+{
+ "Name": "Storm DDos.exe",
+ "Md5": "4584c48ddd561efe17c0b5a7b29095e6",
+ "UUID": "d09a010e-6aca-4ecb-9bd2-0b7310b7c318",
+ "Processes": [
+  {
+   "OID": "5f2166f2a1af76409608a994",
+   "ProcessID": 668,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Storm DDos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Storm DDos.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596024562384
+  },
+  {
+   "OID": "5f2166f3a1af76409608afe4",
+   "ProcessID": 1876,
+   "ParentPID": 668,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_Storm DDos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_Storm DDos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596024562806
+  },
+  {
+   "OID": "5f2166f4a1af76409608bba5",
+   "ProcessID": 2572,
+   "ParentPID": 668,
+   "CommandLine": "\"C:\\ProgramData\\Synaptics\\Synaptics.exe\" InjUpdate",
+   "Image": "C:\\ProgramData\\Synaptics\\Synaptics.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596024564353
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f2166f4a1af76409608bba5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2166f4a1af76409608bba5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2166f2a1af76409608a989",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f2166f4a1af76409608bba5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f2166f3a1af76409608afe4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2166f4a1af76409608bba5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2166f2a1af76409608a994",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f2166f2a1af76409608a994",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f2166f2a1af76409608a994",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

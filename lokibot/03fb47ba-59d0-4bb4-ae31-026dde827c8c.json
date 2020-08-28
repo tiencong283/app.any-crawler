@@ -1,0 +1,61 @@
+{
+ "Name": "winlog.exe",
+ "Md5": "98c8e6d87171699670435ee346607f2c",
+ "UUID": "03fb47ba-59d0-4bb4-ae31-026dde827c8c",
+ "Processes": [
+  {
+   "OID": "5ed72ba9a065140af395eed7",
+   "ProcessID": 2088,
+   "ParentPID": 396,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winlog.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winlog.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591159721555
+  },
+  {
+   "OID": "5ed72baaa065140af395f5af",
+   "ProcessID": 3736,
+   "ParentPID": 2088,
+   "CommandLine": "\"C:\\Windows\\system32\\dllhost.exe\"",
+   "Image": "C:\\Windows\\system32\\dllhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591159722274
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ed72baaa065140af395f5af",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed72baaa065140af395f5af",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed72baaa065140af395f5af",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed72ba9a065140af395eec9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ed72baaa065140af395f5af",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ed72baaa065140af395f5af",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

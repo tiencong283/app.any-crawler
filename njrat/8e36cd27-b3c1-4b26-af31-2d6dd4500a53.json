@@ -1,0 +1,127 @@
+{
+ "Name": "Hack CrossFire.exe",
+ "Md5": "0650657b9f38f6d74d141e6d18efd01f",
+ "UUID": "8e36cd27-b3c1-4b26-af31-2d6dd4500a53",
+ "Processes": [
+  {
+   "OID": "5f296bbe6ef99d425354ad09",
+   "ProcessID": 984,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Hack CrossFire.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Hack CrossFire.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1596550078327
+  },
+  {
+   "OID": "5f296bbf6ef99d425354b40e",
+   "ProcessID": 2056,
+   "ParentPID": 984,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WindowsApplication1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WindowsApplication1.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596550079202
+  },
+  {
+   "OID": "5f296bbf6ef99d425354b40f",
+   "ProcessID": 2508,
+   "ParentPID": 984,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Criptografado.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Criptografado.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596550079264
+  },
+  {
+   "OID": "5f296bc66ef99d425354c1b9",
+   "ProcessID": 2848,
+   "ParentPID": 2508,
+   "CommandLine": "\"C:\\Users\\admin\\Sytem.exe\" ",
+   "Image": "C:\\Users\\admin\\Sytem.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596550086061
+  },
+  {
+   "OID": "5f296bcc6ef99d425354c85f",
+   "ProcessID": 2396,
+   "ParentPID": 2848,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\Sytem.exe\" \"Sytem.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1596550092327
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f296bc66ef99d425354c1b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f296bc66ef99d425354c1b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f296bc66ef99d425354c1b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f296bc66ef99d425354c1b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f296bc66ef99d425354c1b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f296bc66ef99d425354c1b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f296bc66ef99d425354c1b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f296bbf6ef99d425354b40f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f296bbf6ef99d425354b40f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f296bbf6ef99d425354b40f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f296bbf6ef99d425354b40e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f296bbe6ef99d425354ad09",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f296bbe6ef99d425354ad09",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

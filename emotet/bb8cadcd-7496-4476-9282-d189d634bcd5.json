@@ -1,0 +1,74 @@
+{
+ "Name": "FT0R5",
+ "Md5": "ec37148ac806bfd5f92b7c9d5c629dc4",
+ "UUID": "bb8cadcd-7496-4476-9282-d189d634bcd5",
+ "Processes": [
+  {
+   "OID": "5dcfc083d6fba30af46da50f",
+   "ProcessID": 1956,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\FT0R5.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\FT0R5.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573896322606
+  },
+  {
+   "OID": "5dcfc083d6fba30af46da510",
+   "ProcessID": 1724,
+   "ParentPID": 1956,
+   "CommandLine": "--8790b69",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\FT0R5.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573896322841
+  },
+  {
+   "OID": "5dcfc08ad6fba30af46da928",
+   "ProcessID": 3776,
+   "ParentPID": 1724,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573896329856
+  },
+  {
+   "OID": "5dcfc08ad6fba30af46da929",
+   "ProcessID": 2192,
+   "ParentPID": 3776,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573896330122
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcfc08ad6fba30af46da929",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcfc08ad6fba30af46da929",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcfc08ad6fba30af46da929",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dcfc083d6fba30af46da510",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcfc083d6fba30af46da510",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

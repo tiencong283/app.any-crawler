@@ -1,0 +1,114 @@
+{
+ "Name": "Emotet.dll",
+ "Md5": "9e0cc0250d37be430723cbfa6367a58e",
+ "UUID": "27801d90-51a2-4f3b-8284-95d006ffd5d7",
+ "Processes": [
+  {
+   "OID": "5f1fa78167c75d7afd8cfe98",
+   "ProcessID": 868,
+   "ParentPID": 476,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe -k netsvcs",
+   "Image": "C:\\Windows\\System32\\svchost.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5f1fa78167c75d7afd8cfea2",
+   "ProcessID": 352,
+   "ParentPID": 2040,
+   "CommandLine": "C:\\Windows\\Explorer.EXE",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5f1fa78167c75d7afd8cfeaa",
+   "ProcessID": 2164,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Emotet.dll.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Emotet.dll.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595910017124
+  },
+  {
+   "OID": "5f1fa78167c75d7afd8d04b4",
+   "ProcessID": 4036,
+   "ParentPID": 2164,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\acppage\\usbceip.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\acppage\\usbceip.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595910017327
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f1fa78167c75d7afd8d04b4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1fa78167c75d7afd8d04b4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1fa78167c75d7afd8d04b4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1fa78167c75d7afd8d04b4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1fa78167c75d7afd8cfe9f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f1fa78167c75d7afd8d04b4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f1fa78167c75d7afd8cfe98",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f1fa78167c75d7afd8cfeaa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1fa78167c75d7afd8cfeaa",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f1fa78167c75d7afd8cfeaa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f1fa78167c75d7afd8cfea2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  }
+ ]
+}

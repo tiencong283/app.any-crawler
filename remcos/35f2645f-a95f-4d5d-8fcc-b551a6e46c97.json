@@ -1,0 +1,204 @@
+{
+ "Name": "r.exe",
+ "Md5": "cff475a4bfcac845c472580f4df68a5f",
+ "UUID": "35f2645f-a95f-4d5d-8fcc-b551a6e46c97",
+ "Processes": [
+  {
+   "OID": "5cf643800792f56ef85540f7",
+   "ProcessID": 3528,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\r.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\r.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1559643008382
+  },
+  {
+   "OID": "5cf6438d0792f56ef8554568",
+   "ProcessID": 3672,
+   "ParentPID": 3528,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\r.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559643021398
+  },
+  {
+   "OID": "5cf6438e0792f56ef85545c9",
+   "ProcessID": 1012,
+   "ParentPID": 3528,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\r.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559643021554
+  },
+  {
+   "OID": "5cf643970792f56ef8554992",
+   "ProcessID": 3856,
+   "ParentPID": 3528,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c copy \"C:\\Users\\admin\\AppData\\Local\\Temp\\r.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\oyu.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559643031804
+  },
+  {
+   "OID": "5cf643ad0792f56ef8554b05",
+   "ProcessID": 2660,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1559643052804
+  },
+  {
+   "OID": "5cf643b10792f56ef855522d",
+   "ProcessID": 1636,
+   "ParentPID": 3528,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c, \"C:\\Users\\admin\\AppData\\Roaming\\oyu.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559643056882
+  },
+  {
+   "OID": "5cf643b10792f56ef855522f",
+   "ProcessID": 3836,
+   "ParentPID": 1636,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\oyu.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\oyu.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559643056991
+  },
+  {
+   "OID": "5cf643be0792f56ef8555777",
+   "ProcessID": 2508,
+   "ParentPID": 3836,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Roaming\\oyu.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559643069898
+  },
+  {
+   "OID": "5cf643be0792f56ef85557c7",
+   "ProcessID": 2692,
+   "ParentPID": 3836,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Roaming\\oyu.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559643070038
+  },
+  {
+   "OID": "5cf643c60792f56ef8555ba8",
+   "ProcessID": 1476,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\kthink.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1559643078382
+  },
+  {
+   "OID": "5cf643e30792f56ef85576eb",
+   "ProcessID": 3884,
+   "ParentPID": 3836,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\oyu.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\oyu.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559643106710
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cf643e30792f56ef85576eb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf643b10792f56ef855522f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cf643b10792f56ef855522f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cf643c80792f56ef8556329",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cf643800792f56ef8553959",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf643c60792f56ef8555ba8",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf643c60792f56ef8555ba8",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5cf643800792f56ef8553958",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf643c60792f56ef8555ba8",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5cf643b10792f56ef855522f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5cf643800792f56ef8553958",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5cf643800792f56ef8553958",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf643ad0792f56ef8554b05",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf643970792f56ef8554992",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf643970792f56ef8554992",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf643800792f56ef85540f7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

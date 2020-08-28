@@ -1,0 +1,84 @@
+{
+ "Name": "lol.exe",
+ "Md5": "00baeaefdb6c7ee2f10d23323825033d",
+ "UUID": "e333b516-a646-409d-b5be-d946cdf940ca",
+ "Processes": [
+  {
+   "OID": "5f143f3aa47a062c161ee8ef",
+   "ProcessID": 3152,
+   "ParentPID": 288,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\lol.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lol.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595162426173
+  },
+  {
+   "OID": "5f143f41a47a062c161eeb6c",
+   "ProcessID": 2996,
+   "ParentPID": 3152,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595162432579
+  },
+  {
+   "OID": "5f143f47a47a062c161ef0ed",
+   "ProcessID": 2376,
+   "ParentPID": 2996,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Google.exe\" \"Google.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595162438673
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f143f41a47a062c161eeb6c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f143f41a47a062c161eeb6c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f143f41a47a062c161eeb6c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f143f41a47a062c161eeb6c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f143f41a47a062c161eeb6c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f143f41a47a062c161eeb6c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f143f3aa47a062c161ee8ef",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f143f3aa47a062c161ee8ef",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

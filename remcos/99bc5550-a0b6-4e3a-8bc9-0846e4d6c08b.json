@@ -1,0 +1,169 @@
+{
+ "Name": "RCT-060619.exe",
+ "Md5": "e8be1ddedcf071e9b5f0b5bae59d871a",
+ "UUID": "99bc5550-a0b6-4e3a-8bc9-0846e4d6c08b",
+ "Processes": [
+  {
+   "OID": "5cfa68ded4522b1dec2cb0d1",
+   "ProcessID": 3200,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RCT-060619.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RCT-060619.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1559914718007
+  },
+  {
+   "OID": "5cfa68e0d4522b1dec2cb91c",
+   "ProcessID": 1928,
+   "ParentPID": 3200,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Audio-card.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Audio-card.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559914719851
+  },
+  {
+   "OID": "5cfa68e0d4522b1dec2cba77",
+   "ProcessID": 3536,
+   "ParentPID": 1928,
+   "CommandLine": "secinit.exe",
+   "Image": "C:\\Windows\\system32\\secinit.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559914720398
+  },
+  {
+   "OID": "5cfa68e2d4522b1dec2cbbee",
+   "ProcessID": 2472,
+   "ParentPID": 3536,
+   "CommandLine": "\"C:\\Windows\\system32\\secinit.exe\"",
+   "Image": "C:\\Windows\\system32\\secinit.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559914722585
+  },
+  {
+   "OID": "5cfa68e7d4522b1dec2cbf15",
+   "ProcessID": 3664,
+   "ParentPID": 2472,
+   "CommandLine": "C:\\Windows\\system32\\secinit.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\xsprmlghnfjbttkopydvc\"",
+   "Image": "C:\\Windows\\system32\\secinit.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559914727163
+  },
+  {
+   "OID": "5cfa68e7d4522b1dec2cbf16",
+   "ProcessID": 3948,
+   "ParentPID": 2472,
+   "CommandLine": "C:\\Windows\\system32\\secinit.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\zncjmdrjbnbowzgsyiqwnnqxh\"",
+   "Image": "C:\\Windows\\system32\\secinit.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559914727195
+  },
+  {
+   "OID": "5cfa68e7d4522b1dec2cbf17",
+   "ProcessID": 1760,
+   "ParentPID": 2472,
+   "CommandLine": "C:\\Windows\\system32\\secinit.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\jpicnwccpvttgoueqtlyqzlgpzfo\"",
+   "Image": "C:\\Windows\\system32\\secinit.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559914727210
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cfa68e7d4522b1dec2cbf17",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081",
+    "T1114"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa68e2d4522b1dec2cbbee",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa68e2d4522b1dec2cbbee",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa68e2d4522b1dec2cbbee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa68e7d4522b1dec2cbf15",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa68e7d4522b1dec2cbf15",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa68e7d4522b1dec2cbf16",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa68e7d4522b1dec2cbf17",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa68e2d4522b1dec2cbbee",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa68e2d4522b1dec2cbbee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa68e2d4522b1dec2cbbee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa68e0d4522b1dec2cba77",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa68e0d4522b1dec2cba77",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa68e0d4522b1dec2cba77",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa68e0d4522b1dec2cb91c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa68ded4522b1dec2cb0d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

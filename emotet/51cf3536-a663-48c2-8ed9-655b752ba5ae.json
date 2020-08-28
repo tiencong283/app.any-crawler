@@ -1,0 +1,75 @@
+{
+ "Name": "payload.exe",
+ "Md5": "78fde60589205ac5c039647f476fa912",
+ "UUID": "51cf3536-a663-48c2-8ed9-655b752ba5ae",
+ "Processes": [
+  {
+   "OID": "5f1b42ac9934ce47eca45ad2",
+   "ProcessID": 1204,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\payload.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\payload.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595622060077
+  },
+  {
+   "OID": "5f1b42ac9934ce47eca460de",
+   "ProcessID": 1516,
+   "ParentPID": 1204,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\sqmapi\\slwga.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\sqmapi\\slwga.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595622060359
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f1b42ac9934ce47eca460de",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1b42ac9934ce47eca460de",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f1b42ac9934ce47eca460de",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1b42ac9934ce47eca45ac7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f1b42ac9934ce47eca460de",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f1b42ac9934ce47eca45ad2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f1b42ac9934ce47eca45ad2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f1b42ac9934ce47eca45ad2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

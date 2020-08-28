@@ -1,0 +1,72 @@
+{
+ "Name": "Server.exe",
+ "Md5": "e466c23dff9e358f853694d500e24506",
+ "UUID": "6d60f2c6-714e-4170-b83a-215597bcfb35",
+ "Processes": [
+  {
+   "OID": "5f12a4484c543a713dbfa880",
+   "ProcessID": 3132,
+   "ParentPID": 288,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595057223584
+  },
+  {
+   "OID": "5f12a44e4c543a713dbfab3c",
+   "ProcessID": 2940,
+   "ParentPID": 3132,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\google update.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\google update.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595057230053
+  },
+  {
+   "OID": "5f12a4544c543a713dbfb106",
+   "ProcessID": 2416,
+   "ParentPID": 2940,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\google update.exe\" \"google update.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595057236365
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f12a44e4c543a713dbfab3c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f12a44e4c543a713dbfab3c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f12a44e4c543a713dbfab3c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f12a4484c543a713dbfa880",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f12a4484c543a713dbfa880",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f12a4484c543a713dbfa880",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

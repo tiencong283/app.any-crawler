@@ -1,0 +1,82 @@
+{
+ "Name": "55349da5f35de5e1a03b0571d32888a3ff85dd8550023a5b7b919dbdb5b7bb1f",
+ "Md5": "e537ade108e01d2f4d0880e371532d88",
+ "UUID": "66d09882-29a4-4102-baa7-163e8afae921",
+ "Processes": [
+  {
+   "OID": "5f371ff3848e71243e00c2bd",
+   "ProcessID": 2844,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\55349da5f35de5e1a03b0571d32888a3ff85dd8550023a5b7b919dbdb5b7bb1f.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\55349da5f35de5e1a03b0571d32888a3ff85dd8550023a5b7b919dbdb5b7bb1f.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597448179385
+  },
+  {
+   "OID": "5f371ffa848e71243e00c599",
+   "ProcessID": 2884,
+   "ParentPID": 2844,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Windows Audio Device ls....exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Windows Audio Device ls....exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597448185728
+  },
+  {
+   "OID": "5f372000848e71243e00cb68",
+   "ProcessID": 932,
+   "ParentPID": 2884,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\Windows Audio Device ls....exe\" \"Windows Audio Device ls....exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597448191885
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f371ffa848e71243e00c599",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f371ffa848e71243e00c599",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f371ffa848e71243e00c599",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f371ffa848e71243e00c599",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f371ffa848e71243e00c599",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f371ff3848e71243e00c2bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f371ff3848e71243e00c2bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f371ff3848e71243e00c2bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,299 @@
+{
+ "Name": "SmartAssembly 6.exe",
+ "Md5": "2f3ccc16a4908f028add338fd0ccb176",
+ "UUID": "7b92228a-1555-49cd-93f4-716e6ae93f44",
+ "Processes": [
+  {
+   "OID": "5f19ba6d39ab4b224d1ecbf8",
+   "ProcessID": 2604,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\SmartAssembly 6.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\SmartAssembly 6.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5f19ba6e39ab4b224d1ecbfc",
+   "ProcessID": 2832,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\SmartAssembly 6.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\SmartAssembly 6.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1595521645410
+  },
+  {
+   "OID": "5f19ba6e39ab4b224d1ecbfd",
+   "ProcessID": 2416,
+   "ParentPID": 2832,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\SmartAssembly.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\SmartAssembly.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595521645816
+  },
+  {
+   "OID": "5f19ba6e39ab4b224d1ecbfe",
+   "ProcessID": 2588,
+   "ParentPID": 2832,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\SMRT.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\SMRT.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595521645847
+  },
+  {
+   "OID": "5f19ba6e39ab4b224d1ecf53",
+   "ProcessID": 1804,
+   "ParentPID": 2416,
+   "CommandLine": "\"C:\\{82AC8F04-19D4-4DCD-BB6D-BA31C77496B4}\\redgate.installerwizard.ui.exe\" RG_I=\"SmartAssembly 6.8.0\" ",
+   "Image": "C:\\{82AC8F04-19D4-4DCD-BB6D-BA31C77496B4}\\redgate.installerwizard.ui.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595521646129
+  },
+  {
+   "OID": "5f19ba6f39ab4b224d1ed67c",
+   "ProcessID": 2800,
+   "ParentPID": 476,
+   "CommandLine": "C:\\Windows\\system32\\msiexec.exe /V",
+   "Image": "C:\\Windows\\system32\\msiexec.exe",
+   "ProcessType": "MSI Installer",
+   "CreationTimestamp": 1595521646832
+  },
+  {
+   "OID": "5f19ba7539ab4b224d1ef484",
+   "ProcessID": 3952,
+   "ParentPID": 2588,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sedsvc.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sedsvc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595521652832
+  },
+  {
+   "OID": "5f19ba7b39ab4b224d1efabe",
+   "ProcessID": 4000,
+   "ParentPID": 3952,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\sedsvc.exe\" \"sedsvc.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595521659301
+  },
+  {
+   "OID": "5f19ba7e39ab4b224d1f1b40",
+   "ProcessID": 3176,
+   "ParentPID": 2800,
+   "CommandLine": "C:\\Windows\\system32\\MsiExec.exe -Embedding 52D0B249F31759DF8105335F51965C0E",
+   "Image": "C:\\Windows\\system32\\MsiExec.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595521662066
+  },
+  {
+   "OID": "5f19ba7f39ab4b224d1f2223",
+   "ProcessID": 1932,
+   "ParentPID": 2800,
+   "CommandLine": "\"C:\\Windows\\Installer\\MSIB5D9.tmp\" 26 \"SmartAssembly\" 6 0 {9976abff-09de-4b88-ad7c-0290c57503bb} 14 \"Blob121\"",
+   "Image": "C:\\Windows\\Installer\\MSIB5D9.tmp",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1595521662847
+  },
+  {
+   "OID": "5f19baa139ab4b224d1f70d0",
+   "ProcessID": 3224,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Windows\\system32\\NOTEPAD.EXE\" C:\\Users\\admin\\Desktop\\New Text Document.txt",
+   "Image": "C:\\Windows\\system32\\NOTEPAD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1595521697410
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f19ba6d39ab4b224d1ecbec",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba6d39ab4b224d1ecbef",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19baa139ab4b224d1f70d0",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba6d39ab4b224d1ecbdb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6f39ab4b224d1ed67c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6f39ab4b224d1ed67c",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6f39ab4b224d1ed67c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba7f39ab4b224d1f2223",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6f39ab4b224d1ed67c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba6f39ab4b224d1ed67c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6f39ab4b224d1ed67c",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6f39ab4b224d1ed67c",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6f39ab4b224d1ed67c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6f39ab4b224d1ed67c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba7539ab4b224d1ef484",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba7539ab4b224d1ef484",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba7539ab4b224d1ef484",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba7539ab4b224d1ef484",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba7539ab4b224d1ef484",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba7539ab4b224d1ef484",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba7539ab4b224d1ef484",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecbfe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecbfe",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecf53",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecbfe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecf53",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecf53",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecbfd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecf53",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecbfd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecbfd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecbfd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f19ba6e39ab4b224d1ecbfc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

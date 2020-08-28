@@ -1,0 +1,100 @@
+{
+ "Name": "screencastimportantanalyst.pif",
+ "Md5": "ef8f379cc323142b7d3ee403274ec8a9",
+ "UUID": "7fe94f98-10fd-40d4-bb96-9cdc81c8ced7",
+ "Processes": [
+  {
+   "OID": "5dc151e11f7dc52b1b5ea5c9",
+   "ProcessID": 2572,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\screencastimportantanalyst.pif.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\screencastimportantanalyst.pif.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572950497369
+  },
+  {
+   "OID": "5dc1520b1f7dc52b1b5fe7fe",
+   "ProcessID": 720,
+   "ParentPID": 2572,
+   "CommandLine": "\"C:\\Windows\\system32\\notepad.exe\"",
+   "Image": "C:\\Windows\\system32\\notepad.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572950502369
+  },
+  {
+   "OID": "5dc152111f7dc52b1b60d3b2",
+   "ProcessID": 2996,
+   "ParentPID": 720,
+   "CommandLine": "C:\\Windows\\system32\\cmd.exe /c \"COPY /Y /B \"C:\\Users\\admin\\AppData\\Local\\Temp\\screencastimportantanalyst.pif.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\Adobe\\Flash Player\\chksddsk.exe\"\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572950541463
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc1520b1f7dc52b1b5fe7fe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc1520b1f7dc52b1b5fe7fe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc152111f7dc52b1b60d3b2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc152111f7dc52b1b60d3b2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc1520b1f7dc52b1b5fe7fe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5dc151e11f7dc52b1b5ea5b7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dc151e11f7dc52b1b5ea5b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc151e11f7dc52b1b5ea5af",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5dc151e11f7dc52b1b5ea5c9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5dc151e11f7dc52b1b5ea5c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc151e11f7dc52b1b5ea5c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

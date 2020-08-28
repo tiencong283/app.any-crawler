@@ -1,0 +1,137 @@
+{
+ "Name": "hbxhno02",
+ "Md5": "83da9607e57604ea05a037bd567790c3",
+ "UUID": "8d773c7c-7d34-4a62-905e-e97c69b64361",
+ "Processes": [
+  {
+   "OID": "5df150bd6ebab37dc073eebc",
+   "ProcessID": 784,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\hbxhno02.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\hbxhno02.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1576095933656
+  },
+  {
+   "OID": "5df150c06ebab37dc073f0ee",
+   "ProcessID": 952,
+   "ParentPID": 784,
+   "CommandLine": "--9a6eec51",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\hbxhno02.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576095936344
+  },
+  {
+   "OID": "5df150c86ebab37dc073f274",
+   "ProcessID": 2076,
+   "ParentPID": 952,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576095943562
+  },
+  {
+   "OID": "5df150ca6ebab37dc073f581",
+   "ProcessID": 3792,
+   "ParentPID": 2076,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576095946375
+  },
+  {
+   "OID": "5df150f36ebab37dc073f8c2",
+   "ProcessID": 2240,
+   "ParentPID": 3792,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\B09D.tmp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576095987250
+  },
+  {
+   "OID": "5df150f36ebab37dc073f8c3",
+   "ProcessID": 2880,
+   "ParentPID": 3792,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\B09E.tmp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576095987250
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5df150f36ebab37dc073f8c3",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5df150f36ebab37dc073f8c2",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5df150ca6ebab37dc073f581",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5df150ca6ebab37dc073f581",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5df150ca6ebab37dc073f581",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df150ca6ebab37dc073f581",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df150ca6ebab37dc073f581",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df150c86ebab37dc073f274",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5df150c06ebab37dc073f0ee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df150c06ebab37dc073f0ee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df150c06ebab37dc073f0ee",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5df150bd6ebab37dc073eebc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

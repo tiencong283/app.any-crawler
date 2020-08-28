@@ -1,0 +1,141 @@
+{
+ "Name": "voky.exe",
+ "Md5": "a37a818677ede8f96ed6e86b9f28c8ae",
+ "UUID": "1bb4f75e-2440-47e4-bade-a52e551cb76a",
+ "Processes": [
+  {
+   "OID": "5d5c48be6bf0c10f6b428eeb",
+   "ProcessID": 3704,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\voky.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\voky.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1566329022316
+  },
+  {
+   "OID": "5d5c48ce6bf0c10f6b429172",
+   "ProcessID": 2548,
+   "ParentPID": 3704,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\voky.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566329037926
+  },
+  {
+   "OID": "5d5c48dd6bf0c10f6b42954b",
+   "ProcessID": 2312,
+   "ParentPID": 3704,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c copy \"C:\\Users\\admin\\AppData\\Local\\Temp\\voky.exe\" \"C:\\Users\\admin\\AppData\\Local\\autrun.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566329053582
+  },
+  {
+   "OID": "5d5c48e86bf0c10f6b4296ae",
+   "ProcessID": 3624,
+   "ParentPID": 3704,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c, \"C:\\Users\\admin\\AppData\\Local\\autrun.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566329063629
+  },
+  {
+   "OID": "5d5c48e86bf0c10f6b4296b0",
+   "ProcessID": 2324,
+   "ParentPID": 3624,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\autrun.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\autrun.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566329063691
+  },
+  {
+   "OID": "5d5c48f76bf0c10f6b4299bc",
+   "ProcessID": 2952,
+   "ParentPID": 2324,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\autrun.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566329078973
+  },
+  {
+   "OID": "5d5c49106bf0c10f6b429dbe",
+   "ProcessID": 2436,
+   "ParentPID": 2324,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\autrun.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\autrun.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566329104019
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d5c49106bf0c10f6b429dbe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d5c49106bf0c10f6b429dbe",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5d5c49106bf0c10f6b429dbe",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d5c49106bf0c10f6b429dbe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d5c49106bf0c10f6b429dbe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5d5c48e86bf0c10f6b4296b0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d5c48e86bf0c10f6b4296b0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d5c48e86bf0c10f6b4296b0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d5c48dd6bf0c10f6b42954b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d5c48be6bf0c10f6b428609",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d5c48be6bf0c10f6b428eeb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

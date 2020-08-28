@@ -1,0 +1,207 @@
+{
+ "Name": "0dc50ada36dd154d3f8ad035dc7cf74e",
+ "Md5": "0dc50ada36dd154d3f8ad035dc7cf74e",
+ "UUID": "3ee792e4-07d1-46ba-9522-338d46596e9a",
+ "Processes": [
+  {
+   "OID": "5d4af3a27538f44171444177",
+   "ProcessID": 1388,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\0dc50ada36dd154d3f8ad035dc7cf74e.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\0dc50ada36dd154d3f8ad035dc7cf74e.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1565193122246
+  },
+  {
+   "OID": "5d4af3d77538f441714445b5",
+   "ProcessID": 3784,
+   "ParentPID": 1388,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\0dc50ada36dd154d3f8ad035dc7cf74e.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\0dc50ada36dd154d3f8ad035dc7cf74e.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565193175371
+  },
+  {
+   "OID": "5d4af3d77538f441714445b6",
+   "ProcessID": 3592,
+   "ParentPID": 3784,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565193175496
+  },
+  {
+   "OID": "5d4af3d87538f44171444789",
+   "ProcessID": 4016,
+   "ParentPID": 3784,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565193175902
+  },
+  {
+   "OID": "5d4af3d87538f4417144478a",
+   "ProcessID": 724,
+   "ParentPID": 4016,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\0dc50ada36dd154d3f8ad035dc7cf74e.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\0dc50ada36dd154d3f8ad035dc7cf74e.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565193175996
+  },
+  {
+   "OID": "5d4af4147538f4417144526c",
+   "ProcessID": 2632,
+   "ParentPID": 724,
+   "CommandLine": "\"powershell\" Get-MpPreference -verbose",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565193235777
+  },
+  {
+   "OID": "5d4af4147538f4417144538b",
+   "ProcessID": 2656,
+   "ParentPID": 724,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\0dc50ada36dd154d3f8ad035dc7cf74e.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\0dc50ada36dd154d3f8ad035dc7cf74e.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565193236464
+  },
+  {
+   "OID": "5d4af4157538f44171445ab7",
+   "ProcessID": 1896,
+   "ParentPID": 2656,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565193236730
+  },
+  {
+   "OID": "5d4af4167538f441714461c3",
+   "ProcessID": 3576,
+   "ParentPID": 1896,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Windows\\System32\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565193238011
+  },
+  {
+   "OID": "5d4af4167538f441714461c5",
+   "ProcessID": 1676,
+   "ParentPID": 3576,
+   "CommandLine": "C:\\Windows\\System32\\remcos\\remcos.exe",
+   "Image": "C:\\Windows\\System32\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565193238089
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d4af4157538f44171445ab7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d4af4147538f4417144538b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d4af4147538f4417144538b",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4af4147538f4417144538b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4af4147538f4417144538b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d4af4147538f4417144538b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4af4147538f4417144538b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4af4147538f4417144538b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5d4af4147538f4417144538b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5d4af3d87538f4417144478a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d4af4147538f4417144526c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4af3d87538f4417144478a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d4af3d87538f4417144478a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d4af3d77538f441714445b5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5d4af3d77538f441714445b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5d4af3d77538f441714445b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4af3a27538f44171444177",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

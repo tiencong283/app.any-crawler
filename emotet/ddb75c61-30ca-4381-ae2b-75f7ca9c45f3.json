@@ -1,0 +1,90 @@
+{
+ "Name": "q6ckb",
+ "Md5": "412ff1cd9b02dd85e0e23a6a93857768",
+ "UUID": "ddb75c61-30ca-4381-ae2b-75f7ca9c45f3",
+ "Processes": [
+  {
+   "OID": "5e37745d7cd6943f588115a8",
+   "ProcessID": 3976,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\q6ckb.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\q6ckb.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580692573035
+  },
+  {
+   "OID": "5e37745f7cd6943f588117ec",
+   "ProcessID": 2816,
+   "ParentPID": 3976,
+   "CommandLine": "--2728d739",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\q6ckb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580692575020
+  },
+  {
+   "OID": "5e3774657cd6943f588118d6",
+   "ProcessID": 348,
+   "ParentPID": 2816,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580692580863
+  },
+  {
+   "OID": "5e3774657cd6943f588118d7",
+   "ProcessID": 2756,
+   "ParentPID": 348,
+   "CommandLine": "--a66f8ff2",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\pdeftvolume\\pdeftvolume.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580692581035
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e3774657cd6943f588118d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e37745d7cd6943f58810c79",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3774657cd6943f588118d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e37745f7cd6943f588117ec",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e37745f7cd6943f588117ec",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e37745f7cd6943f588117ec",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e37745d7cd6943f588115a8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

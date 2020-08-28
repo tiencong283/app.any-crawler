@@ -1,0 +1,39 @@
+{
+ "Name": "cekcher yahoo hotmail facebook.exe",
+ "Md5": "f59812810f231f6be8469eda62fd86ce",
+ "UUID": "4c6b3ea2-aeb5-4310-976c-c3fa3a8b7e9a",
+ "Processes": [
+  {
+   "OID": "5f36d979899c5044da69e773",
+   "ProcessID": 2284,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cekcher yahoo hotmail facebook.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cekcher yahoo hotmail facebook.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597430136758
+  },
+  {
+   "OID": "5f36d97f899c5044da69eabb",
+   "ProcessID": 2472,
+   "ParentPID": 2284,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\cekcher yahoo hotmail facebook.exe\" \"cekcher yahoo hotmail facebook.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597430143086
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f36d979899c5044da69e773",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f36d979899c5044da69e773",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

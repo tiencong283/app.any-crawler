@@ -1,0 +1,74 @@
+{
+ "Name": "emotet.exe",
+ "Md5": "61b498284fbcf97023869ab449824b75",
+ "UUID": "10c1485e-0fe6-479d-a672-febb3b321fff",
+ "Processes": [
+  {
+   "OID": "5e187ef9b8cfec2fa65fdbc7",
+   "ProcessID": 2256,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578663673103
+  },
+  {
+   "OID": "5e187efab8cfec2fa65fe207",
+   "ProcessID": 992,
+   "ParentPID": 2256,
+   "CommandLine": "--7dfb8940",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotet.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578663673509
+  },
+  {
+   "OID": "5e187f01b8cfec2fa65fe552",
+   "ProcessID": 1976,
+   "ParentPID": 992,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578663681275
+  },
+  {
+   "OID": "5e187f01b8cfec2fa65fe553",
+   "ProcessID": 2980,
+   "ParentPID": 1976,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578663681400
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e187f01b8cfec2fa65fe553",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e187efab8cfec2fa65fe207",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e187efab8cfec2fa65fe207",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e187efab8cfec2fa65fe207",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e187ef9b8cfec2fa65fdbc7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

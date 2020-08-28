@@ -1,0 +1,63 @@
+{
+ "Name": "sample.exe",
+ "Md5": "ba3b844082f7276150bcc206ce4d5cde",
+ "UUID": "9e4a8f04-9f38-4049-8a89-6bede713b604",
+ "Processes": [
+  {
+   "OID": "5e68790542bafe67168c222f",
+   "ProcessID": 3320,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\system32\\ntvdm.exe\" -i1  ",
+   "Image": "C:\\Windows\\system32\\ntvdm.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583905029085
+  },
+  {
+   "OID": "5e68792342bafe67168c26e2",
+   "ProcessID": 1500,
+   "ParentPID": 592,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1583905058445
+  },
+  {
+   "OID": "5e68793a42bafe67168c2f8b",
+   "ProcessID": 2236,
+   "ParentPID": 592,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1583905082179
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e68793a42bafe67168c2f8b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e68790542bafe67168c1929",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e68790542bafe67168c192c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e68792342bafe67168c26e2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e68790542bafe67168c192c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

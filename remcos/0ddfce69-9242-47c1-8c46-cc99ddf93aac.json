@@ -1,0 +1,65 @@
+{
+ "Name": "1b058be85b4a84a508ab167816e26ce0.sample",
+ "Md5": "1b058be85b4a84a508ab167816e26ce0",
+ "UUID": "0ddfce69-9242-47c1-8c46-cc99ddf93aac",
+ "Processes": [
+  {
+   "OID": "5ccc6ab2d8200f07844b6766",
+   "ProcessID": 2516,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\1b058be85b4a84a508ab167816e26ce0.sample.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\1b058be85b4a84a508ab167816e26ce0.sample.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1556900529938
+  },
+  {
+   "OID": "5ccc6ab3d8200f07844b70c9",
+   "ProcessID": 1516,
+   "ParentPID": 2516,
+   "CommandLine": "\"C:\\Windows\\System32\\cscript.exe\" //B //Nologo C:\\Users\\admin\\mobsync.vbs",
+   "Image": "C:\\Windows\\System32\\cscript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556900531032
+  },
+  {
+   "OID": "5ccc6ab4d8200f07844b76ee",
+   "ProcessID": 1000,
+   "ParentPID": 2516,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556900531829
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ccc6ab4d8200f07844b76ee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ccc6ab3d8200f07844b70c9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ccc6ab3d8200f07844b70c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ccc6ab2d8200f07844b6766",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ccc6ab2d8200f07844b6766",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

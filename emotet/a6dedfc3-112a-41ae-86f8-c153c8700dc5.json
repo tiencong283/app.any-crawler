@@ -1,0 +1,86 @@
+{
+ "Name": "2018-11-23-Emotet-malware-binary.exe",
+ "Md5": "559b94a546cc5d78fcccb981cb3f7f91",
+ "UUID": "a6dedfc3-112a-41ae-86f8-c153c8700dc5",
+ "Processes": [
+  {
+   "OID": "5e863c92253a006c598e97ae",
+   "ProcessID": 3472,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\2018-11-23-Emotet-malware-binary.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2018-11-23-Emotet-malware-binary.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585855634084
+  },
+  {
+   "OID": "5e863c92253a006c598e97af",
+   "ProcessID": 2616,
+   "ParentPID": 3472,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\2018-11-23-Emotet-malware-binary.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2018-11-23-Emotet-malware-binary.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585855634193
+  },
+  {
+   "OID": "5e863c97253a006c598e9ab5",
+   "ProcessID": 1928,
+   "ParentPID": 2616,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\lpiograd.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\lpiograd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585855639396
+  },
+  {
+   "OID": "5e863c97253a006c598e9ab6",
+   "ProcessID": 2436,
+   "ParentPID": 1928,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\lpiograd.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\lpiograd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585855639490
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e863c92253a006c598e8e92",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e863c97253a006c598e9ab6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e863c97253a006c598e9ab6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e863c97253a006c598e9ab6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e863c97253a006c598e9ab5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e863c92253a006c598e97af",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e863c92253a006c598e97af",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

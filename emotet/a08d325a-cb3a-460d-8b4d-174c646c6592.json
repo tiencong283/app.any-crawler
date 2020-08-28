@@ -1,0 +1,81 @@
+{
+ "Name": "uVSass",
+ "Md5": "0cc7de052af2c75b3363cbb58d7075bb",
+ "UUID": "a08d325a-cb3a-460d-8b4d-174c646c6592",
+ "Processes": [
+  {
+   "OID": "5de0023761ad0a4bee062ea1",
+   "ProcessID": 3000,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\uVSass.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\uVSass.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574961718895
+  },
+  {
+   "OID": "5de0023861ad0a4bee0636de",
+   "ProcessID": 2928,
+   "ParentPID": 3000,
+   "CommandLine": "--d3796913",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\uVSass.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574961720208
+  },
+  {
+   "OID": "5de0023f61ad0a4bee063872",
+   "ProcessID": 3792,
+   "ParentPID": 2928,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574961726364
+  },
+  {
+   "OID": "5de0023f61ad0a4bee063b7b",
+   "ProcessID": 388,
+   "ParentPID": 3792,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574961727426
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5de0023f61ad0a4bee063b7b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de0023f61ad0a4bee063872",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5de0023861ad0a4bee0636de",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5de0023861ad0a4bee0636de",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de0023861ad0a4bee0636de",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de0023761ad0a4bee062ea1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

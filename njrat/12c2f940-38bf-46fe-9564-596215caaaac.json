@@ -1,0 +1,79 @@
+{
+ "Name": "dsad.exe",
+ "Md5": "38d2d5026dbb461b7013e7b75683777a",
+ "UUID": "12c2f940-38bf-46fe-9564-596215caaaac",
+ "Processes": [
+  {
+   "OID": "5f42cfbc9f1c7720853593f5",
+   "ProcessID": 2848,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dsad.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dsad.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1598214076004
+  },
+  {
+   "OID": "5f42cfc39f1c772085359784",
+   "ProcessID": 3172,
+   "ParentPID": 2848,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\dsad.exe\" \"dsad.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1598214083332
+  },
+  {
+   "OID": "5f42cfe59f1c77208535afb3",
+   "ProcessID": 1972,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1598214117441
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5f42cfe59f1c77208535afb3",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5f42cfbc9f1c7720853593f5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f42cfbc9f1c7720853593f5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f42cfbc9f1c7720853593f5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f42cfbc9f1c7720853593f5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5f42cfbc9f1c7720853593f5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5f42cfbc9f1c7720853593f5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "Name": "Revised Invoice.exe",
+ "Md5": "402626615e45ec7fc116d8dd1dcbe133",
+ "UUID": "bd34ac22-9167-4ae5-a91f-e5600e21e72f",
+ "Processes": [
+  {
+   "OID": "5dc0819645e65b0434600894",
+   "ProcessID": 1796,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Revised Invoice.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Revised Invoice.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572897173917
+  },
+  {
+   "OID": "5dc0819745e65b04346010ef",
+   "ProcessID": 940,
+   "ParentPID": 1796,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\Book.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572897174542
+  },
+  {
+   "OID": "5dc0819c45e65b043460170b",
+   "ProcessID": 2248,
+   "ParentPID": 940,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Book\\Qvmwjb.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Book\\Qvmwjb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572897180042
+  },
+  {
+   "OID": "5dc081b545e65b0434601b99",
+   "ProcessID": 3908,
+   "ParentPID": 2248,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Book\\Qvmwjb.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Book\\Qvmwjb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572897205307
+  },
+  {
+   "OID": "5dc081b645e65b0434601c75",
+   "ProcessID": 4028,
+   "ParentPID": 3908,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Book\\Qvmwjb.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Book\\Qvmwjb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572897206042
+  },
+  {
+   "OID": "5dc081b645e65b0434601c76",
+   "ProcessID": 1576,
+   "ParentPID": 4028,
+   "CommandLine": "\"C:\\Windows\\System32\\TapiUnattend.exe\"",
+   "Image": "C:\\Windows\\System32\\TapiUnattend.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572897206245
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc081b645e65b0434601c76",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1056"
+   ]
+  },
+  {
+   "ProcessOID": "5dc081b645e65b0434601c76",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc081b645e65b0434601c75",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc081b645e65b0434601c75",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dc081b645e65b0434601c76",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc081b645e65b0434601c75",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc081b545e65b0434601b99",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dc081b545e65b0434601b99",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc0819c45e65b043460170b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dc0819c45e65b043460170b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc0819645e65b0434600894",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5dc0819645e65b0434600894",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}
