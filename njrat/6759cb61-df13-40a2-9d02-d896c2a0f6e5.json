@@ -1,0 +1,72 @@
+{
+ "Name": "hack facebook 2015.exe",
+ "Md5": "1170f31cf4bcddb554f2b3bcf9dd87c3",
+ "UUID": "6759cb61-df13-40a2-9d02-d896c2a0f6e5",
+ "Processes": [
+  {
+   "OID": "5ee8a639a4bfb3174658ad51",
+   "ProcessID": 1380,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\hack facebook 2015.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\hack facebook 2015.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592305209014
+  },
+  {
+   "OID": "5ee8a640a4bfb3174658b7ea",
+   "ProcessID": 2960,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592305216014
+  },
+  {
+   "OID": "5ee8a647a4bfb3174658bf48",
+   "ProcessID": 3064,
+   "ParentPID": 2960,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe\" \"chrome.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592305222717
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee8a640a4bfb3174658b7ea",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee8a640a4bfb3174658b7ea",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee8a640a4bfb3174658b7ea",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee8a640a4bfb3174658b7ea",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ee8a639a4bfb3174658ad51",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ee8a639a4bfb3174658ad51",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

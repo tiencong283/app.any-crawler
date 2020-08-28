@@ -1,0 +1,103 @@
+{
+ "Name": "binder.exe",
+ "Md5": "a572422684956506d815697d7677cbe1",
+ "UUID": "7b8bad8d-be48-4fc2-9629-99ceb2137a9a",
+ "Processes": [
+  {
+   "OID": "5e55f31e0af2aa2e521487c5",
+   "ProcessID": 3040,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\binder.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\binder.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1582691102318
+  },
+  {
+   "OID": "5e55f31f0af2aa2e52148df9",
+   "ProcessID": 3560,
+   "ParentPID": 3040,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Binder v0.4.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Binder v0.4.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582691102631
+  },
+  {
+   "OID": "5e55f31f0af2aa2e52148dfa",
+   "ProcessID": 780,
+   "ParentPID": 3040,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\system32.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\system32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582691102709
+  },
+  {
+   "OID": "5e55f3250af2aa2e52149b5f",
+   "ProcessID": 2824,
+   "ParentPID": 780,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\system32.exe\" \"system32.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582691109068
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e55f31f0af2aa2e52148dfa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e55f31f0af2aa2e52148dfa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e55f31f0af2aa2e52148dfa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e55f31f0af2aa2e52148dfa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e55f31f0af2aa2e52148dfa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e55f31f0af2aa2e52148dfa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e55f31f0af2aa2e52148dfa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e55f31f0af2aa2e52148df9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e55f31f0af2aa2e52148dfa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e55f31e0af2aa2e521487c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

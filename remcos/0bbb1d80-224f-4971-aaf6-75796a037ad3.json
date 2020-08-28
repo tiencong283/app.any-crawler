@@ -1,0 +1,98 @@
+{
+ "Name": "Aras_Kargo_Online_Takip.exe",
+ "Md5": "5b67f0e2488e94ba4107d6a4504e8cb2",
+ "UUID": "0bbb1d80-224f-4971-aaf6-75796a037ad3",
+ "Processes": [
+  {
+   "OID": "5bfc158aec0cd22c0eabe7e9",
+   "ProcessID": 2944,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Aras_Kargo_Online_Takip.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Aras_Kargo_Online_Takip.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1543247241529
+  },
+  {
+   "OID": "5bfc158bec0cd22c0eabea9b",
+   "ProcessID": 2652,
+   "ParentPID": 2944,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\installutil.exe\" /logtoconsole=false /logfile= /u \"C:\\Users\\admin\\AppData\\Local\\Temp\\Aras_Kargo_Online_Takip.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\installutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1543247242560
+  },
+  {
+   "OID": "5bfc15a9ec0cd22c0eabf0cd",
+   "ProcessID": 3156,
+   "ParentPID": 2652,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\JTbJLlcd\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp5F.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1543247273263
+  },
+  {
+   "OID": "5bfc15a9ec0cd22c0eabf0cf",
+   "ProcessID": 3976,
+   "ParentPID": 2652,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\installutil.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\installutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1543247273451
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bfc15a9ec0cd22c0eabf0cf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bfc15a9ec0cd22c0eabf0cf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bfc15a9ec0cd22c0eabf0cf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bfc158bec0cd22c0eabea9b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bfc1589ec0cd22c0eabe0ed",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bfc15a9ec0cd22c0eabf0cd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5bfc158bec0cd22c0eabea9b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5bfc158bec0cd22c0eabea9b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bfc158bec0cd22c0eabea9b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

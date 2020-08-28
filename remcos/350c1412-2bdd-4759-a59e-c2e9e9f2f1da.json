@@ -1,0 +1,90 @@
+{
+ "Name": "winnilog.exe",
+ "Md5": "4e111d542ba8cab1ad3ee08f03b8451c",
+ "UUID": "350c1412-2bdd-4759-a59e-c2e9e9f2f1da",
+ "Processes": [
+  {
+   "OID": "5b9a8b6dc0332e14468857e5",
+   "ProcessID": 504,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winnilog.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winnilog.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1536854893640
+  },
+  {
+   "OID": "5b9a8b73c0332e14468864ff",
+   "ProcessID": 2484,
+   "ParentPID": 504,
+   "CommandLine": "C:\\Windows\\system32\\msiexec.exe",
+   "Image": "C:\\Windows\\system32\\msiexec.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536854899062
+  },
+  {
+   "OID": "5b9a8b73c0332e1446886500",
+   "ProcessID": 1596,
+   "ParentPID": 504,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winnilog.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winnilog.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536854899250
+  },
+  {
+   "OID": "5b9a8b7fc0332e14468869ff",
+   "ProcessID": 3208,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1536854910890
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b9a8b73c0332e1446886500",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8b73c0332e1446886500",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b9a8b73c0332e1446886500",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8b6dc0332e14468857e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8b6dc0332e14468857e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8b6dc0332e14468857e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8b6dc0332e14468857e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8b6dc0332e14468857d2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1063"
+   ]
+  }
+ ]
+}

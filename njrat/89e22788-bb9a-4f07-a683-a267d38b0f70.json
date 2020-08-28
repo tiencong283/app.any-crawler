@@ -1,0 +1,91 @@
+{
+ "Name": "FacebookCrypter.exe",
+ "Md5": "55a56ce91cbb81b55e979994a845e159",
+ "UUID": "89e22788-bb9a-4f07-a683-a267d38b0f70",
+ "Processes": [
+  {
+   "OID": "5d32ae4b99d04618de9bd578",
+   "ProcessID": 3496,
+   "ParentPID": 124,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\FacebookCrypter.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\FacebookCrypter.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1563602507241
+  },
+  {
+   "OID": "5d32ae5199d04618de9bd7f3",
+   "ProcessID": 3356,
+   "ParentPID": 3496,
+   "CommandLine": "\"C:\\Users\\admin\\PSNGen.exe\" ",
+   "Image": "C:\\Users\\admin\\PSNGen.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563602513804
+  },
+  {
+   "OID": "5d32ae5899d04618de9bdd9d",
+   "ProcessID": 2980,
+   "ParentPID": 3356,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\PSNGen.exe\" \"PSNGen.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563602520023
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d32ae6899d04618de9be909",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d32ae5199d04618de9bd7f3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d32ae5199d04618de9bd7f3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d32ae5199d04618de9bd7f3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d32ae5199d04618de9bd7f3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d32ae5199d04618de9bd7f3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d32ae5199d04618de9bd7f3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d32ae4b99d04618de9bd578",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d32ae4b99d04618de9bd578",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

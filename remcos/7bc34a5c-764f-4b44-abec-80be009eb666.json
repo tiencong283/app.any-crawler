@@ -1,0 +1,97 @@
+{
+ "Name": "bdoor.exe",
+ "Md5": "4981b38ecff1103283130137d5a6acae",
+ "UUID": "7bc34a5c-764f-4b44-abec-80be009eb666",
+ "Processes": [
+  {
+   "OID": "5b413989886e596b5843bdf8",
+   "ProcessID": 1524,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\bdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\bdoor.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1531001224471
+  },
+  {
+   "OID": "5b4139ba886e596b5843c125",
+   "ProcessID": 568,
+   "ParentPID": 1524,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\bdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\bdoor.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531001273455
+  },
+  {
+   "OID": "5b4139ba886e596b5843c126",
+   "ProcessID": 1596,
+   "ParentPID": 1524,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\bdoor.exe\" 2 568 1788421",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\bdoor.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531001273455
+  },
+  {
+   "OID": "5b4139ba886e596b5843c127",
+   "ProcessID": 1492,
+   "ParentPID": 568,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531001273830
+  },
+  {
+   "OID": "5b4139ba886e596b5843c129",
+   "ProcessID": 2728,
+   "ParentPID": 1492,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531001273924
+  },
+  {
+   "OID": "5b4139bb886e596b5843c8ed",
+   "ProcessID": 3312,
+   "ParentPID": 1492,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531001274987
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b4139ba886e596b5843c125",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b4139ba886e596b5843c125",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4139ba886e596b5843c125",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b4139ba886e596b5843c125",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4139ba886e596b5843c125",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b413989886e596b5843bdf8",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

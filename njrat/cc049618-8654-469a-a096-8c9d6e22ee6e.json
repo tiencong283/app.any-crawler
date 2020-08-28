@@ -1,0 +1,89 @@
+{
+ "Name": "Process Hacker 2.exe",
+ "Md5": "3fef1b388360d198b1215df6ad4221a1",
+ "UUID": "cc049618-8654-469a-a096-8c9d6e22ee6e",
+ "Processes": [
+  {
+   "OID": "5dfe1b01c603805851cd8e0e",
+   "ProcessID": 1948,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Process Hacker 2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Process Hacker 2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1576934145003
+  },
+  {
+   "OID": "5dfe1b08c603805851cd9030",
+   "ProcessID": 3852,
+   "ParentPID": 1948,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ProcessHacker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ProcessHacker.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576934152347
+  },
+  {
+   "OID": "5dfe1b10c603805851cd9604",
+   "ProcessID": 3392,
+   "ParentPID": 3852,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\ProcessHacker.exe\" \"ProcessHacker.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576934159394
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dfe1b08c603805851cd9030",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfe1b08c603805851cd9030",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dfe1b08c603805851cd9030",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfe1b08c603805851cd9030",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfe1b08c603805851cd9030",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dfe1b08c603805851cd9030",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dfe1b01c603805851cd8e0e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dfe1b01c603805851cd8e0e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dfe1b01c603805851cd8e0e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

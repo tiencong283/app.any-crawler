@@ -1,0 +1,94 @@
+{
+ "Name": "remcos.dropper.exe",
+ "Md5": "e21790b1c49d3fd798901afc0b8c6c9b",
+ "UUID": "348de165-4738-4474-b7e7-80df3d14f8f4",
+ "Processes": [
+  {
+   "OID": "5b977a1e78b86e60c393fc8d",
+   "ProcessID": 2252,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\remcos.dropper.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\remcos.dropper.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1536653854157
+  },
+  {
+   "OID": "5b977a2778b86e60c393ff1d",
+   "ProcessID": 2076,
+   "ParentPID": 2252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\windows\\notepad.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\windows\\notepad.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536653862814
+  },
+  {
+   "OID": "5b977a2b78b86e60c39400df",
+   "ProcessID": 252,
+   "ParentPID": 2076,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\windows\\notepad.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\windows\\notepad.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536653866735
+  },
+  {
+   "OID": "5b977a2b78b86e60c39400e0",
+   "ProcessID": 3076,
+   "ParentPID": 2076,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\windows\\notepad.exe\" 2 252 1105281",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\windows\\notepad.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536653866735
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b977a2b78b86e60c39400df",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b977a2b78b86e60c39400df",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b977a2b78b86e60c39400df",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b977a2778b86e60c393ff1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b977a2778b86e60c393ff1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b977a2778b86e60c393ff1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b977a1e78b86e60c393fc8d",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b977a1e78b86e60c393fc8d",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b977a1e78b86e60c393fc8d",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

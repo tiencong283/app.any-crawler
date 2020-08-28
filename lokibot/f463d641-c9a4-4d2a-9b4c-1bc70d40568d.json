@@ -1,0 +1,139 @@
+{
+ "Name": "malware.exe",
+ "Md5": "b7568415d133210b512dbfe546540664",
+ "UUID": "f463d641-c9a4-4d2a-9b4c-1bc70d40568d",
+ "Processes": [
+  {
+   "OID": "5ce6617d9d49681bb4d00fff",
+   "ProcessID": 3376,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\malware.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\malware.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1558602108711
+  },
+  {
+   "OID": "5ce6617f9d49681bb4d012c7",
+   "ProcessID": 856,
+   "ParentPID": 3376,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\malware.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\malware.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558602111211
+  },
+  {
+   "OID": "5ce661829d49681bb4d01596",
+   "ProcessID": 948,
+   "ParentPID": 856,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\objectdugdug.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\objectdugdug.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558602114118
+  },
+  {
+   "OID": "5ce661859d49681bb4d0199a",
+   "ProcessID": 3280,
+   "ParentPID": 948,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\objectdugdug.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\objectdugdug.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558602116649
+  },
+  {
+   "OID": "5ce661879d49681bb4d01aea",
+   "ProcessID": 2400,
+   "ParentPID": 3280,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\objectdugdug.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\objectdugdug.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558602119071
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ce661879d49681bb4d01aea",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce661879d49681bb4d01aea",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce661879d49681bb4d01aea",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce661879d49681bb4d01aea",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce661879d49681bb4d01aea",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce661879d49681bb4d01aea",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ce661879d49681bb4d01aea",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce661829d49681bb4d01596",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ce661879d49681bb4d01aea",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce661859d49681bb4d0199a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce661859d49681bb4d0199a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce661829d49681bb4d01596",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce661829d49681bb4d01596",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce6617f9d49681bb4d012c7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce6617d9d49681bb4d00fff",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

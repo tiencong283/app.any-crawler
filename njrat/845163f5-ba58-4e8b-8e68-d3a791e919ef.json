@@ -1,0 +1,75 @@
+{
+ "Name": "denis.exe",
+ "Md5": "df52946d16c28c6fdae88427b5981c69",
+ "UUID": "845163f5-ba58-4e8b-8e68-d3a791e919ef",
+ "Processes": [
+  {
+   "OID": "5dc86465699dbb6dd89d27da",
+   "ProcessID": 2748,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\denis.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\denis.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573413989148
+  },
+  {
+   "OID": "5dc86474699dbb6dd89d3625",
+   "ProcessID": 3000,
+   "ParentPID": 2748,
+   "CommandLine": "\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v2.0.50727\\\\\\\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573414003742
+  },
+  {
+   "OID": "5dc8647a699dbb6dd89d3999",
+   "ProcessID": 584,
+   "ParentPID": 3000,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573414010117
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc86474699dbb6dd89d3625",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc86474699dbb6dd89d3625",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc86474699dbb6dd89d3625",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc86474699dbb6dd89d3625",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dc86465699dbb6dd89d27da",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc86465699dbb6dd89d27da",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dc86465699dbb6dd89d27da",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

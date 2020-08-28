@@ -1,0 +1,106 @@
+{
+ "Name": "VapeLite.exe",
+ "Md5": "a81101c74ca693f8b1985dc0eee0817c",
+ "UUID": "ba606ced-f2dd-441d-8a93-d390fc4dc7e0",
+ "Processes": [
+  {
+   "OID": "5ee4943cb293954557d9cabc",
+   "ProcessID": 1980,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\VapeLite.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\VapeLite.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592038459669
+  },
+  {
+   "OID": "5ee49441b293954557d9d9b5",
+   "ProcessID": 2180,
+   "ParentPID": 1980,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Edge\\MicrosoftWebhook.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Edge\\MicrosoftWebhook.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592038464981
+  },
+  {
+   "OID": "5ee49463b293954557dafdb2",
+   "ProcessID": 2468,
+   "ParentPID": 2180,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\Edge\\MicrosoftWebhook.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592038498810
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee49441b293954557d9d9b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ee4943fb293954557d9ce72",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1082",
+    "T1497"
+   ]
+  },
+  {
+   "ProcessOID": "5ee49441b293954557d9d9b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee49441b293954557d9d9b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee49441b293954557d9d9b5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5ee49441b293954557d9d9b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5ee49441b293954557d9d9b5",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ee4943cb293954557d9cabc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ee4943cb293954557d9cabc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee4943cb293954557d9cabc",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee4943cb293954557d9cabc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

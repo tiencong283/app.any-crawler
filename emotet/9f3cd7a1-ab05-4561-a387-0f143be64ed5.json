@@ -1,0 +1,86 @@
+{
+ "Name": "429769322.exe",
+ "Md5": "0ddcb63867d4764608b09ebeec10093b",
+ "UUID": "9f3cd7a1-ab05-4561-a387-0f143be64ed5",
+ "Processes": [
+  {
+   "OID": "5db200631a56303882110b12",
+   "ProcessID": 1324,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\429769322.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\429769322.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571946594819
+  },
+  {
+   "OID": "5db200631a56303882110b13",
+   "ProcessID": 2836,
+   "ParentPID": 1324,
+   "CommandLine": "--b22c3d98",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\429769322.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571946595209
+  },
+  {
+   "OID": "5db2006a1a56303882110e7c",
+   "ProcessID": 720,
+   "ParentPID": 2836,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571946602116
+  },
+  {
+   "OID": "5db2006a1a56303882110e89",
+   "ProcessID": 3156,
+   "ParentPID": 720,
+   "CommandLine": "--b583abe8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571946602397
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db2006a1a56303882110e89",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db2006a1a56303882110e89",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db2006a1a56303882110e89",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db2006a1a56303882110e7c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db200631a56303882110b13",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db200631a56303882110b13",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db200631a56303882110b13",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

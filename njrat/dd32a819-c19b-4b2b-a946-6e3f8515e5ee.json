@@ -1,0 +1,77 @@
+{
+ "Name": "7e2fa2c9b990a6640b4ee886352d551c.exe",
+ "Md5": "986c2fe7b510db3a23c0cbae5ced9ab7",
+ "UUID": "dd32a819-c19b-4b2b-a946-6e3f8515e5ee",
+ "Processes": [
+  {
+   "OID": "5d09a79b139d9f0aaed5ef92",
+   "ProcessID": 572,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\7e2fa2c9b990a6640b4ee886352d551c.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\7e2fa2c9b990a6640b4ee886352d551c.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560913818846
+  },
+  {
+   "OID": "5d09a79b139d9f0aaed5ef93",
+   "ProcessID": 3388,
+   "ParentPID": 572,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cress.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cress.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560913819314
+  },
+  {
+   "OID": "5d09a79c139d9f0aaed5f43f",
+   "ProcessID": 2344,
+   "ParentPID": 3388,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\cress.exe\" \"cress.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560913819564
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d09a79b139d9f0aaed5ef93",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d09a79b139d9f0aaed5ef93",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d09a79b139d9f0aaed5ef93",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d09a79b139d9f0aaed5ef93",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d09a79b139d9f0aaed5ef93",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d09a79b139d9f0aaed5ef93",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d09a79b139d9f0aaed5ef92",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

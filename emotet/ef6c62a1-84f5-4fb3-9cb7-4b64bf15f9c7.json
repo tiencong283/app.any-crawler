@@ -1,0 +1,86 @@
+{
+ "Name": "IjOUSh",
+ "Md5": "d3aa8733fe6baacaa0178199d684f278",
+ "UUID": "ef6c62a1-84f5-4fb3-9cb7-4b64bf15f9c7",
+ "Processes": [
+  {
+   "OID": "5dc2352678e984461a7f6150",
+   "ProcessID": 932,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\IjOUSh.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IjOUSh.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573008678203
+  },
+  {
+   "OID": "5dc2352678e984461a7f6151",
+   "ProcessID": 3928,
+   "ParentPID": 932,
+   "CommandLine": "--8f94ac60",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IjOUSh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573008678406
+  },
+  {
+   "OID": "5dc2352d78e984461a7f64d1",
+   "ProcessID": 3028,
+   "ParentPID": 3928,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573008685047
+  },
+  {
+   "OID": "5dc2352d78e984461a7f659b",
+   "ProcessID": 3664,
+   "ParentPID": 3028,
+   "CommandLine": "--25c59a38",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573008685234
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc2352d78e984461a7f659b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc2352d78e984461a7f659b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dc2352d78e984461a7f659b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc2352d78e984461a7f64d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dc2352678e984461a7f6151",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dc2352678e984461a7f6151",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc2352678e984461a7f6151",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

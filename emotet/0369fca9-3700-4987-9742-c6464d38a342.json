@@ -1,0 +1,67 @@
+{
+ "Name": "output.exe",
+ "Md5": "6acb89e235bdbf261875f0b8c6e3319f",
+ "UUID": "0369fca9-3700-4987-9742-c6464d38a342",
+ "Processes": [
+  {
+   "OID": "5dcc305a42127a190f67e498",
+   "ProcessID": 2768,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\output.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\output.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573662809526
+  },
+  {
+   "OID": "5dcc305a42127a190f67e499",
+   "ProcessID": 4088,
+   "ParentPID": 2768,
+   "CommandLine": "--3d9fe265",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\output.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573662809682
+  },
+  {
+   "OID": "5dcc306042127a190f67e837",
+   "ProcessID": 976,
+   "ParentPID": 4088,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573662816229
+  },
+  {
+   "OID": "5dcc306042127a190f67e838",
+   "ProcessID": 1744,
+   "ParentPID": 976,
+   "CommandLine": "--dfba43e0",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573662816401
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcc306042127a190f67e838",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc305a42127a190f67e499",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcc305a42127a190f67e499",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc305a42127a190f67e499",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

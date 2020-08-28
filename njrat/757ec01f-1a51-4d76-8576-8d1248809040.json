@@ -1,0 +1,139 @@
+{
+ "Name": "UNCHEATABLE.exe",
+ "Md5": "32a15cd3918cb8d6e404c0ae7faebf6e",
+ "UUID": "757ec01f-1a51-4d76-8576-8d1248809040",
+ "Processes": [
+  {
+   "OID": "5d025d6f12681e5f8345da0e",
+   "ProcessID": 2056,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\UNCHEATABLE.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\UNCHEATABLE.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560436079652
+  },
+  {
+   "OID": "5d025d7112681e5f8345e7cf",
+   "ProcessID": 1324,
+   "ParentPID": 2056,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PUBG.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PUBG.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560436081230
+  },
+  {
+   "OID": "5d025d7112681e5f8345e7d0",
+   "ProcessID": 388,
+   "ParentPID": 2056,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\UNCHEATABLE.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\UNCHEATABLE.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560436081230
+  },
+  {
+   "OID": "5d025d7a12681e5f8345f31d",
+   "ProcessID": 408,
+   "ParentPID": 1324,
+   "CommandLine": "\"C:\\Users\\admin\\Sistema.exe\" ",
+   "Image": "C:\\Users\\admin\\Sistema.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560436089730
+  },
+  {
+   "OID": "5d025d8212681e5f8345f8f8",
+   "ProcessID": 2316,
+   "ParentPID": 408,
+   "CommandLine": "schtasks /create /sc minute /mo 1 /tn Server /tr C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560436097980
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d025d7a12681e5f8345f31d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d025d7a12681e5f8345f31d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d025d6f12681e5f8345d9fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d025d8212681e5f8345f8f8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d025d7a12681e5f8345f31d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d025d7a12681e5f8345f31d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d025d7a12681e5f8345f31d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d025d7a12681e5f8345f31d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d025d7a12681e5f8345f31d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d025d7a12681e5f8345f31d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d025d7112681e5f8345e7cf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d025d7112681e5f8345e7cf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d025d7112681e5f8345e7d0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d025d7112681e5f8345e7cf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d025d6f12681e5f8345da0e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

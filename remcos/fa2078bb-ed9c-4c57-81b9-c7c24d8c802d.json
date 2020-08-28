@@ -1,0 +1,66 @@
+{
+ "Name": "6.exe",
+ "Md5": "e1719ee53cad171914f93ac0fe8b4fa2",
+ "UUID": "fa2078bb-ed9c-4c57-81b9-c7c24d8c802d",
+ "Processes": [
+  {
+   "OID": "5b4046f6868c6075da606269",
+   "ProcessID": 2236,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\6.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\6.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1530939126096
+  },
+  {
+   "OID": "5b4046fb868c6075da606d5a",
+   "ProcessID": 1708,
+   "ParentPID": 2236,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\svhost.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\svhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1530939131768
+  },
+  {
+   "OID": "5b4046fc868c6075da606d5c",
+   "ProcessID": 2340,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1530939131783
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b4046fb868c6075da606d5a",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4046fb868c6075da606d5a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b4046fb868c6075da606d5a",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4046f6868c6075da606269",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4046f6868c6075da606256",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1063"
+   ]
+  }
+ ]
+}

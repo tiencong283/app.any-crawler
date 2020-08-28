@@ -1,0 +1,82 @@
+{
+ "Name": "66987664-95fa-4bdb-8665-c169f14f836d",
+ "Md5": "b025e672ae005c45ac3d1a2403f1341d",
+ "UUID": "fb4b7f3d-9dd8-4539-b607-9c11617e37ba",
+ "Processes": [
+  {
+   "OID": "5e260b13df8f4f2d26fb1ade",
+   "ProcessID": 2740,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\66987664-95fa-4bdb-8665-c169f14f836d.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\66987664-95fa-4bdb-8665-c169f14f836d.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579551507505
+  },
+  {
+   "OID": "5e260b22df8f4f2d26fb2918",
+   "ProcessID": 3060,
+   "ParentPID": 2740,
+   "CommandLine": "\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v4.0.30319\\\\\\\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579551522489
+  },
+  {
+   "OID": "5e260b28df8f4f2d26fb2bcc",
+   "ProcessID": 720,
+   "ParentPID": 3060,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\" \"RegSvcs.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579551528661
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e260b22df8f4f2d26fb2918",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e260b22df8f4f2d26fb2918",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e260b22df8f4f2d26fb2918",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e260b22df8f4f2d26fb2918",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e260b22df8f4f2d26fb2918",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e260b13df8f4f2d26fb1ade",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e260b13df8f4f2d26fb1ade",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e260b13df8f4f2d26fb1ade",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

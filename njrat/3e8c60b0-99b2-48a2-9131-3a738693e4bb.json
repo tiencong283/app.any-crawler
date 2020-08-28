@@ -1,0 +1,103 @@
+{
+ "Name": "2ff382bdaa041225fed31ba91b58e5ec.exe",
+ "Md5": "4437cf2607ea76a85ff7bacb6a07b613",
+ "UUID": "3e8c60b0-99b2-48a2-9131-3a738693e4bb",
+ "Processes": [
+  {
+   "OID": "5e4817ae20743369882862df",
+   "ProcessID": 944,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\2ff382bdaa041225fed31ba91b58e5ec.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2ff382bdaa041225fed31ba91b58e5ec.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581782957777
+  },
+  {
+   "OID": "5e4817b620743369882867a5",
+   "ProcessID": 2516,
+   "ParentPID": 944,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\officeup.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\officeup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581782966293
+  },
+  {
+   "OID": "5e4817bf2074336988286e84",
+   "ProcessID": 2804,
+   "ParentPID": 2516,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\officeup.exe\" \"officeup.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581782974543
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e4817b620743369882867a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4817b620743369882867a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e4817b620743369882867a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4817b620743369882867a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4817b620743369882867a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e4817b620743369882867a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e4817b620743369882867a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e4817ae20743369882862df",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e4817ae20743369882862df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4817ae20743369882862df",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e4817ae20743369882862df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "Name": "Binder.exe",
+ "Md5": "93a1b1465bb967f74c17280368f991ac",
+ "UUID": "82f91bae-a84b-403e-af26-b2195ec839f6",
+ "Processes": [
+  {
+   "OID": "5dd7f453e5f1a47b794e93a0",
+   "ProcessID": 2928,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Binder.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Binder.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574433874808
+  },
+  {
+   "OID": "5dd7f453e5f1a47b794e9a1a",
+   "ProcessID": 3540,
+   "ParentPID": 2928,
+   "CommandLine": "\"C:\\ProgramData\\{C0AD6775-698C-432B-8632-027D08493D67}\\svchost.exe\" ",
+   "Image": "C:\\ProgramData\\{C0AD6775-698C-432B-8632-027D08493D67}\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574433875199
+  },
+  {
+   "OID": "5dd7f45ce5f1a47b794eee75",
+   "ProcessID": 952,
+   "ParentPID": 3540,
+   "CommandLine": "\"C:\\ProgramData\\svchost.exe\" ",
+   "Image": "C:\\ProgramData\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574433883511
+  },
+  {
+   "OID": "5dd7f461e5f1a47b794f1ea5",
+   "ProcessID": 3588,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\regedit.exe\" ",
+   "Image": "C:\\Windows\\regedit.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1574433884589
+  },
+  {
+   "OID": "5dd7f462e5f1a47b794f25ce",
+   "ProcessID": 3076,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\regedit.exe\" ",
+   "Image": "C:\\Windows\\regedit.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1574433889886
+  },
+  {
+   "OID": "5dd7f467e5f1a47b794f2f9c",
+   "ProcessID": 2860,
+   "ParentPID": 952,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\svchost.exe\" \"svchost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574433895433
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dd7f45ce5f1a47b794eee75",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f45ce5f1a47b794eee75",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f45ce5f1a47b794eee75",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dd7f45ce5f1a47b794eee75",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dd7f45ce5f1a47b794eee75",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f45ce5f1a47b794eee75",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dd7f45ce5f1a47b794eee75",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f45ce5f1a47b794eee75",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f462e5f1a47b794f25ce",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dd7f461e5f1a47b794f1ea5",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dd7f45ce5f1a47b794eee75",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f453e5f1a47b794e9a1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dd7f453e5f1a47b794e9a1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f453e5f1a47b794e9a1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f453e5f1a47b794e9a1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f453e5f1a47b794e9a1a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f453e5f1a47b794e9a1a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f453e5f1a47b794e9a1a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f453e5f1a47b794e93a0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f453e5f1a47b794e93a0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dd7f453e5f1a47b794e93a0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7f453e5f1a47b794e93a0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "Name": "scan.exe",
+ "Md5": "f178b2e5f5d53cdd6664963974f4b516",
+ "UUID": "4a7d494a-6f0a-46f0-aa12-2b62115a0a7e",
+ "Processes": [
+  {
+   "OID": "5d8b6ace9b26b335e85271a9",
+   "ProcessID": 2940,
+   "ParentPID": 236,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\scan.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\scan.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1569417933968
+  },
+  {
+   "OID": "5d8b6ad89b26b335e8527414",
+   "ProcessID": 3492,
+   "ParentPID": 2940,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\scan.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1569417944452
+  },
+  {
+   "OID": "5d8b6af29b26b335e852e6df",
+   "ProcessID": 1896,
+   "ParentPID": 2940,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1569417969905
+  },
+  {
+   "OID": "5d8b6b009b26b335e852f14f",
+   "ProcessID": 2804,
+   "ParentPID": 236,
+   "CommandLine": "\"C:\\Windows\\regedit.exe\" ",
+   "Image": "C:\\Windows\\regedit.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1569417978874
+  },
+  {
+   "OID": "5d8b6b009b26b335e852f153",
+   "ProcessID": 3384,
+   "ParentPID": 236,
+   "CommandLine": "\"C:\\Windows\\regedit.exe\" ",
+   "Image": "C:\\Windows\\regedit.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1569417983874
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d8b6b009b26b335e852f153",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d8b6b009b26b335e852f14f",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d8b6af29b26b335e852e6df",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8b6af29b26b335e852e6df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8b6af29b26b335e852e6df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8b6af29b26b335e852e6df",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8b6af29b26b335e852e6df",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8b6af29b26b335e852e6df",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8b6af29b26b335e852e6df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8b6af29b26b335e852e6df",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5d8b6af29b26b335e852e6df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8b6ace9b26b335e85271a9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

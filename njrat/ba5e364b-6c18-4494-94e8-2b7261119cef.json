@@ -1,0 +1,148 @@
+{
+ "Name": "AD73.exe",
+ "Md5": "89cf94e032ac60e4d2014dce651cfd95",
+ "UUID": "ba5e364b-6c18-4494-94e8-2b7261119cef",
+ "Processes": [
+  {
+   "OID": "5ddb3e5023e1ae25a4d291fe",
+   "ProcessID": 3152,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AD73.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AD73.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574649423577
+  },
+  {
+   "OID": "5ddb3e7e23e1ae25a4d29b5f",
+   "ProcessID": 332,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1574649470640
+  },
+  {
+   "OID": "5ddb3e8e23e1ae25a4d2a055",
+   "ProcessID": 2960,
+   "ParentPID": 3152,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\updates.exe\\adcracked.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\updates.exe\\adcracked.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574649485843
+  },
+  {
+   "OID": "5ddb3ef023e1ae25a4d2a257",
+   "ProcessID": 3084,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1574649583874
+  },
+  {
+   "OID": "5ddb3ef923e1ae25a4d2ae03",
+   "ProcessID": 2776,
+   "ParentPID": 2960,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\updates.exe\\adcracked.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\updates.exe\\adcracked.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574649592842
+  },
+  {
+   "OID": "5ddb3ef923e1ae25a4d2ae04",
+   "ProcessID": 1044,
+   "ParentPID": 2960,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\updates.exe\\adcracked.exe\" 2 2776 3952328",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\updates.exe\\adcracked.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574649592842
+  },
+  {
+   "OID": "5ddb3efd23e1ae25a4d2b8e1",
+   "ProcessID": 3028,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{4D111E08-CBF7-4F12-A926-2C7920AF52FC}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1574649597186
+  },
+  {
+   "OID": "5ddb3f0123e1ae25a4d2d490",
+   "ProcessID": 1788,
+   "ParentPID": 2776,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\updates.exe\\adcracked.exe\" \"adcracked.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574649601140
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ddb3ef923e1ae25a4d2ae03",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddb3ef923e1ae25a4d2ae03",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ddb3efd23e1ae25a4d2b8e1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddb3e8e23e1ae25a4d2a055",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ddb3e8e23e1ae25a4d2a055",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddb3e8e23e1ae25a4d2a055",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ddb3ef023e1ae25a4d2a257",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5ddb3e5023e1ae25a4d291fe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ddb3e5023e1ae25a4d291fe",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddb3e5023e1ae25a4d291fe",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddb3e7e23e1ae25a4d29b5f",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  }
+ ]
+}

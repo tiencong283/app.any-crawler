@@ -1,0 +1,174 @@
+{
+ "Name": "c55f386e-9d11-47ec-b1db-b5a8280dfc69",
+ "Md5": "d0afdc49b401a0042078b4d638c062a3",
+ "UUID": "cfc4b2be-9a39-4910-b088-90c24ea922d4",
+ "Processes": [
+  {
+   "OID": "5e457641e85bb25c7208e0e0",
+   "ProcessID": 3796,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\c55f386e-9d11-47ec-b1db-b5a8280dfc69.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\c55f386e-9d11-47ec-b1db-b5a8280dfc69.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581610561269
+  },
+  {
+   "OID": "5e457652e85bb25c7208f08b",
+   "ProcessID": 2824,
+   "ParentPID": 3796,
+   "CommandLine": "\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v4.0.30319\\\\\\\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581610577629
+  },
+  {
+   "OID": "5e457658e85bb25c7208f312",
+   "ProcessID": 872,
+   "ParentPID": 2824,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\" \"RegSvcs.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581610583863
+  },
+  {
+   "OID": "5e457671e85bb25c7209000a",
+   "ProcessID": 2060,
+   "ParentPID": 2824,
+   "CommandLine": "netsh firewall delete allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581610608722
+  },
+  {
+   "OID": "5e457671e85bb25c7209000b",
+   "ProcessID": 1696,
+   "ParentPID": 2824,
+   "CommandLine": "cmd.exe /c ping 0 -n 2 \u0026 del \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581610608738
+  },
+  {
+   "OID": "5e457671e85bb25c7209000e",
+   "ProcessID": 3984,
+   "ParentPID": 1696,
+   "CommandLine": "ping  0 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581610608894
+  },
+  {
+   "OID": "5e457672e85bb25c7209072a",
+   "ProcessID": 3380,
+   "ParentPID": 3796,
+   "CommandLine": "\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v4.0.30319\\\\\\\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581610610097
+  },
+  {
+   "OID": "5e457678e85bb25c720909de",
+   "ProcessID": 3068,
+   "ParentPID": 3380,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\" \"RegSvcs.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581610616207
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e457672e85bb25c7209072a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e457672e85bb25c7209072a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e457672e85bb25c7209072a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e457672e85bb25c7209072a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e457672e85bb25c7209072a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e457652e85bb25c7208f08b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5e457652e85bb25c7208f08b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e457652e85bb25c7208f08b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e457652e85bb25c7208f08b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e457652e85bb25c7208f08b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e457652e85bb25c7208f08b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e457652e85bb25c7208f08b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e457641e85bb25c7208e0e0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e457641e85bb25c7208e0e0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e457641e85bb25c7208e0e0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

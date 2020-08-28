@@ -1,0 +1,152 @@
+{
+ "Name": "metadefender.exe",
+ "Md5": "a952121b891ba863bc8ee63712e3993a",
+ "UUID": "c8b5aeb9-8a84-4986-b1e6-f0e294ded9bf",
+ "Processes": [
+  {
+   "OID": "5d4b3d04adfcea3d01c42f59",
+   "ProcessID": 2900,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\metadefender.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\metadefender.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1565211908308
+  },
+  {
+   "OID": "5d4b3d06adfcea3d01c432b0",
+   "ProcessID": 3572,
+   "ParentPID": 2900,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\metadefender.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\metadefender.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565211909980
+  },
+  {
+   "OID": "5d4b3d07adfcea3d01c43898",
+   "ProcessID": 2780,
+   "ParentPID": 3572,
+   "CommandLine": "schtasks /create /sc minute /mo 5 /tn \"Manager\" /tr \"C:\\Users\\admin\\AppData\\Roaming\\metadefender.exe\"",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565211911246
+  },
+  {
+   "OID": "5d4b3d20adfcea3d01c442b4",
+   "ProcessID": 2288,
+   "ParentPID": 3572,
+   "CommandLine": "SCHTASKS /Delete /TN \"Manager\" /F",
+   "Image": "C:\\Windows\\system32\\SCHTASKS.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565211935371
+  },
+  {
+   "OID": "5d4b3d20adfcea3d01c442b6",
+   "ProcessID": 1996,
+   "ParentPID": 3572,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C choice /C Y /N /D Y /T 3 \u0026 Del \"C:\\Users\\admin\\AppData\\Roaming\\metadefender.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565211935652
+  },
+  {
+   "OID": "5d4b3d20adfcea3d01c442b8",
+   "ProcessID": 3012,
+   "ParentPID": 1996,
+   "CommandLine": "choice  /C Y /N /D Y /T 3 ",
+   "Image": "C:\\Windows\\system32\\choice.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565211935777
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d4b3d20adfcea3d01c442b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4b3d06adfcea3d01c432b0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d4b3d04adfcea3d01c427eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4b3d20adfcea3d01c442b4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d4b3d06adfcea3d01c432b0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4b3d06adfcea3d01c432b0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4b3d04adfcea3d01c427eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4b3d07adfcea3d01c43898",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d4b3d06adfcea3d01c432b0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d4b3d06adfcea3d01c432b0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d4b3d06adfcea3d01c432b0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4b3d06adfcea3d01c432b0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d4b3d04adfcea3d01c42f59",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d4b3d04adfcea3d01c42f59",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4b3d04adfcea3d01c42f59",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

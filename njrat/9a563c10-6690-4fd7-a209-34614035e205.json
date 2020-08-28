@@ -1,0 +1,72 @@
+{
+ "Name": "Cryp.exe",
+ "Md5": "b54cfd247d71ca71ceb29190695a541f",
+ "UUID": "9a563c10-6690-4fd7-a209-34614035e205",
+ "Processes": [
+  {
+   "OID": "5cadde70bf9506412f7e7efc",
+   "ProcessID": 2164,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Cryp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Cryp.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554898543686
+  },
+  {
+   "OID": "5cadde76bf9506412f7e842f",
+   "ProcessID": 3060,
+   "ParentPID": 2164,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\dmc.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\dmc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554898550639
+  },
+  {
+   "OID": "5cadde7cbf9506412f7e8ba6",
+   "ProcessID": 1712,
+   "ParentPID": 3060,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\dmc.exe\" \"dmc.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554898556858
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cadde76bf9506412f7e842f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cadde76bf9506412f7e842f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cadde76bf9506412f7e842f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cadde70bf9506412f7e7efc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cadde70bf9506412f7e7efc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cadde70bf9506412f7e7efc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

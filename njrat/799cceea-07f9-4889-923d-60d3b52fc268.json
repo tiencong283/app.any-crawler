@@ -1,0 +1,139 @@
+{
+ "Name": "loader.exe",
+ "Md5": "dbb398918131f882c3bffd0091c688dc",
+ "UUID": "799cceea-07f9-4889-923d-60d3b52fc268",
+ "Processes": [
+  {
+   "OID": "5ecefdd1a4cf1c6770d38ca3",
+   "ProcessID": 2948,
+   "ParentPID": 1784,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\loader.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\loader.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1590623696749
+  },
+  {
+   "OID": "5ecefdd2a4cf1c6770d3939f",
+   "ProcessID": 2752,
+   "ParentPID": 2948,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\start.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590623697733
+  },
+  {
+   "OID": "5ecefdd2a4cf1c6770d393a1",
+   "ProcessID": 3624,
+   "ParentPID": 2752,
+   "CommandLine": "Server.sfx  -pa1j2h3kghhg12h3ghg12hg3y -dc:\\",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\Server.sfx.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590623697811
+  },
+  {
+   "OID": "5ecefdd2a4cf1c6770d39b73",
+   "ProcessID": 2972,
+   "ParentPID": 3624,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX1\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX1\\Server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590623698561
+  },
+  {
+   "OID": "5ecefdd8a4cf1c6770d3a2c7",
+   "ProcessID": 2428,
+   "ParentPID": 2972,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX1\\Server.exe\" \"Server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590623704718
+  },
+  {
+   "OID": "5ecefdfea4cf1c6770d3af43",
+   "ProcessID": 3656,
+   "ParentPID": 2972,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp79BD.tmp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\tmp79BD.tmp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590623741483
+  },
+  {
+   "OID": "5ecefdffa4cf1c6770d3b4ec",
+   "ProcessID": 2548,
+   "ParentPID": 2972,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp79BD.tmp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\tmp79BD.tmp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590623742530
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ecefdffa4cf1c6770d3b4ec",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5ecefdffa4cf1c6770d3b4ec",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecefdfea4cf1c6770d3af43",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecefdd2a4cf1c6770d39b73",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecefdd2a4cf1c6770d39b73",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecefdd2a4cf1c6770d39b73",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecefdd2a4cf1c6770d39b73",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ecefdd2a4cf1c6770d39b73",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecefdd2a4cf1c6770d393a1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecefdd2a4cf1c6770d393a1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ecefdd1a4cf1c6770d38ca3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ecefdd1a4cf1c6770d38ca3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

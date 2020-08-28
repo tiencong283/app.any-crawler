@@ -1,0 +1,87 @@
+{
+ "Name": "MrKIMAXcraft.exe",
+ "Md5": "a52d96fcc412e10a4e17b4fd0517290d",
+ "UUID": "ef5faed9-50f1-465a-8623-c5903027f08d",
+ "Processes": [
+  {
+   "OID": "5dadd926b239670c92db0c0a",
+   "ProcessID": 2768,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\MrKIMAXcraft.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\MrKIMAXcraft.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571674406224
+  },
+  {
+   "OID": "5dadd928b239670c92db0f8a",
+   "ProcessID": 3620,
+   "ParentPID": 2768,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571674407817
+  },
+  {
+   "OID": "5dadd929b239670c92db15a6",
+   "ProcessID": 1576,
+   "ParentPID": 3620,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\server.exe\" \"server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571674409114
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dadd928b239670c92db0f8a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadd928b239670c92db0f8a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadd928b239670c92db0f8a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadd928b239670c92db0f8a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadd928b239670c92db0f8a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dadd928b239670c92db0f8a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dadd926b239670c92db0c0a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dadd926b239670c92db0c0a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadd926b239670c92db0c0a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

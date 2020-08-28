@@ -1,0 +1,77 @@
+{
+ "Name": "caf85972-3716-4f53-9310-4c37f2dd16ae",
+ "Md5": "77764724865ddba4ef25f7e8630d4c89",
+ "UUID": "f5ef28dc-6d99-46d7-9293-1810041a8b6f",
+ "Processes": [
+  {
+   "OID": "5dc538c58a84c21b49a24768",
+   "ProcessID": 2620,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\caf85972-3716-4f53-9310-4c37f2dd16ae.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\caf85972-3716-4f53-9310-4c37f2dd16ae.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573206213133
+  },
+  {
+   "OID": "5dc538c68a84c21b49a24db5",
+   "ProcessID": 3996,
+   "ParentPID": 2620,
+   "CommandLine": "\"C:\\Windows\\system32\\rundll32.exe\" \"C:\\Windows\\system32\\WININET.dll\",DispatchAPICall 1 ",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573206213696
+  },
+  {
+   "OID": "5dc538d68a84c21b49a25dde",
+   "ProcessID": 2156,
+   "ParentPID": 2620,
+   "CommandLine": "\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v2.0.50727\\\\\\\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573206230211
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc538d68a84c21b49a25dde",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc538d68a84c21b49a25dde",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc538c58a84c21b49a24768",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc538c58a84c21b49a24768",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dc538c58a84c21b49a24768",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc538c68a84c21b49a24db5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dc538c58a84c21b49a24768",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  }
+ ]
+}

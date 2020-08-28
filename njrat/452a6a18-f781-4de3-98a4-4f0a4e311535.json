@@ -1,0 +1,122 @@
+{
+ "Name": "الشرح.exe",
+ "Md5": "0139c8116022efadf0cbb0422080c707",
+ "UUID": "452a6a18-f781-4de3-98a4-4f0a4e311535",
+ "Processes": [
+  {
+   "OID": "5e7bde70e8993b1924a812a3",
+   "ProcessID": 3620,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\الشرح.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\الشرح.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585176175804
+  },
+  {
+   "OID": "5e7bde70e8993b1924a812a4",
+   "ProcessID": 3296,
+   "ParentPID": 3620,
+   "CommandLine": "\"C:\\Windows\\system32\\NOTEPAD.EXE\" C:\\Users\\admin\\AppData\\Local\\Temp\\ÔÑÍ.txt",
+   "Image": "C:\\Windows\\system32\\NOTEPAD.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585176176085
+  },
+  {
+   "OID": "5e7bde70e8993b1924a812a5",
+   "ProcessID": 3800,
+   "ParentPID": 3620,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Vaxsip.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Vaxsip.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585176176179
+  },
+  {
+   "OID": "5e7bde77e8993b1924a81d22",
+   "ProcessID": 1500,
+   "ParentPID": 3800,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\csrss.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\csrss.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585176182585
+  },
+  {
+   "OID": "5e7bde7de8993b1924a823a4",
+   "ProcessID": 1084,
+   "ParentPID": 1500,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\csrss.exe\" \"csrss.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585176188788
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e7bde77e8993b1924a81d22",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7bde77e8993b1924a81d22",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e7bde77e8993b1924a81d22",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e7bde77e8993b1924a81d22",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7bde77e8993b1924a81d22",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7bde77e8993b1924a81d22",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e7bde77e8993b1924a81d22",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7bde70e8993b1924a812a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e7bde70e8993b1924a812a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7bde70e8993b1924a812a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7bde70e8993b1924a812a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7bde70e8993b1924a812a3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

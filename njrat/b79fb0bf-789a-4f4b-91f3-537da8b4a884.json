@@ -1,0 +1,84 @@
+{
+ "Name": "up4net-Dos-attack.exe",
+ "Md5": "404a64d314f60c1d5b200e2767923139",
+ "UUID": "b79fb0bf-789a-4f4b-91f3-537da8b4a884",
+ "Processes": [
+  {
+   "OID": "5eadc2271d45b04cbd8c1d7c",
+   "ProcessID": 480,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\up4net-Dos-attack.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\up4net-Dos-attack.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588445734738
+  },
+  {
+   "OID": "5eadc2281d45b04cbd8c21bf",
+   "ProcessID": 3084,
+   "ParentPID": 480,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dos attack.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dos attack.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588445735207
+  },
+  {
+   "OID": "5eadc2281d45b04cbd8c21c0",
+   "ProcessID": 2600,
+   "ParentPID": 3084,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\dos attack.exe\" \"dos attack.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588445735348
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eadc2281d45b04cbd8c21bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eadc2281d45b04cbd8c21bf",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eadc2281d45b04cbd8c21bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eadc2281d45b04cbd8c21bf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eadc2281d45b04cbd8c21bf",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eadc2281d45b04cbd8c21bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5eadc2271d45b04cbd8c1d7c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eadc2271d45b04cbd8c1d7c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

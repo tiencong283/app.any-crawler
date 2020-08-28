@@ -1,0 +1,113 @@
+{
+ "Name": "AHQ DF ABDEL HADI Invoice 0778PSSH17 SO2889122.exe",
+ "Md5": "2f393eb158d4cea5d1077b15e3e58a45",
+ "UUID": "c50572ad-b416-41c4-8e0a-d86cb9dfb6e6",
+ "Processes": [
+  {
+   "OID": "5be5983bc7c72128a03934bd",
+   "ProcessID": 1548,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\AHQ DF ABDEL HADI Invoice 0778PSSH17 SO2889122.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\AHQ DF ABDEL HADI Invoice 0778PSSH17 SO2889122.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1541773371177
+  },
+  {
+   "OID": "5be59893c7c72128a0394400",
+   "ProcessID": 768,
+   "ParentPID": 1548,
+   "CommandLine": "\u0001C:\\Users\\admin\\Desktop\\AHQ DF ABDEL HADI Invoice 0778PSSH17 SO2889122.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\AHQ DF ABDEL HADI Invoice 0778PSSH17 SO2889122.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541773459380
+  },
+  {
+   "OID": "5be598abc7c72128a03947a9",
+   "ProcessID": 572,
+   "ParentPID": 768,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541773483364
+  },
+  {
+   "OID": "5be598adc7c72128a0394d37",
+   "ProcessID": 3360,
+   "ParentPID": 572,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541773484724
+  },
+  {
+   "OID": "5be598adc7c72128a0394d39",
+   "ProcessID": 1972,
+   "ParentPID": 3360,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541773484802
+  },
+  {
+   "OID": "5be59909c7c72128a0395608",
+   "ProcessID": 3184,
+   "ParentPID": 1972,
+   "CommandLine": "\u0001:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541773577489
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5be598adc7c72128a0394d39",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5be598abc7c72128a03947a9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5be59893c7c72128a0394400",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5be59893c7c72128a0394400",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be59893c7c72128a0394400",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5be59893c7c72128a0394400",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be59893c7c72128a0394400",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be5983bc7c72128a03934bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

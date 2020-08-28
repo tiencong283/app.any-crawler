@@ -1,0 +1,39 @@
+{
+ "Name": "one punch man ep 13.scr",
+ "Md5": "e4dd7d49532b1660efc843414f977552",
+ "UUID": "8b933879-99e1-4128-a11f-2bfc28cbbc98",
+ "Processes": [
+  {
+   "OID": "5d1bb57916935961ca896b11",
+   "ProcessID": 2932,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\one punch man ep 13.scr.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\one punch man ep 13.scr.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1562097017268
+  },
+  {
+   "OID": "5d1bb57f16935961ca896eed",
+   "ProcessID": 2756,
+   "ParentPID": 2932,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\one punch man ep 13.scr.exe\" \"one punch man ep 13.scr.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562097023612
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d1bb57916935961ca896b11",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1bb57916935961ca896b11",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

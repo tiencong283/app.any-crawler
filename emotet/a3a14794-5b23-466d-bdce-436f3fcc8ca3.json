@@ -1,0 +1,91 @@
+{
+ "Name": "e6cd8cfd7a8ae0745fc7042bb618b26a05fc07bd",
+ "Md5": "d813d4c44a86b89c77b7027a5c3f35e2",
+ "UUID": "a3a14794-5b23-466d-bdce-436f3fcc8ca3",
+ "Processes": [
+  {
+   "OID": "5dcaab692f8a940a01aa8179",
+   "ProcessID": 2692,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\e6cd8cfd7a8ae0745fc7042bb618b26a05fc07bd.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\e6cd8cfd7a8ae0745fc7042bb618b26a05fc07bd.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573563241395
+  },
+  {
+   "OID": "5dcaab6a2f8a940a01aa8782",
+   "ProcessID": 3984,
+   "ParentPID": 2692,
+   "CommandLine": "--b9d168ba",
+   "Image": "C:\\Users\\admin\\Desktop\\e6cd8cfd7a8ae0745fc7042bb618b26a05fc07bd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573563241552
+  },
+  {
+   "OID": "5dcaab702f8a940a01aa8f19",
+   "ProcessID": 4072,
+   "ParentPID": 3984,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573563248661
+  },
+  {
+   "OID": "5dcaab712f8a940a01aa8f26",
+   "ProcessID": 2088,
+   "ParentPID": 4072,
+   "CommandLine": "--dfba43e0",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573563248755
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcaab712f8a940a01aa8f26",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcaab712f8a940a01aa8f26",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcaab712f8a940a01aa8f26",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcaab702f8a940a01aa8f19",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcaab6a2f8a940a01aa8782",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcaab6a2f8a940a01aa8782",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcaab6a2f8a940a01aa8782",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcaab692f8a940a01aa8179",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

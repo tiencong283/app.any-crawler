@@ -1,0 +1,84 @@
+{
+ "Name": "nj.exe",
+ "Md5": "e164aaf232c65f717ac42ad263244b95",
+ "UUID": "452cc40d-b597-4972-bb32-c80c3ff612fe",
+ "Processes": [
+  {
+   "OID": "5ee55538a2098e12e7866593",
+   "ProcessID": 2164,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\nj.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\nj.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592087863921
+  },
+  {
+   "OID": "5ee55538a2098e12e7866be1",
+   "ProcessID": 980,
+   "ParentPID": 2164,
+   "CommandLine": "\"C:\\Users\\admin\\NJ.exe\" ",
+   "Image": "C:\\Users\\admin\\NJ.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592087864749
+  },
+  {
+   "OID": "5ee55539a2098e12e7866f37",
+   "ProcessID": 3932,
+   "ParentPID": 980,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\NJ.exe\" \"NJ.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592087864905
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee55538a2098e12e7866be1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee55538a2098e12e7866be1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee55538a2098e12e7866be1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee55538a2098e12e7866be1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee55538a2098e12e7866be1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee55538a2098e12e7866be1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ee55538a2098e12e7866593",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ee55538a2098e12e7866593",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

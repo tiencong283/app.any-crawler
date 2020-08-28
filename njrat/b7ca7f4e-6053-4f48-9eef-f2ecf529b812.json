@@ -1,0 +1,294 @@
+{
+ "Name": "Bean.exe",
+ "Md5": "cb05390f8edd4ef389e32f52071fc77e",
+ "UUID": "b7ca7f4e-6053-4f48-9eef-f2ecf529b812",
+ "Processes": [
+  {
+   "OID": "5e7fab5de7aec80d9d69d7d9",
+   "ProcessID": 3580,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Bean.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Bean.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585425245435
+  },
+  {
+   "OID": "5e7fab63e7aec80d9d69ee55",
+   "ProcessID": 572,
+   "ParentPID": 3580,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Spotify\\SpotifyUpdaterClient32.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Spotify\\SpotifyUpdaterClient32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585425250904
+  },
+  {
+   "OID": "5e7fab63e7aec80d9d69f4c9",
+   "ProcessID": 3328,
+   "ParentPID": 3580,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Spotify\\SpotifyUpdaterClient32.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Spotify\\SpotifyUpdaterClient32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585425251388
+  },
+  {
+   "OID": "5e7fab9ee7aec80d9d6ba311",
+   "ProcessID": 1516,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\replylas.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1585425310154
+  },
+  {
+   "OID": "5e7fabb3e7aec80d9d6c452d",
+   "ProcessID": 1332,
+   "ParentPID": 3328,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C RDPWInst.exe -i -o",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585425331638
+  },
+  {
+   "OID": "5e7fabb4e7aec80d9d6c4da5",
+   "ProcessID": 2380,
+   "ParentPID": 1332,
+   "CommandLine": "RDPWInst.exe  -i -o",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RDPWInst.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585425331747
+  },
+  {
+   "OID": "5e7fabc0e7aec80d9d6cdbcb",
+   "ProcessID": 1744,
+   "ParentPID": 472,
+   "CommandLine": "C:\\Windows\\System32\\svchost.exe -k NetworkService",
+   "Image": "C:\\Windows\\System32\\svchost.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 1585425343716
+  },
+  {
+   "OID": "5e7fabc3e7aec80d9d6cfe45",
+   "ProcessID": 348,
+   "ParentPID": 2380,
+   "CommandLine": "netsh advfirewall firewall add rule name=\"Remote Desktop\" dir=in protocol=tcp localport=3389 profile=any action=allow",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585425347529
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7c7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7c4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fabb4e7aec80d9d6c4da5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fabc0e7aec80d9d6cdbcb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fabc0e7aec80d9d6cdbcb",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fabb4e7aec80d9d6c4da5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fabb4e7aec80d9d6c4da5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fabb4e7aec80d9d6c4da5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fabb4e7aec80d9d6c4da5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fabb4e7aec80d9d6c4da5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fabb4e7aec80d9d6c4da5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fabb4e7aec80d9d6c4da5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab63e7aec80d9d69f4c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab63e7aec80d9d69f4c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fab63e7aec80d9d69f4c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7faba2e7aec80d9d6bcc62",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7d3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fab9ee7aec80d9d6ba311",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fab9ee7aec80d9d6ba311",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7d1",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fab9ee7aec80d9d6ba311",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab63e7aec80d9d69f4c9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fab63e7aec80d9d69f4c9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fab63e7aec80d9d69f4c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab63e7aec80d9d69f4c9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab63e7aec80d9d69f4c9",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7d9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7d9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7d9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7fab5de7aec80d9d69d7d9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

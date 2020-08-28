@@ -1,0 +1,51 @@
+{
+ "Name": "Clientreal.exe",
+ "Md5": "c1f6209a33297b9b114945eb8fa87d6c",
+ "UUID": "d34097fe-1137-4d18-929d-e197dd3c2899",
+ "Processes": [
+  {
+   "OID": "5e8726ba50e04730918f4ec8",
+   "ProcessID": 2652,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Clientreal.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Clientreal.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585915577932
+  },
+  {
+   "OID": "5e8726c050e04730918f58ee",
+   "ProcessID": 2876,
+   "ParentPID": 2652,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Clientreal.exe\" \"Clientreal.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585915584057
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8726ba50e04730918f4ec8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8726ba50e04730918f4ec8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8726ba50e04730918f4ec8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e8726ba50e04730918f4ec8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

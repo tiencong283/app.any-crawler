@@ -1,0 +1,157 @@
+{
+ "Name": "AIF 500 unit Distribution 2018ECA - ProfoInv.exe",
+ "Md5": "479c329bd6c7a5463db6c5c647ef06b8",
+ "UUID": "48fcd5ef-99c3-49c9-8fe5-a7a300b84a54",
+ "Processes": [
+  {
+   "OID": "5b8cf2f390a8b96fc26bcd28",
+   "ProcessID": 3972,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AIF 500 unit Distribution 2018ECA - ProfoInv.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AIF 500 unit Distribution 2018ECA - ProfoInv.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1535963891366
+  },
+  {
+   "OID": "5b8cf2f790a8b96fc26bd612",
+   "ProcessID": 2892,
+   "ParentPID": 3972,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\AIF 500 unit Distribution 2018ECA - ProfoInv.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AIF 500 unit Distribution 2018ECA - ProfoInv.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535963895522
+  },
+  {
+   "OID": "5b8cf2fb90a8b96fc26bd6f6",
+   "ProcessID": 3952,
+   "ParentPID": 2892,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535963899632
+  },
+  {
+   "OID": "5b8cf2fd90a8b96fc26bdcbd",
+   "ProcessID": 3588,
+   "ParentPID": 3952,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535963900913
+  },
+  {
+   "OID": "5b8cf2fd90a8b96fc26bdcbf",
+   "ProcessID": 4060,
+   "ParentPID": 3588,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535963901007
+  },
+  {
+   "OID": "5b8cf30290a8b96fc26be10d",
+   "ProcessID": 3132,
+   "ParentPID": 4060,
+   "CommandLine": "\u0001:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535963906460
+  },
+  {
+   "OID": "5b8cf30490a8b96fc26be1f5",
+   "ProcessID": 1680,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1535963908210
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b8cf2f390a8b96fc26bcd1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8cf30290a8b96fc26be10d",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8cf30290a8b96fc26be10d",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8cf30290a8b96fc26be10d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b8cf30290a8b96fc26be10d",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8cf30290a8b96fc26be10d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b8cf2fd90a8b96fc26bdcbf",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8cf2fb90a8b96fc26bd6f6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b8cf2f790a8b96fc26bd612",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5b8cf2f790a8b96fc26bd612",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8cf2f790a8b96fc26bd612",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8cf2f790a8b96fc26bd612",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b8cf2f790a8b96fc26bd612",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8cf2f790a8b96fc26bd612",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8cf2f390a8b96fc26bcd28",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

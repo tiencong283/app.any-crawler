@@ -1,0 +1,89 @@
+{
+ "Name": "Server.exe",
+ "Md5": "c5f0e627a87becc63cb7e913b3f01653",
+ "UUID": "d887ec3f-b2ed-4316-a44a-35203aa33886",
+ "Processes": [
+  {
+   "OID": "5ec07252faa50d5345bad19c",
+   "ProcessID": 2380,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1589670481669
+  },
+  {
+   "OID": "5ec07252faa50d5345bad19d",
+   "ProcessID": 2308,
+   "ParentPID": 2380,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" \"Server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589670481825
+  },
+  {
+   "OID": "5ec07280faa50d5345baf03d",
+   "ProcessID": 2660,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1589670527450
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ec07251faa50d5345bac96a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec07280faa50d5345baf03d",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5ec07252faa50d5345bad19c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec07252faa50d5345bad19c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec07252faa50d5345bad19c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ec07252faa50d5345bad19c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec07252faa50d5345bad19c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec07252faa50d5345bad19c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ec07252faa50d5345bad19c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

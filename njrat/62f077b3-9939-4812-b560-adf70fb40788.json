@@ -1,0 +1,149 @@
+{
+ "Name": "RexeWare.cc.exe",
+ "Md5": "2f2e5d2931042e6b1533fd02c40b3359",
+ "UUID": "62f077b3-9939-4812-b560-adf70fb40788",
+ "Processes": [
+  {
+   "OID": "5d6036552330235ec938e643",
+   "ProcessID": 3684,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RexeWare.cc.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RexeWare.cc.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1566586453059
+  },
+  {
+   "OID": "5d60365c2330235ec938eeca",
+   "ProcessID": 3472,
+   "ParentPID": 3684,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566586459450
+  },
+  {
+   "OID": "5d6036622330235ec938f41c",
+   "ProcessID": 3008,
+   "ParentPID": 3472,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe\" \"System32.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566586465575
+  },
+  {
+   "OID": "5d6036822330235ec9390337",
+   "ProcessID": 3708,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1566586498200
+  },
+  {
+   "OID": "5d6036cc2330235ec9391332",
+   "ProcessID": 2056,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1566586572019
+  },
+  {
+   "OID": "5d6036d02330235ec93913ed",
+   "ProcessID": 3156,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1566586576076
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d6036d02330235ec93913ed",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d6036cc2330235ec9391332",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d60365c2330235ec938eeca",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5d60365c2330235ec938eeca",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6036822330235ec9390337",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d6036552330235ec938e636",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d60365c2330235ec938eeca",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d60365c2330235ec938eeca",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d60365c2330235ec938eeca",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d60365c2330235ec938eeca",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d60365c2330235ec938eeca",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d60365c2330235ec938eeca",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d6036552330235ec938e643",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d6036552330235ec938e643",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,173 @@
+{
+ "Name": "New-Client.exe",
+ "Md5": "f4126a0c61b2d1cdbd7ccc525dceebc2",
+ "UUID": "e492c446-57d7-44a1-82ec-83aa8bbc2bbc",
+ "Processes": [
+  {
+   "OID": "5dc1b1e8a2dfd37734ca0514",
+   "ProcessID": 1944,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\New-Client.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\New-Client.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572975079902
+  },
+  {
+   "OID": "5dc1b1eda2dfd37734ca1287",
+   "ProcessID": 3852,
+   "ParentPID": 1944,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\AnyDesk\\AnyDesk.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\AnyDesk\\AnyDesk.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572975084855
+  },
+  {
+   "OID": "5dc1b245a2dfd37734cc6dac",
+   "ProcessID": 2676,
+   "ParentPID": 3852,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\AnyDesk\\AnyDesk.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572975172933
+  },
+  {
+   "OID": "5dc1b250a2dfd37734cd1db1",
+   "ProcessID": 3152,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1572975183871
+  },
+  {
+   "OID": "5dc1b263a2dfd37734cdc6b9",
+   "ProcessID": 1936,
+   "ParentPID": 2676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\AnyDesk\\AnyDesk.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\AnyDesk\\AnyDesk.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572975203277
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc1b263a2dfd37734cdc6b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc1b263a2dfd37734cdc6b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc1b263a2dfd37734cdc6b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b263a2dfd37734cdc6b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b263a2dfd37734cdc6b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b263a2dfd37734cdc6b9",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b250a2dfd37734cd1db1",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b1eda2dfd37734ca1287",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc1b1eda2dfd37734ca1287",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b1eda2dfd37734ca1287",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc1b1eda2dfd37734ca1287",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc1b1eda2dfd37734ca1287",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b1eda2dfd37734ca1287",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b1eda2dfd37734ca1287",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b1eda2dfd37734ca1287",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b1e8a2dfd37734ca0514",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b1e8a2dfd37734ca0514",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dc1b1e8a2dfd37734ca0514",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc1b1e8a2dfd37734ca0514",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

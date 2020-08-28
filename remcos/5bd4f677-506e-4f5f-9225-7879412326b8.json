@@ -1,0 +1,152 @@
+{
+ "Name": "lwinni.exe",
+ "Md5": "9879f9d7b33e3bac37d872e559bd9e1a",
+ "UUID": "5bd4f677-506e-4f5f-9225-7879412326b8",
+ "Processes": [
+  {
+   "OID": "5b9a8a938ae09e5fcf649aa3",
+   "ProcessID": 1260,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\lwinni.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lwinni.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1536854674957
+  },
+  {
+   "OID": "5b9a8aa08ae09e5fcf64a0b8",
+   "ProcessID": 3260,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1536854688160
+  },
+  {
+   "OID": "5b9a8aa18ae09e5fcf64a475",
+   "ProcessID": 1540,
+   "ParentPID": 1260,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\lwinni.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lwinni.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536854689316
+  },
+  {
+   "OID": "5b9a8aa58ae09e5fcf64a601",
+   "ProcessID": 4000,
+   "ParentPID": 1540,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536854692770
+  },
+  {
+   "OID": "5b9a8aa68ae09e5fcf64ab3a",
+   "ProcessID": 3820,
+   "ParentPID": 4000,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536854694066
+  },
+  {
+   "OID": "5b9a8aa68ae09e5fcf64ab3c",
+   "ProcessID": 476,
+   "ParentPID": 3820,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536854694160
+  },
+  {
+   "OID": "5b9a8abd8ae09e5fcf64b1fd",
+   "ProcessID": 3504,
+   "ParentPID": 476,
+   "CommandLine": "\u0001:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536854716879
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b9a8abd8ae09e5fcf64b1fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8abd8ae09e5fcf64b1fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8abd8ae09e5fcf64b1fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8abd8ae09e5fcf64b1fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b9a8abd8ae09e5fcf64b1fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8abd8ae09e5fcf64b1fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b9a8aa68ae09e5fcf64ab3c",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8aa58ae09e5fcf64a601",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b9a8aa18ae09e5fcf64a475",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5b9a8aa18ae09e5fcf64a475",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b9a8aa18ae09e5fcf64a475",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8aa18ae09e5fcf64a475",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8aa18ae09e5fcf64a475",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9a8a938ae09e5fcf649aa3",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

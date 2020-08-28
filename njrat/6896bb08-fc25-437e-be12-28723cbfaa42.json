@@ -1,0 +1,124 @@
+{
+ "Name": "d4632aef430f174559898126e4f3ae0a",
+ "Md5": "d4632aef430f174559898126e4f3ae0a",
+ "UUID": "6896bb08-fc25-437e-be12-28723cbfaa42",
+ "Processes": [
+  {
+   "OID": "5cfa187f0326e94724902e18",
+   "ProcessID": 3284,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\d4632aef430f174559898126e4f3ae0a.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\d4632aef430f174559898126e4f3ae0a.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1559894142964
+  },
+  {
+   "OID": "5cfa18800326e947249036fc",
+   "ProcessID": 3536,
+   "ParentPID": 3284,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559894144121
+  },
+  {
+   "OID": "5cfa18810326e94724903b27",
+   "ProcessID": 3216,
+   "ParentPID": 3284,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559894144761
+  },
+  {
+   "OID": "5cfa18810326e94724903b28",
+   "ProcessID": 1700,
+   "ParentPID": 3216,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\d4632aef430f174559898126e4f3ae0a.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\d4632aef430f174559898126e4f3ae0a.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559894144980
+  },
+  {
+   "OID": "5cfa18880326e9472490433f",
+   "ProcessID": 1872,
+   "ParentPID": 1700,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559894152152
+  },
+  {
+   "OID": "5cfa188f0326e94724904e1f",
+   "ProcessID": 3292,
+   "ParentPID": 1872,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\" \"RegSvcs.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559894159058
+  },
+  {
+   "OID": "5cfa18a40326e9472490581b",
+   "ProcessID": 1668,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1559894180417
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cfa18a40326e9472490581b",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa18880326e9472490433f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa18880326e9472490433f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa18880326e9472490433f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa18810326e94724903b28",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa18810326e94724903b28",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa187f0326e94724902e18",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa187f0326e94724902e18",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  }
+ ]
+}

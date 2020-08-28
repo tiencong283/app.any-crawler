@@ -1,0 +1,72 @@
+{
+ "Name": "swers.exe",
+ "Md5": "349a0d9b2ddae119255e68c6348a0f6c",
+ "UUID": "1bf0d83f-9965-4cb5-a5a6-9fea3e8ace97",
+ "Processes": [
+  {
+   "OID": "5ec9b5103edb85095e405c6d",
+   "ProcessID": 1792,
+   "ParentPID": 312,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\swers.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\swers.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1590277391581
+  },
+  {
+   "OID": "5ec9b5163edb85095e405f2d",
+   "ProcessID": 2100,
+   "ParentPID": 1792,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\swers.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\swers.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590277398221
+  },
+  {
+   "OID": "5ec9b51d3edb85095e40652a",
+   "ProcessID": 336,
+   "ParentPID": 2100,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\swers.exe\" \"swers.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590277404440
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ec9b5163edb85095e405f2d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec9b5163edb85095e405f2d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ec9b5163edb85095e405f2d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ec9b5103edb85095e405c6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ec9b5103edb85095e405c6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec9b5103edb85095e405c6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

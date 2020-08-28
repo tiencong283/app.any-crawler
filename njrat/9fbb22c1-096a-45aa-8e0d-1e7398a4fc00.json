@@ -1,0 +1,79 @@
+{
+ "Name": "svvv.exe",
+ "Md5": "fb4d6593a09ef821cc3ace279f635cc4",
+ "UUID": "9fbb22c1-096a-45aa-8e0d-1e7398a4fc00",
+ "Processes": [
+  {
+   "OID": "5e8807b4c86c2d3ac2115118",
+   "ProcessID": 3636,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\svvv.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\svvv.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585973171562
+  },
+  {
+   "OID": "5e8807bcc86c2d3ac21157f6",
+   "ProcessID": 3692,
+   "ParentPID": 3636,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\svvv.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\svvv.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585973179421
+  },
+  {
+   "OID": "5e8807c3c86c2d3ac211605d",
+   "ProcessID": 1832,
+   "ParentPID": 3692,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\svvv.exe\" \"svvv.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585973186530
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8807bcc86c2d3ac21157f6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e8807bcc86c2d3ac21157f6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8807bcc86c2d3ac21157f6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e8807bcc86c2d3ac21157f6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e8807b4c86c2d3ac2115118",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e8807b4c86c2d3ac2115118",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8807b4c86c2d3ac2115118",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

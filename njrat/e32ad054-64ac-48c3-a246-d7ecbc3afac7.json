@@ -1,0 +1,153 @@
+{
+ "Name": "1c_debug.exe.bin",
+ "Md5": "1bbd36864df637d15b3cb4ba3143a586",
+ "UUID": "e32ad054-64ac-48c3-a246-d7ecbc3afac7",
+ "Processes": [
+  {
+   "OID": "5d93c65cd8314f09e832488a",
+   "ProcessID": 2944,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\1c_debug.exe.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\1c_debug.exe.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1569965660113
+  },
+  {
+   "OID": "5d93c65dd8314f09e83251d1",
+   "ProcessID": 1576,
+   "ParentPID": 2944,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sdads.exe\" -s -psfghrykjrsetdrfhjryuygs",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sdads.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1569965661020
+  },
+  {
+   "OID": "5d93c65ed8314f09e83255b9",
+   "ProcessID": 3696,
+   "ParentPID": 1576,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\wgvrweqrv.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\wgvrweqrv.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1569965662285
+  },
+  {
+   "OID": "5d93c665d8314f09e8325c6d",
+   "ProcessID": 4044,
+   "ParentPID": 3696,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1569965669535
+  },
+  {
+   "OID": "5d93c668d8314f09e832628b",
+   "ProcessID": 3600,
+   "ParentPID": 2944,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dal.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dal.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1569965672442
+  },
+  {
+   "OID": "5d93c66cd8314f09e8326731",
+   "ProcessID": 3084,
+   "ParentPID": 4044,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe\" \"svchost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1569965676082
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d93c665d8314f09e8325c6d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d93c665d8314f09e8325c6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5d93c665d8314f09e8325c6d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d93c665d8314f09e8325c6d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d93c665d8314f09e8325c6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d93c668d8314f09e832628b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d93c665d8314f09e8325c6d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d93c65ed8314f09e83255b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d93c65ed8314f09e83255b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d93c65ed8314f09e83255b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d93c65ed8314f09e83255b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d93c65dd8314f09e83251d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d93c65dd8314f09e83251d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d93c65dd8314f09e83251d1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d93c65cd8314f09e832488a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d93c65cd8314f09e8324878",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "Name": "513353",
+ "Md5": "e699473d34138a5db37ea27a95b4034d",
+ "UUID": "edd47538-6687-4d74-9cf4-257031111281",
+ "Processes": [
+  {
+   "OID": "5dbf525c26fc20281cdc47dc",
+   "ProcessID": 2588,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\513353.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\513353.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572819547795
+  },
+  {
+   "OID": "5dbf525c26fc20281cdc47df",
+   "ProcessID": 460,
+   "ParentPID": 2588,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\513353.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\513353.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572819548155
+  },
+  {
+   "OID": "5dbf526126fc20281cdc4b43",
+   "ProcessID": 3124,
+   "ParentPID": 460,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\searchatsd.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\searchatsd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572819553358
+  },
+  {
+   "OID": "5dbf526126fc20281cdc4b44",
+   "ProcessID": 2060,
+   "ParentPID": 3124,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\searchatsd.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Microsoft\\Windows\\searchatsd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572819553483
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dbf526126fc20281cdc4b43",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbf525c26fc20281cdc47df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbf525c26fc20281cdc47df",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dbf525c26fc20281cdc47dc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

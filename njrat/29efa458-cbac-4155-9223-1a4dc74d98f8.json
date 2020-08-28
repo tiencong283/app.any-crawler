@@ -1,0 +1,84 @@
+{
+ "Name": "90.exe",
+ "Md5": "f770260a85c81f78f7fe0e91370b4977",
+ "UUID": "29efa458-cbac-4155-9223-1a4dc74d98f8",
+ "Processes": [
+  {
+   "OID": "5eb329beecf53025ff39cb29",
+   "ProcessID": 676,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\90.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\90.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588799934389
+  },
+  {
+   "OID": "5eb329c5ecf53025ff39d653",
+   "ProcessID": 3460,
+   "ParentPID": 676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588799941342
+  },
+  {
+   "OID": "5eb329ccecf53025ff39db27",
+   "ProcessID": 2888,
+   "ParentPID": 3460,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe\" \"chrome.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588799947670
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eb329c5ecf53025ff39d653",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eb329c5ecf53025ff39d653",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb329c5ecf53025ff39d653",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb329c5ecf53025ff39d653",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb329c5ecf53025ff39d653",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eb329c5ecf53025ff39d653",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5eb329beecf53025ff39cb29",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eb329beecf53025ff39cb29",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

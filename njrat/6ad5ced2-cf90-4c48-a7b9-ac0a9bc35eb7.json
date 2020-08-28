@@ -1,0 +1,84 @@
+{
+ "Name": "Server.exe.malw",
+ "Md5": "7a82e11c96e96552c35a2f4fb61de4ea",
+ "UUID": "6ad5ced2-cf90-4c48-a7b9-ac0a9bc35eb7",
+ "Processes": [
+  {
+   "OID": "5d09aac0c0826b7cd80ccc2d",
+   "ProcessID": 3156,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe.malw.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe.malw.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560914623741
+  },
+  {
+   "OID": "5d09aac6c0826b7cd80cd532",
+   "ProcessID": 3388,
+   "ParentPID": 3156,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560914630710
+  },
+  {
+   "OID": "5d09aacdc0826b7cd80cdaa4",
+   "ProcessID": 1752,
+   "ParentPID": 3388,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe\" \"chrome.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560914637038
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d09aac6c0826b7cd80cd532",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d09aac6c0826b7cd80cd532",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d09aac6c0826b7cd80cd532",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d09aac6c0826b7cd80cd532",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d09aac6c0826b7cd80cd532",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d09aac6c0826b7cd80cd532",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d09aac0c0826b7cd80ccc2d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d09aac0c0826b7cd80ccc2d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

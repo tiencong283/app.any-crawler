@@ -1,0 +1,88 @@
+{
+ "Name": "file-5355395_exe.bin",
+ "Md5": "d6e5297b8d32be3040e1e60363b5015f",
+ "UUID": "09cb30ab-6670-4a37-b66a-be10b05ea593",
+ "Processes": [
+  {
+   "OID": "5cba00bf7f76282356c8f634",
+   "ProcessID": 3820,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\file-5355395_exe.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\file-5355395_exe.bin.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5cba00bf7f76282356c90162",
+   "ProcessID": 3660,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\file-5355395_exe.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\file-5355395_exe.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1555693758768
+  },
+  {
+   "OID": "5cba00bf7f76282356c903e1",
+   "ProcessID": 2340,
+   "ParentPID": 3660,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Anti_Block_Gamezer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Anti_Block_Gamezer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555693759346
+  },
+  {
+   "OID": "5cba00bf7f76282356c903e2",
+   "ProcessID": 1484,
+   "ParentPID": 3660,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\kifndire.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kifndire.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555693759362
+  },
+  {
+   "OID": "5cba00c67f76282356c90f43",
+   "ProcessID": 3572,
+   "ParentPID": 1484,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\kifndire.exe\" \"kifndire.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555693766127
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cba00bf7f76282356c903e2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cba00bf7f76282356c903e2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cba00bf7f76282356c903e1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cba00bf7f76282356c903e2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cba00bf7f76282356c90162",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cba00bf7f76282356c8f622",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

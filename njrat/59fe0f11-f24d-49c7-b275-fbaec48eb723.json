@@ -1,0 +1,68 @@
+{
+ "Name": "fff.exe",
+ "Md5": "8110a4e7096142905ed77e95eef5cb22",
+ "UUID": "59fe0f11-f24d-49c7-b275-fbaec48eb723",
+ "Processes": [
+  {
+   "OID": "5d8f9f2d447d916b96113b1d",
+   "ProcessID": 2748,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\fff.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fff.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1569693485392
+  },
+  {
+   "OID": "5d8f9f34447d916b96113dce",
+   "ProcessID": 3988,
+   "ParentPID": 2748,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\fff.exe\" \"fff.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1569693491798
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d8f9f2d447d916b96113b1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8f9f2d447d916b96113b1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8f9f2d447d916b96113b1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d8f9f2d447d916b96113b1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8f9f2d447d916b96113b1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d8f9f2d447d916b96113b1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d8f9f2d447d916b96113b1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

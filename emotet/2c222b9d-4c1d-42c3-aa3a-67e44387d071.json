@@ -1,0 +1,74 @@
+{
+ "Name": "A7MvrVU",
+ "Md5": "4bb23efcfe32c3b0c24ea6e6e7efaa04",
+ "UUID": "2c222b9d-4c1d-42c3-aa3a-67e44387d071",
+ "Processes": [
+  {
+   "OID": "5da7693e5264fa744dcffda0",
+   "ProcessID": 532,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\A7MvrVU.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\A7MvrVU.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571252541878
+  },
+  {
+   "OID": "5da7693e5264fa744dd003ab",
+   "ProcessID": 4040,
+   "ParentPID": 532,
+   "CommandLine": "--88d34476",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\A7MvrVU.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571252542222
+  },
+  {
+   "OID": "5da769455264fa744dd007d5",
+   "ProcessID": 3600,
+   "ParentPID": 4040,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571252548800
+  },
+  {
+   "OID": "5da769455264fa744dd007d6",
+   "ProcessID": 1404,
+   "ParentPID": 3600,
+   "CommandLine": "--f91b2738",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571252548909
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5da769455264fa744dd007d6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da7693e5264fa744dd003ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da7693e5264fa744dd003ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da7693e5264fa744dd003ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5da7693e5264fa744dcffda0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

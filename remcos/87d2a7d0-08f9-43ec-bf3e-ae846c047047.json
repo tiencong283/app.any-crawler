@@ -1,0 +1,126 @@
+{
+ "Name": "PAYMENT EURO.exe",
+ "Md5": "446ccfad609ed9ff78bfd3ec0f7cbb1c",
+ "UUID": "87d2a7d0-08f9-43ec-bf3e-ae846c047047",
+ "Processes": [
+  {
+   "OID": "5c3f053a8a63eb451fd523e5",
+   "ProcessID": 3076,
+   "ParentPID": 2028,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PAYMENT EURO.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PAYMENT EURO.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1547633977617
+  },
+  {
+   "OID": "5c3f05b18a63eb451fd52cbe",
+   "ProcessID": 3260,
+   "ParentPID": 3076,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\PAYMENT EURO.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PAYMENT EURO.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1547634096539
+  },
+  {
+   "OID": "5c3f06238a63eb451fd52db0",
+   "ProcessID": 872,
+   "ParentPID": 3260,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1547634211211
+  },
+  {
+   "OID": "5c3f06258a63eb451fd5337d",
+   "ProcessID": 3336,
+   "ParentPID": 872,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1547634212711
+  },
+  {
+   "OID": "5c3f06258a63eb451fd5337f",
+   "ProcessID": 3820,
+   "ParentPID": 3336,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1547634212773
+  },
+  {
+   "OID": "5c3f06528a63eb451fd537b6",
+   "ProcessID": 2644,
+   "ParentPID": 3820,
+   "CommandLine": "\u0001:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1547634258039
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c3f06258a63eb451fd5337f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c3f06238a63eb451fd52db0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5c3f05b18a63eb451fd52cbe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5c3f05b18a63eb451fd52cbe",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060",
+    "T1004"
+   ]
+  },
+  {
+   "ProcessOID": "5c3f05b18a63eb451fd52cbe",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c3f05b18a63eb451fd52cbe",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c3f05b18a63eb451fd52cbe",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c3f05b18a63eb451fd52cbe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c3f053a8a63eb451fd523e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c3f053a8a63eb451fd523da",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

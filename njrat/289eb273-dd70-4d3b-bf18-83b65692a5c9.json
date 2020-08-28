@@ -1,0 +1,87 @@
+{
+ "Name": "bootarble.exe",
+ "Md5": "7114d84c8ced59d99ef401696ce8e4c1",
+ "UUID": "289eb273-dd70-4d3b-bf18-83b65692a5c9",
+ "Processes": [
+  {
+   "OID": "5edfb6d032c60b33bece247a",
+   "ProcessID": 2576,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\bootarble.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\bootarble.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591719631898
+  },
+  {
+   "OID": "5edfb6d632c60b33bece2708",
+   "ProcessID": 2136,
+   "ParentPID": 2576,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WindowsServices.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WindowsServices.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591719638445
+  },
+  {
+   "OID": "5edfb6dc32c60b33bece2cd7",
+   "ProcessID": 2256,
+   "ParentPID": 2136,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\WindowsServices.exe\" \"WindowsServices.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591719644617
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5edfb6d632c60b33bece2708",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edfb6d632c60b33bece2708",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edfb6d632c60b33bece2708",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edfb6d632c60b33bece2708",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5edfb6d632c60b33bece2708",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edfb6d632c60b33bece2708",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5edfb6d032c60b33bece247a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5edfb6d032c60b33bece247a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edfb6d032c60b33bece247a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

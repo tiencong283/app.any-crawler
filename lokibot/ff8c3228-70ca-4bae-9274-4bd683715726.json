@@ -1,0 +1,74 @@
+{
+ "Name": "3c0f9060f2185a5c1168264f22e10adb0ffd4a5f3ddeffe53bf10d2bff8c2cc7",
+ "Md5": "74fdcb8c0a755e03850c36673500017a",
+ "UUID": "ff8c3228-70ca-4bae-9274-4bd683715726",
+ "Processes": [
+  {
+   "OID": "5d271730ba96e856fe7e501a",
+   "ProcessID": 3228,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3c0f9060f2185a5c1168264f22e10adb0ffd4a5f3ddeffe53bf10d2bff8c2cc7.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3c0f9060f2185a5c1168264f22e10adb0ffd4a5f3ddeffe53bf10d2bff8c2cc7.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1562842928430
+  },
+  {
+   "OID": "5d27173fba96e856fe7e532f",
+   "ProcessID": 3596,
+   "ParentPID": 3228,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\3c0f9060f2185a5c1168264f22e10adb0ffd4a5f3ddeffe53bf10d2bff8c2cc7.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562842943305
+  },
+  {
+   "OID": "5d27173fba96e856fe7e5331",
+   "ProcessID": 3044,
+   "ParentPID": 3228,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\3c0f9060f2185a5c1168264f22e10adb0ffd4a5f3ddeffe53bf10d2bff8c2cc7.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562842943555
+  },
+  {
+   "OID": "5d27175aba96e856fe7e57f9",
+   "ProcessID": 2020,
+   "ParentPID": 3228,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562842970289
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d27175aba96e856fe7e57f9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d27175aba96e856fe7e57f9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d27175aba96e856fe7e57f9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5d27175aba96e856fe7e57f9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d271730ba96e856fe7e501a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

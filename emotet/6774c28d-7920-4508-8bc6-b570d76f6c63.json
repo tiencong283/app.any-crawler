@@ -1,0 +1,86 @@
+{
+ "Name": "3-372.exe",
+ "Md5": "75b4208d69eee7c273c9337a29c4ca58",
+ "UUID": "6774c28d-7920-4508-8bc6-b570d76f6c63",
+ "Processes": [
+  {
+   "OID": "5da9e981d29d7724565b62bc",
+   "ProcessID": 504,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3-372.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3-372.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571416449090
+  },
+  {
+   "OID": "5da9e981d29d7724565b68a3",
+   "ProcessID": 2604,
+   "ParentPID": 504,
+   "CommandLine": "--e5eb4a18",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3-372.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571416449356
+  },
+  {
+   "OID": "5da9e988d29d7724565b6b4e",
+   "ProcessID": 1928,
+   "ParentPID": 2604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571416456106
+  },
+  {
+   "OID": "5da9e988d29d7724565b6b4f",
+   "ProcessID": 2744,
+   "ParentPID": 1928,
+   "CommandLine": "--f91b2738",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571416456199
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5da9e988d29d7724565b6b4f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5da9e988d29d7724565b6b4f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da9e988d29d7724565b6b4f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da9e981d29d7724565b68a3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da9e981d29d7724565b68a3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da9e981d29d7724565b68a3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5da9e981d29d7724565b62bc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

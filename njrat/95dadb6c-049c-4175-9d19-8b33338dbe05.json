@@ -1,0 +1,155 @@
+{
+ "Name": "NETFLIX Checker Account  By XKILLER.exe",
+ "Md5": "a44fdbfd6e981db7c6421c662402fbe1",
+ "UUID": "95dadb6c-049c-4175-9d19-8b33338dbe05",
+ "Processes": [
+  {
+   "OID": "5d0e80e14c237c5bb3b10952",
+   "ProcessID": 2532,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NETFLIX Checker Account  By XKILLER.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NETFLIX Checker Account  By XKILLER.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5d0e80e14c237c5bb3b11484",
+   "ProcessID": 3096,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\NETFLIX Checker Account  By XKILLER.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\NETFLIX Checker Account  By XKILLER.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1561231584861
+  },
+  {
+   "OID": "5d0e80e24c237c5bb3b11742",
+   "ProcessID": 2056,
+   "ParentPID": 3096,
+   "CommandLine": "\"C:\\Windows\\system32\\VLC\\NETFLIX Checker Account  By X-KILLER.exe\" ",
+   "Image": "C:\\Windows\\system32\\VLC\\NETFLIX Checker Account  By X-KILLER.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561231585408
+  },
+  {
+   "OID": "5d0e80e24c237c5bb3b11743",
+   "ProcessID": 1180,
+   "ParentPID": 3096,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Windows\\system32\\VLC\\NewTurkiCode.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561231585486
+  },
+  {
+   "OID": "5d0e80e34c237c5bb3b11f5c",
+   "ProcessID": 2096,
+   "ParentPID": 1180,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Tempwinlogon.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Tempwinlogon.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561231586970
+  },
+  {
+   "OID": "5d0e80ea4c237c5bb3b12fbc",
+   "ProcessID": 2708,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Users\\admin\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561231593783
+  },
+  {
+   "OID": "5d0e80f04c237c5bb3b134aa",
+   "ProcessID": 2456,
+   "ParentPID": 2708,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\svchost.exe\" \"svchost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561231600064
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d0e80ea4c237c5bb3b12fbc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0e80ea4c237c5bb3b12fbc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d0e80ea4c237c5bb3b12fbc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0e80e34c237c5bb3b11f5c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d0e80e34c237c5bb3b11f5c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0e80e34c237c5bb3b11f5c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0e80e44c237c5bb3b12433",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0e80e24c237c5bb3b11742",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0e80e34c237c5bb3b11f5c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0e80e24c237c5bb3b11742",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0e80e24c237c5bb3b11743",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0e80e14c237c5bb3b11484",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d0e80e14c237c5bb3b11484",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0e80e14c237c5bb3b11484",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0e80e14c237c5bb3b10940",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

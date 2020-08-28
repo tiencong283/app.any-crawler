@@ -1,0 +1,53 @@
+{
+ "Name": "c5522478feaa7c0c5ccd2504017536cb9e5a91b815fd73ba14e311c9ec18f074",
+ "Md5": "7732ba0f1b9f5eb2591a888ba53384b8",
+ "UUID": "54126749-81e0-4f0c-a50c-9c97abefd3a6",
+ "Processes": [
+  {
+   "OID": "5d3e784e3eb1c91efe4efe2d",
+   "ProcessID": 916,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\c5522478feaa7c0c5ccd2504017536cb9e5a91b815fd73ba14e311c9ec18f074.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\c5522478feaa7c0c5ccd2504017536cb9e5a91b815fd73ba14e311c9ec18f074.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564375117912
+  },
+  {
+   "OID": "5d3e784e3eb1c91efe4f04b5",
+   "ProcessID": 4036,
+   "ParentPID": 916,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe\" /logtoconsole=false /logfile= /u \"C:\\Users\\admin\\AppData\\Local\\Temp\\c5522478feaa7c0c5ccd2504017536cb9e5a91b815fd73ba14e311c9ec18f074.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564375118490
+  },
+  {
+   "OID": "5d3e78553eb1c91efe4f0e07",
+   "ProcessID": 3956,
+   "ParentPID": 4036,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe\" \"installutil.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564375124959
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d3e784e3eb1c91efe4efe23",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3e784e3eb1c91efe4f04b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3e784e3eb1c91efe4f04b5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "Name": "S1erver",
+ "Md5": "a52d96fcc412e10a4e17b4fd0517290d",
+ "UUID": "9c7b1942-b654-42a2-abda-400e3ab633a0",
+ "Processes": [
+  {
+   "OID": "5dade3aaa4f1cc098e7a3195",
+   "ProcessID": 2456,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\S1erver.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\S1erver.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571677098122
+  },
+  {
+   "OID": "5dade3aca4f1cc098e7a355a",
+   "ProcessID": 2200,
+   "ParentPID": 2456,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571677099762
+  },
+  {
+   "OID": "5dade3ada4f1cc098e7a3b04",
+   "ProcessID": 2060,
+   "ParentPID": 2200,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\server.exe\" \"server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571677101122
+  },
+  {
+   "OID": "5dade49ea4f1cc098e7c5e31",
+   "ProcessID": 3112,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\NOTEPAD.EXE\" C:\\Users\\admin\\AppData\\Local\\Temp\\FransescoPast.txt",
+   "Image": "C:\\Windows\\system32\\NOTEPAD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1571677342254
+  },
+  {
+   "OID": "5dade4aaa4f1cc098e7c61a6",
+   "ProcessID": 1472,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\S1erver.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\S1erver.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1571677353661
+  },
+  {
+   "OID": "5dade4baa4f1cc098e7c6d7c",
+   "ProcessID": 1888,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\S1erver.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\S1erver.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1571677369426
+  },
+  {
+   "OID": "5dade4c3a4f1cc098e7c730f",
+   "ProcessID": 2204,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\NOTEPAD.EXE\" C:\\Users\\admin\\AppData\\Local\\Temp\\FXSAPIDebugLogFile.txt",
+   "Image": "C:\\Windows\\system32\\NOTEPAD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1571677378864
+  },
+  {
+   "OID": "5dade4cea4f1cc098e7c75a6",
+   "ProcessID": 2096,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\rundll32.exe\" C:\\Windows\\system32\\shell32.dll,OpenAs_RunDLL C:\\Users\\admin\\AppData\\Local\\Temp\\nhrzbqsf.mrl",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1571677390067
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dade3aaa4f1cc098e7a2867",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  },
+  {
+   "ProcessOID": "5dade4cea4f1cc098e7c75a6",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dade4c3a4f1cc098e7c730f",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dade4baa4f1cc098e7c6d7c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dade4aaa4f1cc098e7c61a6",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dade49ea4f1cc098e7c5e31",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dade3aaa4f1cc098e7a2867",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dade3aca4f1cc098e7a355a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dade3aca4f1cc098e7a355a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dade3aca4f1cc098e7a355a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dade3aca4f1cc098e7a355a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dade3aca4f1cc098e7a355a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dade3aca4f1cc098e7a355a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dade3aaa4f1cc098e7a3195",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dade3aaa4f1cc098e7a3195",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dade3aaa4f1cc098e7a3195",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

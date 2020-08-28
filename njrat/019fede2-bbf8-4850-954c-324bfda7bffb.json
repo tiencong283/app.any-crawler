@@ -1,0 +1,79 @@
+{
+ "Name": "59d21d96-6645-44b8-bc0e-fb9ab9ce7245",
+ "Md5": "7ddf1cfb888709874a1bb58e66e3fca0",
+ "UUID": "019fede2-bbf8-4850-954c-324bfda7bffb",
+ "Processes": [
+  {
+   "OID": "5dbcb6477fdad91f7dd847e4",
+   "ProcessID": 2580,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\59d21d96-6645-44b8-bc0e-fb9ab9ce7245.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\59d21d96-6645-44b8-bc0e-fb9ab9ce7245.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572648518898
+  },
+  {
+   "OID": "5dbcb6567fdad91f7dd85010",
+   "ProcessID": 3140,
+   "ParentPID": 2580,
+   "CommandLine": "\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v4.0.30319\\\\\\\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572648533867
+  },
+  {
+   "OID": "5dbcb65c7fdad91f7dd852c5",
+   "ProcessID": 2232,
+   "ParentPID": 3140,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\" \"RegSvcs.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572648540039
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dbcb6567fdad91f7dd85010",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5dbcb6567fdad91f7dd85010",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbcb6567fdad91f7dd85010",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dbcb6567fdad91f7dd85010",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dbcb6477fdad91f7dd847e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbcb6477fdad91f7dd847e4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dbcb6477fdad91f7dd847e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

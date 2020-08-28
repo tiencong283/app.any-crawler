@@ -1,0 +1,70 @@
+{
+ "Name": "okllll.exe",
+ "Md5": "03c11d9060022c8e76d8642f5b7bab4b",
+ "UUID": "03d34b67-582d-4d4c-9ff8-1ae54404cf80",
+ "Processes": [
+  {
+   "OID": "5b404ebd619fb84db00238d9",
+   "ProcessID": 1896,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\okllll.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\okllll.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1530941116908
+  },
+  {
+   "OID": "5b404ebd619fb84db00238da",
+   "ProcessID": 4032,
+   "ParentPID": 1896,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\okllll.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\okllll.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1530941117143
+  },
+  {
+   "OID": "5b404ebd619fb84db00238db",
+   "ProcessID": 1600,
+   "ParentPID": 4032,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1530941117315
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b404ebd619fb84db00238db",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b404ebd619fb84db00238da",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b404ebd619fb84db00238da",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b404ebd619fb84db00238d9",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b404ebd619fb84db00238d9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b404ebd619fb84db00238d9",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

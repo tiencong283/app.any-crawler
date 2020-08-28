@@ -1,0 +1,150 @@
+{
+ "Name": "jake.exe",
+ "Md5": "0c5350558a0d85a14dd0f0bf5285c235",
+ "UUID": "840e135d-62d8-4b0a-b930-1c6fdfa4d798",
+ "Processes": [
+  {
+   "OID": "5edba39327eb016087e0ab82",
+   "ProcessID": 1220,
+   "ParentPID": 1592,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\jake.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\jake.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591452562985
+  },
+  {
+   "OID": "5edba39527eb016087e0b7a9",
+   "ProcessID": 1072,
+   "ParentPID": 1220,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\tmp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591452564844
+  },
+  {
+   "OID": "5edba39627eb016087e0bd09",
+   "ProcessID": 2396,
+   "ParentPID": 1220,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c echo [zoneTransfer]ZoneID = 2 \u003e %appdata%\\FolderN\\WindowsUpdate.exe:Zone.Identifier",
+   "Image": "C:\\Windows\\SysWOW64\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591452565813
+  },
+  {
+   "OID": "5edba39627eb016087e0bd0b",
+   "ProcessID": 2956,
+   "ParentPID": 1220,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c ren \"%appdata%\\FolderN\\WindowsUpdate.exe.jpg\" WindowsUpdate.exe",
+   "Image": "C:\\Windows\\SysWOW64\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591452565907
+  },
+  {
+   "OID": "5edba39627eb016087e0c02b",
+   "ProcessID": 2768,
+   "ParentPID": 1220,
+   "CommandLine": "C:\\Windows\\system32\\cmd.exe /c C:\\Users\\admin\\AppData\\Roaming\\FolderN\\WindowsUpdate.exe.bat",
+   "Image": "C:\\Windows\\SysWOW64\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591452566001
+  },
+  {
+   "OID": "5edba39627eb016087e0c02d",
+   "ProcessID": 2672,
+   "ParentPID": 2768,
+   "CommandLine": "timeout  /t 300",
+   "Image": "C:\\Windows\\SysWOW64\\timeout.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591452566110
+  },
+  {
+   "OID": "5edba39c27eb016087e0cc6a",
+   "ProcessID": 2044,
+   "ParentPID": 1072,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp.exe\" \"tmp.exe\" ENABLE",
+   "Image": "C:\\Windows\\SysWOW64\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591452571938
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5edba39527eb016087e0b7a9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edba39527eb016087e0b7a9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5edba39527eb016087e0b7a9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edba39527eb016087e0b7a9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edba39527eb016087e0b7a9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5edba39527eb016087e0b7a9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5edba39627eb016087e0bd09",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edba39327eb016087e0ab82",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5edba39327eb016087e0ab82",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5edba39327eb016087e0ab82",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edba39527eb016087e0b7a9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edba39327eb016087e0b245",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5edba39327eb016087e0ab82",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

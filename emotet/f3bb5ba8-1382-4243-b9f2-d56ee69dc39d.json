@@ -1,0 +1,95 @@
+{
+ "Name": "sample.bin",
+ "Md5": "0187d2bf01749ffd845b5b4a456350c3",
+ "UUID": "f3bb5ba8-1382-4243-b9f2-d56ee69dc39d",
+ "Processes": [
+  {
+   "OID": "5dcc9f990c34d74d69239015",
+   "ProcessID": 1944,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sample.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sample.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573691288862
+  },
+  {
+   "OID": "5dcc9f990c34d74d69239016",
+   "ProcessID": 2712,
+   "ParentPID": 1944,
+   "CommandLine": "--b27043c7",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sample.bin.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573691288987
+  },
+  {
+   "OID": "5dcc9f9f0c34d74d69239362",
+   "ProcessID": 1584,
+   "ParentPID": 2712,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573691295409
+  },
+  {
+   "OID": "5dcc9f9f0c34d74d69239363",
+   "ProcessID": 2924,
+   "ParentPID": 1584,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573691295502
+  },
+  {
+   "OID": "5dcc9fa10c34d74d69239794",
+   "ProcessID": 2888,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1573691297346
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcc9f9f0c34d74d69239363",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc9f9f0c34d74d69239363",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc9f9f0c34d74d69239363",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dcc9fa10c34d74d69239794",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dcc9f990c34d74d69239016",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc9f990c34d74d69239016",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc9f990c34d74d69239016",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

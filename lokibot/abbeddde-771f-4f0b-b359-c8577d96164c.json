@@ -1,0 +1,110 @@
+{
+ "Name": "Renda \u0026 Biggs Well Station Bid Specification.exe",
+ "Md5": "e4d76585d90aa543b554ca698745ce34",
+ "UUID": "abbeddde-771f-4f0b-b359-c8577d96164c",
+ "Processes": [
+  {
+   "OID": "5d499d0fb8dcbd6b61a2130c",
+   "ProcessID": 2268,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Renda \u0026 Biggs Well Station Bid Specification.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Renda \u0026 Biggs Well Station Bid Specification.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1565105423440
+  },
+  {
+   "OID": "5d499d35b8dcbd6b61a216be",
+   "ProcessID": 2952,
+   "ParentPID": 2268,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\subfolder\\filename.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565105460284
+  },
+  {
+   "OID": "5d499d35b8dcbd6b61a216bf",
+   "ProcessID": 2180,
+   "ParentPID": 2268,
+   "CommandLine": "\"C:\\Users\\admin\\subfolder\\filename.exe\" ",
+   "Image": "C:\\Users\\admin\\subfolder\\filename.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565105460300
+  },
+  {
+   "OID": "5d499d38b8dcbd6b61a21f0f",
+   "ProcessID": 2676,
+   "ParentPID": 2180,
+   "CommandLine": "\u0001C:\\Users\\admin\\subfolder\\filename.exe\" ",
+   "Image": "C:\\Users\\admin\\subfolder\\filename.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565105463831
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d499d38b8dcbd6b61a21f0f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d499d38b8dcbd6b61a21f0f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d499d38b8dcbd6b61a21f0f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d499d38b8dcbd6b61a21f0f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5d499d38b8dcbd6b61a21f0f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d499d35b8dcbd6b61a216be",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d499d35b8dcbd6b61a216bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d499d0fb8dcbd6b61a2130c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d499d0fb8dcbd6b61a2130c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d499d0fb8dcbd6b61a2130c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d499d0fb8dcbd6b61a2130c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

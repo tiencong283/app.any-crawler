@@ -1,0 +1,146 @@
+{
+ "Name": "Server123.exe",
+ "Md5": "90890ca5d04cc4508ee1a69deac187e8",
+ "UUID": "de596a4e-fde5-49b9-af65-b5d5661ba396",
+ "Processes": [
+  {
+   "OID": "5eab713f5eba0b7884cba0ca",
+   "ProcessID": 2652,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server123.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server123.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588293951376
+  },
+  {
+   "OID": "5eab71475eba0b7884cba571",
+   "ProcessID": 3032,
+   "ParentPID": 2652,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Java Updata.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Java Updata.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588293958891
+  },
+  {
+   "OID": "5eab714e5eba0b7884cbab42",
+   "ProcessID": 2796,
+   "ParentPID": 3032,
+   "CommandLine": "schtasks /create /sc minute /mo 1 /tn Server /tr C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588293966126
+  },
+  {
+   "OID": "5eab71785eba0b7884cbb97f",
+   "ProcessID": 3324,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\releasedimages.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1588294008235
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eab71785eba0b7884cbb97f",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eab71785eba0b7884cbb97f",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5eab713f5eba0b7884cb9797",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5eab713f5eba0b7884cb979a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eab713f5eba0b7884cb979a",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eab71785eba0b7884cbb97f",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5eab71475eba0b7884cba571",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eab71475eba0b7884cba571",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eab713f5eba0b7884cb9790",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eab714e5eba0b7884cbab42",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5eab71475eba0b7884cba571",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5eab71475eba0b7884cba571",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eab71475eba0b7884cba571",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eab71475eba0b7884cba571",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eab71475eba0b7884cba571",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eab713f5eba0b7884cba0ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eab713f5eba0b7884cba0ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

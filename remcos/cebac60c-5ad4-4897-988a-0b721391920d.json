@@ -1,0 +1,102 @@
+{
+ "Name": "kpokpo.exe",
+ "Md5": "fa1546bb9e512a317a0cad1eabffd1e3",
+ "UUID": "cebac60c-5ad4-4897-988a-0b721391920d",
+ "Processes": [
+  {
+   "OID": "5bff0598d621113d2a5635af",
+   "ProcessID": 2784,
+   "ParentPID": 2028,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\kpokpo.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kpokpo.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1543439768643
+  },
+  {
+   "OID": "5bff05add621113d2a564034",
+   "ProcessID": 2236,
+   "ParentPID": 2784,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c copy \"C:\\Users\\admin\\AppData\\Local\\Temp\\kpokpo.exe\" \"C:\\Users\\admin\\AppData\\Local\\LSDFH.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1543439789596
+  },
+  {
+   "OID": "5bff05c8d621113d2a5642b2",
+   "ProcessID": 2072,
+   "ParentPID": 2784,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c, \"C:\\Users\\admin\\AppData\\Local\\LSDFH.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1543439815659
+  },
+  {
+   "OID": "5bff05c8d621113d2a5642b4",
+   "ProcessID": 3224,
+   "ParentPID": 2072,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\LSDFH.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\LSDFH.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1543439815737
+  },
+  {
+   "OID": "5bff05fad621113d2a56484a",
+   "ProcessID": 992,
+   "ParentPID": 3224,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\LSDFH.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\LSDFH.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1543439866081
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bff05fad621113d2a56484a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bff05fad621113d2a56484a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bff05fad621113d2a56484a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bff05c8d621113d2a5642b4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bff05c8d621113d2a5642b4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bff05add621113d2a564034",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bff05add621113d2a564034",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bff0598d621113d2a5635af",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

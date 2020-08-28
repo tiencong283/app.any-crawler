@@ -1,0 +1,79 @@
+{
+ "Name": "magnifyresw.exe",
+ "Md5": "3214e5ccf6d7f0b97ea4a917ca44f0d5",
+ "UUID": "130f579e-430a-4681-9fe1-4f196e4b3ccc",
+ "Processes": [
+  {
+   "OID": "5dab020da21eb00bee6f6073",
+   "ProcessID": 2168,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\magnifyresw.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\magnifyresw.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571488268738
+  },
+  {
+   "OID": "5dab020da21eb00bee6f6074",
+   "ProcessID": 3792,
+   "ParentPID": 2168,
+   "CommandLine": "--56de385c",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\magnifyresw.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571488268894
+  },
+  {
+   "OID": "5dab0214a21eb00bee6f634b",
+   "ProcessID": 2536,
+   "ParentPID": 3792,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571488275488
+  },
+  {
+   "OID": "5dab0214a21eb00bee6f634c",
+   "ProcessID": 3936,
+   "ParentPID": 2536,
+   "CommandLine": "--f91b2738",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571488275566
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dab0214a21eb00bee6f634c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dab0214a21eb00bee6f634c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dab0214a21eb00bee6f634c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dab020da21eb00bee6f6074",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dab020da21eb00bee6f6074",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dab020da21eb00bee6f6074",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

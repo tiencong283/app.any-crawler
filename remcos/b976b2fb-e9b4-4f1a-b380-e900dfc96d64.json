@@ -1,0 +1,126 @@
+{
+ "Name": "c33.exe",
+ "Md5": "17f134011ec700147a1758eb97101ba1",
+ "UUID": "b976b2fb-e9b4-4f1a-b380-e900dfc96d64",
+ "Processes": [
+  {
+   "OID": "5b6d7a1d9d321759792f3893",
+   "ProcessID": 2032,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\c33.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\c33.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1533901341457
+  },
+  {
+   "OID": "5b6d7a2a9d321759792f3fdd",
+   "ProcessID": 3280,
+   "ParentPID": 2032,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\c33.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\c33.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1533901354660
+  },
+  {
+   "OID": "5b6d7a2b9d321759792f3fed",
+   "ProcessID": 3632,
+   "ParentPID": 3280,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1533901355035
+  },
+  {
+   "OID": "5b6d7a2b9d321759792f3fef",
+   "ProcessID": 3124,
+   "ParentPID": 3632,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1533901355129
+  },
+  {
+   "OID": "5b6d7a2c9d321759792f4796",
+   "ProcessID": 3648,
+   "ParentPID": 3632,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Google Chrome Plugin\\Google Chrome Plugin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Google Chrome Plugin\\Google Chrome Plugin.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1533901356207
+  },
+  {
+   "OID": "5b6d7a399d321759792f4e15",
+   "ProcessID": 608,
+   "ParentPID": 3648,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Google Chrome Plugin\\Google Chrome Plugin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Google Chrome Plugin\\Google Chrome Plugin.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1533901369317
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b6d7a399d321759792f4e15",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b6d7a399d321759792f4e15",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b6d7a399d321759792f4e15",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b6d7a399d321759792f4e15",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b6d7a399d321759792f4e15",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b6d7a2c9d321759792f4796",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b6d7a2a9d321759792f3fdd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b6d7a2a9d321759792f3fdd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b6d7a2a9d321759792f3fdd",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b6d7a2a9d321759792f3fdd",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b6d7a1d9d321759792f3893",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

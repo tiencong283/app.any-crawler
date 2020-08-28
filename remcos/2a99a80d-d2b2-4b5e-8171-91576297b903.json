@@ -1,0 +1,190 @@
+{
+ "Name": "inj.exe",
+ "Md5": "8aa934868090072e267eaee70ced9d14",
+ "UUID": "2a99a80d-d2b2-4b5e-8171-91576297b903",
+ "Processes": [
+  {
+   "OID": "5bd2f02e6a226f630c840373",
+   "ProcessID": 1488,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\inj.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\inj.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1540550702045
+  },
+  {
+   "OID": "5bd2f02f6a226f630c84038c",
+   "ProcessID": 624,
+   "ParentPID": 1488,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /SC HOURLY /MO 23 /TN \"michelangelo\" /TR \"reg add \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\" /v \"\\\"\"michelangelo\"\\\"\" /f /t REG_SZ /d \"\\\"\"C:\\Users\\admin\\AppData\\Local\\Temp\\Unwinly8.exe\\\"\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540550702373
+  },
+  {
+   "OID": "5bd2f0306a226f630c8409b2",
+   "ProcessID": 3868,
+   "ParentPID": 1488,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /run /tn \"michelangelo\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540550704389
+  },
+  {
+   "OID": "5bd2f0316a226f630c840b40",
+   "ProcessID": 3464,
+   "ParentPID": 1488,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Unwinly8.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Unwinly8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540550704842
+  },
+  {
+   "OID": "5bd2f0316a226f630c840b41",
+   "ProcessID": 1384,
+   "ParentPID": 2752,
+   "CommandLine": "C:\\Windows\\system32\\reg.EXE add HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v \"michelangelo\" /f /t REG_SZ /d \"C:\\Users\\admin\\AppData\\Local\\Temp\\Unwinly8.exe\"",
+   "Image": "C:\\Windows\\system32\\reg.EXE",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1540550704998
+  },
+  {
+   "OID": "5bd2f03d6a226f630c841338",
+   "ProcessID": 2724,
+   "ParentPID": 3464,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\Unwinly8.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\otnedoeouupycjrlabfs\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Unwinly8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540550717107
+  },
+  {
+   "OID": "5bd2f03d6a226f630c841339",
+   "ProcessID": 1764,
+   "ParentPID": 3464,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\Unwinly8.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\zvspehpiichdnpnprmrlscg\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Unwinly8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540550717123
+  },
+  {
+   "OID": "5bd2f03d6a226f630c84133a",
+   "ProcessID": 2472,
+   "ParentPID": 3464,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\Unwinly8.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\bpxhezajwkzqpdbtaxmnvhbyie\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Unwinly8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540550717139
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bd2f03d6a226f630c841338",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5bd2f03d6a226f630c84133a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5bd2f03d6a226f630c84133a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd2f03d6a226f630c841339",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd2f03d6a226f630c841338",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd2f0316a226f630c840b40",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bd2f0316a226f630c840b40",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bd2f0316a226f630c840b40",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd2f0316a226f630c840b41",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bd2f0316a226f630c840b40",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd2f0306a226f630c8409b4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5bd2f0316a226f630c840b40",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd2f0306a226f630c8409b2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5bd2f02e6a226f630c83fc7b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd2f02f6a226f630c84038c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5bd2f02e6a226f630c840373",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd2f02e6a226f630c840373",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd2f02e6a226f630c840373",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  }
+ ]
+}

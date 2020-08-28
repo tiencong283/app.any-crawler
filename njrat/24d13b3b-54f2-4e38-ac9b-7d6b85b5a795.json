@@ -1,0 +1,4952 @@
+{
+ "Name": "SHIELD_ANTIBAN.exe",
+ "Md5": "921e0ae60c428565035f5a416ad888c4",
+ "UUID": "24d13b3b-54f2-4e38-ac9b-7d6b85b5a795",
+ "Processes": [
+  {
+   "OID": "5ea225ca1eba911278a6ee51",
+   "ProcessID": 3316,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\SHIELD_ANTIBAN.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\SHIELD_ANTIBAN.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5ea225ca1eba911278a6f9aa",
+   "ProcessID": 2056,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\SHIELD_ANTIBAN.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\SHIELD_ANTIBAN.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587684810268
+  },
+  {
+   "OID": "5ea225d81eba911278a71786",
+   "ProcessID": 3916,
+   "ParentPID": 2056,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\Explorer.exe\" ",
+   "Image": "C:\\Program Files\\Internet Explorer\\Explorer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587684824471
+  },
+  {
+   "OID": "5ea225df1eba911278a71b89",
+   "ProcessID": 2864,
+   "ParentPID": 3916,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Internet Explorer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Internet Explorer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587684831236
+  },
+  {
+   "OID": "5ea225e51eba911278a72065",
+   "ProcessID": 1840,
+   "ParentPID": 2864,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Internet Explorer.exe\" \"Internet Explorer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587684837393
+  },
+  {
+   "OID": "5ea2267f1eba911278a76308",
+   "ProcessID": 820,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\SHIELD_ANTIBAN.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\SHIELD_ANTIBAN.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1587684991736
+  },
+  {
+   "OID": "5ea226831eba911278a76ce1",
+   "ProcessID": 3708,
+   "ParentPID": 820,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\Explorer.exe\" ",
+   "Image": "C:\\Program Files\\Internet Explorer\\Explorer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587684994971
+  },
+  {
+   "OID": "5ea2269b1eba911278a779e3",
+   "ProcessID": 3128,
+   "ParentPID": 820,
+   "CommandLine": "\"C:\\Windows\\System32\\cscript.exe\" //B //Nologo on.vbs",
+   "Image": "C:\\Windows\\System32\\cscript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685018752
+  },
+  {
+   "OID": "5ea2269c1eba911278a77ead",
+   "ProcessID": 2520,
+   "ParentPID": 3128,
+   "CommandLine": "cmd /c \"\"C:\\Program Files\\Internet Explorer\\RUN_GAME.bat\" \"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685020721
+  },
+  {
+   "OID": "5ea2269d1eba911278a77f74",
+   "ProcessID": 3956,
+   "ParentPID": 2520,
+   "CommandLine": "adb  kill-server",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685021018
+  },
+  {
+   "OID": "5ea2269d1eba911278a77f75",
+   "ProcessID": 3084,
+   "ParentPID": 3956,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685021158
+  },
+  {
+   "OID": "5ea2269f1eba911278a7b76b",
+   "ProcessID": 3220,
+   "ParentPID": 2520,
+   "CommandLine": "adb  devices",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685022955
+  },
+  {
+   "OID": "5ea226a01eba911278a7b8d5",
+   "ProcessID": 564,
+   "ParentPID": 3220,
+   "CommandLine": "adb fork-server server",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685024143
+  },
+  {
+   "OID": "5ea226a51eba911278a7bde7",
+   "ProcessID": 2152,
+   "ParentPID": 2520,
+   "CommandLine": "adb  connect 127.0.0.1:5555",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685028580
+  },
+  {
+   "OID": "5ea226a61eba911278a7bf40",
+   "ProcessID": 956,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell sleep 3",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685029830
+  },
+  {
+   "OID": "5ea226a61eba911278a7bf41",
+   "ProcessID": 3200,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/files/",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685029939
+  },
+  {
+   "OID": "5ea226a61eba911278a7bf42",
+   "ProcessID": 3924,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/cache/*",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685030064
+  },
+  {
+   "OID": "5ea226a61eba911278a7c064",
+   "ProcessID": 4048,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/code_cache",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685030189
+  },
+  {
+   "OID": "5ea226a61eba911278a7c065",
+   "ProcessID": 3876,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/no_backup",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685030330
+  },
+  {
+   "OID": "5ea226a61eba911278a7c066",
+   "ProcessID": 3472,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/app_bugly/*",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685030455
+  },
+  {
+   "OID": "5ea226a61eba911278a7c067",
+   "ProcessID": 3596,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /system/bin/disable_houdini",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685030549
+  },
+  {
+   "OID": "5ea226a71eba911278a7c489",
+   "ProcessID": 3724,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /system/bin/enable_houdini",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685030643
+  },
+  {
+   "OID": "5ea226a71eba911278a7c48a",
+   "ProcessID": 3984,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /system/bin/houdini",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685030877
+  },
+  {
+   "OID": "5ea226a71eba911278a7c48b",
+   "ProcessID": 3428,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /system/libs/libldutils.so",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685030986
+  },
+  {
+   "OID": "5ea226a71eba911278a7c48c",
+   "ProcessID": 2704,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -r /data/user/0/com.tencent.ig/files/",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685031080
+  },
+  {
+   "OID": "5ea226a71eba911278a7c8aa",
+   "ProcessID": 3788,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 push C3.dll /system/lib/libhoudini_415c.so",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685031205
+  },
+  {
+   "OID": "5ea226a71eba911278a7c8ab",
+   "ProcessID": 3968,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 push C1.dll /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11801.pak",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685031299
+  },
+  {
+   "OID": "5ea226a71eba911278a7c8ac",
+   "ProcessID": 2748,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell monkey -p com.tencent.ig -c android.intent.category.LAUNCHER 1",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685031424
+  },
+  {
+   "OID": "5ea226a71eba911278a7c8ad",
+   "ProcessID": 3868,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell sleep 5",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685031564
+  },
+  {
+   "OID": "5ea226a81eba911278a7cd5a",
+   "ProcessID": 3840,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 push C2.dll /system/lib/libhoudini_415c.so",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685031674
+  },
+  {
+   "OID": "5ea226a81eba911278a7cd5b",
+   "ProcessID": 3836,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /init.vbox86.rc /init.vbox86.r0",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685031939
+  },
+  {
+   "OID": "5ea226a81eba911278a7cd5c",
+   "ProcessID": 772,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /system/lib/libhoudini_415c.so /system/lib/libhoudini_415.txt",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685032064
+  },
+  {
+   "OID": "5ea226a81eba911278a7cd5d",
+   "ProcessID": 3660,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /fstab.vbox86 /fstab.vbox8",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685032174
+  },
+  {
+   "OID": "5ea226a81eba911278a7d083",
+   "ProcessID": 572,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /ueventd.vbox86.rc /ueventd.vbox86.r0",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685032314
+  },
+  {
+   "OID": "5ea226a81eba911278a7d084",
+   "ProcessID": 1876,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /default.prop /default.prox",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685032424
+  },
+  {
+   "OID": "5ea226a81eba911278a7d085",
+   "ProcessID": 1812,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /init.rc /init.r0",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685032518
+  },
+  {
+   "OID": "5ea226a81eba911278a7d086",
+   "ProcessID": 3728,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /init.environ.rc /init.environ.r0",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685032627
+  },
+  {
+   "OID": "5ea226a91eba911278a7d52a",
+   "ProcessID": 2356,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /init.superuser.rc /init.superuser.r0",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685032736
+  },
+  {
+   "OID": "5ea226a91eba911278a7d52b",
+   "ProcessID": 1504,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /init.trace.rc /init.trace.r0",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685032846
+  },
+  {
+   "OID": "5ea226a91eba911278a7d52c",
+   "ProcessID": 1636,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /system/build.prop /system/build.File",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685032955
+  },
+  {
+   "OID": "5ea226a91eba911278a7d52d",
+   "ProcessID": 3252,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /system/lib/libcui18n_46.so /system/lib/libcui18n_46.txt",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685033080
+  },
+  {
+   "OID": "5ea226a91eba911278a7d52e",
+   "ProcessID": 3516,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /system/lib/libcuuc_46.so /system/lib/libcuuc_46.txt",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685033189
+  },
+  {
+   "OID": "5ea226a91eba911278a7da2e",
+   "ProcessID": 3540,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /system/lib/libhardware.so /system/lib/libhardware.txt",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685033330
+  },
+  {
+   "OID": "5ea226a91eba911278a7da2f",
+   "ProcessID": 3964,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /system/lib/libbcinfo.so /system/lib/libbcinfo.txt",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685033549
+  },
+  {
+   "OID": "5ea226aa1eba911278a7de72",
+   "ProcessID": 2792,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /system/lib/libandroid.so /system/lib/libandroid.txt",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685033783
+  },
+  {
+   "OID": "5ea226aa1eba911278a7de73",
+   "ProcessID": 2872,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell mv /system/lib/gralloc.vbox86.so /system/lib/gralloc.vbox86.txt",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685033924
+  },
+  {
+   "OID": "5ea226aa1eba911278a7de74",
+   "ProcessID": 1720,
+   "ParentPID": 3084,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\70b14bbb.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685033939
+  },
+  {
+   "OID": "5ea226aa1eba911278a7de76",
+   "ProcessID": 2752,
+   "ParentPID": 2872,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685034064
+  },
+  {
+   "OID": "5ea226ab1eba911278a7e41d",
+   "ProcessID": 2108,
+   "ParentPID": 2752,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\1bea6a23.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685034752
+  },
+  {
+   "OID": "5ea226ab1eba911278a7ef22",
+   "ProcessID": 2620,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell cp /data/data/com.tencent.ig/lib/libgcloud.so /data/data/CODER",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685034955
+  },
+  {
+   "OID": "5ea226ab1eba911278a7ef23",
+   "ProcessID": 872,
+   "ParentPID": 2620,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685035064
+  },
+  {
+   "OID": "5ea226ac1eba911278a80128",
+   "ProcessID": 576,
+   "ParentPID": 872,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\43650c58.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685035830
+  },
+  {
+   "OID": "5ea226ac1eba911278a8012a",
+   "ProcessID": 3980,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell cp /data/data/com.tencent.ig/lib/libtprt.so /data/data/CODER",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685036018
+  },
+  {
+   "OID": "5ea226ac1eba911278a8012b",
+   "ProcessID": 2692,
+   "ParentPID": 3980,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685036143
+  },
+  {
+   "OID": "5ea226ad1eba911278a8118c",
+   "ProcessID": 3728,
+   "ParentPID": 2692,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\2e67467b.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685037002
+  },
+  {
+   "OID": "5ea226ad1eba911278a8118e",
+   "ProcessID": 3912,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell cp /data/data/com.tencent.ig/lib/libUE4.so /data/data/CODER",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685037158
+  },
+  {
+   "OID": "5ea226ad1eba911278a8118f",
+   "ProcessID": 1488,
+   "ParentPID": 3912,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685037299
+  },
+  {
+   "OID": "5ea226ae1eba911278a81e41",
+   "ProcessID": 3836,
+   "ParentPID": 1488,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\12da5062.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685038002
+  },
+  {
+   "OID": "5ea226ae1eba911278a81e43",
+   "ProcessID": 3072,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/lib/libtprt.so",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685038111
+  },
+  {
+   "OID": "5ea226ae1eba911278a81e44",
+   "ProcessID": 1732,
+   "ParentPID": 3072,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685038189
+  },
+  {
+   "OID": "5ea226af1eba911278a82afd",
+   "ProcessID": 3648,
+   "ParentPID": 1732,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\3b433ac1.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685038971
+  },
+  {
+   "OID": "5ea226af1eba911278a82aff",
+   "ProcessID": 3376,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/lib/libUE4.so",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685039127
+  },
+  {
+   "OID": "5ea226af1eba911278a82b00",
+   "ProcessID": 2904,
+   "ParentPID": 3376,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685039236
+  },
+  {
+   "OID": "5ea226b01eba911278a83ec3",
+   "ProcessID": 1092,
+   "ParentPID": 2904,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\264474e4.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685040002
+  },
+  {
+   "OID": "5ea226b01eba911278a83ec5",
+   "ProcessID": 3152,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/lib/libgcloud.so",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685040236
+  },
+  {
+   "OID": "5ea226b01eba911278a83ec6",
+   "ProcessID": 2492,
+   "ParentPID": 3152,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685040393
+  },
+  {
+   "OID": "5ea226b11eba911278a84dee",
+   "ProcessID": 2276,
+   "ParentPID": 2492,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\0ab87ecb.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685041299
+  },
+  {
+   "OID": "5ea226b11eba911278a84df0",
+   "ProcessID": 2628,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/lib/libzip.so",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685041393
+  },
+  {
+   "OID": "5ea226b21eba911278a858ad",
+   "ProcessID": 1876,
+   "ParentPID": 2628,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685041518
+  },
+  {
+   "OID": "5ea226b21eba911278a861c1",
+   "ProcessID": 1340,
+   "ParentPID": 1876,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\6fa22cc7.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685042361
+  },
+  {
+   "OID": "5ea226b21eba911278a861c3",
+   "ProcessID": 3504,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/lib/libzlib.so",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685042471
+  },
+  {
+   "OID": "5ea226b31eba911278a86b86",
+   "ProcessID": 2248,
+   "ParentPID": 3504,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685042674
+  },
+  {
+   "OID": "5ea226b41eba911278a87ad3",
+   "ProcessID": 2796,
+   "ParentPID": 2248,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\188916c6.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685043564
+  },
+  {
+   "OID": "5ea226b41eba911278a87ad5",
+   "ProcessID": 2788,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/pri_tencent_analysis.db",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685043705
+  },
+  {
+   "OID": "5ea226b41eba911278a87ad6",
+   "ProcessID": 1232,
+   "ParentPID": 2788,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685043830
+  },
+  {
+   "OID": "5ea226b51eba911278a88c0f",
+   "ProcessID": 2716,
+   "ParentPID": 1232,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\3bd018b3.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685044596
+  },
+  {
+   "OID": "5ea226b51eba911278a88c11",
+   "ProcessID": 2900,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/tdm.db",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685044736
+  },
+  {
+   "OID": "5ea226b51eba911278a88c12",
+   "ProcessID": 2228,
+   "ParentPID": 2900,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685044877
+  },
+  {
+   "OID": "5ea226b61eba911278a89d89",
+   "ProcessID": 2312,
+   "ParentPID": 2228,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\62d516d3.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685045689
+  },
+  {
+   "OID": "5ea226b61eba911278a89d8b",
+   "ProcessID": 1352,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/tencent_analysis.db",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685045814
+  },
+  {
+   "OID": "5ea226b61eba911278a89d8c",
+   "ProcessID": 3216,
+   "ParentPID": 1352,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685045971
+  },
+  {
+   "OID": "5ea226b71eba911278a8aff3",
+   "ProcessID": 952,
+   "ParentPID": 3216,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\0b455cbd.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685046846
+  },
+  {
+   "OID": "5ea226b71eba911278a8aff5",
+   "ProcessID": 3572,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/xg_message.db",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685046955
+  },
+  {
+   "OID": "5ea226b71eba911278a8aff6",
+   "ProcessID": 3480,
+   "ParentPID": 3572,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685047080
+  },
+  {
+   "OID": "5ea226b81eba911278a8c2e4",
+   "ProcessID": 1356,
+   "ParentPID": 3480,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\711d52e3.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685047830
+  },
+  {
+   "OID": "5ea226b81eba911278a8c2e6",
+   "ProcessID": 2284,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/bugly_db_",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685047939
+  },
+  {
+   "OID": "5ea226b81eba911278a8c2e7",
+   "ProcessID": 3804,
+   "ParentPID": 2284,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685048033
+  },
+  {
+   "OID": "5ea226b91eba911278a8d6db",
+   "ProcessID": 1296,
+   "ParentPID": 3804,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\5d0c5530.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685048955
+  },
+  {
+   "OID": "5ea226b91eba911278a8d6dd",
+   "ProcessID": 1548,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/config.db",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685049221
+  },
+  {
+   "OID": "5ea226b91eba911278a8ddf4",
+   "ProcessID": 376,
+   "ParentPID": 1548,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685049393
+  },
+  {
+   "OID": "5ea226ba1eba911278a8e41e",
+   "ProcessID": 3500,
+   "ParentPID": 376,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\7ba712c0.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685050143
+  },
+  {
+   "OID": "5ea226ba1eba911278a8e420",
+   "ProcessID": 1744,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/iMSDK.db",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685050236
+  },
+  {
+   "OID": "5ea226bb1eba911278a8ed38",
+   "ProcessID": 1916,
+   "ParentPID": 1744,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685050393
+  },
+  {
+   "OID": "5ea226bb1eba911278a8f500",
+   "ProcessID": 3032,
+   "ParentPID": 1916,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\66a94ce3.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685051283
+  },
+  {
+   "OID": "5ea226bc1eba911278a8fd64",
+   "ProcessID": 536,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/__hs__db_issues",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685051424
+  },
+  {
+   "OID": "5ea226bc1eba911278a8fd65",
+   "ProcessID": 3300,
+   "ParentPID": 536,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685051596
+  },
+  {
+   "OID": "5ea226bd1eba911278a90715",
+   "ProcessID": 2956,
+   "ParentPID": 3300,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\09f04ed0.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685052502
+  },
+  {
+   "OID": "5ea226bd1eba911278a90717",
+   "ProcessID": 628,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/__hs__db_key_values",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685052611
+  },
+  {
+   "OID": "5ea226bd1eba911278a90718",
+   "ProcessID": 3996,
+   "ParentPID": 628,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685052689
+  },
+  {
+   "OID": "5ea226be1eba911278a9151b",
+   "ProcessID": 3588,
+   "ParentPID": 3996,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\334e5ce4.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685053439
+  },
+  {
+   "OID": "5ea226be1eba911278a9151d",
+   "ProcessID": 1252,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/__hs__db_properties",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685053721
+  },
+  {
+   "OID": "5ea226be1eba911278a9151e",
+   "ProcessID": 2552,
+   "ParentPID": 1252,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685053877
+  },
+  {
+   "OID": "5ea226bf1eba911278a92333",
+   "ProcessID": 2408,
+   "ParentPID": 2552,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\55a716a7.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685054736
+  },
+  {
+   "OID": "5ea226bf1eba911278a92335",
+   "ProcessID": 340,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/__hs__db_sessions",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685054830
+  },
+  {
+   "OID": "5ea226bf1eba911278a92dfd",
+   "ProcessID": 316,
+   "ParentPID": 340,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685055033
+  },
+  {
+   "OID": "5ea226c01eba911278a934c5",
+   "ProcessID": 3972,
+   "ParentPID": 316,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\7bbe4c9d.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685055846
+  },
+  {
+   "OID": "5ea226c01eba911278a934c7",
+   "ProcessID": 2760,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/__hs__db_support_key_values",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685055955
+  },
+  {
+   "OID": "5ea226c01eba911278a93e3d",
+   "ProcessID": 3036,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/__hs_log_store",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685056236
+  },
+  {
+   "OID": "5ea226c01eba911278a93e3e",
+   "ProcessID": 2856,
+   "ParentPID": 3036,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685056299
+  },
+  {
+   "OID": "5ea226c11eba911278a94766",
+   "ProcessID": 2096,
+   "ParentPID": 2856,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\5fbb326f.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685057143
+  },
+  {
+   "OID": "5ea226c11eba911278a94768",
+   "ProcessID": 1756,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/__hs_db_helpshift_users",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685057221
+  },
+  {
+   "OID": "5ea226c11eba911278a94769",
+   "ProcessID": 2880,
+   "ParentPID": 1756,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685057299
+  },
+  {
+   "OID": "5ea226c21eba911278a95661",
+   "ProcessID": 256,
+   "ParentPID": 2880,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\09906498.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685058018
+  },
+  {
+   "OID": "5ea226c21eba911278a95663",
+   "ProcessID": 2892,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/databases/beacon_db",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685058189
+  },
+  {
+   "OID": "5ea226c21eba911278a95664",
+   "ProcessID": 2708,
+   "ParentPID": 2892,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685058314
+  },
+  {
+   "OID": "5ea226c31eba911278a95ecd",
+   "ProcessID": 3064,
+   "ParentPID": 2708,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\72380ec7.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685059018
+  },
+  {
+   "OID": "5ea226c31eba911278a9611a",
+   "ProcessID": 2516,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/shared_prefs/admob.xml",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685059189
+  },
+  {
+   "OID": "5ea226c31eba911278a9611b",
+   "ProcessID": 3972,
+   "ParentPID": 2516,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685059299
+  },
+  {
+   "OID": "5ea226c41eba911278a96689",
+   "ProcessID": 1448,
+   "ParentPID": 3972,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\5b565d0b.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685059877
+  },
+  {
+   "OID": "5ea226c41eba911278a9668b",
+   "ProcessID": 2156,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/shared_prefs/beacon_cover.xml",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685059986
+  },
+  {
+   "OID": "5ea226c41eba911278a9697b",
+   "ProcessID": 2540,
+   "ParentPID": 2156,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685060127
+  },
+  {
+   "OID": "5ea226c51eba911278a9778f",
+   "ProcessID": 4052,
+   "ParentPID": 2540,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\45637379.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685061127
+  },
+  {
+   "OID": "5ea226c51eba911278a97791",
+   "ProcessID": 3556,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/shared_prefs/com.google.android.gms.measurement.prefs.xml",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685061330
+  },
+  {
+   "OID": "5ea226c51eba911278a97792",
+   "ProcessID": 2940,
+   "ParentPID": 3556,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685061455
+  },
+  {
+   "OID": "5ea226c61eba911278a98681",
+   "ProcessID": 2676,
+   "ParentPID": 2940,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\67450927.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685062330
+  },
+  {
+   "OID": "5ea226c61eba911278a98683",
+   "ProcessID": 3932,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/shared_prefs/com.tencent.ig_preferences.xml",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685062611
+  },
+  {
+   "OID": "5ea226c71eba911278a99122",
+   "ProcessID": 1684,
+   "ParentPID": 3932,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685062752
+  },
+  {
+   "OID": "5ea226c81eba911278a99978",
+   "ProcessID": 2804,
+   "ParentPID": 1684,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\0b812ec9.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685063564
+  },
+  {
+   "OID": "5ea226c81eba911278a9997a",
+   "ProcessID": 3764,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/shared_prefs/DENGTA_META.xml",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685063689
+  },
+  {
+   "OID": "5ea226c81eba911278a9a477",
+   "ProcessID": 332,
+   "ParentPID": 3764,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685063861
+  },
+  {
+   "OID": "5ea226c91eba911278a9ab83",
+   "ProcessID": 1024,
+   "ParentPID": 332,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\2f3f54cb.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685064674
+  },
+  {
+   "OID": "5ea226c91eba911278a9b5ee",
+   "ProcessID": 3792,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/shared_prefs/gsdk_prefs.xml",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685064814
+  },
+  {
+   "OID": "5ea226c91eba911278a9b5ef",
+   "ProcessID": 2736,
+   "ParentPID": 3792,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685064971
+  },
+  {
+   "OID": "5ea226ca1eba911278a9c4e8",
+   "ProcessID": 2932,
+   "ParentPID": 2736,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\55560ac1.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685065908
+  },
+  {
+   "OID": "5ea226ca1eba911278a9c4ea",
+   "ProcessID": 3008,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/data/com.tencent.ig/shared_prefs/HSJsonData.xml",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685066018
+  },
+  {
+   "OID": "5ea226ca1eba911278a9c4eb",
+   "ProcessID": 2688,
+   "ParentPID": 3008,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685066143
+  },
+  {
+   "OID": "5ea226cb1eba911278a9d36a",
+   "ProcessID": 3736,
+   "ParentPID": 2688,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\7eb418d5.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685067174
+  },
+  {
+   "OID": "5ea226cb1eba911278a9d36c",
+   "ProcessID": 2668,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/files/iMSDK",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685067252
+  },
+  {
+   "OID": "5ea226cc1eba911278a9da8a",
+   "ProcessID": 256,
+   "ParentPID": 2668,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685067361
+  },
+  {
+   "OID": "5ea226cc1eba911278a9e3e2",
+   "ProcessID": 1172,
+   "ParentPID": 256,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\623a5a92.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685068096
+  },
+  {
+   "OID": "5ea226cc1eba911278a9e3e4",
+   "ProcessID": 3616,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/files/ss_tmp",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685068205
+  },
+  {
+   "OID": "5ea226cc1eba911278a9e3e5",
+   "ProcessID": 2076,
+   "ParentPID": 3616,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685068314
+  },
+  {
+   "OID": "5ea226cd1eba911278a9f7d5",
+   "ProcessID": 3020,
+   "ParentPID": 2076,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\0cfc54e5.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685069236
+  },
+  {
+   "OID": "5ea226cd1eba911278a9f7d7",
+   "ProcessID": 3192,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/files/tss_tmp",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685069346
+  },
+  {
+   "OID": "5ea226ce1eba911278a9ff1c",
+   "ProcessID": 2316,
+   "ParentPID": 3192,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685069518
+  },
+  {
+   "OID": "5ea226ce1eba911278aa06bf",
+   "ProcessID": 1516,
+   "ParentPID": 2316,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\2fcc32bd.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685070314
+  },
+  {
+   "OID": "5ea226cf1eba911278aa10fc",
+   "ProcessID": 3888,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/cache",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685070439
+  },
+  {
+   "OID": "5ea226cf1eba911278aa10fd",
+   "ProcessID": 1716,
+   "ParentPID": 3888,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685070674
+  },
+  {
+   "OID": "5ea226d01eba911278aa219a",
+   "ProcessID": 3788,
+   "ParentPID": 1716,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\55e368b3.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685071518
+  },
+  {
+   "OID": "5ea226d01eba911278aa219c",
+   "ProcessID": 620,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/tbslog",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685071674
+  },
+  {
+   "OID": "5ea226d01eba911278aa219d",
+   "ProcessID": 3448,
+   "ParentPID": 620,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685071799
+  },
+  {
+   "OID": "5ea226d11eba911278aa347b",
+   "ProcessID": 1812,
+   "ParentPID": 3448,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\3acd16af.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685072549
+  },
+  {
+   "OID": "5ea226d11eba911278aa347d",
+   "ProcessID": 3452,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685072736
+  },
+  {
+   "OID": "5ea226d11eba911278aa347e",
+   "ProcessID": 2244,
+   "ParentPID": 3452,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685072893
+  },
+  {
+   "OID": "5ea226d21eba911278aa47a0",
+   "ProcessID": 2636,
+   "ParentPID": 2244,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\642b24c3.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685073611
+  },
+  {
+   "OID": "5ea226d21eba911278aa47a2",
+   "ProcessID": 2496,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685073783
+  },
+  {
+   "OID": "5ea226d21eba911278aa47a3",
+   "ProcessID": 3420,
+   "ParentPID": 2496,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685073939
+  },
+  {
+   "OID": "5ea226d31eba911278aa5975",
+   "ProcessID": 3800,
+   "ParentPID": 3420,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\4c5d2add.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685074705
+  },
+  {
+   "OID": "5ea226d31eba911278aa5977",
+   "ProcessID": 2064,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685074861
+  },
+  {
+   "OID": "5ea226d31eba911278aa5978",
+   "ProcessID": 2528,
+   "ParentPID": 2064,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685075033
+  },
+  {
+   "OID": "5ea226d41eba911278aa6b08",
+   "ProcessID": 3532,
+   "ParentPID": 2528,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\34170ce2.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685075799
+  },
+  {
+   "OID": "5ea226d41eba911278aa6b0a",
+   "ProcessID": 3576,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685076033
+  },
+  {
+   "OID": "5ea226d41eba911278aa73a2",
+   "ProcessID": 3784,
+   "ParentPID": 3576,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685076221
+  },
+  {
+   "OID": "5ea226d51eba911278aa7b52",
+   "ProcessID": 2124,
+   "ParentPID": 3784,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\56e76aba.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685077002
+  },
+  {
+   "OID": "5ea226d51eba911278aa7b54",
+   "ProcessID": 3252,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685077080
+  },
+  {
+   "OID": "5ea226d51eba911278aa864c",
+   "ProcessID": 3988,
+   "ParentPID": 3252,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685077283
+  },
+  {
+   "OID": "5ea226d61eba911278aa8e2a",
+   "ProcessID": 3540,
+   "ParentPID": 3988,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\3f1870d4.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685078064
+  },
+  {
+   "OID": "5ea226d61eba911278aa8e2c",
+   "ProcessID": 1828,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/RoleInfo.json",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685078174
+  },
+  {
+   "OID": "5ea226d71eba911278aa9712",
+   "ProcessID": 1912,
+   "ParentPID": 1828,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685078299
+  },
+  {
+   "OID": "5ea226d71eba911278aa9eee",
+   "ProcessID": 2460,
+   "ParentPID": 1912,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\274a76ee.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685079080
+  },
+  {
+   "OID": "5ea226d71eba911278aa9ef0",
+   "ProcessID": 3724,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685079174
+  },
+  {
+   "OID": "5ea226d81eba911278aaaa06",
+   "ProcessID": 956,
+   "ParentPID": 3724,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685079330
+  },
+  {
+   "OID": "5ea226d81eba911278aaafb7",
+   "ProcessID": 2360,
+   "ParentPID": 956,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\0ff2211d.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685080049
+  },
+  {
+   "OID": "5ea226d81eba911278aaafb9",
+   "ProcessID": 2972,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685080127
+  },
+  {
+   "OID": "5ea226d81eba911278aaafba",
+   "ProcessID": 792,
+   "ParentPID": 2972,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685080221
+  },
+  {
+   "OID": "5ea226d91eba911278aabb52",
+   "ProcessID": 3716,
+   "ParentPID": 792,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\3ba1639a.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685081018
+  },
+  {
+   "OID": "5ea226d91eba911278aabb54",
+   "ProcessID": 1400,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685081111
+  },
+  {
+   "OID": "5ea226d91eba911278aabb55",
+   "ProcessID": 3828,
+   "ParentPID": 1400,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685081236
+  },
+  {
+   "OID": "5ea226da1eba911278aacf17",
+   "ProcessID": 2908,
+   "ParentPID": 3828,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\657615c3.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685082064
+  },
+  {
+   "OID": "5ea226da1eba911278aacf19",
+   "ProcessID": 2712,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685082189
+  },
+  {
+   "OID": "5ea226da1eba911278aacf1a",
+   "ProcessID": 3516,
+   "ParentPID": 2712,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685082299
+  },
+  {
+   "OID": "5ea226db1eba911278aae23f",
+   "ProcessID": 3368,
+   "ParentPID": 3516,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\09aa5fda.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685083127
+  },
+  {
+   "OID": "5ea226db1eba911278aae241",
+   "ProcessID": 1084,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /mnt/shell/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685083205
+  },
+  {
+   "OID": "5ea226db1eba911278aae242",
+   "ProcessID": 3276,
+   "ParentPID": 1084,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685083330
+  },
+  {
+   "OID": "5ea226dc1eba911278aaf57b",
+   "ProcessID": 3964,
+   "ParentPID": 3276,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\75223e12.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685084158
+  },
+  {
+   "OID": "5ea226dc1eba911278aaf57d",
+   "ProcessID": 2348,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/app_crashrecord",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685084252
+  },
+  {
+   "OID": "5ea226dc1eba911278aaf57e",
+   "ProcessID": 2460,
+   "ParentPID": 2348,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685084393
+  },
+  {
+   "OID": "5ea226dd1eba911278ab084f",
+   "ProcessID": 3160,
+   "ParentPID": 2460,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\5a831023.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685085205
+  },
+  {
+   "OID": "5ea226dd1eba911278ab0851",
+   "ProcessID": 2840,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/files/AppEventsLogger.persistedevents",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685085314
+  },
+  {
+   "OID": "5ea226de1eba911278ab1356",
+   "ProcessID": 1016,
+   "ParentPID": 2840,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685085471
+  },
+  {
+   "OID": "5ea226de1eba911278ab1bf3",
+   "ProcessID": 2308,
+   "ParentPID": 1016,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\03e11e37.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685086252
+  },
+  {
+   "OID": "5ea226de1eba911278ab1bf5",
+   "ProcessID": 4064,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/files/tpnlcache.data",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685086424
+  },
+  {
+   "OID": "5ea226df1eba911278ab2529",
+   "ProcessID": 3740,
+   "ParentPID": 4064,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685086549
+  },
+  {
+   "OID": "5ea226df1eba911278ab2a04",
+   "ProcessID": 2308,
+   "ParentPID": 3740,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\68cc4c33.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685087299
+  },
+  {
+   "OID": "5ea226df1eba911278ab2a06",
+   "ProcessID": 1688,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/google_app_measurement_local.db-journal",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685087408
+  },
+  {
+   "OID": "5ea226e01eba911278ab2c81",
+   "ProcessID": 3712,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/pri_tencent_analysis.db-journal",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685087674
+  },
+  {
+   "OID": "5ea226e01eba911278ab2c82",
+   "ProcessID": 3056,
+   "ParentPID": 3712,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685087768
+  },
+  {
+   "OID": "5ea226e01eba911278ab3135",
+   "ProcessID": 3924,
+   "ParentPID": 3056,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\4d3f561a.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685088408
+  },
+  {
+   "OID": "5ea226e01eba911278ab3137",
+   "ProcessID": 2420,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/tencent_analysis.db-journal",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685088518
+  },
+  {
+   "OID": "5ea226e11eba911278ab3323",
+   "ProcessID": 3868,
+   "ParentPID": 2420,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685088674
+  },
+  {
+   "OID": "5ea226e21eba911278ab3b14",
+   "ProcessID": 2532,
+   "ParentPID": 3868,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\3c753085.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685089361
+  },
+  {
+   "OID": "5ea226e21eba911278ab3b16",
+   "ProcessID": 3108,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/xg_message.db-journal",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685089455
+  },
+  {
+   "OID": "5ea226e21eba911278ab45e7",
+   "ProcessID": 2120,
+   "ParentPID": 3108,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685089564
+  },
+  {
+   "OID": "5ea226e31eba911278ab4d78",
+   "ProcessID": 580,
+   "ParentPID": 2120,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\233a6ed5.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685090346
+  },
+  {
+   "OID": "5ea226e31eba911278ab4d7a",
+   "ProcessID": 3032,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/google_app_measurement_local.db",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685090424
+  },
+  {
+   "OID": "5ea226e31eba911278ab4d7b",
+   "ProcessID": 1908,
+   "ParentPID": 3032,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685090564
+  },
+  {
+   "OID": "5ea226e41eba911278ab6052",
+   "ProcessID": 3456,
+   "ParentPID": 1908,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\0f297122.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685091393
+  },
+  {
+   "OID": "5ea226e41eba911278ab6054",
+   "ProcessID": 3244,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/pri_tencent_analysis.db",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685091486
+  },
+  {
+   "OID": "5ea226e41eba911278ab6055",
+   "ProcessID": 2464,
+   "ParentPID": 3244,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685091596
+  },
+  {
+   "OID": "5ea226e51eba911278ab735e",
+   "ProcessID": 3636,
+   "ParentPID": 2464,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\77d11b51.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685092471
+  },
+  {
+   "OID": "5ea226e51eba911278ab7360",
+   "ProcessID": 884,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues-journal",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685092564
+  },
+  {
+   "OID": "5ea226e51eba911278ab7d04",
+   "ProcessID": 2400,
+   "ParentPID": 884,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685092689
+  },
+  {
+   "OID": "5ea226e61eba911278ab8602",
+   "ProcessID": 2704,
+   "ParentPID": 2400,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\5c452538.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685093486
+  },
+  {
+   "OID": "5ea226e61eba911278ab8604",
+   "ProcessID": 272,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values-journal",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685093580
+  },
+  {
+   "OID": "5ea226e61eba911278ab8605",
+   "ProcessID": 4000,
+   "ParentPID": 272,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685093689
+  },
+  {
+   "OID": "5ea226e71eba911278ab99d5",
+   "ProcessID": 2580,
+   "ParentPID": 4000,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\48342785.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685094533
+  },
+  {
+   "OID": "5ea226e71eba911278ab99d7",
+   "ProcessID": 780,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/files/tss_app_915c.dat",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685094627
+  },
+  {
+   "OID": "5ea226e71eba911278aba37c",
+   "ProcessID": 3048,
+   "ParentPID": 780,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685094768
+  },
+  {
+   "OID": "5ea226e81eba911278abac2e",
+   "ProcessID": 3920,
+   "ParentPID": 3048,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\2d1e5581.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685095611
+  },
+  {
+   "OID": "5ea226e91eba911278abb587",
+   "ProcessID": 3620,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/files/tss_cs_stat2.dat",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685095783
+  },
+  {
+   "OID": "5ea226e91eba911278abb588",
+   "ProcessID": 3096,
+   "ParentPID": 3620,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685095986
+  },
+  {
+   "OID": "5ea226e91eba911278abbc93",
+   "ProcessID": 3280,
+   "ParentPID": 3096,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\11925f68.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685096768
+  },
+  {
+   "OID": "5ea226e91eba911278abc546",
+   "ProcessID": 3812,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/files/tss.i.m.dat",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685096939
+  },
+  {
+   "OID": "5ea226e91eba911278abc547",
+   "ProcessID": 3360,
+   "ParentPID": 3812,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685097080
+  },
+  {
+   "OID": "5ea226ea1eba911278abd39c",
+   "ProcessID": 2456,
+   "ParentPID": 3360,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\3af06d7c.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685097846
+  },
+  {
+   "OID": "5ea226ea1eba911278abd39e",
+   "ProcessID": 3016,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions-journal",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685098018
+  },
+  {
+   "OID": "5ea226ea1eba911278abd39f",
+   "ProcessID": 4004,
+   "ParentPID": 3016,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685098158
+  },
+  {
+   "OID": "5ea226ec1eba911278abe513",
+   "ProcessID": 3780,
+   "ParentPID": 4004,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\617d4787.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685098861
+  },
+  {
+   "OID": "5ea226ec1eba911278abe515",
+   "ProcessID": 2876,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values-journal",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685099049
+  },
+  {
+   "OID": "5ea226ec1eba911278abe516",
+   "ProcessID": 308,
+   "ParentPID": 2876,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685099174
+  },
+  {
+   "OID": "5ea226ec1eba911278abf6f7",
+   "ProcessID": 3444,
+   "ParentPID": 308,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\0b5279b0.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685099971
+  },
+  {
+   "OID": "5ea226ec1eba911278abf6f9",
+   "ProcessID": 4040,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/bugly_db_-journal",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685100111
+  },
+  {
+   "OID": "5ea226ec1eba911278abf6fa",
+   "ProcessID": 3680,
+   "ParentPID": 4040,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685100299
+  },
+  {
+   "OID": "5ea226ed1eba911278ac0883",
+   "ProcessID": 2976,
+   "ParentPID": 3680,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\70b34bc1.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685101064
+  },
+  {
+   "OID": "5ea226ed1eba911278ac0885",
+   "ProcessID": 1632,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell rm -rf /data/data/com.tencent.ig/databases/__hs_log_store-journal",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685101189
+  },
+  {
+   "OID": "5ea226ed1eba911278ac0886",
+   "ProcessID": 3196,
+   "ParentPID": 1632,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685101361
+  },
+  {
+   "OID": "5ea226ef1eba911278ac1ada",
+   "ProcessID": 3408,
+   "ParentPID": 3196,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\174125cc.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685102127
+  },
+  {
+   "OID": "5ea226ef1eba911278ac1adc",
+   "ProcessID": 3336,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 644 /data/data/com.tencent.ig/files",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685102205
+  },
+  {
+   "OID": "5ea226ef1eba911278ac1add",
+   "ProcessID": 404,
+   "ParentPID": 3336,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685102377
+  },
+  {
+   "OID": "5ea226f01eba911278ac2efc",
+   "ProcessID": 3288,
+   "ParentPID": 404,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\7fe94ffb.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685103127
+  },
+  {
+   "OID": "5ea226f01eba911278ac2efe",
+   "ProcessID": 3864,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 111 /data/data/com.tencent.ig/app_bugly",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685103252
+  },
+  {
+   "OID": "5ea226f01eba911278ac2eff",
+   "ProcessID": 4044,
+   "ParentPID": 3864,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685103518
+  },
+  {
+   "OID": "5ea226f11eba911278ac3be1",
+   "ProcessID": 3324,
+   "ParentPID": 4044,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\672d0deb.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685104221
+  },
+  {
+   "OID": "5ea226f11eba911278ac3be3",
+   "ProcessID": 2812,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 644 /data/data/com.tencent.ig/cache",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685104299
+  },
+  {
+   "OID": "5ea226f11eba911278ac3be4",
+   "ProcessID": 2052,
+   "ParentPID": 2812,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685104393
+  },
+  {
+   "OID": "5ea226f21eba911278ac489f",
+   "ProcessID": 3820,
+   "ParentPID": 2052,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\12dc5068.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685105174
+  },
+  {
+   "OID": "5ea226f21eba911278ac48a1",
+   "ProcessID": 3824,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 444 /data/data/com.tencent.ig/files/iMSDK",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685105283
+  },
+  {
+   "OID": "5ea226f21eba911278ac48a2",
+   "ProcessID": 1832,
+   "ParentPID": 3824,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685105424
+  },
+  {
+   "OID": "5ea226f31eba911278ac5b5e",
+   "ProcessID": 912,
+   "ParentPID": 1832,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\39e14e88.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685106205
+  },
+  {
+   "OID": "5ea226f31eba911278ac5b60",
+   "ProcessID": 2660,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/app-lib/com.tencent.ig-1/libtprt.so",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685106330
+  },
+  {
+   "OID": "5ea226f31eba911278ac5b61",
+   "ProcessID": 740,
+   "ParentPID": 2660,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685106455
+  },
+  {
+   "OID": "5ea226f41eba911278ac6ed4",
+   "ProcessID": 1940,
+   "ParentPID": 740,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\228978b7.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685107236
+  },
+  {
+   "OID": "5ea226f41eba911278ac6ed6",
+   "ProcessID": 4068,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/app-lib/com.tencent.ig-1/libUE4.so",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685107361
+  },
+  {
+   "OID": "5ea226f41eba911278ac6ed7",
+   "ProcessID": 1504,
+   "ParentPID": 4068,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lqWJNn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685107486
+  },
+  {
+   "OID": "5ea226f51eba911278ac8221",
+   "ProcessID": 3068,
+   "ParentPID": 1504,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\0b3122e6.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685108299
+  },
+  {
+   "OID": "5ea226f51eba911278ac8223",
+   "ProcessID": 1028,
+   "ParentPID": 2520,
+   "CommandLine": "adb  -s 127.0.0.1:5555 shell chmod -R 000 /data/app-lib/com.tencent.ig-1/libgcloud.so",
+   "Image": "C:\\Program Files\\Internet Explorer\\adb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587685108564
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ea226f41eba911278ac6ed7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f41eba911278ac6ed6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226f41eba911278ac6ed6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f31eba911278ac5b61",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226f31eba911278ac5b60",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f31eba911278ac5b61",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f31eba911278ac5b60",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226f31eba911278ac5b60",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f21eba911278ac48a2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226f21eba911278ac48a1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f21eba911278ac48a2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f21eba911278ac48a1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226f21eba911278ac48a1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f11eba911278ac3be4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226f11eba911278ac3be4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f11eba911278ac3be3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f11eba911278ac3be3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226f11eba911278ac3be3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f01eba911278ac2eff",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226f01eba911278ac2efe",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f01eba911278ac2eff",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226f01eba911278ac2efe",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226f01eba911278ac2efe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ef1eba911278ac1add",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ef1eba911278ac1adc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ef1eba911278ac1add",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ef1eba911278ac1adc",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ef1eba911278ac1adc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ed1eba911278ac0886",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ed1eba911278ac0885",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ed1eba911278ac0886",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ed1eba911278ac0885",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ed1eba911278ac0885",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ec1eba911278abf6fa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ec1eba911278abf6f9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ec1eba911278abf6fa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ec1eba911278abf6f9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ec1eba911278abf6f9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ec1eba911278abe516",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ec1eba911278abe515",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ec1eba911278abe516",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ec1eba911278abe515",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ec1eba911278abe515",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ea1eba911278abd39f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ea1eba911278abd39f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ea1eba911278abd39e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ea1eba911278abd39e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ea1eba911278abd39e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e91eba911278abc547",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e91eba911278abc546",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e91eba911278abc547",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e91eba911278abc546",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e91eba911278abc546",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e91eba911278abb588",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e91eba911278abb588",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e91eba911278abb587",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e91eba911278abb587",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e91eba911278abb587",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e71eba911278aba37c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e71eba911278ab99d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e71eba911278aba37c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e71eba911278ab99d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e71eba911278ab99d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e61eba911278ab8605",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e61eba911278ab8604",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e61eba911278ab8605",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e61eba911278ab8604",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e61eba911278ab8604",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e51eba911278ab7d04",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e51eba911278ab7360",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e51eba911278ab7d04",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e51eba911278ab7360",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e51eba911278ab7360",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e41eba911278ab6055",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e41eba911278ab6054",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e41eba911278ab6055",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e41eba911278ab6054",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e41eba911278ab6054",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e31eba911278ab4d7b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e31eba911278ab4d7a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e31eba911278ab4d7b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e31eba911278ab4d7a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e31eba911278ab4d7a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e21eba911278ab45e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e21eba911278ab3b16",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e21eba911278ab45e7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e21eba911278ab3b16",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e21eba911278ab3b16",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e11eba911278ab3323",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e11eba911278ab3323",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e01eba911278ab3137",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e01eba911278ab3137",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e01eba911278ab3137",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e01eba911278ab2c82",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e01eba911278ab2c81",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e01eba911278ab2c82",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226e01eba911278ab2c81",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226e01eba911278ab2c81",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226df1eba911278ab2a06",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226df1eba911278ab2a06",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226df1eba911278ab2529",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226de1eba911278ab1bf5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226df1eba911278ab2529",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226de1eba911278ab1bf5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226de1eba911278ab1bf5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226de1eba911278ab1356",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226de1eba911278ab1356",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226dd1eba911278ab0851",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226dd1eba911278ab0851",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226dd1eba911278ab0851",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226dc1eba911278aaf57e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226dc1eba911278aaf57e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226dc1eba911278aaf57d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226dc1eba911278aaf57d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226dc1eba911278aaf57d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226db1eba911278aae242",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226db1eba911278aae241",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226db1eba911278aae242",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226db1eba911278aae241",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226db1eba911278aae241",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226da1eba911278aacf1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226da1eba911278aacf19",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226da1eba911278aacf1a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226da1eba911278aacf19",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226da1eba911278aacf19",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d91eba911278aabb55",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d91eba911278aabb54",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d91eba911278aabb55",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d91eba911278aabb54",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d91eba911278aabb54",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d81eba911278aaafba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d81eba911278aaafb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d81eba911278aaafba",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d81eba911278aaafb9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d81eba911278aaafb9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d81eba911278aaaa06",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d81eba911278aaaa06",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d71eba911278aa9ef0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d71eba911278aa9ef0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d71eba911278aa9ef0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d71eba911278aa9712",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d61eba911278aa8e2c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d71eba911278aa9712",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d61eba911278aa8e2c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d61eba911278aa8e2c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d51eba911278aa864c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d51eba911278aa864c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d51eba911278aa7b54",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d51eba911278aa7b54",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d51eba911278aa7b54",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d41eba911278aa73a2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d41eba911278aa6b0a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d41eba911278aa73a2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d41eba911278aa6b0a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d41eba911278aa6b0a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d31eba911278aa5978",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d31eba911278aa5977",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d31eba911278aa5978",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d31eba911278aa5977",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d31eba911278aa5977",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d21eba911278aa47a3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d21eba911278aa47a2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d21eba911278aa47a3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d21eba911278aa47a2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d21eba911278aa47a2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d11eba911278aa347e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d11eba911278aa347d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d11eba911278aa347e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d11eba911278aa347d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d11eba911278aa347d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d01eba911278aa219d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d01eba911278aa219c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d01eba911278aa219d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226d01eba911278aa219c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226d01eba911278aa219c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226cf1eba911278aa10fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226cf1eba911278aa10fc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226cf1eba911278aa10fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226cf1eba911278aa10fc",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226cf1eba911278aa10fc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ce1eba911278a9ff1c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226cd1eba911278a9f7d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ce1eba911278a9ff1c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226cd1eba911278a9f7d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226cd1eba911278a9f7d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226cc1eba911278a9e3e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226cc1eba911278a9e3e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226cc1eba911278a9e3e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226cc1eba911278a9e3e4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226cc1eba911278a9e3e4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226cc1eba911278a9da8a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226cb1eba911278a9d36c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226cc1eba911278a9da8a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226cb1eba911278a9d36c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226cb1eba911278a9d36c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ca1eba911278a9c4eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ca1eba911278a9c4ea",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ca1eba911278a9c4eb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ca1eba911278a9c4ea",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ca1eba911278a9c4ea",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c91eba911278a9b5ef",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c91eba911278a9b5ee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c91eba911278a9b5ef",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c91eba911278a9b5ee",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c91eba911278a9b5ee",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c81eba911278a9a477",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c81eba911278a9997a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c81eba911278a9a477",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c81eba911278a9997a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c81eba911278a9997a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c71eba911278a99122",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c61eba911278a98683",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c71eba911278a99122",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c61eba911278a98683",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c61eba911278a98683",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c51eba911278a97792",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c51eba911278a97791",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c51eba911278a97792",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c51eba911278a97791",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c51eba911278a97791",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c41eba911278a9697b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c41eba911278a9668b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c41eba911278a9697b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c41eba911278a9668b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c41eba911278a9668b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c31eba911278a9611b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c31eba911278a9611a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c31eba911278a9611b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c31eba911278a9611a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c31eba911278a9611a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c21eba911278a95664",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c21eba911278a95663",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c21eba911278a95664",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c21eba911278a95663",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c21eba911278a95663",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c11eba911278a94769",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c11eba911278a94768",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c11eba911278a94769",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c11eba911278a94768",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c11eba911278a94768",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c01eba911278a93e3e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c01eba911278a93e3d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c01eba911278a93e3e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c01eba911278a93e3d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c01eba911278a93e3d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c01eba911278a934c7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226c01eba911278a934c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226c01eba911278a934c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226bf1eba911278a92dfd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226bf1eba911278a92335",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226bf1eba911278a92dfd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226bf1eba911278a92335",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226bf1eba911278a92335",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226be1eba911278a9151e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226be1eba911278a9151d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226be1eba911278a9151e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226be1eba911278a9151d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226be1eba911278a9151d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226bd1eba911278a90718",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226bd1eba911278a90717",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226bd1eba911278a90718",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226bd1eba911278a90717",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226bd1eba911278a90717",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226bc1eba911278a8fd65",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226bc1eba911278a8fd64",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226bc1eba911278a8fd65",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226bc1eba911278a8fd64",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226bc1eba911278a8fd64",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226bb1eba911278a8ed38",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ba1eba911278a8e420",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226bb1eba911278a8ed38",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ba1eba911278a8e420",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ba1eba911278a8e420",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b91eba911278a8ddf4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b91eba911278a8d6dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b91eba911278a8ddf4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b91eba911278a8d6dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b91eba911278a8d6dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b81eba911278a8c2e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b81eba911278a8c2e6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b81eba911278a8c2e7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b81eba911278a8c2e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b81eba911278a8c2e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b71eba911278a8aff6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b71eba911278a8aff5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b71eba911278a8aff6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b71eba911278a8aff5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b71eba911278a8aff5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b61eba911278a89d8c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b61eba911278a89d8b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b61eba911278a89d8c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b61eba911278a89d8b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b61eba911278a89d8b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b51eba911278a88c12",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b51eba911278a88c11",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b51eba911278a88c12",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b51eba911278a88c11",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b51eba911278a88c11",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b41eba911278a87ad6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b41eba911278a87ad6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b41eba911278a87ad5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b41eba911278a87ad5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b41eba911278a87ad5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b31eba911278a86b86",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b31eba911278a86b86",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b21eba911278a861c3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b21eba911278a861c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b21eba911278a861c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b21eba911278a858ad",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b11eba911278a84df0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b11eba911278a84df0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b11eba911278a84df0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b01eba911278a83ec6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b01eba911278a83ec5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b01eba911278a83ec6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226b01eba911278a83ec5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226b01eba911278a83ec5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226af1eba911278a82b00",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226af1eba911278a82aff",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226af1eba911278a82b00",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226af1eba911278a82aff",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226af1eba911278a82aff",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ae1eba911278a81e44",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ae1eba911278a81e43",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ae1eba911278a81e44",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ae1eba911278a81e43",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ae1eba911278a81e43",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ad1eba911278a8118f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ad1eba911278a8118f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ad1eba911278a8118e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ad1eba911278a8118e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ad1eba911278a8118e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ac1eba911278a8012b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ac1eba911278a8012a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ac1eba911278a8012b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ac1eba911278a8012a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ac1eba911278a8012a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ab1eba911278a7ef23",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ab1eba911278a7ef22",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ab1eba911278a7ef23",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226ab1eba911278a7ef22",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226ab1eba911278a7ef22",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226aa1eba911278a7de76",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226aa1eba911278a7de76",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226aa1eba911278a7de73",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226aa1eba911278a7de73",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea2269d1eba911278a77f75",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226aa1eba911278a7de73",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226aa1eba911278a7de72",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226aa1eba911278a7de72",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7da2f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7da2f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7da2e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7da2e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7d52e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7d52e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7d52d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7d52d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7d52c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7d52c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7d52b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7d52b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7d52a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a91eba911278a7d52a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7d086",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7d086",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7d085",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7d085",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7d084",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7d084",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7d083",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7d083",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7cd5d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7cd5d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7cd5c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7cd5c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7cd5b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7cd5b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7cd5a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a81eba911278a7cd5a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c8ad",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c8ad",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c8ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c8ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c8ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c8ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c8aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c8aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c48c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c48c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c48b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c48b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c48a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c48a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c489",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a71eba911278a7c489",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7c067",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7c067",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7c066",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7c066",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7c065",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7c065",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7c064",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7c064",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7bf42",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7bf42",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7bf41",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7bf41",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7bf40",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a61eba911278a7bf40",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a51eba911278a7bde7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a51eba911278a7bde7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea226a01eba911278a7b8d5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226a01eba911278a7b8d5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea2269f1eba911278a7b76b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ea225ca1eba911278a6ee3f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea2269f1eba911278a7b76b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea2269f1eba911278a7b76b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea2269d1eba911278a77f75",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea2269d1eba911278a77f75",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea225ca1eba911278a6ee45",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ea2269d1eba911278a77f75",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ea2269d1eba911278a77f75",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ea2269d1eba911278a77f74",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea2269d1eba911278a77f74",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ea2269d1eba911278a77f74",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea2269b1eba911278a779e3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea2267f1eba911278a76308",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ea2267f1eba911278a76308",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ea226831eba911278a76ce1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea2267f1eba911278a76308",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea2267f1eba911278a76308",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea2267f1eba911278a76308",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea2267f1eba911278a76308",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5ea225ca1eba911278a6ee48",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ea225ca1eba911278a6f9aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ea225df1eba911278a71b89",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ea225df1eba911278a71b89",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea225df1eba911278a71b89",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea225df1eba911278a71b89",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ea225df1eba911278a71b89",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ea225df1eba911278a71b89",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea225d81eba911278a71786",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ea225d81eba911278a71786",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea225d81eba911278a71786",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea225ca1eba911278a6f9aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea225ca1eba911278a6f9aa",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ea225ca1eba911278a6f9aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5ea225ca1eba911278a6f9aa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5ea225ca1eba911278a6f9aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea225ca1eba911278a6f9aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

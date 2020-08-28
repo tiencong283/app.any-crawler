@@ -1,0 +1,84 @@
+{
+ "Name": "HackCSGO.exe",
+ "Md5": "30bde11af358fc725991d8ae8832b635",
+ "UUID": "bec92cba-be69-4a12-aec6-b30ef1d75782",
+ "Processes": [
+  {
+   "OID": "5ca21751ad038f61a3f54616",
+   "ProcessID": 308,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\HackCSGO.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\HackCSGO.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554126672709
+  },
+  {
+   "OID": "5ca21758ad038f61a3f54feb",
+   "ProcessID": 636,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\UsaHackÃ‰.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\UsaHackÃ‰.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554126679630
+  },
+  {
+   "OID": "5ca2175ead038f61a3f555aa",
+   "ProcessID": 2108,
+   "ParentPID": 636,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\UsaHackÃ‰.exe\" \"UsaHackÃ‰.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554126685849
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ca21758ad038f61a3f54feb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca21758ad038f61a3f54feb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ca21758ad038f61a3f54feb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ca21758ad038f61a3f54feb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca21758ad038f61a3f54feb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca21758ad038f61a3f54feb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ca21751ad038f61a3f54616",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ca21751ad038f61a3f54616",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

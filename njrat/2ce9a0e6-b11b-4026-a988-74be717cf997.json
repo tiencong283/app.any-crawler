@@ -1,0 +1,72 @@
+{
+ "Name": "saeerf.exe",
+ "Md5": "acd0b2bd5f804725007ed4da3df2edb3",
+ "UUID": "2ce9a0e6-b11b-4026-a988-74be717cf997",
+ "Processes": [
+  {
+   "OID": "5ce85a4d32473a27b19d4ee0",
+   "ProcessID": 3072,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\saeerf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\saeerf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1558731340735
+  },
+  {
+   "OID": "5ce85a5332473a27b19d5242",
+   "ProcessID": 2964,
+   "ParentPID": 3072,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\saeerf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\saeerf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558731347094
+  },
+  {
+   "OID": "5ce85a5932473a27b19d582a",
+   "ProcessID": 2556,
+   "ParentPID": 2964,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\saeerf.exe\" \"saeerf.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558731353298
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ce85a5332473a27b19d5242",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce85a5332473a27b19d5242",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ce85a5332473a27b19d5242",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ce85a4d32473a27b19d4ee0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ce85a4d32473a27b19d4ee0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce85a4d32473a27b19d4ee0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

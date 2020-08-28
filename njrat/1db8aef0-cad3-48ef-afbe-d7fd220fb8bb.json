@@ -1,0 +1,44 @@
+{
+ "Name": "scout.exe",
+ "Md5": "dc31f026260847deff5702bd4b2708f3",
+ "UUID": "1db8aef0-cad3-48ef-afbe-d7fd220fb8bb",
+ "Processes": [
+  {
+   "OID": "5e2a07ede8570e0a9f8ac5b2",
+   "ProcessID": 3040,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\scout.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\scout.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579812845341
+  },
+  {
+   "OID": "5e2a07f4e8570e0a9f8aca5f",
+   "ProcessID": 3960,
+   "ParentPID": 3040,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\scout.exe\" \"scout.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579812851513
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2a07ede8570e0a9f8ac5b2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2a07ede8570e0a9f8ac5b2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2a07ede8570e0a9f8ac5b2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

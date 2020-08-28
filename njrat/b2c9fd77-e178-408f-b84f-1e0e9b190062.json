@@ -1,0 +1,84 @@
+{
+ "Name": "RexeWare.cc.exe",
+ "Md5": "2f2e5d2931042e6b1533fd02c40b3359",
+ "UUID": "b2c9fd77-e178-408f-b84f-1e0e9b190062",
+ "Processes": [
+  {
+   "OID": "5ee9f270de2e2534d3bb2457",
+   "ProcessID": 2812,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RexeWare.cc.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RexeWare.cc.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592390255726
+  },
+  {
+   "OID": "5ee9f276de2e2534d3bb2d4c",
+   "ProcessID": 2948,
+   "ParentPID": 2812,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592390262586
+  },
+  {
+   "OID": "5ee9f27cde2e2534d3bb32c8",
+   "ProcessID": 2364,
+   "ParentPID": 2948,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe\" \"System32.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592390268820
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee9f276de2e2534d3bb2d4c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee9f276de2e2534d3bb2d4c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9f276de2e2534d3bb2d4c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee9f276de2e2534d3bb2d4c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee9f276de2e2534d3bb2d4c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9f276de2e2534d3bb2d4c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9f270de2e2534d3bb2457",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9f270de2e2534d3bb2457",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

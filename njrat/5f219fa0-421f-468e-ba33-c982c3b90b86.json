@@ -1,0 +1,110 @@
+{
+ "Name": "! MY PICUTRE.SCR",
+ "Md5": "f65b8d7034fc45d92aea8fdb6e0cb3ee",
+ "UUID": "5f219fa0-421f-468e-ba33-c982c3b90b86",
+ "Processes": [
+  {
+   "OID": "5dcc71b30e05255145355c99",
+   "ProcessID": 2156,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\! MY PICUTRE.SCR.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\! MY PICUTRE.SCR.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573679539052
+  },
+  {
+   "OID": "5dcc71b80e05255145355fba",
+   "ProcessID": 2748,
+   "ParentPID": 2156,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\GoogleChrome.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\GoogleChrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573679544005
+  },
+  {
+   "OID": "5dcc71b90e05255145356578",
+   "ProcessID": 1248,
+   "ParentPID": 2748,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\GoogleChrome.exe\" \"GoogleChrome.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573679545333
+  },
+  {
+   "OID": "5dcc71e00e05255145357f66",
+   "ProcessID": 3112,
+   "ParentPID": 608,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1573679584755
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcc71b30e052551453553b1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dcc71b30e052551453553b1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc71e00e05255145357f66",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc71b80e05255145355fba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc71b80e05255145355fba",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dcc71b80e05255145355fba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc71b80e05255145355fba",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc71b80e05255145355fba",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dcc71b80e05255145355fba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dcc71b30e05255145355c99",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcc71b30e05255145355c99",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

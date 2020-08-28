@@ -1,0 +1,65 @@
+{
+ "Name": "IMG_11011230_120190_01121.exe",
+ "Md5": "5a028aa7eaeed9fa9076d428348ce113",
+ "UUID": "3d17b489-9f44-4ca5-a0de-adc32a5b1aff",
+ "Processes": [
+  {
+   "OID": "5d012180a75e2642bb13aa06",
+   "ProcessID": 3080,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\IMG_11011230_120190_01121.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IMG_11011230_120190_01121.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560355199944
+  },
+  {
+   "OID": "5d01218ea75e2642bb13acf9",
+   "ProcessID": 2992,
+   "ParentPID": 3080,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\InstallUtil.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\InstallUtil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560355214162
+  },
+  {
+   "OID": "5d012195a75e2642bb13b354",
+   "ProcessID": 2612,
+   "ParentPID": 2992,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\InstallUtil.exe\" \"InstallUtil.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560355220678
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d01218ea75e2642bb13acf9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d012180a75e2642bb13aa06",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d01218ea75e2642bb13acf9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d012180a75e2642bb13aa06",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d012180a75e2642bb13aa06",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

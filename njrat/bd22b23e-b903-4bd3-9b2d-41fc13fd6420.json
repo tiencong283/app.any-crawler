@@ -1,0 +1,46 @@
+{
+ "Name": "hack_team.exe",
+ "Md5": "dfcc6c90501bcfd9c8e87e39b990115e",
+ "UUID": "bd22b23e-b903-4bd3-9b2d-41fc13fd6420",
+ "Processes": [
+  {
+   "OID": "5e31fb861b68f773abb050af",
+   "ProcessID": 2564,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\hack_team.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\hack_team.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580333958522
+  },
+  {
+   "OID": "5e31fb8c1b68f773abb05a11",
+   "ProcessID": 3180,
+   "ParentPID": 2564,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\hack_team.exe\" \"hack_team.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580333964663
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e31fb861b68f773abb050af",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31fb861b68f773abb050af",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e31fb861b68f773abb050af",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

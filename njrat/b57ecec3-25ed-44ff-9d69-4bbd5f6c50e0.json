@@ -1,0 +1,63 @@
+{
+ "Name": "3504969485-395864534.ophack.exe",
+ "Md5": "8559650484fc4bdbafc8587f3081e751",
+ "UUID": "b57ecec3-25ed-44ff-9d69-4bbd5f6c50e0",
+ "Processes": [
+  {
+   "OID": "5db7cd554a89b67119171eab",
+   "ProcessID": 2152,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3504969485-395864534.ophack.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3504969485-395864534.ophack.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572326741235
+  },
+  {
+   "OID": "5db7cd5c4a89b671191727ad",
+   "ProcessID": 2068,
+   "ParentPID": 2152,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\3504969485-395864534.ophack.exe\" \"3504969485-395864534.ophack.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572326747579
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db7cd554a89b67119171eab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db7cd554a89b67119171eab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db7cd554a89b67119171eab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db7cd554a89b67119171eab",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db7cd554a89b67119171eab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db7cd554a89b67119171eab",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

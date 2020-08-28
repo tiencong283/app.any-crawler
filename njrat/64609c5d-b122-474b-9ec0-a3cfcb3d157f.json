@@ -1,0 +1,100 @@
+{
+ "Name": "njrat.exe",
+ "Md5": "25e7e9fd90efa22c75629aea75a49de3",
+ "UUID": "64609c5d-b122-474b-9ec0-a3cfcb3d157f",
+ "Processes": [
+  {
+   "OID": "5e3d698fe7f38a2f69402141",
+   "ProcessID": 2192,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\njrat.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\njrat.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581083023604
+  },
+  {
+   "OID": "5e3d6996e7f38a2f694024bf",
+   "ProcessID": 3828,
+   "ParentPID": 2192,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581083029979
+  },
+  {
+   "OID": "5e3d699be7f38a2f69402a39",
+   "ProcessID": 2904,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" ",
+   "Image": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1581083034573
+  },
+  {
+   "OID": "5e3d699ce7f38a2f69403ebd",
+   "ProcessID": 2856,
+   "ParentPID": 3828,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\server.exe\" \"server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581083036106
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e3d6996e7f38a2f694024bf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d6996e7f38a2f694024bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d699be7f38a2f69402a39",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d6996e7f38a2f694024bf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d6996e7f38a2f694024bf",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d6996e7f38a2f694024bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d699be7f38a2f69402a39",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d698fe7f38a2f69402141",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d698fe7f38a2f69402141",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

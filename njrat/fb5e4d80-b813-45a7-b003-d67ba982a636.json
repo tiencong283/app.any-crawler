@@ -1,0 +1,182 @@
+{
+ "Name": "Trojan.exe",
+ "Md5": "f0bc686069e3479eab2f6ba4d1407bf4",
+ "UUID": "fb5e4d80-b813-45a7-b003-d67ba982a636",
+ "Processes": [
+  {
+   "OID": "5ca12e9dd34aca2ad2d2d798",
+   "ProcessID": 1092,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Trojan.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Trojan.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554067100981
+  },
+  {
+   "OID": "5ca12ed1d34aca2ad2d2ec24",
+   "ProcessID": 2364,
+   "ParentPID": 1092,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" -nohome",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554067152356
+  },
+  {
+   "OID": "5ca12ed1d34aca2ad2d2ec25",
+   "ProcessID": 1472,
+   "ParentPID": 2364,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" SCODEF:2364 CREDAT:71937",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554067152731
+  },
+  {
+   "OID": "5ca12ed1d34aca2ad2d2ec26",
+   "ProcessID": 3140,
+   "ParentPID": 1092,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" -nohome",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554067152825
+  },
+  {
+   "OID": "5ca12ed2d34aca2ad2d2f6ca",
+   "ProcessID": 2616,
+   "ParentPID": 3140,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" SCODEF:3140 CREDAT:71937",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554067153497
+  },
+  {
+   "OID": "5ca12ed4d34aca2ad2d30c14",
+   "ProcessID": 928,
+   "ParentPID": 604,
+   "CommandLine": "C:\\Windows\\system32\\Macromed\\Flash\\FlashUtil32_26_0_0_131_ActiveX.exe -Embedding",
+   "Image": "C:\\Windows\\system32\\Macromed\\Flash\\FlashUtil32_26_0_0_131_ActiveX.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1554067155888
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ca12ed1d34aca2ad2d2ec24",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12ed1d34aca2ad2d2ec24",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12ed1d34aca2ad2d2ec24",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12ed4d34aca2ad2d30c14",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca12ed1d34aca2ad2d2ec25",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12ed2d34aca2ad2d2f6ca",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12ed1d34aca2ad2d2ec25",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12ed1d34aca2ad2d2ec25",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca12ed1d34aca2ad2d2ec26",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1112"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12ed1d34aca2ad2d2ec26",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12ed1d34aca2ad2d2ec24",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1112"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12e9dd34aca2ad2d2d798",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca12e9dd34aca2ad2d2d798",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca12e9dd34aca2ad2d2d798",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca12e9dd34aca2ad2d2d798",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12e9dd34aca2ad2d2d798",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12e9dd34aca2ad2d2d798",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ca12e9dd34aca2ad2d2d798",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca12e9dd34aca2ad2d2d798",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

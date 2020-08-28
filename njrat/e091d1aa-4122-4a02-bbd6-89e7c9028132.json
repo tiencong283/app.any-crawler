@@ -1,0 +1,177 @@
+{
+ "Name": "BonnieBot HB.exe",
+ "Md5": "db9d881ebbd9a862e08b9c63c69e35c0",
+ "UUID": "e091d1aa-4122-4a02-bbd6-89e7c9028132",
+ "Processes": [
+  {
+   "OID": "5d7065abeca0e222c6fb07fb",
+   "ProcessID": 3664,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\BonnieBot HB.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\BonnieBot HB.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1567647147297
+  },
+  {
+   "OID": "5d7065adeca0e222c6fb13a6",
+   "ProcessID": 3432,
+   "ParentPID": 3664,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\BonnieBot HB.exe\" -el -s2 \"-dC:\\Windows\" \"-p\" \"-sp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\BonnieBot HB.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567647148860
+  },
+  {
+   "OID": "5d7065adeca0e222c6fb13a7",
+   "ProcessID": 2484,
+   "ParentPID": 3432,
+   "CommandLine": "\"C:\\Windows\\Bonnie.EXE\" ",
+   "Image": "C:\\Windows\\Bonnie.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567647149126
+  },
+  {
+   "OID": "5d7065adeca0e222c6fb13a8",
+   "ProcessID": 3044,
+   "ParentPID": 3432,
+   "CommandLine": "\"C:\\Windows\\BonnieBot HB.EXE\" ",
+   "Image": "C:\\Windows\\BonnieBot HB.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567647149188
+  },
+  {
+   "OID": "5d7065adeca0e222c6fb19bf",
+   "ProcessID": 3688,
+   "ParentPID": 3044,
+   "CommandLine": "dw20.exe -x -s 400",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\dw20.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567647149516
+  },
+  {
+   "OID": "5d7065adeca0e222c6fb19c0",
+   "ProcessID": 3772,
+   "ParentPID": 2484,
+   "CommandLine": "\"C:\\Windows\\Sistema Operacional do Windows.exe\" ",
+   "Image": "C:\\Windows\\Sistema Operacional do Windows.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567647149516
+  },
+  {
+   "OID": "5d7065aeeca0e222c6fb2274",
+   "ProcessID": 4080,
+   "ParentPID": 3772,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Sistema Operacional do Windows.exe\" \"Sistema Operacional do Windows.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567647149782
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d7065abeca0e222c6fb07ee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb19c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb19c0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb19c0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb19c0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb19c0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb19c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb19c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb19c0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb13a8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb19c0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb13a7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb13a8",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb13a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb13a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb13a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb13a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065adeca0e222c6fb13a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d7065abeca0e222c6fb07fb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

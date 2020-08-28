@@ -1,0 +1,86 @@
+{
+ "Name": "yosicsense_v3.exe",
+ "Md5": "3645a3ff47507774a37bc6aefe7e2fea",
+ "UUID": "2ac0999d-53ac-43dd-8ed9-d3d0b53f2230",
+ "Processes": [
+  {
+   "OID": "5e8cd0af87442b33d63b4a90",
+   "ProcessID": 3508,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\yosicsense_v3.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\yosicsense_v3.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586286767337
+  },
+  {
+   "OID": "5e8cd16087442b33d63e9e50",
+   "ProcessID": 2252,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1586286944431
+  },
+  {
+   "OID": "5e8cd16c87442b33d63ed56c",
+   "ProcessID": 2484,
+   "ParentPID": 2252,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\"  /1",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586286955602
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8cd16087442b33d63e9e50",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e8cd16087442b33d63e9e50",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e8cd0af87442b33d63b4a90",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8cd0af87442b33d63b4a90",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8cd0af87442b33d63b4a90",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8cd0af87442b33d63b4a90",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e8cd0af87442b33d63b4a90",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e8cd0af87442b33d63b4a90",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  }
+ ]
+}

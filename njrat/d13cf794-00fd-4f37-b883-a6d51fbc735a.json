@@ -1,0 +1,101 @@
+{
+ "Name": "anusik004.exe",
+ "Md5": "88571f1db7e402138293a1264799ef61",
+ "UUID": "d13cf794-00fd-4f37-b883-a6d51fbc735a",
+ "Processes": [
+  {
+   "OID": "5d91b7bc84602b3592d36030",
+   "ProcessID": 3056,
+   "ParentPID": 236,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\anusik004.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\anusik004.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1569830844459
+  },
+  {
+   "OID": "5d91b7da84602b3592d36473",
+   "ProcessID": 2220,
+   "ParentPID": 3056,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\anusik004.exe\" \"anusik004.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1569830873771
+  },
+  {
+   "OID": "5d91b7f084602b3592d3713e",
+   "ProcessID": 2140,
+   "ParentPID": 236,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\jansay.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1569830896631
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d91b7f284602b3592d37a99",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d91b7bc84602b3592d358e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d91b7f084602b3592d3713e",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d91b7f084602b3592d3713e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d91b7bc84602b3592d358e6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d91b7bc84602b3592d358e6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d91b7bc84602b3592d358e6",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d91b7f084602b3592d3713e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d91b7bc84602b3592d36030",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d91b7bc84602b3592d36030",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d91b7bc84602b3592d36030",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

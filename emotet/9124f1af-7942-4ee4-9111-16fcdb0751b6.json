@@ -1,0 +1,86 @@
+{
+ "Name": "opiFtEAsf",
+ "Md5": "97fc6fdb04010d9faab930a69ea4c96f",
+ "UUID": "9124f1af-7942-4ee4-9111-16fcdb0751b6",
+ "Processes": [
+  {
+   "OID": "5dbf4af4cce42320d157799e",
+   "ProcessID": 2748,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\opiFtEAsf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\opiFtEAsf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572817652413
+  },
+  {
+   "OID": "5dbf4af6cce42320d157811f",
+   "ProcessID": 3884,
+   "ParentPID": 2748,
+   "CommandLine": "--8ba5c269",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\opiFtEAsf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572817653522
+  },
+  {
+   "OID": "5dbf4afbcce42320d15781e7",
+   "ProcessID": 2416,
+   "ParentPID": 3884,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\sansidaho\\sansidaho.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\sansidaho\\sansidaho.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572817659054
+  },
+  {
+   "OID": "5dbf4afccce42320d1578498",
+   "ProcessID": 3224,
+   "ParentPID": 2416,
+   "CommandLine": "--a6fef274",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\sansidaho\\sansidaho.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572817660304
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dbf4afccce42320d1578498",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbf4afbcce42320d15781e7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbf4afbcce42320d15781e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dbf4af6cce42320d157811f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbf4af6cce42320d157811f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbf4af6cce42320d157811f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dbf4af4cce42320d157799e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

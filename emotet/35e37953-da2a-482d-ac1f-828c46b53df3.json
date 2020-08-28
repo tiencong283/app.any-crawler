@@ -1,0 +1,132 @@
+{
+ "Name": "alfacars-airport.com.exe",
+ "Md5": "7ffb6d6dd54b90e443480930bfbefc2e",
+ "UUID": "35e37953-da2a-482d-ac1f-828c46b53df3",
+ "Processes": [
+  {
+   "OID": "5dcce6efde6d5832bbde1d38",
+   "ProcessID": 592,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\alfacars-airport.com.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\alfacars-airport.com.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573709551581
+  },
+  {
+   "OID": "5dcce6f0de6d5832bbde22fd",
+   "ProcessID": 2380,
+   "ParentPID": 592,
+   "CommandLine": "--b3a6af9a",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\alfacars-airport.com.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573709551737
+  },
+  {
+   "OID": "5dcce6f6de6d5832bbde26c7",
+   "ProcessID": 2432,
+   "ParentPID": 2380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573709558487
+  },
+  {
+   "OID": "5dcce6f6de6d5832bbde26c8",
+   "ProcessID": 3468,
+   "ParentPID": 2432,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573709558612
+  },
+  {
+   "OID": "5dcce713de6d5832bbde2e31",
+   "ProcessID": 3772,
+   "ParentPID": 3468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\32CD.tmp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573709587659
+  },
+  {
+   "OID": "5dcce713de6d5832bbde2e32",
+   "ProcessID": 2432,
+   "ParentPID": 3468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\32EE.tmp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573709587659
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcce713de6d5832bbde2e32",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dcce713de6d5832bbde2e31",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dcce6f6de6d5832bbde26c8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcce6f6de6d5832bbde26c8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dcce6f6de6d5832bbde26c8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcce6f6de6d5832bbde26c8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcce6f6de6d5832bbde26c8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5dcce6f0de6d5832bbde22fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcce6f0de6d5832bbde22fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcce6f0de6d5832bbde22fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcce6efde6d5832bbde1d38",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

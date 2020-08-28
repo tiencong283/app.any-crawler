@@ -1,0 +1,84 @@
+{
+ "Name": "Neptune-qt.bin",
+ "Md5": "fed85d8ce5735637572e45c8db444c81",
+ "UUID": "4a63e522-92a8-4ed9-894c-2379e3205631",
+ "Processes": [
+  {
+   "OID": "5d4245a81c0d7c35a398c029",
+   "ProcessID": 340,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Neptune-qt.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Neptune-qt.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564624295854
+  },
+  {
+   "OID": "5d4245ae1c0d7c35a398ca0c",
+   "ProcessID": 2884,
+   "ParentPID": 340,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winsrv.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winsrv.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564624302525
+  },
+  {
+   "OID": "5d4245b51c0d7c35a398d000",
+   "ProcessID": 2080,
+   "ParentPID": 2884,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\winsrv.exe\" \"winsrv.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564624308791
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d4245ae1c0d7c35a398ca0c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4245ae1c0d7c35a398ca0c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d4245ae1c0d7c35a398ca0c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4245ae1c0d7c35a398ca0c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d4245ae1c0d7c35a398ca0c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4245ae1c0d7c35a398ca0c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d4245a81c0d7c35a398c029",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d4245a81c0d7c35a398c029",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

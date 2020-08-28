@@ -1,0 +1,166 @@
+{
+ "Name": "GenBankCc.sfx.exe",
+ "Md5": "75b99719ad5149501771d307e1b03c27",
+ "UUID": "5a00e4b9-3d12-49d4-95a3-94de9683ee4a",
+ "Processes": [
+  {
+   "OID": "5e2f36d98394b97db800c012",
+   "ProcessID": 3488,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\GenBankCc.sfx.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\GenBankCc.sfx.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580152537281
+  },
+  {
+   "OID": "5e2f36da8394b97db800c3d5",
+   "ProcessID": 2420,
+   "ParentPID": 3488,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\GenBankCc.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\GenBankCc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580152537875
+  },
+  {
+   "OID": "5e2f36e18394b97db800cba2",
+   "ProcessID": 3884,
+   "ParentPID": 2420,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\System.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\System.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580152544453
+  },
+  {
+   "OID": "5e2f36e78394b97db800d175",
+   "ProcessID": 3932,
+   "ParentPID": 3884,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\System.exe\" \"System.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580152550672
+  },
+  {
+   "OID": "5e2f37248394b97db800e478",
+   "ProcessID": 3612,
+   "ParentPID": 3884,
+   "CommandLine": "netsh firewall delete allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\System.exe\"",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580152611984
+  },
+  {
+   "OID": "5e2f37248394b97db800e479",
+   "ProcessID": 2856,
+   "ParentPID": 3884,
+   "CommandLine": "cmd.exe /c ping 0 -n 2 \u0026 del \"C:\\Users\\admin\\AppData\\Local\\Temp\\System.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580152612016
+  },
+  {
+   "OID": "5e2f37248394b97db800e47c",
+   "ProcessID": 2664,
+   "ParentPID": 2856,
+   "CommandLine": "ping  0 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580152612281
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2f36e18394b97db800cba2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5e2f36e18394b97db800cba2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e2f36e18394b97db800cba2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f36e18394b97db800cba2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f36e18394b97db800cba2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f36e18394b97db800cba2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e2f36e18394b97db800cba2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f36e18394b97db800cba2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f36e18394b97db800cba2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e2f36e18394b97db800cba2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e2f36e18394b97db800cba2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f36da8394b97db800c3d5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e2f36da8394b97db800c3d5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f36da8394b97db800c3d5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f36d98394b97db800c012",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2f36d98394b97db800b6fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

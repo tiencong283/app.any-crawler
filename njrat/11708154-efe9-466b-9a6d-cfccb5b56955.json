@@ -1,0 +1,89 @@
+{
+ "Name": "Growtopia2.exe",
+ "Md5": "0df4b2354049f6c0fc21909878edd264",
+ "UUID": "11708154-efe9-466b-9a6d-cfccb5b56955",
+ "Processes": [
+  {
+   "OID": "5ea1708f0dc0c2211cefe49f",
+   "ProcessID": 3592,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Growtopia2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Growtopia2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587638415125
+  },
+  {
+   "OID": "5ea170960dc0c2211cefefc4",
+   "ProcessID": 2340,
+   "ParentPID": 3592,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WindowsServices.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WindowsServices.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587638421453
+  },
+  {
+   "OID": "5ea1709c0dc0c2211ceff5b0",
+   "ProcessID": 3804,
+   "ParentPID": 2340,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\WindowsServices.exe\" \"WindowsServices.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587638427593
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ea170960dc0c2211cefefc4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea170960dc0c2211cefefc4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ea170960dc0c2211cefefc4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea170960dc0c2211cefefc4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ea170960dc0c2211cefefc4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea170960dc0c2211cefefc4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ea1708f0dc0c2211cefe49f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ea1708f0dc0c2211cefe49f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea1708f0dc0c2211cefe49f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

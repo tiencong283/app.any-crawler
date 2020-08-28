@@ -1,0 +1,77 @@
+{
+ "Name": "explorer.exe",
+ "Md5": "ddbdc8dbf6b0f031e34d91d5147d1c87",
+ "UUID": "f0e351f9-a5c0-457e-863a-fc8b127cfc69",
+ "Processes": [
+  {
+   "OID": "5d4b3cc08c52c60940829aab",
+   "ProcessID": 3876,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\explorer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\explorer.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1565211839410
+  },
+  {
+   "OID": "5d4b3cc68c52c60940829e46",
+   "ProcessID": 3068,
+   "ParentPID": 3876,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\explorer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\explorer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565211845832
+  },
+  {
+   "OID": "5d4b3ccc8c52c6094082a41a",
+   "ProcessID": 2156,
+   "ParentPID": 3068,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\explorer.exe\" \"explorer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565211852051
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d4b3cc68c52c60940829e46",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4b3cc68c52c60940829e46",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d4b3cc68c52c60940829e46",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d4b3cc08c52c60940829aab",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d4b3cc08c52c60940829aab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4b3cc08c52c60940829aab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4b3cc08c52c60940829aab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

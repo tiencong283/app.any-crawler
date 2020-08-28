@@ -1,0 +1,55 @@
+{
+ "Name": "LAW231.exe",
+ "Md5": "16653a4e4dc3b65bd685bf6aee642efd",
+ "UUID": "8ef77ee7-5c0f-4db5-8739-532f03a3b91c",
+ "Processes": [
+  {
+   "OID": "5bbd33cb48ba4e3405efd927",
+   "ProcessID": 4068,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1539126218971
+  },
+  {
+   "OID": "5bbd33ff48ba4e3405efdc6b",
+   "ProcessID": 3900,
+   "ParentPID": 4068,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539126271487
+  },
+  {
+   "OID": "5bbd33ff48ba4e3405efdc6c",
+   "ProcessID": 3256,
+   "ParentPID": 4068,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe\" 2 3900 6083937",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\LAW231.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539126271503
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bbd33ff48ba4e3405efdc6b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bbd33ff48ba4e3405efdc6b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbd33cb48ba4e3405efd927",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

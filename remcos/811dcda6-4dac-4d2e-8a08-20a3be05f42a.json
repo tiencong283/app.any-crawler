@@ -1,0 +1,113 @@
+{
+ "Name": "D6D8560E0F5B09F36E179894DCC4F9ABB70D9214B9ECE73A7194FD47A4730BF6",
+ "Md5": "b65b44b7f36ba0f4da35d2163fb857b5",
+ "UUID": "811dcda6-4dac-4d2e-8a08-20a3be05f42a",
+ "Processes": [
+  {
+   "OID": "5b8f864de1a9a81d99c2b290",
+   "ProcessID": 1024,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\D6D8560E0F5B09F36E179894DCC4F9ABB70D9214B9ECE73A7194FD47A4730BF6.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\D6D8560E0F5B09F36E179894DCC4F9ABB70D9214B9ECE73A7194FD47A4730BF6.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1536132685025
+  },
+  {
+   "OID": "5b8f8655e1a9a81d99c2bc38",
+   "ProcessID": 1228,
+   "ParentPID": 1024,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /SC MINUTE /TN \"AdobeReader\" /TR \"\\\"C:\\ProgramData\\AdobeReader.exe\\\"\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536132692603
+  },
+  {
+   "OID": "5b8f8656e1a9a81d99c2bff9",
+   "ProcessID": 2804,
+   "ParentPID": 1024,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /run /tn \"AdobeReader\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536132694634
+  },
+  {
+   "OID": "5b8f8656e1a9a81d99c2bffc",
+   "ProcessID": 2856,
+   "ParentPID": 1732,
+   "CommandLine": "C:\\ProgramData\\AdobeReader.exe ",
+   "Image": "C:\\ProgramData\\AdobeReader.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1536132695056
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b8f8656e1a9a81d99c2bffc",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8f8656e1a9a81d99c2bffc",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8f8656e1a9a81d99c2bffc",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8f8656e1a9a81d99c2bffc",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8f8656e1a9a81d99c2bffc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b8f8656e1a9a81d99c2bffc",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8f8656e1a9a81d99c2bff9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5b8f864de1a9a81d99c2b27e",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8f8655e1a9a81d99c2bc38",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5b8f864de1a9a81d99c2b290",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8f864de1a9a81d99c2b290",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8f864de1a9a81d99c2b290",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  }
+ ]
+}

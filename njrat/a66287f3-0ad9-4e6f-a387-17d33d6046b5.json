@@ -1,0 +1,77 @@
+{
+ "Name": "Injector.exe",
+ "Md5": "cc4638855391237dca9c39f565e6d4bb",
+ "UUID": "a66287f3-0ad9-4e6f-a387-17d33d6046b5",
+ "Processes": [
+  {
+   "OID": "5ee2e281657bb033a3003fba",
+   "ProcessID": 2476,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Injector.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Injector.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591927425664
+  },
+  {
+   "OID": "5ee2e288657bb033a3004371",
+   "ProcessID": 620,
+   "ParentPID": 2476,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Injector.exe\" \"Injector.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591927431976
+  },
+  {
+   "OID": "5ee2e288657bb033a3004373",
+   "ProcessID": 2188,
+   "ParentPID": 2476,
+   "CommandLine": "taskkill /F /IM taskmgr.exe",
+   "Image": "C:\\Windows\\system32\\taskkill.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591927431992
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee2e281657bb033a3003fba",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee2e281657bb033a3003fba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee2e281657bb033a3003fba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee2e281657bb033a3003fba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee2e281657bb033a3003fba",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee2e281657bb033a3003fba",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee2e281657bb033a3003fba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

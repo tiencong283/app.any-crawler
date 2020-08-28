@@ -1,0 +1,180 @@
+{
+ "Name": "3f1f6a194a290cb772c9b669e76f839929060535a2f6d2a3b9fc166283284581",
+ "Md5": "477e48fff8941704092adf6380e32601",
+ "UUID": "c017eaf5-88e1-49d6-8900-ae268091e2eb",
+ "Processes": [
+  {
+   "OID": "5cfa56684375a8336545fd86",
+   "ProcessID": 2896,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3f1f6a194a290cb772c9b669e76f839929060535a2f6d2a3b9fc166283284581.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3f1f6a194a290cb772c9b669e76f839929060535a2f6d2a3b9fc166283284581.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1559909991604
+  },
+  {
+   "OID": "5cfa56684375a8336545fdf1",
+   "ProcessID": 2600,
+   "ParentPID": 2896,
+   "CommandLine": "\"C:\\Users\\admin\\m0ne0n free.exe\" ",
+   "Image": "C:\\Users\\admin\\m0ne0n free.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559909992058
+  },
+  {
+   "OID": "5cfa56684375a8336545fdf2",
+   "ProcessID": 2964,
+   "ParentPID": 2896,
+   "CommandLine": "\"C:\\Users\\admin\\server.exe\" ",
+   "Image": "C:\\Users\\admin\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559909992151
+  },
+  {
+   "OID": "5cfa566d4375a83365460a76",
+   "ProcessID": 916,
+   "ParentPID": 2600,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" -nohome",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559909997417
+  },
+  {
+   "OID": "5cfa566e4375a83365460a7b",
+   "ProcessID": 2456,
+   "ParentPID": 916,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" SCODEF:916 CREDAT:71937",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559909997683
+  },
+  {
+   "OID": "5cfa566f4375a8336546186f",
+   "ProcessID": 3400,
+   "ParentPID": 2964,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\nixware.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\nixware.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559909998636
+  },
+  {
+   "OID": "5cfa56754375a83365462653",
+   "ProcessID": 3804,
+   "ParentPID": 3400,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\nixware.exe\" \"nixware.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559910004808
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cfa566f4375a8336546186f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa566f4375a8336546186f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa566f4375a8336546186f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa56674375a8336545f616",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa566d4375a83365460a76",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa566e4375a83365460a7b",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa566f4375a8336546186f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa56684375a8336545fdf2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa56684375a8336545fdf2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa566e4375a83365460a7b",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa566e4375a83365460a7b",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa566d4375a83365460a76",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa566d4375a83365460a76",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1112"
+   ]
+  },
+  {
+   "ProcessOID": "5cfa56684375a8336545fdf1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa56684375a8336545fdf1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa56684375a8336545fdf2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa56684375a8336545fdf1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfa56684375a8336545fd86",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

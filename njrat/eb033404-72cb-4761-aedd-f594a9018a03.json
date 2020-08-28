@@ -1,0 +1,84 @@
+{
+ "Name": "tj.exe",
+ "Md5": "0bc192235d41672e158facdea8446e79",
+ "UUID": "eb033404-72cb-4761-aedd-f594a9018a03",
+ "Processes": [
+  {
+   "OID": "5ee6c7f1c199a3773a3bf81b",
+   "ProcessID": 280,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\tj.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\tj.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592182768837
+  },
+  {
+   "OID": "5ee6c7f7c199a3773a3c0131",
+   "ProcessID": 988,
+   "ParentPID": 280,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592182775696
+  },
+  {
+   "OID": "5ee6c7fec199a3773a3c06d7",
+   "ProcessID": 652,
+   "ParentPID": 988,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsServices.exe\" \"WindowsServices.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592182781915
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee6c7f7c199a3773a3c0131",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee6c7f7c199a3773a3c0131",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee6c7f7c199a3773a3c0131",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee6c7f7c199a3773a3c0131",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee6c7f7c199a3773a3c0131",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee6c7f7c199a3773a3c0131",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ee6c7f1c199a3773a3bf81b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ee6c7f1c199a3773a3bf81b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

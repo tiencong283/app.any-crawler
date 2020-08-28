@@ -1,0 +1,51 @@
+{
+ "Name": "task.exe",
+ "Md5": "2dad7721813143b7d0c9a453b84ee07f",
+ "UUID": "5fc7ef37-036e-4d9d-801a-c726c6a21c0c",
+ "Processes": [
+  {
+   "OID": "5bb63390e9c4d9669b8ab5c1",
+   "ProcessID": 1744,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\task.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\task.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1538667407713
+  },
+  {
+   "OID": "5bb633a3e9c4d9669b8ab96b",
+   "ProcessID": 1752,
+   "ParentPID": 1744,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\task.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\task.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1538667427166
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bb633a3e9c4d9669b8ab96b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bb633a3e9c4d9669b8ab96b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bb633a3e9c4d9669b8ab96b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bb63390e9c4d9669b8ab5c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

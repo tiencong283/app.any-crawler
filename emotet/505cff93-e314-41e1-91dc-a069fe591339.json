@@ -1,0 +1,69 @@
+{
+ "Name": "s2695",
+ "Md5": "98bbe3be99250f2abf9c58ba940e498e",
+ "UUID": "505cff93-e314-41e1-91dc-a069fe591339",
+ "Processes": [
+  {
+   "OID": "5daeed99a2630d3651c7be48",
+   "ProcessID": 1600,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\s2695.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\s2695.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571745176856
+  },
+  {
+   "OID": "5daeed99a2630d3651c7bfb3",
+   "ProcessID": 3096,
+   "ParentPID": 1600,
+   "CommandLine": "--d9deedf1",
+   "Image": "C:\\Users\\admin\\Desktop\\s2695.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571745177278
+  },
+  {
+   "OID": "5daeeda0a2630d3651c7c6f3",
+   "ProcessID": 3904,
+   "ParentPID": 3096,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571745184341
+  },
+  {
+   "OID": "5daeeda0a2630d3651c7c6f4",
+   "ProcessID": 1816,
+   "ParentPID": 3904,
+   "CommandLine": "--b583abe8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571745184575
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5daeed99a2630d3651c7bfb3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5daeed99a2630d3651c7bfb3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5daeed99a2630d3651c7bfb3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5daeed99a2630d3651c7be48",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

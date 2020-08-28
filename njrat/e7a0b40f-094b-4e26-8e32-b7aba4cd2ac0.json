@@ -1,0 +1,46 @@
+{
+ "Name": "Spoofer.exe",
+ "Md5": "f147d51723c070e0c9c52688d2fcbe46",
+ "UUID": "e7a0b40f-094b-4e26-8e32-b7aba4cd2ac0",
+ "Processes": [
+  {
+   "OID": "5eb336c0e6da52058cc2edf0",
+   "ProcessID": 2772,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Spoofer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Spoofer.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588803263650
+  },
+  {
+   "OID": "5eb336c6e6da52058cc2f133",
+   "ProcessID": 2364,
+   "ParentPID": 2772,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Spoofer.exe\" \"Spoofer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588803269884
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eb336c0e6da52058cc2edf0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb336c0e6da52058cc2edf0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eb336c0e6da52058cc2edf0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

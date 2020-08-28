@@ -1,0 +1,116 @@
+{
+ "Name": "Megrendelési okmány 023.exe",
+ "Md5": "f2dcc2f7024d61b337df133dbd4cc3b1",
+ "UUID": "f878c6cf-fee7-4cb9-9a26-e066114553fc",
+ "Processes": [
+  {
+   "OID": "5dd7a5d2a3c57567d5a48134",
+   "ProcessID": 2996,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Megrendelési okmány 023.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Megrendelési okmány 023.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574413778230
+  },
+  {
+   "OID": "5dd7a601a3c57567d5a48608",
+   "ProcessID": 2080,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1574413824855
+  },
+  {
+   "OID": "5dd7a61da3c57567d5a48be7",
+   "ProcessID": 2772,
+   "ParentPID": 2996,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c copy \"C:\\Users\\admin\\AppData\\Local\\Temp\\Megrendelési okmány 023.exe\" \"C:\\Users\\admin\\AppData\\Roaming\\Microsoft Document Online Sync.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574413853526
+  },
+  {
+   "OID": "5dd7a637a3c57567d5a48e29",
+   "ProcessID": 3140,
+   "ParentPID": 2996,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c, \"C:\\Users\\admin\\AppData\\Roaming\\Microsoft Document Online Sync.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574413878573
+  },
+  {
+   "OID": "5dd7a637a3c57567d5a48e2b",
+   "ProcessID": 3712,
+   "ParentPID": 3140,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft Document Online Sync.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft Document Online Sync.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574413878683
+  },
+  {
+   "OID": "5dd7a683a3c57567d5a493c3",
+   "ProcessID": 600,
+   "ParentPID": 3712,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574413954526
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dd7a683a3c57567d5a493c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7a683a3c57567d5a493c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7a683a3c57567d5a493c3",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dd7a637a3c57567d5a48e2b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dd7a637a3c57567d5a48e2b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7a61da3c57567d5a48be7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7a61da3c57567d5a48be7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd7a5d2a3c57567d5a48134",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5dd7a601a3c57567d5a48608",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  }
+ ]
+}

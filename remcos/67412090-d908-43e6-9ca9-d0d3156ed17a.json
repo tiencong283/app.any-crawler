@@ -1,0 +1,142 @@
+{
+ "Name": "best.exe",
+ "Md5": "d7078f34bfa30ec5781ffb8f4508365e",
+ "UUID": "67412090-d908-43e6-9ca9-d0d3156ed17a",
+ "Processes": [
+  {
+   "OID": "5b4995b526533c7f08a83100",
+   "ProcessID": 1524,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\best.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\best.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1531549108650
+  },
+  {
+   "OID": "5b4995b826533c7f08a83626",
+   "ProcessID": 2188,
+   "ParentPID": 1524,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\best.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\best.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531549111947
+  },
+  {
+   "OID": "5b4995bd26533c7f08a8397a",
+   "ProcessID": 2712,
+   "ParentPID": 2188,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531549117744
+  },
+  {
+   "OID": "5b4995bf26533c7f08a83f7a",
+   "ProcessID": 2284,
+   "ParentPID": 2712,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531549119057
+  },
+  {
+   "OID": "5b4995bf26533c7f08a83f7c",
+   "ProcessID": 996,
+   "ParentPID": 2284,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531549119182
+  },
+  {
+   "OID": "5b4995c226533c7f08a845ad",
+   "ProcessID": 2256,
+   "ParentPID": 996,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531549122307
+  },
+  {
+   "OID": "5b4995c826533c7f08a845c5",
+   "ProcessID": 3576,
+   "ParentPID": 2256,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531549127916
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b4995c226533c7f08a845ad",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b4995c226533c7f08a845ad",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4995c226533c7f08a845ad",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4995c226533c7f08a845ad",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b4995bf26533c7f08a83f7c",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4995bd26533c7f08a8397a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b4995b826533c7f08a83626",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5b4995b826533c7f08a83626",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4995b826533c7f08a83626",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b4995b826533c7f08a83626",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4995b826533c7f08a83626",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4995b526533c7f08a83100",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

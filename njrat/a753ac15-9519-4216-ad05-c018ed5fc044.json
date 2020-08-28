@@ -1,0 +1,171 @@
+{
+ "Name": "svchost.exe",
+ "Md5": "0176db05b8adf603a8c2906e73f19ec0",
+ "UUID": "a753ac15-9519-4216-ad05-c018ed5fc044",
+ "Processes": [
+  {
+   "OID": "5dd79b3c5c90e53ad9dc425b",
+   "ProcessID": 932,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574411068228
+  },
+  {
+   "OID": "5dd79b425c90e53ad9dc50a2",
+   "ProcessID": 2508,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1574411073728
+  },
+  {
+   "OID": "5dd79b445c90e53ad9dc54b7",
+   "ProcessID": 3836,
+   "ParentPID": 932,
+   "CommandLine": "\"C:\\ProgramData\\svchost.exe\" ",
+   "Image": "C:\\ProgramData\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574411076493
+  },
+  {
+   "OID": "5dd79b4c5c90e53ad9dc5ced",
+   "ProcessID": 2196,
+   "ParentPID": 3836,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\svchost.exe\" \"svchost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574411084868
+  },
+  {
+   "OID": "5dd79b605c90e53ad9dc7099",
+   "ProcessID": 1948,
+   "ParentPID": 3836,
+   "CommandLine": "netsh firewall delete allowedprogram \"C:\\ProgramData\\svchost.exe\"",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574411103712
+  },
+  {
+   "OID": "5dd79b605c90e53ad9dc709b",
+   "ProcessID": 1740,
+   "ParentPID": 3836,
+   "CommandLine": "cmd.exe /c ping 0 -n 2 \u0026 del \"C:\\ProgramData\\svchost.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574411103806
+  },
+  {
+   "OID": "5dd79b605c90e53ad9dc709d",
+   "ProcessID": 3240,
+   "ParentPID": 1740,
+   "CommandLine": "ping  0 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574411103931
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dd79b445c90e53ad9dc54b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5dd79b445c90e53ad9dc54b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5dd79b445c90e53ad9dc54b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd79b445c90e53ad9dc54b7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd79b445c90e53ad9dc54b7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dd79b445c90e53ad9dc54b7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dd79b445c90e53ad9dc54b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd79b445c90e53ad9dc54b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dd79b445c90e53ad9dc54b7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd79b445c90e53ad9dc54b7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd79b3c5c90e53ad9dc425b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dd79b3c5c90e53ad9dc425b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd79b3c5c90e53ad9dc425b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd79b3c5c90e53ad9dc425b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd79b425c90e53ad9dc50a2",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dd79b3c5c90e53ad9dc425b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd79b3c5c90e53ad9dc425b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

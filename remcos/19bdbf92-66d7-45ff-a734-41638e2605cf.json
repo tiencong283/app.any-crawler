@@ -1,0 +1,90 @@
+{
+ "Name": "20.exe",
+ "Md5": "123a25627ee1b72581a9d4a9b328d2e1",
+ "UUID": "19bdbf92-66d7-45ff-a734-41638e2605cf",
+ "Processes": [
+  {
+   "OID": "5bf83d3cb4ace80142174021",
+   "ProcessID": 3540,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\20.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\20.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1542995259900
+  },
+  {
+   "OID": "5bf83d4eb4ace80142174eb5",
+   "ProcessID": 3048,
+   "ParentPID": 3540,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\deceek\\decency.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542995278040
+  },
+  {
+   "OID": "5bf83d4eb4ace80142174eb6",
+   "ProcessID": 3208,
+   "ParentPID": 3540,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\deceek\\decency.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\deceek\\decency.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542995278072
+  },
+  {
+   "OID": "5bf83d52b4ace8014217544f",
+   "ProcessID": 2756,
+   "ParentPID": 3208,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\deceek\\decency.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\deceek\\decency.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542995282290
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bf83d52b4ace8014217544f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bf83d52b4ace8014217544f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bf83d4eb4ace80142174eb5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bf83d4eb4ace80142174eb6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bf83d3cb4ace80142174021",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bf83d3cb4ace80142174021",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5bf83d3cb4ace80142174021",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

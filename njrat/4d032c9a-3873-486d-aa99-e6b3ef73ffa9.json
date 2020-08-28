@@ -1,0 +1,51 @@
+{
+ "Name": "WindowsFormsApplication.exe",
+ "Md5": "abf7433da0903a91203e4f038eafe184",
+ "UUID": "4d032c9a-3873-486d-aa99-e6b3ef73ffa9",
+ "Processes": [
+  {
+   "OID": "5e41b9cd0caad00c3884505a",
+   "ProcessID": 660,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsFormsApplication.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsFormsApplication.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581365709351
+  },
+  {
+   "OID": "5e41b9d30caad00c38845abe",
+   "ProcessID": 3964,
+   "ParentPID": 660,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsFormsApplication.exe\" \"WindowsFormsApplication.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581365715554
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e41b9cd0caad00c3884505a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e41b9cd0caad00c3884505a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e41b9cd0caad00c3884505a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e41b9cd0caad00c3884505a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

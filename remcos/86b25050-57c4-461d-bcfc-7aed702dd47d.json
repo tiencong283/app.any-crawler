@@ -1,0 +1,67 @@
+{
+ "Name": "PcHealth.exe",
+ "Md5": "15951ef1b1acc8dfbe7c7b18c93f217d",
+ "UUID": "86b25050-57c4-461d-bcfc-7aed702dd47d",
+ "Processes": [
+  {
+   "OID": "5b5610d3c6c9e8036f8d7884",
+   "ProcessID": 3556,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PcHealth.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PcHealth.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1532367058836
+  },
+  {
+   "OID": "5b5610d9c6c9e8036f8d7b35",
+   "ProcessID": 2448,
+   "ParentPID": 3556,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PcHealth.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PcHealth.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532367065289
+  },
+  {
+   "OID": "5b5610e4c6c9e8036f8d7cfa",
+   "ProcessID": 2152,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1532367076023
+  },
+  {
+   "OID": "5b5610ecc6c9e8036f8d8347",
+   "ProcessID": 2128,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1532367084320
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b5610d9c6c9e8036f8d7b35",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b5610d9c6c9e8036f8d7b35",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5610d9c6c9e8036f8d7b35",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5610d3c6c9e8036f8d7884",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

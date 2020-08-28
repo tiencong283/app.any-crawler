@@ -1,0 +1,91 @@
+{
+ "Name": "XzZtO_qwtn.exe",
+ "Md5": "305bd3059be0517bb43f72d197f5b9b9",
+ "UUID": "c16e4347-208d-45f4-a6e4-aa04e501d41a",
+ "Processes": [
+  {
+   "OID": "5e8940878568f17d08b01b36",
+   "ProcessID": 3356,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\XzZtO_qwtn.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\XzZtO_qwtn.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586053254864
+  },
+  {
+   "OID": "5e89408d8568f17d08b01ef9",
+   "ProcessID": 1232,
+   "ParentPID": 3356,
+   "CommandLine": "\"C:\\Users\\admin\\dnSpy.exe\" ",
+   "Image": "C:\\Users\\admin\\dnSpy.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586053261286
+  },
+  {
+   "OID": "5e8940938568f17d08b0251a",
+   "ProcessID": 3516,
+   "ParentPID": 1232,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\dnSpy.exe\" \"dnSpy.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586053267504
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8940878568f17d08b013a8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e89408d8568f17d08b01ef9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e89408d8568f17d08b01ef9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e89408d8568f17d08b01ef9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e89408d8568f17d08b01ef9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e89408d8568f17d08b01ef9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e89408d8568f17d08b01ef9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e8940878568f17d08b01b36",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e8940878568f17d08b01b36",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

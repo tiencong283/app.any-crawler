@@ -1,0 +1,63 @@
+{
+ "Name": "testujenjrata.exe",
+ "Md5": "1566049fc9131ea2afd58e2c718593cb",
+ "UUID": "1c8b84aa-dc32-4fdb-b987-fa976ab93026",
+ "Processes": [
+  {
+   "OID": "5d4bf1c37a624d6dbea6c39c",
+   "ProcessID": 2988,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\testujenjrata.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\testujenjrata.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1565258179324
+  },
+  {
+   "OID": "5d4bf1c97a624d6dbea6c723",
+   "ProcessID": 2580,
+   "ParentPID": 2988,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\testujenjrata.exe\" \"testujenjrata.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565258185480
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d4bf1c37a624d6dbea6c39c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4bf1c37a624d6dbea6c39c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d4bf1c37a624d6dbea6c39c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4bf1c37a624d6dbea6c39c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4bf1c37a624d6dbea6c39c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d4bf1c37a624d6dbea6c39c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

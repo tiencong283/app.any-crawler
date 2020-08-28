@@ -1,0 +1,131 @@
+{
+ "Name": "PURCHASE.EXE",
+ "Md5": "41b5944da04e3da805e912b22d716ff5",
+ "UUID": "643e91dc-3ba2-464a-833b-e886baee33f5",
+ "Processes": [
+  {
+   "OID": "5d2329947016bb713761f785",
+   "ProcessID": 3624,
+   "ParentPID": 124,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PURCHASE.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PURCHASE.EXE",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1562585491655
+  },
+  {
+   "OID": "5d2329a07016bb713762011c",
+   "ProcessID": 768,
+   "ParentPID": 3624,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\"  /c TimeOut 1 \u0026 Del /F \"C:\\Users\\admin\\AppData\\Local\\Temp\\PURCHASE.EXE\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562585503686
+  },
+  {
+   "OID": "5d2329a07016bb713762011e",
+   "ProcessID": 920,
+   "ParentPID": 3624,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562585503764
+  },
+  {
+   "OID": "5d2329a07016bb713762011f",
+   "ProcessID": 2860,
+   "ParentPID": 768,
+   "CommandLine": "TimeOut  1 ",
+   "Image": "C:\\Windows\\system32\\timeout.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562585503795
+  },
+  {
+   "OID": "5d2329a67016bb71376207c5",
+   "ProcessID": 3236,
+   "ParentPID": 920,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\" \"RegSvcs.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562585510139
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d232ab27016bb7137623e64",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d2329947016bb713761f77f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d232a0f7016bb713762357e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d2329a07016bb713762011e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2329a07016bb713762011e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2329a07016bb713762011e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2329a07016bb713762011e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d2329947016bb713761f785",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5d2329947016bb713761f785",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d2329947016bb713761f785",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d2329947016bb713761f785",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2329947016bb713761f785",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2329947016bb713761f785",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

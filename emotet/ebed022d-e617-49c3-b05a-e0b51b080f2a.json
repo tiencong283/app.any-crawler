@@ -1,0 +1,79 @@
+{
+ "Name": "ripplepsec.exe",
+ "Md5": "c493226a6c90357c94dbcefca2b58a6e",
+ "UUID": "ebed022d-e617-49c3-b05a-e0b51b080f2a",
+ "Processes": [
+  {
+   "OID": "5db1454cfb051b5e5039e142",
+   "ProcessID": 3332,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ripplepsec.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ripplepsec.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571898700011
+  },
+  {
+   "OID": "5db1454cfb051b5e5039e143",
+   "ProcessID": 2364,
+   "ParentPID": 3332,
+   "CommandLine": "--cb13d095",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ripplepsec.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571898700261
+  },
+  {
+   "OID": "5db14552fb051b5e5039e550",
+   "ProcessID": 1448,
+   "ParentPID": 2364,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571898706574
+  },
+  {
+   "OID": "5db14553fb051b5e5039e55e",
+   "ProcessID": 3432,
+   "ParentPID": 1448,
+   "CommandLine": "--b583abe8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571898706652
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db14553fb051b5e5039e55e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db14553fb051b5e5039e55e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db14552fb051b5e5039e550",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db1454cfb051b5e5039e143",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db1454cfb051b5e5039e143",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db1454cfb051b5e5039e143",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

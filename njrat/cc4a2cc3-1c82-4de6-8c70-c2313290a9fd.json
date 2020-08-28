@@ -1,0 +1,84 @@
+{
+ "Name": "erbaevclient[1].exe",
+ "Md5": "6d13aeabca91f60fc904629e82a80268",
+ "UUID": "cc4a2cc3-1c82-4de6-8c70-c2313290a9fd",
+ "Processes": [
+  {
+   "OID": "5d39181c59c0b22b41e7a671",
+   "ProcessID": 2972,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\erbaevclient[1].exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\erbaevclient[1].exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564022812213
+  },
+  {
+   "OID": "5d39182559c0b22b41e7a942",
+   "ProcessID": 3004,
+   "ParentPID": 2972,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\TeamViwer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\TeamViwer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564022820698
+  },
+  {
+   "OID": "5d39182d59c0b22b41e7ae95",
+   "ProcessID": 2640,
+   "ParentPID": 3004,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\TeamViwer.exe\" \"TeamViwer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564022828979
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d39182559c0b22b41e7a942",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d39182559c0b22b41e7a942",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d39182559c0b22b41e7a942",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d39182559c0b22b41e7a942",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d39182559c0b22b41e7a942",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d39182559c0b22b41e7a942",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d39181c59c0b22b41e7a671",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d39181c59c0b22b41e7a671",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

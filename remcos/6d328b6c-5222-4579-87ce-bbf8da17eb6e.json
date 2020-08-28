@@ -1,0 +1,144 @@
+{
+ "Name": "9.exe",
+ "Md5": "1065acad24d18637f42730835dc64cfc",
+ "UUID": "6d328b6c-5222-4579-87ce-bbf8da17eb6e",
+ "Processes": [
+  {
+   "OID": "5aede10af9b4dd0f34e38d42",
+   "ProcessID": 128,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\9.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\9.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1525539081761
+  },
+  {
+   "OID": "5aede10af9b4dd0f34e38d43",
+   "ProcessID": 3048,
+   "ParentPID": 128,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\9.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1525539081995
+  },
+  {
+   "OID": "5aede10af9b4dd0f34e3903b",
+   "ProcessID": 2056,
+   "ParentPID": 3048,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1525539082401
+  },
+  {
+   "OID": "5aede10bf9b4dd0f34e39684",
+   "ProcessID": 3468,
+   "ParentPID": 2056,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\System32\\winsoft.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1525539083636
+  },
+  {
+   "OID": "5aede10bf9b4dd0f34e39686",
+   "ProcessID": 2080,
+   "ParentPID": 3468,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\System32\\winsoft.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\System32\\winsoft.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1525539083698
+  },
+  {
+   "OID": "5aede10cf9b4dd0f34e396c6",
+   "ProcessID": 3176,
+   "ParentPID": 2080,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\System32\\winsoft.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1525539083839
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5aede10cf9b4dd0f34e396c6",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5aede10cf9b4dd0f34e396c6",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5aede10cf9b4dd0f34e396c6",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5aede10cf9b4dd0f34e396c6",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5aede10cf9b4dd0f34e396c6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5aede10bf9b4dd0f34e39686",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5aede10bf9b4dd0f34e39686",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5aede109f9b4dd0f34e386ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5aede10af9b4dd0f34e3903b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5aede10af9b4dd0f34e38d43",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5aede10af9b4dd0f34e38d43",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5aede10af9b4dd0f34e38d43",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5aede10af9b4dd0f34e38d43",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5aede10af9b4dd0f34e38d42",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  }
+ ]
+}

@@ -1,0 +1,717 @@
+{
+ "Name": "Sploit.exe",
+ "Md5": "fa68d5935bb36a6f053e0644c6528231",
+ "UUID": "025650c9-cca2-4c92-80e0-25f6a1225abb",
+ "Processes": [
+  {
+   "OID": "5e3d8fdce4470f7c75ff8028",
+   "ProcessID": 372,
+   "ParentPID": 2036,
+   "CommandLine": "C:\\Windows\\Explorer.EXE",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e3d8fdce4470f7c75ff802c",
+   "ProcessID": 3548,
+   "ParentPID": 1120,
+   "CommandLine": "\"C:\\Windows\\system32\\SearchProtocolHost.exe\" Global\\UsGthrFltPipeMssGthrPipe4_ Global\\UsGthrCtrlFltPipeMssGthrPipe4 1 -2147483646 \"Software\\Microsoft\\Windows Search\" \"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search 4.0 Robot)\" \"C:\\ProgramData\\Microsoft\\Search\\Data\\Temp\\usgthrsvc\" \"DownLevelDaemon\" ",
+   "Image": "C:\\Windows\\System32\\SearchProtocolHost.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e3d8fdde4470f7c75ff8918",
+   "ProcessID": 2856,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Sploit.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Sploit.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581092828723
+  },
+  {
+   "OID": "5e3d8fe1e4470f7c75ff8f1e",
+   "ProcessID": 2288,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" ",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1581092832676
+  },
+  {
+   "OID": "5e3d8fe1e4470f7c75ff8f1f",
+   "ProcessID": 3580,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=crashpad-handler \"--user-data-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data\" /prefetch:7 --monitor-self-annotation=ptype=crashpad-handler \"--database=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data\\Crashpad\" \"--metrics-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data\" --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=plat=Win32 --annotation=prod=Chrome --annotation=ver=75.0.3770.100 --initial-client-data=0x7c,0x80,0x84,0x78,0x88,0x6fa8a9d0,0x6fa8a9e0,0x6fa8a9ec",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092832786
+  },
+  {
+   "OID": "5e3d8fe1e4470f7c75ff9197",
+   "ProcessID": 2404,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=watcher --main-thread-id=4048 --on-initialized-event-handle=324 --parent-handle=328 /prefetch:6",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092833036
+  },
+  {
+   "OID": "5e3d8fe1e4470f7c75ff9198",
+   "ProcessID": 3312,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=gpu-process --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --gpu-preferences=KAAAAAAAAADgAAAgAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAACgAAAAEAAAAIAAAAAAAAAAoAAAAAAAAADAAAAAAAAAAOAAAAAAAAAAQAAAAAAAAAAAAAAAFAAAAEAAAAAAAAAAAAAAABgAAABAAAAAAAAAAAQAAAAUAAAAQAAAAAAAAAAEAAAAGAAAA --service-request-channel-token=5444575908759735061 --mojo-platform-channel-handle=1052 --ignored=\" --type=renderer \" /prefetch:2",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092833192
+  },
+  {
+   "OID": "5e3d8fe1e4470f7c75ff9199",
+   "ProcessID": 3592,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=network --service-request-channel-token=10990489904916617787 --mojo-platform-channel-handle=1680 /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092833239
+  },
+  {
+   "OID": "5e3d8fe2e4470f7c75ff97fa",
+   "ProcessID": 3436,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --instant-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=2772761970665285299 --renderer-client-id=6 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2264 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092833739
+  },
+  {
+   "OID": "5e3d8fe2e4470f7c75ff97fb",
+   "ProcessID": 3152,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=16622901546332387169 --renderer-client-id=7 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2504 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092833801
+  },
+  {
+   "OID": "5e3d8fe2e4470f7c75ff97fc",
+   "ProcessID": 4052,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=2028033087078482042 --renderer-client-id=4 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2572 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092833899
+  },
+  {
+   "OID": "5e3d8fe3e4470f7c75ffb3aa",
+   "ProcessID": 1744,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=12052008921128765674 --mojo-platform-channel-handle=3332 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092835206
+  },
+  {
+   "OID": "5e3d8fe3e4470f7c75ffb3ab",
+   "ProcessID": 2844,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=3691302717173790919 --mojo-platform-channel-handle=3416 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092835263
+  },
+  {
+   "OID": "5e3d8fe3e4470f7c75ffb3ac",
+   "ProcessID": 880,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=10368244202918874775 --mojo-platform-channel-handle=3540 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092835310
+  },
+  {
+   "OID": "5e3d8fe4e4470f7c75ffca01",
+   "ProcessID": 2684,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=8872072622533654904 --renderer-client-id=11 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=3704 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092836283
+  },
+  {
+   "OID": "5e3d8feee4470f7c7500114d",
+   "ProcessID": 580,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=3388149419003513939 --mojo-platform-channel-handle=3384 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092845387
+  },
+  {
+   "OID": "5e3d8feee4470f7c7500180f",
+   "ProcessID": 2740,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=613249829205877990 --mojo-platform-channel-handle=1672 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092845890
+  },
+  {
+   "OID": "5e3d8feee4470f7c75001810",
+   "ProcessID": 2652,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=608292592664351508 --renderer-client-id=14 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=3888 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092846001
+  },
+  {
+   "OID": "5e3d8fefe4470f7c75001d72",
+   "ProcessID": 3084,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=551793494075398949 --mojo-platform-channel-handle=3508 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092846343
+  },
+  {
+   "OID": "5e3d8fefe4470f7c75002976",
+   "ProcessID": 2604,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=13191946030961911062 --mojo-platform-channel-handle=2268 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092846627
+  },
+  {
+   "OID": "5e3d8fefe4470f7c75002977",
+   "ProcessID": 968,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=9615514101330124656 --renderer-client-id=17 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=3872 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092847071
+  },
+  {
+   "OID": "5e3d8ff0e4470f7c75003495",
+   "ProcessID": 1632,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=2749434752264446135 --mojo-platform-channel-handle=1144 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092847149
+  },
+  {
+   "OID": "5e3d8ff0e4470f7c75004123",
+   "ProcessID": 3608,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=18275776292535554743 --renderer-client-id=19 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=3788 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092847833
+  },
+  {
+   "OID": "5e3d8ff0e4470f7c75004124",
+   "ProcessID": 3308,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=7074036131898460924 --mojo-platform-channel-handle=4276 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092847901
+  },
+  {
+   "OID": "5e3d8ff1e4470f7c75005135",
+   "ProcessID": 1920,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=gpu-process --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --disable-gpu-sandbox --use-gl=disabled --gpu-preferences=KAAAAAAAAADgAAAgAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAACgAAAAEAAAAIAAAAAAAAAAoAAAAAAAAADAAAAAAAAAAOAAAAAAAAAAQAAAAAAAAAAAAAAAFAAAAEAAAAAAAAAAAAAAABgAAABAAAAAAAAAAAQAAAAUAAAAQAAAAAAAAAAEAAAAGAAAA --service-request-channel-token=7047177692322792235 --mojo-platform-channel-handle=4504 /prefetch:2",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092848210
+  },
+  {
+   "OID": "5e3d8ff1e4470f7c75005136",
+   "ProcessID": 1352,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=1823473328430797483 --mojo-platform-channel-handle=4496 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092848282
+  },
+  {
+   "OID": "5e3d8ff1e4470f7c75005b14",
+   "ProcessID": 628,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=8118421417661750430 --mojo-platform-channel-handle=4352 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092848695
+  },
+  {
+   "OID": "5e3d8ff2e4470f7c75006329",
+   "ProcessID": 2808,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=10136829256256494062 --mojo-platform-channel-handle=4356 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092849209
+  },
+  {
+   "OID": "5e3d8ff2e4470f7c7500632a",
+   "ProcessID": 952,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=18010105102269651690 --mojo-platform-channel-handle=4376 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092849611
+  },
+  {
+   "OID": "5e3d8ff3e4470f7c750071c3",
+   "ProcessID": 3864,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=1233431249333308766 --mojo-platform-channel-handle=4460 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092849914
+  },
+  {
+   "OID": "5e3d8ff3e4470f7c750071c4",
+   "ProcessID": 3304,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=13828260782718332900 --mojo-platform-channel-handle=4520 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092850085
+  },
+  {
+   "OID": "5e3d8ff3e4470f7c75007d42",
+   "ProcessID": 3492,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=8231649607990911445 --mojo-platform-channel-handle=4316 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092850442
+  },
+  {
+   "OID": "5e3d8ff7e4470f7c7500953e",
+   "ProcessID": 1800,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=7269818493539625312 --renderer-client-id=29 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=4524 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092854866
+  },
+  {
+   "OID": "5e3d8ff8e4470f7c75009c6a",
+   "ProcessID": 2580,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=15653513116796567747 --renderer-client-id=30 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2772 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092855702
+  },
+  {
+   "OID": "5e3d8ff9e4470f7c7500a43c",
+   "ProcessID": 2804,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=16689052302815994209 --renderer-client-id=31 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2268 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092856230
+  },
+  {
+   "OID": "5e3d8ffde4470f7c7500b5ed",
+   "ProcessID": 680,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=15007710656030516617 --renderer-client-id=32 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=4460 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092860141
+  },
+  {
+   "OID": "5e3d9008e4470f7c7500ddeb",
+   "ProcessID": 2712,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=15822393640914907687 --mojo-platform-channel-handle=892 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092871611
+  },
+  {
+   "OID": "5e3d900be4470f7c7500e61d",
+   "ProcessID": 3456,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=15442480818633135196 --renderer-client-id=34 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2056 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092874124
+  },
+  {
+   "OID": "5e3d900be4470f7c7500e61e",
+   "ProcessID": 1604,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=1427785356141589557 --renderer-client-id=35 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2084 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092874154
+  },
+  {
+   "OID": "5e3d900fe4470f7c7500f68d",
+   "ProcessID": 1536,
+   "ParentPID": 2288,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1028,636083941521690653,2799474172643377514,131072 --enable-features=PasswordImport --lang=en-US --no-sandbox --service-request-channel-token=290364818005937651 --mojo-platform-channel-handle=3152 /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092878693
+  },
+  {
+   "OID": "5e3d9013e4470f7c750108f6",
+   "ProcessID": 2916,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" ",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1581092882617
+  },
+  {
+   "OID": "5e3d9014e4470f7c75010904",
+   "ProcessID": 2380,
+   "ParentPID": 2916,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=crashpad-handler \"--user-data-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data\" /prefetch:7 --monitor-self-annotation=ptype=crashpad-handler \"--database=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data\\Crashpad\" \"--metrics-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data\" --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=plat=Win32 --annotation=prod=Chrome --annotation=ver=75.0.3770.100 --initial-client-data=0x7c,0x80,0x84,0x78,0x88,0x6ebaa9d0,0x6ebaa9e0,0x6ebaa9ec",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092882742
+  },
+  {
+   "OID": "5e3d9014e4470f7c75010905",
+   "ProcessID": 2632,
+   "ParentPID": 2916,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=watcher --main-thread-id=3064 --on-initialized-event-handle=324 --parent-handle=328 /prefetch:6",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092882929
+  },
+  {
+   "OID": "5e3d9014e4470f7c75010906",
+   "ProcessID": 3696,
+   "ParentPID": 2916,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=gpu-process --field-trial-handle=1012,2338513589297225339,16483431670765780310,131072 --enable-features=PasswordImport --gpu-preferences=KAAAAAAAAADgAAAgAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAACgAAAAEAAAAIAAAAAAAAAAoAAAAAAAAADAAAAAAAAAAOAAAAAAAAAAQAAAAAAAAAAAAAAAFAAAAEAAAAAAAAAAAAAAABgAAABAAAAAAAAAAAQAAAAUAAAAQAAAAAAAAAAEAAAAGAAAA --service-request-channel-token=3730332460596807692 --mojo-platform-channel-handle=1036 --ignored=\" --type=renderer \" /prefetch:2",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092883070
+  },
+  {
+   "OID": "5e3d9014e4470f7c75010907",
+   "ProcessID": 2780,
+   "ParentPID": 2916,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1012,2338513589297225339,16483431670765780310,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=network --service-request-channel-token=4210500269458311210 --mojo-platform-channel-handle=1616 /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092883132
+  },
+  {
+   "OID": "5e3d9014e4470f7c75010ca6",
+   "ProcessID": 2736,
+   "ParentPID": 2916,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1012,2338513589297225339,16483431670765780310,131072 --enable-features=PasswordImport --lang=en-US --instant-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=12574666522551108656 --renderer-client-id=6 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2264 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092883460
+  },
+  {
+   "OID": "5e3d9014e4470f7c75010ca7",
+   "ProcessID": 2972,
+   "ParentPID": 2916,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1012,2338513589297225339,16483431670765780310,131072 --enable-features=PasswordImport --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=2889766409072300481 --renderer-client-id=7 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2500 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092883583
+  },
+  {
+   "OID": "5e3d9014e4470f7c75010ca8",
+   "ProcessID": 1780,
+   "ParentPID": 2916,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1012,2338513589297225339,16483431670765780310,131072 --enable-features=PasswordImport --lang=en-US --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=2793004205472243523 --renderer-client-id=4 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2524 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092883603
+  },
+  {
+   "OID": "5e3d9016e4470f7c7501265b",
+   "ProcessID": 2492,
+   "ParentPID": 2916,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1012,2338513589297225339,16483431670765780310,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=13576896701404354269 --mojo-platform-channel-handle=3340 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092884927
+  },
+  {
+   "OID": "5e3d9016e4470f7c7501265c",
+   "ProcessID": 3764,
+   "ParentPID": 2916,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1012,2338513589297225339,16483431670765780310,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=1723773411745212966 --mojo-platform-channel-handle=3436 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092884954
+  },
+  {
+   "OID": "5e3d9016e4470f7c75012e7f",
+   "ProcessID": 1712,
+   "ParentPID": 2916,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1012,2338513589297225339,16483431670765780310,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=12047302912668399618 --renderer-client-id=10 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=3568 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092885463
+  },
+  {
+   "OID": "5e3d901ce4470f7c75015710",
+   "ProcessID": 2556,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\WinRAR\\WinRAR.exe\" x -iext -ow -ver -- \"C:\\Users\\admin\\Desktop\\Revenge-RAT v0.4.rar\" C:\\Users\\admin\\Desktop\\",
+   "Image": "C:\\Program Files\\WinRAR\\WinRAR.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1581092891813
+  },
+  {
+   "OID": "5e3d9028e4470f7c75019761",
+   "ProcessID": 2488,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Revenge-RAT v0.4\\Revenge-RAT v0.4\\Revenge-RAT v0.4.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Revenge-RAT v0.4\\Revenge-RAT v0.4\\Revenge-RAT v0.4.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1581092903594
+  },
+  {
+   "OID": "5e3d9029e4470f7c7501985e",
+   "ProcessID": 1500,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Revenge-RAT v0.4\\Revenge-RAT v0.4\\Revenge-RAT v0.4.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Revenge-RAT v0.4\\Revenge-RAT v0.4\\Revenge-RAT v0.4.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1581092904063
+  },
+  {
+   "OID": "5e3d902ae4470f7c7501a18d",
+   "ProcessID": 3564,
+   "ParentPID": 1500,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092904813
+  },
+  {
+   "OID": "5e3d902ae4470f7c7501a5ff",
+   "ProcessID": 2184,
+   "ParentPID": 3564,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092905391
+  },
+  {
+   "OID": "5e3d903ce4470f7c7501c148",
+   "ProcessID": 2272,
+   "ParentPID": 3564,
+   "CommandLine": "SCHTASKS /Delete /TN \"Client\" /F",
+   "Image": "C:\\Windows\\system32\\SCHTASKS.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092923750
+  },
+  {
+   "OID": "5e3d903de4470f7c7501c5a9",
+   "ProcessID": 3200,
+   "ParentPID": 3564,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\wawrHJf.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092924391
+  },
+  {
+   "OID": "5e3d903de4470f7c7501c5aa",
+   "ProcessID": 1380,
+   "ParentPID": 3564,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\wawrHJf.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092924422
+  },
+  {
+   "OID": "5e3d903de4470f7c7501c5ab",
+   "ProcessID": 392,
+   "ParentPID": 3564,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\wawrHJfwawrHJf.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581092924438
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e3d902ae4470f7c7501a18d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d903ce4470f7c7501c148",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d902ae4470f7c7501a18d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d902ae4470f7c7501a18d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d902ae4470f7c7501a18d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d902ae4470f7c7501a18d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d902ae4470f7c7501a18d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d8fdce4470f7c75ff801c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d9029e4470f7c7501985e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d9028e4470f7c75019761",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d8fdce4470f7c75ff802c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d8fdce4470f7c75ff8028",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d8fdce4470f7c75ff802a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d901ce4470f7c75015710",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081",
+    "T1114"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d901ce4470f7c75015710",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d901ce4470f7c75015710",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d9014e4470f7c75010907",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d9014e4470f7c75010907",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d9013e4470f7c750108f6",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d9013e4470f7c750108f6",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d9013e4470f7c750108f6",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d8fe1e4470f7c75ff8f1e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d8fe1e4470f7c75ff8f1e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1176"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d8fe1e4470f7c75ff9199",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d8fe1e4470f7c75ff8f1e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e3d8fe1e4470f7c75ff8f1e",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3d8fe1e4470f7c75ff8f1e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  }
+ ]
+}

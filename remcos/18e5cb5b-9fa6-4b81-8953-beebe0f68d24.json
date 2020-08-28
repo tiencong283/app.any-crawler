@@ -1,0 +1,169 @@
+{
+ "Name": "dns.exe",
+ "Md5": "1db625d5ebf7c532d65511070101dd94",
+ "UUID": "18e5cb5b-9fa6-4b81-8953-beebe0f68d24",
+ "Processes": [
+  {
+   "OID": "5b2f613a223dad59cd5e783f",
+   "ProcessID": 900,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dns.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dns.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1529831738054
+  },
+  {
+   "OID": "5b2f616d223dad59cd5e810b",
+   "ProcessID": 1360,
+   "ParentPID": 900,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dns.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dns.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529831788413
+  },
+  {
+   "OID": "5b2f616d223dad59cd5e810c",
+   "ProcessID": 3176,
+   "ParentPID": 1360,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529831788788
+  },
+  {
+   "OID": "5b2f616e223dad59cd5e8781",
+   "ProcessID": 2744,
+   "ParentPID": 3176,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529831790101
+  },
+  {
+   "OID": "5b2f616e223dad59cd5e8783",
+   "ProcessID": 3840,
+   "ParentPID": 2744,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529831790210
+  },
+  {
+   "OID": "5b2f619b223dad59cd5e8c1d",
+   "ProcessID": 3136,
+   "ParentPID": 3840,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529831834773
+  },
+  {
+   "OID": "5b2f61a1223dad59cd5ec11f",
+   "ProcessID": 3852,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Windows\\system32\\verclsid.exe\" /S /C {0B2C9183-C9FA-4C53-AE21-C900B0C39965} /I {0C733A8A-2A1C-11CE-ADE5-00AA0044773D} /X 0x401",
+   "Image": "C:\\Windows\\system32\\verclsid.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1529831840913
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b2f613a223dad59cd5e7834",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5b2f613a223dad59cd5e7834",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2f619b223dad59cd5e8c1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2f619b223dad59cd5e8c1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2f619b223dad59cd5e8c1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2f619b223dad59cd5e8c1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2f619b223dad59cd5e8c1d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b2f619b223dad59cd5e8c1d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b2f616e223dad59cd5e8783",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2f616d223dad59cd5e810c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b2f616d223dad59cd5e810b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5b2f616d223dad59cd5e810b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b2f616d223dad59cd5e810b",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2f616d223dad59cd5e810b",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2f616d223dad59cd5e810b",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2f616d223dad59cd5e810b",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2f613a223dad59cd5e783f",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

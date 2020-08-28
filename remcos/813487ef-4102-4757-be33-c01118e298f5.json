@@ -1,0 +1,138 @@
+{
+ "Name": "AIF 500 unit Distribution 2018ECA - ProfoInv.exe",
+ "Md5": "a17123a44263e0e8c3c79b515f044d74",
+ "UUID": "813487ef-4102-4757-be33-c01118e298f5",
+ "Processes": [
+  {
+   "OID": "5b8fb8cf0227b17f307f5f10",
+   "ProcessID": 2440,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AIF 500 unit Distribution 2018ECA - ProfoInv.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AIF 500 unit Distribution 2018ECA - ProfoInv.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1536145614763
+  },
+  {
+   "OID": "5b8fb8e10227b17f307f6277",
+   "ProcessID": 1512,
+   "ParentPID": 2440,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\AIF 500 unit Distribution 2018ECA - ProfoInv.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AIF 500 unit Distribution 2018ECA - ProfoInv.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536145632966
+  },
+  {
+   "OID": "5b8fb8ee0227b17f307f6363",
+   "ProcessID": 2152,
+   "ParentPID": 1512,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536145646404
+  },
+  {
+   "OID": "5b8fb8ef0227b17f307f6912",
+   "ProcessID": 3884,
+   "ParentPID": 2152,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536145647654
+  },
+  {
+   "OID": "5b8fb8f00227b17f307f691b",
+   "ProcessID": 3532,
+   "ParentPID": 3884,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536145647732
+  },
+  {
+   "OID": "5b8fb8fd0227b17f307f6d61",
+   "ProcessID": 960,
+   "ParentPID": 3532,
+   "CommandLine": "\u0001:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1536145661169
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b8fb8ce0227b17f307f57a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8fb8fd0227b17f307f6d61",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8fb8fd0227b17f307f6d61",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b8fb8fd0227b17f307f6d61",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8fb8fd0227b17f307f6d61",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b8fb8f00227b17f307f691b",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8fb8ee0227b17f307f6363",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b8fb8e10227b17f307f6277",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5b8fb8e10227b17f307f6277",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8fb8e10227b17f307f6277",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b8fb8e10227b17f307f6277",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8fb8e10227b17f307f6277",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8fb8cf0227b17f307f5f10",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

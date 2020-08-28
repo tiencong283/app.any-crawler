@@ -1,0 +1,117 @@
+{
+ "Name": "module for quiotation.exe",
+ "Md5": "6ae28ca55567eebe5f77f051a64c6fd0",
+ "UUID": "5a59ad49-6316-4cd7-985b-0b26f89b486e",
+ "Processes": [
+  {
+   "OID": "5bea78a5ff8e4d37f2beda5c",
+   "ProcessID": 3416,
+   "ParentPID": 1772,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\module for quiotation.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\module for quiotation.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1542092964983
+  },
+  {
+   "OID": "5bea78a5ff8e4d37f2bedd60",
+   "ProcessID": 2572,
+   "ParentPID": 3416,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe\" /logtoconsole=false /logfile= /u \"C:\\Users\\admin\\AppData\\Local\\Temp\\module for quiotation.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542092965389
+  },
+  {
+   "OID": "5bea78b4ff8e4d37f2bee2a3",
+   "ProcessID": 3640,
+   "ParentPID": 1772,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1542092980061
+  },
+  {
+   "OID": "5bea78c4ff8e4d37f2bee6bf",
+   "ProcessID": 2332,
+   "ParentPID": 2572,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\CSJjbwg\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmpA7C4.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542092996061
+  },
+  {
+   "OID": "5bea78c5ff8e4d37f2bee82f",
+   "ProcessID": 3256,
+   "ParentPID": 2572,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542092996295
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bea78c5ff8e4d37f2bee82f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bea78c5ff8e4d37f2bee82f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bea78c5ff8e4d37f2bee82f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bea78c5ff8e4d37f2bee82f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bea78c5ff8e4d37f2bee82f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bea78a5ff8e4d37f2bedd60",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bea78a5ff8e4d37f2bed2ec",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bea78c4ff8e4d37f2bee6bf",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5bea78a5ff8e4d37f2bedd60",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5bea78a5ff8e4d37f2bedd60",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bea78a5ff8e4d37f2bedd60",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

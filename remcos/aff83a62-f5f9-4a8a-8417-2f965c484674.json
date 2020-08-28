@@ -1,0 +1,67 @@
+{
+ "Name": "download3.exe",
+ "Md5": "c845f4c9b03f44b77b3ea3283e24f53b",
+ "UUID": "aff83a62-f5f9-4a8a-8417-2f965c484674",
+ "Processes": [
+  {
+   "OID": "5c095ad63eb335479ab682ad",
+   "ProcessID": 3084,
+   "ParentPID": 2028,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\download3.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\download3.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1544116950224
+  },
+  {
+   "OID": "5c095af43eb335479ab68eab",
+   "ProcessID": 4088,
+   "ParentPID": 3084,
+   "CommandLine": "\"\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1544116980583
+  },
+  {
+   "OID": "5c095af53eb335479ab68eae",
+   "ProcessID": 3272,
+   "ParentPID": 4088,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1544116980739
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c095af53eb335479ab68eae",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c095af53eb335479ab68eae",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c095ad63eb335479ab67b85",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5c095af53eb335479ab68eae",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c095af43eb335479ab68eab",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

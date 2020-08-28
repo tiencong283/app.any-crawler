@@ -1,0 +1,78 @@
+{
+ "Name": "3696657290590693882418238096110691576497667838139490423424157347494036812797503.exe",
+ "Md5": "141332c10c22a4b7501adbcbee9a68b0",
+ "UUID": "2f30100b-7763-44f0-9317-865ee90a6815",
+ "Processes": [
+  {
+   "OID": "5b333070ac713d654c2627b4",
+   "ProcessID": 1524,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3696657290590693882418238096110691576497667838139490423424157347494036812797503.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3696657290590693882418238096110691576497667838139490423424157347494036812797503.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1530081391901
+  },
+  {
+   "OID": "5b333078ac713d654c262fa3",
+   "ProcessID": 3600,
+   "ParentPID": 1524,
+   "CommandLine": "/k %windir%\\System32\\reg.exe ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1530081399823
+  },
+  {
+   "OID": "5b333078ac713d654c262fa5",
+   "ProcessID": 584,
+   "ParentPID": 3600,
+   "CommandLine": "C:\\Windows\\System32\\reg.exe  ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1530081399916
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b333070ac713d654c2627b4",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b333070ac713d654c2627b4",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b333070ac713d654c2627b4",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b333070ac713d654c2627b4",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b333070ac713d654c2627b4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b333078ac713d654c262fa3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5b333070ac713d654c2627b4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

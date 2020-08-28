@@ -1,0 +1,91 @@
+{
+ "Name": "njonline.exe",
+ "Md5": "587cd21f54122dcaa46a69d141a40d41",
+ "UUID": "2a351e14-7592-43aa-b083-46303c1992f4",
+ "Processes": [
+  {
+   "OID": "5ed8e05460601117daaf73b5",
+   "ProcessID": 2952,
+   "ParentPID": 1784,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\njonline.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\njonline.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591271508251
+  },
+  {
+   "OID": "5ed8e0b860601117daaf8e55",
+   "ProcessID": 2492,
+   "ParentPID": 1784,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\" ",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1591271603563
+  },
+  {
+   "OID": "5ed8e0bd60601117daaf9b07",
+   "ProcessID": 3392,
+   "ParentPID": 2492,
+   "CommandLine": "netstat  -an",
+   "Image": "C:\\Windows\\system32\\NETSTAT.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591271613391
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ed8e0b860601117daaf8e55",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1049"
+   ]
+  },
+  {
+   "ProcessOID": "5ed8e05460601117daaf73a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed8e05460601117daaf73ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed8e05460601117daaf73ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ed8e0b860601117daaf8e55",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5ed8e05460601117daaf73ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ed8e05460601117daaf73b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed8e05460601117daaf73b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed8e05460601117daaf73b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  }
+ ]
+}

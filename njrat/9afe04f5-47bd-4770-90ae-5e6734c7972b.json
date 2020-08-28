@@ -1,0 +1,70 @@
+{
+ "Name": "nx.exe",
+ "Md5": "0e0c2fb32e4f239fb482480c0ed95737",
+ "UUID": "9afe04f5-47bd-4770-90ae-5e6734c7972b",
+ "Processes": [
+  {
+   "OID": "5eab276848b3a30d394bc106",
+   "ProcessID": 2664,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\nx.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\nx.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588275047792
+  },
+  {
+   "OID": "5eab276e48b3a30d394bc428",
+   "ProcessID": 2536,
+   "ParentPID": 2664,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\nx.exe\" \"nx.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588275053980
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eab276848b3a30d394bb8c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5eab276848b3a30d394bc106",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eab276848b3a30d394bc106",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eab276848b3a30d394bc106",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eab276848b3a30d394bc106",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eab276848b3a30d394bc106",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eab276848b3a30d394bc106",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

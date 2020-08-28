@@ -1,0 +1,87 @@
+{
+ "Name": "Alevvv2.exe",
+ "Md5": "5698c8dd5261e58071cc5860a7f2f494",
+ "UUID": "b004fe09-956c-43a4-9fb3-9426f50db961",
+ "Processes": [
+  {
+   "OID": "5e942124cce6926a86c903de",
+   "ProcessID": 4000,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Alevvv2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Alevvv2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586766115780
+  },
+  {
+   "OID": "5e942124cce6926a86c903df",
+   "ProcessID": 2676,
+   "ParentPID": 4000,
+   "CommandLine": "\"C:\\ProgramData\\bc.exe\" ",
+   "Image": "C:\\ProgramData\\bc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586766115936
+  },
+  {
+   "OID": "5e942124cce6926a86c903f0",
+   "ProcessID": 3432,
+   "ParentPID": 2676,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\bc.exe\" \"bc.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586766116061
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e942124cce6926a86c903df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e942124cce6926a86c903df",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e942124cce6926a86c903df",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e942124cce6926a86c903df",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e942124cce6926a86c903df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e942124cce6926a86c903df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e942124cce6926a86c903df",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e942124cce6926a86c903de",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e942124cce6926a86c903de",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

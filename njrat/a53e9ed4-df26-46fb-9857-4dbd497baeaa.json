@@ -1,0 +1,62 @@
+{
+ "Name": "Server.exe",
+ "Md5": "8caaa54f7641ea3aa81b83b340a0fc8e",
+ "UUID": "a53e9ed4-df26-46fb-9857-4dbd497baeaa",
+ "Processes": [
+  {
+   "OID": "5e317d3c0d3c8a4b235c0ab8",
+   "ProcessID": 3040,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580301628180
+  },
+  {
+   "OID": "5e317d420d3c8a4b235c0dc9",
+   "ProcessID": 2724,
+   "ParentPID": 3040,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" \"Server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580301634367
+  },
+  {
+   "OID": "5e317d450d3c8a4b235c1407",
+   "ProcessID": 1024,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1580301637211
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e317d3c0d3c8a4b235c0ab8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e317d3c0d3c8a4b235c0ab8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e317d450d3c8a4b235c1407",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e317d3c0d3c8a4b235c0ab8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

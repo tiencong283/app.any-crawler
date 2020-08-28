@@ -1,0 +1,68 @@
+{
+ "Name": "internet explorer.exe",
+ "Md5": "77e855987a3694dc259d0b1a5429e67c",
+ "UUID": "5310d216-5510-4184-81f1-5a097379b67a",
+ "Processes": [
+  {
+   "OID": "5ebec51b36fd58499d18b5df",
+   "ProcessID": 2824,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\internet explorer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\internet explorer.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1589560602596
+  },
+  {
+   "OID": "5ebec52336fd58499d18c106",
+   "ProcessID": 2648,
+   "ParentPID": 2824,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\internet explorer.exe\" \"internet explorer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589560610986
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ebec51b36fd58499d18b5df",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebec51b36fd58499d18b5df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebec51b36fd58499d18b5df",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebec51b36fd58499d18b5df",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ebec51b36fd58499d18b5df",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ebec51b36fd58499d18b5df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebec51b36fd58499d18b5df",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

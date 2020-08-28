@@ -1,0 +1,156 @@
+{
+ "Name": "qwerty.exe",
+ "Md5": "5f960cfd0313ffaeb82195de3b5151ce",
+ "UUID": "52d5890b-7550-48b0-8ff3-96a0a8a9c397",
+ "Processes": [
+  {
+   "OID": "5b9f6bb43c54b92c9f6baa2a",
+   "ProcessID": 1836,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\qwerty.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\qwerty.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1537174452090
+  },
+  {
+   "OID": "5b9f6bb53c54b92c9f6bb3df",
+   "ProcessID": 564,
+   "ParentPID": 1836,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\65216112\\gjd.exe\" khv=gwa ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\65216112\\gjd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1537174452903
+  },
+  {
+   "OID": "5b9f6bb53c54b92c9f6bb3e0",
+   "ProcessID": 2024,
+   "ParentPID": 564,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\65216112\\gjd.exe C:\\Users\\admin\\AppData\\Local\\Temp\\65216112\\YMUFX",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\65216112\\gjd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1537174453074
+  },
+  {
+   "OID": "5b9f6bb83c54b92c9f6bbff1",
+   "ProcessID": 3984,
+   "ParentPID": 2024,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1537174455418
+  },
+  {
+   "OID": "5b9f6bb83c54b92c9f6bbff2",
+   "ProcessID": 2996,
+   "ParentPID": 3984,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1537174455699
+  },
+  {
+   "OID": "5b9f6bb83c54b92c9f6bbff4",
+   "ProcessID": 3280,
+   "ParentPID": 2996,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1537174455762
+  },
+  {
+   "OID": "5b9f6bb83c54b92c9f6bc7ac",
+   "ProcessID": 1192,
+   "ParentPID": 2996,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1537174456824
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b9f6bb83c54b92c9f6bc7ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9f6bb83c54b92c9f6bbff1",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9f6bb83c54b92c9f6bbff1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b9f6bb83c54b92c9f6bbff1",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9f6bb83c54b92c9f6bbff1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b9f6bb83c54b92c9f6bbff1",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9f6bb83c54b92c9f6bbff1",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9f6bb53c54b92c9f6bb3e0",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9f6bb53c54b92c9f6bb3df",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9f6bb53c54b92c9f6bb3e0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b9f6bb53c54b92c9f6bb3df",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9f6bb43c54b92c9f6baa2a",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9f6bb43c54b92c9f6baa2a",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9f6bb43c54b92c9f6baa2a",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b9f6bb43c54b92c9f6baa18",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1063"
+   ]
+  }
+ ]
+}

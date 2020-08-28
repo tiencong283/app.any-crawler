@@ -1,0 +1,142 @@
+{
+ "Name": "KYC-INQUIRY847.exe",
+ "Md5": "25f290634a8092cc13820b1ade6ec33c",
+ "UUID": "51fc8454-717c-4f3b-8794-e3d09340a212",
+ "Processes": [
+  {
+   "OID": "5b46628459fd74658ff13fb9",
+   "ProcessID": 964,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\KYC-INQUIRY847.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\KYC-INQUIRY847.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1531339396216
+  },
+  {
+   "OID": "5b46628559fd74658ff14173",
+   "ProcessID": 1516,
+   "ParentPID": 964,
+   "CommandLine": "\"cmd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531339396966
+  },
+  {
+   "OID": "5b46628559fd74658ff14378",
+   "ProcessID": 1596,
+   "ParentPID": 1516,
+   "CommandLine": "reg  add \"HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\" /v Load /t REG_SZ /d \"C:\\Users\\admin\\AppData\\Local\\Temp\\vf45\\b9876.exe.lnk\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531339397075
+  },
+  {
+   "OID": "5b46628559fd74658ff14379",
+   "ProcessID": 3404,
+   "ParentPID": 964,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\tmp.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\tmp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531339397310
+  },
+  {
+   "OID": "5b46628559fd74658ff1437a",
+   "ProcessID": 3508,
+   "ParentPID": 964,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531339397388
+  },
+  {
+   "OID": "5b46628559fd74658ff1437b",
+   "ProcessID": 1492,
+   "ParentPID": 3404,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531339397419
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b46628559fd74658ff1437a",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b46628559fd74658ff1437a",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b46628559fd74658ff1437a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b46628559fd74658ff14379",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b46628559fd74658ff14379",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b46628559fd74658ff14379",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b46628459fd74658ff13fb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b46628459fd74658ff13fb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b46628459fd74658ff13fb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b46628559fd74658ff14378",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b46628559fd74658ff14173",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b46628559fd74658ff14173",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5b46628459fd74658ff13fb9",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b46628459fd74658ff13fb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

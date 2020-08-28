@@ -1,0 +1,79 @@
+{
+ "Name": "hostr.exe",
+ "Md5": "5a559b6d223c79f3736dc52794636cfd",
+ "UUID": "52acbe0f-f3fa-4fe9-aed0-b4ab1934d4a6",
+ "Processes": [
+  {
+   "OID": "5ede5e7804c23921a9a36715",
+   "ProcessID": 1360,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\hostr.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\hostr.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591631480210
+  },
+  {
+   "OID": "5ede5e7e04c23921a9a36ff3",
+   "ProcessID": 3888,
+   "ParentPID": 1360,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\hostr.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\hostr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591631485413
+  },
+  {
+   "OID": "5ede5e7e04c23921a9a36ff4",
+   "ProcessID": 2252,
+   "ParentPID": 3888,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\hostr.exe\" \"hostr.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591631485663
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ede5e7e04c23921a9a36ff3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ede5e7e04c23921a9a36ff3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ede5e7e04c23921a9a36ff3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ede5e7e04c23921a9a36ff3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ede5e7e04c23921a9a36ff3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ede5e7e04c23921a9a36ff3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ede5e7804c23921a9a36715",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

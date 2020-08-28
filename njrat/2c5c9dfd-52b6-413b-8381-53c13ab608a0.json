@@ -1,0 +1,75 @@
+{
+ "Name": "0e3e8fb6ae66a63a9b085514af208f1304f4b3255b17a4f2ba1990557835dc05.exe",
+ "Md5": "a075d07dffdf125e20a57048deaa8abc",
+ "UUID": "2c5c9dfd-52b6-413b-8381-53c13ab608a0",
+ "Processes": [
+  {
+   "OID": "5cfe268419f7a849d6962e8e",
+   "ProcessID": 3116,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\0e3e8fb6ae66a63a9b085514af208f1304f4b3255b17a4f2ba1990557835dc05.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\0e3e8fb6ae66a63a9b085514af208f1304f4b3255b17a4f2ba1990557835dc05.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560159876053
+  },
+  {
+   "OID": "5cfe269819f7a849d696311c",
+   "ProcessID": 3060,
+   "ParentPID": 3116,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\InstallUtil.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\InstallUtil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560159895616
+  },
+  {
+   "OID": "5cfe269e19f7a849d6963780",
+   "ProcessID": 3292,
+   "ParentPID": 3060,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\InstallUtil.exe\" \"InstallUtil.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560159902287
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cfe269819f7a849d696311c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfe268419f7a849d6962e8e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfe269819f7a849d696311c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfe269819f7a849d696311c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cfe269819f7a849d696311c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cfe268419f7a849d6962e8e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cfe268419f7a849d6962e8e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

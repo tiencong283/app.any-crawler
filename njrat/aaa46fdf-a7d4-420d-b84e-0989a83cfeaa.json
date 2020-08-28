@@ -1,0 +1,70 @@
+{
+ "Name": "WindowsApp12.exe",
+ "Md5": "2201e9f7b7ea36d5e0500e2ae238ddb1",
+ "UUID": "aaa46fdf-a7d4-420d-b84e-0989a83cfeaa",
+ "Processes": [
+  {
+   "OID": "5ee256c047c47a355a6e773b",
+   "ProcessID": 1812,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsApp12.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsApp12.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591891647796
+  },
+  {
+   "OID": "5ee256c747c47a355a6e7bf5",
+   "ProcessID": 2604,
+   "ParentPID": 1812,
+   "CommandLine": "\"C:\\ProgramData\\explorer.exe\" ",
+   "Image": "C:\\ProgramData\\explorer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591891654734
+  },
+  {
+   "OID": "5ee256cd47c47a355a6e8113",
+   "ProcessID": 2348,
+   "ParentPID": 2604,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\explorer.exe\" \"explorer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591891661218
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee256c747c47a355a6e7bf5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee256c747c47a355a6e7bf5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ee256c047c47a355a6e773b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ee256c047c47a355a6e773b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee256c047c47a355a6e773b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee256c047c47a355a6e773b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

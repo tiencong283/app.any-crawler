@@ -1,0 +1,133 @@
+{
+ "Name": "windrr.exe",
+ "Md5": "df6d5e08ce43828353f5bdc43b44c795",
+ "UUID": "e0d479ac-2aa1-4796-ba00-465ef172014d",
+ "Processes": [
+  {
+   "OID": "5dccdb57b8a40a28ae12e10c",
+   "ProcessID": 2812,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\windrr.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\windrr.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573706583269
+  },
+  {
+   "OID": "5dccdb58b8a40a28ae12e7e4",
+   "ProcessID": 2120,
+   "ParentPID": 2812,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c copy \"C:/Users/admin/AppData/Local/Temp/windrr.exe\" \"%appdata%\\rtyrtt\\fghfgh.exe\" /Y",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573706583738
+  },
+  {
+   "OID": "5dccdb58b8a40a28ae12e7e6",
+   "ProcessID": 1812,
+   "ParentPID": 2812,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c echo [zoneTransfer]ZoneID = 2 \u003e %appdata%\\rtyrtt\\fghfgh.exe:Zone.Identifier",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573706584050
+  },
+  {
+   "OID": "5dccdb58b8a40a28ae12ed69",
+   "ProcessID": 884,
+   "ParentPID": 2812,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c ren \"%appdata%\\rtyrtt\\fghfgh.exe.jpg\" fghfgh.exe",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573706584175
+  },
+  {
+   "OID": "5dccdb58b8a40a28ae12ed6b",
+   "ProcessID": 4020,
+   "ParentPID": 2812,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\svhost.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\svhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573706584347
+  },
+  {
+   "OID": "5dccdb58b8a40a28ae12ed6c",
+   "ProcessID": 252,
+   "ParentPID": 2812,
+   "CommandLine": "cmd /c C:\\Users\\admin\\AppData\\Roaming\\rtyrtt\\fghfgh.exe.bat",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573706584472
+  },
+  {
+   "OID": "5dccdb58b8a40a28ae12ed6e",
+   "ProcessID": 3036,
+   "ParentPID": 252,
+   "CommandLine": "timeout  /t 300",
+   "Image": "C:\\Windows\\system32\\timeout.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573706584581
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dccdb58b8a40a28ae12ed6b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dccdb58b8a40a28ae12ed6b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dccdb58b8a40a28ae12ed6b",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dccdb58b8a40a28ae12ed6b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dccdb57b8a40a28ae12e10c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dccdb58b8a40a28ae12e7e6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dccdb57b8a40a28ae12e10c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dccdb57b8a40a28ae12e10c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dccdb58b8a40a28ae12e7e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dccdb58b8a40a28ae12e7e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dccdb57b8a40a28ae12e10c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "Name": "4e75fc75cdfef2482c39bccd0d37fe5b",
+ "Md5": "4e75fc75cdfef2482c39bccd0d37fe5b",
+ "UUID": "edc07a6c-2aeb-482b-937a-d555659e57ed",
+ "Processes": [
+  {
+   "OID": "5caf48a925cb9e751275a8d1",
+   "ProcessID": 1868,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\4e75fc75cdfef2482c39bccd0d37fe5b.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\4e75fc75cdfef2482c39bccd0d37fe5b.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554991272874
+  },
+  {
+   "OID": "5caf48aa25cb9e751275b064",
+   "ProcessID": 4048,
+   "ParentPID": 1868,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554991273921
+  },
+  {
+   "OID": "5caf48b025cb9e751275b4a4",
+   "ProcessID": 2936,
+   "ParentPID": 4048,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554991280155
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5caf48aa25cb9e751275b064",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5caf48a925cb9e751275a8d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5caf48a925cb9e751275a8d1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5caf48a925cb9e751275a8d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5caf48aa25cb9e751275b064",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

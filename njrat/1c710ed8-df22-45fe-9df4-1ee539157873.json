@@ -1,0 +1,75 @@
+{
+ "Name": "DuxyMxa.exe",
+ "Md5": "8dc78c2031bb121b86c4646e27aeb308",
+ "UUID": "1c710ed8-df22-45fe-9df4-1ee539157873",
+ "Processes": [
+  {
+   "OID": "5d013bac842cd627903ed7f9",
+   "ProcessID": 3128,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\DuxyMxa.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\DuxyMxa.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560361900441
+  },
+  {
+   "OID": "5d013bbf842cd627903ee089",
+   "ProcessID": 2640,
+   "ParentPID": 3128,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\InstallUtil.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\InstallUtil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560361919284
+  },
+  {
+   "OID": "5d013bc6842cd627903ee6f3",
+   "ProcessID": 3376,
+   "ParentPID": 2640,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\InstallUtil.exe\" \"InstallUtil.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560361926066
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d013bbf842cd627903ee089",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d013bac842cd627903ed7f9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d013bbf842cd627903ee089",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d013bbf842cd627903ee089",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d013bbf842cd627903ee089",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d013bac842cd627903ed7f9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d013bac842cd627903ed7f9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

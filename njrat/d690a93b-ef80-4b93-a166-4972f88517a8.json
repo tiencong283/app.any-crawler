@@ -1,0 +1,54 @@
+{
+ "Name": "sample5.exe",
+ "Md5": "4d6959084880634c3ab56be7b034e6f9",
+ "UUID": "d690a93b-ef80-4b93-a166-4972f88517a8",
+ "Processes": [
+  {
+   "OID": "5d3f01a5c9d66234de8f0941",
+   "ProcessID": 3684,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sample5.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sample5.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564410277169
+  },
+  {
+   "OID": "5d3f01a6c9d66234de8f0fc9",
+   "ProcessID": 2812,
+   "ParentPID": 3684,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564410277685
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d3f01a6c9d66234de8f0fc9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3f01a6c9d66234de8f0fc9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3f01a5c9d66234de8f0941",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3f01a5c9d66234de8f0941",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3f01a5c9d66234de8f0941",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

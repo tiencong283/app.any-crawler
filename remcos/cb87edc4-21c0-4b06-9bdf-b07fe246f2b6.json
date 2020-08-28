@@ -1,0 +1,126 @@
+{
+ "Name": "f770e.exe",
+ "Md5": "7d637166c1034148272503df151a536c",
+ "UUID": "cb87edc4-21c0-4b06-9bdf-b07fe246f2b6",
+ "Processes": [
+  {
+   "OID": "5b60086565c2817c10ee6ce4",
+   "ProcessID": 1176,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\f770e.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\f770e.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1533020260472
+  },
+  {
+   "OID": "5b60086565c2817c10ee6e2b",
+   "ProcessID": 1792,
+   "ParentPID": 1176,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\37216970\\kan.exe\" ujj=lmw ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\37216970\\kan.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1533020261143
+  },
+  {
+   "OID": "5b60086565c2817c10ee6e2c",
+   "ProcessID": 3364,
+   "ParentPID": 1792,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\37216970\\kan.exe C:\\Users\\admin\\AppData\\Local\\Temp\\37216970\\VINYY",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\37216970\\kan.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1533020261362
+  },
+  {
+   "OID": "5b60086865c2817c10ee7c6b",
+   "ProcessID": 3640,
+   "ParentPID": 3364,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1533020263800
+  },
+  {
+   "OID": "5b6008af65c2817c10ee800a",
+   "ProcessID": 3776,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1533020335175
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b60086865c2817c10ee7c6b",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b60086865c2817c10ee7c6b",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b60086865c2817c10ee7c6b",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b60086865c2817c10ee7c6b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b60086865c2817c10ee7c6b",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b60086565c2817c10ee6e2c",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b60086565c2817c10ee6e2b",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b60086565c2817c10ee6e2c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b60086565c2817c10ee6e2b",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b60086565c2817c10ee6ce4",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b60086565c2817c10ee6ce4",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b60086565c2817c10ee6ce4",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b60086465c2817c10ee654d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1063"
+   ]
+  }
+ ]
+}

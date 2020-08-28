@@ -1,0 +1,67 @@
+{
+ "Name": "07a65a63512988e0c74534e7604b7765",
+ "Md5": "07a65a63512988e0c74534e7604b7765",
+ "UUID": "be5b84fa-097e-49ee-b6f1-316f56b7cb6e",
+ "Processes": [
+  {
+   "OID": "5cd094601ad2d266b9224916",
+   "ProcessID": 3900,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\07a65a63512988e0c74534e7604b7765.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\07a65a63512988e0c74534e7604b7765.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1557173343706
+  },
+  {
+   "OID": "5cd094611ad2d266b9224c38",
+   "ProcessID": 2656,
+   "ParentPID": 3900,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Trojan.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Trojan.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557173344316
+  },
+  {
+   "OID": "5cd094611ad2d266b9224c39",
+   "ProcessID": 3764,
+   "ParentPID": 2656,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Trojan.exe\" \"Trojan.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557173344503
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cd094611ad2d266b9224c38",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd094611ad2d266b9224c38",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd094611ad2d266b9224c38",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cd094601ad2d266b9224916",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cd094601ad2d266b9224916",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

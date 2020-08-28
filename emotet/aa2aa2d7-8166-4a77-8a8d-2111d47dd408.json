@@ -1,0 +1,84 @@
+{
+ "Name": "MsdBsRq",
+ "Md5": "a636456b3edd41e1aec6cb8ba21ee35b",
+ "UUID": "aa2aa2d7-8166-4a77-8a8d-2111d47dd408",
+ "Processes": [
+  {
+   "OID": "5da64c9ad451ef4fc67c8f7a",
+   "ProcessID": 1956,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\MsdBsRq.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\MsdBsRq.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571179674224
+  },
+  {
+   "OID": "5da64c9ad451ef4fc67c8f7b",
+   "ProcessID": 3868,
+   "ParentPID": 1956,
+   "CommandLine": "--a63a4212",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\msdbsrq.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571179674302
+  },
+  {
+   "OID": "5da64ca0d451ef4fc67c928e",
+   "ProcessID": 2532,
+   "ParentPID": 3868,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571179680505
+  },
+  {
+   "OID": "5da64ca1d451ef4fc67c929a",
+   "ProcessID": 3992,
+   "ParentPID": 2532,
+   "CommandLine": "--f91b2738",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571179680630
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5da64ca1d451ef4fc67c929a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da64ca1d451ef4fc67c929a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da64ca0d451ef4fc67c928e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5da64c9ad451ef4fc67c8f7b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da64c9ad451ef4fc67c8f7b",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da64c9ad451ef4fc67c8f7b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da64c9ad451ef4fc67c8f7b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

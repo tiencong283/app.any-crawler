@@ -1,0 +1,60 @@
+{
+ "Name": "crack_v1.exe",
+ "Md5": "0da78854f204aba1d195d2e39b73d8c0",
+ "UUID": "cc713890-a124-4350-bc5c-a6b7db0fdbfb",
+ "Processes": [
+  {
+   "OID": "5d16a404b373bb3b57c5d438",
+   "ProcessID": 3164,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\crack_v1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\crack_v1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1561764868324
+  },
+  {
+   "OID": "5d16a40bb373bb3b57c5dd82",
+   "ProcessID": 3656,
+   "ParentPID": 3164,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\EPicCcrackNS2020NOtRat.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\EPicCcrackNS2020NOtRat.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561764875043
+  },
+  {
+   "OID": "5d16a411b373bb3b57c5e2ad",
+   "ProcessID": 2188,
+   "ParentPID": 3656,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\EPicCcrackNS2020NOtRat.exe\" \"EPicCcrackNS2020NOtRat.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561764881308
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d16a40bb373bb3b57c5dd82",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d16a40bb373bb3b57c5dd82",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d16a404b373bb3b57c5d438",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d16a404b373bb3b57c5d438",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

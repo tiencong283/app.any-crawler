@@ -1,0 +1,151 @@
+{
+ "Name": "VOOS VIP CC.sfx.exe",
+ "Md5": "c6f57e38bf7c28c4e724e6b0b31e7b67",
+ "UUID": "d2244fa0-24bf-4441-92e4-8b4e9a5b2dac",
+ "Processes": [
+  {
+   "OID": "5e2b74774b02e052fbae9621",
+   "ProcessID": 2728,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\VOOS VIP CC.sfx.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\VOOS VIP CC.sfx.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579906167570
+  },
+  {
+   "OID": "5e2b74784b02e052fbae9c75",
+   "ProcessID": 3592,
+   "ParentPID": 2728,
+   "CommandLine": "\"C:\\Users\\admin\\VOOS VIP CC.EXE\" ",
+   "Image": "C:\\Users\\admin\\VOOS VIP CC.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579906168101
+  },
+  {
+   "OID": "5e2b747f4b02e052fbaea7b9",
+   "ProcessID": 912,
+   "ParentPID": 3592,
+   "CommandLine": "\"C:\\Users\\admin\\System32.exe\" ",
+   "Image": "C:\\Users\\admin\\System32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579906174929
+  },
+  {
+   "OID": "5e2b74854b02e052fbaeaea0",
+   "ProcessID": 2760,
+   "ParentPID": 912,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\System32.exe\" \"System32.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579906181273
+  },
+  {
+   "OID": "5e2b753e4b02e052fbaebfe2",
+   "ProcessID": 3996,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\Opera\\opera.exe\" ",
+   "Image": "C:\\Program Files\\Opera\\opera.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1579906365929
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2b753e4b02e052fbaebfe2",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b753e4b02e052fbaebfe2",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b747f4b02e052fbaea7b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b747f4b02e052fbaea7b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b747f4b02e052fbaea7b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b747f4b02e052fbaea7b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b747f4b02e052fbaea7b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b747f4b02e052fbaea7b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b747f4b02e052fbaea7b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b747f4b02e052fbaea7b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b747f4b02e052fbaea7b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b74784b02e052fbae9c75",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b74784b02e052fbae9c75",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b74784b02e052fbae9c75",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b74774b02e052fbae9621",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b74774b02e052fbae961b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b74774b02e052fbae960d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

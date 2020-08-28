@@ -1,0 +1,67 @@
+{
+ "Name": "Growtopia Csn Hack V3.exe",
+ "Md5": "9a7e491047bd0c51c1f04700bb40e2a9",
+ "UUID": "daef23c6-afa6-49f1-b861-83d0e8dfd79d",
+ "Processes": [
+  {
+   "OID": "5ea3196576eaa92c06262579",
+   "ProcessID": 2888,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Growtopia Csn Hack V3.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Growtopia Csn Hack V3.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587747172771
+  },
+  {
+   "OID": "5ea3196b76eaa92c06262ec7",
+   "ProcessID": 2420,
+   "ParentPID": 2888,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dont open meeee.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dont open meeee.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587747179302
+  },
+  {
+   "OID": "5ea3197176eaa92c06263435",
+   "ProcessID": 3352,
+   "ParentPID": 2420,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\dont open meeee.exe\" \"dont open meeee.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587747185583
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ea3196b76eaa92c06262ec7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea3196b76eaa92c06262ec7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ea3196b76eaa92c06262ec7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ea3196576eaa92c06262579",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ea3196576eaa92c06262579",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "Name": "PO998455INV002UA.exe",
+ "Md5": "3ff1fd53e332e52c6f809787b6c5b862",
+ "UUID": "9c307819-c562-4e8d-9768-4d92432fdeee",
+ "Processes": [
+  {
+   "OID": "5c08db1e7b599c395bb6fcad",
+   "ProcessID": 2936,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PO998455INV002UA.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PO998455INV002UA.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1544084253667
+  },
+  {
+   "OID": "5c08db397b599c395bb7044c",
+   "ProcessID": 3568,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1544084281120
+  },
+  {
+   "OID": "5c08db4a7b599c395bb70c04",
+   "ProcessID": 3276,
+   "ParentPID": 2936,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PO998455INV002UA.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PO998455INV002UA.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1544084297917
+  },
+  {
+   "OID": "5c08db4a7b599c395bb70c05",
+   "ProcessID": 3492,
+   "ParentPID": 2936,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\"",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1544084297948
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c08db4a7b599c395bb70c04",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c08db4a7b599c395bb70c04",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c08db4a7b599c395bb70c04",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c08db1e7b599c395bb6fcad",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c08db1e7b599c395bb6fcad",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c08db1e7b599c395bb6fcad",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

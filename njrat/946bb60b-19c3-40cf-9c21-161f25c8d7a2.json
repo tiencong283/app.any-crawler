@@ -1,0 +1,89 @@
+{
+ "Name": "sample.exe",
+ "Md5": "556e2cef5b4dcbffc74db74548854f6d",
+ "UUID": "946bb60b-19c3-40cf-9c21-161f25c8d7a2",
+ "Processes": [
+  {
+   "OID": "5d63b5ff889f4a2ea3e0d653",
+   "ProcessID": 3044,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sample.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sample.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1566815742719
+  },
+  {
+   "OID": "5d63b606889f4a2ea3e0dca5",
+   "ProcessID": 1920,
+   "ParentPID": 3044,
+   "CommandLine": "\"C:\\Users\\admin\\winrar.exe\" ",
+   "Image": "C:\\Users\\admin\\winrar.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566815749672
+  },
+  {
+   "OID": "5d63b60c889f4a2ea3e0e39a",
+   "ProcessID": 1216,
+   "ParentPID": 1920,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\winrar.exe\" \"winrar.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566815755969
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d63b5fe889f4a2ea3e0cfa9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d63b606889f4a2ea3e0dca5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d63b606889f4a2ea3e0dca5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d63b606889f4a2ea3e0dca5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d63b606889f4a2ea3e0dca5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d63b606889f4a2ea3e0dca5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d63b606889f4a2ea3e0dca5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d63b5ff889f4a2ea3e0d653",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d63b5ff889f4a2ea3e0d653",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

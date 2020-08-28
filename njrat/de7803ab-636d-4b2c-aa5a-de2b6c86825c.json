@@ -1,0 +1,115 @@
+{
+ "Name": "94f0c1661473ad4d5ad0d2aea4ab35b77818a9ea5ac9ab9191e7524cb8ee0677",
+ "Md5": "94b47e609ee142b55775efa6fb81a8fd",
+ "UUID": "de7803ab-636d-4b2c-aa5a-de2b6c86825c",
+ "Processes": [
+  {
+   "OID": "5dc8bd140544cb7fefe6558d",
+   "ProcessID": 1928,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\94f0c1661473ad4d5ad0d2aea4ab35b77818a9ea5ac9ab9191e7524cb8ee0677.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\94f0c1661473ad4d5ad0d2aea4ab35b77818a9ea5ac9ab9191e7524cb8ee0677.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573436691894
+  },
+  {
+   "OID": "5dc8bd150544cb7fefe65f3d",
+   "ProcessID": 1800,
+   "ParentPID": 1928,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\AppData\\Local\\Temp\\document.docx\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573436693362
+  },
+  {
+   "OID": "5dc8bd150544cb7fefe65f3e",
+   "ProcessID": 2956,
+   "ParentPID": 1928,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server000.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server000.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573436693472
+  },
+  {
+   "OID": "5dc8bd1b0544cb7fefe68021",
+   "ProcessID": 3820,
+   "ParentPID": 2956,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Server000.exe\" \"Server000.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573436699800
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc8bd150544cb7fefe65f3e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc8bd150544cb7fefe65f3e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc8bd150544cb7fefe65f3e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dc8bd150544cb7fefe65f3e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dc8bd150544cb7fefe65f3e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc8bd150544cb7fefe65f3e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dc8bd190544cb7fefe675f0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5dc8bd150544cb7fefe65f3d",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc8bd150544cb7fefe65f3d",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dc8bd150544cb7fefe65f3e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc8bd140544cb7fefe6558d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc8bd140544cb7fefe6558d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

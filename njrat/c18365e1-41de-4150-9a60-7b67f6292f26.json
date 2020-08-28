@@ -1,0 +1,44 @@
+{
+ "Name": "yello.exe",
+ "Md5": "a72322a0f80248f468c011103ea82c65",
+ "UUID": "c18365e1-41de-4150-9a60-7b67f6292f26",
+ "Processes": [
+  {
+   "OID": "5e9c5868917294567c192dd2",
+   "ProcessID": 1948,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\yello.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\yello.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587304552247
+  },
+  {
+   "OID": "5e9c586e917294567c193150",
+   "ProcessID": 3172,
+   "ParentPID": 1948,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\yello.exe\" \"yello.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587304558419
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e9c5868917294567c192dd2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9c5868917294567c192dd2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9c5868917294567c192dd2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "Name": "Anonymous Botnet.exe",
+ "Md5": "5cf2bd58714422db15220a56f191c1f2",
+ "UUID": "236f3b40-cd7c-46af-82ec-4ec7dc2053da",
+ "Processes": [
+  {
+   "OID": "5ee03bfad5a12e0bd3a860d5",
+   "ProcessID": 984,
+   "ParentPID": 328,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Anonymous Botnet.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Anonymous Botnet.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591753722334
+  },
+  {
+   "OID": "5ee03c01d5a12e0bd3a86982",
+   "ProcessID": 1468,
+   "ParentPID": 984,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Anonymous Botnet.exe\" \"Anonymous Botnet.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591753728943
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee03bfad5a12e0bd3a860d5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee03bfad5a12e0bd3a860d5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee03bfad5a12e0bd3a860d5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee03bfad5a12e0bd3a860d5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

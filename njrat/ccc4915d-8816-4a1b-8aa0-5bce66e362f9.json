@@ -1,0 +1,77 @@
+{
+ "Name": "Netflix checker by PolyPhia.exe",
+ "Md5": "2d94619d933d82e460bc91236e52810a",
+ "UUID": "ccc4915d-8816-4a1b-8aa0-5bce66e362f9",
+ "Processes": [
+  {
+   "OID": "5d702412ddc63129dff2cb89",
+   "ProcessID": 2884,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Netflix checker by PolyPhia.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Netflix checker by PolyPhia.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1567630353661
+  },
+  {
+   "OID": "5d702418ddc63129dff2d3f8",
+   "ProcessID": 2776,
+   "ParentPID": 2884,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\COM Surrogate.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\COM Surrogate.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567630360208
+  },
+  {
+   "OID": "5d70241eddc63129dff2d999",
+   "ProcessID": 4032,
+   "ParentPID": 2776,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\COM Surrogate.exe\" \"COM Surrogate.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567630366426
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d702412ddc63129dff2cb7c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d702418ddc63129dff2d3f8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d702418ddc63129dff2d3f8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d702418ddc63129dff2d3f8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d702412ddc63129dff2cb89",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d702412ddc63129dff2cb89",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d702412ddc63129dff2cb89",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

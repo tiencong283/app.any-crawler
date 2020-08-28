@@ -1,0 +1,68 @@
+{
+ "Name": "crack.exe",
+ "Md5": "04702f31969d28245f4099d641624ccc",
+ "UUID": "b40adb16-2ff6-46c3-8779-3b34b6accff7",
+ "Processes": [
+  {
+   "OID": "5ee92ce13f946678bd21d0b9",
+   "ProcessID": 2316,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\crack.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\crack.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592339681320
+  },
+  {
+   "OID": "5ee92ce73f946678bd21d391",
+   "ProcessID": 3932,
+   "ParentPID": 2316,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\crack.exe\" \"crack.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592339687711
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee92ce13f946678bd21d0b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee92ce13f946678bd21d0b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee92ce13f946678bd21d0b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee92ce13f946678bd21d0b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee92ce13f946678bd21d0b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee92ce13f946678bd21d0b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee92ce13f946678bd21d0b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

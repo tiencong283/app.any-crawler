@@ -1,0 +1,188 @@
+{
+ "Name": "2c6767d20128e7c7eaf02f32570d2b5ecfad150aa631ed6c9b2499626c2a2c81",
+ "Md5": "074621848b5785b83facd5c0cfa3c4bb",
+ "UUID": "5cfe2897-1895-41d4-9f0f-28d473668be8",
+ "Processes": [
+  {
+   "OID": "5bd97f4950200b41ddefcee3",
+   "ProcessID": 2140,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\2c6767d20128e7c7eaf02f32570d2b5ecfad150aa631ed6c9b2499626c2a2c81.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\2c6767d20128e7c7eaf02f32570d2b5ecfad150aa631ed6c9b2499626c2a2c81.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1540980553169
+  },
+  {
+   "OID": "5bd97f5d50200b41ddefd499",
+   "ProcessID": 184,
+   "ParentPID": 2140,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c copy \"C:\\Users\\admin\\Downloads\\2c6767d20128e7c7eaf02f32570d2b5ecfad150aa631ed6c9b2499626c2a2c81.exe\" \"C:\\Users\\admin\\AppData\\Local\\Pdf.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540980572935
+  },
+  {
+   "OID": "5bd97f5e50200b41ddefd6d0",
+   "ProcessID": 3024,
+   "ParentPID": 2140,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c, \"C:\\Users\\admin\\AppData\\Local\\Pdf.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540980573997
+  },
+  {
+   "OID": "5bd97f5e50200b41ddefd6d2",
+   "ProcessID": 2152,
+   "ParentPID": 3024,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Pdf.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Pdf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540980574076
+  },
+  {
+   "OID": "5bd97f7850200b41ddefe435",
+   "ProcessID": 1672,
+   "ParentPID": 2152,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Pdf.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Pdf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540980600513
+  },
+  {
+   "OID": "5bd97f8150200b41ddefea61",
+   "ProcessID": 1764,
+   "ParentPID": 1672,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540980608919
+  },
+  {
+   "OID": "5bd97fb350200b41ddeff015",
+   "ProcessID": 4048,
+   "ParentPID": 1764,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\reqtvjovbboqxurrbyjwlurb\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540980658904
+  },
+  {
+   "OID": "5bd97fb350200b41ddeff016",
+   "ProcessID": 1308,
+   "ParentPID": 1764,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\tyvewczxpjgchafvsjepohekucu\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540980658904
+  },
+  {
+   "OID": "5bd97fb350200b41ddeff017",
+   "ProcessID": 3904,
+   "ParentPID": 1764,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\eaaxpukrlryhkobzblqrzmybdrepvy\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540980658919
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bd97fb350200b41ddeff015",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5bd97fb350200b41ddeff017",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5bd97f8150200b41ddefea61",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bd97f8150200b41ddefea61",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bd97f8150200b41ddefea61",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd97f7850200b41ddefe435",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd97f7850200b41ddefe435",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd97f7850200b41ddefe435",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd97f7850200b41ddefe435",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bd97f7850200b41ddefe435",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5bd97f5e50200b41ddefd6d2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bd97f5e50200b41ddefd6d2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bd97f5e50200b41ddefd6d2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd97f5d50200b41ddefd499",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd97f5d50200b41ddefd499",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd97f4950200b41ddefcee3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "Name": "Server.exe",
+ "Md5": "5ad1406fb75f22171f8582805064792d",
+ "UUID": "5cfe38a1-a816-4bb4-b89e-ab1d7ffdb629",
+ "Processes": [
+  {
+   "OID": "5d158c957596946cc8e79f60",
+   "ProcessID": 3416,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1561693332713
+  },
+  {
+   "OID": "5d158c9a7596946cc8e7a2df",
+   "ProcessID": 2468,
+   "ParentPID": 3416,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" \"Server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561693338854
+  },
+  {
+   "OID": "5d158cad7596946cc8e7ad95",
+   "ProcessID": 1920,
+   "ParentPID": 3416,
+   "CommandLine": "netsh firewall delete allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\"",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561693356401
+  },
+  {
+   "OID": "5d158cad7596946cc8e7ad96",
+   "ProcessID": 2328,
+   "ParentPID": 3416,
+   "CommandLine": "cmd.exe /k ping 0 \u0026 del \"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" \u0026 exit",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561693356416
+  },
+  {
+   "OID": "5d158cad7596946cc8e7ad99",
+   "ProcessID": 2376,
+   "ParentPID": 2328,
+   "CommandLine": "ping  0 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561693356526
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d158c957596946cc8e79f60",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5d158c957596946cc8e79f60",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d158c957596946cc8e79f60",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d158c957596946cc8e79f60",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d158c957596946cc8e79f60",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "Name": "password.exe",
+ "Md5": "1dbe12f94d0860e432e2d67b0b79ffed",
+ "UUID": "7b48c088-11b9-4ee5-adb4-6e4030326934",
+ "Processes": [
+  {
+   "OID": "5cb29012368a98261184558d",
+   "ProcessID": 1388,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\password.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\password.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1555206162496
+  },
+  {
+   "OID": "5cb29013368a982611845b62",
+   "ProcessID": 3364,
+   "ParentPID": 1388,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\LocalAnLdXMhLYB.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\LocalAnLdXMhLYB.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555206162980
+  },
+  {
+   "OID": "5cb29013368a982611845b63",
+   "ProcessID": 3008,
+   "ParentPID": 1388,
+   "CommandLine": "\"C:\\Windows\\system32\\NOTEPAD.EXE\" C:\\Users\\admin\\AppData\\LocalqKhIIzxewn.txt",
+   "Image": "C:\\Windows\\system32\\NOTEPAD.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555206163012
+  },
+  {
+   "OID": "5cb2901a368a9826118466ec",
+   "ProcessID": 1352,
+   "ParentPID": 3364,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\LocalAnLdXMhLYB.exe\" \"LocalAnLdXMhLYB.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555206169449
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cb29013368a982611845b62",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb29013368a982611845b62",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb29013368a982611845b62",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cb29013368a982611845b62",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cb29013368a982611845b62",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb29013368a982611845b62",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cb29013368a982611845b62",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb29012368a98261184558d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

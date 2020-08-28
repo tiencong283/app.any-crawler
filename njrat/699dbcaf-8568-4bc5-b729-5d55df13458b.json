@@ -1,0 +1,115 @@
+{
+ "Name": "IntellilockCracker.exe",
+ "Md5": "93dede8ca113b103ebddc6e05467d31f",
+ "UUID": "699dbcaf-8568-4bc5-b729-5d55df13458b",
+ "Processes": [
+  {
+   "OID": "5d2fda45f5ef4b61da3d92d7",
+   "ProcessID": 3572,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\IntellilockCracker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IntellilockCracker.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1563417157049
+  },
+  {
+   "OID": "5d2fda4ef5ef4b61da3d95e6",
+   "ProcessID": 3648,
+   "ParentPID": 3572,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\csrss.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\csrss.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563417165596
+  },
+  {
+   "OID": "5d2fda56f5ef4b61da3d9b51",
+   "ProcessID": 3288,
+   "ParentPID": 3648,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\csrss.exe\" \"csrss.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563417173877
+  },
+  {
+   "OID": "5d2fda56f5ef4b61da3d9b68",
+   "ProcessID": 2568,
+   "ParentPID": 604,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1563417174315
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d2fda4ef5ef4b61da3d95e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2fda45f5ef4b61da3d8a26",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d2fda45f5ef4b61da3d8a26",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2fda56f5ef4b61da3d9b68",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2fda4ef5ef4b61da3d95e6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2fda4ef5ef4b61da3d95e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d2fda4ef5ef4b61da3d95e6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2fda4ef5ef4b61da3d95e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2fda4ef5ef4b61da3d95e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d2fda4ef5ef4b61da3d95e6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d2fda45f5ef4b61da3d92d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d2fda45f5ef4b61da3d92d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "Name": "quick",
+ "Md5": "b922796295147cdde8292ece2ccf8c2e",
+ "UUID": "90853d0c-6f54-45ed-bf72-e2fc114597d6",
+ "Processes": [
+  {
+   "OID": "5daedd634dec625697abaa67",
+   "ProcessID": 2124,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\quick.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\quick.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571741026994
+  },
+  {
+   "OID": "5daedd634dec625697abaa68",
+   "ProcessID": 3600,
+   "ParentPID": 2124,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\quick.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\quick.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571741027088
+  },
+  {
+   "OID": "5daedd684dec625697abacb7",
+   "ProcessID": 920,
+   "ParentPID": 3600,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\wabmetagen\\wabmetagen.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wabmetagen\\wabmetagen.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571741032322
+  },
+  {
+   "OID": "5daedd684dec625697abacb8",
+   "ProcessID": 3096,
+   "ParentPID": 920,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\wabmetagen\\wabmetagen.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wabmetagen\\wabmetagen.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571741032369
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5daedd684dec625697abacb7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5daedd634dec625697abaa68",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5daedd634dec625697abaa68",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

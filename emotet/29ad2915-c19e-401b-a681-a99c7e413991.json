@@ -1,0 +1,107 @@
+{
+ "Name": "msptermsizes.exe",
+ "Md5": "3214e5ccf6d7f0b97ea4a917ca44f0d5",
+ "UUID": "29ad2915-c19e-401b-a681-a99c7e413991",
+ "Processes": [
+  {
+   "OID": "5dadc50deea37d162978db23",
+   "ProcessID": 2788,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\msptermsizes.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\msptermsizes.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571669261378
+  },
+  {
+   "OID": "5dadc50eeea37d162978e21d",
+   "ProcessID": 2712,
+   "ParentPID": 2788,
+   "CommandLine": "--5556fbe0",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571669261799
+  },
+  {
+   "OID": "5dadc515eea37d162978e4b6",
+   "ProcessID": 2076,
+   "ParentPID": 2712,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571669268862
+  },
+  {
+   "OID": "5dadc515eea37d162978e4b7",
+   "ProcessID": 3668,
+   "ParentPID": 2076,
+   "CommandLine": "--f91b2738",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571669268971
+  },
+  {
+   "OID": "5dadc574eea37d162978eb30",
+   "ProcessID": 2168,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Program Files\\Opera\\opera.exe\" ",
+   "Image": "C:\\Program Files\\Opera\\opera.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1571669363753
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dadc515eea37d162978e4b7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dadc574eea37d162978eb30",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadc574eea37d162978eb30",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dadc515eea37d162978e4b7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadc515eea37d162978e4b7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadc50eeea37d162978e21d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadc50eeea37d162978e21d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadc50eeea37d162978e21d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dadc50deea37d162978db23",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

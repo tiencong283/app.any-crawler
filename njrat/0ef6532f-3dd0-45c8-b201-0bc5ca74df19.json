@@ -1,0 +1,72 @@
+{
+ "Name": "Fiscalia.exe",
+ "Md5": "b84c5af889d9a314b9f85a22720daf20",
+ "UUID": "0ef6532f-3dd0-45c8-b201-0bc5ca74df19",
+ "Processes": [
+  {
+   "OID": "5ca7623f008bce361dcf02a6",
+   "ProcessID": 2592,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Fiscalia.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Fiscalia.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554473535456
+  },
+  {
+   "OID": "5ca76240008bce361dcf08e3",
+   "ProcessID": 1448,
+   "ParentPID": 2592,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554473535909
+  },
+  {
+   "OID": "5ca76246008bce361dcf125c",
+   "ProcessID": 2756,
+   "ParentPID": 1448,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\" \"RegSvcs.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554473542222
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ca76240008bce361dcf08e3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca76240008bce361dcf08e3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ca76240008bce361dcf08e3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ca7623f008bce361dcf02a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca7623f008bce361dcf02a6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ca7623f008bce361dcf02a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

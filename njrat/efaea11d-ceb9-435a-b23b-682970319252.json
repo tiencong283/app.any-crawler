@@ -1,0 +1,39 @@
+{
+ "Name": "medallor.exe",
+ "Md5": "81eb4bf217ce74b4d04a72ef60ebaa0b",
+ "UUID": "efaea11d-ceb9-435a-b23b-682970319252",
+ "Processes": [
+  {
+   "OID": "5e31fc62138c706519e3c625",
+   "ProcessID": 3568,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\medallor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\medallor.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580334177885
+  },
+  {
+   "OID": "5e31fc68138c706519e3c978",
+   "ProcessID": 2572,
+   "ParentPID": 3568,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\medallor.exe\" \"medallor.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580334184073
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e31fc62138c706519e3c625",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31fc62138c706519e3c625",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

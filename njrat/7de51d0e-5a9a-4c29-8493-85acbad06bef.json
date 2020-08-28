@@ -1,0 +1,60 @@
+{
+ "Name": "Client.exe",
+ "Md5": "3e579b168b349db7b60a01c3cc731913",
+ "UUID": "7de51d0e-5a9a-4c29-8493-85acbad06bef",
+ "Processes": [
+  {
+   "OID": "5dba05654ca6a111d8ba4268",
+   "ProcessID": 2740,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Client.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Client.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572472165438
+  },
+  {
+   "OID": "5dba056c4ca6a111d8ba4581",
+   "ProcessID": 2132,
+   "ParentPID": 2740,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sv-host.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sv-host.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572472171782
+  },
+  {
+   "OID": "5dba05724ca6a111d8ba4ab8",
+   "ProcessID": 1212,
+   "ParentPID": 2132,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\sv-host.exe\" \"sv-host.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572472177891
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dba056c4ca6a111d8ba4581",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dba056c4ca6a111d8ba4581",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dba05654ca6a111d8ba4268",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dba05654ca6a111d8ba4268",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

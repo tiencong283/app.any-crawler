@@ -1,0 +1,138 @@
+{
+ "Name": "kport.exe",
+ "Md5": "0c0ac6ce55d675e8e149f8bb40b64f8f",
+ "UUID": "1fc50cd0-6b0f-4600-916f-7fc1945f822d",
+ "Processes": [
+  {
+   "OID": "5e920a5e30dcc2723fd5d383",
+   "ProcessID": 3324,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\kport.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kport.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e920a5e30dcc2723fd5d387",
+   "ProcessID": 1836,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\kport.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kport.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586629214314
+  },
+  {
+   "OID": "5e920a5f30dcc2723fd5d3dd",
+   "ProcessID": 3568,
+   "ParentPID": 1836,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586629214736
+  },
+  {
+   "OID": "5e920a5f30dcc2723fd5d3de",
+   "ProcessID": 1604,
+   "ParentPID": 1836,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\KPortScan3.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\KPortScan3.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586629214736
+  },
+  {
+   "OID": "5e920a6530dcc2723fd5dec6",
+   "ProcessID": 2248,
+   "ParentPID": 3568,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\csrss.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\csrss.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586629221111
+  },
+  {
+   "OID": "5e920a6b30dcc2723fd5e446",
+   "ProcessID": 1136,
+   "ParentPID": 2248,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\csrss.exe\" \"csrss.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586629227236
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e920a6530dcc2723fd5dec6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e920a6530dcc2723fd5dec6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e920a6530dcc2723fd5dec6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e920a6530dcc2723fd5dec6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e920a6530dcc2723fd5dec6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e920a6530dcc2723fd5dec6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e920a6530dcc2723fd5dec6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e920a5f30dcc2723fd5d3dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e920a5f30dcc2723fd5d3dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e920a5f30dcc2723fd5d3de",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e920a5f30dcc2723fd5d3dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e920a5e30dcc2723fd5d387",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e920a5e30dcc2723fd5ca60",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

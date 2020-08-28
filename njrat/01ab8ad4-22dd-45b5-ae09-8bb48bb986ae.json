@@ -1,0 +1,87 @@
+{
+ "Name": "sample",
+ "Md5": "4e29835117a742a6bba655f2179e8fce",
+ "UUID": "01ab8ad4-22dd-45b5-ae09-8bb48bb986ae",
+ "Processes": [
+  {
+   "OID": "5d2dccd44c846b5b27b4cb8c",
+   "ProcessID": 3128,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sample.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sample.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1563282644064
+  },
+  {
+   "OID": "5d2dccdb4c846b5b27b4d41a",
+   "ProcessID": 2900,
+   "ParentPID": 3128,
+   "CommandLine": "\"C:\\ProgramData\\svchost.exe\" ",
+   "Image": "C:\\ProgramData\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563282650798
+  },
+  {
+   "OID": "5d2dcce14c846b5b27b4d765",
+   "ProcessID": 2564,
+   "ParentPID": 2900,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\svchost.exe\" \"svchost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563282657407
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d2dccfb4c846b5b27b4e23c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d2dccdb4c846b5b27b4d41a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2dccdb4c846b5b27b4d41a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2dccdb4c846b5b27b4d41a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2dccdb4c846b5b27b4d41a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d2dccd44c846b5b27b4cb8c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d2dccd44c846b5b27b4cb8c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2dccd44c846b5b27b4cb8c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2dccd44c846b5b27b4cb8c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

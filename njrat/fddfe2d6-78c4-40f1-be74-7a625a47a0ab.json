@@ -1,0 +1,44 @@
+{
+ "Name": "12312r.exe",
+ "Md5": "5bac650f04b4951584b689597ec2b33d",
+ "UUID": "fddfe2d6-78c4-40f1-be74-7a625a47a0ab",
+ "Processes": [
+  {
+   "OID": "5ea946d648ad236628cc07fe",
+   "ProcessID": 1084,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\12312r.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\12312r.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588152022447
+  },
+  {
+   "OID": "5ea946dc48ad236628cc0be1",
+   "ProcessID": 2940,
+   "ParentPID": 1084,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\12312r.exe\" \"12312r.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588152028587
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ea946d648ad236628cc07fe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea946d648ad236628cc07fe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea946d648ad236628cc07fe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

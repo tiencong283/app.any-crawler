@@ -1,0 +1,146 @@
+{
+ "Name": "RFQ6842.exe",
+ "Md5": "a11a21e0f502e11ef5e7b3b3865f3ec5",
+ "UUID": "9c30d01d-c70a-49d4-a87a-a94ff07ff2fb",
+ "Processes": [
+  {
+   "OID": "5c6b5e4b3a5dcf3fedbb88a0",
+   "ProcessID": 2876,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ6842.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ6842.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1550540363272
+  },
+  {
+   "OID": "5c6b5e5b3a5dcf3fedbb907d",
+   "ProcessID": 2756,
+   "ParentPID": 2876,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ6842.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ6842.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550540378429
+  },
+  {
+   "OID": "5c6b5e723a5dcf3fedbb9175",
+   "ProcessID": 3120,
+   "ParentPID": 2756,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550540402085
+  },
+  {
+   "OID": "5c6b5e733a5dcf3fedbb93d3",
+   "ProcessID": 2084,
+   "ParentPID": 2756,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550540403382
+  },
+  {
+   "OID": "5c6b5e733a5dcf3fedbb93d4",
+   "ProcessID": 2516,
+   "ParentPID": 2084,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ6842.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ6842.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550540403538
+  },
+  {
+   "OID": "5c6b5e8a3a5dcf3fedbb9c19",
+   "ProcessID": 3372,
+   "ParentPID": 2516,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ6842.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RFQ6842.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550540426101
+  },
+  {
+   "OID": "5c6b5ed13a5dcf3fedbba00d",
+   "ProcessID": 2784,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1550540496819
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c6b5e8a3a5dcf3fedbb9c19",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6b5e8a3a5dcf3fedbb9c19",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6b5e8a3a5dcf3fedbb9c19",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6b5e8a3a5dcf3fedbb9c19",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c6b5e8a3a5dcf3fedbb9c19",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6b5e8a3a5dcf3fedbb9c19",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5c6b5e8a3a5dcf3fedbb9c19",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5c6b5e733a5dcf3fedbb93d4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c6b5e5b3a5dcf3fedbb907d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5c6b5e5b3a5dcf3fedbb907d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5c6b5e5b3a5dcf3fedbb907d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6b5e4b3a5dcf3fedbb88a0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

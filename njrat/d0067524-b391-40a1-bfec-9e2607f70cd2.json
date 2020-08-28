@@ -1,0 +1,269 @@
+{
+ "Name": "yhh8.exe",
+ "Md5": "fd48c60a214cb0145704b9446a0af4ea",
+ "UUID": "d0067524-b391-40a1-bfec-9e2607f70cd2",
+ "Processes": [
+  {
+   "OID": "5e31a7f8046d574e02d4cebb",
+   "ProcessID": 3976,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\yhh8.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\yhh8.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580312567586
+  },
+  {
+   "OID": "5e31a7f8046d574e02d4cebc",
+   "ProcessID": 3840,
+   "ParentPID": 3976,
+   "CommandLine": "\"c:\\windows\\system32\\cmstp.exe\" /au C:\\Windows\\temp\\5wvqg1ug.inf",
+   "Image": "c:\\windows\\system32\\cmstp.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312567789
+  },
+  {
+   "OID": "5e31a7f8046d574e02d4d2f0",
+   "ProcessID": 332,
+   "ParentPID": 592,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{3E5FC7F9-9A51-4367-9063-A120244FBEC7}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1580312568243
+  },
+  {
+   "OID": "5e31a7f8046d574e02d4d2f1",
+   "ProcessID": 3684,
+   "ParentPID": 332,
+   "CommandLine": "cmd /c start C:\\Windows\\temp\\zb2qrfns.exe",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312568508
+  },
+  {
+   "OID": "5e31a7f9046d574e02d4d8c6",
+   "ProcessID": 440,
+   "ParentPID": 3684,
+   "CommandLine": "C:\\Windows\\temp\\zb2qrfns.exe ",
+   "Image": "C:\\Windows\\temp\\zb2qrfns.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312568586
+  },
+  {
+   "OID": "5e31a7f9046d574e02d4d8c7",
+   "ProcessID": 2112,
+   "ParentPID": 332,
+   "CommandLine": "taskkill /IM cmstp.exe /F",
+   "Image": "C:\\Windows\\system32\\taskkill.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312568633
+  },
+  {
+   "OID": "5e31a7f9046d574e02d4e1df",
+   "ProcessID": 2552,
+   "ParentPID": 440,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\ViaFolo\\ViaFoo.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\ViaFolo\\ViaFoo.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312569274
+  },
+  {
+   "OID": "5e31a7fc046d574e02d4eda4",
+   "ProcessID": 1064,
+   "ParentPID": 2552,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe\" /logtoconsole=false /logfile= /u \"C:\\Users\\admin\\AppData\\Roaming\\ViaFolo\\ViaFoo.EXE\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312572586
+  },
+  {
+   "OID": "5e31a7fd046d574e02d4edaa",
+   "ProcessID": 2132,
+   "ParentPID": 1064,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\7468011.dqg3p3jcViaRu.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\7468011.dqg3p3jcViaRu.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312573071
+  },
+  {
+   "OID": "5e31a802046d574e02d4fbb0",
+   "ProcessID": 2876,
+   "ParentPID": 1064,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312577977
+  },
+  {
+   "OID": "5e31a808046d574e02d4ff6d",
+   "ProcessID": 4032,
+   "ParentPID": 2876,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312584207
+  },
+  {
+   "OID": "5e31a81e046d574e02d546b5",
+   "ProcessID": 3388,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\regedit.exe\" ",
+   "Image": "C:\\Windows\\regedit.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1580312605897
+  },
+  {
+   "OID": "5e31a81e046d574e02d552d5",
+   "ProcessID": 2580,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\regedit.exe\" ",
+   "Image": "C:\\Windows\\regedit.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1580312606346
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e31a81e046d574e02d552d5",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a81e046d574e02d546b5",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a802046d574e02d4fbb0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a802046d574e02d4fbb0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a802046d574e02d4fbb0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a802046d574e02d4fbb0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a802046d574e02d4fbb0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a7fd046d574e02d4edaa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7fd046d574e02d4edaa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a7fd046d574e02d4edaa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7fd046d574e02d4edaa",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7fc046d574e02d4eda4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7fc046d574e02d4eda4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a7f9046d574e02d4e1df",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7f9046d574e02d4d8c6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a7f8046d574e02d4d2f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7f9046d574e02d4d8c6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7f9046d574e02d4d8c6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7f8046d574e02d4d2f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7f9046d574e02d4d8c6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7f8046d574e02d4d2f0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a7f8046d574e02d4d2f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a7f8046d574e02d4d2f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7f8046d574e02d4cebb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a7f8046d574e02d4cebb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

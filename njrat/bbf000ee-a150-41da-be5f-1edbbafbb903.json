@@ -1,0 +1,95 @@
+{
+ "Name": "KeyGen (Cookies Grabber).exe",
+ "Md5": "4ba71de7a28288b4ae7f72fe8cd7e0e2",
+ "UUID": "bbf000ee-a150-41da-be5f-1edbbafbb903",
+ "Processes": [
+  {
+   "OID": "5e82a7e3eb1b6140feebc61a",
+   "ProcessID": 3440,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\KeyGen (Cookies Grabber).exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\KeyGen (Cookies Grabber).exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e82a7e3eb1b6140feebc61e",
+   "ProcessID": 2360,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\KeyGen (Cookies Grabber).exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\KeyGen (Cookies Grabber).exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585620963686
+  },
+  {
+   "OID": "5e82a7e4eb1b6140feebccc7",
+   "ProcessID": 1232,
+   "ParentPID": 2360,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Explerer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Explerer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585620964108
+  },
+  {
+   "OID": "5e82a7e4eb1b6140feebccc8",
+   "ProcessID": 916,
+   "ParentPID": 2360,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Godaddy.com Checker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Godaddy.com Checker.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585620964124
+  },
+  {
+   "OID": "5e82a7eaeb1b6140feebde55",
+   "ProcessID": 3916,
+   "ParentPID": 1232,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Explerer.exe\" \"Explerer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585620970280
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e82a7e4eb1b6140feebccc7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e82a7e4eb1b6140feebccc7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e82a7e4eb1b6140feebccc7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e82a7e4eb1b6140feebccc7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e82a7e4eb1b6140feebccc8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e82a7e3eb1b6140feebc61e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e82a7e3eb1b6140feebc606",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

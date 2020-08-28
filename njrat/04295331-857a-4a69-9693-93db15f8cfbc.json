@@ -1,0 +1,114 @@
+{
+ "Name": "HYTASOIMAGEN10030290201HYTASOIMAGEN10030290202HYTASOIMAGEN10030290203.exe",
+ "Md5": "ac12dbbbe1440bddcadcc0911016e909",
+ "UUID": "04295331-857a-4a69-9693-93db15f8cfbc",
+ "Processes": [
+  {
+   "OID": "5cd369dda23ec109ccdd984e",
+   "ProcessID": 2592,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\HYTASOIMAGEN10030290201HYTASOIMAGEN10030290202HYTASOIMAGEN10030290203.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\HYTASOIMAGEN10030290201HYTASOIMAGEN10030290202HYTASOIMAGEN10030290203.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1557359068851
+  },
+  {
+   "OID": "5cd369dda23ec109ccdd9e90",
+   "ProcessID": 1060,
+   "ParentPID": 2592,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557359069617
+  },
+  {
+   "OID": "5cd369dea23ec109ccdda2ae",
+   "ProcessID": 3564,
+   "ParentPID": 1060,
+   "CommandLine": "schtasks /Delete /tn NYAN /F",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557359069945
+  },
+  {
+   "OID": "5cd369dea23ec109ccdda2b0",
+   "ProcessID": 2972,
+   "ParentPID": 1060,
+   "CommandLine": "schtasks /create /tn NYAN /tr \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\" /sc minute /mo 1",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557359070086
+  },
+  {
+   "OID": "5cd369fca23ec109ccddafd2",
+   "ProcessID": 2164,
+   "ParentPID": 1772,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe ",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1557359100226
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cd369dda23ec109ccdd9e90",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd369dda23ec109ccdd9e90",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd369dda23ec109ccdd983e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd369dea23ec109ccdda2b0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cd369dea23ec109ccdda2ae",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cd369dda23ec109ccdd9e90",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cd369dda23ec109ccdd984e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd369dda23ec109ccdd984e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd369dda23ec109ccdd984e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd369dda23ec109ccdd983d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

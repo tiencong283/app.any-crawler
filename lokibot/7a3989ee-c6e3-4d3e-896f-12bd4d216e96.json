@@ -1,0 +1,89 @@
+{
+ "Name": "sp.exe",
+ "Md5": "2c22c8305dc2292fae5eb595c6897ea5",
+ "UUID": "7a3989ee-c6e3-4d3e-896f-12bd4d216e96",
+ "Processes": [
+  {
+   "OID": "5e3a9d952d31f8683fccc02e",
+   "ProcessID": 1440,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\sp.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\sp.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580899733192
+  },
+  {
+   "OID": "5e3a9ddb2d31f8683fccd6c0",
+   "ProcessID": 1024,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\sp.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\sp.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1580899803036
+  },
+  {
+   "OID": "5e3a9ddb2d31f8683fccd6c1",
+   "ProcessID": 3196,
+   "ParentPID": 1024,
+   "CommandLine": "\"C:\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v4.0.30319\\\\\\\\InstallUtil.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\InstallUtil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580899803348
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e3a9ddb2d31f8683fccd6c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3a9ddb2d31f8683fccd6c1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3a9ddb2d31f8683fccd6c1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3a9ddb2d31f8683fccd6c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3a9d952d31f8683fccb729",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e3a9ddb2d31f8683fccd6c1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e3a9ddb2d31f8683fccd6c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3a9ddb2d31f8683fccd6c0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e3a9ddb2d31f8683fccd6c0",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  }
+ ]
+}

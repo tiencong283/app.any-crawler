@@ -1,0 +1,39 @@
+{
+ "Name": "7QSen5yu.exe",
+ "Md5": "91f8bc2e6299dbc55fe9322048144ad8",
+ "UUID": "4506c01e-839f-4c74-9fd3-62ad1783e730",
+ "Processes": [
+  {
+   "OID": "5cc3e8da389f2846c87e6fed",
+   "ProcessID": 3564,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\7QSen5yu.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\7QSen5yu.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1556343002339
+  },
+  {
+   "OID": "5cc3e8fa389f2846c87e743f",
+   "ProcessID": 1920,
+   "ParentPID": 3564,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\7QSen5yu.exe\" \"7QSen5yu.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556343033995
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cc3e8da389f2846c87e6fed",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc3e8da389f2846c87e6fed",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

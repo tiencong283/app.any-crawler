@@ -1,0 +1,81 @@
+{
+ "Name": "yorkpartner.exe",
+ "Md5": "9d453001913d6f2c4e38d05bd849687a",
+ "UUID": "9732462e-376e-4ddf-9ea3-8f52ef9dd31a",
+ "Processes": [
+  {
+   "OID": "5db015921b853c15c923624e",
+   "ProcessID": 1956,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\yorkpartner.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\yorkpartner.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571820945842
+  },
+  {
+   "OID": "5db015921b853c15c9236255",
+   "ProcessID": 4052,
+   "ParentPID": 1956,
+   "CommandLine": "--db24fd7d",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\yorkpartner.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571820946139
+  },
+  {
+   "OID": "5db015991b853c15c92365e8",
+   "ProcessID": 3480,
+   "ParentPID": 4052,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571820953124
+  },
+  {
+   "OID": "5db015991b853c15c92365f5",
+   "ProcessID": 3680,
+   "ParentPID": 3480,
+   "CommandLine": "--b583abe8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571820953342
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db015991b853c15c92365f5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db015991b853c15c92365e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db015921b853c15c9236255",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db015921b853c15c9236255",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db015921b853c15c9236255",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db015921b853c15c923624e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

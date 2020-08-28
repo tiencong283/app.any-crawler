@@ -1,0 +1,162 @@
+{
+ "Name": "walmaaaaart.exe",
+ "Md5": "63e0da1377dfa52c1716719b62cbee44",
+ "UUID": "45ad7cdc-4d41-42c1-a018-d92f40cb9b93",
+ "Processes": [
+  {
+   "OID": "5b837c47a18e135c52c449fd",
+   "ProcessID": 1344,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\walmaaaaart.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\walmaaaaart.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1535343687662
+  },
+  {
+   "OID": "5b837c47a18e135c52c449fe",
+   "ProcessID": 2920,
+   "ParentPID": 1344,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535343687865
+  },
+  {
+   "OID": "5b837c48a18e135c52c44c39",
+   "ProcessID": 4016,
+   "ParentPID": 1344,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535343688365
+  },
+  {
+   "OID": "5b837c48a18e135c52c454c3",
+   "ProcessID": 4084,
+   "ParentPID": 4016,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\walmaaaaart.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\walmaaaaart.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535343688490
+  },
+  {
+   "OID": "5b837c48a18e135c52c454c4",
+   "ProcessID": 3212,
+   "ParentPID": 4084,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535343688881
+  },
+  {
+   "OID": "5b837c49a18e135c52c45b1d",
+   "ProcessID": 3788,
+   "ParentPID": 3212,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535343688990
+  },
+  {
+   "OID": "5b837c4aa18e135c52c45fc1",
+   "ProcessID": 3348,
+   "ParentPID": 3212,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\svcccchost\\svcccchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\svcccchost\\svcccchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535343690068
+  },
+  {
+   "OID": "5b837c64a18e135c52c4662a",
+   "ProcessID": 3840,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1535343716787
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b837c4aa18e135c52c45fc1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b837c4aa18e135c52c45fc1",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b837c4aa18e135c52c45fc1",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b837c4aa18e135c52c45fc1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b837c48a18e135c52c454c3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b837c48a18e135c52c454c3",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b837c48a18e135c52c454c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b837c48a18e135c52c454c3",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b837c48a18e135c52c454c3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5b837c48a18e135c52c454c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5b837c47a18e135c52c449fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5b837c47a18e135c52c449fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5b837c47a18e135c52c449fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  }
+ ]
+}

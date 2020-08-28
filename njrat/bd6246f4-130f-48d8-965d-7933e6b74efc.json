@@ -1,0 +1,77 @@
+{
+ "Name": "0a9a092d-3eeb-4cb9-8b67-9777f17c4e75",
+ "Md5": "fb0b09c1dd1dbb6216dd6a5beb98db56",
+ "UUID": "bd6246f4-130f-48d8-965d-7933e6b74efc",
+ "Processes": [
+  {
+   "OID": "5db8ad6294a36552d0e6d3df",
+   "ProcessID": 1784,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\0a9a092d-3eeb-4cb9-8b67-9777f17c4e75.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\0a9a092d-3eeb-4cb9-8b67-9777f17c4e75.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572384097808
+  },
+  {
+   "OID": "5db8ad6f94a36552d0e6e3df",
+   "ProcessID": 2600,
+   "ParentPID": 1784,
+   "CommandLine": "\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v4.0.30319\\\\\\\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572384111417
+  },
+  {
+   "OID": "5db8ad7694a36552d0e6e697",
+   "ProcessID": 2392,
+   "ParentPID": 2600,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\" \"RegSvcs.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572384117777
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db8ad6f94a36552d0e6e3df",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8ad6f94a36552d0e6e3df",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8ad6f94a36552d0e6e3df",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db8ad6f94a36552d0e6e3df",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5db8ad6294a36552d0e6d3df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db8ad6294a36552d0e6d3df",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db8ad6294a36552d0e6d3df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

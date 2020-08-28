@@ -1,0 +1,186 @@
+{
+ "Name": "stub.exe",
+ "Md5": "8e02e7699af1d3c9137d608b588282a7",
+ "UUID": "cdf49137-f935-48e1-9b9a-60f7d46368df",
+ "Processes": [
+  {
+   "OID": "5cacbdc986725b2b70ef43bb",
+   "ProcessID": 3572,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554824648627
+  },
+  {
+   "OID": "5cacbdcf86725b2b70ef47d6",
+   "ProcessID": 1908,
+   "ParentPID": 3572,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe\" \"stub.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554824654877
+  },
+  {
+   "OID": "5cacbdd086725b2b70ef4b28",
+   "ProcessID": 3196,
+   "ParentPID": 3572,
+   "CommandLine": "schtasks /create /sc minute /mo 1 /tn Java /tr C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554824656158
+  },
+  {
+   "OID": "5cacbdda86725b2b70ef538d",
+   "ProcessID": 2200,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Windows\\system32\\mmc.exe\" \"C:\\Windows\\system32\\taskschd.msc\" /s",
+   "Image": "C:\\Windows\\system32\\mmc.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1554824665736
+  },
+  {
+   "OID": "5cacbddb86725b2b70ef5548",
+   "ProcessID": 1336,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Windows\\system32\\mmc.exe\" \"C:\\Windows\\system32\\taskschd.msc\" /s",
+   "Image": "C:\\Windows\\system32\\mmc.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1554824666924
+  },
+  {
+   "OID": "5cacbdfc86725b2b70ef69df",
+   "ProcessID": 1916,
+   "ParentPID": 3680,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1554824700252
+  },
+  {
+   "OID": "5cacbe2086725b2b70ef6eb4",
+   "ProcessID": 320,
+   "ParentPID": 3680,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1554824736674
+  },
+  {
+   "OID": "5cacbe2e86725b2b70ef7941",
+   "ProcessID": 2388,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1554824750017
+  },
+  {
+   "OID": "5cacbe3b86725b2b70ef815c",
+   "ProcessID": 2672,
+   "ParentPID": 3680,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1554824762986
+  },
+  {
+   "OID": "5cacbe7486725b2b70ef918f",
+   "ProcessID": 3640,
+   "ParentPID": 3680,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1554824820002
+  },
+  {
+   "OID": "5cacbe7a86725b2b70ef9387",
+   "ProcessID": 3508,
+   "ParentPID": 3640,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe\" \"stub.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554824826455
+  },
+  {
+   "OID": "5cacbe7b86725b2b70ef93d6",
+   "ProcessID": 2300,
+   "ParentPID": 3640,
+   "CommandLine": "schtasks /create /sc minute /mo 1 /tn Java /tr C:\\Users\\admin\\AppData\\Local\\Temp\\stub.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554824827049
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cacbe7b86725b2b70ef93d6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cacbe7486725b2b70ef918f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cacbe7486725b2b70ef918f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cacbdc986725b2b70ef43bb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cacbddb86725b2b70ef5548",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cacbdc986725b2b70ef43bb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cacbdc986725b2b70ef43bb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cacbdc986725b2b70ef3c3d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cacbdd086725b2b70ef4b28",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cacbdc986725b2b70ef43bb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cacbdc986725b2b70ef43bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

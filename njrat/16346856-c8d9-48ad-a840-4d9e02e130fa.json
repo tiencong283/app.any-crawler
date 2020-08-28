@@ -1,0 +1,107 @@
+{
+ "Name": "Server.exe",
+ "Md5": "ff93493c82f3020a47f1cf78c824f8cf",
+ "UUID": "16346856-c8d9-48ad-a840-4d9e02e130fa",
+ "Processes": [
+  {
+   "OID": "5e2b46c495a9f504cd47f115",
+   "ProcessID": 3620,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579894468136
+  },
+  {
+   "OID": "5e2b46cb95a9f504cd47f44b",
+   "ProcessID": 3800,
+   "ParentPID": 3620,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\kmsdll2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kmsdll2.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579894474745
+  },
+  {
+   "OID": "5e2b46d195a9f504cd47f9c5",
+   "ProcessID": 2780,
+   "ParentPID": 3800,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\kmsdll2.exe\" \"kmsdll2.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579894481089
+  },
+  {
+   "OID": "5e2b473395a9f504cd48090d",
+   "ProcessID": 2392,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1579894579230
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2b473395a9f504cd48090d",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b46cb95a9f504cd47f44b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b46cb95a9f504cd47f44b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b46cb95a9f504cd47f44b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b46cb95a9f504cd47f44b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b46cb95a9f504cd47f44b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2b46cb95a9f504cd47f44b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b46cb95a9f504cd47f44b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b46c495a9f504cd47f115",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e2b46c495a9f504cd47f115",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

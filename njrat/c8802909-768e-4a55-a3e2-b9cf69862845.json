@@ -1,0 +1,154 @@
+{
+ "Name": "MrKIMAXcraft.exe",
+ "Md5": "a52d96fcc412e10a4e17b4fd0517290d",
+ "UUID": "c8802909-768e-4a55-a3e2-b9cf69862845",
+ "Processes": [
+  {
+   "OID": "5dadd81bb68afa41e1be938d",
+   "ProcessID": 2468,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\MrKIMAXcraft.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\MrKIMAXcraft.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571674138650
+  },
+  {
+   "OID": "5dadd81cb68afa41e1be96ac",
+   "ProcessID": 3580,
+   "ParentPID": 2468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571674140119
+  },
+  {
+   "OID": "5dadd81db68afa41e1be9cf5",
+   "ProcessID": 1608,
+   "ParentPID": 3580,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\server.exe\" \"server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571674141322
+  },
+  {
+   "OID": "5dadd832b68afa41e1beac7b",
+   "ProcessID": 2716,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\System32\\control.exe\" SYSTEM",
+   "Image": "C:\\Windows\\System32\\control.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1571674162259
+  },
+  {
+   "OID": "5dadd83bb68afa41e1bebf2a",
+   "ProcessID": 3812,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\mmc.exe\" C:\\Windows\\system32\\devmgmt.msc",
+   "Image": "C:\\Windows\\system32\\mmc.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1571674170869
+  },
+  {
+   "OID": "5dadd83cb68afa41e1bec1f9",
+   "ProcessID": 2076,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\mmc.exe\" C:\\Windows\\system32\\devmgmt.msc",
+   "Image": "C:\\Windows\\system32\\mmc.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1571674172197
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dadd83cb68afa41e1bec1f9",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dadd81cb68afa41e1be96ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadd81cb68afa41e1be96ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadd83bb68afa41e1bebf2a",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dadd834b68afa41e1beb449",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5dadd81ab68afa41e1be8aa7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dadd81ab68afa41e1be8aa7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadd832b68afa41e1beac7b",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dadd81cb68afa41e1be96ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadd81cb68afa41e1be96ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dadd81cb68afa41e1be96ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadd81cb68afa41e1be96ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dadd81bb68afa41e1be938d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dadd81bb68afa41e1be938d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dadd81bb68afa41e1be938d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

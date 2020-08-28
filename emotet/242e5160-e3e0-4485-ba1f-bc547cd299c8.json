@@ -1,0 +1,74 @@
+{
+ "Name": "rankerpausea.exe",
+ "Md5": "ccd6465c3b893db145aefdf931105535",
+ "UUID": "242e5160-e3e0-4485-ba1f-bc547cd299c8",
+ "Processes": [
+  {
+   "OID": "5dcbb9d3ca649e64fd3e1489",
+   "ProcessID": 1888,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\rankerpausea.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\rankerpausea.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573632467022
+  },
+  {
+   "OID": "5dcbb9d3ca649e64fd3e148a",
+   "ProcessID": 2384,
+   "ParentPID": 1888,
+   "CommandLine": "--94f7de08",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\rankerpausea.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573632467178
+  },
+  {
+   "OID": "5dcbb9daca649e64fd3e180e",
+   "ProcessID": 2356,
+   "ParentPID": 2384,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573632474116
+  },
+  {
+   "OID": "5dcbb9daca649e64fd3e1819",
+   "ProcessID": 3348,
+   "ParentPID": 2356,
+   "CommandLine": "--dfba43e0",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573632474272
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcbb9daca649e64fd3e1819",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcbb9daca649e64fd3e180e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcbb9d3ca649e64fd3e148a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcbb9d3ca649e64fd3e148a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcbb9d3ca649e64fd3e148a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

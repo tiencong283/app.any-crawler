@@ -1,0 +1,91 @@
+{
+ "Name": "EEEE.exe",
+ "Md5": "e746cc2ffe2cfe75d975ee61eccb7520",
+ "UUID": "c9baedf4-6dfd-4502-8aec-4366f49661c6",
+ "Processes": [
+  {
+   "OID": "5c9ea84d70de58030da6bf28",
+   "ProcessID": 2100,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\EEEE.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\EEEE.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1553901644370
+  },
+  {
+   "OID": "5c9ea84d70de58030da6c2dd",
+   "ProcessID": 3168,
+   "ParentPID": 2100,
+   "CommandLine": "\"C:\\Users\\admin\\ Nig nog.exe\" ",
+   "Image": "C:\\Users\\admin\\ Nig nog.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553901644948
+  },
+  {
+   "OID": "5c9ea84d70de58030da6c2de",
+   "ProcessID": 2356,
+   "ParentPID": 3168,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\ Nig nog.exe\" \" Nig nog.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553901645073
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c9ea84d70de58030da6c2dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c9ea84d70de58030da6c2dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9ea84d70de58030da6c2dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c9ea84d70de58030da6c2dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9ea84d70de58030da6c2dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9ea84d70de58030da6c2dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c9ea84d70de58030da6c2dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5c9ea84d70de58030da6bf28",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c9ea84d70de58030da6bf28",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

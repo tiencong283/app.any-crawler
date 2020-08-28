@@ -1,0 +1,93 @@
+{
+ "Name": "iexplorer.exe",
+ "Md5": "5623b61994ece1da6419aec1b2bbd2c9",
+ "UUID": "3f7c523e-7f11-4ad0-bf91-5e328f3940ac",
+ "Processes": [
+  {
+   "OID": "5b040d6a2a3a83235755986f",
+   "ProcessID": 3664,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\iexplorer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\iexplorer.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1526992234466
+  },
+  {
+   "OID": "5b040d6a2a3a832357559870",
+   "ProcessID": 2288,
+   "ParentPID": 3664,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe\" /noconfig /fullpaths @\"C:\\Users\\admin\\AppData\\Local\\Temp\\xddp3guq.cmdline\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1526992234638
+  },
+  {
+   "OID": "5b040d6b2a3a832357559a53",
+   "ProcessID": 3932,
+   "ParentPID": 2288,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 \"/OUT:C:\\Users\\admin\\AppData\\Local\\Temp\\RES9B3.tmp\" \"c:\\Users\\admin\\AppData\\Local\\Temp\\CSCFFA7CF0FF1B5432BA13B95E273F026D9.TMP\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\cvtres.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1526992234903
+  },
+  {
+   "OID": "5b040d6b2a3a832357559a54",
+   "ProcessID": 2304,
+   "ParentPID": 3664,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1526992235075
+  },
+  {
+   "OID": "5b040d6b2a3a832357559a55",
+   "ProcessID": 2320,
+   "ParentPID": 2304,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1526992235153
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b040d6b2a3a832357559a55",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b040d6b2a3a832357559a55",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b040d6b2a3a832357559a55",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b040d6b2a3a832357559a54",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b040d6b2a3a832357559a54",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b040d6a2a3a83235755986f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5b040d6a2a3a83235755986f",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

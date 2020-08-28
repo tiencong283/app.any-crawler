@@ -1,0 +1,51 @@
+{
+ "Name": "freeeeeeeee.exe",
+ "Md5": "f5aa3e9c8e84779169fbb52aaa3349d7",
+ "UUID": "491ebfba-4df9-4289-a6ce-832895da2999",
+ "Processes": [
+  {
+   "OID": "5e3b6f23e728d6124270e887",
+   "ProcessID": 3772,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\freeeeeeeee.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\freeeeeeeee.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580953379045
+  },
+  {
+   "OID": "5e3b6f38e728d6124270f91c",
+   "ProcessID": 2408,
+   "ParentPID": 3772,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\freeeeeeeee.exe\" \"freeeeeeeee.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580953400498
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e3b6f23e728d6124270e887",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3b6f23e728d6124270e887",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e3b6f23e728d6124270e887",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e3b6f23e728d6124270e887",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

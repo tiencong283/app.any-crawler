@@ -1,0 +1,177 @@
+{
+ "Name": "outstanding.exe",
+ "Md5": "81a022fce6b76d70dc120290ab20ff4d",
+ "UUID": "d06d0458-4eff-4405-9048-5252555c697d",
+ "Processes": [
+  {
+   "OID": "5d6ed056fada4c101287105b",
+   "ProcessID": 3000,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\outstanding.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\outstanding.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1567543382019
+  },
+  {
+   "OID": "5d6ed07bfada4c1012871474",
+   "ProcessID": 3092,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\feesillinois.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1567543419613
+  },
+  {
+   "OID": "5d6ed07dfada4c1012871bf4",
+   "ProcessID": 3192,
+   "ParentPID": 3000,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\subfolder\\filename.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567543420613
+  },
+  {
+   "OID": "5d6ed07dfada4c1012871bf5",
+   "ProcessID": 3688,
+   "ParentPID": 3000,
+   "CommandLine": "\"C:\\Users\\admin\\subfolder\\filename.exe\" ",
+   "Image": "C:\\Users\\admin\\subfolder\\filename.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567543420675
+  },
+  {
+   "OID": "5d6ed089fada4c101287373c",
+   "ProcessID": 3344,
+   "ParentPID": 3688,
+   "CommandLine": "\"C:\\Users\\admin\\subfolder\\filename.exe\" ",
+   "Image": "C:\\Users\\admin\\subfolder\\filename.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567543433738
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d6ed089fada4c101287373c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6ed089fada4c101287373c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6ed089fada4c101287373c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6ed089fada4c101287373c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6ed089fada4c101287373c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6ed089fada4c101287373c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5d6ed089fada4c101287373c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6ed07dfada4c1012871bf5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d6ed07dfada4c1012871bf4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d6ed056fada4c10128709b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6ed07dfada4c1012871bf6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d6ed056fada4c101287105b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d6ed056fada4c101287105b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5d6ed056fada4c101287105b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6ed07bfada4c1012871474",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6ed07bfada4c1012871474",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d6ed056fada4c10128709b4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d6ed056fada4c10128709b4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6ed056fada4c10128709b4",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d6ed07bfada4c1012871474",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d6ed056fada4c10128709af",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "Name": "wlss677",
+ "Md5": "74c1b72e7f53eaff4fce1b04c96ee08d",
+ "UUID": "f001fbd6-07f8-4dd2-b513-86283d24f30c",
+ "Processes": [
+  {
+   "OID": "5db19185a523113c11c00efd",
+   "ProcessID": 616,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\wlss677.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\wlss677.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571918213089
+  },
+  {
+   "OID": "5db19185a523113c11c014e4",
+   "ProcessID": 3364,
+   "ParentPID": 616,
+   "CommandLine": "--f3d5d77f",
+   "Image": "C:\\Users\\admin\\Desktop\\wlss677.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571918213464
+  },
+  {
+   "OID": "5db1918ca523113c11c01d24",
+   "ProcessID": 3124,
+   "ParentPID": 3364,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571918219886
+  },
+  {
+   "OID": "5db1918ca523113c11c01d25",
+   "ProcessID": 1880,
+   "ParentPID": 3124,
+   "CommandLine": "--b583abe8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571918219995
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db1918ca523113c11c01d25",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db1918ca523113c11c01d25",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db1918ca523113c11c01d25",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db19185a523113c11c014e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db19185a523113c11c014e4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db19185a523113c11c014e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db19185a523113c11c00efd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

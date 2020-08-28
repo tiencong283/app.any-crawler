@@ -1,0 +1,143 @@
+{
+ "Name": "PO Payment Advise 4505773335  Acceptance Signature.exe",
+ "Md5": "3a625a2525fba2cc0f3c3c0645f78619",
+ "UUID": "3feeb5c9-282b-4af3-9ca2-3d39dc83cec4",
+ "Processes": [
+  {
+   "OID": "5be93f8927eec5290c82e403",
+   "ProcessID": 1604,
+   "ParentPID": 1532,
+   "CommandLine": "C:\\Windows\\Explorer.EXE",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5be93f8927eec5290c82eb5d",
+   "ProcessID": 3944,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\PO Payment Advise 4505773335  Acceptance Signature.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\PO Payment Advise 4505773335  Acceptance Signature.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1542012808824
+  },
+  {
+   "OID": "5be93fb727eec5290c82f8f0",
+   "ProcessID": 676,
+   "ParentPID": 3944,
+   "CommandLine": "\u0001C:\\Users\\admin\\Desktop\\PO Payment Advise 4505773335  Acceptance Signature.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\PO Payment Advise 4505773335  Acceptance Signature.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542012854949
+  },
+  {
+   "OID": "5be93fed27eec5290c82fc94",
+   "ProcessID": 4004,
+   "ParentPID": 676,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542012908292
+  },
+  {
+   "OID": "5be93fee27eec5290c830187",
+   "ProcessID": 328,
+   "ParentPID": 4004,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542012909714
+  },
+  {
+   "OID": "5be93fee27eec5290c830189",
+   "ProcessID": 3360,
+   "ParentPID": 328,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542012909855
+  },
+  {
+   "OID": "5be9407d27eec5290c830aaa",
+   "ProcessID": 3788,
+   "ParentPID": 3360,
+   "CommandLine": "\u0001:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542013052527
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5be93fee27eec5290c830189",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5be93fed27eec5290c82fc94",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5be93fb727eec5290c82f8f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5be93fb727eec5290c82f8f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be93fb727eec5290c82f8f0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5be93fb727eec5290c82f8f0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be93fb727eec5290c82f8f0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be93f8927eec5290c82eb5d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5be93f8927eec5290c82e3fe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5be93f8927eec5290c82e3fe",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5be93f8927eec5290c82e403",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

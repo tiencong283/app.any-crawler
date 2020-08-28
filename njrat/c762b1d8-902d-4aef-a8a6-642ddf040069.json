@@ -1,0 +1,63 @@
+{
+ "Name": "exploref.exe",
+ "Md5": "4da876d229e9e11f4eddb608d5f5724e",
+ "UUID": "c762b1d8-902d-4aef-a8a6-642ddf040069",
+ "Processes": [
+  {
+   "OID": "5e7760fab308e8590b8837f4",
+   "ProcessID": 2728,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\exploref.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\exploref.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1584881914492
+  },
+  {
+   "OID": "5e776101b308e8590b8842fb",
+   "ProcessID": 1748,
+   "ParentPID": 2728,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\exploref.exe\" \"exploref.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584881920773
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e7760fab308e8590b8837f4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e7760fab308e8590b8837f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7760fab308e8590b8837f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7760fab308e8590b8837f4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e7760fab308e8590b8837f4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e7760fab308e8590b8837f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

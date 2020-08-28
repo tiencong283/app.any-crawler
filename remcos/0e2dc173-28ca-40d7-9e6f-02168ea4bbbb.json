@@ -1,0 +1,62 @@
+{
+ "Name": "8oEITJq.exe",
+ "Md5": "56a7fe68333eed891028af99a85cc2cf",
+ "UUID": "0e2dc173-28ca-40d7-9e6f-02168ea4bbbb",
+ "Processes": [
+  {
+   "OID": "5b3b5e472b9d003f08068f3f",
+   "ProcessID": 1332,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\8oEITJq.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\8oEITJq.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1530617415339
+  },
+  {
+   "OID": "5b3b5e482b9d003f08068f43",
+   "ProcessID": 3716,
+   "ParentPID": 1332,
+   "CommandLine": "\"C:\\Windows\\System32\\svchost.exe\"",
+   "Image": "C:\\Windows\\System32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1530617415949
+  },
+  {
+   "OID": "5b3b5e542b9d003f0806abb0",
+   "ProcessID": 2012,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Windows\\regedit.exe\" ",
+   "Image": "C:\\Windows\\regedit.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1530617427730
+  },
+  {
+   "OID": "5b3b5e572b9d003f0806b2a8",
+   "ProcessID": 1208,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Windows\\regedit.exe\" ",
+   "Image": "C:\\Windows\\regedit.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1530617430877
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b3b5e482b9d003f08068f43",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b3b5e482b9d003f08068f43",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b3b5e472b9d003f08068f3f",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  }
+ ]
+}

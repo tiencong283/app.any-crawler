@@ -1,0 +1,63 @@
+{
+ "Name": "geforce.exe",
+ "Md5": "284a474c1f15131242043bbac5362429",
+ "UUID": "cfdb3ab9-ecca-4d5a-980d-04f846067d61",
+ "Processes": [
+  {
+   "OID": "5ee6882b1bc7da3b908b37cf",
+   "ProcessID": 2052,
+   "ParentPID": 348,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\geforce.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\geforce.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592166443474
+  },
+  {
+   "OID": "5ee688321bc7da3b908b4048",
+   "ProcessID": 3844,
+   "ParentPID": 2052,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\geforce.exe\" \"geforce.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592166449911
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee6882b1bc7da3b908b37cf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee6882b1bc7da3b908b37cf",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee6882b1bc7da3b908b37cf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee6882b1bc7da3b908b37cf",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee6882b1bc7da3b908b37cf",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee6882b1bc7da3b908b37cf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

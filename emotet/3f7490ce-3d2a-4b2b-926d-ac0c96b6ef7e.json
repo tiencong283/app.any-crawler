@@ -1,0 +1,76 @@
+{
+ "Name": "capresapi.exe",
+ "Md5": "7efa4548b644e37e2e69e5f5aa1a1af0",
+ "UUID": "3f7490ce-3d2a-4b2b-926d-ac0c96b6ef7e",
+ "Processes": [
+  {
+   "OID": "5dcbf47f7fd8cc50a764f6de",
+   "ProcessID": 2692,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\capresapi.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\capresapi.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573647487419
+  },
+  {
+   "OID": "5dcbf4817fd8cc50a764f871",
+   "ProcessID": 3936,
+   "ParentPID": 2692,
+   "CommandLine": "--b7076630",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\capresapi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573647489075
+  },
+  {
+   "OID": "5dcbf4887fd8cc50a764f93e",
+   "ProcessID": 2456,
+   "ParentPID": 3936,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573647495857
+  },
+  {
+   "OID": "5dcbf4897fd8cc50a764fbef",
+   "ProcessID": 4016,
+   "ParentPID": 2456,
+   "CommandLine": "--f91b2738",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573647497529
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcbf4887fd8cc50a764f93e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcbf4817fd8cc50a764f871",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcbf4817fd8cc50a764f871",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcbf4817fd8cc50a764f871",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcbf47f7fd8cc50a764f6de",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,158 @@
+{
+ "Name": "WellsFargo-Bank-Scampage.exe",
+ "Md5": "938b4e6aeeafa96ffb5bcf812fb424de",
+ "UUID": "8c224b4b-f1dc-49d9-a756-2dffb2365f3b",
+ "Processes": [
+  {
+   "OID": "5e843ccd2480472483a433e5",
+   "ProcessID": 3608,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WellsFargo-Bank-Scampage.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WellsFargo-Bank-Scampage.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585724620941
+  },
+  {
+   "OID": "5e843ccd2480472483a433e6",
+   "ProcessID": 3564,
+   "ParentPID": 3608,
+   "CommandLine": "C:\\Windows\\system32\\cmd.exe /c echo on error resume next:CreateObject(\"WScript.Shell\").Run \"C:\\Users\\admin\\AppData\\Local\\Temp\\WellsFargo-Bank-Scampage.exe\",1: \u003e\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\x.vbs\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585724621097
+  },
+  {
+   "OID": "5e843cce2480472483a43edf",
+   "ProcessID": 3620,
+   "ParentPID": 3608,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\WellsFargo-Bank-Scampage.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WellsFargo-Bank-Scampage.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585724621909
+  },
+  {
+   "OID": "5e843cd42480472483a444c9",
+   "ProcessID": 3340,
+   "ParentPID": 3620,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\src.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\src.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585724628222
+  },
+  {
+   "OID": "5e843cd52480472483a44626",
+   "ProcessID": 3388,
+   "ParentPID": 3340,
+   "CommandLine": "C:\\Windows\\system32\\cmd.exe /c echo on error resume next:CreateObject(\"WScript.Shell\").Run \"C:\\Users\\admin\\AppData\\Local\\Temp\\src.exe\",1: \u003e\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\x.vbs\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585724628347
+  },
+  {
+   "OID": "5e843cd52480472483a44bc4",
+   "ProcessID": 2636,
+   "ParentPID": 3340,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\src.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\src.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585724629159
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e843cd52480472483a44bc4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e843cd52480472483a44bc4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e843cd52480472483a44bc4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e843cd52480472483a44bc4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e843cd52480472483a44bc4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e843cd52480472483a44bc4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e843cd42480472483a444c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e843cd52480472483a44626",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e843cd42480472483a444c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e843cce2480472483a43edf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e843cce2480472483a43edf",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e843ccd2480472483a433e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e843ccd2480472483a433e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e843ccd2480472483a433e6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e843ccd2480472483a433e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

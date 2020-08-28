@@ -1,0 +1,44 @@
+{
+ "Name": "taskhost.exe",
+ "Md5": "ec00e344360f275195cbf3c69dd6e476",
+ "UUID": "f92ee193-960b-4923-ab99-f3cbec7738f1",
+ "Processes": [
+  {
+   "OID": "5dc309d2d7846c13e61d9241",
+   "ProcessID": 2364,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\taskhost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\taskhost.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573063122272
+  },
+  {
+   "OID": "5dc309d3d7846c13e61d9b1a",
+   "ProcessID": 1448,
+   "ParentPID": 2364,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\taskhost.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\taskhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573063123022
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc309d3d7846c13e61d9b1a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc309d3d7846c13e61d9b1a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc309d2d7846c13e61d9241",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

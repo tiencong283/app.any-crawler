@@ -1,0 +1,60 @@
+{
+ "Name": "Facturas.exe",
+ "Md5": "a575e8bcbb249fb3fa88cb786ef1a785",
+ "UUID": "582ced81-d5a1-42b9-958e-c1f543c3b245",
+ "Processes": [
+  {
+   "OID": "5e5d0ccff46a9f407a0516e4",
+   "ProcessID": 3292,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Facturas.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Facturas.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583156430948
+  },
+  {
+   "OID": "5e5d0ccff46a9f407a0516e5",
+   "ProcessID": 2124,
+   "ParentPID": 3292,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583156431167
+  },
+  {
+   "OID": "5e5d0cd5f46a9f407a0522b3",
+   "ProcessID": 2400,
+   "ParentPID": 2124,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe\" \"MSBuild.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583156437339
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e5d0ccff46a9f407a0516e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5d0ccff46a9f407a0516e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5d0ccff46a9f407a0516e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e5d0ccff46a9f407a0516e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

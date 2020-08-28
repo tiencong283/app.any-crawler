@@ -1,0 +1,39 @@
+{
+ "Name": "dhl.exe",
+ "Md5": "fc70de5622345839e066f29d1e7e9918",
+ "UUID": "80069d2f-2cee-4305-ba26-a4080e3f797e",
+ "Processes": [
+  {
+   "OID": "5bf25d408642f30861288317",
+   "ProcessID": 2672,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dhl.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dhl.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1542610240367
+  },
+  {
+   "OID": "5bf25d558642f30861288ded",
+   "ProcessID": 3760,
+   "ParentPID": 2672,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542610260726
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bf25d558642f30861288ded",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bf25d558642f30861288ded",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  }
+ ]
+}

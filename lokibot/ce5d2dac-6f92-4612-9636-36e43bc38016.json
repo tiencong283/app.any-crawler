@@ -1,0 +1,60 @@
+{
+ "Name": "frogs.exe",
+ "Md5": "55ccdc58c45223fc5509d958790560ac",
+ "UUID": "ce5d2dac-6f92-4612-9636-36e43bc38016",
+ "Processes": [
+  {
+   "OID": "5d637ce530cb5c22e8d2c4e9",
+   "ProcessID": 2872,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\frogs.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\frogs.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1566801125395
+  },
+  {
+   "OID": "5d637cf530cb5c22e8d2c985",
+   "ProcessID": 2460,
+   "ParentPID": 2872,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\frogs.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566801140785
+  },
+  {
+   "OID": "5d637d1330cb5c22e8d2cd63",
+   "ProcessID": 3248,
+   "ParentPID": 2872,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1566801170770
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d637d1330cb5c22e8d2cd63",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5d637d1330cb5c22e8d2cd63",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d637ce530cb5c22e8d2be42",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d637ce530cb5c22e8d2c4e9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

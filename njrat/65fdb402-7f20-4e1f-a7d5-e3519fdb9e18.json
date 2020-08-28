@@ -1,0 +1,65 @@
+{
+ "Name": "njrat",
+ "Md5": "3210323de020f771983a9df9fb9a22ff",
+ "UUID": "65fdb402-7f20-4e1f-a7d5-e3519fdb9e18",
+ "Processes": [
+  {
+   "OID": "5d67f365cf9e397d1591fed3",
+   "ProcessID": 3780,
+   "ParentPID": 276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\njrat.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\njrat.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1567093605103
+  },
+  {
+   "OID": "5d67f36ccf9e397d15920764",
+   "ProcessID": 3572,
+   "ParentPID": 3780,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Password.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Password.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567093611525
+  },
+  {
+   "OID": "5d67f372cf9e397d15920cb1",
+   "ProcessID": 3024,
+   "ParentPID": 3572,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Password.exe\" \"Password.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1567093617650
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d67f36ccf9e397d15920764",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d67f365cf9e397d1591fec6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d67f36ccf9e397d15920764",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d67f365cf9e397d1591fed3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d67f365cf9e397d1591fed3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

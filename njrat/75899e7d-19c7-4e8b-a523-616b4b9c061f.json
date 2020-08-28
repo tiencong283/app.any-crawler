@@ -1,0 +1,63 @@
+{
+ "Name": "ati_audio.exe",
+ "Md5": "25c35e6c67fa2ff874cffbb5d3caba9c",
+ "UUID": "75899e7d-19c7-4e8b-a523-616b4b9c061f",
+ "Processes": [
+  {
+   "OID": "5e6cfdd511b16b798ff28f90",
+   "ProcessID": 3620,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ati_audio.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ati_audio.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1584201173156
+  },
+  {
+   "OID": "5e6cfdd611b16b798ff29162",
+   "ProcessID": 2788,
+   "ParentPID": 3620,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\ati_audio.exe\" \"ati_audio.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584201173499
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e6cfdd511b16b798ff28f90",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e6cfdd511b16b798ff28f90",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e6cfdd511b16b798ff28f90",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e6cfdd511b16b798ff28f90",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e6cfdd511b16b798ff28f90",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e6cfdd511b16b798ff28f90",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

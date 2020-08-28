@@ -1,0 +1,67 @@
+{
+ "Name": "4ea8b57ce3d98d57c6fba8314b9da40babcc6ea7a61cf17846a0d931c2ce554c",
+ "Md5": "c99ea589ae0557d6e956e44a1ce31774",
+ "UUID": "a46a4822-92ad-40f7-b43a-5cac80e21f2d",
+ "Processes": [
+  {
+   "OID": "5dcae8c60497e6374b2e4f75",
+   "ProcessID": 2452,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\4ea8b57ce3d98d57c6fba8314b9da40babcc6ea7a61cf17846a0d931c2ce554c.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\4ea8b57ce3d98d57c6fba8314b9da40babcc6ea7a61cf17846a0d931c2ce554c.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573578949825
+  },
+  {
+   "OID": "5dcae8cd0497e6374b2e5877",
+   "ProcessID": 2684,
+   "ParentPID": 2452,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\mami.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\mami.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573578956450
+  },
+  {
+   "OID": "5dcae8d30497e6374b2e5e0d",
+   "ProcessID": 328,
+   "ParentPID": 2684,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\mami.exe\" \"mami.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573578962606
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcae8cd0497e6374b2e5877",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcae8cd0497e6374b2e5877",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dcae8cd0497e6374b2e5877",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dcae8c60497e6374b2e4f75",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcae8c60497e6374b2e4f75",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

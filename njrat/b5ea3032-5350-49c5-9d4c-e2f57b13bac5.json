@@ -1,0 +1,79 @@
+{
+ "Name": "ATUALICAO HACK CSGO 03 20 2020.exe",
+ "Md5": "fb4d6593a09ef821cc3ace279f635cc4",
+ "UUID": "b5ea3032-5350-49c5-9d4c-e2f57b13bac5",
+ "Processes": [
+  {
+   "OID": "5e8806015d86cb10ca878417",
+   "ProcessID": 780,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\ATUALICAO HACK CSGO 03 20 2020.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\ATUALICAO HACK CSGO 03 20 2020.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585972736791
+  },
+  {
+   "OID": "5e8806095d86cb10ca878a3d",
+   "ProcessID": 2572,
+   "ParentPID": 780,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\svvv.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\svvv.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585972744354
+  },
+  {
+   "OID": "5e88060f5d86cb10ca8792b0",
+   "ProcessID": 3624,
+   "ParentPID": 2572,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\svvv.exe\" \"svvv.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585972751275
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8806095d86cb10ca878a3d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e8806095d86cb10ca878a3d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8806095d86cb10ca878a3d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e8806095d86cb10ca878a3d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e8806015d86cb10ca878417",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e8806015d86cb10ca878417",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8806015d86cb10ca878417",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

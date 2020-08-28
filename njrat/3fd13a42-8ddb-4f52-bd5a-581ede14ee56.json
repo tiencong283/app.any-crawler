@@ -1,0 +1,44 @@
+{
+ "Name": "download.exe",
+ "Md5": "696aa810c16f43f46c28bdab639dd3f0",
+ "UUID": "3fd13a42-8ddb-4f52-bd5a-581ede14ee56",
+ "Processes": [
+  {
+   "OID": "5d08e0f046c29366fce4ef64",
+   "ProcessID": 2976,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\download.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\download.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560862959689
+  },
+  {
+   "OID": "5d08e0f046c29366fce4f560",
+   "ProcessID": 4076,
+   "ParentPID": 2976,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\download.exe\" \"download.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560862959970
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d08e0f046c29366fce4ef64",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d08e0f046c29366fce4ef64",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d08e0f046c29366fce4ef64",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

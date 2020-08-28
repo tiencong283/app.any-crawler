@@ -1,0 +1,154 @@
+{
+ "Name": "mediahuman.youtube.downloader.v.3.9.9.16-patch.exe",
+ "Md5": "af2219b377365551e425c238ccb00196",
+ "UUID": "6b03283e-1c28-4338-8405-c37f39b4a612",
+ "Processes": [
+  {
+   "OID": "5e31a6540ff88e265f5ecdf0",
+   "ProcessID": 3368,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\mediahuman.youtube.downloader.v.3.9.9.16-patch.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\mediahuman.youtube.downloader.v.3.9.9.16-patch.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580312148428
+  },
+  {
+   "OID": "5e31a6550ff88e265f5ed3a0",
+   "ProcessID": 2944,
+   "ParentPID": 3368,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\ViaFolo\\ViaFoo.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\ViaFolo\\ViaFoo.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312148943
+  },
+  {
+   "OID": "5e31a6580ff88e265f5edbab",
+   "ProcessID": 3168,
+   "ParentPID": 2944,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe\" /logtoconsole=false /logfile= /u \"C:\\Users\\admin\\AppData\\Roaming\\ViaFolo\\ViaFoo.EXE\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\installutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312152287
+  },
+  {
+   "OID": "5e31a6590ff88e265f5edc47",
+   "ProcessID": 256,
+   "ParentPID": 3168,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\15421607.dqg3p3jcViaRu.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\15421607.dqg3p3jcViaRu.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312152849
+  },
+  {
+   "OID": "5e31a6590ff88e265f5ee31a",
+   "ProcessID": 3392,
+   "ParentPID": 3168,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\15421607.dqg3p3jcViaRu.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\15421607.dqg3p3jcViaRu.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312153193
+  },
+  {
+   "OID": "5e31a65e0ff88e265f5eee50",
+   "ProcessID": 912,
+   "ParentPID": 3168,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312157669
+  },
+  {
+   "OID": "5e31a6640ff88e265f5ef280",
+   "ProcessID": 2896,
+   "ParentPID": 912,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580312163873
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e31a65e0ff88e265f5eee50",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a65e0ff88e265f5eee50",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a65e0ff88e265f5eee50",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a6590ff88e265f5ee31a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a6590ff88e265f5ee31a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a6590ff88e265f5edc47",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a6590ff88e265f5ee31a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a6590ff88e265f5ee31a",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a6580ff88e265f5edbab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a6580ff88e265f5edbab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a6540ff88e265f5ecdf0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e31a6540ff88e265f5ecdf0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a6540ff88e265f5ecdf0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e31a6540ff88e265f5ec661",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

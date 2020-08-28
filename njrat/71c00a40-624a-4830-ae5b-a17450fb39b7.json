@@ -1,0 +1,139 @@
+{
+ "Name": "PUBGM Bypass_v1.9.exe",
+ "Md5": "6e4de00b369a198a09710539c556412b",
+ "UUID": "71c00a40-624a-4830-ae5b-a17450fb39b7",
+ "Processes": [
+  {
+   "OID": "5df15a01b82ff86d5cc2e2c7",
+   "ProcessID": 2456,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PUBGM Bypass_v1.9.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PUBGM Bypass_v1.9.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1576098305114
+  },
+  {
+   "OID": "5df15a01b82ff86d5cc2e2c8",
+   "ProcessID": 1848,
+   "ParentPID": 2456,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_PUBGM Bypass_v1.9.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_PUBGM Bypass_v1.9.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576098305520
+  },
+  {
+   "OID": "5df15a02b82ff86d5cc2eacd",
+   "ProcessID": 2648,
+   "ParentPID": 1848,
+   "CommandLine": "\"C:\\Users\\admin\\synaptics.exe\" ",
+   "Image": "C:\\Users\\admin\\synaptics.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576098306395
+  },
+  {
+   "OID": "5df15a03b82ff86d5cc2f223",
+   "ProcessID": 2572,
+   "ParentPID": 2648,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\synaptics.exe\" \"synaptics.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576098306645
+  },
+  {
+   "OID": "5df15a03b82ff86d5cc2f893",
+   "ProcessID": 912,
+   "ParentPID": 2456,
+   "CommandLine": "\"C:\\ProgramData\\Synaptics\\Synaptics.exe\" InjUpdate",
+   "Image": "C:\\ProgramData\\Synaptics\\Synaptics.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1576098307473
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5df15a03b82ff86d5cc2f893",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df15a03b82ff86d5cc2f893",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df15a02b82ff86d5cc2eacd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df15a02b82ff86d5cc2eacd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5df15a02b82ff86d5cc2eacd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df15a02b82ff86d5cc2eacd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df15a02b82ff86d5cc2eacd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5df15a02b82ff86d5cc2eacd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5df15a02b82ff86d5cc2eacd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df15a01b82ff86d5cc2e2c8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5df15a01b82ff86d5cc2e2c8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df15a01b82ff86d5cc2e2c8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df15a01b82ff86d5cc2e2c7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5df15a01b82ff86d5cc2e2c7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5df15a01b82ff86d5cc2e2c7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "Name": "awrerrr.exe",
+ "Md5": "66c4bb0872793a44b26f12314288221d",
+ "UUID": "fc6165cc-ddb8-468c-b881-803e8c7ac33a",
+ "Processes": [
+  {
+   "OID": "5ea15bd4c855c74c9772a6d0",
+   "ProcessID": 3468,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\awrerrr.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\awrerrr.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587633107958
+  },
+  {
+   "OID": "5ea15bdac855c74c9772aad0",
+   "ProcessID": 3152,
+   "ParentPID": 3468,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\awrerrr.exe\" \"awrerrr.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587633114099
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ea15bd4c855c74c9772a6d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ea15bd4c855c74c9772a6d0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea15bd4c855c74c9772a6d0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea15bd4c855c74c9772a6d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

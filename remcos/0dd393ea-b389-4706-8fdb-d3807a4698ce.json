@@ -1,0 +1,152 @@
+{
+ "Name": "IMAGE.exe",
+ "Md5": "0962afbeb5ca07c5177d4360cc99db3f",
+ "UUID": "0dd393ea-b389-4706-8fdb-d3807a4698ce",
+ "Processes": [
+  {
+   "OID": "5b5a90bc84f4b817ae507c8f",
+   "ProcessID": 3512,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\IMAGE.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IMAGE.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1532661947776
+  },
+  {
+   "OID": "5b5a90c384f4b817ae507f82",
+   "ProcessID": 2168,
+   "ParentPID": 3512,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\IMAGE.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IMAGE.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532661954932
+  },
+  {
+   "OID": "5b5a90c484f4b817ae5080bf",
+   "ProcessID": 1940,
+   "ParentPID": 2168,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532661956104
+  },
+  {
+   "OID": "5b5a90c584f4b817ae5085e6",
+   "ProcessID": 2672,
+   "ParentPID": 1940,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\Mozila\\Mozila.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532661957448
+  },
+  {
+   "OID": "5b5a90c584f4b817ae5085e8",
+   "ProcessID": 2976,
+   "ParentPID": 2672,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\Mozila\\Mozila.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Mozila\\Mozila.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532661957542
+  },
+  {
+   "OID": "5b5a90d284f4b817ae508a08",
+   "ProcessID": 1872,
+   "ParentPID": 2976,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\Mozila\\Mozila.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Mozila\\Mozila.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532661970135
+  },
+  {
+   "OID": "5b5a90d384f4b817ae508a8a",
+   "ProcessID": 3520,
+   "ParentPID": 1872,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532661971026
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b5a90d284f4b817ae508a08",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5a90d284f4b817ae508a08",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5a90d284f4b817ae508a08",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5a90d284f4b817ae508a08",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b5a90d284f4b817ae508a08",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5a90d284f4b817ae508a08",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5a90d284f4b817ae508a08",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b5a90c584f4b817ae5085e8",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5a90c484f4b817ae5080bf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b5a90c384f4b817ae507f82",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5b5a90c384f4b817ae507f82",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5a90c384f4b817ae507f82",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b5a90c384f4b817ae507f82",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5a90bc84f4b817ae507c8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

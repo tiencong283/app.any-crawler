@@ -1,0 +1,94 @@
+{
+ "Name": "CARTA COBRO.exe",
+ "Md5": "e059e764889992049aa96e8d9a4bc68a",
+ "UUID": "d989eead-bb64-4ac2-afbc-976e9378cac4",
+ "Processes": [
+  {
+   "OID": "5cc3118f6eb07f128b9c7a75",
+   "ProcessID": 2596,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\CARTA COBRO.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\CARTA COBRO.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1556287886836
+  },
+  {
+   "OID": "5cc311906eb07f128b9c834a",
+   "ProcessID": 1972,
+   "ParentPID": 2596,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556287887743
+  },
+  {
+   "OID": "5cc311966eb07f128b9c8ca9",
+   "ProcessID": 1956,
+   "ParentPID": 1972,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556287894086
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cc311906eb07f128b9c834a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc311906eb07f128b9c834a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc311906eb07f128b9c834a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cc311906eb07f128b9c834a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc311906eb07f128b9c834a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc311906eb07f128b9c834a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cc311906eb07f128b9c834a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cc3118f6eb07f128b9c7a75",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc3118f6eb07f128b9c7a75",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cc3118f6eb07f128b9c7a75",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

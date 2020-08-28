@@ -1,0 +1,153 @@
+{
+ "Name": "kKMACzlOGFTbHAG.exe",
+ "Md5": "5194de23866d7c5b06f08525de67af69",
+ "UUID": "da337308-a557-4431-83a6-2b89c9e53194",
+ "Processes": [
+  {
+   "OID": "5d4346a5ebd49a73375b0b18",
+   "ProcessID": 2204,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\kKMACzlOGFTbHAG.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kKMACzlOGFTbHAG.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564690084951
+  },
+  {
+   "OID": "5d4346acebd49a73375b0f6f",
+   "ProcessID": 2256,
+   "ParentPID": 2204,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\kKMACzlOGFTbHAG.exe\" \"kKMACzlOGFTbHAG.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564690092139
+  },
+  {
+   "OID": "5d4346adebd49a73375b0f9d",
+   "ProcessID": 3816,
+   "ParentPID": 2204,
+   "CommandLine": "schtasks /create /sc minute /mo 1 /tn Java /tr C:\\Users\\admin\\AppData\\Local\\Temp\\kKMACzlOGFTbHAG.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564690092717
+  },
+  {
+   "OID": "5d4346dcebd49a73375b1a3f",
+   "ProcessID": 3836,
+   "ParentPID": 1956,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\kKMACzlOGFTbHAG.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kKMACzlOGFTbHAG.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1564690140014
+  },
+  {
+   "OID": "5d434703ebd49a73375b1dee",
+   "ProcessID": 300,
+   "ParentPID": 2204,
+   "CommandLine": "netsh firewall delete allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\kKMACzlOGFTbHAG.exe\"",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564690178545
+  },
+  {
+   "OID": "5d434703ebd49a73375b1def",
+   "ProcessID": 3072,
+   "ParentPID": 2204,
+   "CommandLine": "cmd.exe /c ping 0 -n 2 \u0026 del \"C:\\Users\\admin\\AppData\\Local\\Temp\\kKMACzlOGFTbHAG.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564690178560
+  },
+  {
+   "OID": "5d434703ebd49a73375b1df2",
+   "ProcessID": 1040,
+   "ParentPID": 3072,
+   "CommandLine": "ping  0 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564690178857
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d4346a5ebd49a73375b0b18",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5d4346a5ebd49a73375b0b18",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d4346dcebd49a73375b1a3f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5d4346dcebd49a73375b1a3f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d4346a5ebd49a73375b0b18",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4346a5ebd49a73375b0b18",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4346a5ebd49a73375b0b18",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4346a5ebd49a73375b03af",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4346adebd49a73375b0f9d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d4346a5ebd49a73375b0b18",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d4346a5ebd49a73375b0b18",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d4346a5ebd49a73375b0b18",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5d4346a5ebd49a73375b0b18",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

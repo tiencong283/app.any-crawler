@@ -1,0 +1,68 @@
+{
+ "Name": "Paysafecard Generator.exe",
+ "Md5": "a2e40d0bdecd5a70bdd344c1e7af40cd",
+ "UUID": "aebe9ccc-c6dd-442d-a9d0-c9f14eb32d7c",
+ "Processes": [
+  {
+   "OID": "5cf93b5f9aca8667d457c550",
+   "ProcessID": 904,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Paysafecard Generator.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Paysafecard Generator.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1559837534987
+  },
+  {
+   "OID": "5cf93b5f9aca8667d457cb2b",
+   "ProcessID": 2720,
+   "ParentPID": 904,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WMI Provider Host.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WMI Provider Host.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559837535566
+  },
+  {
+   "OID": "5cf93b659aca8667d457d1a0",
+   "ProcessID": 2076,
+   "ParentPID": 2720,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\WMI Provider Host.exe\" \"WMI Provider Host.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559837541784
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cf93b5f9aca8667d457cb2b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf93b5f9aca8667d457cb2b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf93b5f9aca8667d457cb2b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf93b5f9aca8667d457cb2b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cf93b5f9aca8667d457cb2b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf93b5f9aca8667d457c550",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

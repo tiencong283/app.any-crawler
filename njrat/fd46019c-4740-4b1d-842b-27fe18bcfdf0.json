@@ -1,0 +1,84 @@
+{
+ "Name": "winservice (2).exe",
+ "Md5": "9f99b801f5c38780e2413044c6749310",
+ "UUID": "fd46019c-4740-4b1d-842b-27fe18bcfdf0",
+ "Processes": [
+  {
+   "OID": "5ee14bcb42f75154aa334a52",
+   "ProcessID": 2296,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winservice (2).exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winservice (2).exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591823307379
+  },
+  {
+   "OID": "5ee14bd242f75154aa334cea",
+   "ProcessID": 1788,
+   "ParentPID": 2296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winservice.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winservice.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591823313942
+  },
+  {
+   "OID": "5ee14bd842f75154aa33523c",
+   "ProcessID": 3900,
+   "ParentPID": 1788,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\winservice.exe\" \"winservice.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591823320161
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee14bd242f75154aa334cea",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee14bd242f75154aa334cea",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee14bd242f75154aa334cea",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee14bd242f75154aa334cea",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee14bd242f75154aa334cea",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee14bd242f75154aa334cea",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ee14bcb42f75154aa334a52",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ee14bcb42f75154aa334a52",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

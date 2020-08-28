@@ -1,0 +1,74 @@
+{
+ "Name": "emotetpa1.exe",
+ "Md5": "d80ac0bdd070bb0d8ebd15d8d445bee8",
+ "UUID": "cd5fa97b-a12b-4cb6-9616-4815e8450381",
+ "Processes": [
+  {
+   "OID": "5da048208852cd510da67d57",
+   "ProcessID": 2104,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\emotetpa1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotetpa1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1570785312577
+  },
+  {
+   "OID": "5da048218852cd510da6835d",
+   "ProcessID": 3932,
+   "ParentPID": 2104,
+   "CommandLine": "--f0be6888",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\emotetpa1.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570785312952
+  },
+  {
+   "OID": "5da048278852cd510da68622",
+   "ProcessID": 2828,
+   "ParentPID": 3932,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570785319702
+  },
+  {
+   "OID": "5da048278852cd510da68623",
+   "ProcessID": 3992,
+   "ParentPID": 2828,
+   "CommandLine": "--f91b2738",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570785319827
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5da048278852cd510da68623",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da048218852cd510da6835d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da048218852cd510da6835d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da048218852cd510da6835d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5da048208852cd510da67d57",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

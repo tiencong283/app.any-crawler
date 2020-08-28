@@ -1,0 +1,76 @@
+{
+ "Name": "qpwc17g1.exe",
+ "Md5": "15ebd63dd96da4e23aeaddb3872eca6c",
+ "UUID": "aafe473f-913f-4d74-a6d4-39bad2f6b48a",
+ "Processes": [
+  {
+   "OID": "5db1612b1b47ac7e7b272d34",
+   "ProcessID": 2124,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\qpwc17g1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\qpwc17g1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571905835213
+  },
+  {
+   "OID": "5db1612b1b47ac7e7b27331f",
+   "ProcessID": 4080,
+   "ParentPID": 2124,
+   "CommandLine": "--a6ebd89f",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\qpwc17g1.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571905835338
+  },
+  {
+   "OID": "5db161321b47ac7e7b2736f7",
+   "ProcessID": 3316,
+   "ParentPID": 4080,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571905841901
+  },
+  {
+   "OID": "5db161321b47ac7e7b273704",
+   "ProcessID": 1404,
+   "ParentPID": 3316,
+   "CommandLine": "--b583abe8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571905841995
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db161321b47ac7e7b2736f7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db1612b1b47ac7e7b27331f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db1612b1b47ac7e7b27331f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db1612b1b47ac7e7b27331f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db1612b1b47ac7e7b272d34",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

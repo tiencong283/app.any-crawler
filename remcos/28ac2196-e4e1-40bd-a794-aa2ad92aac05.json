@@ -1,0 +1,164 @@
+{
+ "Name": "Remsys4.exe",
+ "Md5": "0ee3e37d1ab57ca26105aca8e2088b00",
+ "UUID": "28ac2196-e4e1-40bd-a794-aa2ad92aac05",
+ "Processes": [
+  {
+   "OID": "5bd08f57d68d5301872ac1e7",
+   "ProcessID": 1308,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Remsys4.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Remsys4.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1540394839066
+  },
+  {
+   "OID": "5bd08f58d68d5301872acae1",
+   "ProcessID": 2144,
+   "ParentPID": 1308,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394840144
+  },
+  {
+   "OID": "5bd08f58d68d5301872acae5",
+   "ProcessID": 3976,
+   "ParentPID": 1308,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394840566
+  },
+  {
+   "OID": "5bd08f59d68d5301872ad108",
+   "ProcessID": 624,
+   "ParentPID": 3976,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Remsys4.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Remsys4.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394840691
+  },
+  {
+   "OID": "5bd08f5ad68d5301872ad588",
+   "ProcessID": 2420,
+   "ParentPID": 624,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394841863
+  },
+  {
+   "OID": "5bd08f5bd68d5301872adad9",
+   "ProcessID": 3492,
+   "ParentPID": 2420,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\RemR\\RemR.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394843191
+  },
+  {
+   "OID": "5bd08f5bd68d5301872adaf8",
+   "ProcessID": 2120,
+   "ParentPID": 3492,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\RemR\\RemR.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\RemR\\RemR.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394843301
+  },
+  {
+   "OID": "5bd08f5cd68d5301872adece",
+   "ProcessID": 1404,
+   "ParentPID": 2120,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394844176
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bd08f5bd68d5301872adaf8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08f5bd68d5301872adaf8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd08f5bd68d5301872adaf8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd08f5bd68d5301872adaf8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08f5ad68d5301872ad588",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08f59d68d5301872ad108",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08f59d68d5301872ad108",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08f59d68d5301872ad108",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd08f59d68d5301872ad108",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd08f59d68d5301872ad108",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08f59d68d5301872ad108",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08f57d68d5301872ac1e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08f57d68d5301872ac1e7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  }
+ ]
+}

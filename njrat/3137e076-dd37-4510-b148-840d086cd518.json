@@ -1,0 +1,89 @@
+{
+ "Name": "PUBG.exe",
+ "Md5": "0070248a81ea5be8ce19e27a898a916c",
+ "UUID": "3137e076-dd37-4510-b148-840d086cd518",
+ "Processes": [
+  {
+   "OID": "5d54622763c4123caeb6e8e4",
+   "ProcessID": 3720,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PUBG.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PUBG.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1565811239475
+  },
+  {
+   "OID": "5d54622863c4123caeb6e8f4",
+   "ProcessID": 2368,
+   "ParentPID": 3720,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\PUBG.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\PUBG.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565811239959
+  },
+  {
+   "OID": "5d54622863c4123caeb6e8f5",
+   "ProcessID": 1016,
+   "ParentPID": 2368,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\PUBG.exe\" \"PUBG.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565811240115
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d54622863c4123caeb6e8f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d54622863c4123caeb6e8f4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d54622863c4123caeb6e8f4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d54622863c4123caeb6e8f4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d54622863c4123caeb6e8f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d54622863c4123caeb6e8f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d54622763c4123caeb6e8e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d54622763c4123caeb6e8e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d54622763c4123caeb6e8e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

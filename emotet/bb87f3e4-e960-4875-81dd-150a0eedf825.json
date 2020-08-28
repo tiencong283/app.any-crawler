@@ -1,0 +1,86 @@
+{
+ "Name": "ikPD05",
+ "Md5": "00b816a122709ad142d0e70f57506871",
+ "UUID": "bb87f3e4-e960-4875-81dd-150a0eedf825",
+ "Processes": [
+  {
+   "OID": "5dcdda5132d97507432a52ab",
+   "ProcessID": 2168,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ikPD05.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ikPD05.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573771856931
+  },
+  {
+   "OID": "5dcdda5132d97507432a5a09",
+   "ProcessID": 3916,
+   "ParentPID": 2168,
+   "CommandLine": "--6796549f",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ikPD05.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573771857322
+  },
+  {
+   "OID": "5dcdda5832d97507432a5c8c",
+   "ProcessID": 3044,
+   "ParentPID": 3916,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573771864119
+  },
+  {
+   "OID": "5dcdda5832d97507432a5c8d",
+   "ProcessID": 3340,
+   "ParentPID": 3044,
+   "CommandLine": "--d6864438",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\serialfunc\\serialfunc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573771864259
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcdda5832d97507432a5c8d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcdda5832d97507432a5c8d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcdda5832d97507432a5c8d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dcdda5132d97507432a5a09",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcdda5132d97507432a5a09",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcdda5132d97507432a5a09",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcdda5132d97507432a52ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

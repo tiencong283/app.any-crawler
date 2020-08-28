@@ -1,0 +1,51 @@
+{
+ "Name": "ngrokstable.exe",
+ "Md5": "9150c0d43e861d7a608171f3d97e33f4",
+ "UUID": "7f017346-860c-499f-8d42-7511fed6b910",
+ "Processes": [
+  {
+   "OID": "5e8763191508f67e7e2fa87e",
+   "ProcessID": 1880,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ngrokstable.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ngrokstable.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1585931032757
+  },
+  {
+   "OID": "5e87631f1508f67e7e2faba3",
+   "ProcessID": 604,
+   "ParentPID": 1880,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\ngrokstable.exe\" \"ngrokstable.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1585931038913
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8763191508f67e7e2fa87e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8763191508f67e7e2fa87e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8763191508f67e7e2fa87e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e8763191508f67e7e2fa87e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

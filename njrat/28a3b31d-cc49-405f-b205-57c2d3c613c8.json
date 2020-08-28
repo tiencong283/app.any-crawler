@@ -1,0 +1,84 @@
+{
+ "Name": "winrar.exe",
+ "Md5": "556e2cef5b4dcbffc74db74548854f6d",
+ "UUID": "28a3b31d-cc49-405f-b205-57c2d3c613c8",
+ "Processes": [
+  {
+   "OID": "5d1f2e53f5a50252e9493e4f",
+   "ProcessID": 3148,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winrar.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winrar.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1562324562920
+  },
+  {
+   "OID": "5d1f2e5af5a50252e9494941",
+   "ProcessID": 3528,
+   "ParentPID": 3148,
+   "CommandLine": "\"C:\\Users\\admin\\winrar.exe\" ",
+   "Image": "C:\\Users\\admin\\winrar.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562324569827
+  },
+  {
+   "OID": "5d1f2e60f5a50252e9494f44",
+   "ProcessID": 2980,
+   "ParentPID": 3528,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\winrar.exe\" \"winrar.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562324576248
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d1f2e5af5a50252e9494941",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f2e5af5a50252e9494941",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f2e5af5a50252e9494941",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f2e5af5a50252e9494941",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f2e5af5a50252e9494941",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f2e5af5a50252e9494941",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f2e53f5a50252e9493e4f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f2e53f5a50252e9493e4f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,198 @@
+{
+ "Name": "fatality loader.exe",
+ "Md5": "4d4f9279e8db3934e2422fb009b8eb4e",
+ "UUID": "e9a8098c-20b4-40d4-b2d5-bcbba02b855f",
+ "Processes": [
+  {
+   "OID": "5ec33269454d7d20cd4f9e0c",
+   "ProcessID": 3596,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\fatality loader.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fatality loader.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1589850728908
+  },
+  {
+   "OID": "5ec3326a454d7d20cd4fa929",
+   "ProcessID": 3576,
+   "ParentPID": 3596,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\fata loader.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fata loader.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589850730237
+  },
+  {
+   "OID": "5ec3326b454d7d20cd4fad62",
+   "ProcessID": 3048,
+   "ParentPID": 3596,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\fata loader.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fata loader.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589850730721
+  },
+  {
+   "OID": "5ec3326b454d7d20cd4fad63",
+   "ProcessID": 2164,
+   "ParentPID": 3596,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\loader.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\loader.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589850730721
+  },
+  {
+   "OID": "5ec33271454d7d20cd4fb5e9",
+   "ProcessID": 2928,
+   "ParentPID": 2164,
+   "CommandLine": "schtasks /create /sc minute /mo 1 /tn Server /tr C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589850737112
+  },
+  {
+   "OID": "5ec33299454d7d20cd4fc3e6",
+   "ProcessID": 3864,
+   "ParentPID": 2164,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe\" -f \"C:\\Users\\admin\\AppData\\Local\\Temp\\2637524\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589850777346
+  },
+  {
+   "OID": "5ec3329c454d7d20cd4fc7cb",
+   "ProcessID": 2412,
+   "ParentPID": 1984,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1589850780002
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ec3329c454d7d20cd4fc7cb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec3329c454d7d20cd4fc7cb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ec3326b454d7d20cd4fad63",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ec33299454d7d20cd4fc3e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec33299454d7d20cd4fc3e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081",
+    "T1114"
+   ]
+  },
+  {
+   "ProcessOID": "5ec33269454d7d20cd4f9dfb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ec33299454d7d20cd4fc3e6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ec3326b454d7d20cd4fad63",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ec3326b454d7d20cd4fad63",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec3326b454d7d20cd4fad63",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec33269454d7d20cd4f9df5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec33271454d7d20cd4fb5e9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ec3326b454d7d20cd4fad63",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec3326b454d7d20cd4fad63",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ec3326b454d7d20cd4fad63",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec3326b454d7d20cd4fad63",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ec3326b454d7d20cd4fad63",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ec3326b454d7d20cd4fad62",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec3326a454d7d20cd4fa929",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec3326b454d7d20cd4fad63",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec33269454d7d20cd4f9e0c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

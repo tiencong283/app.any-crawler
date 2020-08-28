@@ -1,0 +1,79 @@
+{
+ "Name": "DiscordHaxx Lime Edition.exe",
+ "Md5": "18b48e36a0c29affd15456079b437022",
+ "UUID": "54ca6a73-9d55-4bd7-bb0b-857e6729db22",
+ "Processes": [
+  {
+   "OID": "5e9fae8a5738bb475af61f7d",
+   "ProcessID": 3980,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\DiscordHaxx Lime Edition.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\DiscordHaxx Lime Edition.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587523210340
+  },
+  {
+   "OID": "5e9fae915738bb475af622dd",
+   "ProcessID": 3004,
+   "ParentPID": 3980,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\discord.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\discord.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587523216856
+  },
+  {
+   "OID": "5e9fae975738bb475af6283c",
+   "ProcessID": 2896,
+   "ParentPID": 3004,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\discord.exe\" \"discord.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587523223075
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e9fae915738bb475af622dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e9fae915738bb475af622dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9fae915738bb475af622dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9fae915738bb475af622dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e9fae915738bb475af622dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e9fae8a5738bb475af61f7d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e9fae8a5738bb475af61f7d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

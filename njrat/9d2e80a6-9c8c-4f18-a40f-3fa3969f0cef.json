@@ -1,0 +1,159 @@
+{
+ "Name": "4d163f34-ea78-492e-a91c-eafe6a00ed48",
+ "Md5": "d29c1d1673c591fe8c26e34cd4167953",
+ "UUID": "9d2e80a6-9c8c-4f18-a40f-3fa3969f0cef",
+ "Processes": [
+  {
+   "OID": "5de6d0707ba9310533478337",
+   "ProcessID": 1608,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\4d163f34-ea78-492e-a91c-eafe6a00ed48.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\4d163f34-ea78-492e-a91c-eafe6a00ed48.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1575407727645
+  },
+  {
+   "OID": "5de6d0707ba9310533478338",
+   "ProcessID": 3140,
+   "ParentPID": 1608,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe\" /noconfig /fullpaths @\"C:\\Users\\admin\\AppData\\Local\\Temp\\vct1mdeo.cmdline\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575407727848
+  },
+  {
+   "OID": "5de6d0707ba931053347854f",
+   "ProcessID": 1728,
+   "ParentPID": 3140,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 \"/OUT:C:\\Users\\admin\\AppData\\Local\\Temp\\RESA93B.tmp\" \"c:\\Users\\admin\\AppData\\Local\\Temp\\CSC420BD00F7FB41E5B768E0F4B3A5F2B.TMP\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\cvtres.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575407728442
+  },
+  {
+   "OID": "5de6d0727ba9310533478b89",
+   "ProcessID": 4080,
+   "ParentPID": 1608,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575407729958
+  },
+  {
+   "OID": "5de6d0747ba9310533479384",
+   "ProcessID": 1524,
+   "ParentPID": 1608,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\4d163f34-ea78-492e-a91c-eafe6a00ed48.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\4d163f34-ea78-492e-a91c-eafe6a00ed48.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575407731661
+  },
+  {
+   "OID": "5de6d0747ba9310533479385",
+   "ProcessID": 2448,
+   "ParentPID": 1524,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe\" /noconfig /fullpaths @\"C:\\Users\\admin\\AppData\\Local\\Temp\\2sxv1dh1.cmdline\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575407731817
+  },
+  {
+   "OID": "5de6d0747ba9310533479387",
+   "ProcessID": 2752,
+   "ParentPID": 2448,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 \"/OUT:C:\\Users\\admin\\AppData\\Local\\Temp\\RESB735.tmp\" \"c:\\Users\\admin\\AppData\\Local\\Temp\\CSC24B80CB961234D209CAE621682E9DD5B.TMP\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\cvtres.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575407732020
+  },
+  {
+   "OID": "5de6d0767ba9310533479b3e",
+   "ProcessID": 2468,
+   "ParentPID": 1524,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575407733192
+  },
+  {
+   "OID": "5de6d0787ba9310533479dd5",
+   "ProcessID": 776,
+   "ParentPID": 4080,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575407736442
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5de6d0727ba9310533478b89",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5de6d0727ba9310533478b89",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de6d0727ba9310533478b89",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de6d0727ba9310533478b89",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5de6d0727ba9310533478b89",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5de6d0747ba9310533479384",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1500"
+   ]
+  },
+  {
+   "ProcessOID": "5de6d0707ba9310533478337",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5de6d0707ba9310533478337",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5de6d0707ba9310533478337",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de6d0707ba9310533478338",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de6d0707ba9310533478337",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1500"
+   ]
+  }
+ ]
+}

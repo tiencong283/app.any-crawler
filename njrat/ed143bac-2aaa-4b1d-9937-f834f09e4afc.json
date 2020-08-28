@@ -1,0 +1,53 @@
+{
+ "Name": "Fake Bitcoin Sender.exe",
+ "Md5": "b80480e0bd217f76bfa4a5e4d70f3eb3",
+ "UUID": "ed143bac-2aaa-4b1d-9937-f834f09e4afc",
+ "Processes": [
+  {
+   "OID": "5e9760cce60b51168451c5d5",
+   "ProcessID": 3960,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Fake Bitcoin Sender.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Fake Bitcoin Sender.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586979019923
+  },
+  {
+   "OID": "5e9760d2e60b51168451c988",
+   "ProcessID": 3980,
+   "ParentPID": 3960,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Fake Bitcoin Sender.exe\" \"Fake Bitcoin Sender.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586979026080
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e9760cce60b51168451be26",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e9760cce60b51168451c5d5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9760cce60b51168451c5d5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e9760cce60b51168451c5d5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

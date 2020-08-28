@@ -1,0 +1,74 @@
+{
+ "Name": "Unban2.exe",
+ "Md5": "8f82909489323f25bb8c83ad704b7370",
+ "UUID": "69bf03d1-b1d8-4ff1-bc97-4319b55c584d",
+ "Processes": [
+  {
+   "OID": "5e493ce942cc1d0f01d99fb2",
+   "ProcessID": 1632,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Unban2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Unban2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581858024613
+  },
+  {
+   "OID": "5e493cef42cc1d0f01d9a329",
+   "ProcessID": 3300,
+   "ParentPID": 1632,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsAudio.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsAudio.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581858031066
+  },
+  {
+   "OID": "5e493cf542cc1d0f01d9a89d",
+   "ProcessID": 3460,
+   "ParentPID": 3300,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsAudio.exe\" \"WindowsAudio.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581858037223
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e493cef42cc1d0f01d9a329",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e493cef42cc1d0f01d9a329",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e493cef42cc1d0f01d9a329",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e493cef42cc1d0f01d9a329",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e493ce942cc1d0f01d99fb2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e493ce942cc1d0f01d99fb2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

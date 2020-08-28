@@ -1,0 +1,169 @@
+{
+ "Name": "OnetapV3.exe",
+ "Md5": "962cc87fde55f7202e7386f2d085aedb",
+ "UUID": "ce51271e-9f7f-4662-bd04-ac838fe9b8cf",
+ "Processes": [
+  {
+   "OID": "5e4669d9f22a6c7ccaf23376",
+   "ProcessID": 780,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\OnetapV3.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\OnetapV3.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581672921189
+  },
+  {
+   "OID": "5e4669d9f22a6c7ccaf23377",
+   "ProcessID": 4092,
+   "ParentPID": 780,
+   "CommandLine": "dw20.exe -x -s 580",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\dw20.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581672921501
+  },
+  {
+   "OID": "5e4669def22a6c7ccaf241ba",
+   "ProcessID": 2580,
+   "ParentPID": 780,
+   "CommandLine": "\"C:\\ProgramData\\svshost.exe\" ",
+   "Image": "C:\\ProgramData\\svshost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581672925939
+  },
+  {
+   "OID": "5e4669e4f22a6c7ccaf25415",
+   "ProcessID": 3836,
+   "ParentPID": 2580,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\svshost.exe\" \"svshost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581672932158
+  },
+  {
+   "OID": "5e4669eff22a6c7ccaf26f2f",
+   "ProcessID": 2448,
+   "ParentPID": 2580,
+   "CommandLine": "netsh firewall delete allowedprogram \"C:\\ProgramData\\svshost.exe\"",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581672943486
+  },
+  {
+   "OID": "5e4669eff22a6c7ccaf26f30",
+   "ProcessID": 2316,
+   "ParentPID": 2580,
+   "CommandLine": "cmd.exe /k ping 0 \u0026 del \"C:\\ProgramData\\svshost.exe\" \u0026 exit",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581672943501
+  },
+  {
+   "OID": "5e4669f0f22a6c7ccaf270d5",
+   "ProcessID": 3988,
+   "ParentPID": 2316,
+   "CommandLine": "ping  0 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581672943751
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e4669def22a6c7ccaf241ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5e4669def22a6c7ccaf241ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e4669def22a6c7ccaf241ba",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4669def22a6c7ccaf241ba",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e4669def22a6c7ccaf241ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4669def22a6c7ccaf241ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4669def22a6c7ccaf241ba",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4669def22a6c7ccaf241ba",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e4669def22a6c7ccaf241ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e4669def22a6c7ccaf241ba",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4669d9f22a6c7ccaf23376",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4669d9f22a6c7ccaf23376",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4669d9f22a6c7ccaf23376",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4669d9f22a6c7ccaf23376",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4669d9f22a6c7ccaf23376",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4669d9f22a6c7ccaf23376",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4669d9f22a6c7ccaf22a9f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

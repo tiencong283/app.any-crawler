@@ -1,0 +1,101 @@
+{
+ "Name": "erbaevclient.exe",
+ "Md5": "16548961236193cb8225832e0edb8335",
+ "UUID": "80781e50-1c6b-434d-9701-970f8185e092",
+ "Processes": [
+  {
+   "OID": "5d3919646d201772bc30a544",
+   "ProcessID": 3500,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\erbaevclient.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\erbaevclient.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564023140277
+  },
+  {
+   "OID": "5d39196c6d201772bc30a82c",
+   "ProcessID": 3360,
+   "ParentPID": 3500,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\TeamViwer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\TeamViwer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564023148715
+  },
+  {
+   "OID": "5d3919756d201772bc30ad80",
+   "ProcessID": 988,
+   "ParentPID": 3360,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\TeamViwer.exe\" \"TeamViwer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564023156996
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d3919646d201772bc309db3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3919886d201772bc30c530",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d39196c6d201772bc30a82c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d39196c6d201772bc30a82c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d39196c6d201772bc30a82c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d39196c6d201772bc30a82c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d39196c6d201772bc30a82c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d39196c6d201772bc30a82c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d39196c6d201772bc30a82c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d3919646d201772bc30a544",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d3919646d201772bc30a544",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

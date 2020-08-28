@@ -1,0 +1,68 @@
+{
+ "Name": "eric.exe",
+ "Md5": "0755f2f414e1483c76a602271556b295",
+ "UUID": "ae240cb3-8fd3-45df-b204-6ab6c76483dd",
+ "Processes": [
+  {
+   "OID": "5bd295781e359568ddd582bb",
+   "ProcessID": 3904,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\eric.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\eric.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5bd295781e359568ddd582c0",
+   "ProcessID": 3876,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\eric.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\eric.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1540527479758
+  },
+  {
+   "OID": "5bd2958d1e359568ddd58f64",
+   "ProcessID": 3604,
+   "ParentPID": 3876,
+   "CommandLine": "\"C:\\Windows\\System32\\wermgr.exe\"",
+   "Image": "C:\\Windows\\System32\\wermgr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540527501570
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bd2958d1e359568ddd58f64",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bd2958d1e359568ddd58f64",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd295781e359568ddd582ab",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bd295781e359568ddd582ab",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd295781e359568ddd582aa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1063"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "Name": "Server.exe",
+ "Md5": "9185a723496ab09b484235a0067829ec",
+ "UUID": "a742b0dc-75d7-40b8-8ff7-8695b37950fc",
+ "Processes": [
+  {
+   "OID": "5cd78c5aece9d94a7dc45950",
+   "ProcessID": 1692,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1557630041996
+  },
+  {
+   "OID": "5cd78c61ece9d94a7dc463a5",
+   "ProcessID": 2168,
+   "ParentPID": 1692,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\wininit.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\wininit.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557630049137
+  },
+  {
+   "OID": "5cd78c67ece9d94a7dc4693b",
+   "ProcessID": 2528,
+   "ParentPID": 2168,
+   "CommandLine": "schtasks /create /sc minute /mo 1 /tn Server /tr C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557630055512
+  },
+  {
+   "OID": "5cd78c6cece9d94a7dc46f62",
+   "ProcessID": 3976,
+   "ParentPID": 2904,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1557630060262
+  },
+  {
+   "OID": "5cd78c6dece9d94a7dc47010",
+   "ProcessID": 1760,
+   "ParentPID": 3976,
+   "CommandLine": "dw20.exe -x -s 376",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\dw20.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557630060512
+  },
+  {
+   "OID": "5cd78cbbece9d94a7dc47def",
+   "ProcessID": 2668,
+   "ParentPID": 2168,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe\" -f \"C:\\Users\\admin\\AppData\\Local\\Temp\\1599818\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557630139137
+  },
+  {
+   "OID": "5cd78ce4ece9d94a7dc48206",
+   "ProcessID": 3668,
+   "ParentPID": 2904,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1557630180012
+  },
+  {
+   "OID": "5cd78ce4ece9d94a7dc48207",
+   "ProcessID": 2944,
+   "ParentPID": 3668,
+   "CommandLine": "dw20.exe -x -s 380",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\dw20.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557630180246
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cd78ce4ece9d94a7dc48206",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd78c61ece9d94a7dc463a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5cd78cbbece9d94a7dc47def",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd78cbbece9d94a7dc47def",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5cd78c61ece9d94a7dc463a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5cd78c61ece9d94a7dc463a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd78c61ece9d94a7dc463a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd78c6cece9d94a7dc46f62",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd78c5aece9d94a7dc45940",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd78c67ece9d94a7dc4693b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cd78c61ece9d94a7dc463a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cd78c61ece9d94a7dc463a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd78c61ece9d94a7dc463a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd78c61ece9d94a7dc463a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd78c61ece9d94a7dc463a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd78c5aece9d94a7dc45950",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cd78c5aece9d94a7dc45950",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd78c5aece9d94a7dc45950",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

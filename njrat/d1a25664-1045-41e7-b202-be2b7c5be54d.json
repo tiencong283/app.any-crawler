@@ -1,0 +1,88 @@
+{
+ "Name": "a8af84b52483b249a01e5de0becf26a306326110f22c0ab3573a4989d6bbc429",
+ "Md5": "cd55753092fd4dde924382d1c6a0e3bc",
+ "UUID": "d1a25664-1045-41e7-b202-be2b7c5be54d",
+ "Processes": [
+  {
+   "OID": "5cbd0795fceaa304b75c2ab2",
+   "ProcessID": 1688,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\a8af84b52483b249a01e5de0becf26a306326110f22c0ab3573a4989d6bbc429.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\a8af84b52483b249a01e5de0becf26a306326110f22c0ab3573a4989d6bbc429.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1555892116322
+  },
+  {
+   "OID": "5cbd079efceaa304b75c3068",
+   "ProcessID": 3276,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\confuse\\chargeable.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\confuse\\chargeable.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555892125854
+  },
+  {
+   "OID": "5cbd07a1fceaa304b75c36e2",
+   "ProcessID": 1088,
+   "ParentPID": 3276,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\confuse\\chargeable.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\confuse\\chargeable.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555892129322
+  },
+  {
+   "OID": "5cbd07a8fceaa304b75c3938",
+   "ProcessID": 3696,
+   "ParentPID": 1088,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\confuse\\chargeable.exe\" \"chargeable.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555892135526
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cbd07a1fceaa304b75c36e2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cbd07a1fceaa304b75c36e2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cbd079efceaa304b75c3068",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cbd0795fceaa304b75c2ab2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cbd0795fceaa304b75c2ab2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cbd0795fceaa304b75c2ab2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cbd0795fceaa304b75c2ab2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

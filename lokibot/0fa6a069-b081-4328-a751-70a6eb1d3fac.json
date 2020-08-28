@@ -1,0 +1,84 @@
+{
+ "Name": "10.exe",
+ "Md5": "d08761c9e1170949656d5ec32445f475",
+ "UUID": "0fa6a069-b081-4328-a751-70a6eb1d3fac",
+ "Processes": [
+  {
+   "OID": "5d53ffb8be38ec7cdf2772c9",
+   "ProcessID": 3416,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\10.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\10.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1565786040137
+  },
+  {
+   "OID": "5d53ffeebe38ec7cdf27785e",
+   "ProcessID": 3448,
+   "ParentPID": 3416,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\BFqTEqhIPK\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmpB7BB.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565786094434
+  },
+  {
+   "OID": "5d53ffefbe38ec7cdf2778a4",
+   "ProcessID": 3948,
+   "ParentPID": 3416,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\10.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\10.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565786094590
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d53ffefbe38ec7cdf2778a4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5d53ffefbe38ec7cdf2778a4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d53ffb8be38ec7cdf2772c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d53ffb8be38ec7cdf276b1b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d53ffeebe38ec7cdf27785e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d53ffb8be38ec7cdf2772c9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d53ffb8be38ec7cdf2772c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d53ffb8be38ec7cdf2772c9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

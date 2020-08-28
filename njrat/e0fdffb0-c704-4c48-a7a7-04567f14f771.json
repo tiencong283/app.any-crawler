@@ -1,0 +1,124 @@
+{
+ "Name": "njRAT.exe",
+ "Md5": "0431311b5f024d6e66b90d59491f2563",
+ "UUID": "e0fdffb0-c704-4c48-a7a7-04567f14f771",
+ "Processes": [
+  {
+   "OID": "5e46952a3c453005f1505977",
+   "ProcessID": 3180,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e46952a3c453005f15060dc",
+   "ProcessID": 2636,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581684010254
+  },
+  {
+   "OID": "5e46952b3c453005f150641d",
+   "ProcessID": 3680,
+   "ParentPID": 2636,
+   "CommandLine": "\"C:\\njRAT.exe\" ",
+   "Image": "C:\\njRAT.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581684010661
+  },
+  {
+   "OID": "5e46952b3c453005f150641e",
+   "ProcessID": 3672,
+   "ParentPID": 2636,
+   "CommandLine": "\"C:\\njq8.exe\" ",
+   "Image": "C:\\njq8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581684010692
+  },
+  {
+   "OID": "5e46952b3c453005f150641f",
+   "ProcessID": 1800,
+   "ParentPID": 3672,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\windows.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\windows.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581684011083
+  },
+  {
+   "OID": "5e46952b3c453005f1506bfb",
+   "ProcessID": 2612,
+   "ParentPID": 1800,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\windows.exe\" \"windows.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581684011270
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e46952b3c453005f150641d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e46952b3c453005f150641f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e46952b3c453005f150641e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e46952b3c453005f150641f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e46952b3c453005f150641f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e46952b3c453005f150641f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e46952b3c453005f150641f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e46952b3c453005f150641f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e46952b3c453005f150641f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e46952b3c453005f150641e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e46952a3c453005f15060dc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

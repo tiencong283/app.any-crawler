@@ -1,0 +1,94 @@
+{
+ "Name": "taskmgr.exe",
+ "Md5": "2638bf5573538231b7c5934c866b37b6",
+ "UUID": "0357cef0-bee7-4415-8c0a-9483bbc4f75d",
+ "Processes": [
+  {
+   "OID": "5cd9363f00be50705ffc74a3",
+   "ProcessID": 3912,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\taskmgr.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\taskmgr.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1557739070515
+  },
+  {
+   "OID": "5cd9364100be50705ffc7fd8",
+   "ProcessID": 2464,
+   "ParentPID": 3912,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557739073547
+  },
+  {
+   "OID": "5cd9364800be50705ffc83b8",
+   "ProcessID": 2428,
+   "ParentPID": 2464,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegSvcs.exe\" \"RegSvcs.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557739079828
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cd9364100be50705ffc7fd8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd9364100be50705ffc7fd8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd9364100be50705ffc7fd8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd9364100be50705ffc7fd8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd9364100be50705ffc7fd8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd9364100be50705ffc7fd8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd9364100be50705ffc7fd8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cd9363f00be50705ffc74a3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd9363f00be50705ffc74a3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd9363f00be50705ffc74a3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,514 @@
+{
+ "Name": "Documents.exe",
+ "Md5": "695c5d19dc3c3c5cc39182e09d9274e6",
+ "UUID": "98859262-88c9-4722-af8b-5fbee002aa7c",
+ "Processes": [
+  {
+   "OID": "5e62177956336053d0a1dc30",
+   "ProcessID": 372,
+   "ParentPID": 2036,
+   "CommandLine": "C:\\Windows\\Explorer.EXE",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e62177956336053d0a1dc31",
+   "ProcessID": 652,
+   "ParentPID": 1984,
+   "CommandLine": "C:\\Windows\\System32\\ctfmon.exe ",
+   "Image": "C:\\Windows\\System32\\ctfmon.exe",
+   "ProcessType": "Suspicious",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e62177956336053d0a1e52f",
+   "ProcessID": 660,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Documents.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Documents.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583486841404
+  },
+  {
+   "OID": "5e62177a56336053d0a1e534",
+   "ProcessID": 3736,
+   "ParentPID": 660,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486841701
+  },
+  {
+   "OID": "5e62178056336053d0a1f179",
+   "ProcessID": 2244,
+   "ParentPID": 3736,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486847919
+  },
+  {
+   "OID": "5e62178556336053d0a1f854",
+   "ProcessID": 2096,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" ",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1583486852951
+  },
+  {
+   "OID": "5e62178556336053d0a1f855",
+   "ProcessID": 3432,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=crashpad-handler \"--user-data-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data\" /prefetch:7 --monitor-self-annotation=ptype=crashpad-handler \"--database=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data\\Crashpad\" \"--metrics-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data\" --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=plat=Win32 --annotation=prod=Chrome --annotation=ver=75.0.3770.100 --initial-client-data=0x7c,0x80,0x84,0x78,0x88,0x6ebaa9d0,0x6ebaa9e0,0x6ebaa9ec",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486853029
+  },
+  {
+   "OID": "5e62178556336053d0a1f856",
+   "ProcessID": 2220,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=watcher --main-thread-id=2472 --on-initialized-event-handle=324 --parent-handle=328 /prefetch:6",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486853216
+  },
+  {
+   "OID": "5e62178556336053d0a1f857",
+   "ProcessID": 1744,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=gpu-process --field-trial-handle=1000,12360609048943757541,8929717045634529084,131072 --enable-features=PasswordImport --gpu-preferences=KAAAAAAAAADgAAAgAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAACgAAAAEAAAAIAAAAAAAAAAoAAAAAAAAADAAAAAAAAAAOAAAAAAAAAAQAAAAAAAAAAAAAAAFAAAAEAAAAAAAAAAAAAAABgAAABAAAAAAAAAAAQAAAAUAAAAQAAAAAAAAAAEAAAAGAAAA --service-request-channel-token=12256387582283114317 --mojo-platform-channel-handle=1020 --ignored=\" --type=renderer \" /prefetch:2",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486853341
+  },
+  {
+   "OID": "5e62178556336053d0a1f858",
+   "ProcessID": 2840,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1000,12360609048943757541,8929717045634529084,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=network --service-request-channel-token=18043733743690569062 --mojo-platform-channel-handle=1640 /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486853372
+  },
+  {
+   "OID": "5e62178656336053d0a1fcc8",
+   "ProcessID": 1696,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1000,12360609048943757541,8929717045634529084,131072 --enable-features=PasswordImport --lang=en-US --instant-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=11000781603672045378 --renderer-client-id=6 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2224 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486853716
+  },
+  {
+   "OID": "5e62178656336053d0a1fcc9",
+   "ProcessID": 3608,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1000,12360609048943757541,8929717045634529084,131072 --enable-features=PasswordImport --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=12616596039650643561 --renderer-client-id=7 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2500 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486853780
+  },
+  {
+   "OID": "5e62178656336053d0a1fcca",
+   "ProcessID": 2616,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1000,12360609048943757541,8929717045634529084,131072 --enable-features=PasswordImport --lang=en-US --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=12099353420985812729 --renderer-client-id=4 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=2504 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486853871
+  },
+  {
+   "OID": "5e62178756336053d0a214f9",
+   "ProcessID": 4064,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1000,12360609048943757541,8929717045634529084,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=2753465311671289431 --mojo-platform-channel-handle=3320 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486854913
+  },
+  {
+   "OID": "5e62178756336053d0a220f5",
+   "ProcessID": 2336,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1000,12360609048943757541,8929717045634529084,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=8797512905785897716 --mojo-platform-channel-handle=3412 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486854991
+  },
+  {
+   "OID": "5e62178956336053d0a24739",
+   "ProcessID": 2108,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1000,12360609048943757541,8929717045634529084,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=10615955047500104769 --renderer-client-id=10 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=3664 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486857038
+  },
+  {
+   "OID": "5e62178a56336053d0a24f10",
+   "ProcessID": 2816,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --field-trial-handle=1000,12360609048943757541,8929717045634529084,131072 --enable-features=PasswordImport --disable-gpu-compositing --lang=en-US --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=16985227754569229040 --renderer-client-id=11 --no-v8-untrusted-code-mitigations --mojo-platform-channel-handle=3904 /prefetch:1",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486857813
+  },
+  {
+   "OID": "5e62178b56336053d0a25f2e",
+   "ProcessID": 4084,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1000,12360609048943757541,8929717045634529084,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=12305148828591195525 --mojo-platform-channel-handle=3752 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486858941
+  },
+  {
+   "OID": "5e62178b56336053d0a25f2f",
+   "ProcessID": 1876,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --field-trial-handle=1000,12360609048943757541,8929717045634529084,131072 --enable-features=PasswordImport --lang=en-US --service-sandbox-type=utility --service-request-channel-token=1399115900216443080 --mojo-platform-channel-handle=4228 --ignored=\" --type=renderer \" /prefetch:8",
+   "Image": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486858978
+  },
+  {
+   "OID": "5e62178e56336053d0a2833b",
+   "ProcessID": 3604,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\SecurityTaskManager_Setup.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\SecurityTaskManager_Setup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486862206
+  },
+  {
+   "OID": "5e62178f56336053d0a286bb",
+   "ProcessID": 3312,
+   "ParentPID": 2096,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\SecurityTaskManager_Setup.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\SecurityTaskManager_Setup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486862620
+  },
+  {
+   "OID": "5e62178f56336053d0a286bc",
+   "ProcessID": 3244,
+   "ParentPID": 3312,
+   "CommandLine": "\".\\setup.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WZSE0.TMP\\setup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486862841
+  },
+  {
+   "OID": "5e62179256336053d0a2aba4",
+   "ProcessID": 2420,
+   "ParentPID": 3244,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" \"C:\\Program Files\\Security Task Manager\\taskman.exe\"",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486865654
+  },
+  {
+   "OID": "5e62179256336053d0a2aba5",
+   "ProcessID": 2952,
+   "ParentPID": 592,
+   "CommandLine": "C:\\Windows\\explorer.exe /factory,{75dff2b7-6936-4c06-a8bb-676a7b00b24b} -Embedding",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1583486865857
+  },
+  {
+   "OID": "5e62179256336053d0a2aba7",
+   "ProcessID": 2972,
+   "ParentPID": 2952,
+   "CommandLine": "\"C:\\Program Files\\Security Task Manager\\TaskMan.exe\" ",
+   "Image": "C:\\Program Files\\Security Task Manager\\TaskMan.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486866107
+  },
+  {
+   "OID": "5e6217a556336053d0a31d69",
+   "ProcessID": 256,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Documents.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Documents.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1583486885138
+  },
+  {
+   "OID": "5e6217a556336053d0a31eb8",
+   "ProcessID": 3844,
+   "ParentPID": 256,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583486885388
+  },
+  {
+   "OID": "5e6217a656336053d0a322d6",
+   "ProcessID": 3984,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\Security Task Manager\\TaskMan.exe\" ",
+   "Image": "C:\\Program Files\\Security Task Manager\\TaskMan.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1583486886044
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e6217a656336053d0a322d6",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e6217a656336053d0a322d6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e6217a656336053d0a322d6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e6217a656336053d0a322d6",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e6217a656336053d0a322d6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e6217a656336053d0a322d6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e6217a556336053d0a31d69",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e6217a556336053d0a31d69",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62179256336053d0a2aba7",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62179256336053d0a2aba7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e62179256336053d0a2aba7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e62177956336053d0a1dc2d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e62179256336053d0a2aba7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62179256336053d0a2aba7",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e62179256336053d0a2aba7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62177956336053d0a1dc31",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e62177956336053d0a1dc30",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e62179256336053d0a2aba7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e62179256336053d0a2aba7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62179256336053d0a2aba5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62178f56336053d0a286bc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62178f56336053d0a286bc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62178f56336053d0a286bc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62177956336053d0a1dc32",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62178f56336053d0a286bc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62178f56336053d0a286bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62177956336053d0a1dc24",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e62178f56336053d0a286bb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62178e56336053d0a2833b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62178556336053d0a1f854",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e62178556336053d0a1f854",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e62178556336053d0a1f858",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62178556336053d0a1f854",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62177a56336053d0a1e534",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62178556336053d0a1f858",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e62178556336053d0a1f858",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62178556336053d0a1f854",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e62178556336053d0a1f854",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62178556336053d0a1f854",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e62177a56336053d0a1e534",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e62177956336053d0a1e52f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e62177956336053d0a1e52f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e62177956336053d0a1e52f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

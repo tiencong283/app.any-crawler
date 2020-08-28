@@ -1,0 +1,140 @@
+{
+ "Name": "milk.exe",
+ "Md5": "b6fb59b629ff7361ca59bc57d44b3ffe",
+ "UUID": "5f93a54b-8bca-4a05-b025-6fdbe816ef8e",
+ "Processes": [
+  {
+   "OID": "5db9ad987e312b79c2c45de7",
+   "ProcessID": 2304,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\milk.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\milk.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572449688108
+  },
+  {
+   "OID": "5db9ad9e7e312b79c2c46275",
+   "ProcessID": 1036,
+   "ParentPID": 2304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\milk.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\milk.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572449693764
+  },
+  {
+   "OID": "5db9ada47e312b79c2c464dd",
+   "ProcessID": 2440,
+   "ParentPID": 1036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\mp4player.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\mp4player.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572449700218
+  },
+  {
+   "OID": "5db9ada97e312b79c2c46b12",
+   "ProcessID": 1880,
+   "ParentPID": 2440,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\mp4player.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\mp4player.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572449705171
+  },
+  {
+   "OID": "5db9adaf7e312b79c2c46d36",
+   "ProcessID": 3944,
+   "ParentPID": 1880,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\mp4player.exe\" \"mp4player.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572449711280
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db9ada97e312b79c2c46b12",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db9ada97e312b79c2c46b12",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db9ada97e312b79c2c46b12",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db9ada97e312b79c2c46b12",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db9ada97e312b79c2c46b12",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db9ada97e312b79c2c46b12",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db9ada97e312b79c2c46b12",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5db9ada47e312b79c2c464dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db9ada47e312b79c2c464dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db9ad9e7e312b79c2c46275",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db9ad9e7e312b79c2c46275",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db9ad9e7e312b79c2c46275",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db9ad987e312b79c2c45de7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db9ad987e312b79c2c45de7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

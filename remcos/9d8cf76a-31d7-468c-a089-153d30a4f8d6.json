@@ -1,0 +1,135 @@
+{
+ "Name": "13.exe",
+ "Md5": "5d89a28d952611f9789b69061b53a297",
+ "UUID": "9d8cf76a-31d7-468c-a089-153d30a4f8d6",
+ "Processes": [
+  {
+   "OID": "5b55f8a5d8ecc33c4ba666fc",
+   "ProcessID": 2592,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\13.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\13.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1532360868566
+  },
+  {
+   "OID": "5b55f8b1d8ecc33c4ba66991",
+   "ProcessID": 4064,
+   "ParentPID": 2592,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\13.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\13.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532360881003
+  },
+  {
+   "OID": "5b55f8b2d8ecc33c4ba66ad9",
+   "ProcessID": 3728,
+   "ParentPID": 4064,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532360881925
+  },
+  {
+   "OID": "5b55f8b2d8ecc33c4ba66adb",
+   "ProcessID": 2772,
+   "ParentPID": 3728,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532360882081
+  },
+  {
+   "OID": "5b55f8b3d8ecc33c4ba67152",
+   "ProcessID": 3680,
+   "ParentPID": 3728,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532360883206
+  },
+  {
+   "OID": "5b55f8bcd8ecc33c4ba67372",
+   "ProcessID": 3992,
+   "ParentPID": 3680,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532360891800
+  },
+  {
+   "OID": "5b55f8d6d8ecc33c4ba69445",
+   "ProcessID": 3640,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1532360918472
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b55f8bcd8ecc33c4ba67372",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b55f8bcd8ecc33c4ba67372",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b55f8bcd8ecc33c4ba67372",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b55f8bcd8ecc33c4ba67372",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b55f8b3d8ecc33c4ba67152",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b55f8b1d8ecc33c4ba66991",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b55f8b1d8ecc33c4ba66991",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b55f8b1d8ecc33c4ba66991",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b55f8b1d8ecc33c4ba66991",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b55f8b1d8ecc33c4ba66991",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b55f8a5d8ecc33c4ba666fc",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

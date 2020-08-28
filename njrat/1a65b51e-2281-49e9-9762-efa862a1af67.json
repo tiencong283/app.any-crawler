@@ -1,0 +1,145 @@
+{
+ "Name": "njRAT.exe",
+ "Md5": "0431311b5f024d6e66b90d59491f2563",
+ "UUID": "1a65b51e-2281-49e9-9762-efa862a1af67",
+ "Processes": [
+  {
+   "OID": "5e48f1abb5ec954851d2d7ba",
+   "ProcessID": 3292,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT.exe",
+   "ProcessType": "Runned from Explorer.exe",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5e48f1abb5ec954851d2d7be",
+   "ProcessID": 2748,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581838763380
+  },
+  {
+   "OID": "5e48f1acb5ec954851d2d82c",
+   "ProcessID": 2612,
+   "ParentPID": 2748,
+   "CommandLine": "\"C:\\njRAT.exe\" ",
+   "Image": "C:\\njRAT.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581838763787
+  },
+  {
+   "OID": "5e48f1acb5ec954851d2d82d",
+   "ProcessID": 3376,
+   "ParentPID": 2748,
+   "CommandLine": "\"C:\\njq8.exe\" ",
+   "Image": "C:\\njq8.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581838763802
+  },
+  {
+   "OID": "5e48f1acb5ec954851d2deec",
+   "ProcessID": 1516,
+   "ParentPID": 3376,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\windows.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\windows.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581838764177
+  },
+  {
+   "OID": "5e48f1acb5ec954851d2deed",
+   "ProcessID": 1524,
+   "ParentPID": 1516,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\windows.exe\" \"windows.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581838764333
+  },
+  {
+   "OID": "5e48f1c1b5ec954851d2f5c8",
+   "ProcessID": 2064,
+   "ParentPID": 2612,
+   "CommandLine": "dw20.exe -x -s 788",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\dw20.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581838785458
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e48f1c1b5ec954851d2f5c8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e48f1acb5ec954851d2d82c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e48f1acb5ec954851d2deec",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e48f1acb5ec954851d2deec",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e48f1acb5ec954851d2deec",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e48f1acb5ec954851d2deec",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e48f1acb5ec954851d2deec",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e48f1acb5ec954851d2deec",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e48f1acb5ec954851d2deec",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e48f1acb5ec954851d2d82d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e48f1acb5ec954851d2d82d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e48f1acb5ec954851d2d82d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e48f1abb5ec954851d2d7be",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

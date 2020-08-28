@@ -1,0 +1,116 @@
+{
+ "Name": "53be4ad1-d3ab-46a7-9619-69ef00d68836",
+ "Md5": "9a81f083bd60e68b9edb09611618c2a5",
+ "UUID": "f4982172-1bd0-41b8-84fa-8e5cd505f8db",
+ "Processes": [
+  {
+   "OID": "5cbf3787dc760c02ca75eaf9",
+   "ProcessID": 3096,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\53be4ad1-d3ab-46a7-9619-69ef00d68836.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\53be4ad1-d3ab-46a7-9619-69ef00d68836.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1556035463219
+  },
+  {
+   "OID": "5cbf3787dc760c02ca75f0b6",
+   "ProcessID": 2112,
+   "ParentPID": 3096,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556035463673
+  },
+  {
+   "OID": "5cbf3788dc760c02ca75f3c3",
+   "ProcessID": 3344,
+   "ParentPID": 2112,
+   "CommandLine": "schtasks /Delete /tn NYAN /F",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556035463844
+  },
+  {
+   "OID": "5cbf3788dc760c02ca75f3c5",
+   "ProcessID": 2132,
+   "ParentPID": 2112,
+   "CommandLine": "schtasks /create /tn NYAN /tr \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" /sc minute /mo 1",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556035463954
+  },
+  {
+   "OID": "5cbf37acdc760c02ca760695",
+   "ProcessID": 2464,
+   "ParentPID": 4004,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe ",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1556035500204
+  },
+  {
+   "OID": "5cbf37e8dc760c02ca760b39",
+   "ProcessID": 3420,
+   "ParentPID": 4004,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe ",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1556035560001
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cbf3787dc760c02ca75eaf9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cbf3787dc760c02ca75eaf9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cbf3787dc760c02ca75eaf9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cbf3787dc760c02ca75f0b6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cbf3787dc760c02ca75f0b6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cbf3787dc760c02ca75eae9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cbf3788dc760c02ca75f3c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cbf3788dc760c02ca75f3c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cbf3787dc760c02ca75f0b6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  }
+ ]
+}

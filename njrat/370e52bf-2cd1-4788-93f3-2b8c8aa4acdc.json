@@ -1,0 +1,65 @@
+{
+ "Name": "Documents.exe",
+ "Md5": "695c5d19dc3c3c5cc39182e09d9274e6",
+ "UUID": "370e52bf-2cd1-4788-93f3-2b8c8aa4acdc",
+ "Processes": [
+  {
+   "OID": "5e2e42d320cc2a2f8b208fb9",
+   "ProcessID": 780,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Documents.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Documents.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580090066916
+  },
+  {
+   "OID": "5e2e42d320cc2a2f8b208fba",
+   "ProcessID": 2804,
+   "ParentPID": 780,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580090067306
+  },
+  {
+   "OID": "5e2e42d920cc2a2f8b209aa3",
+   "ProcessID": 2948,
+   "ParentPID": 2804,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580090073541
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2e42d320cc2a2f8b208fba",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2e42d320cc2a2f8b208fba",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e2e42d320cc2a2f8b208fb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2e42d320cc2a2f8b208fb9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e2e42d320cc2a2f8b208fb9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

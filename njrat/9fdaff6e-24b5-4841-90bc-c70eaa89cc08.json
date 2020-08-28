@@ -1,0 +1,77 @@
+{
+ "Name": "Client2.exe",
+ "Md5": "14845432910e66ea1feefd90977bb987",
+ "UUID": "9fdaff6e-24b5-4841-90bc-c70eaa89cc08",
+ "Processes": [
+  {
+   "OID": "5ee148ffca92af11c757cbd0",
+   "ProcessID": 2476,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Client2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Client2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591822591305
+  },
+  {
+   "OID": "5ee14906ca92af11c757cf61",
+   "ProcessID": 1700,
+   "ParentPID": 2476,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Client2.exe\" \"Client2.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591822597774
+  },
+  {
+   "OID": "5ee1491aca92af11c757db0e",
+   "ProcessID": 2816,
+   "ParentPID": 592,
+   "CommandLine": "C:\\Windows\\system32\\DeviceDisplayObjectProvider.exe -Embedding",
+   "Image": "C:\\Windows\\system32\\DeviceDisplayObjectProvider.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1591822618633
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee1491aca92af11c757db0e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee148ffca92af11c757cbd0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee148ffca92af11c757cbd0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee148ffca92af11c757cbd0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee148ffca92af11c757cbd0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee148ffca92af11c757cbd0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee148ffca92af11c757cbd0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

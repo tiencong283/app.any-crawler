@@ -1,0 +1,39 @@
+{
+ "Name": "SAD-Trainer.exe",
+ "Md5": "0fb6dac690b7ec6b51f92e70a78eb3c3",
+ "UUID": "2f742bcb-c663-4d22-9198-a40e9aebedfe",
+ "Processes": [
+  {
+   "OID": "5da03bbbae32b71e614ae92b",
+   "ProcessID": 2536,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\SAD-Trainer.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\SAD-Trainer.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1570782139336
+  },
+  {
+   "OID": "5da03bc2ae32b71e614aec0d",
+   "ProcessID": 656,
+   "ParentPID": 2536,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\SAD-Trainer.exe\" \"SAD-Trainer.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570782145539
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5da03bbbae32b71e614ae92b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da03bbbae32b71e614ae92b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "Name": "2da39954bc7b85c505b1d7dc4a47c9c0e33f7d3a4d173a4caed200719595b7af",
+ "Md5": "d1e7bee039d56ee457d975a629dba163",
+ "UUID": "830b5fb4-447b-4224-ad23-e6395e89985b",
+ "Processes": [
+  {
+   "OID": "5cb957f91e29195dbe74b102",
+   "ProcessID": 3428,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\2da39954bc7b85c505b1d7dc4a47c9c0e33f7d3a4d173a4caed200719595b7af.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2da39954bc7b85c505b1d7dc4a47c9c0e33f7d3a4d173a4caed200719595b7af.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1555650552691
+  },
+  {
+   "OID": "5cb957f91e29195dbe74b948",
+   "ProcessID": 2668,
+   "ParentPID": 3428,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555650553347
+  },
+  {
+   "OID": "5cb957fa1e29195dbe74bb4d",
+   "ProcessID": 3232,
+   "ParentPID": 3428,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555650554238
+  },
+  {
+   "OID": "5cb957fa1e29195dbe74be2e",
+   "ProcessID": 4088,
+   "ParentPID": 3232,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\2da39954bc7b85c505b1d7dc4a47c9c0e33f7d3a4d173a4caed200719595b7af.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2da39954bc7b85c505b1d7dc4a47c9c0e33f7d3a4d173a4caed200719595b7af.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555650554363
+  },
+  {
+   "OID": "5cb957fb1e29195dbe74c3d7",
+   "ProcessID": 3416,
+   "ParentPID": 4088,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Gokano Accounts Checker By X-SLAYER.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Gokano Accounts Checker By X-SLAYER.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555650554832
+  },
+  {
+   "OID": "5cb957fb1e29195dbe74c3d8",
+   "ProcessID": 2192,
+   "ParentPID": 4088,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555650554941
+  },
+  {
+   "OID": "5cb958011e29195dbe74d2c2",
+   "ProcessID": 3256,
+   "ParentPID": 2192,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555650561207
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cb957fb1e29195dbe74c3d8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb957fa1e29195dbe74be2e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cb957fa1e29195dbe74be2e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb957fb1e29195dbe74c3d8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cb957fb1e29195dbe74c3d7",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb957fb1e29195dbe74c3d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb957fa1e29195dbe74be2e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb957f91e29195dbe74b102",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5cb957f91e29195dbe74b102",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  }
+ ]
+}

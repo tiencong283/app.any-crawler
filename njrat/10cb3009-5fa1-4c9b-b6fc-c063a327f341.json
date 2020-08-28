@@ -1,0 +1,142 @@
+{
+ "Name": "acf09136-d549-4de8-a40a-c8d56f10e912",
+ "Md5": "43cde3609da672e8c4de938ded07d60e",
+ "UUID": "10cb3009-5fa1-4c9b-b6fc-c063a327f341",
+ "Processes": [
+  {
+   "OID": "5d3683527595cc7ac91213e7",
+   "ProcessID": 3344,
+   "ParentPID": 292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\acf09136-d549-4de8-a40a-c8d56f10e912.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\acf09136-d549-4de8-a40a-c8d56f10e912.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1563853649420
+  },
+  {
+   "OID": "5d3683527595cc7ac9121c3c",
+   "ProcessID": 3244,
+   "ParentPID": 3344,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563853650545
+  },
+  {
+   "OID": "5d3683537595cc7ac9121cf8",
+   "ProcessID": 2136,
+   "ParentPID": 3244,
+   "CommandLine": "schtasks /Delete /tn NYAN /F",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563853650857
+  },
+  {
+   "OID": "5d3683537595cc7ac9121cfa",
+   "ProcessID": 884,
+   "ParentPID": 3244,
+   "CommandLine": "schtasks /create /tn NYAN /tr \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\" /sc minute /mo 1",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563853650967
+  },
+  {
+   "OID": "5d3683707595cc7ac91227b1",
+   "ProcessID": 3632,
+   "ParentPID": 2012,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe ",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1563853680014
+  },
+  {
+   "OID": "5d3683ac7595cc7ac9122ed2",
+   "ProcessID": 256,
+   "ParentPID": 2012,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe ",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1563853740014
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d3683ac7595cc7ac9122ed2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d3683527595cc7ac91213e0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3683747595cc7ac9122a57",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d3683707595cc7ac91227b1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d3683527595cc7ac9121c3c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3683527595cc7ac9121c3c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3683527595cc7ac91213d5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3683537595cc7ac9121cfa",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d3683537595cc7ac9121cf8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d3683527595cc7ac9121c3c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d3683527595cc7ac91213e7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d3683527595cc7ac91213e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d3683527595cc7ac91213e7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

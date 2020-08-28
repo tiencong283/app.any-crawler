@@ -1,0 +1,72 @@
+{
+ "Name": "[RUN] Apex Legends Freee Cheats V3.16 Undetected.exe",
+ "Md5": "0a5b8500e1747eaed2f9f684246fc8aa",
+ "UUID": "32aa70a8-f858-489c-9cf6-cd4fd4ea3bce",
+ "Processes": [
+  {
+   "OID": "5cd094dfb146947f038cf6af",
+   "ProcessID": 2100,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\[RUN] Apex Legends Freee Cheats V3.16 Undetected.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\[RUN] Apex Legends Freee Cheats V3.16 Undetected.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1557173470950
+  },
+  {
+   "OID": "5cd094e7b146947f038cfca9",
+   "ProcessID": 2328,
+   "ParentPID": 2100,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557173479543
+  },
+  {
+   "OID": "5cd094efb146947f038d04ab",
+   "ProcessID": 3112,
+   "ParentPID": 2328,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\svchost.exe\" \"svchost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557173487450
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cd094e7b146947f038cfca9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd094e7b146947f038cfca9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cd094e7b146947f038cfca9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cd094dfb146947f038cf6af",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cd094dfb146947f038cf6af",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cd094dfb146947f038cf6af",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

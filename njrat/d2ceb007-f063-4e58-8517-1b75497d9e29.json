@@ -1,0 +1,84 @@
+{
+ "Name": "Server.exe",
+ "Md5": "62ff26ac2352e2528129e26f48732a16",
+ "UUID": "d2ceb007-f063-4e58-8517-1b75497d9e29",
+ "Processes": [
+  {
+   "OID": "5e2a26fcd15cec6ddbb54a72",
+   "ProcessID": 3300,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579820796114
+  },
+  {
+   "OID": "5e2a2703d15cec6ddbb556a1",
+   "ProcessID": 3980,
+   "ParentPID": 3300,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\MINE HACK.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\MINE HACK.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579820802864
+  },
+  {
+   "OID": "5e2a2709d15cec6ddbb55c1b",
+   "ProcessID": 3464,
+   "ParentPID": 3980,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\MINE HACK.exe\" \"MINE HACK.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579820809005
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2a2703d15cec6ddbb556a1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e2a2703d15cec6ddbb556a1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2a2703d15cec6ddbb556a1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2a2703d15cec6ddbb556a1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2a2703d15cec6ddbb556a1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e2a2703d15cec6ddbb556a1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e2a26fcd15cec6ddbb54a72",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e2a26fcd15cec6ddbb54a72",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

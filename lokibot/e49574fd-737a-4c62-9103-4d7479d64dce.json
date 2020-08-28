@@ -1,0 +1,122 @@
+{
+ "Name": "File06_pdf.exe",
+ "Md5": "d94946b00d02c17f2b0b71216521c565",
+ "UUID": "e49574fd-737a-4c62-9103-4d7479d64dce",
+ "Processes": [
+  {
+   "OID": "5d2713978014f577d8abd69a",
+   "ProcessID": 3096,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\File06_pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\File06_pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1562842007131
+  },
+  {
+   "OID": "5d2713a28014f577d8abd84c",
+   "ProcessID": 2516,
+   "ParentPID": 3096,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\File06_pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\File06_pdf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562842017802
+  },
+  {
+   "OID": "5d2713a28014f577d8abdb27",
+   "ProcessID": 2772,
+   "ParentPID": 604,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1562842018396
+  },
+  {
+   "OID": "5d2713bc8014f577d8abf2ae",
+   "ProcessID": 4044,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Windows\\system32\\rundll32.exe\" C:\\Windows\\system32\\shell32.dll,Control_RunDLL \"C:\\PROGRA~1\\MICROS~1\\Office14\\MLCFG32.CPL\",@0",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1562842044459
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d2713bc8014f577d8abf2ae",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d2713978014f577d8abd690",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  },
+  {
+   "ProcessOID": "5d2713bc8014f577d8abf2ae",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d2713a28014f577d8abd84c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2713a28014f577d8abd84c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2713978014f577d8abd692",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2713a28014f577d8abd84c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2713978014f577d8abd690",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d2713978014f577d8abd690",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2713a28014f577d8abdb27",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2713a28014f577d8abd84c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5d2713a28014f577d8abd84c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2713978014f577d8abd69a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "Name": "readandvert.exe",
+ "Md5": "2799aa535fb90f25eef9c92860c63b7d",
+ "UUID": "87709a85-a217-40e3-9cf3-e944e16a39e8",
+ "Processes": [
+  {
+   "OID": "5dc11f8521248827aadd23c4",
+   "ProcessID": 1292,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\readandvert.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\readandvert.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572937604524
+  },
+  {
+   "OID": "5dc11f8521248827aadd23c5",
+   "ProcessID": 3756,
+   "ParentPID": 1292,
+   "CommandLine": "--15a912f6",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\readandvert.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572937604836
+  },
+  {
+   "OID": "5dc11f8c21248827aadd2759",
+   "ProcessID": 2988,
+   "ParentPID": 3756,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572937611196
+  },
+  {
+   "OID": "5dc11f8c21248827aadd275a",
+   "ProcessID": 2752,
+   "ParentPID": 2988,
+   "CommandLine": "--25c59a38",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572937611352
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc11f8c21248827aadd275a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc11f8c21248827aadd275a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc11f8521248827aadd23c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc11f8521248827aadd23c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc11f8521248827aadd23c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

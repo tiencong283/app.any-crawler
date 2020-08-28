@@ -1,0 +1,257 @@
+{
+ "Name": "f.jpg",
+ "Md5": "b48f908bdc77bcf3736088ce1fbea487",
+ "UUID": "0c8c7296-d252-4c83-95a3-ab1932f553f7",
+ "Processes": [
+  {
+   "OID": "5bbe2a8668317367dc7e3b19",
+   "ProcessID": 2444,
+   "ParentPID": 1564,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\f.jpg.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\f.jpg.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1539189382177
+  },
+  {
+   "OID": "5bbe2a8768317367dc7e3b22",
+   "ProcessID": 3000,
+   "ParentPID": 2444,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539189382521
+  },
+  {
+   "OID": "5bbe2a8c68317367dc7e452c",
+   "ProcessID": 3068,
+   "ParentPID": 1564,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\unknownflorida.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1539189387880
+  },
+  {
+   "OID": "5bbe2ab168317367dc7e72ed",
+   "ProcessID": 2832,
+   "ParentPID": 1564,
+   "CommandLine": "\"C:\\Program Files\\Opera x64\\Opera.exe\" \"C:\\Users\\admin\\Desktop\\rentoutdoor.jpg\"",
+   "Image": "C:\\Program Files\\Opera x64\\Opera.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1539189425583
+  },
+  {
+   "OID": "5bbe2ab368317367dc7e7bd6",
+   "ProcessID": 2780,
+   "ParentPID": 2832,
+   "CommandLine": "\"C:\\Program Files\\Opera x64\\pluginwrapper\\opera_plugin_wrapper.exe\" -newprocess \"2832 2 0 1 2\" -logfolder \"C:\\Users\\admin\\AppData\\Local\\Opera\\Opera x64\\logs\"",
+   "Image": "C:\\Program Files\\Opera x64\\pluginwrapper\\opera_plugin_wrapper.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539189426665
+  },
+  {
+   "OID": "5bbe2ab368317367dc7e7ffa",
+   "ProcessID": 836,
+   "ParentPID": 2832,
+   "CommandLine": "\"C:\\Program Files\\Opera x64\\pluginwrapper\\opera_plugin_wrapper_32.exe\" -newprocess \"2832 5 0 1 3\" -logfolder \"C:\\Users\\admin\\AppData\\Local\\Opera\\Opera x64\\logs\"",
+   "Image": "C:\\Program Files\\Opera x64\\pluginwrapper\\opera_plugin_wrapper_32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539189427167
+  },
+  {
+   "OID": "5bbe2b2968317367dc7e8f0e",
+   "ProcessID": 2540,
+   "ParentPID": 3000,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\hstjsgiliu\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539189544831
+  },
+  {
+   "OID": "5bbe2b2968317367dc7e8f0f",
+   "ProcessID": 2592,
+   "ParentPID": 3000,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\jmgclybnwcuwwq\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539189544831
+  },
+  {
+   "OID": "5bbe2b2968317367dc7e8f10",
+   "ProcessID": 2564,
+   "ParentPID": 3000,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe /stext \"C:\\Users\\admin\\AppData\\Local\\Temp\\uplmmrmhkkmbgeyhg\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539189544847
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bbe2b2968317367dc7e8f10",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8668317367dc7e32f6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2a8668317367dc7e32f6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2a8768317367dc7e3b22",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8768317367dc7e3b22",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2ab168317367dc7e72ed",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2ab168317367dc7e72ed",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2aa768317367dc7e6df9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8768317367dc7e3b22",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2a8768317367dc7e3b22",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2a8768317367dc7e3b22",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2a8d68317367dc7e50ca",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8d68317367dc7e50ca",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8d68317367dc7e50ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8c68317367dc7e452c",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2a8668317367dc7e3307",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2a8c68317367dc7e452c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8c68317367dc7e452c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8668317367dc7e3301",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8668317367dc7e3306",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2a8668317367dc7e3306",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2a8768317367dc7e3b22",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8768317367dc7e3b22",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2a8668317367dc7e3b19",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8668317367dc7e3b19",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bbe2a8668317367dc7e3b19",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbe2a8668317367dc7e3b19",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

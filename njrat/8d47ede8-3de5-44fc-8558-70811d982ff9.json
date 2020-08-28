@@ -1,0 +1,63 @@
+{
+ "Name": "njRAT v0.12G.exe",
+ "Md5": "cf1bec254726a58804d9740097627b37",
+ "UUID": "8d47ede8-3de5-44fc-8558-70811d982ff9",
+ "Processes": [
+  {
+   "OID": "5eeb7eb1116d025db72775db",
+   "ProcessID": 2288,
+   "ParentPID": 308,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT v0.12G.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT v0.12G.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592491696802
+  },
+  {
+   "OID": "5eeb7eb7116d025db7277e93",
+   "ProcessID": 544,
+   "ParentPID": 2288,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT v0.12G.exe\" \"njRAT v0.12G.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592491703052
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eeb7eb1116d025db72775db",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eeb7eb1116d025db72775db",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eeb7eb1116d025db72775db",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eeb7eb1116d025db72775db",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eeb7eb1116d025db72775db",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eeb7eb1116d025db72775db",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

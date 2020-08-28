@@ -1,0 +1,127 @@
+{
+ "Name": "JPG Exploit king.exe",
+ "Md5": "d84bf0f136441ac56a467edac48cc125",
+ "UUID": "f7460acc-a24d-4a5a-891c-d2019a5727ec",
+ "Processes": [
+  {
+   "OID": "5ea1194a738cdd50dd413fe0",
+   "ProcessID": 1468,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\JPG Exploit king.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\JPG Exploit king.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587616073501
+  },
+  {
+   "OID": "5ea11950738cdd50dd41461b",
+   "ProcessID": 3088,
+   "ParentPID": 1468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\JoK.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\JoK.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587616079891
+  },
+  {
+   "OID": "5ea11957738cdd50dd415689",
+   "ProcessID": 3252,
+   "ParentPID": 3088,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\GoogleCrashHandr.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\GoogleCrashHandr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587616086516
+  },
+  {
+   "OID": "5ea1195d738cdd50dd415b5e",
+   "ProcessID": 3852,
+   "ParentPID": 3252,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\GoogleCrashHandr.exe\" \"GoogleCrashHandr.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587616092657
+  },
+  {
+   "OID": "5ea1197b738cdd50dd417062",
+   "ProcessID": 3104,
+   "ParentPID": 1468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\JoK.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\JoK.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587616122563
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ea1197b738cdd50dd417062",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea11957738cdd50dd415689",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea11957738cdd50dd415689",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ea11957738cdd50dd415689",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea11957738cdd50dd415689",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea11957738cdd50dd415689",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ea11957738cdd50dd415689",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ea11957738cdd50dd415689",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea11950738cdd50dd41461b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ea11950738cdd50dd41461b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea11950738cdd50dd41461b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea1194a738cdd50dd413fe0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea1194a738cdd50dd413fe0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

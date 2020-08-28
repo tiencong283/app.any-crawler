@@ -1,0 +1,79 @@
+{
+ "Name": "chinesehlf.exe",
+ "Md5": "759eabad58ad5b04376fa6d78f02c133",
+ "UUID": "ae104e54-30e2-4411-b31f-569fcb6c1ad5",
+ "Processes": [
+  {
+   "OID": "5db7fc7fb77bca6bfb5b5ec4",
+   "ProcessID": 960,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\chinesehlf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\chinesehlf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572338814709
+  },
+  {
+   "OID": "5db7fc7fb77bca6bfb5b5ec5",
+   "ProcessID": 4080,
+   "ParentPID": 960,
+   "CommandLine": "--380fbf9",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\chinesehlf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572338814803
+  },
+  {
+   "OID": "5db7fc85b77bca6bfb5b620a",
+   "ProcessID": 3412,
+   "ParentPID": 4080,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572338821303
+  },
+  {
+   "OID": "5db7fc86b77bca6bfb5b6217",
+   "ProcessID": 1780,
+   "ParentPID": 3412,
+   "CommandLine": "--25c59a38",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572338821397
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db7fc86b77bca6bfb5b6217",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db7fc86b77bca6bfb5b6217",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db7fc86b77bca6bfb5b6217",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db7fc85b77bca6bfb5b620a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db7fc7fb77bca6bfb5b5ec5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db7fc7fb77bca6bfb5b5ec5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "Name": "1.exe",
+ "Md5": "0bc12877b5995878663154e504158b3c",
+ "UUID": "cd90496f-dc05-4511-8e0e-8618d333e3e8",
+ "Processes": [
+  {
+   "OID": "5b067e565d1d4f3fdec78a84",
+   "ProcessID": 3112,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1527152214328
+  },
+  {
+   "OID": "5b067e575d1d4f3fdec78aaa",
+   "ProcessID": 3444,
+   "ParentPID": 3112,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1527152214719
+  },
+  {
+   "OID": "5b067e575d1d4f3fdec78aac",
+   "ProcessID": 1900,
+   "ParentPID": 3444,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1527152214781
+  },
+  {
+   "OID": "5b067e575d1d4f3fdec7926b",
+   "ProcessID": 860,
+   "ParentPID": 3444,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\EXCEL\\EXCEL.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\EXCEL\\EXCEL.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1527152215828
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b067e575d1d4f3fdec7926b",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b067e575d1d4f3fdec7926b",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b067e575d1d4f3fdec7926b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b067e565d1d4f3fdec78a84",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b067e565d1d4f3fdec78a84",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b067e565d1d4f3fdec78a84",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

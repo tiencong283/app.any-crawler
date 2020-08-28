@@ -1,0 +1,76 @@
+{
+ "Name": "QsPTjm",
+ "Md5": "d5225351b7ac1503f1129d42bae6c078",
+ "UUID": "50ce5b7f-32f9-47e2-b5e7-0ff2de0ef5e2",
+ "Processes": [
+  {
+   "OID": "5dc5711c54e276771b440bf0",
+   "ProcessID": 2456,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\QsPTjm.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\QsPTjm.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573220636079
+  },
+  {
+   "OID": "5dc5712254e276771b440dc3",
+   "ProcessID": 2264,
+   "ParentPID": 2456,
+   "CommandLine": "--a4b3c74d",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\QsPTjm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573220642236
+  },
+  {
+   "OID": "5dc5713054e276771b440ea8",
+   "ProcessID": 2776,
+   "ParentPID": 2264,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573220654189
+  },
+  {
+   "OID": "5dc5713454e276771b441156",
+   "ProcessID": 1888,
+   "ParentPID": 2776,
+   "CommandLine": "--dfba43e0",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573220660236
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc5713054e276771b440ea8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dc5712254e276771b440dc3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc5712254e276771b440dc3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dc5712254e276771b440dc3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc5711c54e276771b440bf0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

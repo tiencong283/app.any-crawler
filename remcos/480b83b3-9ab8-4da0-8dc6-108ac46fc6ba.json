@@ -1,0 +1,105 @@
+{
+ "Name": "RUC ORDER.exe",
+ "Md5": "eb57f140567a948dcc065fef901486f2",
+ "UUID": "480b83b3-9ab8-4da0-8dc6-108ac46fc6ba",
+ "Processes": [
+  {
+   "OID": "5bfc1f43f675952522f75491",
+   "ProcessID": 3072,
+   "ParentPID": 236,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RUC ORDER.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RUC ORDER.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1543249730908
+  },
+  {
+   "OID": "5bfc1f65f675952522f7569d",
+   "ProcessID": 2620,
+   "ParentPID": 3072,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\subfolder\\filename.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1543249764783
+  },
+  {
+   "OID": "5bfc1f65f675952522f7569e",
+   "ProcessID": 2788,
+   "ParentPID": 3072,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\subfolder\\filename.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\subfolder\\filename.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1543249764814
+  },
+  {
+   "OID": "5bfc2005f675952522f75e0b",
+   "ProcessID": 2996,
+   "ParentPID": 2788,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\subfolder\\filename.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\subfolder\\filename.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1543249924955
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bfc2005f675952522f75e0b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bfc2005f675952522f75e0b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bfc2005f675952522f75e0b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bfc2005f675952522f75e0b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bfc2005f675952522f75e0b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bfc1f65f675952522f7569e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bfc1f65f675952522f7569d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bfc1f43f675952522f75491",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bfc1f43f675952522f75491",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5bfc1f43f675952522f75491",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "Name": "rHN4sSbC.exe",
+ "Md5": "b681ef254f5b9b8523468acb49300677",
+ "UUID": "c6adf99e-f2c7-42e3-91db-3ad31d691263",
+ "Processes": [
+  {
+   "OID": "5cac5cbf3d1f8a494d2fbc46",
+   "ProcessID": 2192,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\rHN4sSbC.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\rHN4sSbC.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554799806944
+  },
+  {
+   "OID": "5cac5cc63d1f8a494d2fc678",
+   "ProcessID": 3584,
+   "ParentPID": 2192,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\test.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\test.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554799813898
+  },
+  {
+   "OID": "5cac5ccc3d1f8a494d2fcc0f",
+   "ProcessID": 1848,
+   "ParentPID": 3584,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\test.exe\" \"test.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554799820069
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cac5cc63d1f8a494d2fc678",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cac5cc63d1f8a494d2fc678",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cac5cbf3d1f8a494d2fbc46",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cac5cbf3d1f8a494d2fbc46",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

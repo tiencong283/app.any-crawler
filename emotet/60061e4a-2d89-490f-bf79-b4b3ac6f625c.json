@@ -1,0 +1,72 @@
+{
+ "Name": "8.file",
+ "Md5": "3214e5ccf6d7f0b97ea4a917ca44f0d5",
+ "UUID": "60061e4a-2d89-490f-bf79-b4b3ac6f625c",
+ "Processes": [
+  {
+   "OID": "5da8859019f129620b58c70e",
+   "ProcessID": 960,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\8.file.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\8.file.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571325328045
+  },
+  {
+   "OID": "5da8859019f129620b58c70f",
+   "ProcessID": 3948,
+   "ParentPID": 960,
+   "CommandLine": "--f4b3a56",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\8.file.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571325328139
+  },
+  {
+   "OID": "5da8859719f129620b58c9ea",
+   "ProcessID": 2840,
+   "ParentPID": 3948,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571325334701
+  },
+  {
+   "OID": "5da8859719f129620b58c9eb",
+   "ProcessID": 2236,
+   "ParentPID": 2840,
+   "CommandLine": "--f91b2738",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571325334779
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5da8859719f129620b58c9eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da8859719f129620b58c9eb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da8859719f129620b58c9eb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da8859019f129620b58c70f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5da8859019f129620b58c70f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

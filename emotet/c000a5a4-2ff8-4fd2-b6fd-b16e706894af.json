@@ -1,0 +1,62 @@
+{
+ "Name": "ppi",
+ "Md5": "311bd88d53275aca80b2ee1b13100446",
+ "UUID": "c000a5a4-2ff8-4fd2-b6fd-b16e706894af",
+ "Processes": [
+  {
+   "OID": "5db2e6f2cdcf1d0349a155d7",
+   "ProcessID": 2384,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ppi.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ppi.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572005618319
+  },
+  {
+   "OID": "5db2e6f2cdcf1d0349a155d8",
+   "ProcessID": 3804,
+   "ParentPID": 2384,
+   "CommandLine": "--ca35764d",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ppi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572005618428
+  },
+  {
+   "OID": "5db2e6f9cdcf1d0349a1592d",
+   "ProcessID": 2716,
+   "ParentPID": 3804,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572005624725
+  },
+  {
+   "OID": "5db2e6f9cdcf1d0349a1592e",
+   "ProcessID": 736,
+   "ParentPID": 2716,
+   "CommandLine": "--b583abe8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572005624803
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db2e6f2cdcf1d0349a155d8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db2e6f2cdcf1d0349a155d8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db2e6f2cdcf1d0349a155d8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

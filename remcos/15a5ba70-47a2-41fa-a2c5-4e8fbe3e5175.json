@@ -1,0 +1,130 @@
+{
+ "Name": "de0586ba85283a1f5f2a4923faa825c3",
+ "Md5": "de0586ba85283a1f5f2a4923faa825c3",
+ "UUID": "15a5ba70-47a2-41fa-a2c5-4e8fbe3e5175",
+ "Processes": [
+  {
+   "OID": "5b755c91a8e6d547d8786cf1",
+   "ProcessID": 2128,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\de0586ba85283a1f5f2a4923faa825c3.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\de0586ba85283a1f5f2a4923faa825c3.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1534418065399
+  },
+  {
+   "OID": "5b755c97a8e6d547d87876b9",
+   "ProcessID": 2624,
+   "ParentPID": 2128,
+   "CommandLine": "\"cmd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534418070743
+  },
+  {
+   "OID": "5b755c97a8e6d547d87876bb",
+   "ProcessID": 1608,
+   "ParentPID": 2624,
+   "CommandLine": "reg  add \"HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\" /v Load /t REG_SZ /d \"C:\\Users\\admin\\AppData\\Roaming\\windows\\skypes.exe.lnk\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534418070837
+  },
+  {
+   "OID": "5b755c97a8e6d547d87876bc",
+   "ProcessID": 2284,
+   "ParentPID": 2128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\svhost.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\svhost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534418070962
+  },
+  {
+   "OID": "5b755c98a8e6d547d8787a6c",
+   "ProcessID": 1176,
+   "ParentPID": 2128,
+   "CommandLine": "cmd /c C:\\Users\\admin\\AppData\\Roaming\\windows\\skypes.exe.bat",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534418071087
+  },
+  {
+   "OID": "5b755c98a8e6d547d8787a6e",
+   "ProcessID": 3804,
+   "ParentPID": 1176,
+   "CommandLine": "timeout  /t 300",
+   "Image": "C:\\Windows\\system32\\timeout.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534418071165
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b755c97a8e6d547d87876bc",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b755c97a8e6d547d87876bc",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b755c97a8e6d547d87876bc",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b755c91a8e6d547d8786cf1",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b755c97a8e6d547d87876bb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b755c97a8e6d547d87876b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b755c97a8e6d547d87876b9",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b755c91a8e6d547d8786cf1",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b755c97a8e6d547d87876b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b755c97a8e6d547d87876b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5b755c91a8e6d547d8786cf1",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b755c91a8e6d547d8786cf1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

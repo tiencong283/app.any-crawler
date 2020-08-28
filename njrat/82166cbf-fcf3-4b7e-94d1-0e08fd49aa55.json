@@ -1,0 +1,63 @@
+{
+ "Name": "lsass.exe",
+ "Md5": "97f0d63852c8b0843d7981fbbf5280f9",
+ "UUID": "82166cbf-fcf3-4b7e-94d1-0e08fd49aa55",
+ "Processes": [
+  {
+   "OID": "5ddb866d5e470c09ac27363e",
+   "ProcessID": 2800,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\lsass.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lsass.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574667885272
+  },
+  {
+   "OID": "5ddb86735e470c09ac273929",
+   "ProcessID": 3656,
+   "ParentPID": 2800,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\lsass.exe\" \"lsass.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574667891444
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ddb866d5e470c09ac27363e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddb866d5e470c09ac27363e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ddb866d5e470c09ac27363e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddb866d5e470c09ac27363e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ddb866d5e470c09ac27363e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ddb866d5e470c09ac27363e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

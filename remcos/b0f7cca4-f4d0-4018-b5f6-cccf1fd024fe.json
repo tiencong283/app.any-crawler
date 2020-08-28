@@ -1,0 +1,75 @@
+{
+ "Name": "432.exe",
+ "Md5": "13213a79eb7a7d4c931bc81c9fa63038",
+ "UUID": "b0f7cca4-f4d0-4018-b5f6-cccf1fd024fe",
+ "Processes": [
+  {
+   "OID": "5b40499f67b016695a87ff70",
+   "ProcessID": 1992,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\432.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\432.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1530939807541
+  },
+  {
+   "OID": "5b4049a067b016695a880536",
+   "ProcessID": 4032,
+   "ParentPID": 1992,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\432.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\432.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1530939807775
+  },
+  {
+   "OID": "5b4049a067b016695a880537",
+   "ProcessID": 416,
+   "ParentPID": 4032,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1530939807978
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b4049a067b016695a880536",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b4049a067b016695a880536",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b4049a067b016695a880536",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b40499f67b016695a87ff70",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b40499f67b016695a87ff70",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b40499f67b016695a87ff70",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b40499f67b016695a87ff70",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

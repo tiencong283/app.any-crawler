@@ -1,0 +1,90 @@
+{
+ "Name": "Adjunto copia en PDF pago realizado N°00390201Adjunto copia en PDF pago realizado N°00390201.exe",
+ "Md5": "4c307d03715a4541a875ac5d57fe40cc",
+ "UUID": "bc72219d-1551-437d-a4db-920807b44fb0",
+ "Processes": [
+  {
+   "OID": "5dd45f4135493921cb5ac415",
+   "ProcessID": 2620,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Adjunto copia en PDF pago realizado N°00390201Adjunto copia en PDF pago realizado N°00390201.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Adjunto copia en PDF pago realizado N°00390201Adjunto copia en PDF pago realizado N°00390201.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574199104776
+  },
+  {
+   "OID": "5dd45f4235493921cb5ac96d",
+   "ProcessID": 4012,
+   "ParentPID": 2620,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574199106167
+  },
+  {
+   "OID": "5dd45f4435493921cb5acf9b",
+   "ProcessID": 748,
+   "ParentPID": 2620,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Adjunto copia en PDF pago realizado N°00390201Adjunto copia en PDF pago realizado N°00390201.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Adjunto copia en PDF pago realizado N°00390201Adjunto copia en PDF pago realizado N°00390201.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574199107198
+  },
+  {
+   "OID": "5dd45f4435493921cb5ad662",
+   "ProcessID": 3844,
+   "ParentPID": 748,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574199108401
+  },
+  {
+   "OID": "5dd45f4835493921cb5ad931",
+   "ProcessID": 2328,
+   "ParentPID": 4012,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574199112588
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dd45f4235493921cb5ac96d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd45f4235493921cb5ac96d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dd45f4135493921cb5ac415",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dd45f4135493921cb5ac415",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd45f4135493921cb5ac415",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dd45f4135493921cb5ac415",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

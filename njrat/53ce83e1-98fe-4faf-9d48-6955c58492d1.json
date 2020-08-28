@@ -1,0 +1,91 @@
+{
+ "Name": "CrackedCheat.exe",
+ "Md5": "367a3abe4c8aa81c9c06dfd7a1296ba2",
+ "UUID": "53ce83e1-98fe-4faf-9d48-6955c58492d1",
+ "Processes": [
+  {
+   "OID": "5e0f6ba83f4aa964747e9c89",
+   "ProcessID": 2876,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\CrackedCheat.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\CrackedCheat.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578068904305
+  },
+  {
+   "OID": "5e0f6bb53f4aa964747eaf19",
+   "ProcessID": 2236,
+   "ParentPID": 2876,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\windowsDevicerecoverytool.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\windowsDevicerecoverytool.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578068916618
+  },
+  {
+   "OID": "5e0f6bc43f4aa964747f38e0",
+   "ProcessID": 3800,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" ",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1578068932180
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e0f6bb53f4aa964747eaf19",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0f6bb53f4aa964747eaf19",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0f6bb53f4aa964747eaf19",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e0f6bb53f4aa964747eaf19",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5e0f6bc43f4aa964747f38e0",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e0f6ba83f4aa964747e9c6e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0f6ba83f4aa964747e9c89",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e0f6ba83f4aa964747e9c89",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e0f6ba83f4aa964747e9c89",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

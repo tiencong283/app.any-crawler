@@ -1,0 +1,81 @@
+{
+ "Name": "WYdgTaSsr",
+ "Md5": "8a9de3832e75c5e4e030f4deb78bdf53",
+ "UUID": "76577c3d-c371-457f-8397-493883e636ae",
+ "Processes": [
+  {
+   "OID": "5db050f31a72394b8dda167f",
+   "ProcessID": 2132,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WYdgTaSsr.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WYdgTaSsr.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571836146711
+  },
+  {
+   "OID": "5db050f31a72394b8dda168a",
+   "ProcessID": 4064,
+   "ParentPID": 2132,
+   "CommandLine": "--bd6ccba4",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WYdgTaSsr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571836147336
+  },
+  {
+   "OID": "5db050fb1a72394b8dda1a4f",
+   "ProcessID": 3296,
+   "ParentPID": 4064,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571836155070
+  },
+  {
+   "OID": "5db050fb1a72394b8dda1a5b",
+   "ProcessID": 1504,
+   "ParentPID": 3296,
+   "CommandLine": "--b583abe8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571836155508
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db050fb1a72394b8dda1a5b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db050fb1a72394b8dda1a4f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db050f31a72394b8dda168a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db050f31a72394b8dda168a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db050f31a72394b8dda168a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db050f31a72394b8dda167f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

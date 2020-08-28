@@ -1,0 +1,86 @@
+{
+ "Name": "task1.bin",
+ "Md5": "b356ddc2348a102711ccd47a65b6cbcf",
+ "UUID": "4e346647-b0bb-4bc8-bd18-3b4b4951ddc9",
+ "Processes": [
+  {
+   "OID": "5dcda74fe79bda65a40ad698",
+   "ProcessID": 1940,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\task1.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\task1.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573758799338
+  },
+  {
+   "OID": "5dcda750e79bda65a40adc62",
+   "ProcessID": 2992,
+   "ParentPID": 1940,
+   "CommandLine": "--600f0c29",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\task1.bin.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573758799807
+  },
+  {
+   "OID": "5dcda754e79bda65a40adfa9",
+   "ProcessID": 2212,
+   "ParentPID": 2992,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573758804385
+  },
+  {
+   "OID": "5dcda755e79bda65a40ae08b",
+   "ProcessID": 3576,
+   "ParentPID": 2212,
+   "CommandLine": "--25c59a38",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573758804666
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcda755e79bda65a40ae08b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcda755e79bda65a40ae08b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcda754e79bda65a40adfa9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcda750e79bda65a40adc62",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcda750e79bda65a40adc62",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcda750e79bda65a40adc62",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcda74fe79bda65a40ad698",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

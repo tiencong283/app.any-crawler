@@ -1,0 +1,144 @@
+{
+ "Name": "DFB.exe",
+ "Md5": "13a2562c9e04496dc9a45c5b444a2725",
+ "UUID": "63f0b864-740b-4595-a58e-1566df49ee71",
+ "Processes": [
+  {
+   "OID": "5c0a8919f04488049d68d11b",
+   "ProcessID": 3452,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\DFB.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\DFB.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1544194328853
+  },
+  {
+   "OID": "5c0a8948f04488049d68d473",
+   "ProcessID": 3244,
+   "ParentPID": 3452,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\juBTYxEuU\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp492F.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1544194375853
+  },
+  {
+   "OID": "5c0a894af04488049d68da5a",
+   "ProcessID": 2952,
+   "ParentPID": 3452,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winserz.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winserz.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1544194378572
+  },
+  {
+   "OID": "5c0a894af04488049d68da5b",
+   "ProcessID": 3048,
+   "ParentPID": 3452,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1544194378588
+  },
+  {
+   "OID": "5c0a8979f04488049d68e39d",
+   "ProcessID": 3772,
+   "ParentPID": 2952,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\juBTYxEuU\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp8E6.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1544194424900
+  },
+  {
+   "OID": "5c0a8979f04488049d68e4fc",
+   "ProcessID": 788,
+   "ParentPID": 2952,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\MSBuild.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1544194425057
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c0a8979f04488049d68e39d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c0a894af04488049d68da5a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c0a894af04488049d68da5a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5c0a894af04488049d68da5b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c0a8919f04488049d68d11b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c0a894af04488049d68da5b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c0a894af04488049d68da5b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c0a8919f04488049d68d11b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c0a8919f04488049d68d11b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c0a8919f04488049d68d10b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c0a8948f04488049d68d473",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c0a8919f04488049d68d11b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c0a8919f04488049d68d11b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1082"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "Name": "cf21d9e2774174a79b8b0c536b471eed.exe",
+ "Md5": "9a43242adf33a285138fdd85fc4bb9eb",
+ "UUID": "b47b9fc0-4e59-4b22-8372-ceea6d0b8dda",
+ "Processes": [
+  {
+   "OID": "5de901c747a7331318c96d4a",
+   "ProcessID": 2240,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\cf21d9e2774174a79b8b0c536b471eed.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\cf21d9e2774174a79b8b0c536b471eed.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1575551431388
+  },
+  {
+   "OID": "5de901ce47a7331318c970a5",
+   "ProcessID": 392,
+   "ParentPID": 2240,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\NVIDIA Web Helper.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\NVIDIA Web Helper.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575551437841
+  },
+  {
+   "OID": "5de901d447a7331318c97678",
+   "ProcessID": 1992,
+   "ParentPID": 392,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\NVIDIA Web Helper.exe\" \"NVIDIA Web Helper.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1575551443997
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5de901ce47a7331318c970a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de901ce47a7331318c970a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5de901ce47a7331318c970a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de901ce47a7331318c970a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de901ce47a7331318c970a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de901ce47a7331318c970a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5de901ce47a7331318c970a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5de901c747a7331318c96d4a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5de901c747a7331318c96d4a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5de901c747a7331318c96d4a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

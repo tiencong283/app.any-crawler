@@ -1,0 +1,129 @@
+{
+ "Name": "REVISED POPI_RN651W.exe",
+ "Md5": "a476e59b6177bdbf3b30c6a939b6ba21",
+ "UUID": "f2f68926-a06f-4e2b-8f40-c6e42e06abab",
+ "Processes": [
+  {
+   "OID": "5bb90cca1bba19503368f647",
+   "ProcessID": 3324,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\REVISED POPI_RN651W.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\REVISED POPI_RN651W.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1538854089804
+  },
+  {
+   "OID": "5bb90cca1bba19503368f651",
+   "ProcessID": 4000,
+   "ParentPID": 3324,
+   "CommandLine": "\"cmd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1538854090226
+  },
+  {
+   "OID": "5bb90cca1bba19503368f653",
+   "ProcessID": 3384,
+   "ParentPID": 4000,
+   "CommandLine": "reg  add \"HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\" /v Load /t REG_SZ /d \"C:\\Users\\admin\\AppData\\Local\\Temp\\FolderN\\name.exe.lnk\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1538854090351
+  },
+  {
+   "OID": "5bb90ccb1bba19503368fab6",
+   "ProcessID": 1384,
+   "ParentPID": 3324,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\notepad.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\notepad.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1538854090585
+  },
+  {
+   "OID": "5bb90ccb1bba19503368fab7",
+   "ProcessID": 3516,
+   "ParentPID": 3324,
+   "CommandLine": "cmd /c C:\\Users\\admin\\AppData\\Local\\Temp\\FolderN\\name.exe.bat",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1538854090898
+  },
+  {
+   "OID": "5bb90ccb1bba19503368fab9",
+   "ProcessID": 544,
+   "ParentPID": 3516,
+   "CommandLine": "timeout  /t 300",
+   "Image": "C:\\Windows\\system32\\timeout.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1538854090960
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bb90ccb1bba19503368fab6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bb90ccb1bba19503368fab6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bb90ccb1bba19503368fab6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bb90cca1bba19503368f647",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bb90cca1bba19503368f647",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bb90cca1bba19503368f647",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bb90cca1bba19503368f653",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bb90cca1bba19503368f651",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bb90cca1bba19503368f651",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5bb90cca1bba19503368f647",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bb90cca1bba19503368f647",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

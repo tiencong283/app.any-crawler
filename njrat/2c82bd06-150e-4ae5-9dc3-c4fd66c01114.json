@@ -1,0 +1,141 @@
+{
+ "Name": "c96ec446b56e098c5320177650f76dc7",
+ "Md5": "c96ec446b56e098c5320177650f76dc7",
+ "UUID": "2c82bd06-150e-4ae5-9dc3-c4fd66c01114",
+ "Processes": [
+  {
+   "OID": "5c9de04b844aee09f2640aeb",
+   "ProcessID": 3036,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\c96ec446b56e098c5320177650f76dc7.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\c96ec446b56e098c5320177650f76dc7.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1553850442660
+  },
+  {
+   "OID": "5c9de04b844aee09f26410b5",
+   "ProcessID": 2176,
+   "ParentPID": 3036,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553850443128
+  },
+  {
+   "OID": "5c9de052844aee09f26416a9",
+   "ProcessID": 3588,
+   "ParentPID": 2176,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553850449441
+  },
+  {
+   "OID": "5c9de05c844aee09f2642038",
+   "ProcessID": 2668,
+   "ParentPID": 3036,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn WinBioDataModelOOBE /tr \"C:\\Users\\admin\\PrintBrmUi\\adtschema.exe\" /sc  minute /mo 1 /F",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553850459347
+  },
+  {
+   "OID": "5c9de070844aee09f264262d",
+   "ProcessID": 2220,
+   "ParentPID": 280,
+   "CommandLine": "C:\\Users\\admin\\PrintBrmUi\\adtschema.exe ",
+   "Image": "C:\\Users\\admin\\PrintBrmUi\\adtschema.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1553850480207
+  },
+  {
+   "OID": "5c9de071844aee09f264271b",
+   "ProcessID": 2988,
+   "ParentPID": 2220,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553850480519
+  },
+  {
+   "OID": "5c9de081844aee09f2642ca6",
+   "ProcessID": 3444,
+   "ParentPID": 2220,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn WinBioDataModelOOBE /tr \"C:\\Users\\admin\\PrintBrmUi\\adtschema.exe\" /sc  minute /mo 1 /F",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553850496722
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c9de081844aee09f2642ca6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c9de070844aee09f264262d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c9de04b844aee09f2640adb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9de05c844aee09f2642038",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c9de04b844aee09f2640aeb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9de04b844aee09f2640aeb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5c9de04b844aee09f26410b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9de04b844aee09f26410b5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c9de04b844aee09f26410b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9de04b844aee09f26410b5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c9de04b844aee09f26410b5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

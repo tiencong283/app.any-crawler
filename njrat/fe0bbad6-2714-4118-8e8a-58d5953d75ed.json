@@ -1,0 +1,155 @@
+{
+ "Name": "88f6a5beca1bd8d815b75ffb836e89fbee849410076d4c06619ce47e0782b52d.exe",
+ "Md5": "84c2aeba83268c99423807bae0ddaad3",
+ "UUID": "fe0bbad6-2714-4118-8e8a-58d5953d75ed",
+ "Processes": [
+  {
+   "OID": "5ea4f7280ccd7063abd1fc0f",
+   "ProcessID": 3664,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\88f6a5beca1bd8d815b75ffb836e89fbee849410076d4c06619ce47e0782b52d.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\88f6a5beca1bd8d815b75ffb836e89fbee849410076d4c06619ce47e0782b52d.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587869479442
+  },
+  {
+   "OID": "5ea4f7280ccd7063abd1ff1b",
+   "ProcessID": 280,
+   "ParentPID": 3664,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\88f6a5beca1bd8d815b75ffb836e89fbee849410076d4c06619ce47e0782b52d.exe\" -el -s2 \"-dC:/windows/system32\" \"-sp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\88f6a5beca1bd8d815b75ffb836e89fbee849410076d4c06619ce47e0782b52d.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587869480255
+  },
+  {
+   "OID": "5ea4f7280ccd7063abd20604",
+   "ProcessID": 2916,
+   "ParentPID": 280,
+   "CommandLine": "cmd /c \"\"C:\\windows\\system32\\start.bat\" \"",
+   "Image": "C:\\windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587869480536
+  },
+  {
+   "OID": "5ea4f7280ccd7063abd20606",
+   "ProcessID": 2816,
+   "ParentPID": 2916,
+   "CommandLine": "Svchost.sfx.exe  -pfhcwe9f2302fgalsdkcz,asjf3123asd -dc:/windows/system32",
+   "Image": "C:\\windows\\system32\\Svchost.sfx.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587869480661
+  },
+  {
+   "OID": "5ea4f7290ccd7063abd20c44",
+   "ProcessID": 3436,
+   "ParentPID": 2816,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\Svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\Svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587869481130
+  },
+  {
+   "OID": "5ea4f72f0ccd7063abd2154c",
+   "ProcessID": 3668,
+   "ParentPID": 3436,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\RarSFX0\\Svchost.exe\" \"Svchost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587869487239
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ea4f7290ccd7063abd20c44",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea4f7290ccd7063abd20c44",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea4f7290ccd7063abd20c44",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ea4f7290ccd7063abd20c44",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea4f7290ccd7063abd20c44",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea4f7290ccd7063abd20c44",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ea4f7290ccd7063abd20c44",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ea4f7290ccd7063abd20c44",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea4f7280ccd7063abd20606",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea4f7280ccd7063abd20606",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea4f7280ccd7063abd20606",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea4f7280ccd7063abd1ff1b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5ea4f7280ccd7063abd1ff1b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea4f7280ccd7063abd1ff1b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea4f7280ccd7063abd1fc0f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ea4f7270ccd7063abd1f2d1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

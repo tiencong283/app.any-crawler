@@ -1,0 +1,174 @@
+{
+ "Name": "1.exe",
+ "Md5": "069babbe2507ac27feda88668392e719",
+ "UUID": "6ac842db-d4e8-48e3-838f-0ce5763a8c4d",
+ "Processes": [
+  {
+   "OID": "5bbda5ff6c01616c552a34e4",
+   "ProcessID": 912,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1539155455320
+  },
+  {
+   "OID": "5bbda60d6c01616c552a4214",
+   "ProcessID": 3984,
+   "ParentPID": 912,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539155469773
+  },
+  {
+   "OID": "5bbda60e6c01616c552a4220",
+   "ProcessID": 2964,
+   "ParentPID": 3984,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539155470179
+  },
+  {
+   "OID": "5bbda6106c01616c552a4865",
+   "ProcessID": 3356,
+   "ParentPID": 2964,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\Java\\Java.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539155471460
+  },
+  {
+   "OID": "5bbda6106c01616c552a4867",
+   "ProcessID": 3924,
+   "ParentPID": 3356,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\Java\\Java.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Java\\Java.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539155471538
+  },
+  {
+   "OID": "5bbda61d6c01616c552a4f62",
+   "ProcessID": 3608,
+   "ParentPID": 3924,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\Java\\Java.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Java\\Java.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539155485585
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bbda61d6c01616c552a4f62",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbda61d6c01616c552a4f62",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbda61d6c01616c552a4f62",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bbda61d6c01616c552a4f62",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbda61d6c01616c552a4f62",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbda61d6c01616c552a4f62",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bbda6106c01616c552a4867",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bbda6106c01616c552a4867",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5bbda6106c01616c552a4867",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbda60e6c01616c552a4220",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5bbda60d6c01616c552a4214",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5bbda60d6c01616c552a4214",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bbda60d6c01616c552a4214",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbda60d6c01616c552a4214",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbda5ff6c01616c552a34e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bbda5ff6c01616c552a34e4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5bbda5ff6c01616c552a34e4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bbda5ff6c01616c552a34d2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1063"
+   ]
+  }
+ ]
+}

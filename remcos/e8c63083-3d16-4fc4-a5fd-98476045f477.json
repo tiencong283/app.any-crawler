@@ -1,0 +1,91 @@
+{
+ "Name": "137.exe",
+ "Md5": "2d73d27f9bde45cd5cc3270510b09c88",
+ "UUID": "e8c63083-3d16-4fc4-a5fd-98476045f477",
+ "Processes": [
+  {
+   "OID": "5c35abec14029415dd0863f1",
+   "ProcessID": 2960,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\137.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\137.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1547021291729
+  },
+  {
+   "OID": "5c35abec14029415dd086984",
+   "ProcessID": 2200,
+   "ParentPID": 2960,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1547021292198
+  },
+  {
+   "OID": "5c35abed14029415dd086ccd",
+   "ProcessID": 2936,
+   "ParentPID": 2200,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1547021292291
+  },
+  {
+   "OID": "5c35abee14029415dd087132",
+   "ProcessID": 3544,
+   "ParentPID": 2200,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Windows System\\Windows System.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Windows System\\Windows System.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1547021293432
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c35abee14029415dd087132",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c35abee14029415dd087132",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c35abee14029415dd087132",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c35abec14029415dd086984",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c35abec14029415dd0863f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5c35abec14029415dd0863f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c35abec14029415dd0863f1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c35abec14029415dd0863f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,215 @@
+{
+ "Name": "IMG_19011012_01290_11211081.exe",
+ "Md5": "0b6d3da3389ed3e54cac2dce807cd022",
+ "UUID": "cf77b057-2b86-4c9a-a186-be6c98caeec8",
+ "Processes": [
+  {
+   "OID": "5d076a1d9f7ea8393f850f85",
+   "ProcessID": 1708,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\IMG_19011012_01290_11211081.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IMG_19011012_01290_11211081.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560767005021
+  },
+  {
+   "OID": "5d076a1d9f7ea8393f851563",
+   "ProcessID": 2664,
+   "ParentPID": 1708,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560767005427
+  },
+  {
+   "OID": "5d076a1e9f7ea8393f851904",
+   "ProcessID": 3956,
+   "ParentPID": 1708,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C choice /C Y /N /D Y /T 3 \u0026 Del \"C:\\Users\\admin\\AppData\\Local\\Temp\\IMG_19011012_01290_11211081.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560767005631
+  },
+  {
+   "OID": "5d076a1e9f7ea8393f851906",
+   "ProcessID": 3320,
+   "ParentPID": 3956,
+   "CommandLine": "choice  /C Y /N /D Y /T 3 ",
+   "Image": "C:\\Windows\\system32\\choice.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560767005724
+  },
+  {
+   "OID": "5d076a249f7ea8393f85201a",
+   "ProcessID": 3952,
+   "ParentPID": 2664,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560767011865
+  },
+  {
+   "OID": "5d076a269f7ea8393f852691",
+   "ProcessID": 3496,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\relationshipwelcome.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1560767014709
+  },
+  {
+   "OID": "5d076a309f7ea8393f854976",
+   "ProcessID": 2624,
+   "ParentPID": 600,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1560767024552
+  },
+  {
+   "OID": "5d076a989f7ea8393f8550ba",
+   "ProcessID": 852,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\relationshipwelcome.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1560767128631
+  },
+  {
+   "OID": "5d076aa69f7ea8393f85636f",
+   "ProcessID": 640,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE\" /n \"C:\\Users\\admin\\Desktop\\multioften.rtf\"",
+   "Image": "C:\\Program Files\\Microsoft Office\\Office14\\WINWORD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1560767142271
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d076aa69f7ea8393f85636f",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d076aa69f7ea8393f85636f",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d076aa69f7ea8393f85636f",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d076a989f7ea8393f8550ba",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d076a989f7ea8393f8550ba",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d076a989f7ea8393f8550ba",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d076a1d9f7ea8393f851563",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d076a309f7ea8393f854976",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d076a289f7ea8393f853268",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d076a1d9f7ea8393f850f7d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d076a1d9f7ea8393f851563",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d076a1d9f7ea8393f851563",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d076a269f7ea8393f852691",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d076a269f7ea8393f852691",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d076a1d9f7ea8393f850f7c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d076a1d9f7ea8393f850f7c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d076a1d9f7ea8393f850f7c",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d076a269f7ea8393f852691",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d076a1d9f7ea8393f851563",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d076a1e9f7ea8393f851904",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d076a1d9f7ea8393f850f85",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

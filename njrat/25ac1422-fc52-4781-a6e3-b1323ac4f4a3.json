@@ -1,0 +1,89 @@
+{
+ "Name": "Foxit PDF Editor 2.0 Build 1011 + Patch.exe",
+ "Md5": "88100dd4ee9c5ae376852f1bb3ed67dd",
+ "UUID": "25ac1422-fc52-4781-a6e3-b1323ac4f4a3",
+ "Processes": [
+  {
+   "OID": "5ee9f14952c6a765fe4b0109",
+   "ProcessID": 904,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Foxit PDF Editor 2.0 Build 1011 + Patch.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Foxit PDF Editor 2.0 Build 1011 + Patch.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592389960965
+  },
+  {
+   "OID": "5ee9f15852c6a765fe4b067d",
+   "ProcessID": 2220,
+   "ParentPID": 904,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592389975309
+  },
+  {
+   "OID": "5ee9f16852c6a765fe4b0e62",
+   "ProcessID": 3336,
+   "ParentPID": 2220,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\System32.exe\" \"System32.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592389992027
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee9f15852c6a765fe4b067d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee9f15852c6a765fe4b067d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee9f15852c6a765fe4b067d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9f15852c6a765fe4b067d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee9f15852c6a765fe4b067d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee9f15852c6a765fe4b067d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9f15852c6a765fe4b067d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9f14952c6a765fe4b0109",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ee9f14952c6a765fe4b0109",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

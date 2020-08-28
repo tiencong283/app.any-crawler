@@ -1,0 +1,187 @@
+{
+ "Name": "matabai.exe",
+ "Md5": "6d1164c84196d998a7ade140e1fd0b61",
+ "UUID": "dbd1cedc-3d62-484e-bcb9-632c526b7fdd",
+ "Processes": [
+  {
+   "OID": "5e90b19569348b5327c83975",
+   "ProcessID": 3588,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\matabai.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\matabai.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586540948950
+  },
+  {
+   "OID": "5e90b19569348b5327c83976",
+   "ProcessID": 3980,
+   "ParentPID": 3588,
+   "CommandLine": "\"schtasks.exe\" /query",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586540949184
+  },
+  {
+   "OID": "5e90b19669348b5327c83d09",
+   "ProcessID": 2808,
+   "ParentPID": 3588,
+   "CommandLine": "\"schtasks.exe\" /create /sc MINUTE /tn WinUpdtr /MO 1 /tr C:\\Users\\admin\\AppData\\Roaming\\WinUpdtr.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586540949465
+  },
+  {
+   "OID": "5e90b1b969348b5327c85328",
+   "ProcessID": 3772,
+   "ParentPID": 3588,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586540984499
+  },
+  {
+   "OID": "5e90b1b969348b5327c85678",
+   "ProcessID": 2816,
+   "ParentPID": 3588,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\matabai.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\matabai.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586540985295
+  },
+  {
+   "OID": "5e90b1b969348b5327c85679",
+   "ProcessID": 680,
+   "ParentPID": 2816,
+   "CommandLine": "\"schtasks.exe\" /query",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586540985374
+  },
+  {
+   "OID": "5e90b1bf69348b5327c86312",
+   "ProcessID": 2372,
+   "ParentPID": 3772,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586540991061
+  },
+  {
+   "OID": "5e90b1c869348b5327c86a79",
+   "ProcessID": 2556,
+   "ParentPID": 1984,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\WinUpdtr.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WinUpdtr.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1586541000014
+  },
+  {
+   "OID": "5e90b1c869348b5327c86a7a",
+   "ProcessID": 3372,
+   "ParentPID": 2556,
+   "CommandLine": "\"schtasks.exe\" /query",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586541000155
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e90b1b969348b5327c85328",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e90b1c869348b5327c86a7a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e90b1c869348b5327c86a79",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e90b1c869348b5327c86a79",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e90b1b969348b5327c85328",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e90b1b969348b5327c85679",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e90b1b969348b5327c85678",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e90b19569348b5327c83975",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e90b19569348b5327c83052",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e90b19569348b5327c83048",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e90b19669348b5327c83d09",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e90b19569348b5327c83976",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e90b19569348b5327c83975",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e90b19569348b5327c83975",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e90b19569348b5327c83975",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

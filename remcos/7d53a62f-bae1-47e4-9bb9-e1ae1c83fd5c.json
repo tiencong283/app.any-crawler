@@ -1,0 +1,98 @@
+{
+ "Name": "1.exe",
+ "Md5": "c62b6fefdc9bd1dbef797c3dce9b5ab9",
+ "UUID": "7d53a62f-bae1-47e4-9bb9-e1ae1c83fd5c",
+ "Processes": [
+  {
+   "OID": "5beccc93f4a4e87215143b98",
+   "ProcessID": 2296,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1542245523083
+  },
+  {
+   "OID": "5beccce8f4a4e87215144510",
+   "ProcessID": 896,
+   "ParentPID": 2296,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\updated\\lachy.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542245607927
+  },
+  {
+   "OID": "5beccce8f4a4e87215144511",
+   "ProcessID": 3172,
+   "ParentPID": 2296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\updated\\lachy.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\updated\\lachy.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542245607943
+  },
+  {
+   "OID": "5beccd39f4a4e87215145154",
+   "ProcessID": 3120,
+   "ParentPID": 3172,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\updated\\lachy.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\updated\\lachy.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542245688583
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5beccd39f4a4e87215145154",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5beccd39f4a4e87215145154",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5beccd39f4a4e87215145154",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5beccd39f4a4e87215145154",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5beccce8f4a4e87215144511",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5beccce8f4a4e87215144510",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5beccc93f4a4e87215143b98",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5beccc93f4a4e87215143b98",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5beccc93f4a4e87215143b98",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

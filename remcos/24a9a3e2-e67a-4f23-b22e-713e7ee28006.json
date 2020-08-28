@@ -1,0 +1,70 @@
+{
+ "Name": "vbc.exe",
+ "Md5": "8e4bee2b8683f28b25140d3cb1e81761",
+ "UUID": "24a9a3e2-e67a-4f23-b22e-713e7ee28006",
+ "Processes": [
+  {
+   "OID": "5c3b19d4eb95757d64d13b04",
+   "ProcessID": 3000,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\vbc.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\vbc.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1547377107797
+  },
+  {
+   "OID": "5c3b19d4eb95757d64d14080",
+   "ProcessID": 304,
+   "ParentPID": 3000,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1547377108250
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c3b19d8eb95757d64d14717",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5c3b19d4eb95757d64d14080",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c3b19d4eb95757d64d14080",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c3b19d4eb95757d64d14080",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c3b19d4eb95757d64d14080",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5c3b19d4eb95757d64d13b04",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c3b19d4eb95757d64d13b04",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

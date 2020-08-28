@@ -1,0 +1,63 @@
+{
+ "Name": "WindowsFormsApplication11.exe",
+ "Md5": "29992e1f2e4a6075a48f56756269986e",
+ "UUID": "b586f25c-64ff-4ac1-80eb-b259d704d6d3",
+ "Processes": [
+  {
+   "OID": "5e466f5b4399cc29917ce9d8",
+   "ProcessID": 3736,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsFormsApplication11.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WindowsFormsApplication11.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581674330654
+  },
+  {
+   "OID": "5e466f794399cc29917ceee3",
+   "ProcessID": 2312,
+   "ParentPID": 3736,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dll.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dll.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581674361216
+  },
+  {
+   "OID": "5e466f7f4399cc29917cf4f0",
+   "ProcessID": 772,
+   "ParentPID": 2312,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\dll.exe\" \"dll.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581674367373
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e466f794399cc29917ceee3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e466f794399cc29917ceee3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e466f794399cc29917ceee3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e466f794399cc29917ceee3",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e466f5b4399cc29917ce9d8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

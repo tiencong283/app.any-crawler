@@ -1,0 +1,84 @@
+{
+ "Name": "7c6422f9eec072c29c991bfa6ed0da86.exe",
+ "Md5": "84fae3696375597e5e4af4515b236163",
+ "UUID": "7ff227a6-7653-4a44-b09b-3fe04fc16672",
+ "Processes": [
+  {
+   "OID": "5ebaa8e0a9b39e75c24fe66f",
+   "ProcessID": 3176,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\7c6422f9eec072c29c991bfa6ed0da86.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\7c6422f9eec072c29c991bfa6ed0da86.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1589291231839
+  },
+  {
+   "OID": "5ebaa8e6a9b39e75c24fe9a5",
+   "ProcessID": 1780,
+   "ParentPID": 3176,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\javaw.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\javaw.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589291238339
+  },
+  {
+   "OID": "5ebaa8eca9b39e75c24fef36",
+   "ProcessID": 2336,
+   "ParentPID": 1780,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\javaw.exe\" \"javaw.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589291244495
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ebaa8e6a9b39e75c24fe9a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebaa8e6a9b39e75c24fe9a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ebaa8e6a9b39e75c24fe9a5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ebaa8e6a9b39e75c24fe9a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebaa8e6a9b39e75c24fe9a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebaa8e6a9b39e75c24fe9a5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ebaa8e0a9b39e75c24fe66f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ebaa8e0a9b39e75c24fe66f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

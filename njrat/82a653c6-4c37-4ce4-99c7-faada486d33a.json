@@ -1,0 +1,91 @@
+{
+ "Name": "kmshostdll.exe",
+ "Md5": "aa4329954201411e73b0f75820de18d0",
+ "UUID": "82a653c6-4c37-4ce4-99c7-faada486d33a",
+ "Processes": [
+  {
+   "OID": "5e263c874ae258106b1fd924",
+   "ProcessID": 1608,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\kmshostdll.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kmshostdll.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579564166694
+  },
+  {
+   "OID": "5e263c8d4ae258106b1fddbe",
+   "ProcessID": 2448,
+   "ParentPID": 1608,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\KmsHost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\KmsHost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579564173210
+  },
+  {
+   "OID": "5e263c934ae258106b1fe309",
+   "ProcessID": 1800,
+   "ParentPID": 2448,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\KmsHost.exe\" \"KmsHost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579564179382
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e263c8d4ae258106b1fddbe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e263c8d4ae258106b1fddbe",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e263c8d4ae258106b1fddbe",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e263c8d4ae258106b1fddbe",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e263c8d4ae258106b1fddbe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e263c8d4ae258106b1fddbe",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e263c8d4ae258106b1fddbe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e263c874ae258106b1fd924",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e263c874ae258106b1fd924",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

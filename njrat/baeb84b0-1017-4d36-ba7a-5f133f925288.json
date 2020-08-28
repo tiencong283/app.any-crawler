@@ -1,0 +1,160 @@
+{
+ "Name": "chrome.exe",
+ "Md5": "97307a634c75b518dbd42e74a0372593",
+ "UUID": "baeb84b0-1017-4d36-ba7a-5f133f925288",
+ "Processes": [
+  {
+   "OID": "5e2bbc4907efd9340c7af803",
+   "ProcessID": 1688,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1579924553095
+  },
+  {
+   "OID": "5e2bbc5f07efd9340c7afdd9",
+   "ProcessID": 2636,
+   "ParentPID": 592,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1579924574658
+  },
+  {
+   "OID": "5e2bbc7907efd9340c7b1acd",
+   "ProcessID": 3684,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\" ",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1579924600517
+  },
+  {
+   "OID": "5e2bbc7f07efd9340c7b2f74",
+   "ProcessID": 2520,
+   "ParentPID": 3684,
+   "CommandLine": "netstat  -q",
+   "Image": "C:\\Windows\\system32\\NETSTAT.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579924606361
+  },
+  {
+   "OID": "5e2bbc8107efd9340c7b30d1",
+   "ProcessID": 1456,
+   "ParentPID": 3684,
+   "CommandLine": "netstat  -a",
+   "Image": "C:\\Windows\\system32\\NETSTAT.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579924608626
+  },
+  {
+   "OID": "5e2bbc9207efd9340c7b3fa4",
+   "ProcessID": 3456,
+   "ParentPID": 3684,
+   "CommandLine": "netstat  -n",
+   "Image": "C:\\Windows\\system32\\NETSTAT.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579924625439
+  },
+  {
+   "OID": "5e2bbc9207efd9340c7b4076",
+   "ProcessID": 2700,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\chrome.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579924626251
+  },
+  {
+   "OID": "5e2bbcce07efd9340c7b4972",
+   "ProcessID": 3032,
+   "ParentPID": 2700,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\chrome.exe\" \"chrome.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1579924686017
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e2bbc9207efd9340c7b4076",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2bbc9207efd9340c7b4076",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e2bbc9207efd9340c7b4076",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e2bbc4907efd9340c7af803",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e2bbc4907efd9340c7af803",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2bbc4907efd9340c7af803",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2bbc7907efd9340c7b1acd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1049"
+   ]
+  },
+  {
+   "ProcessOID": "5e2bbc4907efd9340c7aeee1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2bbc4907efd9340c7aeee1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e2bbc7907efd9340c7b1acd",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e2bbc4907efd9340c7aeede",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e2bbc4907efd9340c7aeee1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e2bbc5f07efd9340c7afdd9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

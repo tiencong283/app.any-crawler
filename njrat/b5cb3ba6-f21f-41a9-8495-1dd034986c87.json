@@ -1,0 +1,110 @@
+{
+ "Name": "Bladabindi-NET c01",
+ "Md5": "e88fc6baa7bedf0d8052d67d43bc4ee3",
+ "UUID": "b5cb3ba6-f21f-41a9-8495-1dd034986c87",
+ "Processes": [
+  {
+   "OID": "5e4fdab4370a8337c72a38db",
+   "ProcessID": 3292,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Bladabindi-NET c01.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Bladabindi-NET c01.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1582291636348
+  },
+  {
+   "OID": "5e4fdabb370a8337c72a437b",
+   "ProcessID": 2220,
+   "ParentPID": 3292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WinUpdate.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WinUpdate.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582291642723
+  },
+  {
+   "OID": "5e4fdabb370a8337c72a437f",
+   "ProcessID": 2732,
+   "ParentPID": 3292,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WinUpdate.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WinUpdate.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582291642973
+  },
+  {
+   "OID": "5e4fdac1370a8337c72a4fb9",
+   "ProcessID": 1840,
+   "ParentPID": 2732,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\WinUpdate.exe\" \"WinUpdate.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582291649145
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e4fdabb370a8337c72a437f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e4fdabb370a8337c72a437f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4fdabb370a8337c72a437f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4fdabb370a8337c72a437f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4fdabb370a8337c72a437f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e4fdabb370a8337c72a437f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e4fdabb370a8337c72a437f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4fdabb370a8337c72a437f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e4fdab4370a8337c72a38db",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e4fdab4370a8337c72a38db",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4fdab4370a8337c72a38db",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

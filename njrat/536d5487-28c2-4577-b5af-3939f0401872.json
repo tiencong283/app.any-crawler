@@ -1,0 +1,77 @@
+{
+ "Name": "Firefox.update.exe",
+ "Md5": "4e60aaab4cd4a7e50a6f034a8af38ceb",
+ "UUID": "536d5487-28c2-4577-b5af-3939f0401872",
+ "Processes": [
+  {
+   "OID": "5dbb240cb5fa052cb5af1e31",
+   "ProcessID": 2456,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Firefox.update.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Firefox.update.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572545548321
+  },
+  {
+   "OID": "5dbb2417b5fa052cb5af2c57",
+   "ProcessID": 3404,
+   "ParentPID": 2456,
+   "CommandLine": "\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v2.0.50727\\\\\\\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572545559883
+  },
+  {
+   "OID": "5dbb241eb5fa052cb5af2f88",
+   "ProcessID": 3268,
+   "ParentPID": 3404,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572545566243
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dbb2417b5fa052cb5af2c57",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbb2417b5fa052cb5af2c57",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbb2417b5fa052cb5af2c57",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dbb2417b5fa052cb5af2c57",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dbb240cb5fa052cb5af1e31",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbb240cb5fa052cb5af1e31",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dbb240cb5fa052cb5af1e31",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

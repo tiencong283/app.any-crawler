@@ -1,0 +1,250 @@
+{
+ "Name": "hostdyn.exe",
+ "Md5": "6d4954791827dad9b945640a23c890a1",
+ "UUID": "046253e3-9556-4227-b26d-84f14f66ae3e",
+ "Processes": [
+  {
+   "OID": "5bc50498f2f8243f9735a180",
+   "ProcessID": 1556,
+   "ParentPID": 824,
+   "CommandLine": "\"C:\\Windows\\system32\\Dwm.exe\"",
+   "Image": "C:\\Windows\\System32\\dwm.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5bc50498f2f8243f9735a181",
+   "ProcessID": 1604,
+   "ParentPID": 1532,
+   "CommandLine": "C:\\Windows\\Explorer.EXE",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5bc50498f2f8243f9735a18a",
+   "ProcessID": 1704,
+   "ParentPID": 1520,
+   "CommandLine": "\"windanr.exe\"",
+   "Image": "C:\\Windows\\system32\\windanr.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5bc50498f2f8243f9735a18b",
+   "ProcessID": 920,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\hostdyn.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\hostdyn.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1539638423607
+  },
+  {
+   "OID": "5bc504acf2f8243f9735ae66",
+   "ProcessID": 940,
+   "ParentPID": 920,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\hostdyn.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\hostdyn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539638444060
+  },
+  {
+   "OID": "5bc504adf2f8243f9735ae71",
+   "ProcessID": 4032,
+   "ParentPID": 940,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539638444528
+  },
+  {
+   "OID": "5bc504aef2f8243f9735b504",
+   "ProcessID": 1480,
+   "ParentPID": 4032,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\Hostdyn\\hostdyn.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539638445857
+  },
+  {
+   "OID": "5bc504aef2f8243f9735b505",
+   "ProcessID": 1392,
+   "ParentPID": 400,
+   "CommandLine": "\\??\\C:\\Windows\\system32\\conhost.exe",
+   "Image": "C:\\Windows\\system32\\conhost.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 1539638445872
+  },
+  {
+   "OID": "5bc504aef2f8243f9735b506",
+   "ProcessID": 3408,
+   "ParentPID": 1480,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\Hostdyn\\hostdyn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Hostdyn\\hostdyn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539638445935
+  },
+  {
+   "OID": "5bc504c2f2f8243f9735bd5b",
+   "ProcessID": 2356,
+   "ParentPID": 3408,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\Hostdyn\\hostdyn.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Hostdyn\\hostdyn.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1539638466357
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bc504c2f2f8243f9735bd5b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bc504c2f2f8243f9735bd5b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bc504c2f2f8243f9735bd5b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bc504c2f2f8243f9735bd5b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bc504aef2f8243f9735b506",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bc504aef2f8243f9735b505",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5bc50498f2f8243f9735a180",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5bc504aef2f8243f9735b506",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5bc504aef2f8243f9735b506",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bc50498f2f8243f9735a17a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1050",
+    "T1031"
+   ]
+  },
+  {
+   "ProcessOID": "5bc504adf2f8243f9735ae71",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5bc504acf2f8243f9735ae66",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5bc50498f2f8243f9735a18a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5bc504acf2f8243f9735ae66",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5bc50498f2f8243f9735a180",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5bc50498f2f8243f9735a181",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5bc504acf2f8243f9735ae66",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bc504acf2f8243f9735ae66",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bc504acf2f8243f9735ae66",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bc50498f2f8243f9735a18b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bc50498f2f8243f9735a18b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5bc50498f2f8243f9735a18b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bc50498f2f8243f9735a179",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1063"
+   ]
+  }
+ ]
+}

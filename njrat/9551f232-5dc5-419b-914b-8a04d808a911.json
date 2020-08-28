@@ -1,0 +1,101 @@
+{
+ "Name": "c477c2178846aae5661e57ab074e4cd7ed94f97e41079f141ad7218de60162b5",
+ "Md5": "2e20775149ab5e52654c8bf7ce15ebcf",
+ "UUID": "9551f232-5dc5-419b-914b-8a04d808a911",
+ "Processes": [
+  {
+   "OID": "5e70dac626e2c95c259d6b60",
+   "ProcessID": 916,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\c477c2178846aae5661e57ab074e4cd7ed94f97e41079f141ad7218de60162b5.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\c477c2178846aae5661e57ab074e4cd7ed94f97e41079f141ad7218de60162b5.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1584454342319
+  },
+  {
+   "OID": "5e70dad026e2c95c259d76c4",
+   "ProcessID": 3876,
+   "ParentPID": 916,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584454352553
+  },
+  {
+   "OID": "5e70dad726e2c95c259d7e08",
+   "ProcessID": 272,
+   "ParentPID": 3876,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\chrome.exe\" \"chrome.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584454358960
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e70dad026e2c95c259d76c4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70dad026e2c95c259d76c4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e70dad026e2c95c259d76c4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70dad026e2c95c259d76c4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70dad026e2c95c259d76c4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e70dad026e2c95c259d76c4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e70dad026e2c95c259d76c4",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1105"
+   ]
+  },
+  {
+   "ProcessOID": "5e70dad026e2c95c259d76c4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70dac626e2c95c259d6b60",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e70dac626e2c95c259d6b60",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e70dac626e2c95c259d6b60",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

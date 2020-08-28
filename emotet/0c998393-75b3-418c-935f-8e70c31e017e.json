@@ -1,0 +1,67 @@
+{
+ "Name": "backupcrypto.exe",
+ "Md5": "6a48f38b456446b5a27b066cef6efdbd",
+ "UUID": "0c998393-75b3-418c-935f-8e70c31e017e",
+ "Processes": [
+  {
+   "OID": "5dc34ef441b4d454929705ba",
+   "ProcessID": 992,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\backupcrypto.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\backupcrypto.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573080820284
+  },
+  {
+   "OID": "5dc34ef441b4d454929705bb",
+   "ProcessID": 3956,
+   "ParentPID": 992,
+   "CommandLine": "--e4515067",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\backupcrypto.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573080820581
+  },
+  {
+   "OID": "5dc34efb41b4d4549297086d",
+   "ProcessID": 944,
+   "ParentPID": 3956,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573080827112
+  },
+  {
+   "OID": "5dc34efb41b4d4549297086e",
+   "ProcessID": 3856,
+   "ParentPID": 944,
+   "CommandLine": "--f91b2738",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573080827190
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc34efb41b4d4549297086e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc34ef441b4d454929705bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc34ef441b4d454929705bb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc34ef441b4d454929705bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

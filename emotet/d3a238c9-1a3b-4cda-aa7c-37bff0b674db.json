@@ -1,0 +1,84 @@
+{
+ "Name": "iEddg.exe",
+ "Md5": "6ce8eb50252e7988b75e95db6739ea42",
+ "UUID": "d3a238c9-1a3b-4cda-aa7c-37bff0b674db",
+ "Processes": [
+  {
+   "OID": "5db6f80e1933a726231f6091",
+   "ProcessID": 2152,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\iEddg.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\iEddg.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572272141688
+  },
+  {
+   "OID": "5db6f80e1933a726231f6092",
+   "ProcessID": 3816,
+   "ParentPID": 2152,
+   "CommandLine": "--aaf6722f",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\iEddg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572272142063
+  },
+  {
+   "OID": "5db6f8141933a726231f64ad",
+   "ProcessID": 2952,
+   "ParentPID": 3816,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572272148282
+  },
+  {
+   "OID": "5db6f8151933a726231f64ba",
+   "ProcessID": 1788,
+   "ParentPID": 2952,
+   "CommandLine": "--25c59a38",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572272148438
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db6f8151933a726231f64ba",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db6f8151933a726231f64ba",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db6f8151933a726231f64ba",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db6f8141933a726231f64ad",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db6f80e1933a726231f6092",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db6f80e1933a726231f6092",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db6f80e1933a726231f6092",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

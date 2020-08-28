@@ -1,0 +1,377 @@
+{
+ "Name": "bypass cb.exe",
+ "Md5": "0ed8607154565a46718cf904b96a0061",
+ "UUID": "56e3c4b7-1b42-42bc-9acd-a75f67c08f84",
+ "Processes": [
+  {
+   "OID": "5b2bac8b16078b35583d047f",
+   "ProcessID": 676,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\bypass cb.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\bypass cb.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1529588875428
+  },
+  {
+   "OID": "5b2bac8c16078b35583d0715",
+   "ProcessID": 1812,
+   "ParentPID": 676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\File.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\File.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529588876381
+  },
+  {
+   "OID": "5b2bac8d16078b35583d0c0a",
+   "ProcessID": 2480,
+   "ParentPID": 676,
+   "CommandLine": "\"cmd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529588876397
+  },
+  {
+   "OID": "5b2bac8d16078b35583d0c0c",
+   "ProcessID": 3848,
+   "ParentPID": 2480,
+   "CommandLine": "reg  add \"HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\" /v Load /t REG_SZ /d \"C:\\Users\\admin\\AppData\\Roaming\\cheatbreak\\cgeat.exe.lnk\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529588876475
+  },
+  {
+   "OID": "5b2bac8d16078b35583d0c0d",
+   "ProcessID": 1784,
+   "ParentPID": 676,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\bypass cb.exe\"",
+   "Image": "C:\\Users\\admin\\Desktop\\bypass cb.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529588876553
+  },
+  {
+   "OID": "5b2bac8d16078b35583d0c0e",
+   "ProcessID": 4084,
+   "ParentPID": 1784,
+   "CommandLine": "/k %windir%\\System32\\reg.exe ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529588876616
+  },
+  {
+   "OID": "5b2bac8d16078b35583d0c10",
+   "ProcessID": 1732,
+   "ParentPID": 1784,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529588876616
+  },
+  {
+   "OID": "5b2bac8d16078b35583d0c11",
+   "ProcessID": 544,
+   "ParentPID": 4084,
+   "CommandLine": "C:\\Windows\\System32\\reg.exe  ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529588876694
+  },
+  {
+   "OID": "5b2bac8d16078b35583d0c12",
+   "ProcessID": 2752,
+   "ParentPID": 1732,
+   "CommandLine": "/k %windir%\\System32\\reg.exe ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529588876709
+  },
+  {
+   "OID": "5b2bac8d16078b35583d0c14",
+   "ProcessID": 788,
+   "ParentPID": 1732,
+   "CommandLine": "C:\\Windows\\system32\\svchost.exe",
+   "Image": "C:\\Windows\\system32\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529588876725
+  },
+  {
+   "OID": "5b2bac8d16078b35583d0c15",
+   "ProcessID": 3164,
+   "ParentPID": 2752,
+   "CommandLine": "C:\\Windows\\System32\\reg.exe  ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f",
+   "Image": "C:\\Windows\\System32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529588876850
+  },
+  {
+   "OID": "5b2bac9c16078b35583d36c2",
+   "ProcessID": 1520,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Windows\\system32\\verclsid.exe\" /S /C {0B2C9183-C9FA-4C53-AE21-C900B0C39965} /I {0C733A8A-2A1C-11CE-ADE5-00AA0044773D} /X 0x401",
+   "Image": "C:\\Windows\\system32\\verclsid.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1529588892272
+  },
+  {
+   "OID": "5b2bacbc16078b35583d4f87",
+   "ProcessID": 2448,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\File.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\File.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1529588924678
+  },
+  {
+   "OID": "5b2bacce16078b35583d6f17",
+   "ProcessID": 3708,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Windows\\system32\\cmd.exe\" ",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1529588937439
+  },
+  {
+   "OID": "5b2bad3d16078b35583dcb3c",
+   "ProcessID": 3844,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Windows\\system32\\rundll32.exe\" shell32.dll,Options_RunDLL 7",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1529589053907
+  },
+  {
+   "OID": "5b2bad4816078b35583de07e",
+   "ProcessID": 2684,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\cheatbreak\\cgeat.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\cheatbreak\\cgeat.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1529589064656
+  },
+  {
+   "OID": "5b2bad4916078b35583de0b7",
+   "ProcessID": 1476,
+   "ParentPID": 2684,
+   "CommandLine": "\"cmd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529589064859
+  },
+  {
+   "OID": "5b2bad4916078b35583de0b9",
+   "ProcessID": 3140,
+   "ParentPID": 1476,
+   "CommandLine": "reg  add \"HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\" /v Load /t REG_SZ /d \"C:\\Users\\admin\\AppData\\Roaming\\cheatbreak\\cgeat.exe.lnk\" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529589064968
+  },
+  {
+   "OID": "5b2bad4916078b35583de0ba",
+   "ProcessID": 1136,
+   "ParentPID": 2684,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\cheatbreak\\cgeat.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\cheatbreak\\cgeat.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1529589065202
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b2bad4816078b35583de07e",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bad4816078b35583de07e",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bad4816078b35583de07e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bad4916078b35583de0b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bad4916078b35583de0b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bad4816078b35583de07e",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bad4816078b35583de07e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bac8b16078b35583cfdc1",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8b16078b35583cfdc1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bacbc16078b35583d4f87",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c10",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c10",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c10",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c10",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c10",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8c16078b35583d0715",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c12",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c10",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c10",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c10",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c0e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c0d",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c0d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bac8b16078b35583d047f",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c0c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c0a",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c0a",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8d16078b35583d0c0a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bac8b16078b35583d047f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bac8b16078b35583d047f",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8b16078b35583d047f",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b2bac8b16078b35583d047f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b2bac8b16078b35583d047f",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

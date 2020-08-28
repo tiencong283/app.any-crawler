@@ -1,0 +1,130 @@
+{
+ "Name": "denis.exe",
+ "Md5": "59395d054bc5d2a9dbb0a8a54c1e8fe9",
+ "UUID": "7a48d479-e51c-4d7f-9f7b-5f57d58c98dd",
+ "Processes": [
+  {
+   "OID": "5dcdc82a36d1f14627c9bae3",
+   "ProcessID": 2172,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\denis.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\denis.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573767210398
+  },
+  {
+   "OID": "5dcdc83a36d1f14627c9c943",
+   "ProcessID": 2880,
+   "ParentPID": 2172,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\2.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573767226101
+  },
+  {
+   "OID": "5dcdc83a36d1f14627c9ca8d",
+   "ProcessID": 1596,
+   "ParentPID": 2172,
+   "CommandLine": "\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v2.0.50727\\\\\\\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573767226164
+  },
+  {
+   "OID": "5dcdc83a36d1f14627c9ca8e",
+   "ProcessID": 1764,
+   "ParentPID": 2880,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c netsh advfirewall set allprofiles state on \u0026\u0026 netsh advfirewall firewall add rule name=1 protocol=TCP dir=out remoteport=3154 action=block \u0026\u0026 netsh advfirewall firewall add rule name=2 protocol=UDP dir=out remoteport=3154 action=block",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573767226429
+  },
+  {
+   "OID": "5dcdc83a36d1f14627c9ca90",
+   "ProcessID": 2828,
+   "ParentPID": 1764,
+   "CommandLine": "netsh  advfirewall set allprofiles state on ",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573767226476
+  },
+  {
+   "OID": "5dcdc84036d1f14627c9d9fe",
+   "ProcessID": 2612,
+   "ParentPID": 1596,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573767232476
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcdc83a36d1f14627c9ca8d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcdc83a36d1f14627c9ca8d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcdc83a36d1f14627c9ca8d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcdc83a36d1f14627c9ca8d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5dcdc83a36d1f14627c9ca8d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dcdc83a36d1f14627c9ca8e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dcdc83a36d1f14627c9c943",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5dcdc82a36d1f14627c9bae3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5dcdc82a36d1f14627c9bae3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcdc82a36d1f14627c9bae3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dcdc82a36d1f14627c9bae3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

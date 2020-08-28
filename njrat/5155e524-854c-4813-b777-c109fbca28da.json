@@ -1,0 +1,84 @@
+{
+ "Name": "ROYAL BYPASS 11.00.exe",
+ "Md5": "7c8859764b79e66cc703c2a5f5a402eb",
+ "UUID": "5155e524-854c-4813-b777-c109fbca28da",
+ "Processes": [
+  {
+   "OID": "5dce17f1d609a271aa80611e",
+   "ProcessID": 2776,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ROYAL BYPASS 11.00.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ROYAL BYPASS 11.00.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573787632548
+  },
+  {
+   "OID": "5dce17f1d609a271aa80611f",
+   "ProcessID": 1888,
+   "ParentPID": 2776,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp/BypassService.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\BypassService.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573787632939
+  },
+  {
+   "OID": "5dce17f3d609a271aa806ba5",
+   "ProcessID": 3884,
+   "ParentPID": 2776,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\FSBYPASSROYAL.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\FSBYPASSROYAL.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573787634127
+  },
+  {
+   "OID": "5dce17f7d609a271aa80726e",
+   "ProcessID": 1856,
+   "ParentPID": 1888,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\BypassService.exe\" \"BypassService.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573787639158
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dce17f1d609a271aa80611f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dce17f1d609a271aa80611f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dce17f3d609a271aa806ba5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dce17f3d609a271aa806ba5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dce17f3d609a271aa806ba5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5dce17f1d609a271aa80611f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dce17f1d609a271aa80611e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

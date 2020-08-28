@@ -1,0 +1,207 @@
+{
+ "Name": "wkx2vpnw89t32h.exe",
+ "Md5": "88b2f5f3b35c5cab4c3892802f83e727",
+ "UUID": "7e0a78c9-855b-4367-ace5-f2d93e9c6e95",
+ "Processes": [
+  {
+   "OID": "5dcab8551badbc616abcba6b",
+   "ProcessID": 1536,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\wkx2vpnw89t32h.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\wkx2vpnw89t32h.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573566549704
+  },
+  {
+   "OID": "5dcab8561badbc616abcc056",
+   "ProcessID": 932,
+   "ParentPID": 1536,
+   "CommandLine": "--cf6a274b",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\wkx2vpnw89t32h.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573566549923
+  },
+  {
+   "OID": "5dcab85d1badbc616abcc2c5",
+   "ProcessID": 2788,
+   "ParentPID": 932,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573566557532
+  },
+  {
+   "OID": "5dcab85e1badbc616abcc2ce",
+   "ProcessID": 2660,
+   "ParentPID": 2788,
+   "CommandLine": "--dfba43e0",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\wholesspi\\wholesspi.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573566557673
+  },
+  {
+   "OID": "5dcab86c1badbc616abcc6c8",
+   "ProcessID": 1448,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" ",
+   "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1573566571735
+  },
+  {
+   "OID": "5dcab86c1badbc616abcc72c",
+   "ProcessID": 3864,
+   "ParentPID": 1448,
+   "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\"",
+   "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573566572048
+  },
+  {
+   "OID": "5dcab86d1badbc616abccb53",
+   "ProcessID": 1732,
+   "ParentPID": 3864,
+   "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"3864.0.1908957727\\1925516971\" -parentBuildID 20190717172542 -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\" - 3864 \"\\\\.\\pipe\\gecko-crash-server-pipe.3864\" 1116 gpu",
+   "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573566572657
+  },
+  {
+   "OID": "5dcab86d1badbc616abcd414",
+   "ProcessID": 3336,
+   "ParentPID": 3864,
+   "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"3864.3.1224719219\\362013761\" -childID 1 -isForBrowser -prefsHandle 1708 -prefMapHandle 1744 -prefsLen 1 -prefMapSize 191824 -parentBuildID 20190717172542 -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\" - 3864 \"\\\\.\\pipe\\gecko-crash-server-pipe.3864\" 1664 tab",
+   "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573566573173
+  },
+  {
+   "OID": "5dcab86e1badbc616abcdd7f",
+   "ProcessID": 4072,
+   "ParentPID": 3864,
+   "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"3864.13.1613448670\\1968549445\" -childID 2 -isForBrowser -prefsHandle 2776 -prefMapHandle 2780 -prefsLen 5996 -prefMapSize 191824 -parentBuildID 20190717172542 -greomni \"C:\\Program Files\\Mozilla Firefox\\omni.ja\" -appomni \"C:\\Program Files\\Mozilla Firefox\\browser\\omni.ja\" -appdir \"C:\\Program Files\\Mozilla Firefox\\browser\" - 3864 \"\\\\.\\pipe\\gecko-crash-server-pipe.3864\" 2792 tab",
+   "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573566573970
+  },
+  {
+   "OID": "5dcab86f1badbc616abcfb2c",
+   "ProcessID": 436,
+   "ParentPID": 3864,
+   "CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\pingsender.exe\" https://incoming.telemetry.mozilla.org/submit/telemetry/8634cbf2-43f2-48ef-ad9f-44af5a2f52c9/main/Firefox/68.0.1/release/20190717172542?v=4 C:\\Users\\admin\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\qldyz51w.default\\saved-telemetry-pings\\8634cbf2-43f2-48ef-ad9f-44af5a2f52c9",
+   "Image": "C:\\Program Files\\Mozilla Firefox\\pingsender.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573566575511
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcab85e1badbc616abcc2ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5dcab85e1badbc616abcc2ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcab85e1badbc616abcc2ce",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcab85e1badbc616abcc2ce",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcab86c1badbc616abcc72c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dcab86c1badbc616abcc72c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcab86c1badbc616abcc72c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5dcab86c1badbc616abcc72c",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcab86c1badbc616abcc72c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcab86c1badbc616abcc6c8",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcab8551badbc616abcba4d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcab8551badbc616abcba4f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcab86c1badbc616abcc6c8",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dcab85d1badbc616abcc2c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcab8561badbc616abcc056",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcab8561badbc616abcc056",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcab8561badbc616abcc056",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcab8551badbc616abcba6b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

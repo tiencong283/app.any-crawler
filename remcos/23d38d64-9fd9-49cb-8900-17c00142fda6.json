@@ -1,0 +1,128 @@
+{
+ "Name": "2222.exe",
+ "Md5": "911d3b67fc317fb0c91f9b14f334722d",
+ "UUID": "23d38d64-9fd9-49cb-8900-17c00142fda6",
+ "Processes": [
+  {
+   "OID": "5b715122bd1c8a5a0ae0f861",
+   "ProcessID": 2192,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\2222.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2222.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1534152994233
+  },
+  {
+   "OID": "5b715122bd1c8a5a0ae0f862",
+   "ProcessID": 2708,
+   "ParentPID": 2192,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe\" /noconfig /fullpaths @\"C:\\Users\\admin\\AppData\\Local\\Temp\\fzfphoo1.cmdline\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534152994483
+  },
+  {
+   "OID": "5b715123bd1c8a5a0ae0fbe1",
+   "ProcessID": 3128,
+   "ParentPID": 2708,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 \"/OUT:C:\\Users\\admin\\AppData\\Local\\Temp\\RES28C5.tmp\" \"c:\\Users\\admin\\AppData\\Local\\Temp\\CSC5E43F54F5CFD4A71B78C6785F5C81D69.TMP\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\cvtres.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534152994718
+  },
+  {
+   "OID": "5b715123bd1c8a5a0ae0fbe2",
+   "ProcessID": 1180,
+   "ParentPID": 2192,
+   "CommandLine": "\"schtasks.exe\" /query",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534152994968
+  },
+  {
+   "OID": "5b715123bd1c8a5a0ae1016f",
+   "ProcessID": 2436,
+   "ParentPID": 2192,
+   "CommandLine": "\"schtasks.exe\" /create /sc MINUTE /tn winxc26 /MO 1 /tr \"C:\\Users\\admin\\null\\",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534152995202
+  },
+  {
+   "OID": "5b715123bd1c8a5a0ae10171",
+   "ProcessID": 304,
+   "ParentPID": 2192,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\AppLaunch.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\AppLaunch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534152995264
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b715123bd1c8a5a0ae10171",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b715123bd1c8a5a0ae10171",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b715123bd1c8a5a0ae10171",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b715122bd1c8a5a0ae0f112",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b715122bd1c8a5a0ae0f112",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b715123bd1c8a5a0ae1016f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5b715122bd1c8a5a0ae0f861",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b715122bd1c8a5a0ae0f861",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b715122bd1c8a5a0ae0f861",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b715123bd1c8a5a0ae0fbe2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5b715122bd1c8a5a0ae0f861",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  }
+ ]
+}

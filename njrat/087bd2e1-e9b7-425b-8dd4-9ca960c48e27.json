@@ -1,0 +1,127 @@
+{
+ "Name": "Crypter.exe",
+ "Md5": "0839109f785bb5dfa4737a4900e3f246",
+ "UUID": "087bd2e1-e9b7-425b-8dd4-9ca960c48e27",
+ "Processes": [
+  {
+   "OID": "5e43d74bff7e6f1124ef7eee",
+   "ProcessID": 3148,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Crypter.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Crypter.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581504331098
+  },
+  {
+   "OID": "5e43d74cff7e6f1124ef8525",
+   "ProcessID": 3736,
+   "ParentPID": 3148,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Crypter.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Crypter.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581504331535
+  },
+  {
+   "OID": "5e43d74cff7e6f1124ef8526",
+   "ProcessID": 3640,
+   "ParentPID": 3148,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Runtime Broker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Runtime Broker.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581504331567
+  },
+  {
+   "OID": "5e43d752ff7e6f1124ef9476",
+   "ProcessID": 2132,
+   "ParentPID": 3640,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Registry.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Registry.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581504338270
+  },
+  {
+   "OID": "5e43d758ff7e6f1124ef9b93",
+   "ProcessID": 2732,
+   "ParentPID": 2132,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Registry.exe\" \"Registry.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581504344567
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e43d752ff7e6f1124ef9476",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43d752ff7e6f1124ef9476",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e43d752ff7e6f1124ef9476",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43d752ff7e6f1124ef9476",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43d752ff7e6f1124ef9476",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e43d752ff7e6f1124ef9476",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e43d752ff7e6f1124ef9476",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43d74cff7e6f1124ef8526",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e43d74cff7e6f1124ef8526",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43d74cff7e6f1124ef8525",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43d74cff7e6f1124ef8526",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43d74bff7e6f1124ef7eee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43d74bff7e6f1124ef7eee",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

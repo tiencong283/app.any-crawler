@@ -1,0 +1,81 @@
+{
+ "Name": "IsExceptionalOLdYzdUSrU.exe",
+ "Md5": "355683d3502993e1cfa88c309ed0c836",
+ "UUID": "f6fd120f-f247-4616-b4e8-e9aa6d4c6391",
+ "Processes": [
+  {
+   "OID": "5e6784a8882736195defd66c",
+   "ProcessID": 3540,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\IsExceptionalOLdYzdUSrU.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\IsExceptionalOLdYzdUSrU.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583842472514
+  },
+  {
+   "OID": "5e6784aa882736195defea34",
+   "ProcessID": 2948,
+   "ParentPID": 3540,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\IsExceptionalOLdYzdUSrU.exe\"",
+   "Image": "C:\\Users\\admin\\Desktop\\IsExceptionalOLdYzdUSrU.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583842474327
+  },
+  {
+   "OID": "5e6784b0882736195deff033",
+   "ProcessID": 2880,
+   "ParentPID": 2948,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\Desktop\\IsExceptionalOLdYzdUSrU.exe\" \"IsExceptionalOLdYzdUSrU.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583842480498
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e6784aa882736195defea34",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e6784aa882736195defea34",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e6784aa882736195defea34",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e6784aa882736195defea34",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e6784a8882736195defd66c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e6784a8882736195defd66c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e6784a8882736195defd66c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

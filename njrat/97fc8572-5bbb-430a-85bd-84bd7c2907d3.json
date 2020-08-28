@@ -1,0 +1,72 @@
+{
+ "Name": "GzRuler.exe",
+ "Md5": "72a91329d0686147340c3251d54a57b0",
+ "UUID": "97fc8572-5bbb-430a-85bd-84bd7c2907d3",
+ "Processes": [
+  {
+   "OID": "5ebf53d40250c832fc993d26",
+   "ProcessID": 3400,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\GzRuler.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\GzRuler.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1589597140451
+  },
+  {
+   "OID": "5ebf53db0250c832fc99452a",
+   "ProcessID": 1772,
+   "ParentPID": 3400,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Chrome.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Chrome.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589597147248
+  },
+  {
+   "OID": "5ebf53e10250c832fc994b77",
+   "ProcessID": 3924,
+   "ParentPID": 1772,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\Chrome.exe\" \"Chrome.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589597153482
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ebf53db0250c832fc99452a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebf53db0250c832fc99452a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ebf53db0250c832fc99452a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ebf53d40250c832fc993d26",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ebf53d40250c832fc993d26",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ebf53d40250c832fc993d26",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

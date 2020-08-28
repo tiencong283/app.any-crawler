@@ -1,0 +1,44 @@
+{
+ "Name": "iksde.exe",
+ "Md5": "22125d9c5b9fc09441fbe4247a07cc3c",
+ "UUID": "be602774-0cd4-4e6e-a759-cfede5b12ed0",
+ "Processes": [
+  {
+   "OID": "5d4f53aee524f511d0b659fe",
+   "ProcessID": 3276,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\iksde.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\iksde.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1565479854251
+  },
+  {
+   "OID": "5d4f53b4e524f511d0b65de1",
+   "ProcessID": 2664,
+   "ParentPID": 3276,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\iksde.exe\" \"iksde.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1565479860469
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d4f53aee524f511d0b659fe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4f53aee524f511d0b659fe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d4f53aee524f511d0b659fe",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

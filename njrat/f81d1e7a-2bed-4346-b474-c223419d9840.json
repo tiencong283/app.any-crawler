@@ -1,0 +1,132 @@
+{
+ "Name": "WorM.exe",
+ "Md5": "68870edf62c09e9d50566ef865213e24",
+ "UUID": "f81d1e7a-2bed-4346-b474-c223419d9840",
+ "Processes": [
+  {
+   "OID": "5edb77eae1c6302e5619b1a7",
+   "ProcessID": 2812,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WorM.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WorM.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591441385763
+  },
+  {
+   "OID": "5edb77eae1c6302e5619b32c",
+   "ProcessID": 3884,
+   "ParentPID": 2812,
+   "CommandLine": "\"netsh.exe\" firewall set opmode disable",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591441386294
+  },
+  {
+   "OID": "5edb781ce1c6302e5619c847",
+   "ProcessID": 3852,
+   "ParentPID": 2812,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\\\pwd.dll",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\pwd.dll",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591441436403
+  },
+  {
+   "OID": "5edb781ce1c6302e5619c848",
+   "ProcessID": 2552,
+   "ParentPID": 3852,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\\\ProduKey.exe /stext C:\\Users\\admin\\AppData\\Local\\Temp\\pass5.txt",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ProduKey.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591441436560
+  },
+  {
+   "OID": "5edb781ce1c6302e5619c849",
+   "ProcessID": 3136,
+   "ParentPID": 3852,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\\\WebBrowserPassView.exe /stext C:\\Users\\admin\\AppData\\Local\\Temp\\pass6.txt",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WebBrowserPassView.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591441436669
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5edb781ce1c6302e5619c849",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edb781ce1c6302e5619c848",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edb77eae1c6302e5619b1a7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5edb781ce1c6302e5619c847",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edb781ce1c6302e5619c847",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edb77eae1c6302e5619b1a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edb77eae1c6302e5619b1a7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edb77eae1c6302e5619b1a7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edb77eae1c6302e5619b1a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5edb77eae1c6302e5619b1a7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5edb77eae1c6302e5619b1a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edb77eae1c6302e5619b1a7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5edb77eae1c6302e5619b1a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edb77eae1c6302e5619b1a7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

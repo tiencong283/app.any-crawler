@@ -1,0 +1,39 @@
+{
+ "Name": "kk.exe",
+ "Md5": "5f0b64a3687b42403ee6ea1649979eed",
+ "UUID": "aa9c4ea6-520a-43ce-8f5b-15fd7e93d2b5",
+ "Processes": [
+  {
+   "OID": "5db7de012286641a90b7410d",
+   "ProcessID": 1956,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\kk.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kk.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572331009073
+  },
+  {
+   "OID": "5db7de0a2286641a90b74524",
+   "ProcessID": 1416,
+   "ParentPID": 1956,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\kk.exe\" \"kk.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572331017620
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db7de012286641a90b7410d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db7de012286641a90b7410d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

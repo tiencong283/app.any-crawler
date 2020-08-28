@@ -1,0 +1,46 @@
+{
+ "Name": "bfsvc.exe",
+ "Md5": "bfb3158c09da3e6150e1a56b443e40de",
+ "UUID": "c55c86f1-de09-43f7-9243-93efc0e2c64f",
+ "Processes": [
+  {
+   "OID": "5ec070fbdd0389212e0af83c",
+   "ProcessID": 2612,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\bfsvc.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\bfsvc.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1589670138763
+  },
+  {
+   "OID": "5ec070fbdd0389212e0af83d",
+   "ProcessID": 2136,
+   "ParentPID": 2612,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\bfsvc.exe\" \"bfsvc.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1589670139091
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ec070fbdd0389212e0af83c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec070fbdd0389212e0af83c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ec070fbdd0389212e0af83c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

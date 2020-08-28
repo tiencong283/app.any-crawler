@@ -1,0 +1,72 @@
+{
+ "Name": "March4-TE8Nntsn.exe",
+ "Md5": "9bfd9368255522fb12bf82146f261637",
+ "UUID": "4072b5f2-d0fc-4300-bdd6-60542adc70f8",
+ "Processes": [
+  {
+   "OID": "5e5efab3a96ec80750e10ba3",
+   "ProcessID": 3808,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\March4-TE8Nntsn.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\March4-TE8Nntsn.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583282866694
+  },
+  {
+   "OID": "5e5efab9a96ec80750e10e94",
+   "ProcessID": 604,
+   "ParentPID": 3808,
+   "CommandLine": "\"C:\\ProgramData\\WmiPrvSE.exe\" ",
+   "Image": "C:\\ProgramData\\WmiPrvSE.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583282872866
+  },
+  {
+   "OID": "5e5efabfa96ec80750e11205",
+   "ProcessID": 3616,
+   "ParentPID": 604,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\WmiPrvSE.exe\" \"WmiPrvSE.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583282878991
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e5efab9a96ec80750e10e94",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5efab9a96ec80750e10e94",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e5efab9a96ec80750e10e94",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e5efab3a96ec80750e10ba3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e5efab3a96ec80750e10ba3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5efab3a96ec80750e10ba3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

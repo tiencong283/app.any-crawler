@@ -1,0 +1,80 @@
+{
+ "Name": "xplorere.exe",
+ "Md5": "a06b00453ba10d22db8c2d5ba1fa861e",
+ "UUID": "99cc63c6-4e8b-4a51-8420-814847ebaa8f",
+ "Processes": [
+  {
+   "OID": "5bd6e671a8529a211014b66f",
+   "ProcessID": 3232,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\xplorere.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\xplorere.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1540810352523
+  },
+  {
+   "OID": "5bd6e67ca8529a211014b956",
+   "ProcessID": 3380,
+   "ParentPID": 3232,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\xplorere.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\xplorere.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540810364741
+  },
+  {
+   "OID": "5bd6e687a8529a211014ba45",
+   "ProcessID": 3248,
+   "ParentPID": 3380,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540810375038
+  },
+  {
+   "OID": "5bd6e688a8529a211014baa1",
+   "ProcessID": 2952,
+   "ParentPID": 3380,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540810375538
+  },
+  {
+   "OID": "5bd6e688a8529a211014baa2",
+   "ProcessID": 3624,
+   "ParentPID": 2952,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\xplorere.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\xplorere.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540810375663
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bd6e67ca8529a211014b956",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5bd6e67ca8529a211014b956",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5bd6e67ca8529a211014b956",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd6e671a8529a211014b66f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

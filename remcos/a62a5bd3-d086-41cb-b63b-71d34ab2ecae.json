@@ -1,0 +1,188 @@
+{
+ "Name": "nano",
+ "Md5": "0af71cf50a1688edc5cde51d10f88517",
+ "UUID": "a62a5bd3-d086-41cb-b63b-71d34ab2ecae",
+ "Processes": [
+  {
+   "OID": "5b5e99638654a963b9c96a34",
+   "ProcessID": 1224,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\nano.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\nano.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1532926306618
+  },
+  {
+   "OID": "5b5e99638654a963b9c96ad6",
+   "ProcessID": 2848,
+   "ParentPID": 1224,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\nano.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\nano.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532926306946
+  },
+  {
+   "OID": "5b5e99638654a963b9c96ad7",
+   "ProcessID": 828,
+   "ParentPID": 2848,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\backdoor.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\backdoor.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532926307259
+  },
+  {
+   "OID": "5b5e99638654a963b9c96ad8",
+   "ProcessID": 3580,
+   "ParentPID": 2848,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\fire.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fire.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532926307321
+  },
+  {
+   "OID": "5b5e99648654a963b9c9704f",
+   "ProcessID": 3952,
+   "ParentPID": 828,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532926307790
+  },
+  {
+   "OID": "5b5e99648654a963b9c977b6",
+   "ProcessID": 3756,
+   "ParentPID": 3952,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532926307930
+  },
+  {
+   "OID": "5b5e99658654a963b9c97e97",
+   "ProcessID": 2076,
+   "ParentPID": 3952,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1532926308993
+  },
+  {
+   "OID": "5b5e996b8654a963b9c98188",
+   "ProcessID": 3264,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1532926314821
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b5e99658654a963b9c97e97",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99658654a963b9c97e97",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b5e99658654a963b9c97e97",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99658654a963b9c97e97",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b5e99658654a963b9c97e97",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad8",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad7",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad8",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad8",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad8",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad7",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad7",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad7",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96ad6",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b5e99638654a963b9c96a34",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

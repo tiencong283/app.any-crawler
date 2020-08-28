@@ -1,0 +1,84 @@
+{
+ "Name": "FortSkinner.exe",
+ "Md5": "8796c2836d2892749309e941c4096868",
+ "UUID": "a830be0e-ce31-4824-a00f-d8e2000449f8",
+ "Processes": [
+  {
+   "OID": "5d0d7b69cdfe714efb8edf80",
+   "ProcessID": 3196,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\FortSkinner.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\FortSkinner.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1561164648221
+  },
+  {
+   "OID": "5d0d7b6fcdfe714efb8ee33b",
+   "ProcessID": 3696,
+   "ParentPID": 3196,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\FortSkinner V 1.9.0 .exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\FortSkinner V 1.9.0 .exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561164655002
+  },
+  {
+   "OID": "5d0d7b75cdfe714efb8ee7fb",
+   "ProcessID": 3820,
+   "ParentPID": 3696,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\FortSkinner V 1.9.0 .exe\" \"FortSkinner V 1.9.0 .exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561164661284
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d0d7b6fcdfe714efb8ee33b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d0d7b6fcdfe714efb8ee33b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0d7b6fcdfe714efb8ee33b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0d7b6fcdfe714efb8ee33b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d0d7b6fcdfe714efb8ee33b",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d0d7b6fcdfe714efb8ee33b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d0d7b69cdfe714efb8edf80",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d0d7b69cdfe714efb8edf80",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

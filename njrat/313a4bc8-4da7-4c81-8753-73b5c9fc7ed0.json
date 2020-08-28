@@ -1,0 +1,46 @@
+{
+ "Name": "Hack OP.exe",
+ "Md5": "285225c519fb588475f353d49bb3ddbc",
+ "UUID": "313a4bc8-4da7-4c81-8753-73b5c9fc7ed0",
+ "Processes": [
+  {
+   "OID": "5ea9a12986a0fa6119d19798",
+   "ProcessID": 3960,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Hack OP.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Hack OP.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588175145183
+  },
+  {
+   "OID": "5ea9a12f86a0fa6119d1a1ab",
+   "ProcessID": 3840,
+   "ParentPID": 3960,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Hack OP.exe\" \"Hack OP.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588175151417
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ea9a12986a0fa6119d19798",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ea9a12986a0fa6119d19798",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ea9a12986a0fa6119d19798",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

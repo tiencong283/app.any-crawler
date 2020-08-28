@@ -1,0 +1,88 @@
+{
+ "Name": "Server.exe",
+ "Md5": "69f12aeccf74f13eaadecf91a5cc41ac",
+ "UUID": "54182372-7ba6-472b-b325-bc3f12257fef",
+ "Processes": [
+  {
+   "OID": "5e1718911518297e28367f29",
+   "ProcessID": 1560,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578571920831
+  },
+  {
+   "OID": "5e1718971518297e2836846c",
+   "ProcessID": 1708,
+   "ParentPID": 1560,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" \"Server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578571927081
+  },
+  {
+   "OID": "5e1718b01518297e2836d063",
+   "ProcessID": 3984,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\regedit.exe\" ",
+   "Image": "C:\\Windows\\regedit.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1578571952049
+  },
+  {
+   "OID": "5e1718b51518297e2836d144",
+   "ProcessID": 2524,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\regedit.exe\" ",
+   "Image": "C:\\Windows\\regedit.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1578571957581
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e1718b51518297e2836d144",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e1718b01518297e2836d063",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e1718911518297e28367f29",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1718911518297e28367f29",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1718911518297e28367f29",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1718911518297e28367f29",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e1718911518297e28367f29",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

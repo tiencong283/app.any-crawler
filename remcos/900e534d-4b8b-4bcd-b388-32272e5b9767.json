@@ -1,0 +1,113 @@
+{
+ "Name": "137.exe",
+ "Md5": "18432d843c31752d0bdfd6387e129038",
+ "UUID": "900e534d-4b8b-4bcd-b388-32272e5b9767",
+ "Processes": [
+  {
+   "OID": "5bd08dad15df0e1b199c7e0b",
+   "ProcessID": 256,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\137.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\137.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1540394412426
+  },
+  {
+   "OID": "5bd08dfd15df0e1b199c8285",
+   "ProcessID": 2580,
+   "ParentPID": 256,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\137.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\137.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394493629
+  },
+  {
+   "OID": "5bd08e2015df0e1b199c8366",
+   "ProcessID": 3336,
+   "ParentPID": 2580,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394528238
+  },
+  {
+   "OID": "5bd08e2015df0e1b199c8368",
+   "ProcessID": 2704,
+   "ParentPID": 3336,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394528317
+  },
+  {
+   "OID": "5bd08e2115df0e1b199c8999",
+   "ProcessID": 904,
+   "ParentPID": 3336,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Internet Explorer Data (32)\\Internet Explorer Data (32).exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Internet Explorer Data (32)\\Internet Explorer Data (32).exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394529379
+  },
+  {
+   "OID": "5bd08e4415df0e1b199c8b9e",
+   "ProcessID": 3540,
+   "ParentPID": 904,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Roaming\\Internet Explorer Data (32)\\Internet Explorer Data (32).exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Internet Explorer Data (32)\\Internet Explorer Data (32).exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1540394564067
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bd08e4415df0e1b199c8b9e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd08e4415df0e1b199c8b9e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08e2115df0e1b199c8999",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08dfd15df0e1b199c8285",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08dfd15df0e1b199c8285",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd08dfd15df0e1b199c8285",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bd08dfd15df0e1b199c8285",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bd08dad15df0e1b199c7e0b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

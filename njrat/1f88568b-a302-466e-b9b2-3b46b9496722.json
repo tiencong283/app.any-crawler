@@ -1,0 +1,46 @@
+{
+ "Name": "mozilla.exe",
+ "Md5": "4e13a11a0cd249654e5c6be237a32b68",
+ "UUID": "1f88568b-a302-466e-b9b2-3b46b9496722",
+ "Processes": [
+  {
+   "OID": "5ec798713c1b3e7419d05dbb",
+   "ProcessID": 1204,
+   "ParentPID": 312,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\mozilla.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\mozilla.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1590138993406
+  },
+  {
+   "OID": "5ec798783c1b3e7419d0665f",
+   "ProcessID": 4060,
+   "ParentPID": 1204,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\mozilla.exe\" \"mozilla.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590138999734
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ec798713c1b3e7419d05dbb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec798713c1b3e7419d05dbb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ec798713c1b3e7419d05dbb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

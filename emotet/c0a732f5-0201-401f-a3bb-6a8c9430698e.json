@@ -1,0 +1,69 @@
+{
+ "Name": "sample6.exe",
+ "Md5": "9ae5c8a8da62bb9998da74b60b3f2fb6",
+ "UUID": "c0a732f5-0201-401f-a3bb-6a8c9430698e",
+ "Processes": [
+  {
+   "OID": "5dbbfe407e604f214c2623d5",
+   "ProcessID": 2104,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\sample6.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sample6.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572601408793
+  },
+  {
+   "OID": "5dbbfe417e604f214c2629df",
+   "ProcessID": 2856,
+   "ParentPID": 2104,
+   "CommandLine": "--49ad7630",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\sample6.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572601408902
+  },
+  {
+   "OID": "5dbbfe477e604f214c262d00",
+   "ProcessID": 992,
+   "ParentPID": 2856,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572601415371
+  },
+  {
+   "OID": "5dbbfe477e604f214c262d01",
+   "ProcessID": 3908,
+   "ParentPID": 992,
+   "CommandLine": "--25c59a38",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572601415433
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dbbfe417e604f214c2629df",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dbbfe417e604f214c2629df",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbbfe417e604f214c2629df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbbfe407e604f214c2623d5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

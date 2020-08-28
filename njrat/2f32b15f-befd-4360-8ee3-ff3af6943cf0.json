@@ -1,0 +1,154 @@
+{
+ "Name": "02d4c7f3d9c0a0d46da44acaddfa27ca14557fe5d91b1dd6f0668f13ba3fcff3",
+ "Md5": "28391eb5af24ed647cf5c583378560b2",
+ "UUID": "2f32b15f-befd-4360-8ee3-ff3af6943cf0",
+ "Processes": [
+  {
+   "OID": "5cb691a63319dc5f19576728",
+   "ProcessID": 1344,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\02d4c7f3d9c0a0d46da44acaddfa27ca14557fe5d91b1dd6f0668f13ba3fcff3.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\02d4c7f3d9c0a0d46da44acaddfa27ca14557fe5d91b1dd6f0668f13ba3fcff3.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1555468709681
+  },
+  {
+   "OID": "5cb691b73319dc5f195775a5",
+   "ProcessID": 3884,
+   "ParentPID": 604,
+   "CommandLine": "C:\\Windows\\system32\\DllHost.exe /Processid:{76D0CB12-7604-4048-B83C-1005C7DDC503}",
+   "Image": "C:\\Windows\\system32\\DllHost.exe",
+   "ProcessType": "Embedded COM++",
+   "CreationTimestamp": 1555468726838
+  },
+  {
+   "OID": "5cb691b73319dc5f195775a6",
+   "ProcessID": 2556,
+   "ParentPID": 1344,
+   "CommandLine": "\"cmd.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555468727041
+  },
+  {
+   "OID": "5cb691b73319dc5f195775a8",
+   "ProcessID": 3424,
+   "ParentPID": 2556,
+   "CommandLine": "reg  add \"HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\" /v Load /t REG_SZ /d \"C:\\Users\\admin\\AppData\\Roaming\\FolderN\\name.exe.lnk \" /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555468727150
+  },
+  {
+   "OID": "5cb691b83319dc5f195779e2",
+   "ProcessID": 3600,
+   "ParentPID": 1344,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\02d4c7f3d9c0a0d46da44acaddfa27ca14557fe5d91b1dd6f0668f13ba3fcff3.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\02d4c7f3d9c0a0d46da44acaddfa27ca14557fe5d91b1dd6f0668f13ba3fcff3.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555468727384
+  },
+  {
+   "OID": "5cb691b83319dc5f195779e3",
+   "ProcessID": 2384,
+   "ParentPID": 1344,
+   "CommandLine": "cmd /c C:\\Users\\admin\\AppData\\Roaming\\FolderN\\name.exe.bat",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555468727494
+  },
+  {
+   "OID": "5cb691b83319dc5f195779e5",
+   "ProcessID": 4084,
+   "ParentPID": 2384,
+   "CommandLine": "timeout  /t 300",
+   "Image": "C:\\Windows\\system32\\timeout.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555468727588
+  },
+  {
+   "OID": "5cb691be3319dc5f19578259",
+   "ProcessID": 3360,
+   "ParentPID": 3600,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\02d4c7f3d9c0a0d46da44acaddfa27ca14557fe5d91b1dd6f0668f13ba3fcff3.exe\" \"02d4c7f3d9c0a0d46da44acaddfa27ca14557fe5d91b1dd6f0668f13ba3fcff3.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1555468733541
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cb691b83319dc5f195779e2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb691b83319dc5f195779e2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cb691a63319dc5f19576728",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cb691a63319dc5f19576728",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb691a63319dc5f19576728",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb691b73319dc5f195775a8",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cb691b73319dc5f195775a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb691b73319dc5f195775a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb691b73319dc5f195775a6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5cb691a63319dc5f19576728",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cb691a63319dc5f19576728",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5cb691a63319dc5f19576717",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

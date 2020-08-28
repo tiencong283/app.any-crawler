@@ -1,0 +1,82 @@
+{
+ "Name": "Server.exe",
+ "Md5": "6059d417d4d9e9b497b0779582e69254",
+ "UUID": "fd797630-bb49-402e-8820-c9d014741c68",
+ "Processes": [
+  {
+   "OID": "5e43e01a3d7ed531d36be7eb",
+   "ProcessID": 1688,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581506586798
+  },
+  {
+   "OID": "5e43e0213d7ed531d36bf176",
+   "ProcessID": 2076,
+   "ParentPID": 1688,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" \"Server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581506592939
+  },
+  {
+   "OID": "5e43e0213d7ed531d36bf178",
+   "ProcessID": 3952,
+   "ParentPID": 1688,
+   "CommandLine": "taskkill /F /IM msseces.exe",
+   "Image": "C:\\Windows\\system32\\taskkill.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581506592970
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e43e01a3d7ed531d36be7eb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43e01a3d7ed531d36be7eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43e01a3d7ed531d36be7eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43e01a3d7ed531d36be7eb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e43e01a3d7ed531d36be7eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43e01a3d7ed531d36be7eb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e43e01a3d7ed531d36be7eb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e43e01a3d7ed531d36be7eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "Name": "fortnite.exe",
+ "Md5": "1ffec16ea97e5a8dfa5af17d116470ef",
+ "UUID": "e20a38ab-1ba4-4b5b-8eac-586c5e6408ff",
+ "Processes": [
+  {
+   "OID": "5be417017ce95178c72248da",
+   "ProcessID": 2316,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\fortnite.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fortnite.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1541674752341
+  },
+  {
+   "OID": "5be4170a7ce95178c7224eb9",
+   "ProcessID": 3632,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1541674761622
+  },
+  {
+   "OID": "5be4174b7ce95178c722533d",
+   "ProcessID": 2752,
+   "ParentPID": 2316,
+   "CommandLine": "C:\\Windows\\system32\\msiexec.exe",
+   "Image": "C:\\Windows\\system32\\msiexec.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541674826981
+  },
+  {
+   "OID": "5be4174d7ce95178c7225917",
+   "ProcessID": 2104,
+   "ParentPID": 2752,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541674829544
+  },
+  {
+   "OID": "5be4175e7ce95178c7225c16",
+   "ProcessID": 3444,
+   "ParentPID": 2104,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" -nohome",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541674846263
+  },
+  {
+   "OID": "5be4175e7ce95178c7225c17",
+   "ProcessID": 3160,
+   "ParentPID": 3444,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" SCODEF:3444 CREDAT:71937",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541674846497
+  },
+  {
+   "OID": "5be4176f7ce95178c7227154",
+   "ProcessID": 3940,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\ProgramData\\AvUpdateDeb.exe\" ",
+   "Image": "C:\\ProgramData\\AvUpdateDeb.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1541674863497
+  },
+  {
+   "OID": "5be417be7ce95178c72277bd",
+   "ProcessID": 128,
+   "ParentPID": 3940,
+   "CommandLine": "C:\\Windows\\system32\\msiexec.exe",
+   "Image": "C:\\Windows\\system32\\msiexec.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541674941622
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5be417be7ce95178c72277bd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be417be7ce95178c72277bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be417be7ce95178c72277bd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be417be7ce95178c72277bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5be417be7ce95178c72277bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be4175e7ce95178c7225c17",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be4175e7ce95178c7225c17",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5be4175e7ce95178c7225c17",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5be4175e7ce95178c7225c16",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1112"
+   ]
+  },
+  {
+   "ProcessOID": "5be4174d7ce95178c7225917",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5be4174b7ce95178c722533d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be417007ce95178c7224191",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1063"
+   ]
+  },
+  {
+   "ProcessOID": "5be417017ce95178c72248da",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5be417017ce95178c72248da",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be417017ce95178c72248da",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be417017ce95178c72248da",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

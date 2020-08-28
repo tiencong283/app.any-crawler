@@ -1,0 +1,60 @@
+{
+ "Name": "CR-02352018-Klubertrade .exe",
+ "Md5": "d58731abc393a44050bba983718f470c",
+ "UUID": "f4eab4a8-45ef-4f84-869b-d1dd019eb98f",
+ "Processes": [
+  {
+   "OID": "5be9e1a3cadd8053c7fb5f84",
+   "ProcessID": 1016,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\CR-02352018-Klubertrade .exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\CR-02352018-Klubertrade .exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1542054306310
+  },
+  {
+   "OID": "5be9e1a3cadd8053c7fb6311",
+   "ProcessID": 3956,
+   "ParentPID": 1016,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\" None",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542054307154
+  },
+  {
+   "OID": "5be9e1c1cadd8053c7fb653e",
+   "ProcessID": 3964,
+   "ParentPID": 1016,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542054337200
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5be9e1c1cadd8053c7fb653e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5be9e1c1cadd8053c7fb653e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be9e1a3cadd8053c7fb5f84",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5be9e1a3cadd8053c7fb5f84",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

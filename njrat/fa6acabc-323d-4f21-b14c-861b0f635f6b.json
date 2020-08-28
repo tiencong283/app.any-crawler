@@ -1,0 +1,93 @@
+{
+ "Name": "New-Client.exe",
+ "Md5": "aaad19c98c3cbba6a1f17718fb2e59ad",
+ "UUID": "fa6acabc-323d-4f21-b14c-861b0f635f6b",
+ "Processes": [
+  {
+   "OID": "5c9f4fe70dee0b02cd41744a",
+   "ProcessID": 1728,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\New-Client.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\New-Client.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1553944551294
+  },
+  {
+   "OID": "5c9f4fed0dee0b02cd41879e",
+   "ProcessID": 4056,
+   "ParentPID": 1728,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WinDIR\\winSvc.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WinDIR\\winSvc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553944556888
+  },
+  {
+   "OID": "5c9f50250dee0b02cd4244e6",
+   "ProcessID": 864,
+   "ParentPID": 4056,
+   "CommandLine": "Shutdown /s /f /t 00",
+   "Image": "C:\\Windows\\system32\\Shutdown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553944612982
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c9f4fed0dee0b02cd41879e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9f4fed0dee0b02cd41879e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9f4fed0dee0b02cd41879e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c9f4fed0dee0b02cd41879e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5c9f4fed0dee0b02cd41879e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5c9f4fed0dee0b02cd41879e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5c9f4fe70dee0b02cd41744a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c9f4fe70dee0b02cd41744a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9f4fe70dee0b02cd41744a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "Name": "Giftcard Gen.exe",
+ "Md5": "dec25a3204657e7f4f0383e16c8425ae",
+ "UUID": "4a669fdd-570f-4c25-bac0-5cb5b9440e15",
+ "Processes": [
+  {
+   "OID": "5ca6f08b00731247292d57c3",
+   "ProcessID": 2352,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Giftcard Gen.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Giftcard Gen.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1554444426742
+  },
+  {
+   "OID": "5ca6f08c00731247292d5a25",
+   "ProcessID": 3824,
+   "ParentPID": 2352,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554444427680
+  },
+  {
+   "OID": "5ca6f08c00731247292d5bfc",
+   "ProcessID": 1976,
+   "ParentPID": 2352,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\System32\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554444428664
+  },
+  {
+   "OID": "5ca6f08d00731247292d5e9d",
+   "ProcessID": 2152,
+   "ParentPID": 1976,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Giftcard Gen.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Giftcard Gen.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554444428867
+  },
+  {
+   "OID": "5ca6f08e00731247292d6425",
+   "ProcessID": 2472,
+   "ParentPID": 2152,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Giftcard Gen.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Giftcard Gen.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554444429383
+  },
+  {
+   "OID": "5ca6f08e00731247292d6426",
+   "ProcessID": 2760,
+   "ParentPID": 2152,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554444429476
+  },
+  {
+   "OID": "5ca6f09400731247292d6fcd",
+   "ProcessID": 3644,
+   "ParentPID": 2760,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1554444435945
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ca6f08e00731247292d6426",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca6f08d00731247292d5e9d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ca6f08e00731247292d6426",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ca6f08e00731247292d6426",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ca6f08e00731247292d6425",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca6f08d00731247292d5e9d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca6f08d00731247292d5e9d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ca6f08b00731247292d57c3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5ca6f08b00731247292d57c3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  }
+ ]
+}

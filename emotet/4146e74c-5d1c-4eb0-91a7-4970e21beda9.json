@@ -1,0 +1,118 @@
+{
+ "Name": "b253",
+ "Md5": "0b5d7cc6045d36b1606b0b1d56cb3c3d",
+ "UUID": "4146e74c-5d1c-4eb0-91a7-4970e21beda9",
+ "Processes": [
+  {
+   "OID": "5dbd34c9ede1bb48e7e2b3d7",
+   "ProcessID": 2456,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\b253.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\b253.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572680904939
+  },
+  {
+   "OID": "5dbd34c9ede1bb48e7e2b3d8",
+   "ProcessID": 3968,
+   "ParentPID": 2456,
+   "CommandLine": "--3a72c0f2",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\b253.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572680905048
+  },
+  {
+   "OID": "5dbd34d0ede1bb48e7e2b6d8",
+   "ProcessID": 2668,
+   "ParentPID": 3968,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572680912251
+  },
+  {
+   "OID": "5dbd34d0ede1bb48e7e2b6d9",
+   "ProcessID": 492,
+   "ParentPID": 2668,
+   "CommandLine": "--25c59a38",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572680912314
+  },
+  {
+   "OID": "5dbd34e4ede1bb48e7e2bc8e",
+   "ProcessID": 2196,
+   "ParentPID": 492,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\1207.tmp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572680931845
+  },
+  {
+   "OID": "5dbd34e4ede1bb48e7e2bc8f",
+   "ProcessID": 2476,
+   "ParentPID": 492,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\1237.tmp\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572680931861
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dbd34e4ede1bb48e7e2bc8e",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dbd34e4ede1bb48e7e2bc8f",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5dbd34d0ede1bb48e7e2b6d9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dbd34d0ede1bb48e7e2b6d9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dbd34d0ede1bb48e7e2b6d9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbd34d0ede1bb48e7e2b6d9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbd34c9ede1bb48e7e2b3d8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbd34c9ede1bb48e7e2b3d8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dbd34c9ede1bb48e7e2b3d8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

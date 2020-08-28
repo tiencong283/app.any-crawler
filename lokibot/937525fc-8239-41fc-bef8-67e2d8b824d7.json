@@ -1,0 +1,82 @@
+{
+ "Name": "malware9.exe",
+ "Md5": "65391fedf04e8fd1237005ab7f75b776",
+ "UUID": "937525fc-8239-41fc-bef8-67e2d8b824d7",
+ "Processes": [
+  {
+   "OID": "5e56925095a0067543970406",
+   "ProcessID": 3448,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\malware9.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\malware9.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1582731856054
+  },
+  {
+   "OID": "5e56925195a0067543970722",
+   "ProcessID": 3244,
+   "ParentPID": 3448,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\malware9.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582731856679
+  },
+  {
+   "OID": "5e56926d95a0067543970adc",
+   "ProcessID": 3168,
+   "ParentPID": 3448,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1582731885382
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e56926d95a0067543970adc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e56926d95a0067543970adc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e56926d95a0067543970adc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e56926d95a0067543970adc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e56925095a006754396fc80",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e56926d95a0067543970adc",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e56926d95a0067543970adc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e56925095a0067543970406",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

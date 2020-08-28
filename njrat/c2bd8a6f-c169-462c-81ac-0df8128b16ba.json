@@ -1,0 +1,46 @@
+{
+ "Name": "Facebook.exe",
+ "Md5": "4423ede1461f2f94ca65345e1c6a5616",
+ "UUID": "c2bd8a6f-c169-462c-81ac-0df8128b16ba",
+ "Processes": [
+  {
+   "OID": "5da04dbe9b76a12d14e8e379",
+   "ProcessID": 2660,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Facebook.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Facebook.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1570786749663
+  },
+  {
+   "OID": "5da04dc49b76a12d14e8e5fc",
+   "ProcessID": 1728,
+   "ParentPID": 2660,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Facebook.exe\" \"Facebook.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570786755835
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5da04dbe9b76a12d14e8e379",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da04dbe9b76a12d14e8e379",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5da04dbe9b76a12d14e8e379",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

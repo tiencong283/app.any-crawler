@@ -1,0 +1,108 @@
+{
+ "Name": "onetap.su.exe",
+ "Md5": "27b9c6caab7b7622b5b52b9bc8e8ab75",
+ "UUID": "8fa79344-460d-40c6-93ed-08f5b32d49ec",
+ "Processes": [
+  {
+   "OID": "5d1f9365db1c673d38b9499d",
+   "ProcessID": 3044,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\onetap.su.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\onetap.su.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1562350437386
+  },
+  {
+   "OID": "5d1f936bdb1c673d38b94c19",
+   "ProcessID": 2376,
+   "ParentPID": 3044,
+   "CommandLine": "\"C:\\ProgramData\\server.exe\" ",
+   "Image": "C:\\ProgramData\\server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562350443761
+  },
+  {
+   "OID": "5d1f9372db1c673d38b94f56",
+   "ProcessID": 1256,
+   "ParentPID": 2376,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\server.exe\" \"server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562350450042
+  },
+  {
+   "OID": "5d1f9372db1c673d38b94f58",
+   "ProcessID": 2488,
+   "ParentPID": 2376,
+   "CommandLine": "taskkill /F /IM Exsample.exe",
+   "Image": "C:\\Windows\\system32\\taskkill.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562350450073
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d1f936bdb1c673d38b94c19",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f936bdb1c673d38b94c19",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f936bdb1c673d38b94c19",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f936bdb1c673d38b94c19",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f936bdb1c673d38b94c19",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f936bdb1c673d38b94c19",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f936bdb1c673d38b94c19",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f936bdb1c673d38b94c19",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f9365db1c673d38b9499d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d1f9365db1c673d38b9499d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1f9365db1c673d38b9499d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

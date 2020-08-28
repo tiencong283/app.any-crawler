@@ -1,0 +1,122 @@
+{
+ "Name": "ZoroXGame.exe",
+ "Md5": "21e8a33f808b6359e648ebc9b43460cd",
+ "UUID": "46a71161-7334-4251-a2f3-b91da3f36d96",
+ "Processes": [
+  {
+   "OID": "5e8b374722030d3d0309c320",
+   "ProcessID": 3044,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\ZoroXGame.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\ZoroXGame.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1586181959319
+  },
+  {
+   "OID": "5e8b374d22030d3d0309c6d7",
+   "ProcessID": 3924,
+   "ParentPID": 3044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Microsoft.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Microsoft.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586181965725
+  },
+  {
+   "OID": "5e8b375422030d3d0309cc4c",
+   "ProcessID": 3640,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\Opera\\opera.exe\" ",
+   "Image": "C:\\Program Files\\Opera\\opera.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1586181971600
+  },
+  {
+   "OID": "5e8b375522030d3d0309d6ec",
+   "ProcessID": 3996,
+   "ParentPID": 3924,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Microsoft.exe\" \"Microsoft.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1586181972960
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e8b374d22030d3d0309c6d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e8b374d22030d3d0309c6d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8b375422030d3d0309cc4c",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8b374d22030d3d0309c6d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8b375422030d3d0309cc4c",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8b374d22030d3d0309c6d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e8b374d22030d3d0309c6d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8b374d22030d3d0309c6d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e8b374d22030d3d0309c6d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e8b374d22030d3d0309c6d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e8b375422030d3d0309cc4c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e8b374722030d3d0309c320",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e8b374722030d3d0309c320",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

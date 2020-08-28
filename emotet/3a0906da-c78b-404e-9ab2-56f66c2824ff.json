@@ -1,0 +1,91 @@
+{
+ "Name": "zhWm.exe",
+ "Md5": "607712e80cd4d8544672fa9936b70a61",
+ "UUID": "3a0906da-c78b-404e-9ab2-56f66c2824ff",
+ "Processes": [
+  {
+   "OID": "5dcc0c0267189f3b80fe3ac8",
+   "ProcessID": 2456,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\zhWm.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\zhWm.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573653505606
+  },
+  {
+   "OID": "5dcc0c0267189f3b80fe3d11",
+   "ProcessID": 1404,
+   "ParentPID": 2456,
+   "CommandLine": "--69c2aa8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\zhWm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573653506044
+  },
+  {
+   "OID": "5dcc0c0867189f3b80fe4065",
+   "ProcessID": 2912,
+   "ParentPID": 1404,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\sansidaho\\sansidaho.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\sansidaho\\sansidaho.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573653512591
+  },
+  {
+   "OID": "5dcc0c0967189f3b80fe4070",
+   "ProcessID": 3376,
+   "ParentPID": 2912,
+   "CommandLine": "--a6fef274",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\sansidaho\\sansidaho.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573653512763
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcc0c0967189f3b80fe4070",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc0c0967189f3b80fe4070",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc0c0967189f3b80fe4070",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc0c0867189f3b80fe4065",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc0c0867189f3b80fe4065",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcc0c0267189f3b80fe3d11",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcc0c0267189f3b80fe3d11",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcc0c0267189f3b80fe3ac8",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

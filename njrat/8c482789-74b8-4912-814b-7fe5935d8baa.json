@@ -1,0 +1,82 @@
+{
+ "Name": "LocalRFaEdBDciN.exe",
+ "Md5": "586eabe917f7faf260da62491fe689be",
+ "UUID": "8c482789-74b8-4912-814b-7fe5935d8baa",
+ "Processes": [
+  {
+   "OID": "5e4029597324737b7072b3ca",
+   "ProcessID": 3352,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\LocalRFaEdBDciN.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\LocalRFaEdBDciN.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581263192670
+  },
+  {
+   "OID": "5e40295f7324737b7072b6e0",
+   "ProcessID": 3620,
+   "ParentPID": 3352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT v0.7d.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT v0.7d.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581263199139
+  },
+  {
+   "OID": "5e4029657324737b7072bc56",
+   "ProcessID": 2620,
+   "ParentPID": 3620,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\njRAT v0.7d.exe\" \"njRAT v0.7d.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581263205436
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e40295f7324737b7072b6e0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e40295f7324737b7072b6e0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e40295f7324737b7072b6e0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e40295f7324737b7072b6e0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e40295f7324737b7072b6e0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e40295f7324737b7072b6e0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e4029597324737b7072b3ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e4029597324737b7072b3ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

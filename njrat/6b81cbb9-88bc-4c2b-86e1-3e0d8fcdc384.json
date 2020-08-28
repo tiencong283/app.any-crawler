@@ -1,0 +1,51 @@
+{
+ "Name": "Fabinhoff-x.exe",
+ "Md5": "c2239cad2f39f29a55f4bf06b2d0f632",
+ "UUID": "6b81cbb9-88bc-4c2b-86e1-3e0d8fcdc384",
+ "Processes": [
+  {
+   "OID": "5e5d7c325554d72d05f19d69",
+   "ProcessID": 3500,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Fabinhoff-x.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Fabinhoff-x.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583184946041
+  },
+  {
+   "OID": "5e5d7c385554d72d05f1a136",
+   "ProcessID": 2728,
+   "ParentPID": 3500,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Fabinhoff-x.exe\" \"Fabinhoff-x.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583184952229
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e5d7c325554d72d05f19d69",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5d7c325554d72d05f19d69",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5d7c325554d72d05f19d69",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e5d7c325554d72d05f19d69",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

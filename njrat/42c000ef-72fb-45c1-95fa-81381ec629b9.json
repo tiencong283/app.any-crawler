@@ -1,0 +1,115 @@
+{
+ "Name": "Synapse_X_Installer_Cracked.exe",
+ "Md5": "ef561379b216eba1a879d60f9349f626",
+ "UUID": "42c000ef-72fb-45c1-95fa-81381ec629b9",
+ "Processes": [
+  {
+   "OID": "5ceb5af495b5193d3177b6df",
+   "ProcessID": 3104,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Synapse_X_Installer_Cracked.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Synapse_X_Installer_Cracked.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1558928110002
+  },
+  {
+   "OID": "5ceb5af595b5193d3177c0b6",
+   "ProcessID": 3000,
+   "ParentPID": 3104,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558928116377
+  },
+  {
+   "OID": "5ceb5afb95b5193d3177c69a",
+   "ProcessID": 2560,
+   "ParentPID": 3000,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\svchost.exe\" \"svchost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558928122517
+  },
+  {
+   "OID": "5ceb5afb95b5193d3177c69c",
+   "ProcessID": 2820,
+   "ParentPID": 3000,
+   "CommandLine": "taskkill /F /IM Exsample.exe",
+   "Image": "C:\\Windows\\system32\\taskkill.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558928122549
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ceb5af595b5193d3177c0b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ceb5af595b5193d3177c0b6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ceb5af595b5193d3177c0b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ceb5af595b5193d3177c0b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ceb5af595b5193d3177c0b6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ceb5af595b5193d3177c0b6",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ceb5af595b5193d3177c0b6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ceb5af495b5193d3177b6df",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ceb5af495b5193d3177b6df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ceb5af495b5193d3177b6df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ceb5af495b5193d3177b6df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ceb5af495b5193d3177b6cc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

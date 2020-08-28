@@ -1,0 +1,82 @@
+{
+ "Name": "los.exe",
+ "Md5": "86df169180a48524f52e6b563e9ae27c",
+ "UUID": "509e0f0a-e413-4ab1-9a5b-fdbe0e6e3f3f",
+ "Processes": [
+  {
+   "OID": "5e4adc57078fe606bcde4d96",
+   "ProcessID": 1516,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\los.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\los.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581964375079
+  },
+  {
+   "OID": "5e4adc5d078fe606bcde50ea",
+   "ProcessID": 3728,
+   "ParentPID": 1516,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\los.exe\" \"los.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581964381204
+  },
+  {
+   "OID": "5e4adc5d078fe606bcde50ec",
+   "ProcessID": 3408,
+   "ParentPID": 1516,
+   "CommandLine": "taskkill /F /IM msseces.exe",
+   "Image": "C:\\Windows\\system32\\taskkill.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581964381220
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e4adc57078fe606bcde4d96",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4adc57078fe606bcde4d96",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4adc57078fe606bcde4d96",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e4adc57078fe606bcde4d96",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4adc57078fe606bcde4d96",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4adc57078fe606bcde4d96",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4adc57078fe606bcde4d96",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e4adc57078fe606bcde4d96",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

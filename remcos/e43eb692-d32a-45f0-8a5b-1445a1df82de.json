@@ -1,0 +1,189 @@
+{
+ "Name": "Cortana.exe",
+ "Md5": "4598f18854719507599b01dc4b529c71",
+ "UUID": "e43eb692-d32a-45f0-8a5b-1445a1df82de",
+ "Processes": [
+  {
+   "OID": "5bed7d51c15f9107e86272cf",
+   "ProcessID": 3032,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1542290769454
+  },
+  {
+   "OID": "5bed7d5dc15f9107e8627591",
+   "ProcessID": 2472,
+   "ParentPID": 3032,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542290780829
+  },
+  {
+   "OID": "5bed7d5dc15f9107e8627592",
+   "ProcessID": 2260,
+   "ParentPID": 3032,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe\" 2 2472 6144750",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542290780844
+  },
+  {
+   "OID": "5bed7d5ec15f9107e86278b6",
+   "ProcessID": 3424,
+   "ParentPID": 2472,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542290781501
+  },
+  {
+   "OID": "5bed7d5ec15f9107e86278b8",
+   "ProcessID": 920,
+   "ParentPID": 3424,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542290781766
+  },
+  {
+   "OID": "5bed7d5fc15f9107e8627d52",
+   "ProcessID": 3192,
+   "ParentPID": 3424,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft Audio Card\\Microsoft Audio Card.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft Audio Card\\Microsoft Audio Card.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542290782876
+  },
+  {
+   "OID": "5bed7d61c15f9107e8627f0e",
+   "ProcessID": 2824,
+   "ParentPID": 2260,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542290785438
+  },
+  {
+   "OID": "5bed7d63c15f9107e8627ff1",
+   "ProcessID": 1968,
+   "ParentPID": 3192,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft Audio Card\\Microsoft Audio Card.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft Audio Card\\Microsoft Audio Card.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542290787438
+  },
+  {
+   "OID": "5bed7d63c15f9107e8627ff2",
+   "ProcessID": 3952,
+   "ParentPID": 3192,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft Audio Card\\Microsoft Audio Card.exe\" 2 1968 6151343",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft Audio Card\\Microsoft Audio Card.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542290787438
+  },
+  {
+   "OID": "5bed7d7ac15f9107e8628243",
+   "ProcessID": 3308,
+   "ParentPID": 2824,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542290809907
+  },
+  {
+   "OID": "5bed7d7ac15f9107e8628244",
+   "ProcessID": 3292,
+   "ParentPID": 2824,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe\" 2 3308 6173828",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Cortana.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542290809922
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5bed7d61c15f9107e8627f0e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bed7d63c15f9107e8627ff1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bed7d63c15f9107e8627ff1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5bed7d63c15f9107e8627ff1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bed7d63c15f9107e8627ff1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bed7d5fc15f9107e8627d52",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bed7d5dc15f9107e8627592",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5bed7d5ec15f9107e86278b6",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bed7d5dc15f9107e8627591",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5bed7d5dc15f9107e8627591",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5bed7d5dc15f9107e8627591",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bed7d5dc15f9107e8627591",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5bed7d51c15f9107e86272cf",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

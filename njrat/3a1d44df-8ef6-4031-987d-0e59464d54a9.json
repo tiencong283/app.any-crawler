@@ -1,0 +1,143 @@
+{
+ "Name": "Gerador de Discord Nitro.exe",
+ "Md5": "bf33b717d04f201e6d99ef6b2a5e0d5c",
+ "UUID": "3a1d44df-8ef6-4031-987d-0e59464d54a9",
+ "Processes": [
+  {
+   "OID": "5d17faaa87c29266fa7265df",
+   "ProcessID": 1652,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Gerador de Discord Nitro.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Gerador de Discord Nitro.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1561852585357
+  },
+  {
+   "OID": "5d17faaa87c29266fa726832",
+   "ProcessID": 3536,
+   "ParentPID": 1652,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\BwjEvlBHtsdNtLZqUpYdEtqjDBTtNTPdgyO.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\BwjEvlBHtsdNtLZqUpYdEtqjDBTtNTPdgyO.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561852586013
+  },
+  {
+   "OID": "5d17fab187c29266fa726c37",
+   "ProcessID": 3664,
+   "ParentPID": 3536,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\RuntimeBroker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\RuntimeBroker.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561852592654
+  },
+  {
+   "OID": "5d17fab287c29266fa72719b",
+   "ProcessID": 2596,
+   "ParentPID": 1652,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\XitnNfBQmgT2I87K1u1dsr57J4culS3FY3G.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\XitnNfBQmgT2I87K1u1dsr57J4culS3FY3G.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561852593607
+  },
+  {
+   "OID": "5d17fab287c29266fa72737d",
+   "ProcessID": 3240,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1561852594545
+  },
+  {
+   "OID": "5d17fab787c29266fa727eb6",
+   "ProcessID": 2436,
+   "ParentPID": 3664,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\RuntimeBroker.exe\" \"RuntimeBroker.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561852599060
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d17fab187c29266fa726c37",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d17fab187c29266fa726c37",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d17fab187c29266fa726c37",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d17fab187c29266fa726c37",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d17fab187c29266fa726c37",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d17fab187c29266fa726c37",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d17fab287c29266fa72719b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d17fab287c29266fa72737d",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d17fab187c29266fa726c37",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d17faaa87c29266fa726832",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d17faaa87c29266fa726832",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d17faaa87c29266fa726832",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d17faaa87c29266fa726832",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d17faaa87c29266fa7265df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

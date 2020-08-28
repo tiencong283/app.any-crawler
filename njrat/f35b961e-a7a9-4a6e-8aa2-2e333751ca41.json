@@ -1,0 +1,84 @@
+{
+ "Name": "unload.exe",
+ "Md5": "1427bf0645673419106a1167d48f08f5",
+ "UUID": "f35b961e-a7a9-4a6e-8aa2-2e333751ca41",
+ "Processes": [
+  {
+   "OID": "5edf664df8e43e256d8acce4",
+   "ProcessID": 2948,
+   "ParentPID": 468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\unload.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\unload.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591699020925
+  },
+  {
+   "OID": "5edf6654f8e43e256d8ad06e",
+   "ProcessID": 3200,
+   "ParentPID": 2948,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591699027769
+  },
+  {
+   "OID": "5edf665af8e43e256d8ad62c",
+   "ProcessID": 2256,
+   "ParentPID": 3200,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" \"Server.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591699033925
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5edf6654f8e43e256d8ad06e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edf6654f8e43e256d8ad06e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5edf6654f8e43e256d8ad06e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edf6654f8e43e256d8ad06e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5edf6654f8e43e256d8ad06e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5edf6654f8e43e256d8ad06e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5edf664df8e43e256d8acce4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5edf664df8e43e256d8acce4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

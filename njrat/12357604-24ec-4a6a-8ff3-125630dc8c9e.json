@@ -1,0 +1,112 @@
+{
+ "Name": "PROBIV FBI 3.0.1.exe",
+ "Md5": "6b2c11e1644cfd88b1a34d4c2eddbfbc",
+ "UUID": "12357604-24ec-4a6a-8ff3-125630dc8c9e",
+ "Processes": [
+  {
+   "OID": "5cf687889d6ba42b4b06ccc0",
+   "ProcessID": 1076,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\PROBIV FBI 3.0.1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\PROBIV FBI 3.0.1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1559660423672
+  },
+  {
+   "OID": "5cf6878e9d6ba42b4b06d0b2",
+   "ProcessID": 3888,
+   "ParentPID": 1076,
+   "CommandLine": "schtasks /create /sc minute /mo 1 /tn Server /tr C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1559660430234
+  },
+  {
+   "OID": "5cf687939d6ba42b4b06d6e0",
+   "ProcessID": 572,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1559660435375
+  },
+  {
+   "OID": "5cf687ac9d6ba42b4b06dfe0",
+   "ProcessID": 1824,
+   "ParentPID": 4012,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp/Server.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1559660460000
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cf687ac9d6ba42b4b06dfe0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cf687889d6ba42b4b06ccc0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf687889d6ba42b4b06ccc0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf687939d6ba42b4b06d6e0",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5cf687889d6ba42b4b06c556",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf6878e9d6ba42b4b06d0b2",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cf687889d6ba42b4b06ccc0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5cf687889d6ba42b4b06ccc0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cf687889d6ba42b4b06ccc0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cf687889d6ba42b4b06ccc0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cf687889d6ba42b4b06ccc0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

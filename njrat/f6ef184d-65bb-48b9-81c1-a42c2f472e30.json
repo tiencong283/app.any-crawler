@@ -1,0 +1,63 @@
+{
+ "Name": "다기능.exe",
+ "Md5": "4c5d276f75b5f2b0795b9b48925e6c8f",
+ "UUID": "f6ef184d-65bb-48b9-81c1-a42c2f472e30",
+ "Processes": [
+  {
+   "OID": "5eaa466abdd5ba6f52e69d96",
+   "ProcessID": 1064,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\다기능.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\다기능.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588217450082
+  },
+  {
+   "OID": "5eaa4670bdd5ba6f52e6a6f6",
+   "ProcessID": 2640,
+   "ParentPID": 1064,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\다기능.exe\" \"다기능.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588217456238
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eaa466abdd5ba6f52e69d96",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eaa466abdd5ba6f52e69d96",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaa466abdd5ba6f52e69d96",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaa466abdd5ba6f52e69d96",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaa466abdd5ba6f52e69d96",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eaa466abdd5ba6f52e69d96",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

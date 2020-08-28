@@ -1,0 +1,75 @@
+{
+ "Name": "KYC-INQUIRY0718.exe",
+ "Md5": "09e836d94778ef15f0bebabd9814ed79",
+ "UUID": "990be463-3e5d-41dc-a9be-4dfa54d8e8db",
+ "Processes": [
+  {
+   "OID": "5b404c54a2ec29626a2f055a",
+   "ProcessID": 1992,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\KYC-INQUIRY0718.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\KYC-INQUIRY0718.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1530940500255
+  },
+  {
+   "OID": "5b404c54a2ec29626a2f055b",
+   "ProcessID": 556,
+   "ParentPID": 1992,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\KYC-INQUIRY0718.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\KYC-INQUIRY0718.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1530940500520
+  },
+  {
+   "OID": "5b404c55a2ec29626a2f094c",
+   "ProcessID": 1208,
+   "ParentPID": 556,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1530940500708
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b404c55a2ec29626a2f094c",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b404c54a2ec29626a2f055b",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b404c54a2ec29626a2f055b",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b404c54a2ec29626a2f055a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b404c54a2ec29626a2f055a",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b404c54a2ec29626a2f055a",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b404c54a2ec29626a2f055a",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

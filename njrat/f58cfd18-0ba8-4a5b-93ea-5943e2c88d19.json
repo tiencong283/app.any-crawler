@@ -1,0 +1,163 @@
+{
+ "Name": "Discordhaxx Golden Edition.exe",
+ "Md5": "fc0956d3c9606e4c517f29e1603405fe",
+ "UUID": "f58cfd18-0ba8-4a5b-93ea-5943e2c88d19",
+ "Processes": [
+  {
+   "OID": "5e9fc2f8b600fc4c7ad6bec1",
+   "ProcessID": 3860,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Discordhaxx Golden Edition.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Discordhaxx Golden Edition.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587528439641
+  },
+  {
+   "OID": "5e9fc2f8b600fc4c7ad6c724",
+   "ProcessID": 3104,
+   "ParentPID": 3860,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\CDS.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\CDS.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587528439969
+  },
+  {
+   "OID": "5e9fc2f9b600fc4c7ad6ccfc",
+   "ProcessID": 2384,
+   "ParentPID": 3104,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\crypted.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\crypted.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587528440858
+  },
+  {
+   "OID": "5e9fc2ffb600fc4c7ad6d6bd",
+   "ProcessID": 2888,
+   "ParentPID": 2384,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\discord.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\discord.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587528447479
+  },
+  {
+   "OID": "5e9fc306b600fc4c7ad6dd52",
+   "ProcessID": 3500,
+   "ParentPID": 2888,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\discord.exe\" \"discord.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587528453834
+  },
+  {
+   "OID": "5e9fc311b600fc4c7ad6eb89",
+   "ProcessID": 3444,
+   "ParentPID": 2888,
+   "CommandLine": "netsh firewall delete allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\discord.exe\"",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587528464775
+  },
+  {
+   "OID": "5e9fc311b600fc4c7ad6eb8a",
+   "ProcessID": 3052,
+   "ParentPID": 2888,
+   "CommandLine": "cmd.exe /c ping 0 -n 2 \u0026 del \"C:\\Users\\admin\\AppData\\Local\\Temp\\discord.exe\"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587528464838
+  },
+  {
+   "OID": "5e9fc311b600fc4c7ad6eb8d",
+   "ProcessID": 1900,
+   "ParentPID": 3052,
+   "CommandLine": "ping  0 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587528465104
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e9fc2ffb600fc4c7ad6d6bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1107"
+   ]
+  },
+  {
+   "ProcessOID": "5e9fc2ffb600fc4c7ad6d6bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e9fc2ffb600fc4c7ad6d6bd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9fc2ffb600fc4c7ad6d6bd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9fc2ffb600fc4c7ad6d6bd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e9fc2ffb600fc4c7ad6d6bd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e9fc2ffb600fc4c7ad6d6bd",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9fc2f9b600fc4c7ad6ccfc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e9fc2f9b600fc4c7ad6ccfc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9fc2f8b600fc4c7ad6c724",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e9fc2f8b600fc4c7ad6c724",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9fc2f9b600fc4c7ad6ccfc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9fc2f8b600fc4c7ad6c724",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9fc2f8b600fc4c7ad6bec1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

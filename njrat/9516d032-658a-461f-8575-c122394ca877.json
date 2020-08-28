@@ -1,0 +1,90 @@
+{
+ "Name": "Server.exe",
+ "Md5": "472177cf955cb43f57eafe3fcdd48aa0",
+ "UUID": "9516d032-658a-461f-8575-c122394ca877",
+ "Processes": [
+  {
+   "OID": "5db75967ad51a22a673639ca",
+   "ProcessID": 2532,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Server.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1572297062867
+  },
+  {
+   "OID": "5db75967ad51a22a67363fd0",
+   "ProcessID": 1596,
+   "ParentPID": 2532,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Trojan.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Trojan.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572297063335
+  },
+  {
+   "OID": "5db75968ad51a22a673642e4",
+   "ProcessID": 3316,
+   "ParentPID": 1596,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Trojan.exe\" \"Trojan.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1572297063476
+  },
+  {
+   "OID": "5db7597dad51a22a67366575",
+   "ProcessID": 688,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\rundll32.exe\" shell32.dll,Control_RunDLL inetcpl.cpl,,0",
+   "Image": "C:\\Windows\\system32\\rundll32.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1572297084976
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db75967ad51a22a673639c2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1085"
+   ]
+  },
+  {
+   "ProcessOID": "5db7597dad51a22a67366575",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5db75967ad51a22a67363fd0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db75967ad51a22a67363fd0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5db75967ad51a22a67363fd0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5db75967ad51a22a673639ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db75967ad51a22a673639ca",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

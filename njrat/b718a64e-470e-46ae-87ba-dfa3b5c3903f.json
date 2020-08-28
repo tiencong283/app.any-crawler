@@ -1,0 +1,84 @@
+{
+ "Name": "Transformice Account Recover.exe",
+ "Md5": "424be9539bd0a7683f5bbef33939bd10",
+ "UUID": "b718a64e-470e-46ae-87ba-dfa3b5c3903f",
+ "Processes": [
+  {
+   "OID": "5eaed391eb7eec1d999159ff",
+   "ProcessID": 2812,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Transformice Account Recover.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Transformice Account Recover.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588515729002
+  },
+  {
+   "OID": "5eaed391eb7eec1d9991605a",
+   "ProcessID": 3096,
+   "ParentPID": 2812,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\windowsupdater.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\windowsupdater.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588515729330
+  },
+  {
+   "OID": "5eaed391eb7eec1d9991605b",
+   "ProcessID": 1536,
+   "ParentPID": 3096,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\windowsupdater.exe\" \"windowsupdater.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588515729409
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eaed391eb7eec1d9991605a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaed391eb7eec1d9991605a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eaed391eb7eec1d9991605a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eaed391eb7eec1d9991605a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaed391eb7eec1d9991605a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eaed391eb7eec1d9991605a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5eaed391eb7eec1d999159ff",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eaed391eb7eec1d999159ff",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

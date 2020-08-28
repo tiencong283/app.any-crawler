@@ -1,0 +1,81 @@
+{
+ "Name": "3-372.exe",
+ "Md5": "75b4208d69eee7c273c9337a29c4ca58",
+ "UUID": "43af301e-c82a-4c62-8e1e-3edadebf8d26",
+ "Processes": [
+  {
+   "OID": "5da5dc79118a025c893bfe4e",
+   "ProcessID": 1556,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3-372.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3-372.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571150969558
+  },
+  {
+   "OID": "5da5dc7a118a025c893c041b",
+   "ProcessID": 2156,
+   "ParentPID": 1556,
+   "CommandLine": "--e5eb4a18",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3-372.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571150970167
+  },
+  {
+   "OID": "5da5dc81118a025c893c06b3",
+   "ProcessID": 2092,
+   "ParentPID": 2156,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571150977183
+  },
+  {
+   "OID": "5da5dc81118a025c893c07eb",
+   "ProcessID": 2960,
+   "ParentPID": 2092,
+   "CommandLine": "--f91b2738",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571150977636
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5da5dc81118a025c893c07eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da5dc81118a025c893c06b3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5da5dc7a118a025c893c041b",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da5dc7a118a025c893c041b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da5dc7a118a025c893c041b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5da5dc79118a025c893bfe4e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

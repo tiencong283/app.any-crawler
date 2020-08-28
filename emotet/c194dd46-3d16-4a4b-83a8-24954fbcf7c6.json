@@ -1,0 +1,79 @@
+{
+ "Name": "extract.bin",
+ "Md5": "d58203b05624a1fdeef88bbc3576448d",
+ "UUID": "c194dd46-3d16-4a4b-83a8-24954fbcf7c6",
+ "Processes": [
+  {
+   "OID": "5db02106d4caed35187b85eb",
+   "ProcessID": 2160,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\extract.bin.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\extract.bin.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571823878361
+  },
+  {
+   "OID": "5db02107d4caed35187b85f7",
+   "ProcessID": 4016,
+   "ParentPID": 2160,
+   "CommandLine": "--34f1347e",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\extract.bin.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571823878657
+  },
+  {
+   "OID": "5db0210dd4caed35187b89a7",
+   "ProcessID": 3200,
+   "ParentPID": 4016,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571823885298
+  },
+  {
+   "OID": "5db0210dd4caed35187b89a8",
+   "ProcessID": 2576,
+   "ParentPID": 3200,
+   "CommandLine": "--b583abe8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571823885376
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5db0210dd4caed35187b89a8",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db0210dd4caed35187b89a8",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db02107d4caed35187b85f7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5db02107d4caed35187b85f7",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db02107d4caed35187b85f7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5db02106d4caed35187b85eb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "Name": "fuddddd.exe",
+ "Md5": "3133895b4ee7d50cd97f5387af360693",
+ "UUID": "f163c693-2f58-4a02-b0eb-ba4463e6f7bb",
+ "Processes": [
+  {
+   "OID": "5e4671b99e82a214661bfd5f",
+   "ProcessID": 3888,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\fuddddd.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fuddddd.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1581674936848
+  },
+  {
+   "OID": "5e4671d99e82a214661c02f7",
+   "ProcessID": 3828,
+   "ParentPID": 3888,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\dll.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\dll.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581674969614
+  },
+  {
+   "OID": "5e4671df9e82a214661c08c3",
+   "ProcessID": 2836,
+   "ParentPID": 3828,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\dll.exe\" \"dll.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1581674975848
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e4671d99e82a214661c02f7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e4671d99e82a214661c02f7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4671d99e82a214661c02f7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4671d99e82a214661c02f7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e4671d99e82a214661c02f7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e4671b99e82a214661bfd5f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

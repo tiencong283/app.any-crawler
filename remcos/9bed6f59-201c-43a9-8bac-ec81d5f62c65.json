@@ -1,0 +1,125 @@
+{
+ "Name": "papa",
+ "Md5": "ffd1fb75d8695dacec3268ffc35a4c3b",
+ "UUID": "9bed6f59-201c-43a9-8bac-ec81d5f62c65",
+ "Processes": [
+  {
+   "OID": "5b8771129e0b1e677bd5e944",
+   "ProcessID": 2744,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\papa.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\papa.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1535602961613
+  },
+  {
+   "OID": "5b8771129e0b1e677bd5e94b",
+   "ProcessID": 3772,
+   "ParentPID": 2744,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe\" /noconfig /fullpaths @\"C:\\Users\\admin\\AppData\\Local\\Temp\\x34a4qku.cmdline\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535602961973
+  },
+  {
+   "OID": "5b8771129e0b1e677bd5e94d",
+   "ProcessID": 2672,
+   "ParentPID": 3772,
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 \"/OUT:C:\\Users\\admin\\AppData\\Local\\Temp\\RES5830.tmp\" \"c:\\Users\\admin\\AppData\\Local\\Temp\\CSC91B10BC2F01746FEB60E1ECEDA5A827.TMP\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\cvtres.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535602962223
+  },
+  {
+   "OID": "5b8771129e0b1e677bd5ef8c",
+   "ProcessID": 2968,
+   "ParentPID": 2744,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\vbc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535602962410
+  },
+  {
+   "OID": "5b8771139e0b1e677bd5f3b7",
+   "ProcessID": 2320,
+   "ParentPID": 2968,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\install.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535602962879
+  },
+  {
+   "OID": "5b8771149e0b1e677bd5f9c9",
+   "ProcessID": 3864,
+   "ParentPID": 2320,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c \"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535602964270
+  },
+  {
+   "OID": "5b8771159e0b1e677bd5fa3a",
+   "ProcessID": 868,
+   "ParentPID": 3864,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1535602964379
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b8771159e0b1e677bd5fa3a",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8771139e0b1e677bd5f3b7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b8771129e0b1e677bd5ef8c",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8771129e0b1e677bd5ef8c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5b8771129e0b1e677bd5ef8c",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8771129e0b1e677bd5ef8c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b8771129e0b1e677bd5ef8c",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8771129e0b1e677bd5ef8c",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b8771129e0b1e677bd5e944",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  }
+ ]
+}

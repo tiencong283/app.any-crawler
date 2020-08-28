@@ -1,0 +1,65 @@
+{
+ "Name": "4900a10952356a538f4d64c27d240404",
+ "Md5": "4900a10952356a538f4d64c27d240404",
+ "UUID": "8bb0fcea-9b8f-4779-a53f-31165958c2e6",
+ "Processes": [
+  {
+   "OID": "5ce51abd2a88eb24c909941a",
+   "ProcessID": 3392,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\4900a10952356a538f4d64c27d240404.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\4900a10952356a538f4d64c27d240404.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1558518461207
+  },
+  {
+   "OID": "5ce51ada2a88eb24c9099fb1",
+   "ProcessID": 2076,
+   "ParentPID": 3392,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558518489379
+  },
+  {
+   "OID": "5ce51ae02a88eb24c909a5fa",
+   "ProcessID": 1524,
+   "ParentPID": 2076,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegSvcs.exe\" \"RegSvcs.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558518495957
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ce51ada2a88eb24c9099fb1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce51ada2a88eb24c9099fb1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ce51abd2a88eb24c909941a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ce51abd2a88eb24c909941a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ce51abd2a88eb24c909941a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

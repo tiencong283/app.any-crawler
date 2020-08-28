@@ -1,0 +1,121 @@
+{
+ "Name": "Jailbreak Cash Exploit V2.exe",
+ "Md5": "a9292e4bcf106f50421d0b9a97cfde56",
+ "UUID": "7b994d6d-189e-4344-aa3a-b1046c70e552",
+ "Processes": [
+  {
+   "OID": "5d474252d7be5a526635e897",
+   "ProcessID": 2468,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Jailbreak Cash Exploit V2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Jailbreak Cash Exploit V2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1564951122439
+  },
+  {
+   "OID": "5d474259d7be5a526635f224",
+   "ProcessID": 3268,
+   "ParentPID": 2468,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\WService.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\WService.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564951129048
+  },
+  {
+   "OID": "5d47425fd7be5a526635f76d",
+   "ProcessID": 2492,
+   "ParentPID": 3268,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\WService.exe\" \"WService.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1564951135283
+  },
+  {
+   "OID": "5d47426bd7be5a5266360931",
+   "ProcessID": 3504,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Windows\\system32\\NOTEPAD.EXE\" C:\\Users\\admin\\Desktop\\cock.txt",
+   "Image": "C:\\Windows\\system32\\NOTEPAD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1564951146595
+  },
+  {
+   "OID": "5d47427bd7be5a52663613e5",
+   "ProcessID": 3144,
+   "ParentPID": 128,
+   "CommandLine": "\"C:\\Windows\\system32\\NOTEPAD.EXE\" C:\\Users\\admin\\Desktop\\cock.txt",
+   "Image": "C:\\Windows\\system32\\NOTEPAD.EXE",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1564951163204
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d47427bd7be5a52663613e5",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d474252d7be5a526635e88d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d474252d7be5a526635e88d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d47426bd7be5a5266360931",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d474259d7be5a526635f224",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d474259d7be5a526635f224",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d474259d7be5a526635f224",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d474259d7be5a526635f224",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d474252d7be5a526635e897",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d474252d7be5a526635e897",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d474252d7be5a526635e897",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

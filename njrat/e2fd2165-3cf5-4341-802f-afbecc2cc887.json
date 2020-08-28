@@ -1,0 +1,153 @@
+{
+ "Name": "Steam Keys.EXE",
+ "Md5": "c35828d81992b32ea1b918b907a83bc2",
+ "UUID": "e2fd2165-3cf5-4341-802f-afbecc2cc887",
+ "Processes": [
+  {
+   "OID": "5eb03d85c4b3d3181b3fccf0",
+   "ProcessID": 1852,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Steam Keys.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Steam Keys.EXE",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1588608389301
+  },
+  {
+   "OID": "5eb03d86c4b3d3181b3fd369",
+   "ProcessID": 1092,
+   "ParentPID": 1852,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\FAKE_S~1.EXE",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\FAKE_S~1.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588608389473
+  },
+  {
+   "OID": "5eb03d86c4b3d3181b3fd36a",
+   "ProcessID": 3956,
+   "ParentPID": 1092,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\3582-490\\FAKE_S~1.EXE\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\3582-490\\FAKE_S~1.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588608389817
+  },
+  {
+   "OID": "5eb03d91c4b3d3181b41008c",
+   "ProcessID": 3128,
+   "ParentPID": 1852,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\Server.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\IXP000.TMP\\Server.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588608397739
+  },
+  {
+   "OID": "5eb03d94c4b3d3181b4112e5",
+   "ProcessID": 3744,
+   "ParentPID": 3128,
+   "CommandLine": "\"C:\\ProgramData\\Help.exe\" ",
+   "Image": "C:\\ProgramData\\Help.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588608403957
+  },
+  {
+   "OID": "5eb03d9ac4b3d3181b41178b",
+   "ProcessID": 2856,
+   "ParentPID": 3744,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\Help.exe\" \"Help.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1588608410161
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5eb03d94c4b3d3181b4112e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb03d94c4b3d3181b4112e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eb03d94c4b3d3181b4112e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5eb03d94c4b3d3181b4112e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb03d94c4b3d3181b4112e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb03d94c4b3d3181b4112e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5eb03d94c4b3d3181b4112e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb03d91c4b3d3181b41008c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5eb03d91c4b3d3181b41008c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb03d91c4b3d3181b41008c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb03d91c4b3d3181b41008c",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb03d86c4b3d3181b3fd369",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5eb03d86c4b3d3181b3fd369",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb03d86c4b3d3181b3fd36a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb03d86c4b3d3181b3fd369",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5eb03d85c4b3d3181b3fccf0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

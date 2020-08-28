@@ -1,0 +1,58 @@
+{
+ "Name": "reallysafefilev2.exe",
+ "Md5": "723080de4b2368b537ed8c9c3d8a8a99",
+ "UUID": "5d546482-9828-4160-b3d1-9b584c8b1460",
+ "Processes": [
+  {
+   "OID": "5e5c594efa079327ef9bc7cb",
+   "ProcessID": 3744,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\reallysafefilev2.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\reallysafefilev2.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1583110477860
+  },
+  {
+   "OID": "5e5c5954fa079327ef9bd0cb",
+   "ProcessID": 3564,
+   "ParentPID": 3744,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\reallysafefilev2.exe\" \"reallysafefilev2.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1583110484110
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e5c594efa079327ef9bc7cb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5c594efa079327ef9bc7cb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e5c594efa079327ef9bc7cb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e5c594efa079327ef9bc7cb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e5c594efa079327ef9bc7cb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

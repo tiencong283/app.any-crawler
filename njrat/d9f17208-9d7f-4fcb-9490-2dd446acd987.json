@@ -1,0 +1,70 @@
+{
+ "Name": "crypted.exe",
+ "Md5": "44d659aa4b751e1ed3a5c85c8f511217",
+ "UUID": "d9f17208-9d7f-4fcb-9490-2dd446acd987",
+ "Processes": [
+  {
+   "OID": "5e724c369de77b37ec53a248",
+   "ProcessID": 3052,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\crypted.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\crypted.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1584548917930
+  },
+  {
+   "OID": "5e724c379de77b37ec53ad99",
+   "ProcessID": 2692,
+   "ParentPID": 3052,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\ScreenToGif\\netprotocol.exe\" -n",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\ScreenToGif\\netprotocol.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584548918789
+  },
+  {
+   "OID": "5e724c379de77b37ec53b26b",
+   "ProcessID": 1352,
+   "ParentPID": 2692,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\ScreenToGif\\netprotocol.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\ScreenToGif\\netprotocol.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1584548919039
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e724c379de77b37ec53b26b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e724c379de77b37ec53b26b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e724c379de77b37ec53b26b",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e724c379de77b37ec53ad99",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e724c369de77b37ec53a248",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e724c369de77b37ec53a248",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

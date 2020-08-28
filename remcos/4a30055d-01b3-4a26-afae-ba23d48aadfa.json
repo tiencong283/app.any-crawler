@@ -1,0 +1,103 @@
+{
+ "Name": "piccolinens.exe",
+ "Md5": "2b6efe10c3d284632d39820819aaf00f",
+ "UUID": "4a30055d-01b3-4a26-afae-ba23d48aadfa",
+ "Processes": [
+  {
+   "OID": "5b44e62ce8e5d24194714def",
+   "ProcessID": 976,
+   "ParentPID": 1676,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\piccolinens.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\piccolinens.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1531242028226
+  },
+  {
+   "OID": "5b44e62ee8e5d241947150c9",
+   "ProcessID": 2860,
+   "ParentPID": 976,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /SC MINUTE /TN \"Hundsk\" /TR \"C:\\Users\\admin\\AppData\\Roaming\\piccolinens.exe\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531242029616
+  },
+  {
+   "OID": "5b44e630e8e5d241947153da",
+   "ProcessID": 2780,
+   "ParentPID": 976,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /run /tn \"Hundsk\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1531242031632
+  },
+  {
+   "OID": "5b44e630e8e5d241947153dd",
+   "ProcessID": 2544,
+   "ParentPID": 1724,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Roaming\\piccolinens.exe ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\piccolinens.exe",
+   "ProcessType": "Was launched through Task Scheduler",
+   "CreationTimestamp": 1531242032069
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b44e630e8e5d241947153dd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b44e630e8e5d241947153dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b44e630e8e5d241947153dd",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b44e630e8e5d241947153da",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5b44e62ce8e5d24194714710",
+   "ThreatLevel": 0,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b44e62ce8e5d24194714710",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b44e62ee8e5d241947150c9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5b44e62ce8e5d24194714def",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b44e62ce8e5d24194714def",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b44e62ce8e5d24194714def",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  }
+ ]
+}

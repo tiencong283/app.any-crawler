@@ -1,0 +1,39 @@
+{
+ "Name": "111.exe",
+ "Md5": "1a90f3ce466a7a3d1f0d31367839af55",
+ "UUID": "1dd9b298-c19e-4ddf-b5dc-6c62090a88f9",
+ "Processes": [
+  {
+   "OID": "5dde1227238a79768bfb88d7",
+   "ProcessID": 2124,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\111.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\111.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574834726446
+  },
+  {
+   "OID": "5dde122d238a79768bfb8b59",
+   "ProcessID": 1880,
+   "ParentPID": 2124,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\111.exe\" \"111.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574834732852
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dde1227238a79768bfb88d7",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dde1227238a79768bfb88d7",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

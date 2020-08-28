@@ -1,0 +1,185 @@
+{
+ "Name": "DDOS.exe",
+ "Md5": "4091886b2373f1023a76f0d0f67a9f57",
+ "UUID": "d73a4ce0-a80e-457c-b576-f652cbed77e9",
+ "Processes": [
+  {
+   "OID": "5e9efc310a880b67209f865a",
+   "ProcessID": 2252,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\DDOS.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\DDOS.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1587477553006
+  },
+  {
+   "OID": "5e9efc320a880b67209f865f",
+   "ProcessID": 3312,
+   "ParentPID": 2252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_DDOS.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_DDOS.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587477553522
+  },
+  {
+   "OID": "5e9efc320a880b67209f8661",
+   "ProcessID": 3876,
+   "ParentPID": 3312,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_DDOS.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_DDOS.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587477553725
+  },
+  {
+   "OID": "5e9efc330a880b67209f92e5",
+   "ProcessID": 1920,
+   "ParentPID": 2252,
+   "CommandLine": "\"C:\\ProgramData\\Synaptics\\Synaptics.exe\" InjUpdate",
+   "Image": "C:\\ProgramData\\Synaptics\\Synaptics.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587477554819
+  },
+  {
+   "OID": "5e9efc3e0a880b67209fa360",
+   "ProcessID": 4020,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe\" ",
+   "Image": "C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1587477566491
+  },
+  {
+   "OID": "5e9efc3f0a880b67209fa4a7",
+   "ProcessID": 304,
+   "ParentPID": 4020,
+   "CommandLine": "\"C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe\" --type=renderer",
+   "Image": "C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587477566662
+  },
+  {
+   "OID": "5e9efc410a880b67209faed1",
+   "ProcessID": 580,
+   "ParentPID": 4020,
+   "CommandLine": "\"C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroCEF\\RdrCEF.exe\" --backgroundcolor=16448250",
+   "Image": "C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroCEF\\RdrCEF.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587477569522
+  },
+  {
+   "OID": "5e9efc420a880b67209faed3",
+   "ProcessID": 1380,
+   "ParentPID": 580,
+   "CommandLine": "\"C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroCEF\\RdrCEF.exe\" --type=renderer --disable-3d-apis --disable-databases --disable-direct-npapi-requests --disable-file-system --disable-notifications --disable-shared-workers --disable-direct-write --lang=en-US --lang=en-US --log-severity=disable --product-version=\"ReaderServices/15.23.20053 Chrome/45.0.2454.85\" --device-scale-factor=1 --enable-delegated-renderer --num-raster-threads=2 --gpu-rasterization-msaa-sample-count=8 --content-image-texture-target=3553 --video-image-texture-target=3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --channel=\"580.0.772258467\\1457219713\" --allow-no-sandbox-job /prefetch:673131151",
+   "Image": "C:\\Program Files\\Adobe\\Acrobat Reader DC\\Reader\\AcroCEF\\RdrCEF.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1587477569912
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e9efc330a880b67209f92e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9efc330a880b67209f92e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9efc310a880b67209f7d0b",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e9efc410a880b67209faed1",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e9efc410a880b67209faed1",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9efc3e0a880b67209fa360",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9efc3e0a880b67209fa360",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e9efc3e0a880b67209fa360",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e9efc330a880b67209f92e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9efc320a880b67209f8661",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1129"
+   ]
+  },
+  {
+   "ProcessOID": "5e9efc330a880b67209f92e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e9efc320a880b67209f8661",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9efc320a880b67209f865f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9efc320a880b67209f8661",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9efc320a880b67209f865f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9efc310a880b67209f865a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e9efc310a880b67209f865a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e9efc310a880b67209f865a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

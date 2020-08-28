@@ -1,0 +1,141 @@
+{
+ "Name": "Proxy Scraper v1.0.exe",
+ "Md5": "7d81e31ddfe4442ae32119aa71062c36",
+ "UUID": "33ef4c93-9ac2-4de6-b84e-93c339603f94",
+ "Processes": [
+  {
+   "OID": "5c9f563fa55692796cd357df",
+   "ProcessID": 2104,
+   "ParentPID": 2036,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Proxy Scraper v1.0.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Proxy Scraper v1.0.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1553946175497
+  },
+  {
+   "OID": "5c9f5640a55692796cd35da9",
+   "ProcessID": 3276,
+   "ParentPID": 2104,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553946176075
+  },
+  {
+   "OID": "5c9f5640a55692796cd35daa",
+   "ProcessID": 3272,
+   "ParentPID": 2104,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\scraper.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\scraper.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553946176107
+  },
+  {
+   "OID": "5c9f5646a55692796cd3750a",
+   "ProcessID": 3308,
+   "ParentPID": 3276,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\WinDIR\\winSvc.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\WinDIR\\winSvc.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553946181544
+  },
+  {
+   "OID": "5c9f566ba55692796cd415b1",
+   "ProcessID": 3672,
+   "ParentPID": 3308,
+   "CommandLine": "Shutdown /l /f",
+   "Image": "C:\\Windows\\system32\\Shutdown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1553946219138
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c9f5646a55692796cd3750a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9f5646a55692796cd3750a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9f5646a55692796cd3750a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c9f5646a55692796cd3750a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5c9f5646a55692796cd3750a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1130"
+   ]
+  },
+  {
+   "ProcessOID": "5c9f5646a55692796cd3750a",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5c9f5646a55692796cd3750a",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9f5640a55692796cd35da9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5c9f5640a55692796cd35da9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c9f5640a55692796cd35da9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9f5640a55692796cd35daa",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9f5640a55692796cd35da9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9f563fa55692796cd357df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9f563fa55692796cd357df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c9f563fa55692796cd357df",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

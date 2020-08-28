@@ -1,0 +1,82 @@
+{
+ "Name": "jusched.exe",
+ "Md5": "3260741f5bf86c67743e0742b8cb9fe3",
+ "UUID": "7ff36482-369a-4417-8a8e-6f5b0500b40a",
+ "Processes": [
+  {
+   "OID": "5e07162c40b95077694df9f4",
+   "ProcessID": 532,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\jusched.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\jusched.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1577522731579
+  },
+  {
+   "OID": "5e07163240b95077694dfd4e",
+   "ProcessID": 2476,
+   "ParentPID": 532,
+   "CommandLine": "\"C:\\ProgramData\\jusched.exe\" ",
+   "Image": "C:\\ProgramData\\jusched.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577522738094
+  },
+  {
+   "OID": "5e07163840b95077694e007f",
+   "ProcessID": 1244,
+   "ParentPID": 2476,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\ProgramData\\jusched.exe\" \"jusched.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577522744344
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e07163240b95077694dfd4e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e07163240b95077694dfd4e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e07163240b95077694dfd4e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e07163240b95077694dfd4e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e07162c40b95077694df9f4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e07162c40b95077694df9f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e07162c40b95077694df9f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e07162c40b95077694df9f4",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

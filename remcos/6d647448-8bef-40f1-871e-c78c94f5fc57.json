@@ -1,0 +1,122 @@
+{
+ "Name": "SWIFTS-0034903923940390-00340-030034-2018.scr",
+ "Md5": "3b4e1d2e043bbb2dda0cc4e3f2d2e1d6",
+ "UUID": "6d647448-8bef-40f1-871e-c78c94f5fc57",
+ "Processes": [
+  {
+   "OID": "5ba386f037b5420a9ad17185",
+   "ProcessID": 3956,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\SWIFTS-0034903923940390-00340-030034-2018.scr.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\SWIFTS-0034903923940390-00340-030034-2018.scr.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1537443568295
+  },
+  {
+   "OID": "5ba3874a37b5420a9ad17546",
+   "ProcessID": 2296,
+   "ParentPID": 3956,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\subfolder\\Adobepdf.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1537443657826
+  },
+  {
+   "OID": "5ba3874a37b5420a9ad17547",
+   "ProcessID": 2752,
+   "ParentPID": 2296,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\subfolder\\Adobepdf.vbs\" -FF",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1537443658138
+  },
+  {
+   "OID": "5ba3874a37b5420a9ad17aab",
+   "ProcessID": 3992,
+   "ParentPID": 2296,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\subfolder\\Adobepdf.scr\" /S",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\subfolder\\Adobepdf.scr",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1537443658154
+  },
+  {
+   "OID": "5ba3878237b5420a9ad18130",
+   "ProcessID": 2112,
+   "ParentPID": 3992,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\subfolder\\Adobepdf.scr\" /S",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\subfolder\\Adobepdf.scr",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1537443714685
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ba3878237b5420a9ad18130",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5ba3878237b5420a9ad18130",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5ba3878237b5420a9ad18130",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5ba3878237b5420a9ad18130",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5ba3878237b5420a9ad18130",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5ba3874a37b5420a9ad17aab",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5ba3874a37b5420a9ad17aab",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5ba3874a37b5420a9ad17547",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ba3874a37b5420a9ad17546",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5ba3874a37b5420a9ad17546",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ba386f037b5420a9ad17185",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ba386f037b5420a9ad17185",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

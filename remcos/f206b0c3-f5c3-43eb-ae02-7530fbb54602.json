@@ -1,0 +1,83 @@
+{
+ "Name": "Aras_Kargo_Bildirim.exe",
+ "Md5": "b7b39fa7fae259cf10ff8f294e01a329",
+ "UUID": "f206b0c3-f5c3-43eb-ae02-7530fbb54602",
+ "Processes": [
+  {
+   "OID": "5be27559b281ef3c7f15f81c",
+   "ProcessID": 4060,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Aras_Kargo_Bildirim.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Aras_Kargo_Bildirim.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1541567832611
+  },
+  {
+   "OID": "5be27564b281ef3c7f15fdcf",
+   "ProcessID": 4000,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Windows\\system32\\taskmgr.exe\" /4",
+   "Image": "C:\\Windows\\system32\\taskmgr.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1541567844486
+  },
+  {
+   "OID": "5be2759eb281ef3c7f160ff0",
+   "ProcessID": 2992,
+   "ParentPID": 4060,
+   "CommandLine": "C:\\Windows\\system32\\msiexec.exe",
+   "Image": "C:\\Windows\\system32\\msiexec.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541567902439
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5be2759eb281ef3c7f160ff0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be2759eb281ef3c7f160ff0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5be2759eb281ef3c7f160ff0",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be27558b281ef3c7f15f120",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1063"
+   ]
+  },
+  {
+   "ProcessOID": "5be27559b281ef3c7f15f81c",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5be27559b281ef3c7f15f81c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be27559b281ef3c7f15f81c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be27559b281ef3c7f15f81c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

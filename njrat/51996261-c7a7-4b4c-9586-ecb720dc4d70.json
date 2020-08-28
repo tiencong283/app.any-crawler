@@ -1,0 +1,174 @@
+{
+ "Name": "Gerador de Discord Nitro.exe",
+ "Md5": "bf33b717d04f201e6d99ef6b2a5e0d5c",
+ "UUID": "51996261-c7a7-4b4c-9586-ecb720dc4d70",
+ "Processes": [
+  {
+   "OID": "5e0d552e0125e408d09db4a3",
+   "ProcessID": 1536,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Gerador de Discord Nitro.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Gerador de Discord Nitro.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1577932077848
+  },
+  {
+   "OID": "5e0d552e0125e408d09db4af",
+   "ProcessID": 3752,
+   "ParentPID": 1536,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\kfRpeTjwbbMDc1JZ6X8MqcZSnkGb2G3LPgD.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\kfRpeTjwbbMDc1JZ6X8MqcZSnkGb2G3LPgD.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577932078363
+  },
+  {
+   "OID": "5e0d55350125e408d09dba28",
+   "ProcessID": 3304,
+   "ParentPID": 3752,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\RuntimeBroker.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\RuntimeBroker.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577932085098
+  },
+  {
+   "OID": "5e0d55360125e408d09dbfc2",
+   "ProcessID": 2128,
+   "ParentPID": 1536,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\Palf7XtJeYLwE436umuVkj1350UmdLyBQyC.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Palf7XtJeYLwE436umuVkj1350UmdLyBQyC.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577932086066
+  },
+  {
+   "OID": "5e0d553c0125e408d09dc772",
+   "ProcessID": 1916,
+   "ParentPID": 3304,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\RuntimeBroker.exe\" \"RuntimeBroker.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1577932091488
+  },
+  {
+   "OID": "5e0d553c0125e408d09dcb83",
+   "ProcessID": 2892,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\System32\\control.exe\" SYSTEM",
+   "Image": "C:\\Windows\\System32\\control.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1577932092145
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e0d55350125e408d09dba28",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0d55350125e408d09dba28",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5e0d553e0125e408d09dd78e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5e0d552e0125e408d09dade5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5e0d552e0125e408d09dade5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0d553c0125e408d09dcb83",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5e0d55350125e408d09dba28",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0d55350125e408d09dba28",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e0d55350125e408d09dba28",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0d55350125e408d09dba28",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0d55350125e408d09dba28",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5e0d55350125e408d09dba28",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5e0d55360125e408d09dbfc2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0d55350125e408d09dba28",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0d552e0125e408d09db4af",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5e0d552e0125e408d09db4af",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0d552e0125e408d09db4af",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0d552e0125e408d09db4af",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e0d552e0125e408d09db4a3",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

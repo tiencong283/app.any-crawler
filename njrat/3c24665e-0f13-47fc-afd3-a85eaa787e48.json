@@ -1,0 +1,89 @@
+{
+ "Name": "Windows Security Centrum.exe",
+ "Md5": "573918a3efaa8fcaf5f48dc6eec2ced0",
+ "UUID": "3c24665e-0f13-47fc-afd3-a85eaa787e48",
+ "Processes": [
+  {
+   "OID": "5ed0167f13e63125fbe705b5",
+   "ProcessID": 564,
+   "ParentPID": 396,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Windows Security Centrum.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Windows Security Centrum.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1590695550809
+  },
+  {
+   "OID": "5ed0168613e63125fbe708e5",
+   "ProcessID": 2708,
+   "ParentPID": 564,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Windows Firewall Protection.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Windows Firewall Protection.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590695557559
+  },
+  {
+   "OID": "5ed0168c13e63125fbe70f29",
+   "ProcessID": 2756,
+   "ParentPID": 2708,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\Windows Firewall Protection.exe\" \"Windows Firewall Protection.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1590695564013
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ed0168613e63125fbe708e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed0168613e63125fbe708e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed0168613e63125fbe708e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed0168613e63125fbe708e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ed0168613e63125fbe708e5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ed0168613e63125fbe708e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed0168613e63125fbe708e5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ed0167f13e63125fbe705b5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ed0167f13e63125fbe705b5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

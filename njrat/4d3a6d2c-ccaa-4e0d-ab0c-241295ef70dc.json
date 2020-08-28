@@ -1,0 +1,75 @@
+{
+ "Name": "7405e222-f2e3-421f-82db-13ade1aed74a",
+ "Md5": "b025e672ae005c45ac3d1a2403f1341d",
+ "UUID": "4d3a6d2c-ccaa-4e0d-ab0c-241295ef70dc",
+ "Processes": [
+  {
+   "OID": "5dc3694004dc843ee32fcf17",
+   "ProcessID": 2812,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\7405e222-f2e3-421f-82db-13ade1aed74a.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\7405e222-f2e3-421f-82db-13ade1aed74a.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573087551659
+  },
+  {
+   "OID": "5dc3695004dc843ee32fddad",
+   "ProcessID": 3688,
+   "ParentPID": 2812,
+   "CommandLine": "\"C:\\\\\\\\Windows\\\\\\\\Microsoft.NET\\\\\\\\Framework\\\\\\\\v4.0.30319\\\\\\\\RegSvcs.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573087567690
+  },
+  {
+   "OID": "5dc3695604dc843ee32fe05b",
+   "ProcessID": 2824,
+   "ParentPID": 3688,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\" \"RegSvcs.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573087574065
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dc3695004dc843ee32fddad",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3695004dc843ee32fddad",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3695004dc843ee32fddad",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3695004dc843ee32fddad",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5dc3694004dc843ee32fcf17",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dc3694004dc843ee32fcf17",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5dc3694004dc843ee32fcf17",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

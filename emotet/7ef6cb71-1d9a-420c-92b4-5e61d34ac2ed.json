@@ -1,0 +1,76 @@
+{
+ "Name": "mediumsetthe.exe",
+ "Md5": "b4ef6978bd0569af593633bc82144aab",
+ "UUID": "7ef6cb71-1d9a-420c-92b4-5e61d34ac2ed",
+ "Processes": [
+  {
+   "OID": "5dcd3a621df3565cfc1a3ea6",
+   "ProcessID": 2168,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\mediumsetthe.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\mediumsetthe.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1573730914211
+  },
+  {
+   "OID": "5dcd3a621df3565cfc1a3ead",
+   "ProcessID": 3920,
+   "ParentPID": 2168,
+   "CommandLine": "--b846f688",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\mediumsetthe.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573730914539
+  },
+  {
+   "OID": "5dcd3a691df3565cfc1a41bb",
+   "ProcessID": 2648,
+   "ParentPID": 3920,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573730921429
+  },
+  {
+   "OID": "5dcd3a6a1df3565cfc1a41c6",
+   "ProcessID": 2548,
+   "ParentPID": 2648,
+   "CommandLine": "--25c59a38",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\mscmsknown\\mscmsknown.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1573730921570
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dcd3a691df3565cfc1a41bb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcd3a621df3565cfc1a3ead",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcd3a621df3565cfc1a3ead",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dcd3a621df3565cfc1a3ead",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5dcd3a621df3565cfc1a3ea6",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

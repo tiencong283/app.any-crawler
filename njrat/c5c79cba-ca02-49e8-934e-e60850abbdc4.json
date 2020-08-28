@@ -1,0 +1,39 @@
+{
+ "Name": "hyu.exe",
+ "Md5": "9a12d686d81d73b90fb7f302f2e77518",
+ "UUID": "c5c79cba-ca02-49e8-934e-e60850abbdc4",
+ "Processes": [
+  {
+   "OID": "5dd40b001598c65e5f4905c1",
+   "ProcessID": 2620,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\hyu.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\hyu.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1574177536552
+  },
+  {
+   "OID": "5dd40b071598c65e5f49083b",
+   "ProcessID": 2788,
+   "ParentPID": 2620,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\hyu.exe\" \"hyu.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1574177542692
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dd40b001598c65e5f4905c1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dd40b001598c65e5f4905c1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

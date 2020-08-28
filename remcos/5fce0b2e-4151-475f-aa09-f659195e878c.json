@@ -1,0 +1,90 @@
+{
+ "Name": "LcpioD.jpg",
+ "Md5": "b3a523644444c5aa15c364831a7bfb3a",
+ "UUID": "5fce0b2e-4151-475f-aa09-f659195e878c",
+ "Processes": [
+  {
+   "OID": "5be1f7942e4fdb756138c7e2",
+   "ProcessID": 2672,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\LcpioD.jpg.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\LcpioD.jpg.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1541535635810
+  },
+  {
+   "OID": "5be1f8272e4fdb756138cb65",
+   "ProcessID": 2112,
+   "ParentPID": 2672,
+   "CommandLine": "\"C:\\Windows\\System32\\WScript.exe\" \"C:\\Users\\admin\\AppData\\Local\\Temp\\mental\\nwannwa.vbs\" ",
+   "Image": "C:\\Windows\\System32\\WScript.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541535783294
+  },
+  {
+   "OID": "5be1f8272e4fdb756138cb66",
+   "ProcessID": 3528,
+   "ParentPID": 2672,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\mental\\nwannwa.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\mental\\nwannwa.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541535783310
+  },
+  {
+   "OID": "5be1f84b2e4fdb756138d261",
+   "ProcessID": 1192,
+   "ParentPID": 3528,
+   "CommandLine": "\u0001C:\\Users\\admin\\AppData\\Local\\Temp\\mental\\nwannwa.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\mental\\nwannwa.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1541535819372
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5be1f84b2e4fdb756138d261",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5be1f84b2e4fdb756138d261",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5be1f8272e4fdb756138cb66",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5be1f8272e4fdb756138cb65",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5be1f7942e4fdb756138c7e2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5be1f7942e4fdb756138c7e2",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1064"
+   ]
+  },
+  {
+   "ProcessOID": "5be1f7942e4fdb756138c7e2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

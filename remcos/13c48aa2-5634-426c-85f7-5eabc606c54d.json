@@ -1,0 +1,93 @@
+{
+ "Name": "04b117ee37d4710d906f0191a68ba7f0",
+ "Md5": "04b117ee37d4710d906f0191a68ba7f0",
+ "UUID": "13c48aa2-5634-426c-85f7-5eabc606c54d",
+ "Processes": [
+  {
+   "OID": "5b74dbc4c118c705d216c5f1",
+   "ProcessID": 3780,
+   "ParentPID": 1380,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\04b117ee37d4710d906f0191a68ba7f0.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\04b117ee37d4710d906f0191a68ba7f0.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1534385092429
+  },
+  {
+   "OID": "5b74dbc5c118c705d216c604",
+   "ProcessID": 2664,
+   "ParentPID": 3780,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\Temp\\install.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534385092773
+  },
+  {
+   "OID": "5b74dbc5c118c705d216c606",
+   "ProcessID": 2396,
+   "ParentPID": 2664,
+   "CommandLine": "PING  127.0.0.1 -n 2 ",
+   "Image": "C:\\Windows\\system32\\PING.EXE",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534385092882
+  },
+  {
+   "OID": "5b74dbc6c118c705d216cefb",
+   "ProcessID": 3280,
+   "ParentPID": 2664,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\remcos\\remcos.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1534385093945
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5b74dbc6c118c705d216cefb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5b74dbc6c118c705d216cefb",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b74dbc6c118c705d216cefb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b74dbc4c118c705d216c5f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5b74dbc4c118c705d216c5f1",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5b74dbc4c118c705d216c5f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b74dbc4c118c705d216c5f1",
+   "ThreatLevel": 2,
+   "MitreAttacks": null
+  },
+  {
+   "ProcessOID": "5b74dbc4c118c705d216c5f1",
+   "ThreatLevel": 1,
+   "MitreAttacks": null
+  }
+ ]
+}

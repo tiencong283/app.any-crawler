@@ -1,0 +1,74 @@
+{
+ "Name": "whatisit",
+ "Md5": "478037c26b9544241f167744b58cb18e",
+ "UUID": "ff9bfc02-eee4-45d8-9bd8-fa8691de0324",
+ "Processes": [
+  {
+   "OID": "5c4580d4911dbf0b88b1aafd",
+   "ProcessID": 3088,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\whatisit.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\whatisit.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1548058836167
+  },
+  {
+   "OID": "5c458102911dbf0b88b1b2b2",
+   "ProcessID": 2652,
+   "ParentPID": 3088,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\whatisit.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\whatisit.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1548058882011
+  },
+  {
+   "OID": "5c458102911dbf0b88b1b2b3",
+   "ProcessID": 3012,
+   "ParentPID": 3088,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\whatisit.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\whatisit.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1548058882074
+  },
+  {
+   "OID": "5c458102911dbf0b88b1b2b4",
+   "ProcessID": 3288,
+   "ParentPID": 2652,
+   "CommandLine": "\"C:\\Program Files\\Internet Explorer\\iexplore.exe\"",
+   "Image": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1548058882105
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c458102911dbf0b88b1b2b2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c458102911dbf0b88b1b2b2",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c4580d4911dbf0b88b1aafd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c4580d4911dbf0b88b1aafd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5c4580d4911dbf0b88b1aafd",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

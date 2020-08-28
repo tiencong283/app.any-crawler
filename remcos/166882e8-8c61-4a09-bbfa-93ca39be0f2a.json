@@ -1,0 +1,98 @@
+{
+ "Name": "FUD1111.exe",
+ "Md5": "5b67f0e2488e94ba4107d6a4504e8cb2",
+ "UUID": "166882e8-8c61-4a09-bbfa-93ca39be0f2a",
+ "Processes": [
+  {
+   "OID": "5beaf379dc94ea3ad0d07e7a",
+   "ProcessID": 2672,
+   "ParentPID": 1604,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\FUD1111.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\FUD1111.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1542124407651
+  },
+  {
+   "OID": "5beaf379dc94ea3ad0d08472",
+   "ProcessID": 920,
+   "ParentPID": 2672,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\installutil.exe\" /logtoconsole=false /logfile= /u \"C:\\Users\\admin\\AppData\\Local\\Temp\\FUD1111.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\installutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542124408510
+  },
+  {
+   "OID": "5beaf397dc94ea3ad0d08e32",
+   "ProcessID": 2252,
+   "ParentPID": 920,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\JTbJLlcd\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp23AB.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542124439151
+  },
+  {
+   "OID": "5beaf397dc94ea3ad0d08e34",
+   "ProcessID": 3712,
+   "ParentPID": 920,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\installutil.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\installutil.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1542124439291
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5beaf397dc94ea3ad0d08e34",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5beaf397dc94ea3ad0d08e34",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5beaf397dc94ea3ad0d08e34",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5beaf379dc94ea3ad0d08472",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5beaf379dc94ea3ad0d07e6a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5beaf397dc94ea3ad0d08e32",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5beaf379dc94ea3ad0d08472",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5beaf379dc94ea3ad0d08472",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5beaf379dc94ea3ad0d08472",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

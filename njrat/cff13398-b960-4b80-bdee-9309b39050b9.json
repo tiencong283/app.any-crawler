@@ -1,0 +1,72 @@
+{
+ "Name": "njrat.exe",
+ "Md5": "3dbf214739054a9ec3135290101c8668",
+ "UUID": "cff13398-b960-4b80-bdee-9309b39050b9",
+ "Processes": [
+  {
+   "OID": "5cc4390ec945c55e3381a2d5",
+   "ProcessID": 1792,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\njrat.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\njrat.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1556363534384
+  },
+  {
+   "OID": "5cc43916c945c55e3381acbb",
+   "ProcessID": 1704,
+   "ParentPID": 1792,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\setup.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\setup.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556363541524
+  },
+  {
+   "OID": "5cc4391cc945c55e3381b3dd",
+   "ProcessID": 3852,
+   "ParentPID": 1704,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\setup.exe\" \"setup.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1556363548180
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cc43916c945c55e3381acbb",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc43916c945c55e3381acbb",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cc43916c945c55e3381acbb",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cc4390ec945c55e3381a2d5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cc4390ec945c55e3381a2d5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cc4390ec945c55e3381a2d5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

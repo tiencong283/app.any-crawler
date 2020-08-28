@@ -1,0 +1,109 @@
+{
+ "Name": "f9wl1foltugv.exe",
+ "Md5": "d80ac0bdd070bb0d8ebd15d8d445bee8",
+ "UUID": "aae88033-a316-481d-8758-d82865c6201d",
+ "Processes": [
+  {
+   "OID": "5da03c0ca111912eb35c50fa",
+   "ProcessID": 1876,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\f9wl1foltugv.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\f9wl1foltugv.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1570782220536
+  },
+  {
+   "OID": "5da03c0da111912eb35c510d",
+   "ProcessID": 2728,
+   "ParentPID": 1876,
+   "CommandLine": "--43ad2494",
+   "Image": "C:\\Users\\admin\\Desktop\\f9wl1foltugv.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570782220771
+  },
+  {
+   "OID": "5da03c13a111912eb35c588d",
+   "ProcessID": 1152,
+   "ParentPID": 2728,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570782226443
+  },
+  {
+   "OID": "5da03c13a111912eb35c588e",
+   "ProcessID": 2388,
+   "ParentPID": 1152,
+   "CommandLine": "--f91b2738",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\msptermsizes\\msptermsizes.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570782226552
+  },
+  {
+   "OID": "5da03c31a111912eb35c8290",
+   "ProcessID": 2340,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\system32\\notepad.exe\" ",
+   "Image": "C:\\Windows\\system32\\notepad.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1570782257318
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5da03c13a111912eb35c588e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da03c13a111912eb35c588e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5da03c31a111912eb35c8290",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5da03c13a111912eb35c588e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5da03c13a111912eb35c588e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da03c0da111912eb35c510d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da03c0da111912eb35c510d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da03c0da111912eb35c510d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5da03c0ca111912eb35c50fa",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

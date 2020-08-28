@@ -1,0 +1,66 @@
+{
+ "Name": "Malware1.exe",
+ "Md5": "3439138af621ae8ce34c9b8e9f1aa442",
+ "UUID": "0c9347dd-e4c6-48e9-8216-2e13c14a387f",
+ "Processes": [
+  {
+   "OID": "5da055c1ddea9650cb821c39",
+   "ProcessID": 2156,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Malware1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Malware1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1570788800430
+  },
+  {
+   "OID": "5da055ddddea9650cb821e82",
+   "ProcessID": 236,
+   "ParentPID": 2156,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\Malware1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\Malware1.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1570788829195
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5da055ddddea9650cb821e82",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da055ddddea9650cb821e82",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da055ddddea9650cb821e82",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da055ddddea9650cb821e82",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da055ddddea9650cb821e82",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5da055ddddea9650cb821e82",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5da055c1ddea9650cb821c39",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

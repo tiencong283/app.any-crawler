@@ -1,0 +1,191 @@
+{
+ "Name": "SOA.exe",
+ "Md5": "d86b161753df39afed67e3f5d714c8dc",
+ "UUID": "5ec03041-6fdf-4eb2-95cc-3eed304a65b4",
+ "Processes": [
+  {
+   "OID": "5cdd28875672ad4e0ea42f88",
+   "ProcessID": 548,
+   "ParentPID": 440,
+   "CommandLine": "C:\\Windows\\system32\\lsass.exe",
+   "Image": "C:\\Windows\\System32\\lsass.exe",
+   "ProcessType": "Injected",
+   "CreationTimestamp": 0
+  },
+  {
+   "OID": "5cdd28875672ad4e0ea42fa3",
+   "ProcessID": 2108,
+   "ParentPID": 1192,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\SOA.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\SOA.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1557997702114
+  },
+  {
+   "OID": "5cdd28875672ad4e0ea43619",
+   "ProcessID": 2284,
+   "ParentPID": 2108,
+   "CommandLine": "\"C:\\Windows\\System32\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\SysWOW64\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557997703270
+  },
+  {
+   "OID": "5cdd28885672ad4e0ea43c58",
+   "ProcessID": 1896,
+   "ParentPID": 2108,
+   "CommandLine": "\"C:\\Windows\\SysWOW64\\eventvwr.exe\" ",
+   "Image": "C:\\Windows\\SysWOW64\\eventvwr.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557997703614
+  },
+  {
+   "OID": "5cdd28885672ad4e0ea43c59",
+   "ProcessID": 3028,
+   "ParentPID": 1896,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\SOA.exe\" ",
+   "Image": "C:\\Users\\admin\\Desktop\\SOA.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557997703942
+  },
+  {
+   "OID": "5cdd28885672ad4e0ea440b9",
+   "ProcessID": 2536,
+   "ParentPID": 3028,
+   "CommandLine": "\"C:\\Users\\admin\\Desktop\\SOA.exe\"",
+   "Image": "C:\\Users\\admin\\Desktop\\SOA.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1557997704145
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cdd28885672ad4e0ea440b9",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cdd28885672ad4e0ea440b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cdd28885672ad4e0ea440b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cdd28875672ad4e0ea42f88",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5cdd28885672ad4e0ea440b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1055"
+   ]
+  },
+  {
+   "ProcessOID": "5cdd28885672ad4e0ea440b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cdd28885672ad4e0ea440b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cdd28885672ad4e0ea440b9",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cdd28875672ad4e0ea42f8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5cdd28875672ad4e0ea42f8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cdd28875672ad4e0ea42f97",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5cdd28875672ad4e0ea42f88",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5cdd28885672ad4e0ea440b9",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5cdd28885672ad4e0ea43c59",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cdd28885672ad4e0ea43c59",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cdd28875672ad4e0ea42f8f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cdd28875672ad4e0ea4361a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5cdd28875672ad4e0ea42fa3",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1042"
+   ]
+  },
+  {
+   "ProcessOID": "5cdd28875672ad4e0ea42fa3",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1088"
+   ]
+  },
+  {
+   "ProcessOID": "5cdd28875672ad4e0ea42f8d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  }
+ ]
+}

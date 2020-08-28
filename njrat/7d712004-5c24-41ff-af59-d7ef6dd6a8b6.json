@@ -1,0 +1,84 @@
+{
+ "Name": "1.exe",
+ "Md5": "71a365d93e6a37b468ace06c62643deb",
+ "UUID": "7d712004-5c24-41ff-af59-d7ef6dd6a8b6",
+ "Processes": [
+  {
+   "OID": "5ed841925491d920152235be",
+   "ProcessID": 2576,
+   "ParentPID": 464,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\1.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591230865989
+  },
+  {
+   "OID": "5ed841935491d920152237fc",
+   "ProcessID": 2148,
+   "ParentPID": 2576,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\lol.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\lol.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591230866536
+  },
+  {
+   "OID": "5ed841935491d920152237fd",
+   "ProcessID": 2968,
+   "ParentPID": 2148,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\lol.exe\" \"lol.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591230866661
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ed841935491d920152237fc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed841935491d920152237fc",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ed841935491d920152237fc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed841935491d920152237fc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed841935491d920152237fc",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ed841935491d920152237fc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5ed841925491d920152235be",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5ed841925491d920152235be",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "Name": "download.exe.malware",
+ "Md5": "039ae15bcec6dd31978b00e1b2a4478f",
+ "UUID": "bffab110-1325-49db-8899-4b3e2527e11d",
+ "Processes": [
+  {
+   "OID": "5d1d2edab42ca83aa2bb05c5",
+   "ProcessID": 3140,
+   "ParentPID": 284,
+   "CommandLine": "\"C:\\Users\\admin\\Downloads\\download.exe.malware.exe\" ",
+   "Image": "C:\\Users\\admin\\Downloads\\download.exe.malware.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1562193626391
+  },
+  {
+   "OID": "5d1d2edcb42ca83aa2bb0a47",
+   "ProcessID": 2896,
+   "ParentPID": 3140,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\AdobeAcrobatReader.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\AdobeAcrobatReader.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562193627328
+  },
+  {
+   "OID": "5d1d2edcb42ca83aa2bb0a48",
+   "ProcessID": 3984,
+   "ParentPID": 2896,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\AdobeAcrobatReader.exe\" \"AdobeAcrobatReader.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1562193627485
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d1d2edcb42ca83aa2bb0a47",
+   "ThreatLevel": 0,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1d2edcb42ca83aa2bb0a47",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1d2edcb42ca83aa2bb0a47",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1d2edcb42ca83aa2bb0a47",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d1d2edcb42ca83aa2bb0a47",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d1d2edcb42ca83aa2bb0a47",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1d2edcb42ca83aa2bb0a47",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d1d2edab42ca83aa2bb05c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d1d2edab42ca83aa2bb05c5",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

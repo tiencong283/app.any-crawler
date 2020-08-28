@@ -1,0 +1,67 @@
+{
+ "Name": "VanToM RAT.exe",
+ "Md5": "e610ffe222a72dd2764721a26d1f0778",
+ "UUID": "02675840-78df-4940-a5b1-a0d29e6ef024",
+ "Processes": [
+  {
+   "OID": "5d1537d1f2e68d5dfa5014d0",
+   "ProcessID": 3096,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\VanToM RAT.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\VanToM RAT.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1561671632731
+  },
+  {
+   "OID": "5d1537d1f2e68d5dfa50176d",
+   "ProcessID": 3136,
+   "ParentPID": 3096,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\explore.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\explore.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561671633543
+  },
+  {
+   "OID": "5d1537d2f2e68d5dfa5019d3",
+   "ProcessID": 2576,
+   "ParentPID": 3136,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Local\\Temp\\explore.exe\" \"explore.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561671633965
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d1537d1f2e68d5dfa50176d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1537d1f2e68d5dfa50176d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d1537d1f2e68d5dfa50176d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d1537d1f2e68d5dfa5014d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d1537d1f2e68d5dfa5014d0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

@@ -1,0 +1,177 @@
+{
+ "Name": "fuka.exe",
+ "Md5": "0ffeb777209c53819a0b3f80d8d3bf26",
+ "UUID": "1be48a49-bb49-46fd-bcf5-a34f9372c623",
+ "Processes": [
+  {
+   "OID": "5d10e27f9f4c275daba2ab2d",
+   "ProcessID": 2944,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\fuka.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\fuka.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1561387647317
+  },
+  {
+   "OID": "5d10e27f9f4c275daba2ab2e",
+   "ProcessID": 3708,
+   "ParentPID": 2944,
+   "CommandLine": "C:\\Users\\admin\\AppData\\Local\\Temp\\bpxssh.exe",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\bpxssh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561387647427
+  },
+  {
+   "OID": "5d10e2bb9f4c275daba2af17",
+   "ProcessID": 2204,
+   "ParentPID": 3708,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\bpxssh.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\bpxssh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561387707677
+  },
+  {
+   "OID": "5d10e2bc9f4c275daba2af52",
+   "ProcessID": 1884,
+   "ParentPID": 3708,
+   "CommandLine": "cmd /c \"\"C:\\Users\\admin\\AppData\\Local\\bpxssh\\KU.bat\" \"",
+   "Image": "C:\\Windows\\system32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561387708005
+  },
+  {
+   "OID": "5d10e2bc9f4c275daba2af54",
+   "ProcessID": 3084,
+   "ParentPID": 1884,
+   "CommandLine": "reg  delete hkcu\\Environment /v windir /f",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561387708114
+  },
+  {
+   "OID": "5d10e2bc9f4c275daba2af55",
+   "ProcessID": 3572,
+   "ParentPID": 1884,
+   "CommandLine": "reg  add hkcu\\Environment /v windir /d \"cmd /c start C:\\Users\\admin\\AppData\\Local\\bpxssh\\ex.bat reg delete hkcu\\Environment /v windir /f \u0026\u0026 REM \"",
+   "Image": "C:\\Windows\\system32\\reg.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561387708161
+  },
+  {
+   "OID": "5d10e2bc9f4c275daba2af56",
+   "ProcessID": 1236,
+   "ParentPID": 1884,
+   "CommandLine": "schtasks  /Run /TN \\Microsoft\\Windows\\DiskCleanup\\SilentCleanup /I",
+   "Image": "C:\\Windows\\system32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561387708224
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d10e27f9f4c275daba2a393",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d10e2bb9f4c275daba2af17",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d10e2bb9f4c275daba2af17",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d10e2bb9f4c275daba2af17",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d10e2bb9f4c275daba2af17",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d10e2bb9f4c275daba2af17",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d10e2bc9f4c275daba2af56",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d10e2bc9f4c275daba2af52",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5d10e2bc9f4c275daba2af52",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1112",
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5d10e2bb9f4c275daba2af17",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5d10e27f9f4c275daba2ab2e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5d10e2bb9f4c275daba2af17",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d10e27f9f4c275daba2ab2e",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d10e27f9f4c275daba2ab2e",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d10e2bb9f4c275daba2af17",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d10e27f9f4c275daba2ab2e",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d10e27f9f4c275daba2ab2e",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d10e27f9f4c275daba2ab2d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

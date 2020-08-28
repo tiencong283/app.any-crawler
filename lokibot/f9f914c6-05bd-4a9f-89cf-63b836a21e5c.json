@@ -1,0 +1,96 @@
+{
+ "Name": "FW 305552 - INQUIRY.exe",
+ "Md5": "b12df7a351adb5b6c601df55fa832a48",
+ "UUID": "f9f914c6-05bd-4a9f-89cf-63b836a21e5c",
+ "Processes": [
+  {
+   "OID": "5dad816ac8b87a78598cc642",
+   "ProcessID": 1944,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\FW 305552 - INQUIRY.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\FW 305552 - INQUIRY.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571651946747
+  },
+  {
+   "OID": "5dad816bc8b87a78598ccc29",
+   "ProcessID": 3624,
+   "ParentPID": 1944,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C type nul \u003e \"C:\\Users\\admin\\AppData\\Local\\Temp\\FW 305552 - INQUIRY.exe:Zone.Identifier\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571651947216
+  },
+  {
+   "OID": "5dad81a0c8b87a78598cd2db",
+   "ProcessID": 932,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1571651999575
+  },
+  {
+   "OID": "5dad81acc8b87a78598cd87f",
+   "ProcessID": 896,
+   "ParentPID": 1944,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571652011950
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5dad81acc8b87a78598cd87f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dad81acc8b87a78598cd87f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dad81acc8b87a78598cd87f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dad81acc8b87a78598cd87f",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dad81acc8b87a78598cd87f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dad81acc8b87a78598cd87f",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5dad81acc8b87a78598cd87f",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5dad81a0c8b87a78598cd2db",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5dad816ac8b87a78598cc642",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  }
+ ]
+}

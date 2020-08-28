@@ -1,0 +1,105 @@
+{
+ "Name": "76b4cfa7aa6952f68a1a2484e3cb17e43f5a6f387883a2eb4151870b38363022.exe",
+ "Md5": "032fcfcc48a039852b28d7fbca1c0e29",
+ "UUID": "d49d50d8-a952-40f0-a74c-93465717f31e",
+ "Processes": [
+  {
+   "OID": "5e37c7f52ca59449ec0a7f6d",
+   "ProcessID": 3604,
+   "ParentPID": 372,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\76b4cfa7aa6952f68a1a2484e3cb17e43f5a6f387883a2eb4151870b38363022.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\76b4cfa7aa6952f68a1a2484e3cb17e43f5a6f387883a2eb4151870b38363022.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1580713973000
+  },
+  {
+   "OID": "5e37c7fd2ca59449ec0a9960",
+   "ProcessID": 3728,
+   "ParentPID": 3604,
+   "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /C choice /C Y /N /D Y /T 3 \u0026 Del \"mscorlib.dll\"",
+   "Image": "C:\\Windows\\System32\\cmd.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580713981219
+  },
+  {
+   "OID": "5e37c7fd2ca59449ec0a9962",
+   "ProcessID": 1828,
+   "ParentPID": 3728,
+   "CommandLine": "choice  /C Y /N /D Y /T 3 ",
+   "Image": "C:\\Windows\\system32\\choice.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1580713981281
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5e37c7fd2ca59449ec0a9960",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e37c7f52ca59449ec0a7f6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1059"
+   ]
+  },
+  {
+   "ProcessOID": "5e37c7f52ca59449ec0a7f6d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e37c7f52ca59449ec0a7f6d",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e37c7f52ca59449ec0a7f6d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081",
+    "T1114"
+   ]
+  },
+  {
+   "ProcessOID": "5e37c7f52ca59449ec0a7f6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1003"
+   ]
+  },
+  {
+   "ProcessOID": "5e37c7f52ca59449ec0a7f6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5e37c7f52ca59449ec0a7f6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1003"
+   ]
+  },
+  {
+   "ProcessOID": "5e37c7f52ca59449ec0a7f6d",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5e37c7f52ca59449ec0a7f6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012",
+    "T1082"
+   ]
+  },
+  {
+   "ProcessOID": "5e37c7f52ca59449ec0a7f6d",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

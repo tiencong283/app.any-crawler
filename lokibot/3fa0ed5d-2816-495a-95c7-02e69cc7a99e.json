@@ -1,0 +1,82 @@
+{
+ "Name": "MT103_0000109026062019.exe",
+ "Md5": "579659afc726878b87fe4f1edb1096ee",
+ "UUID": "3fa0ed5d-2816-495a-95c7-02e69cc7a99e",
+ "Processes": [
+  {
+   "OID": "5d1489cfbcc5222244240891",
+   "ProcessID": 2504,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\MT103_0000109026062019.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\MT103_0000109026062019.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1561627086514
+  },
+  {
+   "OID": "5d1489d5bcc52222442430ce",
+   "ProcessID": 2620,
+   "ParentPID": 2504,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\MT103_0000109026062019.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\MT103_0000109026062019.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561627092780
+  },
+  {
+   "OID": "5d148a79bcc5222244249f27",
+   "ProcessID": 2940,
+   "ParentPID": 2044,
+   "CommandLine": "\"C:\\Windows\\system32\\verclsid.exe\" /S /C {0B2C9183-C9FA-4C53-AE21-C900B0C39965} /I {0C733A8A-2A1C-11CE-ADE5-00AA0044773D} /X 0x401",
+   "Image": "C:\\Windows\\system32\\verclsid.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1561627257155
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d148a79bcc5222244249f27",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d1489d5bcc52222442430ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1489d5bcc52222442430ce",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1489cebcc52222442400f2",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1489d5bcc52222442430ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1489d5bcc52222442430ce",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5d1489d5bcc52222442430ce",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d1489cfbcc5222244240891",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

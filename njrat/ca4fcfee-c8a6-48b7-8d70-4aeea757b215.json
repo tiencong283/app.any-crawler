@@ -1,0 +1,75 @@
+{
+ "Name": "HydraRoulette.exe",
+ "Md5": "be9df87bd2c803d24fb9685c28e3535a",
+ "UUID": "ca4fcfee-c8a6-48b7-8d70-4aeea757b215",
+ "Processes": [
+  {
+   "OID": "5ee8db8a77778949027796b0",
+   "ProcessID": 2244,
+   "ParentPID": 1688,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\HydraRoulette.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\HydraRoulette.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1592318858355
+  },
+  {
+   "OID": "5ee8dbac7777894902779a65",
+   "ProcessID": 2500,
+   "ParentPID": 2244,
+   "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /Create /TN \"Updates\\iGsYlWu\" /XML \"C:\\Users\\admin\\AppData\\Local\\Temp\\tmp1F9B.tmp\"",
+   "Image": "C:\\Windows\\System32\\schtasks.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592318892183
+  },
+  {
+   "OID": "5ee8dbac7777894902779ac9",
+   "ProcessID": 3460,
+   "ParentPID": 2244,
+   "CommandLine": "\"{path}\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegSvcs.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1592318892308
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ee8dbac7777894902779ac9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee8dbac7777894902779ac9",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee8db8a7777894902778f46",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee8dbac7777894902779a65",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ee8db8a77778949027796b0",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1053"
+   ]
+  },
+  {
+   "ProcessOID": "5ee8db8a77778949027796b0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ee8db8a77778949027796b0",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

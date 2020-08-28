@@ -1,0 +1,86 @@
+{
+ "Name": "480.exe",
+ "Md5": "932a66a90b27dd7ee818a68931abe1f6",
+ "UUID": "86613380-c291-4e19-b303-8a079223511b",
+ "Processes": [
+  {
+   "OID": "5daf2e73cabe80462ef57fc9",
+   "ProcessID": 956,
+   "ParentPID": 352,
+   "CommandLine": "\"C:\\Users\\admin\\480.exe\" ",
+   "Image": "C:\\Users\\admin\\480.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1571761779092
+  },
+  {
+   "OID": "5daf2e73cabe80462ef585cc",
+   "ProcessID": 2852,
+   "ParentPID": 956,
+   "CommandLine": "--b378b3aa",
+   "Image": "C:\\Users\\admin\\480.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571761779357
+  },
+  {
+   "OID": "5daf2e7acabe80462ef589c4",
+   "ProcessID": 3688,
+   "ParentPID": 2852,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571761785357
+  },
+  {
+   "OID": "5daf2e7acabe80462ef589c5",
+   "ProcessID": 1536,
+   "ParentPID": 3688,
+   "CommandLine": "--b583abe8",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\typebsketch\\typebsketch.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1571761785576
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5daf2e7acabe80462ef589c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5daf2e7acabe80462ef589c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5daf2e7acabe80462ef589c5",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5daf2e73cabe80462ef585cc",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5daf2e73cabe80462ef585cc",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5daf2e73cabe80462ef585cc",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5daf2e73cabe80462ef57fc9",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "Name": "2ebf44af-ed35-410f-9e9e-1bcc12a16322",
+ "Md5": "efedde4294eb7131b290be752b2c0563",
+ "UUID": "f5c5d10a-40b9-4072-8772-704e0dd2a7b7",
+ "Processes": [
+  {
+   "OID": "5d14cc828d1f703c971684c5",
+   "ProcessID": 3072,
+   "ParentPID": 252,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\2ebf44af-ed35-410f-9e9e-1bcc12a16322.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\2ebf44af-ed35-410f-9e9e-1bcc12a16322.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1561644162207
+  },
+  {
+   "OID": "5d14ccc28d1f703c97168847",
+   "ProcessID": 2292,
+   "ParentPID": 3072,
+   "CommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\"",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561644225957
+  },
+  {
+   "OID": "5d14ccc88d1f703c97168b3c",
+   "ProcessID": 3856,
+   "ParentPID": 2292,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\RegAsm.exe\" \"RegAsm.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1561644232160
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d14cc828d1f703c97167d40",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d14ccc28d1f703c97168847",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d14ccc28d1f703c97168847",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d14ccc28d1f703c97168847",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d14ccc28d1f703c97168847",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d14ccc28d1f703c97168847",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d14ccc28d1f703c97168847",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d14ccc28d1f703c97168847",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "Name": "FacebookCrypter.exe",
+ "Md5": "55a56ce91cbb81b55e979994a845e159",
+ "UUID": "7ed7033f-e9b5-4f53-ad8e-024e313d7f91",
+ "Processes": [
+  {
+   "OID": "5d2f5d2687a566697292205c",
+   "ProcessID": 3604,
+   "ParentPID": 304,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\FacebookCrypter.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\FacebookCrypter.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1563385126517
+  },
+  {
+   "OID": "5d2f5d2d87a5666972922324",
+   "ProcessID": 3344,
+   "ParentPID": 3604,
+   "CommandLine": "\"C:\\Users\\admin\\PSNGen.exe\" ",
+   "Image": "C:\\Users\\admin\\PSNGen.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563385132877
+  },
+  {
+   "OID": "5d2f5d3387a56669729228cb",
+   "ProcessID": 2788,
+   "ParentPID": 3344,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\PSNGen.exe\" \"PSNGen.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1563385139048
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d2f5d2d87a5666972922324",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2f5d2d87a5666972922324",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d2f5d2d87a5666972922324",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2f5d2d87a5666972922324",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d2f5d2d87a5666972922324",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5d2f5d2d87a5666972922324",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5d2f5d2687a566697292205c",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5d2f5d2687a566697292205c",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}

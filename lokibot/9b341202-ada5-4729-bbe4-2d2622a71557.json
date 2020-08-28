@@ -1,0 +1,77 @@
+{
+ "Name": "payment advice_pdf.exe",
+ "Md5": "d239b8d5fe02e7f6e37576d7d82f9667",
+ "UUID": "9b341202-ada5-4729-bbe4-2d2622a71557",
+ "Processes": [
+  {
+   "OID": "5d00bc481d13526b6d90fb1a",
+   "ProcessID": 2128,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\payment advice_pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\payment advice_pdf.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1560329286557
+  },
+  {
+   "OID": "5d00bc5a1d13526b6d910675",
+   "ProcessID": 3824,
+   "ParentPID": 2128,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\payment advice_pdf.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\payment advice_pdf.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1560329306042
+  },
+  {
+   "OID": "5d00bcb11d13526b6d912f80",
+   "ProcessID": 3888,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Windows\\system32\\notepad.exe\" ",
+   "Image": "C:\\Windows\\system32\\notepad.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1560329392588
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5d00bcb11d13526b6d912f80",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5d00bc5a1d13526b6d910675",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d00bc5a1d13526b6d910675",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d00bc5a1d13526b6d910675",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d00bc5a1d13526b6d910675",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1081"
+   ]
+  },
+  {
+   "ProcessOID": "5d00bc5a1d13526b6d910675",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5d00bc481d13526b6d90fb1a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  }
+ ]
+}

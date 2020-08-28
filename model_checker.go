@@ -131,32 +131,67 @@ func getTreeHeight(root *ProcessNode) int {
 	return ans + 1
 }
 
+func getNumOfNodes(root *ProcessNode) int {
+	if root == nil {
+		return 0
+	}
+	count := 0
+	root.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
+		count++
+		return true
+	}, nil, 1)
+	return count
+}
+
 func (procTree *ProcessTree) GetTreeHeight() int {
 	return getTreeHeight(procTree.Root)
 }
 
-type WalkDfsFunc func(procNode *ProcessNode, parent *ProcessNode, level int) bool
+type WalkDfsFunc func(node *ProcessNode, parent *ProcessNode, level int) bool
 
 func (procTree *ProcessTree) WalkDfs(walkFunc WalkDfsFunc) {
-	procTree.Root.walkDfs(walkFunc, nil, 1)
+	procTree.Root.WalkDfs(walkFunc, nil, 1)
 }
 
-func (procNode *ProcessNode) walkDfs(walkFunc WalkDfsFunc, parent *ProcessNode, level int) {
-	if walkFunc(procNode.makeCopy(), parent, level) {
+func (procNode *ProcessNode) WalkDfs(walkFunc WalkDfsFunc, parent *ProcessNode, level int) {
+	if walkFunc(procNode, parent, level) {
 		for _, child := range procNode.Children {
-			child.walkDfs(walkFunc, procNode.makeCopy(), level+1)
+			child.WalkDfs(walkFunc, procNode, level+1)
 		}
 	}
 }
 
-func (procTree *ProcessTree) StripTreeAt(stripLevel int) {
-	procTree.WalkDfs(func(procNode *ProcessNode, parent *ProcessNode, level int) bool {
+func (procNode *ProcessNode) ToTree() *ProcessTree {
+	cloneTree := NewProcessTree()
+	procNode.WalkDfs(func(procNode *ProcessNode, parent *ProcessNode, level int) bool {
+		cloneNode := procNode.MakeCopy()
+		cloneTree.AddProc(cloneNode)
+		if parent == nil {
+			cloneTree.Root = cloneNode
+			return true
+		}
+		cloneParentNode, ok := cloneTree.NodesById[parent.OID]
+		if !ok {
+			log.Println("Warn: something unexpected happened in ToTree")
+			return false
+		}
+		cloneParentNode.addChild(cloneNode)
+		return true
+	}, nil, 1)
+	cloneTree.Refactor()
+	return cloneTree
+}
+
+func (procNode *ProcessNode) StripTreeAt(stripLevel int) *ProcessTree {
+	cloneTree := procNode.ToTree()
+	cloneTree.WalkDfs(func(procNode *ProcessNode, parent *ProcessNode, level int) bool {
 		if level >= stripLevel {
 			procNode.Children = nil
 			return false
 		}
 		return true
 	})
+	return cloneTree
 }
 
 func CalculateSimilarScore(flatTreeA, flatTreeB []*ProcessNode) float64 {
@@ -175,16 +210,39 @@ func (procTree *ProcessTree) CompareTo(another *ProcessTree) float64 {
 	if len(flatTreeA) > len(flatTreeB) {
 		return 0
 	}
-	if len(flatTreeA) == len(flatTreeB) { // two equal tree case
+	if len(flatTreeA) == len(flatTreeB) { // exactly-matching
 		return CalculateSimilarScore(flatTreeA, flatTreeB)
 	}
-	var ans float64
-	for i := 0; i < len(flatTreeB)-len(flatTreeA)+1; i++ {
-		if tmpResult := CalculateSimilarScore(flatTreeA, flatTreeB[i:len(flatTreeA)+i]); tmpResult > ans {
-			ans = tmpResult
+	//var ans float64
+	//for i := 0; i < len(flatTreeB)-len(flatTreeA)+1; i++ {
+	//	if tmpResult := CalculateSimilarScore(flatTreeA, flatTreeB[i:len(flatTreeA)+i]); tmpResult > ans {
+	//		ans = tmpResult
+	//	}
+	//}
+	//return ans
+
+	treeHeight := procTree.GetTreeHeight()
+	numOfNodes := getNumOfNodes(procTree.Root)
+	another.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
+		if getTreeHeight(node) < treeHeight || getNumOfNodes(node) < numOfNodes {
+			return false
 		}
-	}
-	return ans
+		log.Printf("potential node: (pid: %d, image: %s)\n", node.ProcessID, node.Image)
+		potentialTree := node.StripTreeAt(treeHeight)
+		potentialTree.DumpTree()
+
+		// how to check potentialTree vs profileTree
+
+		return true
+	})
+	return 1.0
+}
+
+func (procTree *ProcessTree) DumpTree() {
+	procTree.WalkDfs(func(procNode *ProcessNode, parent *ProcessNode, level int) bool {
+		log.Printf("level: %d, image: %s\n", level, procNode.Image)
+		return true
+	})
 }
 
 type ProcessNode struct {
@@ -203,9 +261,10 @@ func NewProcessNode(proc *Process) *ProcessNode {
 }
 
 // clone the node with the same properties except for the children
-func (procNode *ProcessNode) makeCopy() *ProcessNode {
+func (procNode *ProcessNode) MakeCopy() *ProcessNode {
 	return &ProcessNode{
 		Process:    procNode.Process,
+		Children:   make([]*ProcessNode, 0),
 		Techniques: procNode.Techniques,
 	}
 }
@@ -271,7 +330,10 @@ var malwareTag string
 var isCrawler bool
 var isEvaluator bool
 
+const evaluationUsageFormat = "Usage: %s -e <Malware Tag> [TaskFileName A] [TaskFileName B]\n"
+
 func init() {
+	log.SetOutput(os.Stdout)
 	flag.BoolVar(&isCrawler, "c", false, "crawling tasks from app.any.run")
 	flag.BoolVar(&isEvaluator, "e", false, "grouping tasks by its similarity")
 }
@@ -290,41 +352,40 @@ func main() {
 		crawlTasks(malwareTag, taskIndex, numOfTasks)
 	case isEvaluator:
 		if flag.NArg() < 1 {
-			fmt.Printf("Usage: %s -e <Malware Tag> [Task File Name]\n", os.Args[0])
+			fmt.Printf(evaluationUsageFormat, os.Args[0])
 			os.Exit(0)
 		}
 		malwareTag = flag.Args()[0]
-		var profileAt string
-		if flag.NArg() >= 2 {
-			profileAt = flag.Args()[1]
-		}
-
-		// loading process tree data
-		files, err := ioutil.ReadDir(malwareTag)
-		if err != nil {
-			log.Fatal(err)
-		}
-		dataSize := len(files)
-		log.Printf("considering %d tasks\n", dataSize)
-		procTrees := make(map[*ProcessData]*ProcessTree)
-		for _, file := range files {
-			if !file.IsDir() && strings.HasSuffix(file.Name(), ".json") {
-				procTree, procData, err := LoadProcessTree(fmt.Sprintf("%s/%s", malwareTag, file.Name()))
-				if err != nil {
-					log.Printf("Warn: cannot load process tree model at %s, %s", file.Name(), err)
-					continue
-				}
-				procTrees[procData] = procTree
-			}
-		}
-		if profileAt != "" {
-			profile, profileData, err := LoadProcessTree(fmt.Sprintf("%s/%s.json", malwareTag, profileAt))
+		switch flag.NArg() {
+		case 1, 2:
+			// loading process tree data
+			files, err := ioutil.ReadDir(malwareTag)
 			if err != nil {
 				log.Fatal(err)
 			}
-			results, similars := checkWithProfile(profile, profileData, procTrees, false)
-			printResult(profileData, dataSize, results, similars)
-		} else {
+			dataSize := len(files)
+			log.Printf("considering %d tasks\n", dataSize)
+			procTrees := make(map[*ProcessData]*ProcessTree)
+			for _, file := range files {
+				if !file.IsDir() && strings.HasSuffix(file.Name(), ".json") {
+					procTree, procData, err := LoadProcessTree(fmt.Sprintf("%s/%s", malwareTag, file.Name()))
+					if err != nil {
+						log.Printf("Warn: cannot load process tree model at %s, %s", file.Name(), err)
+						continue
+					}
+					procTrees[procData] = procTree
+				}
+			}
+			if flag.NArg() == 2 {
+				profileAt := flag.Args()[1]
+				profile, profileData, err := LoadProcessTree(fmt.Sprintf("%s/%s.json", malwareTag, profileAt))
+				if err != nil {
+					log.Fatal(err)
+				}
+				results, similars := checkWithProfile(profile, profileData, procTrees, false)
+				printResult(profileData, dataSize, results, similars)
+				return
+			}
 			var totalCoverage float64
 			var counter int
 			for procData, procTree := range procTrees {
@@ -337,6 +398,24 @@ func main() {
 				counter++
 			}
 			log.Printf("[*] total effective profile: %d/%d, total coverage: %.2f %%\n", counter, dataSize, totalCoverage*100)
+		case 3:
+			profileAt := flag.Args()[1]
+			profile, profileData, err := LoadProcessTree(fmt.Sprintf("%s/%s.json", malwareTag, profileAt))
+			if err != nil {
+				log.Fatal(err)
+			}
+			checkProfileAt := flag.Args()[2]
+			checkProfile, checkProfileData, err := LoadProcessTree(fmt.Sprintf("%s/%s.json", malwareTag,
+				checkProfileAt))
+			if err != nil {
+				log.Fatal(err)
+			}
+			result := profile.CompareTo(checkProfile)
+			log.Printf("[*] md5: %s, uuid: %s, profile: %s\n", profileData.Md5, profileData.UUID, profileData.Name)
+			log.Printf("P: %.2f, md5: %s, uuid: %s, name: %s\n", result, checkProfileData.Md5, checkProfileData.UUID, checkProfileData.Name)
+		default:
+			fmt.Printf(evaluationUsageFormat, os.Args[0])
+			os.Exit(0)
 		}
 	default:
 		flag.Usage()

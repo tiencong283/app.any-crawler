@@ -1,0 +1,168 @@
+{
+ "Name": "installerx.exe",
+ "Md5": "649cbb2f889c9ae399ecdd637603f661",
+ "UUID": "4cc423af-4179-4c19-ba35-a6086541603c",
+ "Processes": [
+  {
+   "OID": "5cec32880e574c62065d323a",
+   "ProcessID": 3972,
+   "ParentPID": 116,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\installerx.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\installerx.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1558983303937
+  },
+  {
+   "OID": "5cec32890e574c62065d3bf5",
+   "ProcessID": 3200,
+   "ParentPID": 3972,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\她太公族太顾孙.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\她太公族太顾孙.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558983304859
+  },
+  {
+   "OID": "5cec32890e574c62065d3f28",
+   "ProcessID": 1232,
+   "ParentPID": 3200,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\她太公族太顾孙.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\她太公族太顾孙.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558983305187
+  },
+  {
+   "OID": "5cec32900e574c62065d45ab",
+   "ProcessID": 680,
+   "ParentPID": 1232,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\svchost.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558983311859
+  },
+  {
+   "OID": "5cec32900e574c62065d45ac",
+   "ProcessID": 2108,
+   "ParentPID": 680,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Roaming\\svchost.exe\"",
+   "Image": "C:\\Users\\admin\\AppData\\Roaming\\svchost.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558983312109
+  },
+  {
+   "OID": "5cec32960e574c62065d4de5",
+   "ProcessID": 2792,
+   "ParentPID": 2108,
+   "CommandLine": "netsh firewall add allowedprogram \"C:\\Users\\admin\\AppData\\Roaming\\svchost.exe\" \"svchost.exe\" ENABLE",
+   "Image": "C:\\Windows\\system32\\netsh.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558983318250
+  },
+  {
+   "OID": "5cec32960e574c62065d4de7",
+   "ProcessID": 1896,
+   "ParentPID": 2108,
+   "CommandLine": "taskkill /F /IM Exsample.exe",
+   "Image": "C:\\Windows\\system32\\taskkill.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1558983318281
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5cec32900e574c62065d45ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cec32900e574c62065d45ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cec32900e574c62065d45ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cec32900e574c62065d45ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cec32900e574c62065d45ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cec32900e574c62065d45ac",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cec32900e574c62065d45ac",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1089"
+   ]
+  },
+  {
+   "ProcessOID": "5cec32890e574c62065d3f28",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cec32890e574c62065d3f28",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cec32890e574c62065d3f28",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cec32890e574c62065d3f28",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cec32890e574c62065d3bf5",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cec32880e574c62065d323a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1106"
+   ]
+  },
+  {
+   "ProcessOID": "5cec32880e574c62065d323a",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5cec32880e574c62065d323a",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5cec32880e574c62065d3228",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  }
+ ]
+}

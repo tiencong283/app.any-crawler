@@ -1,0 +1,103 @@
+{
+ "Name": "VIVAE.exe",
+ "Md5": "4231d5c0b6e27a8a32e054fd066319c8",
+ "UUID": "aacf2ea2-7497-446f-b2f2-4756c760e13d",
+ "Processes": [
+  {
+   "OID": "5ed82a5366a3187af76692fd",
+   "ProcessID": 2204,
+   "ParentPID": 464,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\VIVAE.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\VIVAE.exe",
+   "ProcessType": "Main process",
+   "CreationTimestamp": 1591224915211
+  },
+  {
+   "OID": "5ed82a5366a3187af76692fe",
+   "ProcessID": 2444,
+   "ParentPID": 2204,
+   "CommandLine": "\"C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_VIVAE.exe\" ",
+   "Image": "C:\\Users\\admin\\AppData\\Local\\Temp\\._cache_VIVAE.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591224915680
+  },
+  {
+   "OID": "5ed82a5566a3187af766a0a4",
+   "ProcessID": 3560,
+   "ParentPID": 2204,
+   "CommandLine": "\"C:\\ProgramData\\Synaptics\\Synaptics.exe\" InjUpdate",
+   "Image": "C:\\ProgramData\\Synaptics\\Synaptics.exe",
+   "ProcessType": "Child process",
+   "CreationTimestamp": 1591224917243
+  },
+  {
+   "OID": "5ed82a7d66a3187af766b797",
+   "ProcessID": 2828,
+   "ParentPID": 464,
+   "CommandLine": "\"C:\\Windows\\explorer.exe\" ",
+   "Image": "C:\\Windows\\explorer.exe",
+   "ProcessType": "Probably manual launch or APC inject",
+   "CreationTimestamp": 1591224957149
+  }
+ ],
+ "Incidents": [
+  {
+   "ProcessOID": "5ed82a7d66a3187af766b797",
+   "ThreatLevel": 0,
+   "MitreAttacks": [
+    "T1204"
+   ]
+  },
+  {
+   "ProcessOID": "5ed82a5566a3187af766a0a4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed82a5566a3187af766a0a4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed82a5366a3187af7668b8a",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ed82a5566a3187af766a0a4",
+   "ThreatLevel": 1,
+   "MitreAttacks": [
+    "T1012"
+   ]
+  },
+  {
+   "ProcessOID": "5ed82a5566a3187af766a0a4",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed82a5366a3187af76692fe",
+   "ThreatLevel": 2,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed82a5366a3187af76692fd",
+   "ThreatLevel": 2,
+   "MitreAttacks": [
+    "T1060"
+   ]
+  },
+  {
+   "ProcessOID": "5ed82a5366a3187af76692fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  },
+  {
+   "ProcessOID": "5ed82a5366a3187af76692fd",
+   "ThreatLevel": 1,
+   "MitreAttacks": []
+  }
+ ]
+}
