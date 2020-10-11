@@ -23,15 +23,17 @@ func ToJson(v interface{}) string {
 }
 
 type ProcessTree struct {
-	Root       *ProcessNode
-	NodesByPid map[int]*ProcessNode
-	NodesById  map[string]*ProcessNode
+	Root         *ProcessNode
+	NodesByPid   map[int]*ProcessNode
+	NodesById    map[string]*ProcessNode
+	NodesAtLevel map[int]int
 }
 
 func NewProcessTree() *ProcessTree {
 	return &ProcessTree{
-		NodesByPid: make(map[int]*ProcessNode),
-		NodesById:  make(map[string]*ProcessNode),
+		NodesByPid:   make(map[int]*ProcessNode),
+		NodesById:    make(map[string]*ProcessNode),
+		NodesAtLevel: make(map[int]int),
 	}
 }
 
@@ -99,6 +101,10 @@ func (procTree *ProcessTree) Refactor() {
 			return procNode.Children[i].CreationTimestamp > procNode.Children[j].CreationTimestamp
 		})
 	}
+	procTree.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
+		procTree.NodesAtLevel[level] ++
+		return true
+	})
 }
 
 func (procTree *ProcessTree) DepthFirstSearch() []*ProcessNode {
@@ -156,7 +162,9 @@ func (procTree *ProcessTree) WalkDfs(walkFunc WalkDfsFunc) {
 func (procNode *ProcessNode) WalkDfs(walkFunc WalkDfsFunc, parent *ProcessNode, level int) {
 	if walkFunc(procNode, parent, level) {
 		for _, child := range procNode.Children {
-			child.WalkDfs(walkFunc, procNode, level+1)
+			if !child.Removed {
+				child.WalkDfs(walkFunc, procNode, level+1)
+			}
 		}
 	}
 }
@@ -179,6 +187,7 @@ func (procNode *ProcessNode) ToTree() *ProcessTree {
 		return true
 	}, nil, 1)
 	cloneTree.Refactor()
+
 	return cloneTree
 }
 
@@ -191,6 +200,9 @@ func (procNode *ProcessNode) StripTreeAt(stripLevel int) *ProcessTree {
 		}
 		return true
 	})
+	for i := stripLevel + 1; i <= getTreeHeight(procNode); i++ {
+		delete(cloneTree.NodesAtLevel, i)
+	}
 	return cloneTree
 }
 
@@ -203,44 +215,91 @@ func CalculateSimilarScore(flatTreeA, flatTreeB []*ProcessNode) float64 {
 	return ans / float64(len(flatTreeA))
 }
 
-func (procTree *ProcessTree) CompareTo(another *ProcessTree) float64 {
-	flatTreeA := procTree.DepthFirstSearch()
-	flatTreeB := another.DepthFirstSearch()
+var shouldTraverseNext = false
 
-	if len(flatTreeA) > len(flatTreeB) {
-		return 0
-	}
-	if len(flatTreeA) == len(flatTreeB) { // exactly-matching
-		return CalculateSimilarScore(flatTreeA, flatTreeB)
-	}
-	//var ans float64
-	//for i := 0; i < len(flatTreeB)-len(flatTreeA)+1; i++ {
-	//	if tmpResult := CalculateSimilarScore(flatTreeA, flatTreeB[i:len(flatTreeA)+i]); tmpResult > ans {
-	//		ans = tmpResult
-	//	}
-	//}
-	//return ans
-
-	treeHeight := procTree.GetTreeHeight()
-	numOfNodes := getNumOfNodes(procTree.Root)
-	another.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
-		if getTreeHeight(node) < treeHeight || getNumOfNodes(node) < numOfNodes {
+func compareToLooseCase(profileTree, checkTree *ProcessTree, numOfProfileNodes int) float64 {
+	checkTree.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
+		if shouldTraverseNext {
 			return false
 		}
-		log.Printf("potential node: (pid: %d, image: %s)\n", node.ProcessID, node.Image)
-		potentialTree := node.StripTreeAt(treeHeight)
-		potentialTree.DumpTree()
+		if parent == nil {
+			return true
+		}
+		numOfCheckNodes := getNumOfNodes(checkTree.Root)
+		if numOfCheckNodes < numOfProfileNodes {
+			return false
+		} else if numOfCheckNodes == numOfProfileNodes {
+			log.Println("ping")
+			checkTree.DumpTree()
+			shouldTraverseNext = true
+			return false
+		}
 
-		// how to check potentialTree vs profileTree
+		if profileTree.NodesAtLevel[level] > checkTree.NodesAtLevel[level] {
+			return false
+		}
+		if profileTree.NodesAtLevel[level] < checkTree.NodesAtLevel[level] {
+			// try to remove subtree at node
+			node.Removed = true
+			node.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
+				checkTree.NodesAtLevel[level] --
+				return true
+			}, parent, level)
 
+			compareToLooseCase(profileTree, checkTree, numOfProfileNodes)
+
+			node.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
+				checkTree.NodesAtLevel[level] ++
+				return true
+			}, parent, level)
+			shouldTraverseNext = false
+			node.Removed = false
+		}
 		return true
 	})
-	return 1.0
+	return 0
+}
+
+func (procTree *ProcessTree) CompareToLooseCase(another *ProcessTree) float64 {
+	numOfProfileNodes := getNumOfNodes(procTree.Root)
+	return compareToLooseCase(procTree, another, numOfProfileNodes)
+}
+
+func (procTree *ProcessTree) CompareTo(checkTree *ProcessTree) float64 {
+	profileTreeNodes := getNumOfNodes(procTree.Root)
+	checkTreeNodes := getNumOfNodes(checkTree.Root)
+	profileTreeHeight := procTree.GetTreeHeight()
+
+	if profileTreeNodes > checkTreeNodes {
+		return 0
+	}
+	if profileTreeNodes == checkTreeNodes { // exactly-matching
+		flatProfileTree := procTree.DepthFirstSearch()
+		flatCheckTree := checkTree.DepthFirstSearch()
+		return CalculateSimilarScore(flatProfileTree, flatCheckTree)
+	}
+
+	checkTree.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
+		if getTreeHeight(node) < profileTreeHeight || getNumOfNodes(node) < profileTreeNodes {
+			return false
+		}
+		potentialTree := node.StripTreeAt(profileTreeHeight)
+		if getNumOfNodes(potentialTree.Root) < profileTreeNodes {
+			return true
+		}
+		log.Printf("potential node: (pid: %d, image: %s)\n", node.ProcessID, node.Image)
+		potentialTree.DumpTree()
+		// how to check potentialTree vs profileTree
+		log.Println(procTree.CompareToLooseCase(potentialTree))
+		os.Exit(1)
+		return true
+	})
+	return 0
 }
 
 func (procTree *ProcessTree) DumpTree() {
-	procTree.WalkDfs(func(procNode *ProcessNode, parent *ProcessNode, level int) bool {
-		log.Printf("level: %d, image: %s\n", level, procNode.Image)
+	procTree.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
+		log.Printf("Level: %d, ID: %d, Image: %s\n", node.ProcessID, level, node.Image)
 		return true
 	})
 }
@@ -250,6 +309,8 @@ type ProcessNode struct {
 	Children   []*ProcessNode
 	Parent     *ProcessNode
 	Techniques map[string]bool
+
+	Removed bool // to simulate the removal of tree node
 }
 
 func NewProcessNode(proc *Process) *ProcessNode {
@@ -293,42 +354,74 @@ func (procNode *ProcessNode) compareTo(another *ProcessNode) float64 {
 	return float64(numOfMatchedTechIds) / float64(len(procNode.Techniques))
 }
 
+type TreeGroup struct {
+	Profile        *ProcessTree
+	ProfileData    *ProcessData
+	SimilarDegrees []float64
+	NodeInfos      []*ProcessData
+}
+
+func NewTreeGroup() *TreeGroup {
+	return &TreeGroup{
+		SimilarDegrees: make([]float64, 0),
+		NodeInfos:      make([]*ProcessData, 0),
+	}
+}
+
 func checkWithProfile(profile *ProcessTree, profileData *ProcessData, procTrees map[*ProcessData]*ProcessTree,
-	deleted bool) ([]float64,
-	[]*ProcessData) {
-	results := make([]float64, 0)
-	similars := make([]*ProcessData, 0)
+	deleted bool) *TreeGroup {
+	treeGroup := NewTreeGroup()
 
 	for procData, procTree := range procTrees {
 		if profileData.UUID == procData.UUID {
 			continue
 		}
-		result := profile.CompareTo(procTree)
-		if result >= 0.6 {
-			results = append(results, result)
-			similars = append(similars, procData)
+		similarDegree := profile.CompareTo(procTree)
+		if similarDegree >= maliciousThreshold {
+			treeGroup.SimilarDegrees = append(treeGroup.SimilarDegrees, similarDegree)
+			treeGroup.NodeInfos = append(treeGroup.NodeInfos, procData)
 			if deleted {
 				delete(procTrees, procData)
 			}
 		}
 	}
-	return results, similars
+	treeGroup.Profile = profile
+	treeGroup.ProfileData = profileData
+	return treeGroup
 }
 
-func printResult(profileData *ProcessData, dataSize int, results []float64, similars []*ProcessData) {
+func printResult(treeGroup *TreeGroup, numOfTrees int) {
+	profileData := treeGroup.ProfileData
+	similarDegrees := treeGroup.SimilarDegrees
+	nodeInfos := treeGroup.NodeInfos
+
 	log.Println()
-	log.Printf("[*] coverage: %.2f%%, md5: %s, uuid: %s, profile: %s\n", float64(len(results))*100/float64(dataSize),
+	log.Printf("[*] coverage: %.2f%%, md5: %s, uuid: %s, profile: %s\n", float64(len(similarDegrees))*100/float64(numOfTrees),
 		profileData.Md5, profileData.UUID, profileData.Name)
-	for i := 0; i < len(results); i++ {
-		procData := similars[i]
-		result := results[i]
+
+	tempGroups := make(map[*ProcessData]float64, 0)
+	// sort by P
+	for i := 0; i < len(similarDegrees); i++ {
+		tempGroups[nodeInfos[i]] = similarDegrees[i]
+	}
+	sort.Slice(nodeInfos, func(i, j int) bool {
+		return tempGroups[nodeInfos[i]] > tempGroups[nodeInfos[j]]
+	})
+
+	for i := 0; i < len(similarDegrees); i++ {
+		procData := nodeInfos[i]
+		result := tempGroups[procData]
 		log.Printf("P: %.2f, md5: %s, uuid: %s, name: %s\n", result, procData.Md5, procData.UUID, procData.Name)
 	}
 }
 
-var malwareTag string
-var isCrawler bool
-var isEvaluator bool
+var (
+	malwareTag         string
+	isCrawler          bool
+	isEvaluator        bool
+	maliciousThreshold float64
+	minNodeNum         int
+)
 
 const evaluationUsageFormat = "Usage: %s -e <Malware Tag> [TaskFileName A] [TaskFileName B]\n"
 
@@ -336,10 +429,13 @@ func init() {
 	log.SetOutput(os.Stdout)
 	flag.BoolVar(&isCrawler, "c", false, "crawling tasks from app.any.run")
 	flag.BoolVar(&isEvaluator, "e", false, "grouping tasks by its similarity")
+	flag.Float64Var(&maliciousThreshold, "t", 0.7, "threshold value for classification purpose")
+	flag.IntVar(&minNodeNum, "m", 1, "only consider the process tree whose node number >= ")
 }
 
 func main() {
 	flag.Parse()
+
 	switch {
 	case isCrawler:
 		if flag.NArg() < 2 {
@@ -350,6 +446,7 @@ func main() {
 		taskIndex, _ := strconv.Atoi(flag.Args()[1])
 		numOfTasks, _ := strconv.Atoi(flag.Args()[2])
 		crawlTasks(malwareTag, taskIndex, numOfTasks)
+
 	case isEvaluator:
 		if flag.NArg() < 1 {
 			fmt.Printf(evaluationUsageFormat, os.Args[0])
@@ -363,8 +460,6 @@ func main() {
 			if err != nil {
 				log.Fatal(err)
 			}
-			dataSize := len(files)
-			log.Printf("considering %d tasks\n", dataSize)
 			procTrees := make(map[*ProcessData]*ProcessTree)
 			for _, file := range files {
 				if !file.IsDir() && strings.HasSuffix(file.Name(), ".json") {
@@ -373,31 +468,44 @@ func main() {
 						log.Printf("Warn: cannot load process tree model at %s, %s", file.Name(), err)
 						continue
 					}
-					procTrees[procData] = procTree
+					if getNumOfNodes(procTree.Root) >= minNodeNum {
+						procTrees[procData] = procTree
+					}
 				}
 			}
+			taskCount := len(procTrees)
+			log.Printf("considering %d tasks\n", taskCount)
+
 			if flag.NArg() == 2 {
 				profileAt := flag.Args()[1]
 				profile, profileData, err := LoadProcessTree(fmt.Sprintf("%s/%s.json", malwareTag, profileAt))
 				if err != nil {
 					log.Fatal(err)
 				}
-				results, similars := checkWithProfile(profile, profileData, procTrees, false)
-				printResult(profileData, dataSize, results, similars)
+				treeGroup := checkWithProfile(profile, profileData, procTrees, false)
+				printResult(treeGroup, taskCount)
 				return
 			}
-			var totalCoverage float64
-			var counter int
+
+			treeGroups := make([]*TreeGroup, 0)
 			for procData, procTree := range procTrees {
-				results, similars := checkWithProfile(procTree, procData, procTrees, true)
-				if len(results) == 0 {
+				treeGroup := checkWithProfile(procTree, procData, procTrees, true)
+				if len(treeGroup.NodeInfos) == 0 {
 					continue
 				}
-				printResult(procData, dataSize, results, similars)
-				totalCoverage += float64(len(results)) / float64(dataSize)
-				counter++
+				treeGroups = append(treeGroups, treeGroup)
 			}
-			log.Printf("[*] total effective profile: %d/%d, total coverage: %.2f %%\n", counter, dataSize, totalCoverage*100)
+			sort.Slice(treeGroups, func(i, j int) bool {
+				return len(treeGroups[i].NodeInfos) > len(treeGroups[j].NodeInfos)
+			})
+			var totalCoverage float64
+			for _, treeGroup := range treeGroups {
+				printResult(treeGroup, taskCount)
+				totalCoverage += float64(len(treeGroup.NodeInfos)) / float64(taskCount)
+			}
+			log.Printf("[*] total effective profile: %d/%d, total coverage: %.2f %%\n", len(treeGroups), taskCount,
+				totalCoverage*100)
+
 		case 3:
 			profileAt := flag.Args()[1]
 			profile, profileData, err := LoadProcessTree(fmt.Sprintf("%s/%s.json", malwareTag, profileAt))
