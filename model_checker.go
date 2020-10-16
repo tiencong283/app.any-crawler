@@ -449,12 +449,13 @@ func main() {
 		numOfTasks, _ := strconv.Atoi(flag.Args()[2])
 		crawlTasks(malwareTag, taskIndex, numOfTasks)
 	case crawlByTask:
-		if flag.NArg() < 1 {
-			fmt.Printf("Usage: %s -i <Task UUID>\n", os.Args[0])
+		if flag.NArg() < 2 {
+			fmt.Printf("Usage: %s -i <Output Directory> <Task UUID>\n", os.Args[0])
 			os.Exit(0)
 		}
-		taskUuid := flag.Args()[0]
-		if err := crawlTaskByUUID(taskUuid); err != nil {
+		outDirPath := flag.Args()[0]
+		taskUuid := flag.Args()[1]
+		if err := crawlTaskByUUID(outDirPath, taskUuid); err != nil {
 			log.Fatalf("failed to crawl the task with uuid %s: %s", taskUuid, err)
 		}
 	case isEvaluator:

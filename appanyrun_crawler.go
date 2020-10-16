@@ -324,7 +324,7 @@ type TaskExistsResult struct {
 	} `json:"fields"`
 }
 
-func crawlTaskByUUID(taskUuid string) error {
+func crawlTaskByUUID(outDirPath, taskUuid string) error {
 	conn := NewAppAnyClient()
 	// check existence and get internal id
 	var result TaskExistsResult
@@ -375,10 +375,11 @@ func crawlTaskByUUID(taskUuid string) error {
 	if err != nil {
 		return err
 	}
-	if err := os.Mkdir("tasks", 0755); err != nil {
+	err = os.Mkdir(outDirPath, 0755)
+	if err != nil && !strings.Contains(err.Error(), "file exists") {
 		return fmt.Errorf("failed to create dir for saving: %s", err)
 	}
-	taskFileName := fmt.Sprintf("%s/%s.json", "tasks", getTaskUrl(taskInfo))
+	taskFileName := fmt.Sprintf("%s/%s.json", outDirPath, getTaskUrl(taskInfo))
 	if err := dumpToFile(taskFileName, bytes); err != nil {
 		return err
 	}
