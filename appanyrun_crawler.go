@@ -45,6 +45,12 @@ const (
 	// Mitre ATT&CK Mapping
 	allIncidentsUrlFormat = `["{\"msg\":\"sub\",\"id\":\"xhR3rXWu4M8X6xFow\",\"name\":\"allIncidents\",\"params\":[{\"$type\":\"oid\",\"$value\":\"%s\"}]}"]`
 	allIncidentsDoneMsg   = `{"msg":"ready","subs":["xhR3rXWu4M8X6xFow"]}`
+
+	taskExistsUrlFormat = `["{\"msg\":\"sub\",\"id\":\"L6La59ezwZEf9qP2F\",\"name\":\"taskexists\",\"params\":[\"%s\"]}"]`
+	taskExistsDoneMsg   = `["{\"msg\":\"ready\",\"subs\":[\"L6La59ezwZEf9qP2F\"]}"]`
+
+	singleTaskUrlFormat = `["{\"msg\":\"sub\",\"id\":\"mkdKdJqprjPj98Z2e\",\"name\":\"singleTask\",\"params\":[{\"$type\":\"oid\",\"$value\":\"%s\"},true]}"]`
+	singleTaskDoneMsg   = `a["{\"msg\":\"ready\",\"subs\":[\"mkdKdJqprjPj98Z2e\"]}"]`
 )
 
 func getPublicTasksUrl(tag string, numOfEntries, index int) string {
@@ -61,6 +67,14 @@ func getProcessUrl(taskId string) string {
 
 func getAllIncidentsUrl(taskId string) string {
 	return fmt.Sprintf(allIncidentsUrlFormat, taskId)
+}
+
+func getTaskExistsUrl(taskUuid string) string {
+	return fmt.Sprintf(taskExistsUrlFormat, taskUuid)
+}
+
+func getSingleTaskUrl(taskId string) string {
+	return fmt.Sprintf(singleTaskUrlFormat, taskId)
 }
 
 func sendAll(conn *websocket.Conn, msg string) error {
@@ -295,4 +309,78 @@ func crawlTasks(malwareTag string, taskIndex, numOfTasks int) {
 			conn.Close()
 		}
 	}
+}
+
+type TaskExistsResult struct {
+	Msg        string `json:"msg"`
+	Collection string `json:"collection"`
+	ID         string `json:"id"`
+	Fields     struct {
+		TaskID       string `json:"taskId"`
+		TaskObjectID struct {
+			Type  string `json:"$type"`
+			Value string `json:"$value"`
+		} `json:"taskObjectId"`
+	} `json:"fields"`
+}
+
+func crawlTaskByUUID(taskUuid string) error {
+	conn := NewAppAnyClient()
+	// check existence and get internal id
+	var result TaskExistsResult
+	if err := sendAll(conn, getTaskExistsUrl(taskUuid)); err != nil {
+		return fmt.Errorf("in sendAll: %s", err)
+	}
+	msg, err := readAll(conn)
+	if err != nil {
+		return fmt.Errorf("in readAll: %s", err)
+	}
+	if err := json.Unmarshal([]byte(msg), &result); err != nil {
+		return fmt.Errorf("in Unmarshal: %s", err)
+	}
+	conn.ReadMessage()
+
+	// get process tree and incidents
+	taskId := result.Fields.TaskObjectID.Value
+	processes, err := dumpProcessTree(conn, taskId)
+	if err != nil {
+		return err
+	}
+	incidents, err := dumpAllIncidents(conn, taskId)
+	if err != nil {
+		return err
+	}
+	// task information
+	var taskInfo *Task
+	if err := sendAll(conn, getSingleTaskUrl(taskId)); err != nil {
+		return fmt.Errorf("in sendAll: %s", err)
+	}
+	msg, err = readAll(conn)
+	if err != nil {
+		return fmt.Errorf("in readAll: %s", err)
+	}
+	if err := json.Unmarshal([]byte(msg), &taskInfo); err != nil {
+		return fmt.Errorf("in Unmarshal: %s", err)
+	}
+	// save
+	mainObject := taskInfo.Fields.Public.Objects.MainObject
+	processData := &ProcessData{
+		Name:      mainObject.Names.Basename,
+		Md5:       mainObject.Hashes.Md5,
+		UUID:      taskInfo.Fields.UUID,
+		Processes: processes,
+		Incidents: incidents,
+	}
+	bytes, err := json.MarshalIndent(processData, "", " ")
+	if err != nil {
+		return err
+	}
+	if err := os.Mkdir("tasks", 0755); err != nil {
+		return fmt.Errorf("failed to create dir for saving: %s", err)
+	}
+	taskFileName := fmt.Sprintf("%s/%s.json", "tasks", getTaskUrl(taskInfo))
+	if err := dumpToFile(taskFileName, bytes); err != nil {
+		return err
+	}
+	return nil
 }

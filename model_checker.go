@@ -102,7 +102,7 @@ func (procTree *ProcessTree) Refactor() {
 		})
 	}
 	procTree.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
-		procTree.NodesAtLevel[level] ++
+		procTree.NodesAtLevel[level]++
 		return true
 	})
 }
@@ -242,14 +242,14 @@ func compareToLooseCase(profileTree, checkTree *ProcessTree, numOfProfileNodes i
 			// try to remove subtree at node
 			node.Removed = true
 			node.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
-				checkTree.NodesAtLevel[level] --
+				checkTree.NodesAtLevel[level]--
 				return true
 			}, parent, level)
 
 			compareToLooseCase(profileTree, checkTree, numOfProfileNodes)
 
 			node.WalkDfs(func(node *ProcessNode, parent *ProcessNode, level int) bool {
-				checkTree.NodesAtLevel[level] ++
+				checkTree.NodesAtLevel[level]++
 				return true
 			}, parent, level)
 			shouldTraverseNext = false
@@ -417,7 +417,8 @@ func printResult(treeGroup *TreeGroup, numOfTrees int) {
 
 var (
 	malwareTag         string
-	isCrawler          bool
+	crawlByTag         bool
+	crawlByTask        bool
 	isEvaluator        bool
 	maliciousThreshold float64
 	minNodeNum         int
@@ -427,7 +428,8 @@ const evaluationUsageFormat = "Usage: %s -e <Malware Tag> [TaskFileName A] [Task
 
 func init() {
 	log.SetOutput(os.Stdout)
-	flag.BoolVar(&isCrawler, "c", false, "crawling tasks from app.any.run")
+	flag.BoolVar(&crawlByTag, "c", false, "crawling tasks from app.any.run")
+	flag.BoolVar(&crawlByTask, "i", false, "crawling a task from app.any.run")
 	flag.BoolVar(&isEvaluator, "e", false, "grouping tasks by its similarity")
 	flag.Float64Var(&maliciousThreshold, "t", 0.7, "threshold value for classification purpose")
 	flag.IntVar(&minNodeNum, "m", 1, "only consider the process tree whose node number >= ")
@@ -437,7 +439,7 @@ func main() {
 	flag.Parse()
 
 	switch {
-	case isCrawler:
+	case crawlByTag:
 		if flag.NArg() < 2 {
 			fmt.Printf("Usage: %s -c <Malware Tag> <Task Index Index> <Number of Tasks>\n", os.Args[0])
 			os.Exit(0)
@@ -446,7 +448,15 @@ func main() {
 		taskIndex, _ := strconv.Atoi(flag.Args()[1])
 		numOfTasks, _ := strconv.Atoi(flag.Args()[2])
 		crawlTasks(malwareTag, taskIndex, numOfTasks)
-
+	case crawlByTask:
+		if flag.NArg() < 1 {
+			fmt.Printf("Usage: %s -i <Task UUID>\n", os.Args[0])
+			os.Exit(0)
+		}
+		taskUuid := flag.Args()[0]
+		if err := crawlTaskByUUID(taskUuid); err != nil {
+			log.Fatalf("failed to crawl the task with uuid %s: %s", taskUuid, err)
+		}
 	case isEvaluator:
 		if flag.NArg() < 1 {
 			fmt.Printf(evaluationUsageFormat, os.Args[0])
