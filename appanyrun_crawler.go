@@ -375,9 +375,10 @@ func crawlTaskByUUID(outDirPath, taskUuid string) error {
 	if err != nil {
 		return err
 	}
-	err = os.Mkdir(outDirPath, 0755)
-	if err != nil && !strings.Contains(err.Error(), "file exists") {
-		return fmt.Errorf("failed to create dir for saving: %s", err)
+	if _, err := os.Stat(outDirPath); os.IsNotExist(err) {
+		if err = os.Mkdir(outDirPath, 0755); err != nil {
+			return fmt.Errorf("failed to create dir for saving: %s", err)
+		}
 	}
 	taskFileName := fmt.Sprintf("%s/%s.json", outDirPath, getTaskUrl(taskInfo))
 	if err := dumpToFile(taskFileName, bytes); err != nil {
