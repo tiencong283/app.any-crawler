@@ -196,8 +196,29 @@ func (client *AppAnyClient) GetTasks(numOfTasks, startIndex int) ([]*RawTask, er
 	return tasks, nil
 }
 
-// GetProcesses returns a list of processes information as "processes" tab
+// GetProcesses returns a list of processes as "processes" tab
 func (client *AppAnyClient) GetProcesses(task *RawTask) ([]*RawProcess, error) {
 
+	return nil, nil
+}
+
+// GetIncidents returns a list of MITRE ATT&CK  as "ATT&CK" tab
+func (client *AppAnyClient) GetIncidents(task *RawTask) ([]*RawProcess, error) {
+
+	return nil, nil
+}
+
+// GetDNSQueries returns a list of DSN queries as "DNS Queries" tab
+func (client *AppAnyClient) GetDNSQueries(task *RawTask) ([]interface{}, error) {
+	return nil, nil
+}
+
+// GetNetworkConnections returns a list of network connections as "Connections" tab
+func (client *AppAnyClient) GetNetworkConnections(task *RawTask) ([]interface{}, error) {
+	return nil, nil
+}
+
+// GetHttpRequests returns a list of HTTP requests as "HTTP Requests" tab
+func (client *AppAnyClient) GetHttpRequests(task *RawTask) ([]interface{}, error) {
 	return nil, nil
 }

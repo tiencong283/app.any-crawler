@@ -33,8 +33,8 @@ func init() {
 
 // app.any.run endpoint
 var endpointList = [...]string{
-	"wss://app.any.run/sockjs/399/i73_d8dx/websocket",
-	"wss://app.any.run/sockjs/529/c95zff_z/websocket",
+	"wss://app.any.run/sockjs/399/i73_d8dy/websocket",
+	"wss://app.any.run/sockjs/529/c95zff_m/websocket",
 }
 
 func main() {
@@ -78,6 +78,7 @@ func main() {
 		numOfTasks = totalTaskCount - startTaskIndex
 		log.Warn().Msgf("only able to crawl %d tasks", numOfTasks)
 	}
+	numOfTasks = 100
 	log.Info().Msgf("Start crawling tasks (number %d, startIndex: %d)", numOfTasks, startTaskIndex)
 	tasks, err := client.GetTasks(int(numOfTasks), int(startTaskIndex))
 	if err != nil {
