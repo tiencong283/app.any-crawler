@@ -26,7 +26,7 @@ type (
 			Count uint `json:"count"`
 		} `json:"result"`
 	}
-	// This is not a complete structure because many fields are verbose or just used internally by App.Any.Run
+	// This is not a complete structure because many ignored fields are verbose or just used internally by App.Any.Run
 	// runType can be "file", "url", "download"
 	RawTask struct {
 		Msg        string `json:"msg"`
@@ -172,6 +172,28 @@ type (
 			Status int `json:"status"`
 		} `json:"fields"`
 	}
+
+	RawIncident struct {
+		Msg        string `json:"msg"`
+		Collection string `json:"collection"`
+		ID         string `json:"id"`
+		Fields     struct {
+			Task struct {
+				Type  string `json:"$type"`
+				Value string `json:"$value"`
+			} `json:"task"`
+			ProcessOID struct {
+				Type  string `json:"$type"`
+				Value string `json:"$value"`
+			} `json:"processOID"`
+			Threatlevel int    `json:"threatlevel"`
+			Title       string `json:"title"`
+			FirstSeen   struct {
+				Date int64 `json:"$date"`
+			} `json:"firstSeen"`
+			Mitre []string `json:"mitre"`
+		} `json:"fields"`
+	}
 )
 
 func (task *RawTask) GetIdentity() string {
@@ -187,7 +209,7 @@ func (task *RawTask) GetIdentity() string {
 }
 
 func ToJson(i interface{}) string {
-	buffer, err := json.Marshal(i)
+	buffer, err := json.MarshalIndent(i, "", " ")
 	if err != nil {
 		return err.Error()
 	}

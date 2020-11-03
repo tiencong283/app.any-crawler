@@ -1,8 +1,5 @@
 package main
 
-
-//
-//
 //import (
 //	"encoding/json"
 //	"fmt"
@@ -12,14 +9,6 @@ package main
 //)
 //
 //const (
-//	// process tree
-//	processUrlFormat = `["{\"msg\":\"sub\",\"id\":\"ojEf2kD8Qo8Nt8aCg\",\"name\":\"process\",\"params\":[{\"taskID\":{\"$type\":\"oid\",\"$value\":\"%s\"},\"status\":100,\"important\":true}]}"]`
-//	processDoneMsg   = `{"msg":"ready","subs":["ojEf2kD8Qo8Nt8aCg"]}`
-//
-//	// Mitre ATT&CK Mapping
-//	allIncidentsUrlFormat = `["{\"msg\":\"sub\",\"id\":\"xhR3rXWu4M8X6xFow\",\"name\":\"allIncidents\",\"params\":[{\"$type\":\"oid\",\"$value\":\"%s\"}]}"]`
-//	allIncidentsDoneMsg   = `{"msg":"ready","subs":["xhR3rXWu4M8X6xFow"]}`
-//
 //	taskExistsUrlFormat = `["{\"msg\":\"sub\",\"id\":\"L6La59ezwZEf9qP2F\",\"name\":\"taskexists\",\"params\":[\"%s\"]}"]`
 //	taskExistsDoneMsg   = `["{\"msg\":\"ready\",\"subs\":[\"L6La59ezwZEf9qP2F\"]}"]`
 //
@@ -27,65 +16,12 @@ package main
 //	singleTaskDoneMsg   = `a["{\"msg\":\"ready\",\"subs\":[\"mkdKdJqprjPj98Z2e\"]}"]`
 //)
 //
-//func getProcessUrl(taskId string) string {
-//	return fmt.Sprintf(processUrlFormat, taskId)
-//}
-//
-//func getAllIncidentsUrl(taskId string) string {
-//	return fmt.Sprintf(allIncidentsUrlFormat, taskId)
-//}
-//
 //func getTaskExistsUrl(taskUuid string) string {
 //	return fmt.Sprintf(taskExistsUrlFormat, taskUuid)
 //}
 //
 //func getSingleTaskUrl(taskId string) string {
 //	return fmt.Sprintf(singleTaskUrlFormat, taskId)
-//}
-//
-//func dumpProcessTree(conn *websocket.Conn, taskId string) ([]*RawProcess, error) {
-//	processes := make([]*RawProcess, 0)
-//	if err := sendAll(conn, getProcessUrl(taskId)); err != nil {
-//		return nil, err
-//	}
-//	for { // receive all
-//		rawProc := new(RawProcess)
-//		msg, err := readAll(conn)
-//		if err != nil {
-//			return nil, err
-//		}
-//		if err := json.Unmarshal([]byte(msg), &rawProc); err != nil {
-//			log.Println(msg)
-//			return nil, err
-//		}
-//		if rawProc.Fields.Pid == 0 && msg == processDoneMsg {
-//			break
-//		}
-//		processes = append(processes, NewProcess(rawProc))
-//	}
-//	return processes, nil
-//}
-//
-//func dumpAllIncidents(conn *websocket.Conn, taskId string) ([]*Incident, error) {
-//	incidents := make([]*Incident, 0)
-//	if err := sendAll(conn, getAllIncidentsUrl(taskId)); err != nil {
-//		return nil, err
-//	}
-//	for { // receive all
-//		rawIncident := new(RawIncident)
-//		msg, err := readAll(conn)
-//		if err != nil {
-//			return nil, err
-//		}
-//		if err := json.Unmarshal([]byte(msg), &rawIncident); err != nil {
-//			return nil, err
-//		}
-//		if rawIncident.Collection == "" && msg == allIncidentsDoneMsg {
-//			break
-//		}
-//		incidents = append(incidents, NewIncident(rawIncident))
-//	}
-//	return incidents, nil
 //}
 //
 //func dumpToFile(fileName string, bytes []byte) error {

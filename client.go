@@ -15,7 +15,9 @@ const (
 	connectMsg                  = `["{\"msg\":\"connect\",\"version\":\"1\",\"support\":[\"1\",\"pre2\",\"pre1\"]}"]`
 	publicTasksCounterMsgFormat = `["{\"msg\":\"method\",\"method\":\"publicTasksCounter\",\"params\":[%s],\"id\":\"%s\"}"]`
 	publicTasksMsgFormat        = `["{\"msg\":\"sub\",\"id\":\"%s\",\"name\":\"publicTasks\",\"params\":[%d,%d,%s]}"]`
-	publicTasksDoneMsgFormat    = `{"msg":"ready","subs":["%s"]}`
+	processesMsgFormat          = `["{\"msg\":\"sub\",\"id\":\"%s\",\"name\":\"process\",\"params\":[{\"taskID\":{\"$type\":\"oid\",\"$value\":\"%s\"},\"status\":100,\"important\":true}]}"]`
+	allIncidentsMsgFormat       = `["{\"msg\":\"sub\",\"id\":\"%s\",\"name\":\"allIncidents\",\"params\":[{\"$type\":\"oid\",\"$value\":\"%s\"}]}"]`
+	doneMsgFormat               = `{"msg":"ready","subs":["%s"]}`
 	pingMsg                     = `{"msg":"ping"}`
 	pongMsg                     = `["{\"msg\":\"pong\"}"]`
 
@@ -72,8 +74,16 @@ func (client *AppAnyClient) getPublicTasksMsg(id string, taskCount, startIndex i
 	return fmt.Sprintf(publicTasksMsgFormat, id, taskCount, startIndex, client.appConfig.ToTaskParamsJsonQuoted())
 }
 
-func (client *AppAnyClient) getPublicTasksDoneMsg(id string) string {
-	return fmt.Sprintf(publicTasksDoneMsgFormat, id)
+func (client *AppAnyClient) getProcessesMsg(id string, taskId string) string {
+	return fmt.Sprintf(processesMsgFormat, id, taskId)
+}
+
+func (client *AppAnyClient) getAllIncidentsMsg(id string, taskId string) string {
+	return fmt.Sprintf(allIncidentsMsgFormat, id, taskId)
+}
+
+func (client *AppAnyClient) getDoneMsg(id string) string {
+	return fmt.Sprintf(doneMsgFormat, id)
 }
 
 func (client *AppAnyClient) recvMessageAndAssert(expectedMsg string) (bool, error) {
@@ -171,7 +181,7 @@ func (client *AppAnyClient) GetTasks(numOfTasks, startIndex int) ([]*RawTask, er
 			taskCount = numOfTasks
 		}
 		msg := client.getPublicTasksMsg(id, taskCount, startIndex)
-		doneMsg := client.getPublicTasksDoneMsg(id)
+		doneMsg := client.getDoneMsg(id)
 
 		if err := client.sendMessage(msg); err != nil {
 			return nil, fmt.Errorf("in sendMessage: %s", err)
@@ -198,14 +208,56 @@ func (client *AppAnyClient) GetTasks(numOfTasks, startIndex int) ([]*RawTask, er
 
 // GetProcesses returns a list of processes as "processes" tab
 func (client *AppAnyClient) GetProcesses(task *RawTask) ([]*RawProcess, error) {
+	processes := make([]*RawProcess, 0)
+	id := generateRandStr(len("E8ZWdmyNwRD3XBvcc"))
+	msg := client.getProcessesMsg(id, task.ID)
+	doneMsg := client.getDoneMsg(id)
 
-	return nil, nil
+	if err := client.sendMessage(msg); err != nil {
+		return nil, fmt.Errorf("in sendMessage: %s", err)
+	}
+	for { // receive processes
+		var process *RawProcess
+		buffer, err := client.recvMessage()
+		if err != nil {
+			return nil, fmt.Errorf("in recvMessage: %s", err)
+		}
+		if buffer == doneMsg {
+			break
+		}
+		if err := json.Unmarshal([]byte(buffer), &process); err != nil {
+			return nil, fmt.Errorf("in Unmarshal: %s", err)
+		}
+		processes = append(processes, process)
+	}
+	return processes, nil
 }
 
 // GetIncidents returns a list of MITRE ATT&CK  as "ATT&CK" tab
-func (client *AppAnyClient) GetIncidents(task *RawTask) ([]*RawProcess, error) {
+func (client *AppAnyClient) GetIncidents(task *RawTask) ([]*RawIncident, error) {
+	incidents := make([]*RawIncident, 0)
+	id := generateRandStr(len("4aYatF54JSoCNG94C"))
+	msg := client.getAllIncidentsMsg(id, task.ID)
+	doneMsg := client.getDoneMsg(id)
 
-	return nil, nil
+	if err := client.sendMessage(msg); err != nil {
+		return nil, fmt.Errorf("in sendMessage: %s", err)
+	}
+	for { // receive incidents
+		var incident *RawIncident
+		buffer, err := client.recvMessage()
+		if err != nil {
+			return nil, fmt.Errorf("in recvMessage: %s", err)
+		}
+		if buffer == doneMsg {
+			break
+		}
+		if err := json.Unmarshal([]byte(buffer), &incident); err != nil {
+			return nil, fmt.Errorf("in Unmarshal: %s", err)
+		}
+		incidents = append(incidents, incident)
+	}
+	return incidents, nil
 }
 
 // GetDNSQueries returns a list of DSN queries as "DNS Queries" tab

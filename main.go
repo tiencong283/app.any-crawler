@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"math/rand"
 	"net/http"
 	"os"
@@ -84,6 +85,21 @@ func main() {
 		log.Fatal().Err(err).Msg("in GetProcesses")
 	}
 	for _, task := range tasks {
+		fmt.Print("\n\n")
 		log.Info().Msg(task.GetIdentity())
+		processes, err := client.GetProcesses(task)
+		if err != nil {
+			log.Fatal().Err(err).Msgf("failed to get processes")
+		}
+		incidents, err := client.GetIncidents(task)
+		if err != nil {
+			log.Fatal().Err(err).Msgf("failed to get incidents")
+		}
+		for _, proc := range processes {
+			log.Info().Msgf("[PROCESS] %d - %s - %s", proc.Fields.Pid, proc.Fields.Scores.ImportantReason, proc.Fields.Image)
+		}
+		for _, incident := range incidents {
+			log.Info().Msgf("[MITRE ATT&CK] %s, %v", incident.Fields.Title, incident.Fields.Mitre)
+		}
 	}
 }
