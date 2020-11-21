@@ -55,9 +55,8 @@ func dumpToFile(fileName string, bytes []byte) error {
 }
 
 
-func dumpTask(client *AppAnyClient, malwareTag string, task *RawTask) error {
-	//get task info
-	//var  task2 *RawTask
+func dumpTask(client *AppAnyClient, Tag string, task *RawTask) error {
+
 	processes, err := client.GetProcesses(task)
 	if err != nil {
 		return err
@@ -108,7 +107,7 @@ func dumpTask(client *AppAnyClient, malwareTag string, task *RawTask) error {
 	}
 
 	//write json file
-	taskFileName := fmt.Sprintf("%s/%s.json", malwareTag, task.Fields.UUID)
+	taskFileName := fmt.Sprintf("%s/%s.json", Tag, task.Fields.UUID)
 	if err := dumpToFile(taskFileName, bytes); err != nil {
 		return err
 	}
@@ -162,31 +161,41 @@ func main() {
 	if err != nil {
 		log.Fatal().Err(err).Msg("in GetProcesses")
 	}
+	
+	// if numOfTasks <= 0 || numOfTasks > totalTaskCount {
+	// 	numOfTasks = totalTaskCount
+	// }
+	// log.Printf("Total crawling %d tasks\n", numOfTasks)
+	
 
 	//create folder
 	var Tag string  = appConfig.taskTag + "-"
 	for _, extension := range appConfig.taskExtensions{
-        Tag = Tag + extension + ","
+		Tag = Tag + extension + ","
 	}
 	Tag = Tag + "-"
 	for _, detection := range appConfig.taskDetections{
-        Tag = Tag + strconv.Itoa(detection) 
+		Tag = Tag + strconv.Itoa(detection) 
 	}
+	
 	os.Mkdir(Tag, os.ModePerm)
 
 	//for each task of list task
-	
+
 	for _, task := range tasks {
 		fmt.Print("\n\n")
 		// print task info
 		log.Info().Msg(task.GetIdentity())
-
+		//counter++
 		if err := dumpTask(client, Tag, task); err != nil {
+
 			log.Info().Msg("cannot dump RawTask, ")
 			client.conn.Close()
 			return
 		}
+		
 	}
+
 	// for _, task := range tasks {
 	// 	fmt.Print("\n\n")
 	// 	log.Info().Msg(task.GetIdentity())
