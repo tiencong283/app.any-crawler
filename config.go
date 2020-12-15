@@ -50,13 +50,15 @@ func ReadAppConfig(configFilePath string) (*AppConfig, error) {
 	rawTaskExtensions := strings.TrimSpace(viper.GetString("public_tasks.extensions"))
 	rawTaskDetections := strings.TrimSpace(viper.GetString("public_tasks.detections"))
 
-	var taskExtensions []string
-	for _, ext := range strings.Split(rawTaskExtensions, ",") {
-		val, ok := SupportedTaskExtensions[ext]
-		if !ok {
-			return nil, fmt.Errorf("invalid extension '%s': possible values are %s", ext, FormatStrSlice(GetStrMapKeys(SupportedTaskExtensions)))
+	taskExtensions := make([]string, 0)
+	if len(rawTaskExtensions) > 0 {
+		for _, ext := range strings.Split(rawTaskExtensions, ",") {
+			val, ok := SupportedTaskExtensions[ext]
+			if !ok {
+				return nil, fmt.Errorf("invalid extension '%s': possible values are %s", ext, FormatStrSlice(GetStrMapKeys(SupportedTaskExtensions)))
+			}
+			taskExtensions = append(taskExtensions, val)
 		}
-		taskExtensions = append(taskExtensions, val)
 	}
 	var taskDetections []int
 	for _, detection := range strings.Split(rawTaskDetections, ",") {

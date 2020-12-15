@@ -9,7 +9,15 @@ import (
 var (
 	SupportedTaskExtensions = map[string]string{
 		"PE EXE":           "0",
+		"PE DLL":           "1",
+		"JAVA":             "2",
+		"HTML Documents":   "3",
+		"Adobe Flash":      "4",
+		"Adobe PDF":        "5",
 		"Microsoft Office": "6",
+		"Scripts":          "7",
+		"Email files":      "8",
+		"Archive files":    "9",
 	}
 	SupportedTaskDetections = map[string]int{
 		"No threats": 0,
@@ -196,230 +204,230 @@ type (
 	}
 
 	RawDNSQueries struct {
-        Msg        string `json:"msg"`
-        Collection string `json:"collection"`
-        ID         string `json:"id"`
-        Fields     struct {
-            Task struct {
-                Type  string `json:"$type"`
-                Value string `json:"$value"`
-            } `json:"task"`
-            ID   string `json:"id"`
-            Time struct {
-                Date int64 `json:"$date"`
-            } `json:"time"`
-            TimeClose struct {
-                Date int64 `json:"$date"`
-            } `json:"timeClose"`
-            Status int      `json:"status"`
-            Domain string   `json:"domain"`
-            Ips    []string `json:"ips"`
-            V      int      `json:"__v"`
-            Type   int      `json:"type"`
-        } `json:"fields"`
+		Msg        string `json:"msg"`
+		Collection string `json:"collection"`
+		ID         string `json:"id"`
+		Fields     struct {
+			Task struct {
+				Type  string `json:"$type"`
+				Value string `json:"$value"`
+			} `json:"task"`
+			ID   string `json:"id"`
+			Time struct {
+				Date int64 `json:"$date"`
+			} `json:"time"`
+			TimeClose struct {
+				Date int64 `json:"$date"`
+			} `json:"timeClose"`
+			Status int      `json:"status"`
+			Domain string   `json:"domain"`
+			Ips    []string `json:"ips"`
+			V      int      `json:"__v"`
+			Type   int      `json:"type"`
+		} `json:"fields"`
 	}
-	
-	RawIps struct{
-        Msg        string `json:"msg"`
-        Collection string `json:"collection"`
-        ID         string `json:"id"`
-        Fields     struct {
-            ID   string `json:"id"`
-            Task struct {
-                Type  string `json:"$type"`
-                Value string `json:"$value"`
-            } `json:"task"`
-            Time      int64       `json:"time"`
-            TimeClose interface{} `json:"timeClose"`
-            IP        string      `json:"ip"`
-            Port      int         `json:"port"`
-            Prot      string      `json:"prot"`
-            LocalPort int         `json:"localPort"`
-            Direction string      `json:"direction"`
-            Country   string      `json:"country"`
-            Asn       interface{} `json:"asn"`
-            Traffic   struct {
-                Send int `json:"send"`
-                Recv int `json:"recv"`
-            } `json:"traffic"`
-            ProcessOID struct {
-                Type  string `json:"$type"`
-                Value string `json:"$value"`
-            } `json:"processOID"`
-            ProcessName string `json:"processName"`
-            Pid         int    `json:"pid"`
-            Domain      string `json:"domain"`
-            Type        int    `json:"type"`
-        } `json:"fields"`
+
+	RawIps struct {
+		Msg        string `json:"msg"`
+		Collection string `json:"collection"`
+		ID         string `json:"id"`
+		Fields     struct {
+			ID   string `json:"id"`
+			Task struct {
+				Type  string `json:"$type"`
+				Value string `json:"$value"`
+			} `json:"task"`
+			Time      int64       `json:"time"`
+			TimeClose interface{} `json:"timeClose"`
+			IP        string      `json:"ip"`
+			Port      int         `json:"port"`
+			Prot      string      `json:"prot"`
+			LocalPort int         `json:"localPort"`
+			Direction string      `json:"direction"`
+			Country   string      `json:"country"`
+			Asn       interface{} `json:"asn"`
+			Traffic   struct {
+				Send int `json:"send"`
+				Recv int `json:"recv"`
+			} `json:"traffic"`
+			ProcessOID struct {
+				Type  string `json:"$type"`
+				Value string `json:"$value"`
+			} `json:"processOID"`
+			ProcessName string `json:"processName"`
+			Pid         int    `json:"pid"`
+			Domain      string `json:"domain"`
+			Type        int    `json:"type"`
+		} `json:"fields"`
 	}
-	
+
 	RawHttpRequests struct {
-        Msg        string `json:"msg"`
-        Collection string `json:"collection"`
-        ID         string `json:"id"`
-        Fields     struct {
-            Sha256     string `json:"sha256"`
-            ProcessOID struct {
-                Type  string `json:"$type"`
-                Value string `json:"$value"`
-            } `json:"processOID"`
-            Task struct {
-                Type  string `json:"$type"`
-                Value string `json:"$value"`
-            } `json:"task"`
-            ID   string `json:"id"`
-            Time struct {
-                Date int64 `json:"$date"`
-            } `json:"time"`
-            TimeClose interface{} `json:"timeClose"`
-            Country   string      `json:"country"`
-            Asn       string      `json:"asn"`
-            Host      string      `json:"host"`
-            URL       string      `json:"url"`
-            Method    string      `json:"method"`
-            Request   string      `json:"request"`
-            Body      struct {
-                Response struct {
-                    FileID interface{} `json:"fileID"`
-                    Size   interface{} `json:"size"`
-                } `json:"response"`
-                Request struct {
-                    FileID interface{} `json:"fileID"`
-                    Size   int         `json:"size"`
-                } `json:"request"`
-            } `json:"body"`
-            To struct {
-                IP   string `json:"ip"`
-                Port int    `json:"port"`
-            } `json:"to"`
-            Opendir []interface{} `json:"opendir"`
-            Linked  struct {
-                Discovered struct {
-                    Response bool `json:"response"`
-                    Request  bool `json:"request"`
-                } `json:"discovered"`
-                Undiscovered struct {
-                    Response bool `json:"response"`
-                    Request  bool `json:"request"`
-                } `json:"undiscovered"`
-            } `json:"linked"`
-            V           int    `json:"__v"`
-            ProcessName string `json:"processName"`
-            Pid         int    `json:"pid"`
-            Type        int    `json:"type"`
-        } `json:"fields"`
+		Msg        string `json:"msg"`
+		Collection string `json:"collection"`
+		ID         string `json:"id"`
+		Fields     struct {
+			Sha256     string `json:"sha256"`
+			ProcessOID struct {
+				Type  string `json:"$type"`
+				Value string `json:"$value"`
+			} `json:"processOID"`
+			Task struct {
+				Type  string `json:"$type"`
+				Value string `json:"$value"`
+			} `json:"task"`
+			ID   string `json:"id"`
+			Time struct {
+				Date int64 `json:"$date"`
+			} `json:"time"`
+			TimeClose interface{} `json:"timeClose"`
+			Country   string      `json:"country"`
+			Asn       string      `json:"asn"`
+			Host      string      `json:"host"`
+			URL       string      `json:"url"`
+			Method    string      `json:"method"`
+			Request   string      `json:"request"`
+			Body      struct {
+				Response struct {
+					FileID interface{} `json:"fileID"`
+					Size   interface{} `json:"size"`
+				} `json:"response"`
+				Request struct {
+					FileID interface{} `json:"fileID"`
+					Size   int         `json:"size"`
+				} `json:"request"`
+			} `json:"body"`
+			To struct {
+				IP   string `json:"ip"`
+				Port int    `json:"port"`
+			} `json:"to"`
+			Opendir []interface{} `json:"opendir"`
+			Linked  struct {
+				Discovered struct {
+					Response bool `json:"response"`
+					Request  bool `json:"request"`
+				} `json:"discovered"`
+				Undiscovered struct {
+					Response bool `json:"response"`
+					Request  bool `json:"request"`
+				} `json:"undiscovered"`
+			} `json:"linked"`
+			V           int    `json:"__v"`
+			ProcessName string `json:"processName"`
+			Pid         int    `json:"pid"`
+			Type        int    `json:"type"`
+		} `json:"fields"`
 	}
-	
-	RawThreats struct{ 
-        Msg        string `json:"msg"`
-        Collection string `json:"collection"`
-        ID         string `json:"id"`
-        Fields     struct {
-            UUID   string `json:"uuid"`
-            Taskid struct {
-                Type  string `json:"$type"`
-                Value string `json:"$value"`
-            } `json:"taskid"`
-            Date       int64  `json:"date"`
-            Msg        string `json:"msg"`
-            Dstport    int    `json:"dstport"`
-            Dstip      string `json:"dstip"`
-            Srcport    int    `json:"srcport"`
-            Linked     bool   `json:"linked"`
-            Pro        int    `json:"pro"`
-            Class      string `json:"class"`
-            Priority   int    `json:"priority"`
-            Srcip      string `json:"srcip"`
-            Sid        int    `json:"sid"`
-            Discovered bool   `json:"discovered"`
-            ProcessOID struct {
-                Type  string `json:"$type"`
-                Value string `json:"$value"`
-            } `json:"processOID"`
-            ProcessName string `json:"processName"`
-            Pid         int    `json:"pid"`
-        } `json:"fields"`
-    }
+
+	RawThreats struct {
+		Msg        string `json:"msg"`
+		Collection string `json:"collection"`
+		ID         string `json:"id"`
+		Fields     struct {
+			UUID   string `json:"uuid"`
+			Taskid struct {
+				Type  string `json:"$type"`
+				Value string `json:"$value"`
+			} `json:"taskid"`
+			Date       int64  `json:"date"`
+			Msg        string `json:"msg"`
+			Dstport    int    `json:"dstport"`
+			Dstip      string `json:"dstip"`
+			Srcport    int    `json:"srcport"`
+			Linked     bool   `json:"linked"`
+			Pro        int    `json:"pro"`
+			Class      string `json:"class"`
+			Priority   int    `json:"priority"`
+			Srcip      string `json:"srcip"`
+			Sid        int    `json:"sid"`
+			Discovered bool   `json:"discovered"`
+			ProcessOID struct {
+				Type  string `json:"$type"`
+				Value string `json:"$value"`
+			} `json:"processOID"`
+			ProcessName string `json:"processName"`
+			Pid         int    `json:"pid"`
+		} `json:"fields"`
+	}
 )
 
 //Mapping all
 // simplified structs
-type(
-	// mapping to RawProcess 
-    Process struct {
-        OID                        string
-        ProcessID                  int
-        ParentPID                  int
-        CommandLine                string
-        Image                      string
-        ProcessType                string
-        CreationTimestamp          int64
-        Registry                   int
-        Files                      int
-        Modules                    int
-        DroppedFiles               int
-        DebugStrings               int
-        EventsCounters_Network     int
-        Scores_Network             bool
-        Autostart                  bool
-        LowAccess                  bool
-        FileType                   string
+type (
+	// mapping to RawProcess
+	Process struct {
+		OID                    string
+		ProcessID              int
+		ParentPID              int
+		CommandLine            string
+		Image                  string
+		ProcessType            string
+		CreationTimestamp      int64
+		Registry               int
+		Files                  int
+		Modules                int
+		DroppedFiles           int
+		DebugStrings           int
+		EventsCounters_Network int
+		Scores_Network         bool
+		Autostart              bool
+		LowAccess              bool
+		FileType               string
 	}
-	
-	//  mapping to RawIncident 
-    Incident struct {
-        ProcessOID   string
-        ThreatLevel  int
-        MitreAttacks []string
-    }
 
-    //  mapping to RawDNSQueries 
-    DNSQueries struct{
-        Domain      string
-        Ips         []string
-        Status      int
-        Type        int
+	//  mapping to RawIncident
+	Incident struct {
+		ProcessOID   string
+		ThreatLevel  int
+		MitreAttacks []string
 	}
-	
+
+	//  mapping to RawDNSQueries
+	DNSQueries struct {
+		Domain string
+		Ips    []string
+		Status int
+		Type   int
+	}
+
 	// mapping to RawIps
 	Ips struct {
-        ProcessOID  string
-        ProcessName string
-        Domain      string
-        IP          string
-        Port        int
-        Prot        string
-        Send        int
-        Recv        int
-        Type        int       
+		ProcessOID  string
+		ProcessName string
+		Domain      string
+		IP          string
+		Port        int
+		Prot        string
+		Send        int
+		Recv        int
+		Type        int
 	}
-	
-    //mapping to RawHttpRequests
-    HttpRequests struct{
-        ProcessOID      string
-        URL             string
-        Method          string
-        Type            int
+
+	//mapping to RawHttpRequests
+	HttpRequests struct {
+		ProcessOID string
+		URL        string
+		Method     string
+		Type       int
 	}
-	
+
 	//mapping to RawThreats
-    Threats struct{
-        ProcessOID      string
-        ProcessName     string
-        Priority        int
+	Threats struct {
+		ProcessOID  string
+		ProcessName string
+		Priority    int
 	}
-	
+
 	ProcessData struct {
-        Name                string
-        Md5                 string
-        UUID                string
-        Processes           []*Process
-        Incidents           []*Incident
-        Ips                 []*Ips
-        Domain              []*DNSQueries
-        HttpRequests        []*HttpRequests
-        Threats             []*Threats        
-    }
+		Name         string
+		Md5          string
+		UUID         string
+		Processes    []*Process
+		Incidents    []*Incident
+		Ips          []*Ips
+		Domain       []*DNSQueries
+		HttpRequests []*HttpRequests
+		Threats      []*Threats
+	}
 )
 
 func (task *RawTask) GetIdentity() string {
@@ -468,23 +476,23 @@ func FormatStrSlice(values []string) string {
 
 func NewProcess(rawProc *RawProcess) *Process {
 	return &Process{
-		OID:                        rawProc.ID,
-		ProcessID:                  rawProc.Fields.Pid,
-		ParentPID:                  rawProc.Fields.ParentPID,
-		CommandLine:                rawProc.Fields.Cmd,
-		Image:                      rawProc.Fields.Image,
-		ProcessType:                rawProc.Fields.Scores.ImportantReason,
-        CreationTimestamp:          rawProc.Fields.Times.Created.Date,
-        Registry:                   rawProc.Fields.EventsCounters.Raw.Registry,       
-        Files:                      rawProc.Fields.EventsCounters.Raw.Files,        
-        Modules:                    rawProc.Fields.EventsCounters.Raw.Modules,
-        DroppedFiles:               rawProc.Fields.EventsCounters.DroppedFiles,
-        DebugStrings:               rawProc.Fields.EventsCounters.DebugStrings,
-        EventsCounters_Network:     rawProc.Fields.EventsCounters.Network,
-        Scores_Network:             rawProc.Fields.Scores.Specs.Network,
-        Autostart:                  rawProc.Fields.Scores.Specs.Autostart,
-        LowAccess:                  rawProc.Fields.Scores.Specs.LowAccess,
-        FileType:                   rawProc.Fields.Scores.FileType,
+		OID:                    rawProc.ID,
+		ProcessID:              rawProc.Fields.Pid,
+		ParentPID:              rawProc.Fields.ParentPID,
+		CommandLine:            rawProc.Fields.Cmd,
+		Image:                  rawProc.Fields.Image,
+		ProcessType:            rawProc.Fields.Scores.ImportantReason,
+		CreationTimestamp:      rawProc.Fields.Times.Created.Date,
+		Registry:               rawProc.Fields.EventsCounters.Raw.Registry,
+		Files:                  rawProc.Fields.EventsCounters.Raw.Files,
+		Modules:                rawProc.Fields.EventsCounters.Raw.Modules,
+		DroppedFiles:           rawProc.Fields.EventsCounters.DroppedFiles,
+		DebugStrings:           rawProc.Fields.EventsCounters.DebugStrings,
+		EventsCounters_Network: rawProc.Fields.EventsCounters.Network,
+		Scores_Network:         rawProc.Fields.Scores.Specs.Network,
+		Autostart:              rawProc.Fields.Scores.Specs.Autostart,
+		LowAccess:              rawProc.Fields.Scores.Specs.LowAccess,
+		FileType:               rawProc.Fields.Scores.FileType,
 	}
 }
 
@@ -496,42 +504,42 @@ func NewIncident(rawIncident *RawIncident) *Incident {
 	}
 }
 
-func NewDNSQueries(rawDNS *RawDNSQueries) *DNSQueries{
+func NewDNSQueries(rawDNS *RawDNSQueries) *DNSQueries {
 	return &DNSQueries{
-		Domain:     rawDNS.Fields.Domain,     
-        Ips:        rawDNS.Fields.Ips,
-        Status:     rawDNS.Fields.Status,
-        Type:       rawDNS.Fields.Type,
+		Domain: rawDNS.Fields.Domain,
+		Ips:    rawDNS.Fields.Ips,
+		Status: rawDNS.Fields.Status,
+		Type:   rawDNS.Fields.Type,
 	}
 }
 
 func NewIps(rawIps *RawIps) *Ips {
 	return &Ips{
-		ProcessOID:     rawIps.Fields.ProcessOID.Value,
-        ProcessName:    rawIps.Fields.ProcessName,
-        Domain:         rawIps.Fields.Domain,
-        IP:             rawIps.Fields.IP,
-        Port:           rawIps.Fields.Port,
-        Prot:           rawIps.Fields.Prot,
-        Send:           rawIps.Fields.Traffic.Send,
-        Recv:           rawIps.Fields.Traffic.Recv,
-        Type:           rawIps.Fields.Type,
+		ProcessOID:  rawIps.Fields.ProcessOID.Value,
+		ProcessName: rawIps.Fields.ProcessName,
+		Domain:      rawIps.Fields.Domain,
+		IP:          rawIps.Fields.IP,
+		Port:        rawIps.Fields.Port,
+		Prot:        rawIps.Fields.Prot,
+		Send:        rawIps.Fields.Traffic.Send,
+		Recv:        rawIps.Fields.Traffic.Recv,
+		Type:        rawIps.Fields.Type,
 	}
 }
 
 func NewHttpRequests(rawHttp *RawHttpRequests) *HttpRequests {
 	return &HttpRequests{
-		ProcessOID:                 rawHttp.Fields.ProcessOID.Value,
-        URL:                        rawHttp.Fields.URL,
-        Method:                     rawHttp.Fields.Method,
-        Type:                       rawHttp.Fields.Type,
+		ProcessOID: rawHttp.Fields.ProcessOID.Value,
+		URL:        rawHttp.Fields.URL,
+		Method:     rawHttp.Fields.Method,
+		Type:       rawHttp.Fields.Type,
 	}
 }
 
-func NewThreats(rawThreat *RawThreats) *Threats{
+func NewThreats(rawThreat *RawThreats) *Threats {
 	return &Threats{
-        ProcessOID:      rawThreat.Fields.ProcessOID.Value,
-        ProcessName:     rawThreat.Fields.ProcessName,
-        Priority:        rawThreat.Fields.Priority,
+		ProcessOID:  rawThreat.Fields.ProcessOID.Value,
+		ProcessName: rawThreat.Fields.ProcessName,
+		Priority:    rawThreat.Fields.Priority,
 	}
 }
